@@ -1,0 +1,176 @@
+/* ==========================================================================
+   CLEAN, MODERN & PREMIUM EDTECH STYLES FOR ĐIỆP VIÊN TÀI LIỆU
+   (WITH DARK/LIGHT THEME SUPPORT & LIVE PROOF TOAST)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --brand-navy: #0B1958;
+    --brand-deep: #0D1677;
+    --brand-electric: #1E40AF;
+    --brand-yellow: #FFA000;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1E293B;
+    background-color: #F8FAFC;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* DARK MODE SUPPORT */
+html.dark body {
+    color: #F1F5F9;
+    background-color: #03081E;
+}
+
+html.dark .bg-slate-50,
+html.dark .bg-slate-100 {
+    background-color: #060E2C !important;
+}
+
+html.dark .bg-white {
+    background-color: #0A143D !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html.dark .text-slate-900,
+html.dark .text-slate-800 {
+    color: #FFFFFF !important;
+}
+
+html.dark .text-slate-700,
+html.dark .text-slate-600 {
+    color: #CBD5E1 !important;
+}
+
+html.dark .text-slate-500,
+html.dark .text-slate-400 {
+    color: #94A3B8 !important;
+}
+
+html.dark .border-slate-200,
+html.dark .border-slate-300 {
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark .clean-card {
+    background: #0A143D;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+html.dark .clean-card:hover {
+    border-color: rgba(255, 160, 0, 0.4);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+}
+
+.font-condensed {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Modern Clean Cards */
+.clean-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clean-card:hover {
+    box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.12);
+    border-color: #CBD5E1;
+}
+
+/* Hover Lift */
+.hover-lift {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -4px rgba(13, 22, 119, 0.18), 0 0 0 2px rgba(255, 160, 0, 0.4);
+}
+
+/* Marquee Animation */
+.marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-flex;
+    animation: marquee 50s linear infinite;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* LIVE SOCIAL PROOF TOAST (BOTTOM LEFT) */
+#liveProofToast {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 50;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    pointer-events: none;
+}
+
+#liveProofToast.toast-visible {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Glow effects */
+.pulse-glow-yellow {
+    box-shadow: 0 0 0 0 rgba(255, 160, 0, 0.7);
+    animation: pulseYellow 2s infinite;
+}
+
+@keyframes pulseYellow {
+    0% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(255, 160, 0, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(255, 160, 0, 0); }
+    100% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(255, 160, 0, 0); }
+}
+
+.pulse-glow-red {
+    animation: pulseRed 1.8s infinite;
+}
+
+@keyframes pulseRed {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+}

@@ -104,6 +104,14 @@
                 <button onclick="switchView('faq')" data-view="faq" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">💡 Hỏi Đáp</button>
             </nav>
 
+            <!-- Unified Account & App Sync Button -->
+            <div class="flex items-center gap-2 ml-2">
+                <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-xs rounded-full shadow-md transition whitespace-nowrap">
+                    <span>👤</span>
+                    <span id="headerAccountSyncLabel">Đăng Nhập · Đồng Bộ App</span>
+                </button>
+            </div>
+
 
         </div>
     </header>
@@ -812,44 +820,45 @@
                     </div>
                 </div>
 
-                <!-- ========== STEP 2: THANH TOÁN ========== -->
+                <!-- ========== STEP 2: THANH TOÁN VIETQR & XÁC THỰC BIẾN ĐỘNG SỐ DƯ ========== -->
                 <div id="courseCheckoutStep2" class="hidden">
                     <div class="p-6 pb-4 border-b border-slate-100 text-center">
-                        <span class="px-3 py-1 bg-pink-50 text-pink-700 font-extrabold text-[10px] rounded-full uppercase border border-pink-200">BƯỚC 2 / 3 — THANH TOÁN</span>
-                        <h3 class="text-lg font-black text-slate-900 mt-2 font-condensed uppercase tracking-wider">Chuyển Khoản Thanh Toán</h3>
-                        <p class="text-[11px] text-slate-500 mt-1">Sau khi chuyển khoản xong, nhấn <strong class="text-emerald-600">"Đã Thanh Toán"</strong></p>
+                        <span class="px-3 py-1 bg-blue-50 text-[#0D1677] font-extrabold text-[10px] rounded-full uppercase border border-blue-200">QUÉT MÃ VIETQR ACB · ĐỒNG BỘ APP ĐIỆP VIÊN STUDY</span>
+                        <h3 class="text-lg font-black text-slate-900 mt-2 font-condensed uppercase tracking-wider">Quét Mã QR Chuyển Khoản</h3>
+                        <p class="text-[11px] text-slate-500 mt-1">Hệ thống tự động mở khóa trên Web & App ngay khi nhận được <strong>Email biến động số dư ngân hàng</strong></p>
                     </div>
 
                     <div class="p-6 space-y-4">
-                        <!-- Payment Info -->
-                        <div class="bg-gradient-to-br from-[#0B1958] to-[#0D1677] rounded-2xl p-5 text-white">
-                            <p class="text-xs font-bold uppercase tracking-wider text-amber-300 mb-2">💳 Thanh Toán Chuyển Khoản</p>
-                            <div class="space-y-1.5 text-sm">
-                                <p><span class="text-slate-300">Ngân hàng:</span> <strong>MB Bank (Quân Đội)</strong></p>
-                                <p><span class="text-slate-300">Số TK:</span> <strong class="text-amber-300 tracking-wider">PSG2612412700000041</strong></p>
-                                <p><span class="text-slate-300">Chủ TK:</span> <strong>NGO BAO THACH</strong></p>
-                                <p class="text-[11px] text-slate-300 mt-2 pt-2 border-t border-white/20">
-                                    Nội dung CK: <strong class="text-white" id="courseTransferNote">KHOAHOC [Mã Khóa] [SĐT]</strong>
-                                </p>
+                        <div class="flex justify-center">
+                            <img id="courseQrImage" src="" alt="VietQR ACB" class="w-52 h-52 object-contain rounded-2xl border-2 border-[#0D1677] p-2 bg-white shadow-md">
+                        </div>
+
+                        <div class="bg-gradient-to-br from-[#0B1958] to-[#0D1677] rounded-2xl p-4 text-white text-xs space-y-1.5">
+                            <div class="flex justify-between"><span class="text-slate-300">Ngân hàng:</span><strong id="courseBankName">ACB</strong></div>
+                            <div class="flex justify-between"><span class="text-slate-300">Số TK:</span><strong id="courseSTK" class="text-amber-300 tracking-wider">27384751</strong></div>
+                            <div class="flex justify-between"><span class="text-slate-300">Chủ TK:</span><strong id="courseCTK">NGO BAO THACH</strong></div>
+                            <div class="flex justify-between"><span class="text-slate-300">Số tiền:</span><strong id="coursePayAmount" class="text-emerald-300">199.000 VNĐ</strong></div>
+                            <div class="pt-2 border-t border-white/20 flex justify-between items-center">
+                                <span class="text-slate-300">Nội dung CK:</span>
+                                <strong class="text-amber-300 font-mono text-sm" id="courseTransferNote">DVHSA01</strong>
                             </div>
                         </div>
 
-                        <!-- Auto-verification waiting state -->
-                        <div id="coursePaymentWaiting" class="text-center py-4 space-y-3">
-                            <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-amber-50 border-2 border-amber-300 rounded-xl">
-                                <svg class="animate-spin w-5 h-5 text-amber-600" fill="none" viewBox="0 0 24 24">
+                        <div id="coursePaymentWaiting" class="text-center py-2 space-y-2">
+                            <div class="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-300 rounded-xl">
+                                <svg class="animate-spin w-4 h-4 text-amber-600" fill="none" viewBox="0 0 24 24">
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
                                 </svg>
-                                <span class="text-sm font-black text-amber-800">Đang chờ xác nhận thanh toán...</span>
+                                <span id="courseWaitingStatusText" class="text-xs font-black text-amber-800">Đang quét Email biến động số dư ngân hàng...</span>
                             </div>
-                            <p class="text-[11px] text-slate-500 leading-relaxed">
-                                Hệ thống sẽ <strong>tự động xác nhận</strong> khi nhận được chuyển khoản với đúng nội dung CK.<br>
-                                Vui lòng chuyển khoản đúng <strong class="text-[#0D1677]">số tiền</strong> và <strong class="text-[#FFA000]">nội dung CK</strong> ở trên.
-                            </p>
                             <div id="coursePaymentTimer" class="text-[10px] text-slate-400 font-mono"></div>
                         </div>
-                        <button onclick="backToCourseStep1()" class="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs rounded-xl transition">
+
+                        <button type="button" onclick="verifyCourseBankPaymentNow()" class="w-full py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow transition">
+                            🔄 Kiểm Tra Giao Dịch Ngay (Đối Soát Biến Động Số Dư)
+                        </button>
+                        <button onclick="backToCourseStep1()" class="w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs rounded-xl transition">
                             ← Quay lại chỉnh thông tin
                         </button>
                     </div>
@@ -1812,9 +1821,9 @@
                     </p>
                     <div id="docPaymentTimer" class="text-[10px] text-slate-400 font-mono"></div>
                 </div>
-                <button type="button" onclick="confirmDocManualPayment()" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow transition flex items-center justify-center gap-1.5">
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                    Tôi Đã Chuyển Khoản Xong
+                <p id="docVerifyFeedbackMsg" class="text-[11px] font-bold text-amber-700 text-center hidden mb-2"></p>
+                <button type="button" onclick="confirmDocManualPayment()" class="w-full py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow transition flex items-center justify-center gap-1.5">
+                    <span>🔄 Kiểm Tra Giao Dịch Ngay (Đối Soát Email Ngân Hàng)</span>
                 </button>
                 <button type="button" onclick="backToDocStep1()" class="w-full mt-2 py-2 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs rounded-xl transition">
                     ← Quay lại chỉnh thông tin
@@ -2069,8 +2078,8 @@ function doPost(e) {
     </footer>
 
     <!-- Scripts with cache busting query string -->
-    <script src="js/data.js?v=9.1"></script>
-    <script src="js/app.js?v=9.1"></script>
+    <script src="js/data.js?v=9.2"></script>
+    <script src="js/app.js?v=9.2"></script>
     <script>
         function openTrackingModal() {
             document.getElementById('trackingModal').classList.remove('hidden');
@@ -2105,5 +2114,58 @@ function doPost(e) {
             `).join('');
         }
     </script>
+
+    <!-- ================================================================
+         MODAL: ĐỒNG BỘ TÀI KHOẢN KHÁCH HÀNG (WEB DIEPVIEN.STORE <-> APP ĐIỆP VIÊN STUDY)
+         ================================================================ -->
+    <div id="customerSyncModal" class="fixed inset-0 z-[99] hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" onclick="if(event.target===this)closeCustomerSyncModal()">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-slate-200 relative max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+            <button onclick="closeCustomerSyncModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 font-black flex items-center justify-center transition">✕</button>
+
+            <div class="mb-4">
+                <span class="px-3 py-1 bg-blue-50 text-[#0D1677] font-extrabold text-[10px] rounded-full uppercase border border-blue-200">ĐỒNG BỘ TÀI KHOẢN WEB & APP ĐIỆP VIÊN STUDY</span>
+                <h3 class="text-xl font-black text-slate-900 mt-2 font-condensed uppercase tracking-wide">Tài Khoản Học Tập Đồng Bộ</h3>
+                <p class="text-xs text-slate-500 mt-1">Đăng nhập hoặc đăng ký bằng Gmail để đồng bộ toàn bộ Khóa Học & Đề Cương đã thanh toán giữa <strong>diepvien.store</strong> và ứng dụng <strong>Điệp Viên Study</strong>.</p>
+            </div>
+
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">Email Google (Nhận Drive & Mở khóa App) *</label>
+                    <input id="syncCustEmailInput" type="email" placeholder="sinhvien@gmail.com" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl outline-none focus:border-[#0D1677]">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">Họ và tên *</label>
+                        <input id="syncCustNameInput" type="text" placeholder="Nguyễn Văn A" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl outline-none focus:border-[#0D1677]">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">Số điện thoại Zalo *</label>
+                        <input id="syncCustPhoneInput" type="tel" placeholder="0987654321" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl outline-none focus:border-[#0D1677]">
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 mb-1">Mật khẩu đồng bộ Web & App (Tùy chọn)</label>
+                    <input id="syncCustPassInput" type="password" placeholder="Nhập mật khẩu để đăng nhập nhanh trên App" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl outline-none focus:border-[#0D1677]">
+                </div>
+
+                <div class="flex gap-2 pt-1">
+                    <button type="button" id="btnSubmitCustomerSync" onclick="submitCustomerSyncWeb()" class="flex-1 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black rounded-xl shadow transition">
+                        🔄 Đăng Nhập & Đồng Bộ Dữ Liệu
+                    </button>
+                    <button type="button" onclick="logoutCustomerSyncWeb()" class="px-4 py-3 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold rounded-xl transition">
+                        Đăng xuất
+                    </button>
+                </div>
+
+                <p id="syncCustomerStatusMsg" class="text-[11px] font-bold text-emerald-700 text-center hidden"></p>
+
+                <div id="syncCustomerEntitlementsBox" class="hidden pt-4 border-t border-slate-200 space-y-3">
+                    <div class="font-black text-slate-900 uppercase text-xs">Khóa Học & Tài Liệu Đã Xác Thực Thanh Toán (PAID_SUCCESS):</div>
+                    <div id="syncCustomerItemsList" class="space-y-2 max-h-48 overflow-y-auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -21,7 +21,7 @@ const state = {
     serviceBasePrice: 32000,
     
     // Settings
-    webhookUrl: localStorage.getItem("dvtl_webhook_url") || (typeof APP_CONFIG !== 'undefined' ? APP_CONFIG.defaultWebhookUrl : ""),
+    webhookUrl: ((localStorage.getItem("dvtl_webhook_url") && !localStorage.getItem("dvtl_webhook_url").includes("AKfycbwJgYaG")) ? localStorage.getItem("dvtl_webhook_url") : (typeof APP_CONFIG !== 'undefined' ? APP_CONFIG.defaultWebhookUrl : "")),
     orderHistory: JSON.parse(localStorage.getItem("dvtl_orders") || "[]")
 };
 
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initEventListeners();
     initServiceCalculator();
     renderDocuments();
+    syncLiveProductsFromMasterSheet();
     renderRecentOrdersTicker();
     initLiveProofStream();
     
@@ -790,7 +791,8 @@ function openDocCheckoutModal(docId, customTitle = null) {
     document.getElementById("checkoutDocCode").textContent = `#${doc.code} · ${doc.pages} Trang A4`;
     document.getElementById("checkoutDocPrice").textContent = `${doc.price.toLocaleString('vi-VN')} VNĐ`;
     
-    const orderCode = `DC${doc.code}${Math.floor(100 + Math.random() * 900)}`;
+    const cleanDocCode = String(doc.code || "TL").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+    const orderCode = `DC${cleanDocCode}${Math.floor(100 + Math.random() * 900)}`;
     document.getElementById("checkoutOrderCode").textContent = orderCode;
     document.getElementById("checkoutMemoCode").textContent = orderCode;
     
@@ -933,10 +935,29 @@ function onDocPaymentConfirmed(orderCode, email) {
     document.getElementById("docSuccessEmail").textContent = email;
 }
 
-function confirmDocManualPayment() {
+async function confirmDocManualPayment() {
     const orderCode = document.getElementById("checkoutOrderCode")?.textContent || "";
     const email = document.getElementById("checkoutEmailInput")?.value || "";
-    onDocPaymentConfirmed(orderCode, email);
+    const fbEl = document.getElementById("docVerifyFeedbackMsg");
+    if (fbEl) {
+        fbEl.classList.remove("hidden");
+        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB cho mã đơn #" + orderCode + "...";
+    }
+    if (!state.webhookUrl) return;
+    try {
+        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const data = await res.json();
+        if (data && data.verified === true) {
+            onDocPaymentConfirmed(orderCode, email);
+        } else if (fbEl) {
+            fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
+        }
+    } catch (e) {
+        if (fbEl) {
+            fbEl.textContent = "⚠️ Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
+        }
+    }
 }
 
 function backToDocStep1() {
@@ -971,7 +992,8 @@ function initServiceCalculator() {
         document.getElementById("calcTotalEst").textContent = `${totalEst.toLocaleString('vi-VN')} VNĐ`;
         document.getElementById("calcDepositEst").textContent = `${depositEst.toLocaleString('vi-VN')} VNĐ`;
         
-        const depositOrderCode = `COC_${type.toUpperCase()}_${Math.floor(1000 + Math.random() * 9000)}`;
+        const cleanType = String(type || "BTL").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+        const depositOrderCode = `COC${cleanType}${Math.floor(1000 + Math.random() * 9000)}`;
         document.getElementById("srvDepositCode").textContent = depositOrderCode;
     };
     
@@ -1486,7 +1508,7 @@ function closeCourseCheckoutModal() {
 function goToCoursePaymentStep() {
     const name = document.getElementById("courseStudentName").value.trim();
     const phone = document.getElementById("courseStudentPhone").value.trim();
-    const email = document.getElementById("courseStudentEmail").value.trim();
+    const email = document.getElementById("courseStudentEmail").value.trim().toLowerCase();
 
     if (!name || !phone || !email) {
         alert("⚠️ Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
@@ -1503,19 +1525,38 @@ function goToCoursePaymentStep() {
         return;
     }
 
-    // Update transfer note with actual phone
-    document.getElementById("courseTransferNote").textContent = `KHOAHOC ${selectedCourseForCheckout.code} ${phone}`;
-
-    const orderCode = "KH-" + Date.now().toString(36).toUpperCase();
     const course = selectedCourseForCheckout;
+    const cleanCode = String(course.code || "HSA01").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+    const orderCode = `DV${cleanCode}${Math.floor(100 + Math.random() * 900)}`;
+    const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
+    const transferMemo = `${orderCode} ${cleanName}`.trim();
 
-    // Send order info to webhook immediately
+    const noteEl = document.getElementById("courseTransferNote");
+    if (noteEl) {
+        noteEl.textContent = transferMemo;
+        noteEl.dataset.orderCode = orderCode;
+    }
+    const amtEl = document.getElementById("coursePayAmount");
+    if (amtEl) amtEl.textContent = `${course.price.toLocaleString("vi-VN")} VNĐ`;
+    const qrImg = document.getElementById("courseQrImage");
+    if (qrImg) {
+        qrImg.src = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${course.price}&addInfo=${encodeURIComponent(transferMemo)}&accountName=NGO%20BAO%20THACH`;
+    }
+
     const payload = {
+        action: "createOrder",
         type: "COURSE_REGISTRATION",
-        status: "PENDING_PAYMENT",
+        orderType: "Khóa Học",
+        status: "PENDING",
         orderCode: orderCode,
-        courseId: course.id, courseCode: course.code, courseTitle: course.title, price: course.price,
-        studentName: name, studentPhone: phone, studentEmail: email,
+        sku: course.id || course.code,
+        itemName: course.title,
+        price: course.price,
+        name: name,
+        phone: phone,
+        email: email,
+        bank: "ACB",
+        stkNhan: "27384751",
         timestamp: new Date().toISOString()
     };
 
@@ -1577,3 +1618,234 @@ function backToCourseStep1() {
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
 }
+
+
+async function syncLiveProductsFromMasterSheet() {
+    if (!state.webhookUrl) return;
+    try {
+        const res = await fetch(state.webhookUrl + "?action=getProducts", { method: "GET", mode: "cors" });
+        const liveProducts = await res.json();
+        if (!Array.isArray(liveProducts)) return;
+        let added = 0;
+        const existingByCode = new Set((typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).map(d => String(d.code).toUpperCase()));
+        liveProducts.forEach(item => {
+            const sku = String(item.sku || "").trim();
+            if (!sku) return;
+            const existing = (typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).find(d => String(d.code).toUpperCase() === sku.toUpperCase());
+            if (existing) {
+                if (item.price) existing.price = Number(item.price) || existing.price;
+                if (item.driveId) existing.driveId = String(item.driveId).trim();
+            } else if (typeof REAL_DOCUMENTS_DATABASE !== "undefined") {
+                const rawName = String(item.name || sku).trim();
+                const baseName = rawName.replace(/\.(docx?|pdf|xlsx?|pptx?|txt)$/i, "").replace(/^Đề Cương\s*/i, "").trim();
+                const newDoc = {
+                    id: "doc_live_" + sku.toLowerCase(),
+                    code: sku,
+                    rawName: rawName,
+                    baseName: baseName,
+                    category: "kinh_te",
+                    icon: "📚",
+                    pages: 45,
+                    price: Number(item.price) || 50000,
+                    originalPrice: 100000,
+                    rating: "4.9",
+                    reviewsCount: 68,
+                    tags: ["Chuẩn Đề Thi 2026", "Có Đáp Án Chi Tiết", "File Google Drive"],
+                    isReal: true,
+                    driveId: String(item.driveId || "").trim()
+                };
+                REAL_DOCUMENTS_DATABASE.unshift(newDoc);
+                if (typeof DOCUMENTS_DATABASE !== "undefined") DOCUMENTS_DATABASE.unshift(newDoc);
+                existingByCode.add(sku.toUpperCase());
+                added++;
+            }
+        });
+        if (added > 0) renderDocuments();
+    } catch (e) {}
+}
+
+
+/* ==========================================================================
+   9. ĐỒNG BỘ TÀI KHOẢN KHÁCH HÀNG WEB (DIEPVIEN.STORE) <-> APP (ĐIỆP VIÊN STUDY)
+      & ĐỐI SOÁT BẮT BUỘC TỪ EMAIL BIẾN ĐỘNG SỐ DƯ NGÂN HÀNG
+   ========================================================================== */
+
+function getSyncedCustomerLocal() {
+    try {
+        return JSON.parse(localStorage.getItem("dvtl_synced_customer") || "null");
+    } catch (e) {
+        return null;
+    }
+}
+
+function applySyncedCustomerToForms() {
+    const cust = getSyncedCustomerLocal();
+    const lbl = document.getElementById("headerAccountSyncLabel");
+    if (cust && cust.email) {
+        if (lbl) lbl.textContent = (cust.name || cust.email) + " · Đã Đồng Bộ App";
+        const ids = [
+            ["checkoutNameInput", cust.name],
+            ["checkoutPhoneInput", cust.phone],
+            ["checkoutEmailInput", cust.email],
+            ["courseStudentName", cust.name],
+            ["courseStudentPhone", cust.phone],
+            ["courseStudentEmail", cust.email],
+            ["srvNameInput", cust.name],
+            ["srvPhoneInput", cust.phone],
+            ["srvEmailInput", cust.email]
+        ];
+        ids.forEach(([id, val]) => {
+            const el = document.getElementById(id);
+            if (el && val && !el.value) el.value = val;
+        });
+    } else if (lbl) {
+        lbl.textContent = "Đăng Nhập · Đồng Bộ App";
+    }
+}
+
+function openCustomerSyncModal() {
+    const modal = document.getElementById("customerSyncModal");
+    if (!modal) return;
+    const cust = getSyncedCustomerLocal();
+    if (cust) {
+        document.getElementById("syncCustEmailInput").value = cust.email || "";
+        document.getElementById("syncCustNameInput").value = cust.name || "";
+        document.getElementById("syncCustPhoneInput").value = cust.phone || "";
+        renderSyncedCustomerEntitlements(cust);
+    }
+    modal.classList.remove("hidden");
+}
+
+function closeCustomerSyncModal() {
+    const modal = document.getElementById("customerSyncModal");
+    if (modal) modal.classList.add("hidden");
+}
+
+function renderSyncedCustomerEntitlements(cust) {
+    const box = document.getElementById("syncCustomerEntitlementsBox");
+    const list = document.getElementById("syncCustomerItemsList");
+    if (!box || !list) return;
+    box.classList.remove("hidden");
+    const courses = cust.unlockedCourses || [];
+    const docs = cust.purchasedDocs || [];
+    const btls = cust.btlOrders || [];
+    if (courses.length === 0 && docs.length === 0 && btls.length === 0) {
+        list.innerHTML = `<div class="p-3 bg-slate-50 rounded-xl text-slate-500 text-center">Chưa có khóa học hoặc đề cương nào ở trạng thái PAID_SUCCESS (Xác thực biến động số dư ngân hàng).</div>`;
+        return;
+    }
+    let html = "";
+    courses.forEach(c => {
+        html += `<div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex justify-between items-center">
+            <div><strong class="text-emerald-900">🎓 Khóa học: ${c}</strong><div class="text-[10px] text-emerald-700">Đã mở khóa trên App Điệp Viên Study & Google Drive</div></div>
+            <span class="px-2 py-0.5 bg-emerald-600 text-white font-black text-[10px] rounded">ĐÃ MỞ KHÓA</span>
+        </div>`;
+    });
+    docs.forEach(d => {
+        html += `<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl flex justify-between items-center">
+            <div><strong class="text-[#0D1677]">📚 ${d.title || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
+            ${d.driveUrl ? `<a href="${d.driveUrl}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-bold text-[10px] rounded-lg">Mở Drive</a>` : `<span class="text-emerald-700 font-bold text-[10px]">PAID_SUCCESS</span>`}
+        </div>`;
+    });
+    list.innerHTML = html;
+}
+
+async function submitCustomerSyncWeb() {
+    const email = document.getElementById("syncCustEmailInput")?.value.trim().toLowerCase() || "";
+    const name = document.getElementById("syncCustNameInput")?.value.trim() || "";
+    const phone = document.getElementById("syncCustPhoneInput")?.value.trim() || "";
+    const password = document.getElementById("syncCustPassInput")?.value.trim() || "";
+    const msgEl = document.getElementById("syncCustomerStatusMsg");
+
+    if (!email || !email.includes("@")) {
+        alert("⚠️ Vui lòng nhập đúng địa chỉ Email Gmail của bạn!");
+        return;
+    }
+    if (msgEl) {
+        msgEl.classList.remove("hidden");
+        msgEl.textContent = "⏳ Đang đồng bộ dữ liệu tài khoản với Trạm Điều Khiển & App Điệp Viên Study...";
+    }
+
+    let syncedProfile = {
+        email,
+        name: name || "Học viên Điệp Viên",
+        phone,
+        unlockedCourses: [],
+        purchasedDocs: [],
+        btlOrders: []
+    };
+
+    if (state.webhookUrl) {
+        try {
+            await fetch(state.webhookUrl, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    action: "registerOrLoginCustomer",
+                    email,
+                    name,
+                    phone,
+                    password,
+                    source: "WEB_DIEPVIEN_STORE"
+                })
+            });
+            const res = await fetch(state.webhookUrl + "?action=getCustomerSync&email=" + encodeURIComponent(email), { method: "GET", mode: "cors" });
+            const data = await res.json();
+            if (data && data.ok && data.customer) {
+                syncedProfile = {
+                    ...syncedProfile,
+                    ...data.customer,
+                    name: data.customer.name || name || syncedProfile.name,
+                    phone: data.customer.phone || phone || syncedProfile.phone
+                };
+            }
+        } catch (e) {}
+    }
+
+    localStorage.setItem("dvtl_synced_customer", JSON.stringify(syncedProfile));
+    applySyncedCustomerToForms();
+    renderSyncedCustomerEntitlements(syncedProfile);
+    if (msgEl) {
+        msgEl.textContent = "✓ Đã đồng bộ thành công! Bạn có thể dùng Gmail này để đăng nhập trên App Điệp Viên Study.";
+    }
+}
+
+function logoutCustomerSyncWeb() {
+    localStorage.removeItem("dvtl_synced_customer");
+    applySyncedCustomerToForms();
+    const box = document.getElementById("syncCustomerEntitlementsBox");
+    if (box) box.classList.add("hidden");
+    const msgEl = document.getElementById("syncCustomerStatusMsg");
+    if (msgEl) {
+        msgEl.classList.remove("hidden");
+        msgEl.textContent = "Đã đăng xuất tài khoản đồng bộ.";
+    }
+}
+
+async function verifyCourseBankPaymentNow() {
+    if (!selectedCourseForCheckout) return;
+    const noteEl = document.getElementById("courseTransferNote");
+    const orderCode = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
+    const email = document.getElementById("courseStudentEmail")?.value.trim() || "";
+    const statusText = document.getElementById("courseWaitingStatusText");
+    if (statusText) statusText.textContent = "Đang đối soát Email biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+    if (!state.webhookUrl || !orderCode) return;
+    try {
+        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const data = await res.json();
+        if (data && data.verified === true) {
+            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email);
+        } else if (statusText) {
+            statusText.textContent = "Chưa nhận được Email biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng hoàn tất chuyển khoản!";
+        }
+    } catch (e) {
+        if (statusText) {
+            statusText.textContent = "Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Hệ thống đang tiếp tục quét tự động...";
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(applySyncedCustomerToForms, 250);
+});

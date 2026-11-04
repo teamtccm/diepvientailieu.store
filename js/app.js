@@ -560,8 +560,30 @@ function filterDocuments() {
             }
         }
     } else {
-        // No search query: display showcase as user specified
-        list = [...DOCUMENTS_DATABASE];
+        // No search query: display all real outlines from REAL_DOCUMENTS_DATABASE + showcase items (deduplicated)
+        const combined = [];
+        const seenKeys = new Set();
+        const addUniqueDoc = (d) => {
+            if (!d) return;
+            const skuU = String(d.code || "").trim().toUpperCase();
+            if (skuU.startsWith("COURSE-") || skuU === "ALL-COURSES-399K" || /^DC_\d{4}$/.test(skuU)) return;
+            const normTitle = removeVietnameseTones(d.baseName || "").replace(/\b(de|cuong|mon|hoc|phan|on|tap)\b/g, "").replace(/\s+/g, " ").trim();
+            const key = (d.driveId ? "ID:" + d.driveId : "") || normTitle || skuU;
+            if (normTitle && seenKeys.has(normTitle)) return;
+            if (key && seenKeys.has(key)) return;
+            if (normTitle) seenKeys.add(normTitle);
+            if (key) seenKeys.add(key);
+            combined.push(d);
+        };
+        if (typeof REAL_DOCUMENTS_DATABASE !== "undefined") {
+            // Put newly synced live outlines (doc_live_*) first, then all real outlines
+            REAL_DOCUMENTS_DATABASE.filter(d => String(d.id || "").startsWith("doc_live_")).forEach(addUniqueDoc);
+            REAL_DOCUMENTS_DATABASE.forEach(addUniqueDoc);
+        }
+        if (typeof DOCUMENTS_DATABASE !== "undefined") {
+            DOCUMENTS_DATABASE.forEach(addUniqueDoc);
+        }
+        list = combined;
         if (state.selectedUniversity && state.selectedUniversity !== 'all') {
             const selectedUni = UNIVERSITIES.find(u => u.id === state.selectedUniversity);
             if (selectedUni && typeof getUniAllowedDisciplines === 'function') {
@@ -633,7 +655,8 @@ function renderDocuments() {
         const docUniHasLogo = docUniInfo && UNIVERSITIES_WITH_LOGOS.has(docUniInfo.id);
         const docUniLogo = docUniInfo ? `images/logos/${docUniInfo.id}.png` : 'images/favicon_badge.png';
 
-        const fullDocTitle = `ĐỀ CƯƠNG ${doc.baseName.toUpperCase()} — ${docUniBadge}`;
+        const cleanDocBaseUpper = String(doc.baseName || "").replace(/^(bộ\s+)?đề\s+cương\s+/i, "").trim().toUpperCase();
+        const fullDocTitle = `ĐỀ CƯƠNG ${cleanDocBaseUpper} — ${docUniBadge}`;
         const iconSymbol = doc.icon || "📚";
         const mascotBadge = "images/favicon_badge.png";
         const discountPercent = (doc.originalPrice && doc.originalPrice > doc.price) 
@@ -759,9 +782,29 @@ function setDocCategory(cat) {
    ========================================================================== */
 
 function openDocCheckoutModal(docId, customTitle = null) {
-    const doc = (typeof REAL_DOCUMENTS_DATABASE !== 'undefined' ? REAL_DOCUMENTS_DATABASE.find(d => d.id === docId) : null)
-             || DOCUMENTS_DATABASE.find(d => d.id === docId);
+    let doc = (typeof REAL_DOCUMENTS_DATABASE !== 'undefined' ? REAL_DOCUMENTS_DATABASE.find(d => d.id === docId) : null)
+           || DOCUMENTS_DATABASE.find(d => d.id === docId);
     if (!doc) return;
+
+    if (!doc.driveId && typeof REAL_DOCUMENTS_DATABASE !== 'undefined') {
+        const codeU = String(doc.code || "").trim().toUpperCase();
+        const strippedCode = codeU.replace(/\d+$/, "");
+        const normBase = removeVietnameseTones(doc.baseName || "").replace(/\b(de|cuong|mon|hoc|phan|on|tap|ung|dung|full)\b/g, "").replace(/\s+/g, " ").trim();
+        const matchedReal = REAL_DOCUMENTS_DATABASE.find(r => {
+            const rCode = String(r.code || "").trim().toUpperCase();
+            const rNorm = removeVietnameseTones(r.baseName || "").replace(/\b(de|cuong|mon|hoc|phan|on|tap)\b/g, "").replace(/\s+/g, " ").trim();
+            return rCode === codeU || (strippedCode.length >= 2 && rCode === strippedCode) || (normBase.length >= 4 && (rNorm.includes(normBase) || normBase.includes(rNorm)));
+        });
+        if (matchedReal) {
+            doc = {
+                ...doc,
+                code: matchedReal.code,
+                driveId: matchedReal.driveId,
+                driveType: matchedReal.driveType || "file",
+                isReal: true
+            };
+        }
+    }
     
     let uniInfo = null;
     const docDisc = typeof getDocDiscipline === 'function' ? getDocDiscipline(doc) : "DAI_CUONG";
@@ -935,7 +978,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     document.getElementById("docSuccessEmail").textContent = email;
 
     const driveBtn = document.getElementById("docSuccessDriveBtn");
-    const fallbackUrl = driveUrl || (state.selectedDoc?.driveId ? `https://drive.google.com/file/d/${state.selectedDoc.driveId}/view` : "");
+    const fallbackUrl = driveUrl || (state.selectedDoc?.driveId ? (state.selectedDoc?.driveType === "folder" ? `https://drive.google.com/drive/folders/${state.selectedDoc.driveId}` : `https://drive.google.com/file/d/${state.selectedDoc.driveId}/view`) : "");
     if (driveBtn) {
         if (fallbackUrl) {
             driveBtn.href = fallbackUrl;
@@ -1631,47 +1674,95 @@ function backToCourseStep1() {
 }
 
 
+function mapDisciplineToCategoryAndIcon(rawName) {
+    const disc = typeof getDocDiscipline === "function" ? getDocDiscipline({ baseName: rawName, rawName: rawName }) : "DAI_CUONG";
+    switch (disc) {
+        case "DAI_CUONG": return { category: "Các Môn Đại Cương", icon: "🧠" };
+        case "TAI_CHINH": return { category: "Tài Chính - Ngân Hàng", icon: "💰" };
+        case "QUAN_TRI":  return { category: "Marketing & Quản Trị", icon: "📊" };
+        case "CONG_NGHE": return { category: "Công Nghệ & Kỹ Thuật", icon: "💻" };
+        case "LUAT":
+        case "SU_PHAM":
+        case "NGOAI_NGU":
+        case "DU_LICH":
+        default:          return { category: "Luật & Xã Hội", icon: "⚖️" };
+    }
+}
+
 async function syncLiveProductsFromMasterSheet() {
     if (!state.webhookUrl) return;
     try {
         const res = await fetch(state.webhookUrl + "?action=getProducts", { method: "GET", mode: "cors" });
         const liveProducts = await res.json();
         if (!Array.isArray(liveProducts)) return;
-        let added = 0;
-        const existingByCode = new Set((typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).map(d => String(d.code).toUpperCase()));
-        liveProducts.forEach(item => {
+        let changed = 0;
+
+        liveProducts.forEach((item, idx) => {
             const sku = String(item.sku || "").trim();
-            if (!sku) return;
-            const existing = (typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).find(d => String(d.code).toUpperCase() === sku.toUpperCase());
+            const rawName = String(item.name || "").trim();
+            if (!sku || !rawName) return;
+            const skuUpper = sku.toUpperCase();
+            // Bỏ qua các dòng Khóa học hoặc file hệ thống
+            if (skuUpper.startsWith("COURSE-") || skuUpper === "ALL-COURSES-399K" || /^DC_\d{4}$/.test(skuUpper)) return;
+            if (/\.(txt|json)$/i.test(rawName) || rawName.includes("Danh Sách Đề Cương Kiểm Tra")) return;
+
+            const driveId = String(item.driveId || "").trim();
+            const driveType = item.driveType === "folder" ? "folder" : "file";
+            const normItem = removeVietnameseTones(rawName).replace(/\b(bo|de|cuong|mon|hoc|phan|on|tap|docx|pdf)\b/g, "").replace(/\s+/g, " ").trim();
+
+            const existing = (typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).find(d => {
+                if (driveId && d.driveId && String(d.driveId).trim() === driveId) return true;
+                if (String(d.code || "").trim().toUpperCase() === skuUpper) return true;
+                const normD = removeVietnameseTones(d.baseName || d.rawName || "").replace(/\b(bo|de|cuong|mon|hoc|phan|on|tap|docx|pdf)\b/g, "").replace(/\s+/g, " ").trim();
+                return normItem.length >= 4 && normD === normItem;
+            });
+
             if (existing) {
                 if (item.price) existing.price = Number(item.price) || existing.price;
-                if (item.driveId) existing.driveId = String(item.driveId).trim();
+                if (driveId && existing.driveId !== driveId) {
+                    existing.driveId = driveId;
+                    changed++;
+                }
+                existing.driveType = driveType;
+                existing.isReal = true;
             } else if (typeof REAL_DOCUMENTS_DATABASE !== "undefined") {
-                const rawName = String(item.name || sku).trim();
-                const baseName = rawName.replace(/\.(docx?|pdf|xlsx?|pptx?|txt)$/i, "").replace(/^Đề Cương\s*/i, "").trim();
+                let cleanBase = rawName.replace(/\.(docx?|pdf|xlsx?|pptx?|txt)$/i, "").trim();
+                if (!/^(bộ\s+)?đề\s+cương/i.test(cleanBase)) {
+                    cleanBase = "Đề Cương " + cleanBase;
+                }
+                const catInfo = mapDisciplineToCategoryAndIcon(cleanBase);
                 const newDoc = {
-                    id: "doc_live_" + sku.toLowerCase(),
+                    id: "doc_live_" + sku.toLowerCase().replace(/[^a-z0-9]/g, "_"),
                     code: sku,
                     rawName: rawName,
-                    baseName: baseName,
-                    category: "kinh_te",
-                    icon: "📚",
-                    pages: 45,
+                    baseName: cleanBase,
+                    category: catInfo.category,
+                    icon: catInfo.icon,
+                    gradient: "from-blue-900 via-indigo-950 to-[#0A143D]",
+                    accentColor: "text-amber-300",
+                    pages: 42,
                     price: Number(item.price) || 50000,
-                    originalPrice: 100000,
-                    rating: "4.9",
-                    reviewsCount: 68,
-                    tags: ["Chuẩn Đề Thi 2026", "Có Đáp Án Chi Tiết", "File Google Drive"],
+                    originalPrice: 120000,
+                    rating: 5.0,
+                    reviewsCount: 128,
+                    downloads: "1.8k+",
+                    badge: "Mới Cập Nhật",
+                    tags: ["Trọng Tâm Ôn Thi", "Bài Tập & Lời Giải", "Chuẩn Bản Quyền"],
+                    description: "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
                     isReal: true,
-                    driveId: String(item.driveId || "").trim()
+                    driveId: driveId,
+                    driveType: driveType,
+                    university: "neu"
                 };
                 REAL_DOCUMENTS_DATABASE.unshift(newDoc);
-                if (typeof DOCUMENTS_DATABASE !== "undefined") DOCUMENTS_DATABASE.unshift(newDoc);
-                existingByCode.add(sku.toUpperCase());
-                added++;
+                if (typeof DOCUMENTS_DATABASE !== "undefined") {
+                    DOCUMENTS_DATABASE.unshift(newDoc);
+                }
+                changed++;
             }
         });
-        if (added > 0) renderDocuments();
+
+        renderDocuments();
     } catch (e) {}
 }
 

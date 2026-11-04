@@ -4937,6 +4937,33 @@ const REAL_DOCUMENTS_DATABASE = [
         "driveType": "file"
     },
     {
+        "id": "REAL-DOC-124",
+        "code": "CTTTVGPGDHNTKTDVTL",
+        "baseName": "Đề Cương Chi Tiết - Thực Trạng và Giải Pháp Giáo Dục Hòa Nhập Trẻ Khuyết Tật (Điệp Viên Tài Liệu)",
+        "rawName": "Đề Cương Chi Tiết - Thực Trạng và Giải Pháp Giáo Dục Hòa Nhập Trẻ Khuyết Tật (Điệp Viên Tài Liệu)",
+        "category": "Luật & Xã Hội",
+        "icon": "⚖️",
+        "gradient": "from-blue-900 via-indigo-950 to-[#0A143D]",
+        "accentColor": "text-amber-300",
+        "pages": 56,
+        "rating": 4.9,
+        "reviewsCount": 268,
+        "downloads": "2.3k+",
+        "price": 50000,
+        "originalPrice": 120000,
+        "badge": "Chuẩn Đề Thi",
+        "tags": [
+            "Trọng Tâm Ôn Thi",
+            "Bài Tập & Lời Giải",
+            "Chuẩn Bản Quyền"
+        ],
+        "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
+        "driveId": "1TYKSUyPM1heBY7SE8x94hLFfh1H9cx3StkuVKI1buOo",
+        "driveType": "file",
+        "isReal": true,
+        "university": "ueh"
+    },
+    {
         "id": "REAL-DOC-038",
         "code": "CTH",
         "baseName": "Đề Cương Chính Trị Học",
@@ -5043,6 +5070,33 @@ const REAL_DOCUMENTS_DATABASE = [
         "isReal": true,
         "university": "vanlang",
         "driveType": "file"
+    },
+    {
+        "id": "REAL-DOC-129",
+        "code": "DCCTGDHNTKT",
+        "baseName": "Đề Cương Giáo Dục Hòa Nhập Trẻ Khuyết Tật",
+        "rawName": "Đề Cương Giáo Dục Hòa Nhập Trẻ Khuyết Tật.docx",
+        "category": "Luật & Xã Hội",
+        "icon": "⚖️",
+        "gradient": "from-blue-900 via-indigo-950 to-[#0A143D]",
+        "accentColor": "text-amber-300",
+        "pages": 36,
+        "rating": 4.9,
+        "reviewsCount": 123,
+        "downloads": "1.0k+",
+        "price": 50000,
+        "originalPrice": 120000,
+        "badge": "Chuẩn Đề Thi",
+        "tags": [
+            "Trọng Tâm Ôn Thi",
+            "Bài Tập & Lời Giải",
+            "Chuẩn Bản Quyền"
+        ],
+        "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
+        "driveId": "1mspH30vrH5KZ7EnUHZI8Tn99RZN6KFU3",
+        "driveType": "file",
+        "isReal": true,
+        "university": "apd"
     },
     {
         "id": "REAL-DOC-128",

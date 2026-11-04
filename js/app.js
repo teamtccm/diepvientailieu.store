@@ -918,14 +918,14 @@ async function checkDocPaymentStatus(orderCode, email) {
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
         const data = await res.json();
         if (data && data.verified === true) {
-            onDocPaymentConfirmed(orderCode, email);
+            onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
         }
     } catch(e) {
         // Silently retry on next interval
     }
 }
 
-function onDocPaymentConfirmed(orderCode, email) {
+function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
     
     // Switch to Step 3 (Success)
@@ -933,6 +933,17 @@ function onDocPaymentConfirmed(orderCode, email) {
     document.getElementById("docCheckoutStep3").classList.remove("hidden");
     document.getElementById("docSuccessOrderId").textContent = orderCode;
     document.getElementById("docSuccessEmail").textContent = email;
+
+    const driveBtn = document.getElementById("docSuccessDriveBtn");
+    const fallbackUrl = driveUrl || (state.selectedDoc?.driveId ? `https://drive.google.com/file/d/${state.selectedDoc.driveId}/view` : "");
+    if (driveBtn) {
+        if (fallbackUrl) {
+            driveBtn.href = fallbackUrl;
+            driveBtn.classList.remove("hidden");
+        } else {
+            driveBtn.classList.add("hidden");
+        }
+    }
 }
 
 async function confirmDocManualPayment() {
@@ -949,7 +960,7 @@ async function confirmDocManualPayment() {
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
         const data = await res.json();
         if (data && data.verified === true) {
-            onDocPaymentConfirmed(orderCode, email);
+            onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
         } else if (fbEl) {
             fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
         }

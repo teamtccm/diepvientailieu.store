@@ -1,3 +1,35 @@
+
+function getSemanticSvgIconJs(iconKey) {
+    const k = String(iconKey || "").trim();
+    const map = {
+        "🧠": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
+        "brain": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
+        "💰": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
+        "coin": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
+        "📊": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "📈": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "chart": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "💻": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
+        "laptop": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
+        "⚖️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "⚖": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "scale": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "🎓": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
+        "grad": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
+        "🏛️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "🏛": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "uni": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "⚡": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+        "bolt": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+        "🎯": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
+        "target": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
+        "✍️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+        "📝": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+        "pen": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`
+    };
+    return map[k] || `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg>`;
+}
+
 /**
 
  * APP LOGIC FOR ĐIỆP VIÊN TÀI LIỆU WEB APPLICATION (HOT SEARCH & HIGH-END VISUAL DESIGN)
@@ -282,7 +314,7 @@ function renderHotSearches(list) {
 
                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-[#FFA000] hover:text-slate-950 dark:bg-white/10 dark:hover:bg-amber-400 dark:hover:text-slate-950 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl border border-slate-200 dark:border-white/10 transition-all shadow-sm hover:shadow active:scale-95 text-left cursor-pointer">
 
-                <span class="${isTop3 ? 'text-red-500 font-black' : 'text-amber-500'} group-hover:text-slate-950 transition-colors">🔥</span>
+                <span class="${isTop3 ? 'text-red-500 font-black' : 'text-amber-500'} group-hover:text-slate-950 transition-colors"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
 
                 <span>${kw}</span>
 
@@ -782,7 +814,7 @@ function updateUniDisplay() {
 
     if (!state.selectedUniversity) {
 
-        displayContent.innerHTML = `<span class="text-slate-400 font-medium">🏫 Chọn Trường Của Bạn</span>`;
+        displayContent.innerHTML = `<span class="text-slate-400 font-medium"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg> Chọn Trường Của Bạn</span>`;
 
         if (clearBtn) clearBtn.classList.add("hidden");
 
@@ -824,7 +856,7 @@ function updateUniDisplay() {
 
         } else {
 
-            displayContent.innerHTML = `<span class="text-slate-400 font-medium">🏫 Chọn Trường Của Bạn</span>`;
+            displayContent.innerHTML = `<span class="text-slate-400 font-medium"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg> Chọn Trường Của Bạn</span>`;
 
             if (clearBtn) clearBtn.classList.add("hidden");
 
@@ -1244,7 +1276,7 @@ function renderDocuments() {
 
             <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
 
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4">🔍</div>
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
 
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy đề cương "${state.searchQuery || 'này'}"</h3>
 
@@ -1256,7 +1288,7 @@ function renderDocuments() {
 
                 <button onclick="openChatModal()" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
 
-                    <span>💬 Nhắn Zalo Đặt Lấy Đề Cương Ngay</span>
+                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Nhắn Zalo Đặt Lấy Đề Cương Ngay</span>
 
                 </button>
 
@@ -1316,7 +1348,7 @@ function renderDocuments() {
 
         const fullDocTitle = `ĐỀ CƯƠNG ${cleanDocBaseUpper} — ${docUniBadge}`;
 
-        const iconSymbol = doc.icon || "📚";
+        const iconSymbol = getSemanticSvgIconJs(doc.icon);
 
         const mascotBadge = "images/favicon_badge.png";
 
@@ -1408,7 +1440,7 @@ function renderDocuments() {
 
                             <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
 
-                            ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto">⚡ CÓ SẴN FILE DRIVE</span>' : ''}
+                            ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> CÓ SẴN FILE DRIVE</span>' : ''}
 
                         </div>
 
@@ -1420,11 +1452,11 @@ function renderDocuments() {
 
                         <div class="flex items-center gap-2.5 mt-2.5 text-[10px]">
 
-                            <span class="text-amber-300 font-bold">📄 ${doc.pages} Trang A4</span>
+                            <span class="text-amber-300 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg> ${doc.pages} Trang A4</span>
 
-                            <span class="text-emerald-300 font-bold">⭐ ${doc.rating} (${doc.reviewsCount})</span>
+                            <span class="text-emerald-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-1px]" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${doc.rating} (${doc.reviewsCount})</span>
 
-                            <span class="text-sky-200 font-bold">⚡ Google Drive</span>
+                            <span class="text-sky-200 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Google Drive</span>
 
                         </div>
 
@@ -1500,13 +1532,13 @@ function renderDocuments() {
 
                             <button onclick="window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2.5 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
 
-                                <span>💬 Hỏi Shop</span>
+                                <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Hỏi Shop</span>
 
                             </button>
 
                             <button onclick="openDocCheckoutModal('${doc.id}', this.dataset.title)" data-title="${fullDocTitle.replace(/'/g, '&#39;').replace(/"/g, '&quot;')}" class="px-3 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
 
-                                <span>🛒 Mua Ngay</span>
+                                <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg> Mua Ngay</span>
 
                             </button>
 
@@ -1802,7 +1834,7 @@ function goToDocPaymentStep(e) {
 
     if (!name || !phone || !email) {
 
-        alert("⚠️ Vui lòng điền đầy đủ Họ tên, Số điện thoại và Email Gmail!");
+        alert("️ Vui lòng điền đầy đủ Họ tên, Số điện thoại và Email Gmail!");
 
         return;
 
@@ -1812,7 +1844,7 @@ function goToDocPaymentStep(e) {
 
     if (!email.includes("@")) {
 
-        alert("⚠️ Vui lòng nhập địa chỉ Email chính xác để nhận link Google Drive!");
+        alert("️ Vui lòng nhập địa chỉ Email chính xác để nhận link Google Drive!");
 
         return;
 
@@ -2012,7 +2044,7 @@ async function confirmDocManualPayment() {
 
         } else if (fbEl) {
 
-            fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
+            fbEl.textContent = "️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
 
         }
 
@@ -2020,7 +2052,7 @@ async function confirmDocManualPayment() {
 
         if (fbEl) {
 
-            fbEl.textContent = "⚠️ Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
+            fbEl.textContent = "️ Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
 
         }
 
@@ -2214,7 +2246,7 @@ async function submitServiceOrder(e) {
 
     if (!name || !phone || !email || !deadline || !topic) {
 
-        alert("⚠️ Vui lòng điền đầy đủ các thông tin bắt buộc và hạn nộp (Deadline)!");
+        alert("️ Vui lòng điền đầy đủ các thông tin bắt buộc và hạn nộp (Deadline)!");
 
         return;
 
@@ -2226,7 +2258,7 @@ async function submitServiceOrder(e) {
 
     if (privacyCheckbox && !privacyCheckbox.checked) {
 
-        alert("⚠️ Bạn cần tích xác nhận thông tin chính xác và đồng ý điều khoản trước khi gửi yêu cầu đặt bài!");
+        alert("️ Bạn cần tích xác nhận thông tin chính xác và đồng ý điều khoản trước khi gửi yêu cầu đặt bài!");
 
         privacyCheckbox.focus();
 
@@ -2580,13 +2612,13 @@ function openSuccessModal(type, orderData) {
 
     if (type === "DOC") {
 
-        if (title) title.textContent = "🎉 Gửi Đơn Thành Công!";
+        if (title) title.textContent = "Gửi Đơn Thành Công!";
 
         if (desc) desc.textContent = "Hệ thống đã ghi nhận mã đơn của bạn và phân quyền Google Drive vào Gmail!";
 
     } else {
 
-        if (title) title.textContent = "🎉 Đã Ghi Nhận Đơn Hàng!";
+        if (title) title.textContent = "Đã Ghi Nhận Đơn Hàng!";
 
         if (desc) desc.textContent = "Hồ sơ đề bài của bạn đã được chuyển tới Nhân viên học thuật. Nhân viên sẽ liên hệ Zalo & gửi email xác nhận trong vòng 15-30 phút!";
 
@@ -2630,7 +2662,7 @@ function copyToClipboard(text, elemId = null) {
 
                 const oldText = el.textContent;
 
-                el.textContent = "✓ Đã copy!";
+                el.textContent = "Đã copy!";
 
                 setTimeout(() => el.textContent = oldText, 2000);
 
@@ -2638,7 +2670,7 @@ function copyToClipboard(text, elemId = null) {
 
         } else {
 
-            alert("✓ Đã sao chép: " + text);
+            alert("Đã sao chép: " + text);
 
         }
 
@@ -2682,7 +2714,7 @@ function saveSettings() {
 
         localStorage.setItem("dvtl_webhook_url", state.webhookUrl);
 
-        alert("✓ Đã lưu cấu hình Google Apps Script Webhook!");
+        alert("Đã lưu cấu hình Google Apps Script Webhook!");
 
         closeSettingsModal();
 
@@ -3181,7 +3213,7 @@ function renderCourses() {
 
             <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
 
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4">🔍</div>
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
 
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp từ khóa này</h3>
 
@@ -3193,7 +3225,7 @@ function renderCourses() {
 
                 <button onclick="filterCoursesByCategory('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
 
-                    <span>🔄 Xem Toàn Bộ 50 Khóa Học</span>
+                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg> Xem Toàn Bộ 50 Khóa Học</span>
 
                 </button>
 
@@ -3493,7 +3525,7 @@ function goToCoursePaymentStep() {
 
     if (!name || !rawPhone || !email) {
 
-        alert("⚠️ Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
+        alert("️ Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
 
         return;
 
@@ -3503,7 +3535,7 @@ function goToCoursePaymentStep() {
 
     if (!email.includes("@")) {
 
-        alert("⚠️ Vui lòng nhập địa chỉ Email chính xác!");
+        alert("️ Vui lòng nhập địa chỉ Email chính xác!");
 
         return;
 
@@ -3513,7 +3545,7 @@ function goToCoursePaymentStep() {
 
     if (!selectedCourseForCheckout) {
 
-        alert("⚠️ Không tìm thấy thông tin khóa học!");
+        alert("️ Không tìm thấy thông tin khóa học!");
 
         return;
 
@@ -3813,13 +3845,13 @@ function mapDisciplineToCategoryAndIcon(rawName) {
 
     switch (disc) {
 
-        case "DAI_CUONG": return { category: "Các Môn Đại Cương", icon: "🧠" };
+        case "DAI_CUONG": return { category: "Các Môn Đại Cương", icon: "brain" };
 
-        case "TAI_CHINH": return { category: "Tài Chính - Ngân Hàng", icon: "💰" };
+        case "TAI_CHINH": return { category: "Tài Chính - Ngân Hàng", icon: "coin" };
 
-        case "QUAN_TRI":  return { category: "Marketing & Quản Trị", icon: "📊" };
+        case "QUAN_TRI":  return { category: "Marketing & Quản Trị", icon: "chart" };
 
-        case "CONG_NGHE": return { category: "Công Nghệ & Kỹ Thuật", icon: "💻" };
+        case "CONG_NGHE": return { category: "Công Nghệ & Kỹ Thuật", icon: "laptop" };
 
         case "LUAT":
 
@@ -3829,7 +3861,7 @@ function mapDisciplineToCategoryAndIcon(rawName) {
 
         case "DU_LICH":
 
-        default:          return { category: "Luật & Xã Hội", icon: "⚖️" };
+        default:          return { category: "Luật & Xã Hội", icon: "scale" };
 
     }
 
@@ -4135,7 +4167,7 @@ function renderSyncedCustomerEntitlements(cust) {
 
         html += `<div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex justify-between items-center">
 
-            <div><strong class="text-emerald-900">🎓 Khóa học: ${c}</strong><div class="text-[10px] text-emerald-700">Đã mở khóa trên App Điệp Viên Study & Google Drive</div></div>
+            <div><strong class="text-emerald-900"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg> Khóa học: ${c}</strong><div class="text-[10px] text-emerald-700">Đã mở khóa trên App Điệp Viên Study & Google Drive</div></div>
 
             <span class="px-2 py-0.5 bg-emerald-600 text-white font-black text-[10px] rounded">ĐÃ MỞ KHÓA</span>
 
@@ -4147,7 +4179,7 @@ function renderSyncedCustomerEntitlements(cust) {
 
         html += `<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl flex justify-between items-center">
 
-            <div><strong class="text-[#0D1677]">📚 ${d.title || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
+            <div><strong class="text-[#0D1677]"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> ${d.title || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
 
             ${d.driveUrl ? `<a href="${d.driveUrl}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-bold text-[10px] rounded-lg">Mở Drive</a>` : `<span class="text-emerald-700 font-bold text-[10px]">PAID_SUCCESS</span>`}
 
@@ -4162,760 +4194,324 @@ function renderSyncedCustomerEntitlements(cust) {
 
 
 async function submitCustomerSyncWeb() {
-
     const email = document.getElementById("syncCustEmailInput")?.value.trim().toLowerCase() || "";
-
     const name = document.getElementById("syncCustNameInput")?.value.trim() || "";
-
     const phone = (document.getElementById("syncCustPhoneInput")?.value.trim() || "").replace(/\[.*\]/g, "").trim();
-
     const password = document.getElementById("syncCustPassInput")?.value.trim() || "";
-
     const msgEl = document.getElementById("syncCustomerStatusMsg");
 
-
-
-    if (!email || !email.includes("@")) {
-
-        alert("⚠️ Vui lòng nhập đúng địa chỉ Email Gmail của bạn!");
-
+    if (!name || name.length < 2) {
+        alert("Vui lòng nhập Tên đăng nhập của bạn trước khi đăng nhập!");
+        document.getElementById("syncCustNameInput")?.focus();
         return;
-
     }
-
+    if (!email || !email.includes("@")) {
+        alert("Vui lòng nhập đúng địa chỉ Email của bạn!");
+        document.getElementById("syncCustEmailInput")?.focus();
+        return;
+    }
     const myWebDevId = getWebDeviceId();
-
     if (msgEl) {
-
         msgEl.classList.remove("hidden");
-
-        msgEl.textContent = "⏳ Đang kiểm tra tài khoản & xác thực khóa bảo mật 1 thiết bị...";
-
+        msgEl.textContent = "Đang đồng bộ tài khoản & chuẩn bị tải APP Diep Vien study...";
     }
-
-
 
     let syncedProfile = {
-
         email,
-
-        name: name || "Học viên Điệp Viên",
-
+        name,
         phone,
-
         unlockedCourses: [],
-
         purchasedDocs: [],
-
         btlOrders: []
-
     };
 
-
-
     if (state.webhookUrl) {
-
         try {
-
             const res = await fetch(state.webhookUrl + "?action=getCustomerSync&email=" + encodeURIComponent(email) + "&deviceId=" + encodeURIComponent(myWebDevId), { method: "GET", mode: "cors" });
-
             const data = await res.json();
-
             if (data && data.deviceLocked) {
-
                 if (msgEl) {
-
-                    msgEl.textContent = data.message || "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể đăng nhập trên máy thứ 2!";
-
+                    msgEl.textContent = data.message || "Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể đăng nhập trên máy thứ 2!";
                 }
-
-                alert(data.message || "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể chia sẻ sang máy thứ 2!");
-
+                alert(data.message || "Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể chia sẻ sang máy thứ 2!");
                 return;
-
             }
-
             if (data && data.ok && data.customer) {
-
                 const rawServerPhone = String(data.customer.phone || "");
-
                 const wbMatch = rawServerPhone.match(/\[WB:([A-Za-z0-9\-_]+)\]/);
-
                 const hwMatch = rawServerPhone.match(/\[HW:([A-Za-z0-9\-_]+)\]/);
-
                 if (wbMatch && wbMatch[1] && wbMatch[1] !== myWebDevId) {
-
-                    const lockMsg = `⛔ CẢNH BÁO BẢO MẬT: Tài khoản Email [${email}] đã được khóa cố định trên 1 thiết bị trình duyệt khác (${wbMatch[1]}). Không thể đăng nhập hoặc chia sẻ chung sang máy thứ 2!`;
-
+                    const lockMsg = `CẢNH BÁO BẢO MẬT: Tài khoản Email [${email}] đã được khóa cố định trên 1 thiết bị trình duyệt khác (${wbMatch[1]}). Không thể đăng nhập hoặc chia sẻ chung sang máy thứ 2!`;
                     if (msgEl) msgEl.textContent = lockMsg;
-
                     alert(lockMsg);
-
                     return;
-
                 }
-
                 const cleanPhone = rawServerPhone.replace(/\[.*\]/g, "").trim() || phone;
-
                 const expandedCourses = expandWebUnlockedCourses(data.customer.unlockedCourses || []);
-
                 syncedProfile = {
-
                     ...syncedProfile,
-
                     ...data.customer,
-
-                    name: data.customer.name || name || syncedProfile.name,
-
+                    name: name || data.customer.name || syncedProfile.name,
                     phone: cleanPhone,
-
                     unlockedCourses: expandedCourses
-
                 };
-
-                // Nếu tài khoản có khóa học đã mở mà chưa khóa mã trình duyệt [WB:...], khóa ngay vào thiết bị này!
-
                 if (expandedCourses.length > 0 && !wbMatch) {
-
                     const hwTag = hwMatch ? ` [HW:${hwMatch[1]}]` : "";
-
                     const lockedPhoneStr = `${cleanPhone} [WB:${myWebDevId}]${hwTag}`.trim();
-
                     fetch(state.webhookUrl, {
-
                         method: "POST",
-
                         mode: "no-cors",
-
                         headers: { "Content-Type": "application/json" },
-
                         body: JSON.stringify({
-
                             action: "registerOrLoginCustomer",
-
                             email,
-
                             name: syncedProfile.name,
-
                             phone: lockedPhoneStr,
-
                             password,
-
                             source: "WEB_DEVICE_LOCKED_1_MACHINE"
-
                         })
-
                     }).catch(() => {});
-
                 }
-
             }
-
         } catch (e) {}
-
     }
-
-
 
     localStorage.setItem("dvtl_synced_customer", JSON.stringify(syncedProfile));
-
+    localStorage.setItem("dvtl_app_otp_verified_email", email);
+    localStorage.setItem("dvtl_app_otp_verified_name", syncedProfile.name);
     applySyncedCustomerToForms();
-
+    updateVerifiedAppDownloadUI();
     renderSyncedCustomerEntitlements(syncedProfile);
-
     renderCourses();
 
+    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien study về máy cho khách!
+    startDirectFileDownload("DiepVienStudy_Setup.exe");
+
     if (msgEl) {
-
-        msgEl.textContent = `✓ Đã đồng bộ & khóa bảo mật trên thiết bị (${myWebDevId})! Đã mở ${syncedProfile.unlockedCourses.length} khóa học.`;
-
+        msgEl.innerHTML = `Đã đăng nhập thành công tài khoản <strong>${syncedProfile.name}</strong> (${email}) và đang tự động tải <strong>APP Diep Vien study</strong> về máy! <a href="DiepVienStudy_Setup.exe" download="DiepVienStudy_Setup.exe" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Bấm vào đây nếu trình duyệt chưa tự tải</a>.`;
     }
-
 }
-
-
 
 function logoutCustomerSyncWeb() {
-
     localStorage.removeItem("dvtl_synced_customer");
-
+    localStorage.removeItem("dvtl_app_otp_verified_email");
+    localStorage.removeItem("dvtl_app_otp_verified_name");
     applySyncedCustomerToForms();
-
+    updateVerifiedAppDownloadUI();
     const box = document.getElementById("syncCustomerEntitlementsBox");
-
     if (box) box.classList.add("hidden");
-
     const msgEl = document.getElementById("syncCustomerStatusMsg");
-
     if (msgEl) {
-
         msgEl.classList.remove("hidden");
-
         msgEl.textContent = "Đã đăng xuất tài khoản đồng bộ.";
-
     }
-
 }
-
-
 
 async function verifyCourseBankPaymentNow() {
-
     if (!selectedCourseForCheckout) return;
-
     const noteEl = document.getElementById("courseTransferNote");
-
     const orderCode = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
-
     const email = document.getElementById("courseStudentEmail")?.value.trim() || "";
-
     const statusText = document.getElementById("courseWaitingStatusText");
-
     if (statusText) statusText.textContent = "Đang đối soát Email biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
-
     if (!state.webhookUrl || !orderCode) return;
-
     try {
-
         const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
-
         const data = await res.json();
-
         if (data && data.verified === true) {
-
             onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email);
-
         } else if (statusText) {
-
             statusText.textContent = "Chưa nhận được Email biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng hoàn tất chuyển khoản!";
-
         }
-
     } catch (e) {
-
         if (statusText) {
-
             statusText.textContent = "Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Hệ thống đang tiếp tục quét tự động...";
-
         }
-
     }
-
 }
-
-
 
 /* ==========================================================================
-
-   10. TẢI APP ĐIỆP VIÊN STUDY — XÁC THỰC EMAIL MÃ OTP & KÍCH HOẠT TÀI KHOẢN
-
+   10. APP DIEP VIEN STUDY — SHOWCASE & MANDATORY USERNAME + EMAIL GATE BEFORE DOWNLOAD
    ========================================================================== */
 
-
-
-let pendingAppOtpEmail = "";
-
-let pendingAppOtpName = "";
-
-
-
 function getVerifiedAppOtpEmailLocal() {
-
     try {
-
         return (localStorage.getItem("dvtl_app_otp_verified_email") || "").trim().toLowerCase();
-
     } catch (_) {
-
         return "";
-
     }
-
 }
 
-
+function getVerifiedAppOtpNameLocal() {
+    try {
+        return (localStorage.getItem("dvtl_app_otp_verified_name") || "").trim();
+    } catch (_) {
+        return "";
+    }
+}
 
 function isAppOtpVerifiedLocal() {
-
     const em = getVerifiedAppOtpEmailLocal();
-
-    return Boolean(em && em.includes("@"));
-
+    const nm = getVerifiedAppOtpNameLocal();
+    return Boolean(em && em.includes("@") && nm.length >= 2);
 }
-
-
 
 function updateVerifiedAppDownloadUI() {
-
-    const verified = isAppOtpVerifiedLocal();
-
-    const email = getVerifiedAppOtpEmailLocal();
-
-    const bar = document.getElementById("verifiedAppDownloadBar");
-
-    const barEmail = document.getElementById("verifiedBarEmailText");
-
     const hdrLabel = document.getElementById("headerDownloadAppLabel");
-
-
-
-    if (bar) {
-
-        if (verified) {
-
-            bar.classList.remove("hidden");
-
-            if (barEmail) barEmail.textContent = email;
-
-        } else {
-
-            bar.classList.add("hidden");
-
-        }
-
-    }
-
     if (hdrLabel) {
-
-        hdrLabel.textContent = verified ? "Tải App (Đã Kích Hoạt)" : "Tải App";
-
+        hdrLabel.textContent = "APP Diep Vien study";
     }
-
+    validateAppDownloadGate();
 }
 
-
-
-function openAppDownloadModal() {
-
-    const modal = document.getElementById("appDownloadOtpModal");
-
-    if (!modal) return;
-
-
-
-    const cust = getSyncedCustomerLocal();
-
-    const verifiedEmail = getVerifiedAppOtpEmailLocal();
-
+function validateAppDownloadGate() {
     const nameInp = document.getElementById("appOtpNameInput");
-
     const emailInp = document.getElementById("appOtpEmailInput");
+    const btnWinExe = document.getElementById("btnDirectDownloadWinExe");
+    const btnMacZip = document.getElementById("btnDirectDownloadMacZip");
+    const badge = document.getElementById("appGateLockBadge");
+    const hint = document.getElementById("appGateStatusHint");
 
+    const nameVal = (nameInp?.value || "").trim();
+    const emailVal = (emailInp?.value || "").trim().toLowerCase();
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal);
+    const isReady = nameVal.length >= 2 && emailValid;
 
-
-    if (nameInp && !nameInp.value && cust?.name) nameInp.value = cust.name;
-
-    if (emailInp && !emailInp.value) emailInp.value = verifiedEmail || cust?.email || "";
-
-
-
-    if (isAppOtpVerifiedLocal()) {
-
-        showAppOtpStep(3, verifiedEmail);
-
-    } else {
-
-        showAppOtpStep(1);
-
-    }
-
-
-
-    modal.classList.remove("hidden");
-
-    modal.classList.add("flex");
-
-}
-
-
-
-function closeAppDownloadModal() {
-
-    const modal = document.getElementById("appDownloadOtpModal");
-
-    if (!modal) return;
-
-    modal.classList.add("hidden");
-
-    modal.classList.remove("flex");
-
-}
-
-
-
-function showAppOtpStep(stepNum, emailAddr = "") {
-
-    const s1 = document.getElementById("appOtpStep1");
-
-    const s2 = document.getElementById("appOtpStep2");
-
-    const s3 = document.getElementById("appOtpStep3");
-
-    if (s1) s1.classList.toggle("hidden", stepNum !== 1);
-
-    if (s2) s2.classList.toggle("hidden", stepNum !== 2);
-
-    if (s3) s3.classList.toggle("hidden", stepNum !== 3);
-
-
-
-    if (stepNum === 2) {
-
-        const disp = document.getElementById("appOtpSentEmailDisplay");
-
-        if (disp) disp.textContent = emailAddr || pendingAppOtpEmail;
-
-        const codeInp = document.getElementById("appOtpCodeInput");
-
-        if (codeInp) {
-
-            codeInp.value = "";
-
-            setTimeout(() => codeInp.focus(), 80);
-
+    [btnWinExe, btnMacZip].forEach(btn => {
+        if (!btn) return;
+        btn.disabled = !isReady;
+        if (isReady) {
+            btn.classList.remove("opacity-45", "cursor-not-allowed");
+            btn.classList.add("opacity-100", "cursor-pointer");
+        } else {
+            btn.classList.add("opacity-45", "cursor-not-allowed");
+            btn.classList.remove("opacity-100", "cursor-pointer");
         }
+    });
 
-    } else if (stepNum === 3) {
-
-        const vEmail = emailAddr || getVerifiedAppOtpEmailLocal();
-
-        const lbl = document.getElementById("appOtpVerifiedEmailLabel");
-
-        const devLbl = document.getElementById("appOtpDeviceIdLabel");
-
-        if (lbl) lbl.textContent = vEmail;
-
-        if (devLbl) devLbl.textContent = getWebDeviceId();
-
+    if (badge) {
+        if (isReady) {
+            badge.textContent = "Đã mở khóa nút tải App";
+            badge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300";
+        } else {
+            badge.textContent = "Điền thông tin để mở khóa nút tải";
+            badge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300";
+        }
     }
 
-}
-
-
-
-function resetAppOtpEmailStep(clearVerified = false) {
-
-    if (clearVerified) {
-
-        localStorage.removeItem("dvtl_app_otp_verified_email");
-
-        updateVerifiedAppDownloadUI();
-
+    if (hint) {
+        if (isReady) {
+            hint.textContent = "Đã xác nhận Tên đăng nhập (" + nameVal + ") & Email (" + emailVal + "). Nút Tải App đã sẵn sàng!";
+            hint.className = "text-[11px] font-bold text-emerald-700 dark:text-emerald-300";
+        } else {
+            hint.textContent = "Vui lòng điền đầy đủ Tên đăng nhập và địa chỉ Email ở trên để kích hoạt nút Tải App bên dưới.";
+            hint.className = "text-[11px] font-semibold text-amber-700 dark:text-amber-300";
+        }
     }
 
-    const m1 = document.getElementById("appOtpStep1Msg");
-
-    const m2 = document.getElementById("appOtpStep2Msg");
-
-    if (m1) m1.classList.add("hidden");
-
-    if (m2) m2.classList.add("hidden");
-
-    showAppOtpStep(1);
-
+    return isReady;
 }
 
+function startDirectFileDownload(hrefUrl, downloadFilename = "DiepVienStudy_Setup.exe") {
+    try {
+        const a = document.createElement("a");
+        a.href = hrefUrl;
+        if (downloadFilename) a.setAttribute("download", downloadFilename);
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => a.remove(), 1200);
+    } catch (_) {
+        window.open(hrefUrl, "_blank", "noopener,noreferrer");
+    }
+}
 
-
-async function sendAppDownloadOtp(isResend = false) {
-
-    const nameInp = document.getElementById("appOtpNameInput");
-
-    const emailInp = document.getElementById("appOtpEmailInput");
-
-    const msg1 = document.getElementById("appOtpStep1Msg");
-
-    const msg2 = document.getElementById("appOtpStep2Msg");
-
-    const btn = document.getElementById("btnSendAppOtp");
-
-
-
-    const name = (nameInp?.value || pendingAppOtpName || "Học Viên Điệp Viên").trim();
-
-    const email = (emailInp?.value || pendingAppOtpEmail || "").trim().toLowerCase();
-
-
-
-    if (!email || !email.includes("@")) {
-
-        alert("⚠️ Vui lòng nhập đúng địa chỉ Email (Gmail) của bạn để nhận mã xác nhận OTP!");
-
+function handleGatedAppDownload(targetPlatform = "exe") {
+    if (!validateAppDownloadGate()) {
+        alert("Vui lòng điền đầy đủ Tên đăng nhập và Email trước khi tải APP Diep Vien study!");
         return;
-
     }
 
+    const nameVal = (document.getElementById("appOtpNameInput")?.value || "").trim();
+    const emailVal = (document.getElementById("appOtpEmailInput")?.value || "").trim().toLowerCase();
 
+    localStorage.setItem("dvtl_app_otp_verified_name", nameVal);
+    localStorage.setItem("dvtl_app_otp_verified_email", emailVal);
 
-    pendingAppOtpEmail = email;
-
-    pendingAppOtpName = name;
-
-
-
-    const activeMsg = isResend ? msg2 : msg1;
-
-    if (activeMsg) {
-
-        activeMsg.className = "text-[11px] font-bold text-center text-blue-700 dark:text-sky-300";
-
-        activeMsg.textContent = "⏳ Đang gửi mã xác nhận OTP 6 số về Email " + email + "...";
-
-        activeMsg.classList.remove("hidden");
-
-    }
-
-    if (btn) btn.disabled = true;
-
-
+    const prev = getSyncedCustomerLocal() || {};
+    const synced = {
+        ...prev,
+        name: nameVal,
+        email: emailVal,
+        unlockedCourses: prev.unlockedCourses || [],
+        purchasedDocs: prev.purchasedDocs || [],
+        btlOrders: prev.btlOrders || []
+    };
+    localStorage.setItem("dvtl_synced_customer", JSON.stringify(synced));
+    applySyncedCustomerToForms();
 
     const webhook = (state && state.webhookUrl) ? state.webhookUrl : APP_CONFIG.defaultWebhookUrl;
-
-    try {
-
-        const url = webhook
-
-            + "?action=sendAppOtp"
-
-            + "&email=" + encodeURIComponent(email)
-
-            + "&name=" + encodeURIComponent(name)
-
-            + "&deviceId=" + encodeURIComponent(getWebDeviceId());
-
-        const res = await fetch(url, { method: "GET", mode: "cors" });
-
-        const data = await res.json();
-
-        if (btn) btn.disabled = false;
-
-
-
-        if (data && data.ok) {
-
-            showAppOtpStep(2, email);
-
-            if (msg2) {
-
-                msg2.className = "text-[11px] font-bold text-center text-emerald-700 dark:text-emerald-300";
-
-                msg2.textContent = data.message || ("✅ Đã gửi mã OTP 6 số tới " + email + ". Vui lòng kiểm tra hộp thư!");
-
-                msg2.classList.remove("hidden");
-
-            }
-
-        } else {
-
-            if (activeMsg) {
-
-                activeMsg.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
-
-                activeMsg.textContent = (data && data.message) || "⚠️ Không thể gửi mã OTP lúc này, vui lòng kiểm tra lại Email!";
-
-                activeMsg.classList.remove("hidden");
-
-            }
-
-        }
-
-    } catch (err) {
-
-        if (btn) btn.disabled = false;
-
-        showAppOtpStep(2, email);
-
-        if (msg2) {
-
-            msg2.className = "text-[11px] font-bold text-center text-emerald-700 dark:text-emerald-300";
-
-            msg2.textContent = "📩 Yêu cầu gửi OTP đã được xử lý cho " + email + ". Vui lòng kiểm tra hộp thư đến hoặc Spam!";
-
-            msg2.classList.remove("hidden");
-
-        }
-
-    }
-
-}
-
-
-
-async function verifyAppDownloadOtp() {
-
-    const codeInp = document.getElementById("appOtpCodeInput");
-
-    const msg2 = document.getElementById("appOtpStep2Msg");
-
-    const btn = document.getElementById("btnVerifyAppOtp");
-
-
-
-    const otp = (codeInp?.value || "").replace(/\s+/g, "").trim();
-
-    const email = (pendingAppOtpEmail || document.getElementById("appOtpEmailInput")?.value || "").trim().toLowerCase();
-
-    const name = (pendingAppOtpName || document.getElementById("appOtpNameInput")?.value || "Học Viên Điệp Viên").trim();
-
-
-
-    if (!otp || otp.length < 6) {
-
-        alert("⚠️ Vui lòng nhập đủ 6 chữ số mã OTP đã gửi về Email của bạn!");
-
-        return;
-
-    }
-
-
-
-    if (msg2) {
-
-        msg2.className = "text-[11px] font-bold text-center text-blue-700 dark:text-sky-300";
-
-        msg2.textContent = "⏳ Đang kiểm tra mã OTP & kích hoạt tài khoản App...";
-
-        msg2.classList.remove("hidden");
-
-    }
-
-    if (btn) btn.disabled = true;
-
-
-
-    const webhook = (state && state.webhookUrl) ? state.webhookUrl : APP_CONFIG.defaultWebhookUrl;
-
-    try {
-
-        const url = webhook
-
-            + "?action=verifyAppOtp"
-
-            + "&email=" + encodeURIComponent(email)
-
-            + "&otp=" + encodeURIComponent(otp)
-
-            + "&name=" + encodeURIComponent(name)
-
-            + "&deviceId=" + encodeURIComponent(getWebDeviceId());
-
-        const res = await fetch(url, { method: "GET", mode: "cors" });
-
-        const data = await res.json();
-
-        if (btn) btn.disabled = false;
-
-
-
-        if (data && data.ok) {
-
-            localStorage.setItem("dvtl_app_otp_verified_email", email);
-
-            const prev = getSyncedCustomerLocal() || {};
-
-            const unlocked = expandWebUnlockedCourses(data.customer?.unlockedCourses || prev.unlockedCourses || []);
-
-            const synced = {
-
-                ...prev,
-
-                ...(data.customer || {}),
-
-                email: email,
-
-                name: data.customer?.name || name || prev.name || "Học Viên Điệp Viên",
-
-                unlockedCourses: unlocked,
-
-                otpVerified: true
-
-            };
-
-            localStorage.setItem("dvtl_synced_customer", JSON.stringify(synced));
-
-            applySyncedCustomerToForms();
-
-            updateVerifiedAppDownloadUI();
-
-            renderCourses();
-
-            showAppOtpStep(3, email);
-
-        } else {
-
-            if (msg2) {
-
-                msg2.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
-
-                msg2.textContent = (data && data.message) || "❌ Mã OTP không chính xác hoặc đã hết hạn. Vui lòng kiểm tra lại!";
-
-                msg2.classList.remove("hidden");
-
-            }
-
-        }
-
-    } catch (err) {
-
-        if (btn) btn.disabled = false;
-
-        if (msg2) {
-
-            msg2.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
-
-            msg2.textContent = "⚠️ Lỗi kết nối máy chủ xác thực OTP. Vui lòng thử lại sau giây lát!";
-
-            msg2.classList.remove("hidden");
-
-        }
-
-    }
-
-}
-
-
-
-function triggerDirectAppDownload(platform = "windows") {
-
-    if (!isAppOtpVerifiedLocal()) {
-
-        openAppDownloadModal();
-
-        return;
-
+    if (webhook) {
+        fetch(webhook, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                action: "registerOrLoginCustomer",
+                email: emailVal,
+                name: nameVal,
+                phone: prev.phone || "",
+                source: "WEB_APP_DOWNLOAD_GATE"
+            })
+        }).catch(() => {});
     }
 
     const links = (typeof APP_DOWNLOAD_LINKS !== "undefined" && APP_DOWNLOAD_LINKS) ? APP_DOWNLOAD_LINKS : {};
-
-    if (platform === "macos") {
-
+    if (targetPlatform === "macos") {
         const macUrl = links.macos_zip_direct_url || "https://drive.google.com/uc?export=download&id=1WMGpwANae4qOCM9hQ8FTI5poZwVfP2lf";
-
         window.open(macUrl, "_blank", "noopener,noreferrer");
-
-    } else {
-
+    } else if (targetPlatform === "windows") {
         const winUrl = links.windows_zip_direct_url || "https://drive.google.com/uc?export=download&id=1hh3zp7-X3leDex77Rf76W9BeiJzEUZkf";
-
         window.open(winUrl, "_blank", "noopener,noreferrer");
-
+    } else {
+        startDirectFileDownload("DiepVienStudy_Setup.exe", "DiepVienStudy_Setup.exe");
     }
-
 }
 
+function openAppDownloadModal() {
+    const modal = document.getElementById("appDownloadOtpModal");
+    if (!modal) return;
 
+    const cust = getSyncedCustomerLocal();
+    const verifiedEmail = getVerifiedAppOtpEmailLocal();
+    const verifiedName = getVerifiedAppOtpNameLocal();
+    const nameInp = document.getElementById("appOtpNameInput");
+    const emailInp = document.getElementById("appOtpEmailInput");
+
+    if (nameInp && !nameInp.value) nameInp.value = verifiedName || cust?.name || "";
+    if (emailInp && !emailInp.value) emailInp.value = verifiedEmail || cust?.email || "";
+
+    validateAppDownloadGate();
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+}
+
+function closeAppDownloadModal() {
+    const modal = document.getElementById("appDownloadOtpModal");
+    if (!modal) return;
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+}
+
+function triggerDirectAppDownload(platform = "windows") {
+    handleGatedAppDownload(platform);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-
     setTimeout(() => {
-
         applySyncedCustomerToForms();
-
         updateVerifiedAppDownloadUI();
-
     }, 250);
-
 });
-

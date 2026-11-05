@@ -10670,7 +10670,7 @@ const COURSES_DATABASE = [
             "1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52",
-        "defaultCover": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa TOÀN BỘ 50+ khóa học: THPT Lớp 12 (2K9), Lớp 11 (2K10), ĐGNL HSA, ĐGTD TSA, V-ACT, BCA, QDA, VSAT",
             "Tặng kèm App Điệp Viên Study Pro tích hợp AI trợ giảng, kích hoạt sẵn bằng chính Email đăng ký (Khóa bảo mật cố định 1 thiết bị)",
@@ -10709,7 +10709,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1Hx3C11lkdM5SKsavO2pqBdH0rEnk2wZo",
-        "defaultCover": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Trọn bộ 24 khóa học Lớp 12 (2K9): Toán (7 khóa), Vật Lý (5 khóa), Hóa Học (4 khóa), Tiếng Anh Cô Mai Phương, TopUni Nền Tảng 12 (7 môn)",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Sử dụng cố định trên 1 thiết bị)",
@@ -10746,7 +10746,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1DQH48jr8YozUnJ3STTlyV-qFzLCAi4G5",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1DQH48jr8YozUnJ3STTlyV-qFzLCAi4G5",
-        "defaultCover": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Trọn bộ 10 khóa học Lớp 11 (2K10): Toán 11, Vật Lý 11, Hóa Học 11, Tin Học 11 (Ứng dụng, KHMT & Tin văn phòng)",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)",
@@ -10785,7 +10785,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1_tPOqo2Nve07up5SgHpIyhjo6lwoVa9Y",
-        "defaultCover": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Bao gồm toàn bộ 5 lộ trình HSA đỉnh nhất: HSA Empire XPS, HSA Mapstudy, HSA Hocmai Giải pháp toàn diện, HSA Edu Tinh Hoa TH01 & TopUni Nền tảng",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)",
@@ -10822,7 +10822,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4",
-        "defaultCover": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Bao gồm toàn bộ 5 lộ trình ĐGTD TSA ĐH Bách Khoa Hà Nội: Empire 2K9, BMC 2K9, Hocmai TSA, Tuyensinh247 Full SUN & Bổ trợ TDMU",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)",
@@ -10863,7 +10863,7 @@ const COURSES_DATABASE = [
             "1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
-        "defaultCover": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Trọn bộ 3 lộ trình luyện thi ĐGNL ĐHQG TP.HCM (V-ACT 2027): Empire Team XPS, Mapstudy XPS & Hocmai Giải pháp toàn diện",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)",
@@ -10904,7 +10904,7 @@ const COURSES_DATABASE = [
             "1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
-        "defaultCover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Trọn bộ 3 kỳ thi chuyên biệt: ĐGNL Bộ Công An (BCA), ĐGNL Quân Đội (QDA Empire) và kỳ thi VSAT",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)",
@@ -10940,7 +10940,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Toán 12 (2K9) gồm 7 khóa học từ các thầy nổi tiếng nhất",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -10976,7 +10976,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI",
-        "defaultCover": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Vật Lý 12 (2K9) gồm 5 lộ trình IOME, IPClass, TENS, SangSang, Hocmai",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11012,7 +11012,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc",
-        "defaultCover": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Hóa Học 12 (2K9) gồm 4 lộ trình của 4 thầy Hóa hàng đầu",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11050,7 +11050,7 @@ const COURSES_DATABASE = [
             "1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe",
-        "defaultCover": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Trọn bộ 3 giai đoạn Tiếng Anh Cô Mai Phương 2K9: Pro 3M, Pro 3M Plus và VIP 90 (2027)",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11086,7 +11086,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ 7 khóa Nền Tảng 12 Hocmai: Toán 2027, Toán 2026, Ngữ Văn, Tiếng Anh, Vật Lý, Hóa Học, Sinh Học",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11122,7 +11122,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP",
-        "defaultCover": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Toán 11 (2K10): Khóa Thầy Đỗ Văn Đức Tenschool & Khóa S1+ Thầy Quân Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11158,7 +11158,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL",
-        "defaultCover": "https://images.unsplash.com/photo-1517976487468-f20514c44533?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Vật Lý 11 (2K10) gồm khóa Thầy Vũ Hoàng Quân, khóa Thầy Long và bộ Đề thi học kì S+",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11194,7 +11194,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1CL2S35nzQS7qkXKck9c_efHX-aS87v-a",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1CL2S35nzQS7qkXKck9c_efHX-aS87v-a",
-        "defaultCover": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Hóa Học 11 (2K10): Lớp tương tác Cô Dương, Cô Huệ Hocmai & Khóa Hóa 11 Thầy Tùng",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11230,7 +11230,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq",
-        "defaultCover": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa toàn bộ Thư mục Môn Tin Học 11 (2K10): Tin học ứng dụng (S1), Khoa học máy tính (S1) & Tin học văn phòng",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11269,7 +11269,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1S4DkHAPvliK9ea222q9x3sDbVM2TX3bm",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11308,7 +11308,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1a78wwvHogORJpW2qKWsveK4yMeorJEDg",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOÁN TỔ TOÁN MAPSTUDY 2K9 THPTQG 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11347,7 +11347,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/13NIwvnmeb37PpkHI7dmxdZh3of9ewPuF",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOÁN THẦY NGUYỄN PHAN TIẾN 2K9 - XPS Toán 12 Khoá SMART 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11386,7 +11386,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1DkG2NQLQ5egWATE7s_HxWheA7twDMCzE",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOÁN ANH SHIPPER TOÁN 2K9 - XPS Khoá Trùm 12A3 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11425,7 +11425,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/14Vsk6-lsb-Nary5wbDpdWvyKc5pne3Ke",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2027 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11464,7 +11464,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/104Fz0TA9cLZJy4NAAxPwGCP29IKTlR0g",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: GIÁO VIÊN HUY HƯỚNG NỘI - 2K8 - TMT2026 - KHÓA CHUYÊN ĐỀ",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11503,7 +11503,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/14Ab28ONGVYGeJuoT5Ga5Q-R5LyiSCsyB",
-        "defaultCover": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOÁN LXO - 2K8 - CÁC BUỔI HỌC VỀ TOÁN THỰC TẾ",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11542,7 +11542,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
-        "defaultCover": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY VŨ NGỌC ANH 2K9 - Trọn Bộ Lộ Trình IOME 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11581,7 +11581,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
-        "defaultCover": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY THẮNG, THẦY TIẾN IPCLASS 2K9 - XPS Chinh phục 9+ Vật lý 12",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11620,7 +11620,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
-        "defaultCover": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY LÊ TÙNG ƯNG TENS 2K9 - Full lộ trình XPS Vật lý 12 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11659,7 +11659,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
-        "defaultCover": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9 - XPS Vật lý 12 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11698,7 +11698,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
-        "defaultCover": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: Z. NỀN TẢNG 12 MÔN VẬT LÝ 2027 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11737,7 +11737,7 @@ const COURSES_DATABASE = [
             "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1JkWVgk6FWNROK433fzc2Bbs8DXB5X5OM",
-        "defaultCover": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HÓA THẦY PHẠM VĂN TRỌNG 2K9 THPTQG 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11776,7 +11776,7 @@ const COURSES_DATABASE = [
             "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/17YG-JmPDC6B_0xJtkDNiRiYPZh7oxdNu",
-        "defaultCover": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HÓA THẦY NGUYỄN ANH PHONG 2K9 - Trọn Bộ Lộ Trình IOME 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11815,7 +11815,7 @@ const COURSES_DATABASE = [
             "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1nT5OCuM2fsZ99XVkLzEuRoonpPrBxUU1",
-        "defaultCover": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HOÁ THẦY PHẠM VĂN THUẬN SANGSANG - Trọn Bộ Lộ Trình CTG 2K9",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11854,7 +11854,7 @@ const COURSES_DATABASE = [
             "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1rvjxRmI_pSmvflpJfl3lUMS_QeOaTFfV",
-        "defaultCover": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HÓA THẦY PHẠM THANH TÙNG 2K8",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11893,7 +11893,7 @@ const COURSES_DATABASE = [
             "1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL",
-        "defaultCover": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TIẾNG ANH CÔ MAI PHƯƠNG 2K9 - Trọn Bộ Lộ Trình Pro3m, Pro3mplus, Vip90 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11932,7 +11932,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1sKwBrvFNSAF95XUHmAIRuGUaFYb9fFSu",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2027 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -11971,7 +11971,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12010,7 +12010,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN NGỮ VĂN HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12049,7 +12049,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TIẾNG ANH 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12088,7 +12088,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1rvyHSojdbe__C26Jj4xB5toinNJRZTEc",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN VẬT LÝ 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12127,7 +12127,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1IgDvAyUK1UN6W5jqXWgPVML1cUS_vA0N",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN HÓA HỌC 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12166,7 +12166,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
-        "defaultCover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN SINH HỌC 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12205,7 +12205,7 @@ const COURSES_DATABASE = [
             "1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1LkFNHipHxp2R3aUVVoC4uGMFxGsBXh1u",
-        "defaultCover": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOÁN 11 2027 THẦY ĐỖ VĂN ĐỨC TENSCHOOL 2K10",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12244,7 +12244,7 @@ const COURSES_DATABASE = [
             "1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1a1MHroAuK48kOyp_jhfqHc_yJc8pcFdU",
-        "defaultCover": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: [S1+] Thầy Quân - Định hướng ôn thi TN THPT, ĐGNL, ĐGTD môn Toán cho học sinh lớp 11 - 2027 Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12283,7 +12283,7 @@ const COURSES_DATABASE = [
             "134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1fYdD_xs_0PF63h0KBo384V0iqQ9cCs00",
-        "defaultCover": "https://images.unsplash.com/photo-1517976487468-f20514c44533?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ 11 2027 THẦY VŨ HOÀNG QUÂN 2K10",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12322,7 +12322,7 @@ const COURSES_DATABASE = [
             "134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1pMs32OQ3J9N7R9MJ-cT9fI_CNwu2crzC",
-        "defaultCover": "https://images.unsplash.com/photo-1517976487468-f20514c44533?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: Thầy Long - Cơ bản & Nâng cao Vật Lí 11 - 2027 Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12361,7 +12361,7 @@ const COURSES_DATABASE = [
             "134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1Xqa29h4pGAHp4RNs_i-YpRT_NkEuYzyO",
-        "defaultCover": "https://images.unsplash.com/photo-1517976487468-f20514c44533?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: [S+] Đề thi học kì Vật Lí 11 (Có lời giải chi tiết) - 2027 Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12400,7 +12400,7 @@ const COURSES_DATABASE = [
             "1CL2S35nzQS7qkXKck9c_efHX-aS87v-a"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1IMhlEE-CyVyEd9nAn9bgkJMJpih1GZR3",
-        "defaultCover": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HOÁ 11 2027 LỚP TƯƠNG TÁC CÔ DƯƠNG, CÔ HUỆ HOCMAI 2K10",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12439,7 +12439,7 @@ const COURSES_DATABASE = [
             "1CL2S35nzQS7qkXKck9c_efHX-aS87v-a"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1yqY8yEuScOXifRPqjuTvAC8yfvPa1XTP",
-        "defaultCover": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: Thầy Tùng - Hóa 11 - Cơ bản và nâng cao - 2027 Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12478,7 +12478,7 @@ const COURSES_DATABASE = [
             "1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1dddCKyGFIG3o6NQokc8wMgS8fXArvvrt",
-        "defaultCover": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: [S1] Thầy Phương, Cô Dung - Tin 11 - Tin học ứng dụng - 2027 Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12517,7 +12517,7 @@ const COURSES_DATABASE = [
             "1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1niGfuKDA1xbAGI2lQpfDxic4s2H8fFip",
-        "defaultCover": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: [S1] Thầy Phương, cô Dung - Tin 11 - Khoa học máy tính - 2027 Tuyensinh247",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12556,7 +12556,7 @@ const COURSES_DATABASE = [
             "1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm",
-        "defaultCover": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TIN HỌC VĂN PHÒNG",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12593,7 +12593,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1oRf9iIynqglvPJhq0Jyf3ILL2lUVKEQy",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1oRf9iIynqglvPJhq0Jyf3ILL2lUVKEQy",
-        "defaultCover": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027 - Khoá XPS",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12630,7 +12630,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1kNFMqYTAjNJNW3wl654OGvBdPzmgI_4R",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1kNFMqYTAjNJNW3wl654OGvBdPzmgI_4R",
-        "defaultCover": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HSA MAPSTUDY 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027 - XPS 2K9 HSA 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12667,7 +12667,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1OSx2MVNua6QDZhJpV4XXyOhdgdYU4hjY",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1OSx2MVNua6QDZhJpV4XXyOhdgdYU4hjY",
-        "defaultCover": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HSA HOCMAI 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027 - Giải pháp toàn diện HSA, Phòng luyện 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12704,7 +12704,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1iHYQQznkt6nt0IvvANe_tMzHUQ5pX9y-",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1iHYQQznkt6nt0IvvANe_tMzHUQ5pX9y-",
-        "defaultCover": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: HSA 2K9 HSA EDU 2027 - Khoá Tinh hoa HSA TH01",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12741,7 +12741,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-        "defaultCover": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TOPUNI NỀN TẢNG HOCMAI CÁC MÔN",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12778,7 +12778,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1RPRK-NLUAudeC-65FF_nXbaOKG2aP_CJ",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1RPRK-NLUAudeC-65FF_nXbaOKG2aP_CJ",
-        "defaultCover": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TSA - LUYỆN THI ĐÁNH GIÁ TƯ DUY ĐH BÁCH KHOA HN EMPIRE 2K9 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12815,7 +12815,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1H7u21HeGVXEajKcPM6jr1IHPtNYBIudN",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1H7u21HeGVXEajKcPM6jr1IHPtNYBIudN",
-        "defaultCover": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TSA BMC 2K9 LUYỆN THI ĐÁNH GIÁ TƯ DUY ĐHBK HÀ NỘI 2027 - XPS 2K9 TSA 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12852,7 +12852,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1OURnZBMt6QGB4AXIaXu23QGQPrqb_5F3",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1OURnZBMt6QGB4AXIaXu23QGQPrqb_5F3",
-        "defaultCover": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TSA HOCMAI 2K9 LUYỆN THI ĐÁNH GIÁ TƯ DUY ĐHBK HÀ NỘI 2027 - Giải pháp toàn diện TSA, Phòng luyện 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12889,7 +12889,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1i9cK48wmHQFTPrLjnFheoHZ2Nto3tV2d",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1i9cK48wmHQFTPrLjnFheoHZ2Nto3tV2d",
-        "defaultCover": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TSA TUYENSINH247 2027 FULL LỘ TRÌNH SUN",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12926,7 +12926,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "10n24IGM9Xylx3TvSJycc9X1ax5BVx-KX",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/10n24IGM9Xylx3TvSJycc9X1ax5BVx-KX",
-        "defaultCover": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: TSA BỔ TRỢ TSA - HSA - VACT TDMU 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -12963,7 +12963,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2",
-        "defaultCover": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: V-ACT 2K9 EMPIRE TEAM LUYỆN THI ĐGNL TP.HCM 2027 - XPS 2K9 V-ACT 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -13000,7 +13000,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6",
-        "defaultCover": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: V-ACT MAPSTUDY 2K9 LUYỆN THI ĐÁNH GIÁ NĂNG LỰC TP.HCM 2027 - XPS 2K9 V-ACT 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -13037,7 +13037,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM",
-        "defaultCover": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027 - Giải pháp toàn diện V-ACT, Phòng luyện",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -13074,7 +13074,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK",
-        "defaultCover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: BCA - LUYỆN THI ĐÁNH GIÁ NĂNG LỰC BỘ CÔNG AN",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -13111,7 +13111,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI",
-        "defaultCover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: QDA - LUYỆN THI ĐÁNH GIÁ NĂNG LỰC EMPIRE (QUÂN ĐỘI)",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -13148,7 +13148,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc",
-        "defaultCover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+        "defaultCover": "",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: VSAT - LUYỆN THI ĐÁNH GIÁ NĂNG LỰC EMPIRE",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",

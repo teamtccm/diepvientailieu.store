@@ -1577,7 +1577,7 @@ function renderSingleCourseCardHtml(course) {
 
             <!-- CARD BODY (IDENTICAL TO APP dvs-course-card-body) -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <h3 class="text-[15.5px] font-extrabold text-slate-900 dark:text-white leading-snug tracking-tight m-0">
+                <h3 class="text-[15.5px] font-extrabold text-slate-900 dark:text-white leading-snug tracking-tight truncate m-0" title="${course.title}">
                     ${course.title}
                 </h3>
                 <p class="text-[12.5px] text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2 m-0">

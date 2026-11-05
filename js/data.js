@@ -13959,6 +13959,27 @@ const PAYMENT_INFO = {
     qrBaseUrl: "https://img.vietqr.io/image/ACB-27384751-compact2.png"
 };
 
+const RECENT_PURCHASES_STREAM = [
+    { name: "Nguyễn Minh H***", school: "NEU", item: "Gói Full 66 Khóa Học 2K9 · 2K10 · ĐGNL (399K)", time: "Vừa xong" },
+    { name: "Trần Thu H***", school: "FTU", item: "Đề Cương Kinh Tế Lượng — FTU (50K)", time: "1 phút trước" },
+    { name: "Lê Hoàng B***", school: "BKHN", item: "Trọn Bộ Khóa Đánh Giá Tư Duy TSA Bách Khoa (199K)", time: "2 phút trước" },
+    { name: "Phạm Quốc T***", school: "VNU", item: "Trọn Bộ Khóa ĐGNL HSA ĐHQG Hà Nội (199K)", time: "3 phút trước" },
+    { name: "Vũ Ngọc A***", school: "2K9", item: "Khóa Vật Lý 12 (2K9) — Thầy Vũ Ngọc Anh (69K)", time: "4 phút trước" },
+    { name: "Hoàng Gia K***", school: "TMU", item: "Đặt Làm Tiểu Luận Quản Trị Học (Cọc 50K)", time: "5 phút trước" }
+];
+
+const FAQ_DATABASE = [
+    {
+        question: "Sau khi chuyển khoản bao lâu thì tôi nhận được Khóa học / Đề cương?",
+        answer: "Hệ thống AutoPay 24/7 quét biến động số dư ngân hàng ACB tự động chỉ sau 10 - 30 giây. Ngay khi khớp lệnh, hệ thống tự động cấp quyền Google Drive vào đúng địa chỉ Gmail của bạn và kích hoạt tài khoản App Điệp Viên Study."
+    },
+    {
+        question: "Mua khóa học được tặng kèm App Điệp Viên Study sử dụng như thế nào?",
+        answer: "Khi mua bất kỳ gói khóa học nào (69K / 199K / 399K), bạn được tặng kèm App Điệp Viên Study bản quyền với tài khoản đăng nhập chính là Email của bạn. Tài khoản được khóa bảo mật cố định trên 1 thiết bị duy nhất của bạn để đảm bảo tốc độ và bản quyền."
+    }
+];
+
+
 const APP_CONFIG = {
     brandName: "Điệp Viên Tài Liệu",
     slogan: "Bản Quyền Đề Cương & Dịch Vụ Học Thuật Số 1 Sinh Viên",

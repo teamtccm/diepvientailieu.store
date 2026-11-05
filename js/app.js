@@ -4007,7 +4007,7 @@ async function submitCustomerSyncWeb() {
     startDirectFileDownload("Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cai_Dat_App_Diep_Vien_Study_Windows.exe");
 
     if (msgEl) {
-        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Cai_Dat_App_Diep_Vien_Study_Windows.exe</strong>! <a href="downloads/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" target="_blank" download="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt PDF (Có Hình Minh Họa)</a>.`;
+        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Cai_Dat_App_Diep_Vien_Study_Windows.exe</strong>! <a href="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" target="_blank" download="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt PDF (Có Hình Minh Họa)</a>.`;
     }
 }
 

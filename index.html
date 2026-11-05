@@ -1067,7 +1067,7 @@
 
                                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-gradient-to-r from-[#FFA000] to-amber-500 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow-lg uppercase tracking-wider mb-5 border border-amber-300/60">
 
-                                    <span class="text-base sm:text-lg leading-none">🇻🇳</span>
+                                    <span class="text-base sm:text-lg leading-none"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.5" fill="#DA251D"/><polygon points="12 7 13.4 10.6 17.2 10.8 14.2 13.1 15.2 16.8 12 14.7 8.8 16.8 9.8 13.1 6.8 10.8 10.6 10.6" fill="#FFFF00"/></svg></span>
 
                                     <span>TOÀN QUỐC</span>
 
@@ -4262,111 +4262,106 @@ function doPost(e) {
     </div>
 
     <!-- ================================================================
-         MODAL: APP DIEP VIEN STUDY (HÌNH ẢNH APP + TÍNH NĂNG SƠ LƯỢC SEO + ĐIỀN EMAIL & TÊN ĐĂNG NHẬP ĐỂ MỞ KHÓA NÚT TẢI)
+         MODAL: APP DIEP VIEN STUDY (CẮT NHỎ TÍNH NĂNG VỪA NHÌN, ÍT CHỮ + ĐIỀN TÊN ĐĂNG NHẬP & EMAIL + LOGO WINDOWS & APPLE)
          ================================================================ -->
     <div id="appDownloadOtpModal" itemscope itemtype="https://schema.org/SoftwareApplication" class="fixed inset-0 z-[105] hidden items-center justify-center p-3 sm:p-4 bg-slate-950/85 backdrop-blur-sm" onclick="if(event.target===this)closeAppDownloadModal()">
-        <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-2xl w-full p-5 sm:p-7 shadow-2xl border border-slate-200 dark:border-white/10 relative max-h-[94vh] overflow-y-auto" onclick="event.stopPropagation()">
-            <button onclick="closeAppDownloadModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition z-10">✕</button>
+        <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-xl w-full p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-white/10 relative max-h-[94vh] overflow-y-auto" onclick="event.stopPropagation()">
+            <button onclick="closeAppDownloadModal()" class="absolute top-3.5 right-3.5 w-7 h-7 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition z-10 text-xs">✕</button>
 
-            <!-- 1. Brand Header (SEO Optimized) -->
-            <div class="flex items-center gap-3.5 mb-4">
-                <img itemprop="image" src="images/favicon_badge.png" alt="APP Diep Vien study" class="w-12 h-12 rounded-2xl border-2 border-[#FFA000] object-contain shadow-md flex-shrink-0">
+            <!-- 1. Compact Brand Header (Minimal Text, SEO Schema) -->
+            <div class="flex items-center gap-3 mb-3">
+                <img itemprop="image" src="images/favicon_badge.png" alt="APP Diep Vien study" class="w-10 h-10 rounded-xl border-2 border-[#FFA000] object-contain shadow-sm flex-shrink-0">
                 <div>
-                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[10px] rounded-full uppercase border border-blue-200 dark:border-blue-800">
-                        <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>
-                        <span itemprop="applicationCategory">Nền Tảng Học Tập & Ôn Thi AI Desktop</span>
+                    <div class="flex items-center gap-2">
+                        <h2 itemprop="name" class="text-lg sm:text-xl font-black text-slate-900 dark:text-white font-condensed uppercase tracking-wide leading-none">
+                            APP Diep Vien study
+                        </h2>
+                        <span itemprop="applicationCategory" class="px-2 py-0.5 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[9.5px] rounded-full uppercase border border-blue-200 dark:border-blue-800">
+                            Windows & macOS
+                        </span>
                     </div>
-                    <h2 itemprop="name" class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1 font-condensed uppercase tracking-wide leading-tight">
-                        APP Diep Vien study — Học Tập & Luyện Thi Thông Minh Cùng AI
-                    </h2>
+                    <p itemprop="description" class="text-[11px] text-slate-500 dark:text-slate-300 mt-0.5">
+                        Đồng bộ Khóa Học · Đề Cương · Ghi Âm AI · Dịch PDF Sang Word
+                    </p>
                 </div>
             </div>
 
-            <!-- 2. Real App Interface Preview Image -->
-            <div class="rounded-2xl overflow-hidden border-2 border-slate-200 dark:border-white/15 shadow-lg mb-4 bg-slate-900">
-                <img src="images/app_preview_showcase.png" alt="Giao diện phần mềm APP Diep Vien study" class="w-full h-auto max-h-[240px] object-cover object-top block">
-            </div>
-
-            <!-- 3. Brief SEO-Optimized Feature Highlights (Custom Basic SVG Icons) -->
-            <div itemprop="description" class="grid sm:grid-cols-3 gap-2.5 mb-5 text-xs">
-                <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border border-slate-200/80 dark:border-white/10">
-                    <div class="flex items-center gap-1.5 font-extrabold text-[#0D1677] dark:text-amber-400 mb-1">
+            <!-- 2. 4 Cropped Feature Snippets (2x2 Grid, Compact & Low Text) -->
+            <div class="grid grid-cols-2 gap-2.5 mb-3.5">
+                <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-white/15 bg-slate-50 dark:bg-[#060E2C] shadow-sm">
+                    <img src="images/app_crop_courses.png" alt="50+ Khóa Học Ôn Thi" class="w-full h-[108px] object-cover object-top block border-b border-slate-200/80 dark:border-white/10">
+                    <div class="px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] font-extrabold text-[#0D1677] dark:text-amber-400">
                         <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>
-                        <span>50+ Khóa Học & Đề Cương</span>
+                        <span class="truncate">50+ Khóa Học Ôn Thi</span>
                     </div>
-                    <p class="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Đồng bộ trọn bộ khóa học 2K9, 2K10, ĐGNL HSA, ĐGTD TSA, V-ACT và 600+ đề cương đại học.
-                    </p>
                 </div>
-                <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border border-slate-200/80 dark:border-white/10">
-                    <div class="flex items-center gap-1.5 font-extrabold text-[#0D1677] dark:text-amber-400 mb-1">
+
+                <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-white/15 bg-slate-50 dark:bg-[#060E2C] shadow-sm">
+                    <img src="images/app_crop_decuong.png" alt="600+ Đề Cương Đại Học" class="w-full h-[108px] object-cover object-top block border-b border-slate-200/80 dark:border-white/10">
+                    <div class="px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] font-extrabold text-[#0D1677] dark:text-amber-400">
+                        <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg>
+                        <span class="truncate">600+ Đề Cương Đại Học</span>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-white/15 bg-slate-50 dark:bg-[#060E2C] shadow-sm">
+                    <img src="images/app_crop_ai_notes.png" alt="Ghi Âm & Tóm Tắt AI" class="w-full h-[108px] object-cover object-left-top block border-b border-slate-200/80 dark:border-white/10">
+                    <div class="px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] font-extrabold text-[#0D1677] dark:text-amber-400">
                         <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
-                        <span>Ghi Âm & Tóm Tắt AI</span>
+                        <span class="truncate">Ghi Âm & Tóm Tắt AI</span>
                     </div>
-                    <p class="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Tự động ghi lời giảng thầy cô, tóm tắt công thức trọng tâm và giải đáp câu hỏi tức thì.
-                    </p>
                 </div>
-                <div class="p-3 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border border-slate-200/80 dark:border-white/10">
-                    <div class="flex items-center gap-1.5 font-extrabold text-[#0D1677] dark:text-amber-400 mb-1">
+
+                <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-white/15 bg-slate-50 dark:bg-[#060E2C] shadow-sm">
+                    <img src="images/app_crop_pdf_word.png" alt="Dịch File & PDF Sang Word" class="w-full h-[108px] object-cover object-top block border-b border-slate-200/80 dark:border-white/10">
+                    <div class="px-2.5 py-1.5 flex items-center gap-1.5 text-[11px] font-extrabold text-[#0D1677] dark:text-amber-400">
                         <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
-                        <span>Dịch File & PDF Sang Word</span>
+                        <span class="truncate">Dịch File & PDF → Word</span>
                     </div>
-                    <p class="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Phiên dịch tài liệu học thuật đa ngôn ngữ và chuyển PDF sang Word chuẩn công thức.
-                    </p>
                 </div>
             </div>
 
-            <!-- 4. Mandatory Login Gate Before Download (Username + Email Required to Enable Download Button) -->
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/15 space-y-3 text-xs">
+            <!-- 3. Mandatory Username + Email Gate & Download Buttons with Official Windows & Apple Logos -->
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border border-slate-200 dark:border-white/15 space-y-2.5 text-xs">
                 <div class="flex items-center justify-between gap-2">
-                    <div class="font-black text-slate-900 dark:text-white uppercase tracking-wide flex items-center gap-1.5">
+                    <span class="font-black text-slate-900 dark:text-white uppercase text-[11px] flex items-center gap-1.5">
                         <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                        <span>Thông Tin Tài Khoản Trước Khi Tải App (Bắt Buộc)</span>
-                    </div>
-                    <span id="appGateLockBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300">
-                        Điền thông tin để mở khóa nút tải
+                        <span>Điền Tài Khoản Để Mở Tải App</span>
+                    </span>
+                    <span id="appGateLockBadge" class="px-2 py-0.5 rounded-full text-[9.5px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300">
+                        Điền để mở khóa tải
                     </span>
                 </div>
 
-                <div class="grid sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Tên đăng nhập <span class="text-red-500">*</span></label>
-                        <input id="appOtpNameInput" type="text" oninput="validateAppDownloadGate()" placeholder="Nhập tên đăng nhập (VD: nguyenvana)" class="w-full px-3.5 py-2.5 bg-white dark:bg-[#0A143D] border-2 border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
-                    </div>
-                    <div>
-                        <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Email kích hoạt & đồng bộ <span class="text-red-500">*</span></label>
-                        <input id="appOtpEmailInput" type="email" oninput="validateAppDownloadGate()" placeholder="Nhập Email của bạn (VD: sinhvien@gmail.com)" class="w-full px-3.5 py-2.5 bg-white dark:bg-[#0A143D] border-2 border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
-                    </div>
+                <div class="grid sm:grid-cols-2 gap-2">
+                    <input id="appOtpNameInput" type="text" oninput="validateAppDownloadGate()" placeholder="Tên đăng nhập * (VD: nguyenvana)" class="w-full px-3 py-2 bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/15 rounded-xl text-xs text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
+                    <input id="appOtpEmailInput" type="email" oninput="validateAppDownloadGate()" placeholder="Email kích hoạt * (sinhvien@gmail.com)" class="w-full px-3 py-2 bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/15 rounded-xl text-xs text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
                 </div>
 
-                <p id="appGateStatusHint" class="text-[11px] font-semibold text-amber-700 dark:text-amber-300">
-                    Vui lòng điền đầy đủ Tên đăng nhập và địa chỉ Email ở trên để kích hoạt nút Tải App bên dưới.
-                </p>
+                <p id="appGateStatusHint" class="hidden"></p>
 
-                <!-- 5. Download Buttons (Disabled until Username + Email are filled) -->
-                <div class="grid sm:grid-cols-2 gap-2.5 pt-1">
-                    <button type="button" id="btnDirectDownloadWinExe" disabled onclick="handleGatedAppDownload('exe')" class="w-full py-3.5 px-4 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow-lg flex items-center justify-between transition opacity-45 cursor-not-allowed">
-                        <span class="flex items-center gap-2 text-left">
-                            <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                <!-- 4. Official Windows & Apple Logo Download Buttons -->
+                <div class="grid sm:grid-cols-2 gap-2 pt-0.5">
+                    <button type="button" id="btnDirectDownloadWinExe" disabled onclick="handleGatedAppDownload('exe')" class="w-full py-2.5 px-3.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow-md flex items-center justify-between transition opacity-45 cursor-not-allowed">
+                        <span class="flex items-center gap-2.5 text-left">
+                            <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.557L10.35 4.55v7.095H3V5.557zm0 12.886l7.35 1.007v-7.02H3v6.013zm8.165 1.12L21 21v-8.57h-9.835v7.127zm0-15.126v7.208H21V3l-9.835 1.437z"/></svg>
                             <span>
-                                <span class="block uppercase tracking-wide">Tải App Cho Windows (.EXE)</span>
-                                <span class="block text-[10px] font-normal text-sky-200">Windows 10 / 11 · Chạy ngay</span>
+                                <span class="block uppercase tracking-wide leading-tight">Tải Cho Windows</span>
+                                <span class="block text-[10px] font-normal text-sky-200 leading-tight">Windows 10 / 11 (.EXE)</span>
                             </span>
                         </span>
-                        <span class="px-2 py-0.5 bg-[#FFA000] text-slate-950 rounded text-[10px] font-black whitespace-nowrap">TẢI NGAY</span>
+                        <span class="px-2 py-0.5 bg-[#FFA000] text-slate-950 rounded text-[9.5px] font-black whitespace-nowrap">TẢI NGAY</span>
                     </button>
 
-                    <button type="button" id="btnDirectDownloadMacZip" disabled onclick="handleGatedAppDownload('macos')" class="w-full py-3.5 px-4 bg-slate-800 hover:bg-slate-700 text-white font-black text-xs rounded-xl shadow-lg flex items-center justify-between transition opacity-45 cursor-not-allowed">
-                        <span class="flex items-center gap-2 text-left">
-                            <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    <button type="button" id="btnDirectDownloadMacZip" disabled onclick="handleGatedAppDownload('macos')" class="w-full py-2.5 px-3.5 bg-slate-900 hover:bg-slate-800 text-white font-black text-xs rounded-xl shadow-md flex items-center justify-between transition opacity-45 cursor-not-allowed">
+                        <span class="flex items-center gap-2.5 text-left">
+                            <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3z"/></svg>
                             <span>
-                                <span class="block uppercase tracking-wide">Tải App Cho macOS (.ZIP)</span>
-                                <span class="block text-[10px] font-normal text-slate-300">MacBook M1/M2/M3/M4 & Intel</span>
+                                <span class="block uppercase tracking-wide leading-tight">Tải Cho macOS</span>
+                                <span class="block text-[10px] font-normal text-slate-300 leading-tight">Apple M1–M4 & Intel (.ZIP)</span>
                             </span>
                         </span>
-                        <span class="px-2 py-0.5 bg-white/20 rounded text-[10px] font-black whitespace-nowrap">macOS</span>
+                        <span class="px-2 py-0.5 bg-white/20 rounded text-[9.5px] font-black whitespace-nowrap">macOS</span>
                     </button>
                 </div>
             </div>

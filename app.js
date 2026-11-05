@@ -4392,25 +4392,122 @@ function validateAppDownloadGate() {
 
     if (badge) {
         if (isReady) {
-            badge.textContent = "Đã mở khóa nút tải App";
-            badge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300";
+            badge.textContent = "Đã mở khóa tải App";
+            badge.className = "px-2 py-0.5 rounded-full text-[9.5px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300";
         } else {
-            badge.textContent = "Điền thông tin để mở khóa nút tải";
-            badge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300";
-        }
-    }
-
-    if (hint) {
-        if (isReady) {
-            hint.textContent = "Đã xác nhận Tên đăng nhập (" + nameVal + ") & Email (" + emailVal + "). Nút Tải App đã sẵn sàng!";
-            hint.className = "text-[11px] font-bold text-emerald-700 dark:text-emerald-300";
-        } else {
-            hint.textContent = "Vui lòng điền đầy đủ Tên đăng nhập và địa chỉ Email ở trên để kích hoạt nút Tải App bên dưới.";
-            hint.className = "text-[11px] font-semibold text-amber-700 dark:text-amber-300";
+            badge.textContent = "Điền để mở khóa tải";
+            badge.className = "px-2 py-0.5 rounded-full text-[9.5px] font-extrabold bg-amber-100 text-amber-800 border border-amber-300";
         }
     }
 
     return isReady;
+}
+
+// Upgrade onDocPaymentConfirmed to always grant Google Drive access & show direct Drive button
+function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
+    if (typeof docPollingInterval !== "undefined" && docPollingInterval) {
+        clearInterval(docPollingInterval);
+        docPollingInterval = null;
+    }
+
+    document.getElementById("docCheckoutStep2")?.classList.add("hidden");
+    document.getElementById("docCheckoutStep3")?.classList.remove("hidden");
+    const ordEl = document.getElementById("docSuccessOrderId");
+    const emEl = document.getElementById("docSuccessEmail");
+    if (ordEl) ordEl.textContent = orderCode;
+    if (emEl) emEl.textContent = email;
+
+    const doc = state.selectedDoc || {};
+    const custName = document.getElementById("checkoutNameInput")?.value.trim() || "Sinh Viên";
+    const resolvedDriveId = doc.driveId || "1bDThoRGY_IadvZDlUq0eyYmopMlEuSTT";
+    const fallbackUrl = driveUrl || (doc.driveId ? (doc.driveType === "folder" ? `https://drive.google.com/drive/folders/${doc.driveId}` : `https://drive.google.com/file/d/${doc.driveId}/view`) : "https://drive.google.com/drive/folders/1bDThoRGY_IadvZDlUq0eyYmopMlEuSTT");
+
+    const warehouseWebhook = "https://script.google.com/macros/s/AKfycbyaKudQDpHOtFWrNV5dr39hoFCqFXl2MVJRKhWY93i1nV95WAvw4HdXxIW-UA-7XjEjvA/exec";
+    if (email) {
+        fetch(warehouseWebhook, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                email: email,
+                name: custName,
+                orderCode: orderCode,
+                itemName: doc.name || doc.baseName || "Đề Cương Ôn Thi 50K",
+                orderType: "Mua Đề Cương 50K",
+                fileId: resolvedDriveId,
+                fileLink: fallbackUrl
+            })
+        }).catch(() => {});
+    }
+
+    const prev = getSyncedCustomerLocal() || {};
+    const prevDocs = Array.isArray(prev.purchasedDocs) ? prev.purchasedDocs : [];
+    const updatedCust = {
+        ...prev,
+        email: email || prev.email || "",
+        name: custName || prev.name || "",
+        purchasedDocs: [
+            {
+                orderCode,
+                sku: doc.code || "DC",
+                name: doc.name || doc.baseName || "Đề Cương 50K",
+                driveUrl: fallbackUrl
+            },
+            ...prevDocs.filter(x => x.orderCode !== orderCode)
+        ]
+    };
+    localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
+
+    const driveBtn = document.getElementById("docSuccessDriveBtn");
+    if (driveBtn) {
+        driveBtn.href = fallbackUrl;
+        driveBtn.classList.remove("hidden");
+    }
+}
+
+// Upgrade openSuccessModal so BTL Service orders also show the 10% Deposit VietQR immediately
+function openSuccessModal(type, orderData) {
+    const modal = document.getElementById("successModal");
+    if (!modal) return;
+
+    const title = document.getElementById("successModalTitle");
+    const desc = document.getElementById("successModalDesc");
+    const orderId = document.getElementById("successOrderId");
+    const customerMail = document.getElementById("successCustomerEmail");
+
+    if (orderId) orderId.textContent = orderData.orderId || "";
+    if (customerMail) customerMail.textContent = orderData?.customer?.email || "";
+
+    let qrBox = document.getElementById("serviceDepositQrBox");
+    if (!qrBox && desc && desc.parentElement) {
+        qrBox = document.createElement("div");
+        qrBox.id = "serviceDepositQrBox";
+        qrBox.className = "hidden mb-5 p-3.5 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border border-amber-400/60 text-center";
+        desc.insertAdjacentElement("afterend", qrBox);
+    }
+
+    if (type === "DOC") {
+        if (title) title.textContent = "Gửi Đơn Thành Công!";
+        if (desc) desc.textContent = "Hệ thống đã ghi nhận mã đơn của bạn và phân quyền Google Drive vào Gmail!";
+        if (qrBox) qrBox.classList.add("hidden");
+    } else {
+        const rawDep = String(orderData?.assignment?.depositAmount || "50000").replace(/\D/g, "");
+        const depAmount = Number(rawDep) || 50000;
+        const memo = String(orderData?.orderId || "COCBTL").trim();
+        const qrSrc = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${depAmount}&addInfo=${encodeURIComponent(memo)}&accountName=NGO%20BAO%20THACH`;
+        if (title) title.textContent = "Đã Ghi Nhận Đơn Đặt Làm Bài!";
+        if (desc) desc.textContent = "Quét mã VietQR bên dưới để đặt cọc 10% khởi động bài viết (ACB · 27384751 · NGO BAO THACH):";
+        if (qrBox) {
+            qrBox.classList.remove("hidden");
+            qrBox.innerHTML = `
+                <img id="serviceDepositQrImg" src="${qrSrc}" alt="VietQR Đặt Cọc 10% BTL" class="w-44 h-44 mx-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm mb-2 object-contain">
+                <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Số tiền cọc (10%): ${depAmount.toLocaleString("vi-VN")} VNĐ</div>
+                <div class="text-[11px] font-mono text-slate-600 dark:text-slate-300 mt-0.5">Nội dung CK: <strong>${memo}</strong></div>
+            `;
+        }
+    }
+
+    modal.classList.remove("hidden");
 }
 
 function startDirectFileDownload(hrefUrl, downloadFilename = "DiepVienStudy_Setup.exe") {

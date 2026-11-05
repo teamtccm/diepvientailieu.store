@@ -3268,234 +3268,189 @@ function handleWebCourseCardClick(courseId) {
 
 
 let baseClickedCourseForCheckout = null;
+let activeCourseCheckoutTierKey = "course_199k";
+let selectedSubject69kId = "";
+let selectedCourse199kId = "";
 
-
-
-function resolveCheckoutTierOptions(clickedCourse) {
-
-    const fullCourse = COURSES_DATABASE.find(c => c.id === "ALL-COURSES-399K") || clickedCourse;
-
-    // Mua theo môn (69k): mở khóa môn học thuộc khóa đang chọn
-
-    const subj69k = {
-
-        ...clickedCourse,
-
-        price: 69000,
-
-        originalPrice: 200000,
-
-        discountPercent: "66%",
-
-        tier: "subject_69k"
-
-    };
-
-    // Mua khóa học (199k): mở khóa chính khóa học đó
-
-    const course199k = {
-
-        ...clickedCourse,
-
-        price: 199000,
-
-        originalPrice: 600000,
-
-        discountPercent: "67%",
-
-        tier: "course_199k"
-
-    };
-
-    // Trọn bộ (399k): mở khóa Full cả App (tất cả 50 khóa học)
-
-    const full399k = {
-
-        ...fullCourse,
-
-        id: "ALL-COURSES-399K",
-
-        code: "FULL399K",
-
-        title: "Mở Khóa Trọn Bộ Full Cả App Điệp Viên Study (Tất Cả 50 Khóa Học)",
-
-        price: 399000,
-
-        originalPrice: 2500000,
-
-        discountPercent: "84%",
-
-        tier: "full_399k"
-
-    };
-
-
-
-    return {
-
-        subject_69k: subj69k,
-
-        course_199k: course199k,
-
-        full_399k: full399k
-
-    };
-
+function getSubject69kCatalogList() {
+    const db = typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE : [];
+    const subjBundles = db.filter(c => String(c.id).startsWith("COURSE-SUBJ-"));
+    const items = db.filter(c => String(c.id).startsWith("COURSE-ITEM-"));
+    return [...subjBundles, ...items];
 }
 
+function getCourse199kCatalogList() {
+    const db = typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE : [];
+    const items = db.filter(c => String(c.id).startsWith("COURSE-ITEM-"));
+    const combos = db.filter(c => c.id !== "ALL-COURSES-399K" && !String(c.id).startsWith("COURSE-ITEM-") && !String(c.id).startsWith("COURSE-SUBJ-"));
+    return [...items, ...combos];
+}
 
+function onChangeCourseCheckoutTarget(targetId) {
+    if (!targetId) return;
+    const found = (typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE : []).find(c => c.id === targetId);
+    if (!found) return;
+    if (activeCourseCheckoutTierKey === "subject_69k") {
+        selectedSubject69kId = found.id;
+    } else if (activeCourseCheckoutTierKey === "course_199k") {
+        selectedCourse199kId = found.id;
+    }
+    selectCourseCheckoutTier(activeCourseCheckoutTierKey);
+}
 
 function selectCourseCheckoutTier(tierKey) {
+    activeCourseCheckoutTierKey = tierKey || "course_199k";
+    const subjList = getSubject69kCatalogList();
+    const courseList = getCourse199kCatalogList();
 
-    if (!baseClickedCourseForCheckout) return;
+    if (!selectedSubject69kId) {
+        selectedSubject69kId = baseClickedCourseForCheckout?.parentSubjectId
+            || (subjList.some(x => x.id === baseClickedCourseForCheckout?.id) ? baseClickedCourseForCheckout.id : (subjList[0]?.id || ""));
+    }
+    if (!selectedCourse199kId) {
+        selectedCourse199kId = (courseList.some(x => x.id === baseClickedCourseForCheckout?.id) ? baseClickedCourseForCheckout.id : (courseList[0]?.id || ""));
+    }
 
-    const tiers = resolveCheckoutTierOptions(baseClickedCourseForCheckout);
+    let chosenBase = baseClickedCourseForCheckout || COURSES_DATABASE[0];
+    if (activeCourseCheckoutTierKey === "subject_69k") {
+        chosenBase = (COURSES_DATABASE.find(c => c.id === selectedSubject69kId)) || baseClickedCourseForCheckout || subjList[0] || COURSES_DATABASE[0];
+    } else if (activeCourseCheckoutTierKey === "course_199k") {
+        chosenBase = (COURSES_DATABASE.find(c => c.id === selectedCourse199kId)) || baseClickedCourseForCheckout || courseList[0] || COURSES_DATABASE[0];
+    }
 
-    const chosen = tiers[tierKey] || tiers.course_199k;
+    const fullCourse = COURSES_DATABASE.find(c => c.id === "ALL-COURSES-399K") || chosenBase;
+    let chosen;
+    if (activeCourseCheckoutTierKey === "subject_69k") {
+        chosen = {
+            ...chosenBase,
+            price: 69000,
+            originalPrice: 200000,
+            discountPercent: "66%",
+            tier: "subject_69k"
+        };
+    } else if (activeCourseCheckoutTierKey === "full_399k") {
+        chosen = {
+            ...fullCourse,
+            id: "ALL-COURSES-399K",
+            code: "FULL399K",
+            title: "Mở Khóa Trọn Bộ Full Cả App Điệp Viên Study (Tất Cả 50 Khóa Học)",
+            price: 399000,
+            originalPrice: 2500000,
+            discountPercent: "84%",
+            tier: "full_399k"
+        };
+    } else {
+        chosen = {
+            ...chosenBase,
+            price: 199000,
+            originalPrice: 600000,
+            discountPercent: "67%",
+            tier: "course_199k"
+        };
+    }
 
     selectedCourseForCheckout = chosen;
 
-
-
-    document.getElementById("courseCheckoutTitle").textContent = chosen.title;
-
-    document.getElementById("courseCheckoutPrice").textContent = chosen.price.toLocaleString("vi-VN") + "đ";
-
-    document.getElementById("courseCheckoutOriginalPrice").textContent = chosen.originalPrice.toLocaleString("vi-VN") + "đ";
-
-    document.getElementById("courseCheckoutDiscount").textContent = "TIẾT KIỆM " + chosen.discountPercent;
-
-
+    const titleEl = document.getElementById("courseCheckoutTitle");
+    const priceEl = document.getElementById("courseCheckoutPrice");
+    const origEl = document.getElementById("courseCheckoutOriginalPrice");
+    const discEl = document.getElementById("courseCheckoutDiscount");
+    if (titleEl) titleEl.textContent = chosen.title;
+    if (priceEl) priceEl.textContent = chosen.price.toLocaleString("vi-VN") + "đ";
+    if (origEl) origEl.textContent = chosen.originalPrice.toLocaleString("vi-VN") + "đ";
+    if (discEl) discEl.textContent = "TIẾT KIỆM " + chosen.discountPercent;
 
     const listEl = document.getElementById("courseTierOptionsList");
-
     if (listEl) {
-
-        const items = [
-
-            {
-
-                key: "subject_69k",
-
-                label: "Gói 1 · Mở Khóa Theo Môn",
-
-                price: "69.000đ",
-
-                title: baseClickedCourseForCheckout.title,
-
-                sub: "Mở khóa môn học đang chọn + Tặng App Điệp Viên Study (1 máy)"
-
-            },
-
-            {
-
-                key: "course_199k",
-
-                label: "Gói 2 · Mua Khóa Học Này (Khuyên Dùng)",
-
-                price: "199.000đ",
-
-                title: baseClickedCourseForCheckout.title,
-
-                sub: "Mở khóa trọn vẹn khóa học này trên App & Google Drive + Tặng App (1 máy)"
-
-            },
-
-            {
-
-                key: "full_399k",
-
-                label: "Gói 3 · Trọn Bộ Mở Khóa Full Cả App (VIP)",
-
-                price: "399.000đ",
-
-                title: "Mở Khóa Full Cả App Điệp Viên Study (Toàn Bộ 50 Khóa Học)",
-
-                sub: "Mở khóa TẤT CẢ 50 Khóa học (2K9 + 2K10 + HSA + TSA + V-ACT + BCA + QDA + VSAT) trên toàn bộ App & Web (1 máy)"
-
-            }
-
+        const tabs = [
+            { key: "subject_69k", label: "Theo môn · 69.000đ" },
+            { key: "course_199k", label: "Mua khóa · 199.000đ" },
+            { key: "full_399k", label: "Trọn bộ Full App · 399.000đ" }
         ];
+        const tabsHtml = `
+            <div class="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-[#060E2C] border border-slate-200 dark:border-white/10">
+                ${tabs.map(t => {
+                    const active = activeCourseCheckoutTierKey === t.key;
+                    return `<button type="button" onclick="selectCourseCheckoutTier('${t.key}')" class="py-2 px-2 rounded-lg text-[11px] sm:text-xs font-black transition text-center ${active ? 'bg-[#0D1677] text-white shadow-sm' : 'text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-white/10'}">${t.label}</button>`;
+                }).join("")}
+            </div>
+        `;
 
-        listEl.innerHTML = items.map(it => {
-
-            const active = chosen.tier === it.key;
-
-            return `
-
-            <div onclick="selectCourseCheckoutTier('${it.key}')" class="p-3 rounded-xl border-2 cursor-pointer transition flex items-start justify-between gap-2 ${active ? 'border-[#0D1677] dark:border-amber-400 bg-blue-50/70 dark:bg-white/10 shadow-sm' : 'border-slate-200 dark:border-white/10 hover:border-blue-300 bg-white dark:bg-[#060E2C]'}">
-
-                <div class="min-w-0">
-
-                    <div class="flex items-center gap-1.5">
-
-                        <span class="w-4 h-4 rounded-full border-2 flex items-center justify-center text-[10px] font-black ${active ? 'border-[#0D1677] bg-[#0D1677] text-white' : 'border-slate-300'}">${active ? '✓' : ''}</span>
-
-                        <span class="text-xs font-black text-slate-900 dark:text-white">${it.label}</span>
-
-                    </div>
-
-                    <p class="text-[11px] font-bold text-[#0D1677] dark:text-amber-400 truncate mt-0.5 pl-5">${it.title}</p>
-
-                    <p class="text-[10px] text-slate-500 dark:text-slate-400 pl-5">${it.sub}</p>
-
+        let pickerHtml = "";
+        if (activeCourseCheckoutTierKey === "subject_69k") {
+            const optionsHtml = subjList.map(s => {
+                const labelText = `${s.instructor ? s.instructor + ' — ' : ''}${s.title}`;
+                const sel = s.id === chosen.id ? "selected" : "";
+                return `<option value="${s.id}" ${sel}>${labelText}</option>`;
+            }).join("");
+            pickerHtml = `
+                <div class="mt-2 p-2.5 rounded-xl bg-blue-50/70 dark:bg-[#060E2C] border border-blue-200 dark:border-white/15">
+                    <label for="courseCheckoutTargetSelect" class="block text-[11px] font-black text-[#0D1677] dark:text-amber-400 uppercase mb-1">
+                        Chọn môn học cần mở khóa (69.000đ / 1 môn + Tặng App 1 máy):
+                    </label>
+                    <select id="courseCheckoutTargetSelect" onchange="onChangeCourseCheckoutTarget(this.value)" class="w-full px-3 py-2 rounded-lg bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 text-xs font-bold text-slate-900 dark:text-white outline-none focus:border-[#0D1677] cursor-pointer">
+                        ${optionsHtml}
+                    </select>
                 </div>
+            `;
+        } else if (activeCourseCheckoutTierKey === "course_199k") {
+            const optionsHtml = courseList.map(c => {
+                const labelText = `${c.instructor ? c.instructor + ' — ' : ''}${c.title}`;
+                const sel = c.id === chosen.id ? "selected" : "";
+                return `<option value="${c.id}" ${sel}>${labelText}</option>`;
+            }).join("");
+            pickerHtml = `
+                <div class="mt-2 p-2.5 rounded-xl bg-blue-50/70 dark:bg-[#060E2C] border border-blue-200 dark:border-white/15">
+                    <label for="courseCheckoutTargetSelect" class="block text-[11px] font-black text-[#0D1677] dark:text-amber-400 uppercase mb-1">
+                        Chọn khóa học cần mở khóa (199.000đ / 1 khóa + Tặng App 1 máy):
+                    </label>
+                    <select id="courseCheckoutTargetSelect" onchange="onChangeCourseCheckoutTarget(this.value)" class="w-full px-3 py-2 rounded-lg bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 text-xs font-bold text-slate-900 dark:text-white outline-none focus:border-[#0D1677] cursor-pointer">
+                        ${optionsHtml}
+                    </select>
+                </div>
+            `;
+        } else {
+            pickerHtml = `
+                <div class="mt-2 p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 text-[11px] font-bold text-emerald-900 dark:text-emerald-200">
+                    Đã chọn <strong>Mở Khóa Trọn Bộ Full Cả App (399.000đ)</strong>: Mở khóa toàn bộ 50 Khóa học (2K9, 2K10, HSA, TSA, V-ACT, BCA, QDA, VSAT) trên App & Google Drive + Tặng App (1 máy).
+                </div>
+            `;
+        }
 
-                <span class="text-sm font-black ${active ? 'text-[#0D1677] dark:text-amber-400' : 'text-slate-700 dark:text-slate-300'} whitespace-nowrap">${it.price}</span>
-
-            </div>`;
-
-        }).join("");
-
+        listEl.innerHTML = tabsHtml + pickerHtml;
     }
-
 }
-
-
 
 function openCourseCheckoutModal(courseId) {
-
     if (typeof COURSES_DATABASE === "undefined") return;
-
-    const course = COURSES_DATABASE.find(c => c.id === courseId) || COURSES_DATABASE[0];
-
+    const course = COURSES_DATABASE.find(c => c.id === courseId) || COURSES_DATABASE.find(c => !c.isPackageOnly) || COURSES_DATABASE[0];
     if (!course) return;
 
-
-
     baseClickedCourseForCheckout = course;
+    selectedCourse199kId = course.id === "ALL-COURSES-399K" ? "COURSE-ITEM-01" : course.id;
+    selectedSubject69kId = course.parentSubjectId || (String(course.id).startsWith("COURSE-SUBJ-") ? course.id : "COURSE-SUBJ-TOAN12-2K9");
 
-    selectCourseCheckoutTier("course_199k");
-
-
+    if (course.id === "ALL-COURSES-399K") {
+        selectCourseCheckoutTier("full_399k");
+    } else if (String(course.id).startsWith("COURSE-SUBJ-")) {
+        selectCourseCheckoutTier("subject_69k");
+    } else {
+        selectCourseCheckoutTier("course_199k");
+    }
 
     const cust = getSyncedCustomerLocal();
-
     document.getElementById("courseStudentName").value = cust?.name || "";
-
     document.getElementById("courseStudentPhone").value = (cust?.phone || "").replace(/\[.*\]/g, "").trim();
-
     document.getElementById("courseStudentEmail").value = cust?.email || "";
 
-
-
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
-
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
-
     document.getElementById("courseCheckoutStep3").classList.add("hidden");
 
-
-
     const modal = document.getElementById("courseCheckoutModal");
-
     modal.classList.remove("hidden");
-
     modal.classList.add("flex");
-
 }
-
-
 
 function closeCourseCheckoutModal() {
 

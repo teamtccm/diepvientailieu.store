@@ -1406,12 +1406,59 @@ function initEventListeners() {
 }
 
 /* ==========================================================================
-   COURSES MODULE: RENDER, FILTER, CHECKOUT (ĐỒNG BỘ 100% STYLE VIEWDOCS)
+   COURSES MODULE: RENDER, FILTER, CHECKOUT (ĐỒNG BỘ 100% GIAO DIỆN APP ĐIỆP VIÊN STUDY)
    ========================================================================== */
 
 let activeCourseCategory = "all";
 let activeCourseTierFilter = "all";
 let selectedCourseForCheckout = null;
+let pendingWebCoverCourseId = null;
+
+const WEB_COURSE_TAB_LABELS = {
+    "all": "Tất cả",
+    "combo_full": "Gói Combo (199k/399k)",
+    "lop12_2k9": "Lớp 12 (2K9)",
+    "lop11_2k10": "Lớp 11 (2K10)",
+    "dgnl_hsa": "ĐGNL HSA",
+    "dgtd_tsa": "ĐGTD TSA",
+    "dgnl_vact_bca": "V-ACT / BCA / QDA / VSAT"
+};
+
+function getWebCourseCustomCovers() {
+    try {
+        const raw = localStorage.getItem("dvs_course_custom_covers");
+        return raw ? JSON.parse(raw) : {};
+    } catch (_) {
+        return {};
+    }
+}
+
+function triggerWebCourseCoverUpload(event, courseId) {
+    if (event) event.stopPropagation();
+    pendingWebCoverCourseId = courseId;
+    const inp = document.getElementById("webCourseCoverInput");
+    if (inp) {
+        inp.value = "";
+        inp.click();
+    }
+}
+
+function handleWebCourseCoverChange(event) {
+    const file = event?.target?.files?.[0];
+    const targetId = pendingWebCoverCourseId;
+    if (!file || !targetId) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+        const dataUrl = typeof reader.result === "string" ? reader.result : "";
+        if (!dataUrl) return;
+        const next = { ...getWebCourseCustomCovers(), [targetId]: dataUrl };
+        try {
+            localStorage.setItem("dvs_course_custom_covers", JSON.stringify(next));
+        } catch (_) {}
+        renderCourses();
+    };
+    reader.readAsDataURL(file);
+}
 
 function renderCourseCategoryTabs() {
     const container = document.getElementById("courseCategoryTabs");
@@ -1419,11 +1466,12 @@ function renderCourseCategoryTabs() {
 
     container.innerHTML = COURSE_CATEGORIES.map(cat => {
         const isActive = cat.id === activeCourseCategory;
+        const label = WEB_COURSE_TAB_LABELS[cat.id] || cat.name;
         const activeClass = isActive
-            ? "bg-[#0D1677] text-white shadow-md border-[#0D1677]"
-            : "bg-slate-100 dark:bg-[#060E2C] text-slate-700 dark:text-slate-200 border-slate-200 dark:border-white/10 hover:border-[#0D1677] dark:hover:border-sky-400";
-        return `<button onclick="filterCoursesByCategory('${cat.id}')" class="px-3.5 py-2 text-xs font-extrabold rounded-xl border-2 transition whitespace-nowrap ${activeClass}">
-            ${cat.name}
+            ? "bg-[#0D1677] text-white shadow-sm"
+            : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/60 dark:hover:bg-white/10";
+        return `<button type="button" onclick="filterCoursesByCategory('${cat.id}')" class="px-3 py-1.5 text-xs font-bold rounded-lg transition whitespace-nowrap ${activeClass}">
+            ${label}
         </button>`;
     }).join("");
 }
@@ -1504,106 +1552,51 @@ function isWebCourseUnlocked(courseId) {
 }
 
 function renderSingleCourseCardHtml(course) {
-    const formattedPrice = course.price.toLocaleString("vi-VN");
-    const formattedOriginal = course.originalPrice.toLocaleString("vi-VN");
     const unlocked = isWebCourseUnlocked(course.id);
-    const mascotBadge = "images/favicon_badge.png";
-    const tierBadge = course.tierShortBadge || (course.tier === "full_399k" ? "👑 FULL VIP 399K" : (course.tier === "course_199k" ? "📦 TRỌN KHÓA 199K" : "📘 THEO MÔN 69K"));
-    const groupTag = course.groupName || course.categoryName || "KHÓA HỌC 2027";
-    const discountPercent = course.discountPercent || "72%";
+    const customCovers = getWebCourseCustomCovers();
+    const coverUrl = customCovers[course.id] || course.defaultCover || "";
+    const summaryText = course.summary || course.description || "";
+    const durationText = (course.duration || ((course.lessons || 60) + " bài giảng · HD")) + (unlocked ? " · Đã mở khóa" : "");
 
     return `
-        <div onclick="handleWebCourseCardClick('${course.id}')" class="clean-card hover-lift overflow-hidden flex flex-col justify-between transition-all duration-300 border-2 ${unlocked ? 'border-emerald-400 dark:border-emerald-500' : 'border-slate-200 dark:border-white/10 hover:border-[#0D1677] dark:hover:border-sky-400'} shadow-sm hover:shadow-2xl rounded-[24px] cursor-pointer">
+        <article onclick="handleWebCourseCardClick('${course.id}')" class="rounded-[18px] overflow-hidden flex flex-col bg-white/95 dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70' : 'border-slate-200/90 dark:border-white/10 hover:border-blue-600/45 dark:hover:border-sky-400/50'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
             
-            <!-- REDESIGNED HIGH-RESOLUTION PROFESSIONAL COVER BANNER (100% UNIFIED WITH VIEWDOCS) -->
-            <div class="relative p-5 text-white flex flex-col justify-between min-h-[235px] select-none rounded-t-[22px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
-                
-                <!-- Top Bar: Brand Pill & Tier Gold Badge -->
-                <div class="flex justify-between items-center z-10 gap-2">
-                    <div class="flex items-center gap-1.5 bg-black/60 px-2.5 py-1 rounded-xl border border-white/20 backdrop-blur-md shadow-sm">
-                        <img src="${mascotBadge}" alt="Logo" class="w-4 h-4 object-contain" loading="lazy">
-                        <span class="font-black text-[9.5px] tracking-wider uppercase text-amber-300">ĐIỆP VIÊN TÀI LIỆU</span>
+            <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
+            <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
+                ${coverUrl ? `
+                    <img src="${coverUrl}" alt="${course.title}" class="w-full h-full object-cover block" loading="lazy">
+                ` : `
+                    <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
+                        <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
                     </div>
-                    <span class="px-2.5 py-1 ${unlocked ? 'bg-emerald-500 text-white border-emerald-300' : 'bg-[#FFA000] text-slate-950 border-amber-300'} font-black text-[9.5px] rounded-lg shadow-md uppercase tracking-wider border whitespace-nowrap">
-                        ${unlocked ? '✓ ĐÃ MỞ KHÓA' : tierBadge}
-                    </span>
-                </div>
+                `}
+                <button type="button" onclick="triggerWebCourseCoverUpload(event, '${course.id}')" class="absolute bottom-2.5 right-2.5 z-10 px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/75 hover:bg-blue-600 text-white border border-white/25 backdrop-blur-md transition">
+                    ${coverUrl ? "Đổi ảnh" : "Chèn ảnh"}
+                </button>
+            </div>
 
-                <!-- Center Title & Instructor -->
-                <div class="relative my-3 z-10">
-                    <div class="flex items-center gap-1.5 mb-1.5 flex-wrap">
-                        <span class="text-sm">${course.icon || '🎓'}</span>
-                        <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${course.code}</span>
-                        <span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto truncate max-w-[145px]">${groupTag}</span>
-                    </div>
-                    <h4 class="font-condensed font-black text-lg sm:text-[19px] text-white tracking-wide uppercase leading-snug line-clamp-2 drop-shadow-md min-h-[48px]">
-                        ${course.title}
-                    </h4>
-                    <div class="flex items-center gap-2 mt-2 text-[10px] text-sky-200 font-bold truncate">
-                        <span class="text-amber-300 truncate">👨‍🏫 ${course.instructor}</span>
-                    </div>
-                    <div class="flex items-center gap-2.5 mt-1.5 text-[10px]">
-                        <span class="text-emerald-300 font-bold">🎥 ${course.lessons || 60}+ Bài giảng</span>
-                        <span class="text-amber-300 font-bold">⭐ 5.0</span>
-                        <span class="text-sky-200 font-bold">⚡ Drive + App</span>
-                    </div>
-                </div>
+            <!-- CARD BODY (IDENTICAL TO APP dvs-course-card-body) -->
+            <div class="p-4 flex flex-col flex-1 gap-1.5">
+                <h3 class="text-[15.5px] font-extrabold text-slate-900 dark:text-white leading-snug tracking-tight m-0">
+                    ${course.title}
+                </h3>
+                <p class="text-[12.5px] text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2 m-0">
+                    ${summaryText}
+                </p>
 
-                <!-- Bottom Bar: Verified Badge + Website -->
-                <div class="relative z-10 flex items-center justify-between pt-2.5 border-t border-white/20">
-                    <span class="text-[9.5px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
-                        <span>★</span> BẢN QUYỀN KHÓA HỌC & APP 2027
-                    </span>
-                    <span class="text-[9.5px] font-mono text-sky-200">
-                        diepvientailieu.store
-                    </span>
+                <div class="flex items-center justify-between gap-2.5 pt-2.5 mt-auto border-t border-slate-200/70 dark:border-white/10">
+                    <div class="flex flex-col gap-0.5 min-w-0">
+                        <strong class="text-[12.5px] font-bold text-slate-900 dark:text-white truncate">${course.instructor}</strong>
+                        <small class="text-[11px] text-slate-500 dark:text-slate-400 truncate">${durationText}</small>
+                    </div>
+                    <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">
+                        ${!unlocked ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' : ''}
+                        <span>Vào học</span>
+                    </button>
                 </div>
             </div>
 
-            <!-- CARD BODY -->
-            <div class="p-5 flex-1 flex flex-col justify-between bg-white dark:bg-[#0A143D]">
-                <div>
-                    <!-- Feature Chips -->
-                    <div class="flex flex-wrap gap-1.5 mb-3">
-                        <span class="text-[10px] font-semibold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-md border border-slate-200 dark:border-white/10">📂 Drive Vĩnh Viễn</span>
-                        <span class="text-[10px] font-semibold bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-200 dark:border-emerald-800/50">🎁 Tặng App (Email)</span>
-                        <span class="text-[10px] font-semibold bg-blue-50 dark:bg-blue-950/50 text-[#0D1677] dark:text-sky-300 px-2 py-0.5 rounded-md border border-blue-200 dark:border-blue-800/50">🔒 Khóa 1 Máy</span>
-                    </div>
-                    <p class="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed mb-3">
-                        Mở khóa trực tiếp Google Drive + Cấp tài khoản Email đăng nhập App Điệp Viên Study (Cố định 01 thiết bị).
-                    </p>
-                </div>
-
-                <!-- Price & Actions -->
-                <div class="pt-3 border-t border-slate-100 dark:border-white/10">
-                    <div class="flex items-baseline justify-between mb-3">
-                        <div>
-                            <span class="text-2xl font-black text-[#0D1677] dark:text-amber-400 font-condensed tracking-wider">${formattedPrice}đ</span>
-                            <span class="text-xs text-slate-400 line-through ml-1.5">${formattedOriginal}đ</span>
-                        </div>
-                        <span class="text-[10px] font-black text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800">
-                            TIẾT KIỆM ${discountPercent}
-                        </span>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-2">
-                        <button onclick="event.stopPropagation(); window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2.5 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
-                            <span>💬 Hỏi Shop</span>
-                        </button>
-                        ${unlocked ? `
-                        <a href="${course.driveUrl}" target="_blank" onclick="event.stopPropagation()" class="px-3 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
-                            <span>📂 Mở Kho Học</span>
-                        </a>
-                        ` : `
-                        <button onclick="event.stopPropagation(); openCourseCheckoutModal('${course.id}')" class="px-3 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
-                            <span>🛒 Mua Ngay</span>
-                        </button>
-                        `}
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </article>
     `;
 }
 
@@ -1626,7 +1619,7 @@ function renderCourses() {
             if (activeCourseTierFilter === "teacher_69k" && c.subTier !== "teacher_69k") return false;
         }
         if (searchQ) {
-            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.description || ""].join(" ").toLowerCase();
+            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
             const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
             return hay.includes(searchQ) || hayNorm.includes(searchNorm);
         }
@@ -1646,7 +1639,7 @@ function renderCourses() {
                 <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4">🔍</div>
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp từ khóa này</h3>
                 <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
-                    Bạn hãy thử chọn lại bộ lọc Khối / Gói học phí hoặc nhắn Zalo để nhân viên gửi link khóa học trực tiếp nhé!
+                    Bạn hãy thử chọn lại bộ lọc hoặc tìm từ khóa khác nhé!
                 </p>
                 <button onclick="filterCoursesByCategory('all'); filterCoursesByTierQuick('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
                     <span>🔄 Xem Toàn Bộ 66 Khóa Học</span>
@@ -1656,56 +1649,7 @@ function renderCourses() {
         return;
     }
 
-    // Group into clear visual sections when showing multiple tiers so 66 items are super easy to scan
-    const vipAndCombos = courses.filter(c => c.tier === "full_399k" || c.tier === "course_199k");
-    const subjectBundles = courses.filter(c => c.subTier === "bundle_69k");
-    const teacherCourses = courses.filter(c => c.subTier === "teacher_69k" || (c.tier === "subject_69k" && c.subTier !== "bundle_69k"));
-
-    const showGroupedHeaders = (vipAndCombos.length > 0 && (subjectBundles.length > 0 || teacherCourses.length > 0));
-
-    if (!showGroupedHeaders) {
-        grid.innerHTML = courses.map(renderSingleCourseCardHtml).join("");
-        return;
-    }
-
-    let html = "";
-    if (vipAndCombos.length > 0) {
-        html += `
-            <div class="col-span-full flex flex-wrap items-center justify-between gap-2 pt-2 pb-1 border-b border-slate-200 dark:border-white/10">
-                <div class="flex items-center gap-2">
-                    <span class="px-3 py-1 bg-[#FFA000] text-slate-950 font-black text-xs rounded-lg uppercase">PHẦN 1 · GÓI VIP & COMBO LỚN</span>
-                    <h3 class="text-lg sm:text-xl font-black text-slate-900 dark:text-white font-condensed uppercase tracking-wide">Gói Full Toàn Hệ Thống (399K) & Combo Trọn Khóa (199K)</h3>
-                </div>
-                <span class="text-xs font-bold text-slate-500 dark:text-slate-400">${vipAndCombos.length} gói combo tiết kiệm nhất</span>
-            </div>
-        ` + vipAndCombos.map(renderSingleCourseCardHtml).join("");
-    }
-
-    if (subjectBundles.length > 0) {
-        html += `
-            <div class="col-span-full flex flex-wrap items-center justify-between gap-2 pt-6 pb-1 border-b border-slate-200 dark:border-white/10">
-                <div class="flex items-center gap-2">
-                    <span class="px-3 py-1 bg-[#0D1677] text-white font-black text-xs rounded-lg uppercase">PHẦN 2 · TRỌN BỘ THEO MÔN (69K)</span>
-                    <h3 class="text-lg sm:text-xl font-black text-slate-900 dark:text-white font-condensed uppercase tracking-wide">Gói Tổng Hợp Theo Môn (Bao Gồm Tất Cả Thầy Cô Trong Môn — 69.000đ)</h3>
-                </div>
-                <span class="text-xs font-bold text-slate-500 dark:text-slate-400">${subjectBundles.length} môn tổng hợp</span>
-            </div>
-        ` + subjectBundles.map(renderSingleCourseCardHtml).join("");
-    }
-
-    if (teacherCourses.length > 0) {
-        html += `
-            <div class="col-span-full flex flex-wrap items-center justify-between gap-2 pt-6 pb-1 border-b border-slate-200 dark:border-white/10">
-                <div class="flex items-center gap-2">
-                    <span class="px-3 py-1 bg-emerald-600 text-white font-black text-xs rounded-lg uppercase">PHẦN 3 · KHÓA LẺ TỪNG THẦY CÔ (69K)</span>
-                    <h3 class="text-lg sm:text-xl font-black text-slate-900 dark:text-white font-condensed uppercase tracking-wide">Khóa Lẻ Từng Thầy Cô & Lộ Trình ĐGNL Chuyên Sâu (Đồng Giá 69.000đ)</h3>
-                </div>
-                <span class="text-xs font-bold text-slate-500 dark:text-slate-400">${teacherCourses.length} khóa học chi tiết</span>
-            </div>
-        ` + teacherCourses.map(renderSingleCourseCardHtml).join("");
-    }
-
-    grid.innerHTML = html;
+    grid.innerHTML = courses.map(renderSingleCourseCardHtml).join("");
 }
 
 function handleWebCourseCardClick(courseId) {

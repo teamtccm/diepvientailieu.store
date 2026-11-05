@@ -21283,6 +21283,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "4.8k+ học viên",
         "discountPercent": "84%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21325,6 +21326,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "3.2k+ học viên",
         "discountPercent": "80%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1Hx3C11lkdM5SKsavO2pqBdH0rEnk2wZo",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21365,6 +21367,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.9k+ học viên",
         "discountPercent": "75%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1DQH48jr8YozUnJ3STTlyV-qFzLCAi4G5",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21407,6 +21410,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "2.9k+ học viên",
         "discountPercent": "78%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1_tPOqo2Nve07up5SgHpIyhjo6lwoVa9Y",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21447,6 +21451,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "2.4k+ học viên",
         "discountPercent": "78%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21491,6 +21496,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "2.1k+ học viên",
         "discountPercent": "75%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21535,6 +21541,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.8k+ học viên",
         "discountPercent": "75%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21574,6 +21581,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "2.6k+ học viên",
         "discountPercent": "77%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21613,6 +21621,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "2.3k+ học viên",
         "discountPercent": "77%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21652,6 +21661,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "2.1k+ học viên",
         "discountPercent": "77%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21693,6 +21703,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "3.0k+ học viên",
         "discountPercent": "77%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21732,6 +21743,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.9k+ học viên",
         "discountPercent": "77%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21771,6 +21783,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.5k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21810,6 +21823,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.3k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21849,6 +21863,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.2k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1CL2S35nzQS7qkXKck9c_efHX-aS87v-a",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21888,6 +21903,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21929,6 +21945,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1S4DkHAPvliK9ea222q9x3sDbVM2TX3bm",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -21970,6 +21987,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1a78wwvHogORJpW2qKWsveK4yMeorJEDg",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22011,6 +22029,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/13NIwvnmeb37PpkHI7dmxdZh3of9ewPuF",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22052,6 +22071,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1DkG2NQLQ5egWATE7s_HxWheA7twDMCzE",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22093,6 +22113,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/14Vsk6-lsb-Nary5wbDpdWvyKc5pne3Ke",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22134,6 +22155,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/104Fz0TA9cLZJy4NAAxPwGCP29IKTlR0g",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22175,6 +22197,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/14Ab28ONGVYGeJuoT5Ga5Q-R5LyiSCsyB",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22216,6 +22239,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22257,6 +22281,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22298,6 +22323,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22339,6 +22365,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22380,6 +22407,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22421,6 +22449,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1JkWVgk6FWNROK433fzc2Bbs8DXB5X5OM",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22462,6 +22491,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/17YG-JmPDC6B_0xJtkDNiRiYPZh7oxdNu",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22503,6 +22533,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1nT5OCuM2fsZ99XVkLzEuRoonpPrBxUU1",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22544,6 +22575,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1rvjxRmI_pSmvflpJfl3lUMS_QeOaTFfV",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22585,6 +22617,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22626,6 +22659,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1sKwBrvFNSAF95XUHmAIRuGUaFYb9fFSu",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22667,6 +22701,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22708,6 +22743,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22749,6 +22785,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22790,6 +22827,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1rvyHSojdbe__C26Jj4xB5toinNJRZTEc",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22831,6 +22869,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1IgDvAyUK1UN6W5jqXWgPVML1cUS_vA0N",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22872,6 +22911,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22913,6 +22953,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1LkFNHipHxp2R3aUVVoC4uGMFxGsBXh1u",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22954,6 +22995,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1a1MHroAuK48kOyp_jhfqHc_yJc8pcFdU",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -22995,6 +23037,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1fYdD_xs_0PF63h0KBo384V0iqQ9cCs00",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23036,6 +23079,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1pMs32OQ3J9N7R9MJ-cT9fI_CNwu2crzC",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23077,6 +23121,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1Xqa29h4pGAHp4RNs_i-YpRT_NkEuYzyO",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23118,6 +23163,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1IMhlEE-CyVyEd9nAn9bgkJMJpih1GZR3",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23159,6 +23205,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1yqY8yEuScOXifRPqjuTvAC8yfvPa1XTP",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23200,6 +23247,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1dddCKyGFIG3o6NQokc8wMgS8fXArvvrt",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23241,6 +23289,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1niGfuKDA1xbAGI2lQpfDxic4s2H8fFip",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23282,6 +23331,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23321,6 +23371,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1oRf9iIynqglvPJhq0Jyf3ILL2lUVKEQy",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23360,6 +23411,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1kNFMqYTAjNJNW3wl654OGvBdPzmgI_4R",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23399,6 +23451,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1OSx2MVNua6QDZhJpV4XXyOhdgdYU4hjY",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23438,6 +23491,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1iHYQQznkt6nt0IvvANe_tMzHUQ5pX9y-",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23477,6 +23531,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23516,6 +23571,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1RPRK-NLUAudeC-65FF_nXbaOKG2aP_CJ",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23555,6 +23611,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1H7u21HeGVXEajKcPM6jr1IHPtNYBIudN",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23594,6 +23651,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1OURnZBMt6QGB4AXIaXu23QGQPrqb_5F3",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23633,6 +23691,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1i9cK48wmHQFTPrLjnFheoHZ2Nto3tV2d",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23672,6 +23731,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/10n24IGM9Xylx3TvSJycc9X1ax5BVx-KX",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23711,6 +23771,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23750,6 +23811,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23789,6 +23851,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23828,6 +23891,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23867,6 +23931,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     },
     {
@@ -23906,6 +23971,7 @@ const COURSES_DATABASE = [
         "icon": "grad",
         "studentsCount": "1.1k+ học viên",
         "discountPercent": "72%",
+        "driveFolderUrl": "https://drive.google.com/drive/folders/1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc",
         "badgeColor": "bg-[#FFA000] text-slate-950"
     }
 ];

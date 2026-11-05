@@ -1416,7 +1416,6 @@ let pendingWebCoverCourseId = null;
 
 const WEB_COURSE_TAB_LABELS = {
     "all": "Tất cả",
-    "combo_full": "Gói Combo (199k/399k)",
     "lop12_2k9": "Lớp 12 (2K9)",
     "lop11_2k10": "Lớp 11 (2K10)",
     "dgnl_hsa": "ĐGNL HSA",
@@ -1464,7 +1463,7 @@ function renderCourseCategoryTabs() {
     const container = document.getElementById("courseCategoryTabs");
     if (!container || typeof COURSE_CATEGORIES === "undefined") return;
 
-    container.innerHTML = COURSE_CATEGORIES.map(cat => {
+    container.innerHTML = COURSE_CATEGORIES.filter(cat => cat.id !== "combo_full").map(cat => {
         const isActive = cat.id === activeCourseCategory;
         const label = WEB_COURSE_TAB_LABELS[cat.id] || cat.name;
         const activeClass = isActive
@@ -1478,24 +1477,6 @@ function renderCourseCategoryTabs() {
 
 function filterCoursesByCategory(categoryId) {
     activeCourseCategory = categoryId;
-    const catSelect = document.getElementById("courseCategorySelect");
-    if (catSelect) catSelect.value = categoryId;
-    renderCourseCategoryTabs();
-    renderCourses();
-}
-
-function filterCoursesByTierQuick(tierVal) {
-    activeCourseTierFilter = (activeCourseTierFilter === tierVal) ? "all" : tierVal;
-    const tierSelect = document.getElementById("courseTierFilterSelect");
-    if (tierSelect) tierSelect.value = activeCourseTierFilter;
-    renderCourses();
-}
-
-function onCourseSelectChange() {
-    const catSelect = document.getElementById("courseCategorySelect");
-    const tierSelect = document.getElementById("courseTierFilterSelect");
-    if (catSelect) activeCourseCategory = catSelect.value || "all";
-    if (tierSelect) activeCourseTierFilter = tierSelect.value || "all";
     renderCourseCategoryTabs();
     renderCourses();
 }
@@ -1607,16 +1588,12 @@ function renderCourses() {
     const searchQ = (document.getElementById("courseSearchInput")?.value || "").trim().toLowerCase();
     const searchNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(searchQ) : searchQ;
 
-    let courses = COURSES_DATABASE.filter(c => {
+    const visibleCatalogCourses = COURSES_DATABASE.filter(c => !c.isPackageOnly);
+
+    let courses = visibleCatalogCourses.filter(c => {
         if (activeCourseCategory !== "all") {
             const matchCat = (c.category === activeCourseCategory) || (c.subCategory === activeCourseCategory);
             if (!matchCat) return false;
-        }
-        if (activeCourseTierFilter !== "all") {
-            if (activeCourseTierFilter === "full_399k" && c.tier !== "full_399k") return false;
-            if (activeCourseTierFilter === "course_199k" && c.tier !== "course_199k") return false;
-            if (activeCourseTierFilter === "bundle_69k" && c.subTier !== "bundle_69k") return false;
-            if (activeCourseTierFilter === "teacher_69k" && c.subTier !== "teacher_69k") return false;
         }
         if (searchQ) {
             const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
@@ -1628,8 +1605,8 @@ function renderCourses() {
 
     const badge = document.getElementById("courseCountBadge");
     if (badge) {
-        badge.textContent = (activeCourseCategory === "all" && activeCourseTierFilter === "all" && !searchQ)
-            ? `${COURSES_DATABASE.length} Khóa Học (69K · 199K · 399K)`
+        badge.textContent = (activeCourseCategory === "all" && !searchQ)
+            ? `${visibleCatalogCourses.length} Khóa Học Bản Quyền`
             : `${courses.length} Khóa Học Phù Hợp`;
     }
 
@@ -1639,10 +1616,10 @@ function renderCourses() {
                 <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4">🔍</div>
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp từ khóa này</h3>
                 <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
-                    Bạn hãy thử chọn lại bộ lọc hoặc tìm từ khóa khác nhé!
+                    Bạn hãy thử chọn lại danh mục hoặc tìm từ khóa khác nhé!
                 </p>
-                <button onclick="filterCoursesByCategory('all'); filterCoursesByTierQuick('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
-                    <span>🔄 Xem Toàn Bộ 66 Khóa Học</span>
+                <button onclick="filterCoursesByCategory('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
+                    <span>🔄 Xem Toàn Bộ 50 Khóa Học</span>
                 </button>
             </div>
         `;
@@ -1667,27 +1644,45 @@ let baseClickedCourseForCheckout = null;
 
 function resolveCheckoutTierOptions(clickedCourse) {
     const fullCourse = COURSES_DATABASE.find(c => c.id === "ALL-COURSES-399K") || clickedCourse;
-    let parent199k = COURSES_DATABASE.find(c => c.id === clickedCourse.parentCourseId && c.tier === "course_199k");
-    if (!parent199k) {
-        parent199k = COURSES_DATABASE.find(c => c.tier === "course_199k") || clickedCourse;
-    }
-    let subj69k = clickedCourse.tier === "subject_69k"
-        ? clickedCourse
-        : (COURSES_DATABASE.find(c => c.id === clickedCourse.parentSubjectId && c.tier === "subject_69k") ||
-           COURSES_DATABASE.find(c => c.parentCourseId === parent199k.id && c.tier === "subject_69k") ||
-           clickedCourse);
+    // Mua theo môn (69k): mở khóa môn học thuộc khóa đang chọn
+    const subj69k = {
+        ...clickedCourse,
+        price: 69000,
+        originalPrice: 200000,
+        discountPercent: "66%",
+        tier: "subject_69k"
+    };
+    // Mua khóa học (199k): mở khóa chính khóa học đó
+    const course199k = {
+        ...clickedCourse,
+        price: 199000,
+        originalPrice: 600000,
+        discountPercent: "67%",
+        tier: "course_199k"
+    };
+    // Trọn bộ (399k): mở khóa Full cả App (tất cả 50 khóa học)
+    const full399k = {
+        ...fullCourse,
+        id: "ALL-COURSES-399K",
+        code: "FULL399K",
+        title: "Mở Khóa Trọn Bộ Full Cả App Điệp Viên Study (Tất Cả 50 Khóa Học)",
+        price: 399000,
+        originalPrice: 2500000,
+        discountPercent: "84%",
+        tier: "full_399k"
+    };
 
     return {
         subject_69k: subj69k,
-        course_199k: parent199k,
-        full_399k: fullCourse
+        course_199k: course199k,
+        full_399k: full399k
     };
 }
 
 function selectCourseCheckoutTier(tierKey) {
     if (!baseClickedCourseForCheckout) return;
     const tiers = resolveCheckoutTierOptions(baseClickedCourseForCheckout);
-    const chosen = tiers[tierKey] || baseClickedCourseForCheckout;
+    const chosen = tiers[tierKey] || tiers.course_199k;
     selectedCourseForCheckout = chosen;
 
     document.getElementById("courseCheckoutTitle").textContent = chosen.title;
@@ -1700,24 +1695,24 @@ function selectCourseCheckoutTier(tierKey) {
         const items = [
             {
                 key: "subject_69k",
-                label: "Gói 1 · Mua Theo Môn / Thầy Cô",
+                label: "Gói 1 · Mở Khóa Theo Môn",
                 price: "69.000đ",
-                title: tiers.subject_69k.title,
-                sub: "Mở khóa Folder môn / thầy cô đang chọn + Tặng App Điệp Viên Study (1 máy)"
+                title: baseClickedCourseForCheckout.title,
+                sub: "Mở khóa môn học đang chọn + Tặng App Điệp Viên Study (1 máy)"
             },
             {
                 key: "course_199k",
-                label: "Gói 2 · Mua Theo Khóa Lớn (Khuyên Dùng)",
+                label: "Gói 2 · Mua Khóa Học Này (Khuyên Dùng)",
                 price: "199.000đ",
-                title: tiers.course_199k.title,
-                sub: "Mở khóa trọn bộ tất cả các môn thuộc Khóa này + Tặng App Điệp Viên Study (1 máy)"
+                title: baseClickedCourseForCheckout.title,
+                sub: "Mở khóa trọn vẹn khóa học này trên App & Google Drive + Tặng App (1 máy)"
             },
             {
                 key: "full_399k",
-                label: "Gói 3 · Mua Full Toàn Hệ Thống (VIP)",
+                label: "Gói 3 · Trọn Bộ Mở Khóa Full Cả App (VIP)",
                 price: "399.000đ",
-                title: tiers.full_399k.title,
-                sub: "Mở khóa TẤT CẢ 66+ Khóa học (2K9 + 2K10 + HSA + TSA + V-ACT + BCA + QDA + VSAT) + App Pro (1 máy)"
+                title: "Mở Khóa Full Cả App Điệp Viên Study (Toàn Bộ 50 Khóa Học)",
+                sub: "Mở khóa TẤT CẢ 50 Khóa học (2K9 + 2K10 + HSA + TSA + V-ACT + BCA + QDA + VSAT) trên toàn bộ App & Web (1 máy)"
             }
         ];
         listEl.innerHTML = items.map(it => {
@@ -1744,7 +1739,7 @@ function openCourseCheckoutModal(courseId) {
     if (!course) return;
 
     baseClickedCourseForCheckout = course;
-    selectCourseCheckoutTier(course.tier || "course_199k");
+    selectCourseCheckoutTier("course_199k");
 
     const cust = getSyncedCustomerLocal();
     document.getElementById("courseStudentName").value = cust?.name || "";
@@ -2231,6 +2226,259 @@ async function verifyCourseBankPaymentNow() {
     }
 }
 
+/* ==========================================================================
+   10. TẢI APP ĐIỆP VIÊN STUDY — XÁC THỰC EMAIL MÃ OTP & KÍCH HOẠT TÀI KHOẢN
+   ========================================================================== */
+
+let pendingAppOtpEmail = "";
+let pendingAppOtpName = "";
+
+function getVerifiedAppOtpEmailLocal() {
+    try {
+        return (localStorage.getItem("dvtl_app_otp_verified_email") || "").trim().toLowerCase();
+    } catch (_) {
+        return "";
+    }
+}
+
+function isAppOtpVerifiedLocal() {
+    const em = getVerifiedAppOtpEmailLocal();
+    return Boolean(em && em.includes("@"));
+}
+
+function updateVerifiedAppDownloadUI() {
+    const verified = isAppOtpVerifiedLocal();
+    const email = getVerifiedAppOtpEmailLocal();
+    const bar = document.getElementById("verifiedAppDownloadBar");
+    const barEmail = document.getElementById("verifiedBarEmailText");
+    const hdrLabel = document.getElementById("headerDownloadAppLabel");
+
+    if (bar) {
+        if (verified) {
+            bar.classList.remove("hidden");
+            if (barEmail) barEmail.textContent = email;
+        } else {
+            bar.classList.add("hidden");
+        }
+    }
+    if (hdrLabel) {
+        hdrLabel.textContent = verified ? "Tải App Ngay (Đã Kích Hoạt)" : "Tải App Điệp Viên Study";
+    }
+}
+
+function openAppDownloadModal() {
+    const modal = document.getElementById("appDownloadOtpModal");
+    if (!modal) return;
+
+    const cust = getSyncedCustomerLocal();
+    const verifiedEmail = getVerifiedAppOtpEmailLocal();
+    const nameInp = document.getElementById("appOtpNameInput");
+    const emailInp = document.getElementById("appOtpEmailInput");
+
+    if (nameInp && !nameInp.value && cust?.name) nameInp.value = cust.name;
+    if (emailInp && !emailInp.value) emailInp.value = verifiedEmail || cust?.email || "";
+
+    if (isAppOtpVerifiedLocal()) {
+        showAppOtpStep(3, verifiedEmail);
+    } else {
+        showAppOtpStep(1);
+    }
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+}
+
+function closeAppDownloadModal() {
+    const modal = document.getElementById("appDownloadOtpModal");
+    if (!modal) return;
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+}
+
+function showAppOtpStep(stepNum, emailAddr = "") {
+    const s1 = document.getElementById("appOtpStep1");
+    const s2 = document.getElementById("appOtpStep2");
+    const s3 = document.getElementById("appOtpStep3");
+    if (s1) s1.classList.toggle("hidden", stepNum !== 1);
+    if (s2) s2.classList.toggle("hidden", stepNum !== 2);
+    if (s3) s3.classList.toggle("hidden", stepNum !== 3);
+
+    if (stepNum === 2) {
+        const disp = document.getElementById("appOtpSentEmailDisplay");
+        if (disp) disp.textContent = emailAddr || pendingAppOtpEmail;
+        const codeInp = document.getElementById("appOtpCodeInput");
+        if (codeInp) {
+            codeInp.value = "";
+            setTimeout(() => codeInp.focus(), 80);
+        }
+    } else if (stepNum === 3) {
+        const vEmail = emailAddr || getVerifiedAppOtpEmailLocal();
+        const lbl = document.getElementById("appOtpVerifiedEmailLabel");
+        const devLbl = document.getElementById("appOtpDeviceIdLabel");
+        if (lbl) lbl.textContent = vEmail;
+        if (devLbl) devLbl.textContent = getWebDeviceId();
+    }
+}
+
+function resetAppOtpEmailStep(clearVerified = false) {
+    if (clearVerified) {
+        localStorage.removeItem("dvtl_app_otp_verified_email");
+        updateVerifiedAppDownloadUI();
+    }
+    const m1 = document.getElementById("appOtpStep1Msg");
+    const m2 = document.getElementById("appOtpStep2Msg");
+    if (m1) m1.classList.add("hidden");
+    if (m2) m2.classList.add("hidden");
+    showAppOtpStep(1);
+}
+
+async function sendAppDownloadOtp(isResend = false) {
+    const nameInp = document.getElementById("appOtpNameInput");
+    const emailInp = document.getElementById("appOtpEmailInput");
+    const msg1 = document.getElementById("appOtpStep1Msg");
+    const msg2 = document.getElementById("appOtpStep2Msg");
+    const btn = document.getElementById("btnSendAppOtp");
+
+    const name = (nameInp?.value || pendingAppOtpName || "Học Viên Điệp Viên").trim();
+    const email = (emailInp?.value || pendingAppOtpEmail || "").trim().toLowerCase();
+
+    if (!email || !email.includes("@")) {
+        alert("⚠️ Vui lòng nhập đúng địa chỉ Email (Gmail) của bạn để nhận mã xác nhận OTP!");
+        return;
+    }
+
+    pendingAppOtpEmail = email;
+    pendingAppOtpName = name;
+
+    const activeMsg = isResend ? msg2 : msg1;
+    if (activeMsg) {
+        activeMsg.className = "text-[11px] font-bold text-center text-blue-700 dark:text-sky-300";
+        activeMsg.textContent = "⏳ Đang gửi mã xác nhận OTP 6 số về Email " + email + "...";
+        activeMsg.classList.remove("hidden");
+    }
+    if (btn) btn.disabled = true;
+
+    const webhook = (state && state.webhookUrl) ? state.webhookUrl : APP_CONFIG.defaultWebhookUrl;
+    try {
+        const url = webhook
+            + "?action=sendAppOtp"
+            + "&email=" + encodeURIComponent(email)
+            + "&name=" + encodeURIComponent(name)
+            + "&deviceId=" + encodeURIComponent(getWebDeviceId());
+        const res = await fetch(url, { method: "GET", mode: "cors" });
+        const data = await res.json();
+        if (btn) btn.disabled = false;
+
+        if (data && data.ok) {
+            showAppOtpStep(2, email);
+            if (msg2) {
+                msg2.className = "text-[11px] font-bold text-center text-emerald-700 dark:text-emerald-300";
+                msg2.textContent = data.message || ("✅ Đã gửi mã OTP 6 số tới " + email + ". Vui lòng kiểm tra hộp thư!");
+                msg2.classList.remove("hidden");
+            }
+        } else {
+            if (activeMsg) {
+                activeMsg.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
+                activeMsg.textContent = (data && data.message) || "⚠️ Không thể gửi mã OTP lúc này, vui lòng kiểm tra lại Email!";
+                activeMsg.classList.remove("hidden");
+            }
+        }
+    } catch (err) {
+        if (btn) btn.disabled = false;
+        showAppOtpStep(2, email);
+        if (msg2) {
+            msg2.className = "text-[11px] font-bold text-center text-emerald-700 dark:text-emerald-300";
+            msg2.textContent = "📩 Yêu cầu gửi OTP đã được xử lý cho " + email + ". Vui lòng kiểm tra hộp thư đến hoặc Spam!";
+            msg2.classList.remove("hidden");
+        }
+    }
+}
+
+async function verifyAppDownloadOtp() {
+    const codeInp = document.getElementById("appOtpCodeInput");
+    const msg2 = document.getElementById("appOtpStep2Msg");
+    const btn = document.getElementById("btnVerifyAppOtp");
+
+    const otp = (codeInp?.value || "").replace(/\s+/g, "").trim();
+    const email = (pendingAppOtpEmail || document.getElementById("appOtpEmailInput")?.value || "").trim().toLowerCase();
+    const name = (pendingAppOtpName || document.getElementById("appOtpNameInput")?.value || "Học Viên Điệp Viên").trim();
+
+    if (!otp || otp.length < 6) {
+        alert("⚠️ Vui lòng nhập đủ 6 chữ số mã OTP đã gửi về Email của bạn!");
+        return;
+    }
+
+    if (msg2) {
+        msg2.className = "text-[11px] font-bold text-center text-blue-700 dark:text-sky-300";
+        msg2.textContent = "⏳ Đang kiểm tra mã OTP & kích hoạt tài khoản App...";
+        msg2.classList.remove("hidden");
+    }
+    if (btn) btn.disabled = true;
+
+    const webhook = (state && state.webhookUrl) ? state.webhookUrl : APP_CONFIG.defaultWebhookUrl;
+    try {
+        const url = webhook
+            + "?action=verifyAppOtp"
+            + "&email=" + encodeURIComponent(email)
+            + "&otp=" + encodeURIComponent(otp)
+            + "&name=" + encodeURIComponent(name)
+            + "&deviceId=" + encodeURIComponent(getWebDeviceId());
+        const res = await fetch(url, { method: "GET", mode: "cors" });
+        const data = await res.json();
+        if (btn) btn.disabled = false;
+
+        if (data && data.ok) {
+            localStorage.setItem("dvtl_app_otp_verified_email", email);
+            const prev = getSyncedCustomerLocal() || {};
+            const unlocked = expandWebUnlockedCourses(data.customer?.unlockedCourses || prev.unlockedCourses || []);
+            const synced = {
+                ...prev,
+                ...(data.customer || {}),
+                email: email,
+                name: data.customer?.name || name || prev.name || "Học Viên Điệp Viên",
+                unlockedCourses: unlocked,
+                otpVerified: true
+            };
+            localStorage.setItem("dvtl_synced_customer", JSON.stringify(synced));
+            applySyncedCustomerToForms();
+            updateVerifiedAppDownloadUI();
+            renderCourses();
+            showAppOtpStep(3, email);
+        } else {
+            if (msg2) {
+                msg2.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
+                msg2.textContent = (data && data.message) || "❌ Mã OTP không chính xác hoặc đã hết hạn. Vui lòng kiểm tra lại!";
+                msg2.classList.remove("hidden");
+            }
+        }
+    } catch (err) {
+        if (btn) btn.disabled = false;
+        if (msg2) {
+            msg2.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
+            msg2.textContent = "⚠️ Lỗi kết nối máy chủ xác thực OTP. Vui lòng thử lại sau giây lát!";
+            msg2.classList.remove("hidden");
+        }
+    }
+}
+
+function triggerDirectAppDownload(platform = "windows") {
+    if (!isAppOtpVerifiedLocal()) {
+        openAppDownloadModal();
+        return;
+    }
+    const links = (typeof APP_DOWNLOAD_LINKS !== "undefined" && APP_DOWNLOAD_LINKS) ? APP_DOWNLOAD_LINKS : {};
+    if (platform === "macos") {
+        const macUrl = links.macos_zip_direct_url || "https://drive.google.com/uc?export=download&id=1WMGpwANae4qOCM9hQ8FTI5poZwVfP2lf";
+        window.open(macUrl, "_blank", "noopener,noreferrer");
+    } else {
+        const winUrl = links.windows_zip_direct_url || "https://drive.google.com/uc?export=download&id=1hh3zp7-X3leDex77Rf76W9BeiJzEUZkf";
+        window.open(winUrl, "_blank", "noopener,noreferrer");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(applySyncedCustomerToForms, 250);
+    setTimeout(() => {
+        applySyncedCustomerToForms();
+        updateVerifiedAppDownloadUI();
+    }, 250);
 });

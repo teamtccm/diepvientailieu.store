@@ -1695,218 +1695,154 @@ function openDocCheckoutModal(docId, customTitle = null) {
     
 
     document.getElementById("checkoutDocName").textContent = docDisplayName;
-
     document.getElementById("checkoutDocCode").textContent = `#${doc.code} · ${doc.pages} Trang A4`;
-
     document.getElementById("checkoutDocPrice").textContent = `${doc.price.toLocaleString('vi-VN')} VNĐ`;
 
-    
-
     const cleanDocCode = String(doc.code || "TL").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
-
     const orderCode = `DC${cleanDocCode}${Math.floor(100 + Math.random() * 900)}`;
-
     document.getElementById("checkoutOrderCode").textContent = orderCode;
 
-    document.getElementById("checkoutMemoCode").textContent = orderCode;
-
-    
-
-    // Hiển thị số tiền
-
     const payAmountEl = document.getElementById("checkoutPayAmount");
-
     if (payAmountEl) payAmountEl.textContent = `${doc.price.toLocaleString('vi-VN')} VNĐ`;
 
-    
+    const cust = getSyncedCustomerLocal() || {};
+    const savedName = (cust.name || "").trim();
+    const savedEmail = (cust.email || "").trim().toLowerCase();
+    const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
 
-    // Lấy tài khoản ACTIVE từ backend để hiển thị QR
-
-    layTaiKhoanVaHienQR(doc.price, orderCode);
-
-    
-
-    document.getElementById("checkoutNameInput").value = "";
-
-    document.getElementById("checkoutPhoneInput").value = "";
-
-    document.getElementById("checkoutEmailInput").value = "";
-
-    
-
-    document.getElementById("docCheckoutStep1").classList.remove("hidden");
-
-    document.getElementById("docCheckoutStep2").classList.add("hidden");
-
-    document.getElementById("docCheckoutStep3").classList.add("hidden");
-
-    
+    document.getElementById("checkoutNameInput").value = savedName;
+    document.getElementById("checkoutPhoneInput").value = savedPhone;
+    document.getElementById("checkoutEmailInput").value = savedEmail;
 
     modal.classList.remove("hidden");
-
     document.body.style.overflow = "hidden";
 
+    // Nếu khách đã đăng nhập / đã lưu thông tin trước đó -> Tự động gắn Tên & Email vào mã giao dịch và nhảy thẳng tới màn quét QR!
+    if (savedName.length >= 2 && savedEmail.includes("@")) {
+        const cleanName = removeVietnameseTones(savedName).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
+        const fullMemo = `${orderCode} ${cleanName}`.trim();
+        document.getElementById("checkoutMemoCode").textContent = fullMemo;
+        const savedTxt = document.getElementById("docSavedAccountText");
+        if (savedTxt) savedTxt.textContent = `${savedName} · ${savedEmail}`;
+        layTaiKhoanVaHienQR(doc.price, fullMemo);
+
+        const payload = {
+            action: "createOrder",
+            orderCode: orderCode,
+            transferMemo: fullMemo,
+            name: savedName,
+            email: savedEmail,
+            phone: savedPhone || "0900000000",
+            sku: doc.code || "",
+            itemName: doc.name || "",
+            price: doc.price || 0,
+            bank: currentActiveAccount ? currentActiveAccount.bankName : "ACB",
+            orderType: "Mua File",
+            school: doc.school || (state.selectedUniversity ? (UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code) : "Toàn quốc"),
+            stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "27384751",
+            driveId: doc.driveId || ""
+        };
+        saveOrderToLocal(payload);
+        try { sendWebhookData(payload); } catch(e) {}
+
+        document.getElementById("docCheckoutStep1").classList.add("hidden");
+        document.getElementById("docCheckoutStep2").classList.remove("hidden");
+        document.getElementById("docCheckoutStep3").classList.add("hidden");
+        startDocPaymentPolling(orderCode, savedEmail);
+    } else {
+        document.getElementById("checkoutMemoCode").textContent = orderCode;
+        layTaiKhoanVaHienQR(doc.price, orderCode);
+        document.getElementById("docCheckoutStep1").classList.remove("hidden");
+        document.getElementById("docCheckoutStep2").classList.add("hidden");
+        document.getElementById("docCheckoutStep3").classList.add("hidden");
+    }
 }
-
-
-
-// Biến lưu tài khoản đang dùng cho đơn hiện tại
 
 let currentActiveAccount = null;
 
-
-
-async function layTaiKhoanVaHienQR(amount, orderCode) {
-
+async function layTaiKhoanVaHienQR(amount, orderMemo) {
+    const encodedMemo = encodeURIComponent(orderMemo || "");
     try {
-
         const res = await fetch(state.webhookUrl + "?action=getActiveAccount", { method: "GET", mode: "cors" });
-
         const acc = await res.json();
-
         if (acc && !acc.error) {
-
             currentActiveAccount = acc;
-
-            // Cập nhật hiển thị
-
             const bankEl = document.getElementById("checkoutBankName");
-
             const stkEl = document.getElementById("checkoutSTK");
-
             const ctkEl = document.getElementById("checkoutCTK");
-
             const qrImg = document.getElementById("docQrImage");
-
             if (bankEl) bankEl.textContent = acc.bankName;
-
             if (stkEl) stkEl.textContent = acc.accountNumber;
-
             if (ctkEl) ctkEl.textContent = acc.accountName;
-
-            if (qrImg) qrImg.src = `https://img.vietqr.io/image/${acc.bankCode}-${acc.accountNumber}-compact2.png?amount=${amount}&addInfo=${orderCode}&accountName=${encodeURIComponent(acc.accountName)}`;
-
+            if (qrImg) qrImg.src = `https://img.vietqr.io/image/${acc.bankCode}-${acc.accountNumber}-compact2.png?amount=${amount}&addInfo=${encodedMemo}&accountName=${encodeURIComponent(acc.accountName)}`;
         }
-
     } catch(e) {
-
-        // Fallback: dùng PAYMENT_INFO mặc định
-
         const qrImg = document.getElementById("docQrImage");
-
-        if (qrImg) qrImg.src = `${PAYMENT_INFO.qrBaseUrl}?amount=${amount}&addInfo=${orderCode}&accountName=${encodeURIComponent(PAYMENT_INFO.accountName)}`;
-
+        if (qrImg) qrImg.src = `${PAYMENT_INFO.qrBaseUrl}?amount=${amount}&addInfo=${encodedMemo}&accountName=${encodeURIComponent(PAYMENT_INFO.accountName)}`;
         currentActiveAccount = { bankName: PAYMENT_INFO.bankName, bankCode: PAYMENT_INFO.bankCode, accountNumber: PAYMENT_INFO.accountNumber, accountName: PAYMENT_INFO.accountName };
-
     }
-
 }
-
-
 
 function closeDocCheckoutModal() {
-
     if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
-
     const modal = document.getElementById("docCheckoutModal");
-
     if (modal) modal.classList.add("hidden");
-
     document.body.style.overflow = "auto";
-
 }
-
-
 
 function goToDocPaymentStep(e) {
-
-    e.preventDefault();
-
-    
+    if (e && e.preventDefault) e.preventDefault();
 
     const name = document.getElementById("checkoutNameInput").value.trim();
+    const rawPhone = document.getElementById("checkoutPhoneInput").value.trim();
+    const email = document.getElementById("checkoutEmailInput").value.trim().toLowerCase();
+    const phone = rawPhone || "0900000000";
 
-    const phone = document.getElementById("checkoutPhoneInput").value.trim();
-
-    const email = document.getElementById("checkoutEmailInput").value.trim();
-
-    
-
-    if (!name || !phone || !email) {
-
-        alert("️ Vui lòng điền đầy đủ Họ tên, Số điện thoại và Email Gmail!");
-
+    if (!name || !email) {
+        alert("Vui lòng điền Họ tên và Email nhận tài liệu!");
         return;
-
     }
-
-    
 
     if (!email.includes("@")) {
-
-        alert("️ Vui lòng nhập địa chỉ Email chính xác để nhận link Google Drive!");
-
+        alert("Vui lòng nhập địa chỉ Email chính xác để nhận link Google Drive!");
         return;
-
     }
 
-    
+    // Lưu thông tin khách hàng ngay trên hệ thống để các lần sau không phải điền lại lần 2
+    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_DOC_CHECKOUT" });
 
-    // Send order info to webhook immediately
-
-    const orderCode = document.getElementById("checkoutOrderCode").textContent;
+    const orderCode = document.getElementById("checkoutOrderCode").textContent.split(" ")[0].trim();
+    const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
+    const fullMemo = `${orderCode} ${cleanName}`.trim();
+    document.getElementById("checkoutMemoCode").textContent = fullMemo;
+    const savedTxt = document.getElementById("docSavedAccountText");
+    if (savedTxt) savedTxt.textContent = `${name} · ${email}`;
+    layTaiKhoanVaHienQR(state.selectedDoc?.price || 50000, fullMemo);
 
     const payload = {
-
         action: "createOrder",
-
         orderCode: orderCode,
-
+        transferMemo: fullMemo,
         name: name,
-
         email: email,
-
         phone: phone,
-
         sku: state.selectedDoc?.code || "",
-
         itemName: state.selectedDoc?.name || "",
-
         price: state.selectedDoc?.price || 0,
-
         bank: currentActiveAccount ? currentActiveAccount.bankName : "ACB",
-
         orderType: "Mua File",
-
         school: state.selectedDoc?.school || (state.selectedUniversity ? (UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code) : "Toàn quốc"),
-
-        stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "",
-
+        stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "27384751",
         driveId: state.selectedDoc?.driveId || ""
-
     };
-
     saveOrderToLocal(payload);
-
     try { sendWebhookData(payload); } catch(e) {}
 
-    
-
-    // Switch to Step 2 (QR Payment)
-
     document.getElementById("docCheckoutStep1").classList.add("hidden");
-
     document.getElementById("docCheckoutStep2").classList.remove("hidden");
 
-    
-
-    // Start auto-verification polling
-
     startDocPaymentPolling(orderCode, email);
-
 }
-
-
 
 let docPollingInterval = null;
 
@@ -2209,145 +2145,92 @@ function initServiceFormPrefill() {
 
 
 async function submitServiceOrder(e) {
-
     e.preventDefault();
 
-    
-
-    const name = document.getElementById("srvNameInput").value.trim();
-
-    const phone = document.getElementById("srvPhoneInput").value.trim();
-
-    const email = document.getElementById("srvEmailInput").value.trim();
-
+    const cust = getSyncedCustomerLocal() || {};
+    const name = (document.getElementById("srvNameInput").value.trim()) || cust.name || "";
+    const rawPhone = (document.getElementById("srvPhoneInput").value.trim()) || cust.phone || "";
+    const phone = rawPhone || "0900000000";
+    const email = (document.getElementById("srvEmailInput").value.trim().toLowerCase()) || cust.email || "";
     const studentId = document.getElementById("srvStudentIdInput").value.trim();
-
     const school = document.getElementById("srvSchoolInput").value.trim();
-
     const faculty = document.getElementById("srvFacultyInput").value.trim();
-
     const subject = document.getElementById("srvSubjectInput").value.trim();
-
     const topic = document.getElementById("srvTopicInput").value.trim();
-
     const type = document.getElementById("srvTypeSelect").value;
-
     const pages = document.getElementById("srvPagesInput").value;
-
     const deadline = document.getElementById("srvDeadlineInput").value;
-
-    const depositCode = document.getElementById("srvDepositCode").textContent;
-
+    const depositCode = document.getElementById("srvDepositCode").textContent.split(" ")[0].trim();
     const depositAmount = document.getElementById("calcDepositEst").textContent;
-
     const totalEst = document.getElementById("calcTotalEst").textContent;
 
-    
-
-    if (!name || !phone || !email || !deadline || !topic) {
-
-        alert("️ Vui lòng điền đầy đủ các thông tin bắt buộc và hạn nộp (Deadline)!");
-
+    if (!name || !email || !deadline || !topic) {
+        alert("Vui lòng điền đầy đủ Họ tên, Email, Tên đề tài và Hạn nộp (Deadline)!");
         return;
-
     }
-
-    
 
     const privacyCheckbox = document.getElementById("srvPrivacyCheckbox");
-
     if (privacyCheckbox && !privacyCheckbox.checked) {
-
-        alert("️ Bạn cần tích xác nhận thông tin chính xác và đồng ý điều khoản trước khi gửi yêu cầu đặt bài!");
-
+        alert("Bạn cần tích xác nhận thông tin chính xác và đồng ý điều khoản trước khi gửi yêu cầu đặt bài!");
         privacyCheckbox.focus();
-
         return;
-
     }
 
-    
+    // Lưu thông tin khách hàng ngay trên hệ thống để các lần sau không cần điền lại
+    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_BTL_ORDER" });
 
     const btnSubmit = document.getElementById("btnSubmitServiceOrder");
-
     btnSubmit.disabled = true;
+    btnSubmit.innerHTML = `<span class="inline-block animate-spin mr-2">↻</span> Đang gửi hồ sơ đặt bài...`;
 
-    btnSubmit.innerHTML = `<span class="inline-block animate-spin mr-2">⏳</span> Đang gửi hồ sơ đặt bài...`;
-
-    
+    const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
+    const fullDepositMemo = `${depositCode} ${cleanName}`.trim();
 
     const payload = {
-
         type: "SERVICE_ORDER",
-
         orderId: depositCode,
-
+        transferMemo: fullDepositMemo,
         timestamp: new Date().toISOString(),
-
         paymentMethod: "MOMO_QR",
-
         customer: {
-
             name: name,
-
             phone: phone,
-
             email: email,
-
             studentId: studentId,
-
             school: school,
-
             faculty: faculty
-
         },
-
         assignment: {
-
             type: type,
-
             subject: subject,
-
             topic: topic,
-
             pages: pages,
-
             deadline: deadline,
-
             totalEst: totalEst,
-
             depositAmount: depositAmount
-
         }
-
     };
-
-    
 
     saveOrderToLocal(payload);
 
-    
-
     try {
-
         await sendWebhookData(payload);
-
     } catch (err) {
-
         console.warn("Webhook dispatched:", err);
-
     }
 
-    
+    // Gửi thêm email mời khách dùng miễn phí các tính năng AI trên App Điệp Viên Study
+    sendAppInviteEmailAfterPurchase({
+        email: email,
+        name: name,
+        orderCode: depositCode,
+        itemName: `Đặt làm ${subject || topic}`
+    });
 
     btnSubmit.disabled = false;
-
     btnSubmit.innerHTML = `<span>GỬI YÊU CẦU ĐẶT BÀI</span>`;
 
-    
-
     openSuccessModal("SERVICE", payload);
-
 }
 
 
@@ -3419,6 +3302,12 @@ function selectCourseCheckoutTier(tierKey) {
 
         listEl.innerHTML = tabsHtml + pickerHtml;
     }
+
+    // Nếu đang ở Bước 2 (khách đã đăng nhập nên hiện sẵn QR), khi khách đổi gói 69K / 199K / 399K hoặc đổi môn -> cập nhật lại mã QR và mã giao dịch ngay lập tức!
+    const step2El = document.getElementById("courseCheckoutStep2");
+    if (step2El && !step2El.classList.contains("hidden")) {
+        goToCoursePaymentStep(true);
+    }
 }
 
 function openCourseCheckoutModal(courseId) {
@@ -3430,6 +3319,11 @@ function openCourseCheckoutModal(courseId) {
     selectedCourse199kId = course.id === "ALL-COURSES-399K" ? "COURSE-ITEM-01" : course.id;
     selectedSubject69kId = course.parentSubjectId || (String(course.id).startsWith("COURSE-SUBJ-") ? course.id : "COURSE-SUBJ-TOAN12-2K9");
 
+    const topHdr = document.getElementById("courseCheckoutTopHeader");
+    if (topHdr) topHdr.classList.remove("hidden");
+    document.getElementById("courseCheckoutStep2").classList.add("hidden");
+    document.getElementById("courseCheckoutStep3").classList.add("hidden");
+
     if (course.id === "ALL-COURSES-399K") {
         selectCourseCheckoutTier("full_399k");
     } else if (String(course.id).startsWith("COURSE-SUBJ-")) {
@@ -3438,361 +3332,222 @@ function openCourseCheckoutModal(courseId) {
         selectCourseCheckoutTier("course_199k");
     }
 
-    const cust = getSyncedCustomerLocal();
-    document.getElementById("courseStudentName").value = cust?.name || "";
-    document.getElementById("courseStudentPhone").value = (cust?.phone || "").replace(/\[.*\]/g, "").trim();
-    document.getElementById("courseStudentEmail").value = cust?.email || "";
+    const cust = getSyncedCustomerLocal() || {};
+    const savedName = (cust.name || "").trim();
+    const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const savedEmail = (cust.email || "").trim().toLowerCase();
 
-    document.getElementById("courseCheckoutStep1").classList.remove("hidden");
-    document.getElementById("courseCheckoutStep2").classList.add("hidden");
-    document.getElementById("courseCheckoutStep3").classList.add("hidden");
+    document.getElementById("courseStudentName").value = savedName;
+    document.getElementById("courseStudentPhone").value = savedPhone;
+    document.getElementById("courseStudentEmail").value = savedEmail;
 
     const modal = document.getElementById("courseCheckoutModal");
     modal.classList.remove("hidden");
     modal.classList.add("flex");
+
+    // Nếu khách đã đăng nhập từ trước -> Tự động gắn Tên & Email vào mã giao dịch và hiện ngay màn VietQR (không bắt điền lần 2!)
+    if (savedName.length >= 2 && savedEmail.includes("@")) {
+        goToCoursePaymentStep(true);
+    } else {
+        document.getElementById("courseCheckoutStep1").classList.remove("hidden");
+    }
 }
 
 function closeCourseCheckoutModal() {
-
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
-
     const modal = document.getElementById("courseCheckoutModal");
-
     modal.classList.add("hidden");
-
     modal.classList.remove("flex");
-
     selectedCourseForCheckout = null;
-
 }
 
+function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
+    const cust = getSyncedCustomerLocal() || {};
+    const name = (document.getElementById("courseStudentName").value.trim()) || cust.name || "";
+    const rawPhoneInput = (document.getElementById("courseStudentPhone").value.trim()) || (cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const rawPhone = rawPhoneInput || "0900000000";
+    const email = ((document.getElementById("courseStudentEmail").value.trim()) || cust.email || "").toLowerCase();
 
-
-function goToCoursePaymentStep() {
-
-    const name = document.getElementById("courseStudentName").value.trim();
-
-    const rawPhone = document.getElementById("courseStudentPhone").value.trim();
-
-    const email = document.getElementById("courseStudentEmail").value.trim().toLowerCase();
-
-
-
-    if (!name || !rawPhone || !email) {
-
-        alert("️ Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
-
+    if (!name || !email) {
+        if (!isAutoFromSavedProfile) {
+            alert("Vui lòng điền đầy đủ Họ tên và Email nhận khóa học!");
+        }
         return;
-
     }
-
-
 
     if (!email.includes("@")) {
-
-        alert("️ Vui lòng nhập địa chỉ Email chính xác!");
-
+        if (!isAutoFromSavedProfile) {
+            alert("Vui lòng nhập địa chỉ Email chính xác!");
+        }
         return;
-
     }
-
-
 
     if (!selectedCourseForCheckout) {
-
-        alert("️ Không tìm thấy thông tin khóa học!");
-
         return;
-
     }
 
+    // Lưu thông tin khách hàng ngay trên hệ thống để các lần sau thanh toán tự động
+    if (!isAutoFromSavedProfile) {
+        saveCustomerProfileEverywhere({ name, phone: rawPhoneInput, email, source: "WEB_COURSE_CHECKOUT" });
+    }
 
+    const savedTxt = document.getElementById("courseSavedAccountText");
+    if (savedTxt) savedTxt.textContent = `${name} · ${email}`;
 
     const course = selectedCourseForCheckout;
-
     const cleanCode = String(course.code || "KHOAHOC").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
-
     const orderCode = `DV${cleanCode}${Math.floor(100 + Math.random() * 900)}`;
-
     const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
-
     const transferMemo = `${orderCode} ${cleanName}`.trim();
 
-
-
     const noteEl = document.getElementById("courseTransferNote");
-
     if (noteEl) {
-
         noteEl.textContent = transferMemo;
-
         noteEl.dataset.orderCode = orderCode;
-
     }
-
     const amtEl = document.getElementById("coursePayAmount");
-
     if (amtEl) amtEl.textContent = `${course.price.toLocaleString("vi-VN")} VNĐ`;
-
     const qrImg = document.getElementById("courseQrImage");
-
     if (qrImg) {
-
         qrImg.src = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${course.price}&addInfo=${encodeURIComponent(transferMemo)}&accountName=NGO%20BAO%20THACH`;
-
     }
-
-
 
     const webDevId = getWebDeviceId();
-
     const phoneWithDeviceLock = `${rawPhone} [WB:${webDevId}]`;
 
-
-
     const payload = {
-
         action: "createOrder",
-
         type: "COURSE_REGISTRATION",
-
         orderType: "Khóa Học",
-
         status: "PENDING",
-
         orderCode: orderCode,
-
+        transferMemo: transferMemo,
         sku: course.id,
-
         itemName: course.title,
-
         price: course.price,
-
         amount: course.price,
-
         name: name,
-
         phone: phoneWithDeviceLock,
-
         email: email,
-
         deviceId: webDevId,
-
         bank: "ACB",
-
         stkNhan: "27384751",
-
         timestamp: new Date().toISOString()
-
     };
 
-
-
     if (state.webhookUrl) {
-
         fetch(state.webhookUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }).catch(() => {});
-
     }
-
     state.orderHistory.unshift(payload);
-
     localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
 
-
-
     document.getElementById("courseCheckoutStep1").classList.add("hidden");
-
     document.getElementById("courseCheckoutStep2").classList.remove("hidden");
 
-
-
     startCoursePaymentPolling(orderCode, course.title, email);
-
 }
-
-
 
 let coursePollingInterval = null;
 
 function startCoursePaymentPolling(orderCode, courseTitle, email) {
-
     if (coursePollingInterval) clearInterval(coursePollingInterval);
-
     let elapsed = 0;
-
     const timerEl = document.getElementById("coursePaymentTimer");
 
-
-
     coursePollingInterval = setInterval(() => {
-
         elapsed += 5;
-
         const mins = Math.floor(elapsed / 60);
-
         const secs = elapsed % 60;
-
         if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
 
-
-
         checkCoursePaymentStatus(orderCode, courseTitle, email);
-
     }, 5000);
-
 }
-
-
 
 async function checkCoursePaymentStatus(orderCode, courseTitle, email) {
-
     if (!state.webhookUrl) return;
-
     try {
-
         const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode) + "&deviceId=" + encodeURIComponent(getWebDeviceId());
-
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
-
         const data = await res.json();
-
         if (data && (data.verified === true || data.paid === true)) {
-
             onCoursePaymentConfirmed(orderCode, courseTitle, email);
-
         }
-
     } catch(e) {}
-
 }
-
-
 
 function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
-
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
-
-
 
     const course = selectedCourseForCheckout || COURSES_DATABASE[0];
-
-    const name = document.getElementById("courseStudentName")?.value.trim() || "Học Viên Điệp Viên";
-
-    const rawPhone = (document.getElementById("courseStudentPhone")?.value.trim() || "").replace(/\[.*\]/g, "").trim();
-
-
-
-    // Cấp quyền trực tiếp thêm qua Webhook Kho Phát File (đảm bảo cả folder chính và extraFolderIds như 11. Khoá HSA/TSA 399K đều được mở ngay lập tức)
+    const cust = getSyncedCustomerLocal() || {};
+    const name = document.getElementById("courseStudentName")?.value.trim() || cust.name || "Học Viên Điệp Viên";
+    const rawPhone = (document.getElementById("courseStudentPhone")?.value.trim() || cust.phone || "").replace(/\[.*\]/g, "").trim();
 
     const warehouseWebhook = "https://script.google.com/macros/s/AKfycbyaKudQDpHOtFWrNV5dr39hoFCqFXl2MVJRKhWY93i1nV95WAvw4HdXxIW-UA-7XjEjvA/exec";
-
     if (course && email) {
-
         const fIds = [course.driveFolderId, ...(course.extraFolderIds || [])].filter(Boolean);
-
-        fIds.forEach((fid, idx) => {
-
+        fIds.forEach((fid) => {
             fetch(warehouseWebhook, {
-
                 method: "POST",
-
                 mode: "no-cors",
-
                 headers: { "Content-Type": "application/json" },
-
                 body: JSON.stringify({
-
                     email: email,
-
                     name: name,
-
                     orderCode: orderCode,
-
                     itemName: course.title + " (Tặng kèm App Điệp Viên Study — 1 Máy)",
-
                     orderType: "Khóa Học Bản Quyền (Tặng App 1 Máy)",
-
                     fileId: fid,
-
                     fileLink: course.driveUrl
-
                 })
-
             }).catch(() => {});
-
         });
-
     }
 
-
-
-    // Lưu trạng thái mở khóa vào localStorage đồng bộ
+    // Gửi thêm 1 email mời khách dùng miễn phí các tính năng AI trên App Điệp Viên Study
+    sendAppInviteEmailAfterPurchase({
+        email: email,
+        name: name,
+        orderCode: orderCode,
+        itemName: course ? course.title : courseTitle
+    });
 
     const prev = getSyncedCustomerLocal() || {};
-
     const unlockedList = expandWebUnlockedCourses([...(prev.unlockedCourses || []), course ? course.id : ""]);
-
     const updatedCust = {
-
         ...prev,
-
         email: email,
-
         name: name,
-
         phone: rawPhone,
-
         boundDeviceId: getWebDeviceId(),
-
         unlockedCourses: unlockedList
-
     };
-
     localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
-
-    applySyncedCustomerToForms();
-
+    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_COURSE_PAID" });
     renderCourses();
 
-
-
+    const topHdr = document.getElementById("courseCheckoutTopHeader");
+    if (topHdr) topHdr.classList.add("hidden");
+    document.getElementById("courseCheckoutStep1").classList.add("hidden");
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
-
     document.getElementById("courseCheckoutStep3").classList.remove("hidden");
-
     document.getElementById("courseSuccessOrderId").textContent = orderCode;
-
     document.getElementById("courseSuccessTitle").textContent = courseTitle;
-
     document.getElementById("courseSuccessEmail").textContent = email;
-
     const appEmailEl = document.getElementById("courseSuccessAppEmail");
-
     if (appEmailEl) appEmailEl.textContent = email;
-
     const driveLinkEl = document.getElementById("courseSuccessDriveLink");
-
     if (driveLinkEl && course && course.driveUrl) {
-
         driveLinkEl.href = course.driveUrl;
-
     }
-
 }
-
-
 
 function backToCourseStep1() {
-
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
-
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
-
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
-
 }
-
-
 
 function mapDisciplineToCategoryAndIcon(rawName) {
 
@@ -3991,162 +3746,186 @@ async function syncLiveProductsFromMasterSheet() {
 
 
 function getSyncedCustomerLocal() {
+    try {
+        const raw = JSON.parse(localStorage.getItem("dvtl_synced_customer") || "null") || {};
+        const otpName = (localStorage.getItem("dvtl_app_otp_verified_name") || "").trim();
+        const otpEmail = (localStorage.getItem("dvtl_app_otp_verified_email") || "").trim().toLowerCase();
+        const dvsName = (localStorage.getItem("dvs_cust_name") || "").trim();
+        const dvsPhone = (localStorage.getItem("dvs_cust_phone") || "").trim();
+        const dvsEmail = (localStorage.getItem("dvs_cust_email") || "").trim().toLowerCase();
+
+        const merged = {
+            ...raw,
+            name: (raw.name || otpName || dvsName || "").trim(),
+            email: (raw.email || otpEmail || dvsEmail || "").trim().toLowerCase(),
+            phone: String(raw.phone || dvsPhone || "").replace(/\[.*\]/g, "").trim(),
+            unlockedCourses: Array.isArray(raw.unlockedCourses) ? raw.unlockedCourses : [],
+            purchasedDocs: Array.isArray(raw.purchasedDocs) ? raw.purchasedDocs : [],
+            btlOrders: Array.isArray(raw.btlOrders) ? raw.btlOrders : []
+        };
+        if (!merged.name && !merged.email) return null;
+        return merged;
+    } catch (e) {
+        return null;
+    }
+}
+
+function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", source = "WEB_AUTO_SYNC" } = {}) {
+    const prev = getSyncedCustomerLocal() || {};
+    const cleanName = (name || prev.name || "").trim();
+    const cleanEmail = (email || prev.email || "").trim().toLowerCase();
+    const cleanPhone = String(phone || prev.phone || "").replace(/\[.*\]/g, "").trim();
+
+    if (!cleanName && !cleanEmail) return prev;
+
+    const updated = {
+        ...prev,
+        name: cleanName,
+        email: cleanEmail,
+        phone: cleanPhone,
+        unlockedCourses: prev.unlockedCourses || [],
+        purchasedDocs: prev.purchasedDocs || [],
+        btlOrders: prev.btlOrders || []
+    };
 
     try {
+        localStorage.setItem("dvtl_synced_customer", JSON.stringify(updated));
+        if (cleanName) {
+            localStorage.setItem("dvtl_app_otp_verified_name", cleanName);
+            localStorage.setItem("dvs_cust_name", cleanName);
+        }
+        if (cleanEmail) {
+            localStorage.setItem("dvtl_app_otp_verified_email", cleanEmail);
+            localStorage.setItem("dvs_cust_email", cleanEmail);
+        }
+        if (cleanPhone) {
+            localStorage.setItem("dvs_cust_phone", cleanPhone);
+        }
+    } catch (_) {}
 
-        return JSON.parse(localStorage.getItem("dvtl_synced_customer") || "null");
+    applySyncedCustomerToForms();
+    updateVerifiedAppDownloadUI();
 
-    } catch (e) {
-
-        return null;
-
+    const webhook = (state && state.webhookUrl) ? state.webhookUrl : (typeof APP_CONFIG !== "undefined" ? APP_CONFIG.defaultWebhookUrl : "");
+    if (webhook && cleanEmail.includes("@")) {
+        fetch(webhook, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                action: "registerOrLoginCustomer",
+                email: cleanEmail,
+                name: cleanName,
+                phone: cleanPhone,
+                source: source
+            })
+        }).catch(() => {});
     }
 
+    return updated;
 }
 
+function sendAppInviteEmailAfterPurchase({ email = "", name = "", orderCode = "", itemName = "" } = {}) {
+    const cleanEmail = String(email || "").trim().toLowerCase();
+    if (!cleanEmail || !cleanEmail.includes("@")) return;
+    const cust = getSyncedCustomerLocal() || {};
+    const cleanName = (name || cust.name || "Bạn").trim();
+    const payloads = [
+        state?.webhookUrl,
+        "https://script.google.com/macros/s/AKfycbyaKudQDpHOtFWrNV5dr39hoFCqFXl2MVJRKhWY93i1nV95WAvw4HdXxIW-UA-7XjEjvA/exec"
+    ].filter(Boolean);
 
+    payloads.forEach(url => {
+        fetch(url, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                action: "send_app_invite",
+                email: cleanEmail,
+                name: cleanName,
+                orderCode: orderCode || "DVTL",
+                itemName: itemName || "Tài liệu & Khóa học Điệp Viên Study"
+            })
+        }).catch(() => {});
+    });
+}
 
 function applySyncedCustomerToForms() {
-
     const cust = getSyncedCustomerLocal();
-
     const lbl = document.getElementById("headerAccountSyncLabel");
-
-    if (cust && cust.email) {
-
-        if (lbl) lbl.textContent = (cust.name || cust.email) + " · Đã Đồng Bộ App";
-
+    if (cust && (cust.email || cust.name)) {
+        if (lbl) lbl.textContent = (cust.name || cust.email) + " · Đã Lưu TK";
         const ids = [
-
             ["checkoutNameInput", cust.name],
-
             ["checkoutPhoneInput", cust.phone],
-
             ["checkoutEmailInput", cust.email],
-
             ["courseStudentName", cust.name],
-
             ["courseStudentPhone", cust.phone],
-
             ["courseStudentEmail", cust.email],
-
             ["srvNameInput", cust.name],
-
             ["srvPhoneInput", cust.phone],
-
-            ["srvEmailInput", cust.email]
-
+            ["srvEmailInput", cust.email],
+            ["appOtpNameInput", cust.name],
+            ["appOtpEmailInput", cust.email],
+            ["syncCustNameInput", cust.name],
+            ["syncCustEmailInput", cust.email],
+            ["syncCustPhoneInput", cust.phone]
         ];
-
         ids.forEach(([id, val]) => {
-
             const el = document.getElementById(id);
-
-            if (el && val && !el.value) el.value = val;
-
+            if (el && val) el.value = val;
         });
-
     } else if (lbl) {
-
         lbl.textContent = "Đăng Nhập";
-
     }
-
 }
-
-
 
 function openCustomerSyncModal() {
-
     const modal = document.getElementById("customerSyncModal");
-
     if (!modal) return;
-
     const cust = getSyncedCustomerLocal();
-
     if (cust) {
-
         document.getElementById("syncCustEmailInput").value = cust.email || "";
-
         document.getElementById("syncCustNameInput").value = cust.name || "";
-
         document.getElementById("syncCustPhoneInput").value = cust.phone || "";
-
         renderSyncedCustomerEntitlements(cust);
-
     }
-
     modal.classList.remove("hidden");
-
 }
-
-
 
 function closeCustomerSyncModal() {
-
     const modal = document.getElementById("customerSyncModal");
-
     if (modal) modal.classList.add("hidden");
-
 }
-
-
 
 function renderSyncedCustomerEntitlements(cust) {
-
     const box = document.getElementById("syncCustomerEntitlementsBox");
-
     const list = document.getElementById("syncCustomerItemsList");
-
     if (!box || !list) return;
-
     box.classList.remove("hidden");
-
     const courses = cust.unlockedCourses || [];
-
     const docs = cust.purchasedDocs || [];
-
     const btls = cust.btlOrders || [];
-
     if (courses.length === 0 && docs.length === 0 && btls.length === 0) {
-
-        list.innerHTML = `<div class="p-3 bg-slate-50 rounded-xl text-slate-500 text-center">Chưa có khóa học hoặc đề cương nào ở trạng thái PAID_SUCCESS (Xác thực biến động số dư ngân hàng).</div>`;
-
+        list.innerHTML = `<div class="p-3 bg-slate-50 rounded-xl text-slate-500 text-center">Tài khoản của bạn đã được lưu tự động cho mọi giao dịch tiếp theo (không cần điền lại thông tin lần 2).</div>`;
         return;
-
     }
-
     let html = "";
-
     courses.forEach(c => {
-
         html += `<div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex justify-between items-center">
-
             <div><strong class="text-emerald-900"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg> Khóa học: ${c}</strong><div class="text-[10px] text-emerald-700">Đã mở khóa trên App Điệp Viên Study & Google Drive</div></div>
-
             <span class="px-2 py-0.5 bg-emerald-600 text-white font-black text-[10px] rounded">ĐÃ MỞ KHÓA</span>
-
         </div>`;
-
     });
-
     docs.forEach(d => {
-
         html += `<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl flex justify-between items-center">
-
-            <div><strong class="text-[#0D1677]"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> ${d.title || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
-
+            <div><strong class="text-[#0D1677]"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> ${d.title || d.name || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
             ${d.driveUrl ? `<a href="${d.driveUrl}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-bold text-[10px] rounded-lg">Mở Drive</a>` : `<span class="text-emerald-700 font-bold text-[10px]">PAID_SUCCESS</span>`}
-
         </div>`;
-
     });
-
     list.innerHTML = html;
-
 }
-
-
 
 async function submitCustomerSyncWeb() {
     const email = document.getElementById("syncCustEmailInput")?.value.trim().toLowerCase() || "";
@@ -4210,40 +3989,25 @@ async function submitCustomerSyncWeb() {
                     phone: cleanPhone,
                     unlockedCourses: expandedCourses
                 };
-                if (expandedCourses.length > 0 && !wbMatch) {
-                    const hwTag = hwMatch ? ` [HW:${hwMatch[1]}]` : "";
-                    const lockedPhoneStr = `${cleanPhone} [WB:${myWebDevId}]${hwTag}`.trim();
-                    fetch(state.webhookUrl, {
-                        method: "POST",
-                        mode: "no-cors",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            action: "registerOrLoginCustomer",
-                            email,
-                            name: syncedProfile.name,
-                            phone: lockedPhoneStr,
-                            password,
-                            source: "WEB_DEVICE_LOCKED_1_MACHINE"
-                        })
-                    }).catch(() => {});
-                }
             }
         } catch (e) {}
     }
 
     localStorage.setItem("dvtl_synced_customer", JSON.stringify(syncedProfile));
-    localStorage.setItem("dvtl_app_otp_verified_email", email);
-    localStorage.setItem("dvtl_app_otp_verified_name", syncedProfile.name);
-    applySyncedCustomerToForms();
-    updateVerifiedAppDownloadUI();
+    saveCustomerProfileEverywhere({
+        name: syncedProfile.name,
+        phone: syncedProfile.phone,
+        email: syncedProfile.email,
+        source: "WEB_LOGIN_SYNC"
+    });
     renderSyncedCustomerEntitlements(syncedProfile);
     renderCourses();
 
-    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien study về máy cho khách!
-    startDirectFileDownload("DiepVienStudy_Setup.exe");
+    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien study (tên file chuẩn Cai_Dat_App_Diep_Vien_Study_Windows.exe)
+    startDirectFileDownload("Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cai_Dat_App_Diep_Vien_Study_Windows.exe");
 
     if (msgEl) {
-        msgEl.innerHTML = `Đã đăng nhập thành công tài khoản <strong>${syncedProfile.name}</strong> (${email}) và đang tự động tải <strong>APP Diep Vien study</strong> về máy! <a href="DiepVienStudy_Setup.exe" download="DiepVienStudy_Setup.exe" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Bấm vào đây nếu trình duyệt chưa tự tải</a>.`;
+        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Cai_Dat_App_Diep_Vien_Study_Windows.exe</strong>! <a href="downloads/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" target="_blank" download="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt PDF (Có Hình Minh Họa)</a>.`;
     }
 }
 
@@ -4251,6 +4015,9 @@ function logoutCustomerSyncWeb() {
     localStorage.removeItem("dvtl_synced_customer");
     localStorage.removeItem("dvtl_app_otp_verified_email");
     localStorage.removeItem("dvtl_app_otp_verified_name");
+    localStorage.removeItem("dvs_cust_name");
+    localStorage.removeItem("dvs_cust_phone");
+    localStorage.removeItem("dvs_cust_email");
     applySyncedCustomerToForms();
     updateVerifiedAppDownloadUI();
     const box = document.getElementById("syncCustomerEntitlementsBox");
@@ -4266,7 +4033,7 @@ async function verifyCourseBankPaymentNow() {
     if (!selectedCourseForCheckout) return;
     const noteEl = document.getElementById("courseTransferNote");
     const orderCode = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
-    const email = document.getElementById("courseStudentEmail")?.value.trim() || "";
+    const email = document.getElementById("courseStudentEmail")?.value.trim() || getSyncedCustomerLocal()?.email || "";
     const statusText = document.getElementById("courseWaitingStatusText");
     if (statusText) statusText.textContent = "Đang đối soát Email biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
     if (!state.webhookUrl || !orderCode) return;
@@ -4292,7 +4059,8 @@ async function verifyCourseBankPaymentNow() {
 
 function getVerifiedAppOtpEmailLocal() {
     try {
-        return (localStorage.getItem("dvtl_app_otp_verified_email") || "").trim().toLowerCase();
+        const cust = JSON.parse(localStorage.getItem("dvtl_synced_customer") || "null") || {};
+        return (localStorage.getItem("dvtl_app_otp_verified_email") || cust.email || localStorage.getItem("dvs_cust_email") || "").trim().toLowerCase();
     } catch (_) {
         return "";
     }
@@ -4300,7 +4068,8 @@ function getVerifiedAppOtpEmailLocal() {
 
 function getVerifiedAppOtpNameLocal() {
     try {
-        return (localStorage.getItem("dvtl_app_otp_verified_name") || "").trim();
+        const cust = JSON.parse(localStorage.getItem("dvtl_synced_customer") || "null") || {};
+        return (localStorage.getItem("dvtl_app_otp_verified_name") || cust.name || localStorage.getItem("dvs_cust_name") || "").trim();
     } catch (_) {
         return "";
     }
@@ -4326,7 +4095,6 @@ function validateAppDownloadGate() {
     const btnWinExe = document.getElementById("btnDirectDownloadWinExe");
     const btnMacZip = document.getElementById("btnDirectDownloadMacZip");
     const badge = document.getElementById("appGateLockBadge");
-    const hint = document.getElementById("appGateStatusHint");
 
     const nameVal = (nameInp?.value || "").trim();
     const emailVal = (emailInp?.value || "").trim().toLowerCase();
@@ -4347,7 +4115,7 @@ function validateAppDownloadGate() {
 
     if (badge) {
         if (isReady) {
-            badge.textContent = "Đã mở khóa tải App";
+            badge.textContent = "Đã mở khóa tải App · Đã lưu TK";
             badge.className = "px-2 py-0.5 rounded-full text-[9.5px] font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-300";
         } else {
             badge.textContent = "Điền để mở khóa tải";
@@ -4358,13 +4126,14 @@ function validateAppDownloadGate() {
     return isReady;
 }
 
-// Upgrade onDocPaymentConfirmed to always grant Google Drive access & show direct Drive button
+// Upgrade onDocPaymentConfirmed to always grant Google Drive access, save customer profile, & send second App invite email
 function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     if (typeof docPollingInterval !== "undefined" && docPollingInterval) {
         clearInterval(docPollingInterval);
         docPollingInterval = null;
     }
 
+    document.getElementById("docCheckoutStep1")?.classList.add("hidden");
     document.getElementById("docCheckoutStep2")?.classList.add("hidden");
     document.getElementById("docCheckoutStep3")?.classList.remove("hidden");
     const ordEl = document.getElementById("docSuccessOrderId");
@@ -4373,7 +4142,8 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     if (emEl) emEl.textContent = email;
 
     const doc = state.selectedDoc || {};
-    const custName = document.getElementById("checkoutNameInput")?.value.trim() || "Sinh Viên";
+    const cust = getSyncedCustomerLocal() || {};
+    const custName = document.getElementById("checkoutNameInput")?.value.trim() || cust.name || "Sinh Viên";
     const resolvedDriveId = doc.driveId || "1bDThoRGY_IadvZDlUq0eyYmopMlEuSTT";
     const fallbackUrl = driveUrl || (doc.driveId ? (doc.driveType === "folder" ? `https://drive.google.com/drive/folders/${doc.driveId}` : `https://drive.google.com/file/d/${doc.driveId}/view`) : "https://drive.google.com/drive/folders/1bDThoRGY_IadvZDlUq0eyYmopMlEuSTT");
 
@@ -4395,6 +4165,14 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
         }).catch(() => {});
     }
 
+    // Gửi thêm 1 email mời khách dùng miễn phí các tính năng AI trên App Điệp Viên Study
+    sendAppInviteEmailAfterPurchase({
+        email: email,
+        name: custName,
+        orderCode: orderCode,
+        itemName: doc.name || doc.baseName || "Đề Cương Ôn Thi 50K"
+    });
+
     const prev = getSyncedCustomerLocal() || {};
     const prevDocs = Array.isArray(prev.purchasedDocs) ? prev.purchasedDocs : [];
     const updatedCust = {
@@ -4412,6 +4190,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
         ]
     };
     localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
+    saveCustomerProfileEverywhere({ name: custName, email, source: "WEB_DOC_PAID" });
 
     const driveBtn = document.getElementById("docSuccessDriveBtn");
     if (driveBtn) {
@@ -4420,7 +4199,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     }
 }
 
-// Upgrade openSuccessModal so BTL Service orders also show the 10% Deposit VietQR immediately
+// Upgrade openSuccessModal so BTL Service orders also show the 10% Deposit VietQR with customer name embedded in memo
 function openSuccessModal(type, orderData) {
     const modal = document.getElementById("successModal");
     if (!modal) return;
@@ -4448,7 +4227,9 @@ function openSuccessModal(type, orderData) {
     } else {
         const rawDep = String(orderData?.assignment?.depositAmount || "50000").replace(/\D/g, "");
         const depAmount = Number(rawDep) || 50000;
-        const memo = String(orderData?.orderId || "COCBTL").trim();
+        const custName = orderData?.customer?.name || getSyncedCustomerLocal()?.name || "";
+        const cleanName = removeVietnameseTones(custName).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
+        const memo = orderData?.transferMemo || `${String(orderData?.orderId || "COCBTL").trim()} ${cleanName}`.trim();
         const qrSrc = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${depAmount}&addInfo=${encodeURIComponent(memo)}&accountName=NGO%20BAO%20THACH`;
         if (title) title.textContent = "Đã Ghi Nhận Đơn Đặt Làm Bài!";
         if (desc) desc.textContent = "Quét mã VietQR bên dưới để đặt cọc 10% khởi động bài viết (ACB · 27384751 · NGO BAO THACH):";
@@ -4465,7 +4246,7 @@ function openSuccessModal(type, orderData) {
     modal.classList.remove("hidden");
 }
 
-function startDirectFileDownload(hrefUrl, downloadFilename = "DiepVienStudy_Setup.exe") {
+function startDirectFileDownload(hrefUrl, downloadFilename = "Cai_Dat_App_Diep_Vien_Study_Windows.exe") {
     try {
         const a = document.createElement("a");
         a.href = hrefUrl;
@@ -4488,46 +4269,16 @@ function handleGatedAppDownload(targetPlatform = "exe") {
     const nameVal = (document.getElementById("appOtpNameInput")?.value || "").trim();
     const emailVal = (document.getElementById("appOtpEmailInput")?.value || "").trim().toLowerCase();
 
-    localStorage.setItem("dvtl_app_otp_verified_name", nameVal);
-    localStorage.setItem("dvtl_app_otp_verified_email", emailVal);
-
-    const prev = getSyncedCustomerLocal() || {};
-    const synced = {
-        ...prev,
+    saveCustomerProfileEverywhere({
         name: nameVal,
         email: emailVal,
-        unlockedCourses: prev.unlockedCourses || [],
-        purchasedDocs: prev.purchasedDocs || [],
-        btlOrders: prev.btlOrders || []
-    };
-    localStorage.setItem("dvtl_synced_customer", JSON.stringify(synced));
-    applySyncedCustomerToForms();
+        source: "WEB_APP_DOWNLOAD_GATE"
+    });
 
-    const webhook = (state && state.webhookUrl) ? state.webhookUrl : APP_CONFIG.defaultWebhookUrl;
-    if (webhook) {
-        fetch(webhook, {
-            method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                action: "registerOrLoginCustomer",
-                email: emailVal,
-                name: nameVal,
-                phone: prev.phone || "",
-                source: "WEB_APP_DOWNLOAD_GATE"
-            })
-        }).catch(() => {});
-    }
-
-    const links = (typeof APP_DOWNLOAD_LINKS !== "undefined" && APP_DOWNLOAD_LINKS) ? APP_DOWNLOAD_LINKS : {};
     if (targetPlatform === "macos") {
-        const macUrl = links.macos_zip_direct_url || "https://drive.google.com/uc?export=download&id=1WMGpwANae4qOCM9hQ8FTI5poZwVfP2lf";
-        window.open(macUrl, "_blank", "noopener,noreferrer");
-    } else if (targetPlatform === "windows") {
-        const winUrl = links.windows_zip_direct_url || "https://drive.google.com/uc?export=download&id=1hh3zp7-X3leDex77Rf76W9BeiJzEUZkf";
-        window.open(winUrl, "_blank", "noopener,noreferrer");
+        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_MacOS.zip", "Cai_Dat_App_Diep_Vien_Study_MacOS.zip");
     } else {
-        startDirectFileDownload("DiepVienStudy_Setup.exe", "DiepVienStudy_Setup.exe");
+        startDirectFileDownload("Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cai_Dat_App_Diep_Vien_Study_Windows.exe");
     }
 }
 
@@ -4541,8 +4292,8 @@ function openAppDownloadModal() {
     const nameInp = document.getElementById("appOtpNameInput");
     const emailInp = document.getElementById("appOtpEmailInput");
 
-    if (nameInp && !nameInp.value) nameInp.value = verifiedName || cust?.name || "";
-    if (emailInp && !emailInp.value) emailInp.value = verifiedEmail || cust?.email || "";
+    if (nameInp) nameInp.value = verifiedName || cust?.name || nameInp.value || "";
+    if (emailInp) emailInp.value = verifiedEmail || cust?.email || emailInp.value || "";
 
     validateAppDownloadGate();
 
@@ -4565,5 +4316,5 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         applySyncedCustomerToForms();
         updateVerifiedAppDownloadUI();
-    }, 250);
+    }, 200);
 });

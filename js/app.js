@@ -93,9 +93,9 @@ function switchView(viewName) {
     // Highlight Nav Button (Clean Rounded Pill Style)
     document.querySelectorAll(".nav-tab-btn").forEach(btn => {
         if (btn.dataset.view === viewName) {
-            btn.className = "nav-tab-btn px-4 py-1.5 rounded-full text-[13px] font-extrabold bg-[#FFA000] text-slate-950 shadow-md transition-all duration-200 whitespace-nowrap";
+            btn.className = "nav-tab-btn px-2.5 py-1.5 rounded-full text-[12px] font-extrabold bg-[#FFA000] text-slate-950 shadow-md transition-all duration-200 whitespace-nowrap";
         } else {
-            btn.className = "nav-tab-btn px-4 py-1.5 rounded-full text-[13px] font-bold text-white hover:bg-white/10 hover:text-amber-300 transition-all duration-200 whitespace-nowrap";
+            btn.className = "nav-tab-btn px-2.5 py-1.5 rounded-full text-[12px] font-bold text-white hover:bg-white/10 hover:text-amber-300 transition-all duration-200 whitespace-nowrap";
         }
     });
     
@@ -2053,7 +2053,7 @@ function applySyncedCustomerToForms() {
             if (el && val && !el.value) el.value = val;
         });
     } else if (lbl) {
-        lbl.textContent = "Đăng Nhập · Đồng Bộ App";
+        lbl.textContent = "Đăng Nhập";
     }
 }
 
@@ -2262,7 +2262,7 @@ function updateVerifiedAppDownloadUI() {
         }
     }
     if (hdrLabel) {
-        hdrLabel.textContent = verified ? "Tải App Ngay (Đã Kích Hoạt)" : "Tải App Điệp Viên Study";
+        hdrLabel.textContent = verified ? "Tải App (Đã Kích Hoạt)" : "Tải App";
     }
 }
 

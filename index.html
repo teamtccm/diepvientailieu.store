@@ -67,7 +67,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
             <!-- Brand Logo & Single-Line Typography with Generous Spacing -->
-            <a href="javascript:void(0)" onclick="switchView('home')" class="flex items-center gap-3.5 group select-none mr-3 lg:mr-6 flex-shrink-0">
+            <a href="javascript:void(0)" onclick="switchView('home')" class="flex items-center gap-3.5 group select-none mr-2 lg:mr-3 flex-shrink-0">
                 <div class="w-12 h-12 rounded-2xl p-0.5 shadow-md group-hover:scale-105 transition-all flex items-center justify-center flex-shrink-0 overflow-hidden">
                     <img id="headerLogoImg" src="images/favicon_badge.png" alt="Điệp Viên Tài Liệu" class="w-full h-full object-contain">
                 </div>
@@ -88,31 +88,25 @@
             </a>
 
             <!-- Desktop Menu: Clean Tab Navigation with Rounded Pill Border Container -->
-            <nav class="hidden lg:flex items-center gap-1 text-[13px] bg-white/[0.08] dark:bg-black/30 border border-white/25 dark:border-white/20 p-1.5 rounded-full backdrop-blur-md shadow-lg">
-                <button onclick="switchView('home')" data-view="home" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">🏠 Trang Chủ</button>
-                <span class="text-white/20 hidden lg:inline">|</span>
-                <button onclick="switchView('docs')" data-view="docs" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">📚 Đề Cương</button>
-                <span class="text-white/20 hidden lg:inline">|</span>
-                <button onclick="switchView('service')" data-view="service" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">✍️ Hỗ Trợ Học Thuật</button>
-                <span class="text-white/20 hidden lg:inline">|</span>
-                <button onclick="switchView('courses')" data-view="courses" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">🎓 Khóa Học</button>
-                <span class="text-white/20 hidden lg:inline">|</span>
-                <button onclick="switchView('pricing')" data-view="pricing" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">💰 Bảng Giá</button>
-                <span class="text-white/20 hidden lg:inline">|</span>
-                <button onclick="switchView('guarantee_feedback')" data-view="guarantee_feedback" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">🛡️ Cam Kết</button>
-                <span class="text-white/20 hidden lg:inline">|</span>
-                <button onclick="switchView('faq')" data-view="faq" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">💡 Hỏi Đáp</button>
+            <nav class="hidden lg:flex items-center gap-0.5 text-[12px] bg-white/[0.08] dark:bg-black/30 border border-white/25 dark:border-white/20 p-1 rounded-full backdrop-blur-md shadow-lg">
+                <button onclick="switchView('home')" data-view="home" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">🏠 Trang Chủ</button>
+                <button onclick="switchView('docs')" data-view="docs" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">📚 Đề Cương</button>
+                <button onclick="switchView('service')" data-view="service" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">✍️ Hỗ Trợ Học Thuật</button>
+                <button onclick="switchView('courses')" data-view="courses" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">🎓 Khóa Học</button>
+                <button onclick="switchView('pricing')" data-view="pricing" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">💰 Bảng Giá</button>
+                <button onclick="switchView('guarantee_feedback')" data-view="guarantee_feedback" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">🛡️ Cam Kết</button>
+                <button onclick="switchView('faq')" data-view="faq" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">💡 Hỏi Đáp</button>
             </nav>
 
             <!-- Unified Account & App Download / Sync Buttons -->
-            <div class="flex items-center gap-2 ml-2">
-                <button id="headerDownloadAppBtn" onclick="openAppDownloadModal()" class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs rounded-full shadow-md transition whitespace-nowrap">
+            <div class="flex items-center gap-1.5 ml-2 flex-shrink-0">
+                <button id="headerDownloadAppBtn" onclick="openAppDownloadModal()" class="inline-flex items-center gap-1.5 px-3 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap">
                     <span>💻</span>
-                    <span id="headerDownloadAppLabel">Tải App Điệp Viên Study</span>
+                    <span id="headerDownloadAppLabel">Tải App</span>
                 </button>
-                <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-xs rounded-full shadow-md transition whitespace-nowrap">
+                <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-1.5 px-3 py-2 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap">
                     <span>👤</span>
-                    <span id="headerAccountSyncLabel">Đăng Nhập · Đồng Bộ App</span>
+                    <span id="headerAccountSyncLabel">Đăng Nhập</span>
                 </button>
             </div>
         </div>
@@ -674,7 +668,7 @@
                             </div>
                         </div>
 
-                                                                                                                                                                        <!-- Menu 3: Khóa Học Bản Quyền -->
+                                                                                                                                                                                                                        <!-- Menu 3: Khóa Học Bản Quyền -->
                         <div onclick="switchView('courses')" class="group clean-card hover-lift cursor-pointer p-6 border-2 border-indigo-200 hover:border-[#0D1677] flex flex-col justify-between transition-all bg-white shadow-sm hover:shadow-xl rounded-2xl">
                             <div>
                                 <div class="w-12 h-12 rounded-2xl bg-[#0D1677] text-white flex items-center justify-center text-2xl shadow-md mb-4 group-hover:scale-110 transition-transform">
@@ -2243,7 +2237,7 @@ function doPost(e) {
         </div>
     </div>
 
-        <!-- ================================================================
+                <!-- ================================================================
          MODAL: TẢI APP ĐIỆP VIÊN STUDY (XÁC THỰC EMAIL OTP & KÍCH HOẠT TÀI KHOẢN)
          ================================================================ -->
     <div id="appDownloadOtpModal" class="fixed inset-0 z-[105] hidden items-center justify-center p-4 bg-slate-950/85 backdrop-blur-sm" onclick="if(event.target===this)closeAppDownloadModal()">

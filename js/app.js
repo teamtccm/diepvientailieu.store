@@ -93,9 +93,9 @@ function switchView(viewName) {
     // Highlight Nav Button (Clean Rounded Pill Style)
     document.querySelectorAll(".nav-tab-btn").forEach(btn => {
         if (btn.dataset.view === viewName) {
-            btn.className = "nav-tab-btn px-2.5 py-1.5 rounded-full text-[12px] font-extrabold bg-[#FFA000] text-slate-950 shadow-md transition-all duration-200 whitespace-nowrap";
+            btn.className = "nav-tab-btn w-full flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-extrabold bg-[#FFA000] text-slate-950 shadow-md transition-all duration-200 whitespace-nowrap text-left";
         } else {
-            btn.className = "nav-tab-btn px-2.5 py-1.5 rounded-full text-[12px] font-bold text-white hover:bg-white/10 hover:text-amber-300 transition-all duration-200 whitespace-nowrap";
+            btn.className = "nav-tab-btn w-full flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-[13px] font-bold text-slate-200 hover:bg-white/10 hover:text-amber-300 transition-all duration-200 whitespace-nowrap text-left";
         }
     });
     
@@ -1536,8 +1536,10 @@ function renderSingleCourseCardHtml(course) {
     const unlocked = isWebCourseUnlocked(course.id);
     const customCovers = getWebCourseCustomCovers();
     const coverUrl = customCovers[course.id] || course.defaultCover || "";
-    const summaryText = course.summary || course.description || "";
-    const durationText = (course.duration || ((course.lessons || 60) + " bài giảng · HD")) + (unlocked ? " · Đã mở khóa" : "");
+    const centerTeacherText = course.instructor || "Điệp Viên Study";
+    const courseTitleText = course.title || "";
+    const footerCategoryText = course.groupName || course.level || course.categoryName || "Khóa Học 2027";
+    const durationText = (course.duration || "Full lộ trình 2027 · Video + PDF") + (unlocked ? " · Đã mở khóa" : "");
 
     return `
         <article onclick="handleWebCourseCardClick('${course.id}')" class="rounded-[18px] overflow-hidden flex flex-col bg-white/95 dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70' : 'border-slate-200/90 dark:border-white/10 hover:border-blue-600/45 dark:hover:border-sky-400/50'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
@@ -1545,7 +1547,7 @@ function renderSingleCourseCardHtml(course) {
             <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
             <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
                 ${coverUrl ? `
-                    <img src="${coverUrl}" alt="${course.title}" class="w-full h-full object-cover block" loading="lazy">
+                    <img src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block" loading="lazy">
                 ` : `
                     <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
@@ -1556,18 +1558,18 @@ function renderSingleCourseCardHtml(course) {
                 </button>
             </div>
 
-            <!-- CARD BODY (IDENTICAL TO APP dvs-course-card-body) -->
+            <!-- CARD BODY (TOP = TRUNG TÂM DẠY + TÊN THẦY CÔ NỔI BẬT, BELOW = TÊN KHÓA HỌC) -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <h3 class="text-[15.5px] font-extrabold text-slate-900 dark:text-white leading-snug tracking-tight truncate m-0" title="${course.title}">
-                    ${course.title}
+                <h3 class="text-[15px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
+                    ${centerTeacherText}
                 </h3>
-                <p class="text-[12.5px] text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2 m-0">
-                    ${summaryText}
+                <p class="text-[13.5px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0" title="${courseTitleText}">
+                    ${courseTitleText}
                 </p>
 
                 <div class="flex items-center justify-between gap-2.5 pt-2.5 mt-auto border-t border-slate-200/70 dark:border-white/10">
                     <div class="flex flex-col gap-0.5 min-w-0">
-                        <strong class="text-[12.5px] font-bold text-slate-900 dark:text-white truncate">${course.instructor}</strong>
+                        <strong class="text-[12px] font-bold text-slate-700 dark:text-slate-200 truncate">${footerCategoryText}</strong>
                         <small class="text-[11px] text-slate-500 dark:text-slate-400 truncate">${durationText}</small>
                     </div>
                     <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">

@@ -1433,24 +1433,85 @@ function filterCoursesByCategory(categoryId) {
     renderCourses();
 }
 
+function getWebDeviceId() {
+    let devId = localStorage.getItem("dvtl_web_device_id");
+    if (!devId) {
+        const raw = [
+            navigator.userAgent || "",
+            navigator.language || "",
+            screen.width + "x" + screen.height,
+            Intl.DateTimeFormat().resolvedOptions().timeZone || ""
+        ].join("|");
+        let h = 2166136261;
+        for (let i = 0; i < raw.length; i++) {
+            h ^= raw.charCodeAt(i);
+            h = Math.imul(h, 16777619);
+        }
+        const rand = Math.random().toString(36).substring(2, 6).toUpperCase();
+        devId = "DVS-WB-" + (h >>> 0).toString(16).toUpperCase().padStart(8, "0") + rand;
+        localStorage.setItem("dvtl_web_device_id", devId);
+    }
+    return devId;
+}
+
+function expandWebUnlockedCourses(rawList) {
+    const set = new Set((rawList || []).map(x => String(x || "").trim().toUpperCase()).filter(Boolean));
+    if (set.has("ALL-COURSES-399K") || set.has("COURSE-FULL-399K") || set.has("FULL-COMBO-399K") || set.has("__ALL_COURSES_399K__")) {
+        set.add("ALL-COURSES-399K");
+        set.add("__ALL_COURSES_399K__");
+        if (typeof COURSES_DATABASE !== "undefined") {
+            COURSES_DATABASE.forEach(c => set.add(c.id.toUpperCase()));
+        }
+        return Array.from(set);
+    }
+    const initial = Array.from(set);
+    if (typeof COURSES_DATABASE !== "undefined") {
+        initial.forEach(k => {
+            COURSES_DATABASE.forEach(c => {
+                if (String(c.parentCourseId || "").toUpperCase() === k || String(c.parentSubjectId || "").toUpperCase() === k) {
+                    set.add(c.id.toUpperCase());
+                }
+            });
+        });
+    }
+    return Array.from(set);
+}
+
+function isWebCourseUnlocked(courseId) {
+    const cust = getSyncedCustomerLocal();
+    if (!cust || !Array.isArray(cust.unlockedCourses)) return false;
+    const expanded = expandWebUnlockedCourses(cust.unlockedCourses);
+    return expanded.includes("ALL-COURSES-399K") || expanded.includes("__ALL_COURSES_399K__") || expanded.includes(String(courseId || "").toUpperCase());
+}
+
 function renderCourses() {
     const grid = document.getElementById("coursesGrid");
     if (!grid || typeof COURSES_DATABASE === "undefined") return;
 
-    let courses = COURSES_DATABASE;
-    if (activeCourseCategory !== "all") {
-        courses = courses.filter(c => c.category === activeCourseCategory);
-    }
+    const searchQ = (document.getElementById("courseSearchInput")?.value || "").trim().toLowerCase();
+    const searchNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(searchQ) : searchQ;
 
-    // Update count badge
+    let courses = COURSES_DATABASE.filter(c => {
+        if (activeCourseCategory !== "all") {
+            const matchCat = (c.category === activeCourseCategory) || (c.subCategory === activeCourseCategory);
+            if (!matchCat) return false;
+        }
+        if (searchQ) {
+            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.description || ""].join(" ").toLowerCase();
+            const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
+            return hay.includes(searchQ) || hayNorm.includes(searchNorm);
+        }
+        return true;
+    });
+
     const badge = document.getElementById("courseCountBadge");
-    if (badge) badge.textContent = "200 Khóa Học";
+    if (badge) badge.textContent = `${COURSES_DATABASE.length} Khóa Học (69K / 199K / 399K)`;
 
     if (courses.length === 0) {
         grid.innerHTML = `
             <div class="col-span-full text-center py-20">
                 <p class="text-4xl mb-3">📭</p>
-                <p class="text-slate-500 font-bold">Chưa có khóa học nào trong danh mục này</p>
+                <p class="text-slate-500 font-bold">Chưa tìm thấy khóa học phù hợp từ khóa này</p>
             </div>
         `;
         return;
@@ -1460,62 +1521,72 @@ function renderCourses() {
         const formattedPrice = course.price.toLocaleString("vi-VN");
         const formattedOriginal = course.originalPrice.toLocaleString("vi-VN");
         const stars = "★".repeat(Math.floor(course.rating)) + (course.rating % 1 >= 0.5 ? "½" : "");
+        const unlocked = isWebCourseUnlocked(course.id);
+        const headerBg = course.tier === "full_399k"
+            ? "from-rose-700 via-red-800 to-[#0B1958]"
+            : (course.tier === "course_199k" ? "from-[#0B1958] via-[#0D1677] to-indigo-900" : "from-slate-900 via-[#0B1958] to-[#0D1677]");
 
         return `
-        <div class="group bg-white rounded-2xl border-2 border-slate-100 hover:border-rose-300 shadow-sm hover:shadow-xl transition-all overflow-hidden cursor-pointer" onclick="openCourseCheckoutModal('${course.id}')">
-            <!-- Card Header -->
-            <div class="bg-gradient-to-br from-[#0B1958] via-[#0D1677] to-[#1a237e] p-5 relative overflow-hidden">
-                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 50%, rgba(255,160,0,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 40%);"></div>
-                <div class="relative z-10">
-                    <div class="flex items-start justify-between mb-3">
-                        <span class="text-3xl">${course.icon}</span>
-                        <span class="px-2.5 py-1 ${course.badgeColor} font-bold text-[10px] rounded-lg uppercase tracking-wider shadow-md">${course.badge}</span>
+        <div class="group bg-white rounded-2xl border-2 ${unlocked ? 'border-emerald-400' : 'border-slate-100 hover:border-rose-300'} shadow-sm hover:shadow-xl transition-all overflow-hidden cursor-pointer flex flex-col justify-between" onclick="handleWebCourseCardClick('${course.id}')">
+            <div>
+                <!-- Card Header -->
+                <div class="bg-gradient-to-br ${headerBg} p-5 relative overflow-hidden">
+                    <div class="relative z-10">
+                        <div class="flex items-start justify-between mb-3">
+                            <span class="text-3xl">${course.icon || '🎓'}</span>
+                            <span class="px-2.5 py-1 ${unlocked ? 'bg-emerald-500 text-white' : course.badgeColor} font-bold text-[10px] rounded-lg uppercase tracking-wider shadow-md">
+                                ${unlocked ? '✓ ĐÃ MỞ KHÓA' : course.badge}
+                            </span>
+                        </div>
+                        <p class="text-amber-300 text-[10px] font-bold uppercase tracking-wider mb-1">${course.tierLabel || course.categoryName} • ${course.code}</p>
+                        <h3 class="text-white font-black text-sm leading-snug line-clamp-2 min-h-[40px]">${course.title}</h3>
                     </div>
-                    <p class="text-amber-300 text-[10px] font-bold uppercase tracking-wider mb-1">${course.categoryName} • ${course.code}</p>
-                    <h3 class="text-white font-black text-sm leading-snug line-clamp-2 min-h-[40px]">${course.title}</h3>
+                </div>
+
+                <!-- Card Body -->
+                <div class="p-5 pb-3">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-xs font-bold text-[#0D1677]">👤</div>
+                        <div class="min-w-0">
+                            <p class="text-[11px] font-bold text-slate-800 leading-tight truncate">${course.instructor}</p>
+                            <p class="text-[10px] text-slate-400 truncate">${course.level}</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 text-[11px] text-slate-500 mb-3 pb-3 border-b border-slate-100">
+                        <span class="text-amber-500 font-bold">${stars} ${course.rating}</span>
+                        <span>👥 ${course.studentsCount}</span>
+                        <span>📅 ${course.duration}</span>
+                    </div>
+
+                    <ul class="space-y-1.5 mb-3">
+                        ${(course.highlights || []).slice(0, 3).map(h => `
+                            <li class="flex items-start gap-2 text-[11px] text-slate-600 leading-relaxed">
+                                <span class="text-emerald-500 font-bold mt-0.5 flex-shrink-0">✓</span>
+                                <span class="line-clamp-1">${h}</span>
+                            </li>
+                        `).join("")}
+                    </ul>
                 </div>
             </div>
 
-            <!-- Card Body -->
-            <div class="p-5">
-                <!-- Instructor & Meta -->
-                <div class="flex items-center gap-2 mb-3">
-                    <div class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-xs font-bold text-[#0D1677]">👤</div>
-                    <div>
-                        <p class="text-[11px] font-bold text-slate-800 leading-tight">${course.instructor}</p>
-                        <p class="text-[10px] text-slate-400">${course.level}</p>
-                    </div>
+            <!-- Price & CTA -->
+            <div class="px-5 pb-5 pt-2 flex items-end justify-between border-t border-slate-50">
+                <div>
+                    <p class="text-slate-400 text-xs line-through">${formattedOriginal}₫</p>
+                    <p class="text-red-600 font-black text-xl">${formattedPrice}₫</p>
+                    <p class="text-[10px] text-emerald-700 font-bold">🎁 Tặng App Điệp Viên Study (1 máy)</p>
                 </div>
-
-                <!-- Stats Row -->
-                <div class="flex items-center gap-3 text-[11px] text-slate-500 mb-3 pb-3 border-b border-slate-100">
-                    <span class="text-amber-500 font-bold">${stars} ${course.rating}</span>
-                    <span>👥 ${course.studentsCount}</span>
-                    <span>📅 ${course.duration.split('+')[0].trim()}</span>
-                </div>
-
-                <!-- Highlights -->
-                <ul class="space-y-1.5 mb-4">
-                    ${course.highlights.slice(0, 3).map(h => `
-                        <li class="flex items-start gap-2 text-[11px] text-slate-600 leading-relaxed">
-                            <span class="text-emerald-500 font-bold mt-0.5 flex-shrink-0">✓</span>
-                            <span class="line-clamp-1">${h}</span>
-                        </li>
-                    `).join("")}
-                </ul>
-
-                <!-- Price & CTA -->
-                <div class="flex items-end justify-between">
-                    <div>
-                        <p class="text-slate-400 text-xs line-through">${formattedOriginal}₫</p>
-                        <p class="text-red-600 font-black text-xl">${formattedPrice}₫</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="px-2 py-0.5 bg-red-100 text-red-700 font-black text-[10px] rounded-full">-${course.discountPercent}</span>
+                <div class="flex items-center gap-2">
+                    ${unlocked ? `
+                        <a href="${course.driveUrl}" target="_blank" onclick="event.stopPropagation()" class="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow-md transition">
+                            📂 Vào Học Ngay
+                        </a>
+                    ` : `
                         <button class="px-4 py-2.5 bg-gradient-to-r from-rose-500 to-red-600 hover:from-rose-600 hover:to-red-700 text-white font-black text-xs rounded-xl shadow-md transition">
-                            Đăng Ký
+                            🔒 Mở Khóa
                         </button>
-                    </div>
+                    `}
                 </div>
             </div>
         </div>
@@ -1523,25 +1594,105 @@ function renderCourses() {
     }).join("");
 }
 
+function handleWebCourseCardClick(courseId) {
+    if (isWebCourseUnlocked(courseId)) {
+        const course = COURSES_DATABASE.find(c => c.id === courseId);
+        if (course && course.driveUrl) {
+            window.open(course.driveUrl, "_blank", "noopener,noreferrer");
+            return;
+        }
+    }
+    openCourseCheckoutModal(courseId);
+}
+
+let baseClickedCourseForCheckout = null;
+
+function resolveCheckoutTierOptions(clickedCourse) {
+    const fullCourse = COURSES_DATABASE.find(c => c.id === "ALL-COURSES-399K") || clickedCourse;
+    let parent199k = COURSES_DATABASE.find(c => c.id === clickedCourse.parentCourseId && c.tier === "course_199k");
+    if (!parent199k) {
+        parent199k = COURSES_DATABASE.find(c => c.tier === "course_199k") || clickedCourse;
+    }
+    let subj69k = clickedCourse.tier === "subject_69k"
+        ? clickedCourse
+        : (COURSES_DATABASE.find(c => c.id === clickedCourse.parentSubjectId && c.tier === "subject_69k") ||
+           COURSES_DATABASE.find(c => c.parentCourseId === parent199k.id && c.tier === "subject_69k") ||
+           clickedCourse);
+
+    return {
+        subject_69k: subj69k,
+        course_199k: parent199k,
+        full_399k: fullCourse
+    };
+}
+
+function selectCourseCheckoutTier(tierKey) {
+    if (!baseClickedCourseForCheckout) return;
+    const tiers = resolveCheckoutTierOptions(baseClickedCourseForCheckout);
+    const chosen = tiers[tierKey] || baseClickedCourseForCheckout;
+    selectedCourseForCheckout = chosen;
+
+    document.getElementById("courseCheckoutTitle").textContent = chosen.title;
+    document.getElementById("courseCheckoutPrice").textContent = chosen.price.toLocaleString("vi-VN") + "₫";
+    document.getElementById("courseCheckoutOriginalPrice").textContent = chosen.originalPrice.toLocaleString("vi-VN") + "₫";
+    document.getElementById("courseCheckoutDiscount").textContent = "-" + chosen.discountPercent;
+
+    const listEl = document.getElementById("courseTierOptionsList");
+    if (listEl) {
+        const items = [
+            {
+                key: "subject_69k",
+                label: "Gói 1 · Mua Theo Môn / Lộ Trình",
+                price: "69.000₫",
+                title: tiers.subject_69k.title,
+                sub: "Mở khóa Folder môn / thầy cô đang chọn + Tặng App Điệp Viên Study (1 máy)"
+            },
+            {
+                key: "course_199k",
+                label: "Gói 2 · Mua Theo Khóa (Khuyên Dùng)",
+                price: "199.000₫",
+                title: tiers.course_199k.title,
+                sub: "Mở khóa trọn bộ tất cả các môn thuộc Khóa này + Tặng App Điệp Viên Study (1 máy)"
+            },
+            {
+                key: "full_399k",
+                label: "Gói 3 · Mua Full Toàn Hệ Thống (VIP)",
+                price: "399.000₫",
+                title: tiers.full_399k.title,
+                sub: "Mở khóa TẤT CẢ 66+ Khóa học (2K9 + 2K10 + HSA + TSA + V-ACT + BCA + QDA + VSAT) + App Pro (1 máy)"
+            }
+        ];
+        listEl.innerHTML = items.map(it => {
+            const active = chosen.tier === it.key;
+            return `
+            <div onclick="selectCourseCheckoutTier('${it.key}')" class="p-3 rounded-xl border-2 cursor-pointer transition flex items-start justify-between gap-2 ${active ? 'border-[#0D1677] bg-blue-50/70 shadow-sm' : 'border-slate-200 hover:border-blue-300 bg-white'}">
+                <div class="min-w-0">
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-4 h-4 rounded-full border-2 flex items-center justify-center text-[10px] font-black ${active ? 'border-[#0D1677] bg-[#0D1677] text-white' : 'border-slate-300'}">${active ? '✓' : ''}</span>
+                        <span class="text-xs font-black text-slate-900">${it.label}</span>
+                    </div>
+                    <p class="text-[11px] font-bold text-[#0D1677] truncate mt-0.5 pl-5">${it.title}</p>
+                    <p class="text-[10px] text-slate-500 pl-5">${it.sub}</p>
+                </div>
+                <span class="text-sm font-black ${active ? 'text-red-600' : 'text-slate-700'} whitespace-nowrap">${it.price}</span>
+            </div>`;
+        }).join("");
+    }
+}
+
 function openCourseCheckoutModal(courseId) {
     if (typeof COURSES_DATABASE === "undefined") return;
-    const course = COURSES_DATABASE.find(c => c.id === courseId);
+    const course = COURSES_DATABASE.find(c => c.id === courseId) || COURSES_DATABASE[0];
     if (!course) return;
 
-    selectedCourseForCheckout = course;
+    baseClickedCourseForCheckout = course;
+    selectCourseCheckoutTier(course.tier || "course_199k");
 
-    document.getElementById("courseCheckoutTitle").textContent = course.title;
-    document.getElementById("courseCheckoutPrice").textContent = course.price.toLocaleString("vi-VN") + "₫";
-    document.getElementById("courseCheckoutOriginalPrice").textContent = course.originalPrice.toLocaleString("vi-VN") + "₫";
-    document.getElementById("courseCheckoutDiscount").textContent = "-" + course.discountPercent;
-    document.getElementById("courseTransferNote").textContent = `KHOAHOC ${course.code} [SĐT của bạn]`;
+    const cust = getSyncedCustomerLocal();
+    document.getElementById("courseStudentName").value = cust?.name || "";
+    document.getElementById("courseStudentPhone").value = (cust?.phone || "").replace(/\[.*\]/g, "").trim();
+    document.getElementById("courseStudentEmail").value = cust?.email || "";
 
-    // Reset form
-    document.getElementById("courseStudentName").value = "";
-    document.getElementById("courseStudentPhone").value = "";
-    document.getElementById("courseStudentEmail").value = "";
-
-    // Reset to Step 1
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
     document.getElementById("courseCheckoutStep3").classList.add("hidden");
@@ -1561,10 +1712,10 @@ function closeCourseCheckoutModal() {
 
 function goToCoursePaymentStep() {
     const name = document.getElementById("courseStudentName").value.trim();
-    const phone = document.getElementById("courseStudentPhone").value.trim();
+    const rawPhone = document.getElementById("courseStudentPhone").value.trim();
     const email = document.getElementById("courseStudentEmail").value.trim().toLowerCase();
 
-    if (!name || !phone || !email) {
+    if (!name || !rawPhone || !email) {
         alert("⚠️ Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
         return;
     }
@@ -1580,7 +1731,7 @@ function goToCoursePaymentStep() {
     }
 
     const course = selectedCourseForCheckout;
-    const cleanCode = String(course.code || "HSA01").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+    const cleanCode = String(course.code || "KHOAHOC").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
     const orderCode = `DV${cleanCode}${Math.floor(100 + Math.random() * 900)}`;
     const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
     const transferMemo = `${orderCode} ${cleanName}`.trim();
@@ -1597,18 +1748,23 @@ function goToCoursePaymentStep() {
         qrImg.src = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${course.price}&addInfo=${encodeURIComponent(transferMemo)}&accountName=NGO%20BAO%20THACH`;
     }
 
+    const webDevId = getWebDeviceId();
+    const phoneWithDeviceLock = `${rawPhone} [WB:${webDevId}]`;
+
     const payload = {
         action: "createOrder",
         type: "COURSE_REGISTRATION",
         orderType: "Khóa Học",
         status: "PENDING",
         orderCode: orderCode,
-        sku: course.id || course.code,
+        sku: course.id,
         itemName: course.title,
         price: course.price,
+        amount: course.price,
         name: name,
-        phone: phone,
+        phone: phoneWithDeviceLock,
         email: email,
+        deviceId: webDevId,
         bank: "ACB",
         stkNhan: "27384751",
         timestamp: new Date().toISOString()
@@ -1620,11 +1776,9 @@ function goToCoursePaymentStep() {
     state.orderHistory.unshift(payload);
     localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
 
-    // Switch to Step 2
     document.getElementById("courseCheckoutStep1").classList.add("hidden");
     document.getElementById("courseCheckoutStep2").classList.remove("hidden");
 
-    // Start auto-verification polling
     startCoursePaymentPolling(orderCode, course.title, email);
 }
 
@@ -1647,10 +1801,10 @@ function startCoursePaymentPolling(orderCode, courseTitle, email) {
 async function checkCoursePaymentStatus(orderCode, courseTitle, email) {
     if (!state.webhookUrl) return;
     try {
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
+        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode) + "&deviceId=" + encodeURIComponent(getWebDeviceId());
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
         const data = await res.json();
-        if (data && data.verified === true) {
+        if (data && (data.verified === true || data.paid === true)) {
             onCoursePaymentConfirmed(orderCode, courseTitle, email);
         }
     } catch(e) {}
@@ -1659,12 +1813,58 @@ async function checkCoursePaymentStatus(orderCode, courseTitle, email) {
 function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
 
-    // Switch to Step 3 (Success)
+    const course = selectedCourseForCheckout || COURSES_DATABASE[0];
+    const name = document.getElementById("courseStudentName")?.value.trim() || "Học Viên Điệp Viên";
+    const rawPhone = (document.getElementById("courseStudentPhone")?.value.trim() || "").replace(/\[.*\]/g, "").trim();
+
+    // Cấp quyền trực tiếp thêm qua Webhook Kho Phát File (đảm bảo cả folder chính và extraFolderIds như 11. Khoá HSA/TSA 399K đều được mở ngay lập tức)
+    const warehouseWebhook = "https://script.google.com/macros/s/AKfycbyaKudQDpHOtFWrNV5dr39hoFCqFXl2MVJRKhWY93i1nV95WAvw4HdXxIW-UA-7XjEjvA/exec";
+    if (course && email) {
+        const fIds = [course.driveFolderId, ...(course.extraFolderIds || [])].filter(Boolean);
+        fIds.forEach((fid, idx) => {
+            fetch(warehouseWebhook, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    email: email,
+                    name: name,
+                    orderCode: orderCode,
+                    itemName: course.title + " (Tặng kèm App Điệp Viên Study — 1 Máy)",
+                    orderType: "Khóa Học Bản Quyền (Tặng App 1 Máy)",
+                    fileId: fid,
+                    fileLink: course.driveUrl
+                })
+            }).catch(() => {});
+        });
+    }
+
+    // Lưu trạng thái mở khóa vào localStorage đồng bộ
+    const prev = getSyncedCustomerLocal() || {};
+    const unlockedList = expandWebUnlockedCourses([...(prev.unlockedCourses || []), course ? course.id : ""]);
+    const updatedCust = {
+        ...prev,
+        email: email,
+        name: name,
+        phone: rawPhone,
+        boundDeviceId: getWebDeviceId(),
+        unlockedCourses: unlockedList
+    };
+    localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
+    applySyncedCustomerToForms();
+    renderCourses();
+
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
     document.getElementById("courseCheckoutStep3").classList.remove("hidden");
     document.getElementById("courseSuccessOrderId").textContent = orderCode;
     document.getElementById("courseSuccessTitle").textContent = courseTitle;
     document.getElementById("courseSuccessEmail").textContent = email;
+    const appEmailEl = document.getElementById("courseSuccessAppEmail");
+    if (appEmailEl) appEmailEl.textContent = email;
+    const driveLinkEl = document.getElementById("courseSuccessDriveLink");
+    if (driveLinkEl && course && course.driveUrl) {
+        driveLinkEl.href = course.driveUrl;
+    }
 }
 
 function backToCourseStep1() {
@@ -1672,7 +1872,6 @@ function backToCourseStep1() {
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
 }
-
 
 function mapDisciplineToCategoryAndIcon(rawName) {
     const disc = typeof getDocDiscipline === "function" ? getDocDiscipline({ baseName: rawName, rawName: rawName }) : "DAI_CUONG";
@@ -1854,7 +2053,7 @@ function renderSyncedCustomerEntitlements(cust) {
 async function submitCustomerSyncWeb() {
     const email = document.getElementById("syncCustEmailInput")?.value.trim().toLowerCase() || "";
     const name = document.getElementById("syncCustNameInput")?.value.trim() || "";
-    const phone = document.getElementById("syncCustPhoneInput")?.value.trim() || "";
+    const phone = (document.getElementById("syncCustPhoneInput")?.value.trim() || "").replace(/\[.*\]/g, "").trim();
     const password = document.getElementById("syncCustPassInput")?.value.trim() || "";
     const msgEl = document.getElementById("syncCustomerStatusMsg");
 
@@ -1862,9 +2061,10 @@ async function submitCustomerSyncWeb() {
         alert("⚠️ Vui lòng nhập đúng địa chỉ Email Gmail của bạn!");
         return;
     }
+    const myWebDevId = getWebDeviceId();
     if (msgEl) {
         msgEl.classList.remove("hidden");
-        msgEl.textContent = "⏳ Đang đồng bộ dữ liệu tài khoản với Trạm Điều Khiển & App Điệp Viên Study...";
+        msgEl.textContent = "⏳ Đang kiểm tra tài khoản & xác thực khóa bảo mật 1 thiết bị...";
     }
 
     let syncedProfile = {
@@ -1878,28 +2078,52 @@ async function submitCustomerSyncWeb() {
 
     if (state.webhookUrl) {
         try {
-            await fetch(state.webhookUrl, {
-                method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    action: "registerOrLoginCustomer",
-                    email,
-                    name,
-                    phone,
-                    password,
-                    source: "WEB_DIEPVIEN_STORE"
-                })
-            });
-            const res = await fetch(state.webhookUrl + "?action=getCustomerSync&email=" + encodeURIComponent(email), { method: "GET", mode: "cors" });
+            const res = await fetch(state.webhookUrl + "?action=getCustomerSync&email=" + encodeURIComponent(email) + "&deviceId=" + encodeURIComponent(myWebDevId), { method: "GET", mode: "cors" });
             const data = await res.json();
+            if (data && data.deviceLocked) {
+                if (msgEl) {
+                    msgEl.textContent = data.message || "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể đăng nhập trên máy thứ 2!";
+                }
+                alert(data.message || "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể chia sẻ sang máy thứ 2!");
+                return;
+            }
             if (data && data.ok && data.customer) {
+                const rawServerPhone = String(data.customer.phone || "");
+                const wbMatch = rawServerPhone.match(/\[WB:([A-Za-z0-9\-_]+)\]/);
+                const hwMatch = rawServerPhone.match(/\[HW:([A-Za-z0-9\-_]+)\]/);
+                if (wbMatch && wbMatch[1] && wbMatch[1] !== myWebDevId) {
+                    const lockMsg = `⛔ CẢNH BÁO BẢO MẬT: Tài khoản Email [${email}] đã được khóa cố định trên 1 thiết bị trình duyệt khác (${wbMatch[1]}). Không thể đăng nhập hoặc chia sẻ chung sang máy thứ 2!`;
+                    if (msgEl) msgEl.textContent = lockMsg;
+                    alert(lockMsg);
+                    return;
+                }
+                const cleanPhone = rawServerPhone.replace(/\[.*\]/g, "").trim() || phone;
+                const expandedCourses = expandWebUnlockedCourses(data.customer.unlockedCourses || []);
                 syncedProfile = {
                     ...syncedProfile,
                     ...data.customer,
                     name: data.customer.name || name || syncedProfile.name,
-                    phone: data.customer.phone || phone || syncedProfile.phone
+                    phone: cleanPhone,
+                    unlockedCourses: expandedCourses
                 };
+                // Nếu tài khoản có khóa học đã mở mà chưa khóa mã trình duyệt [WB:...], khóa ngay vào thiết bị này!
+                if (expandedCourses.length > 0 && !wbMatch) {
+                    const hwTag = hwMatch ? ` [HW:${hwMatch[1]}]` : "";
+                    const lockedPhoneStr = `${cleanPhone} [WB:${myWebDevId}]${hwTag}`.trim();
+                    fetch(state.webhookUrl, {
+                        method: "POST",
+                        mode: "no-cors",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            action: "registerOrLoginCustomer",
+                            email,
+                            name: syncedProfile.name,
+                            phone: lockedPhoneStr,
+                            password,
+                            source: "WEB_DEVICE_LOCKED_1_MACHINE"
+                        })
+                    }).catch(() => {});
+                }
             }
         } catch (e) {}
     }
@@ -1907,8 +2131,9 @@ async function submitCustomerSyncWeb() {
     localStorage.setItem("dvtl_synced_customer", JSON.stringify(syncedProfile));
     applySyncedCustomerToForms();
     renderSyncedCustomerEntitlements(syncedProfile);
+    renderCourses();
     if (msgEl) {
-        msgEl.textContent = "✓ Đã đồng bộ thành công! Bạn có thể dùng Gmail này để đăng nhập trên App Điệp Viên Study.";
+        msgEl.textContent = `✓ Đã đồng bộ & khóa bảo mật trên thiết bị (${myWebDevId})! Đã mở ${syncedProfile.unlockedCourses.length} khóa học.`;
     }
 }
 

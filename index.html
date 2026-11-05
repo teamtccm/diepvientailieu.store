@@ -764,9 +764,61 @@
                     </p>
                 </div>
 
-                <!-- Category Filter Tabs -->
-                <div class="flex flex-wrap items-center gap-2 mb-8" id="courseCategoryTabs">
-                    <!-- Rendered by JS -->
+                <!-- BẢNG 3 GÓI HỌC PHÍ CHUẨN & QUÀ TẶNG APP ĐIỆP VIÊN STUDY (1 MÁY DUY NHẤT) -->
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <div class="p-4 rounded-2xl bg-white border-2 border-emerald-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <span class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 font-black text-[10px] rounded-full uppercase">GÓI 1 · MUA THEO MÔN / LỘ TRÌNH</span>
+                            <div class="mt-2 flex items-baseline gap-2">
+                                <span class="text-2xl font-black text-emerald-600">69.000đ</span>
+                                <span class="text-xs text-slate-400 line-through">250.000đ</span>
+                                <span class="text-[11px] font-bold text-slate-500">/ 1 môn hoặc 1 thầy cô</span>
+                            </div>
+                            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Mở khóa trọn bộ Folder 1 môn học (VD: Toán 12, Lý 12, Hóa 12, Anh 12, Toán 11...) hoặc 1 lộ trình ĐGNL lẻ + <strong>Tặng App Điệp Viên Study (1 máy)</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-gradient-to-br from-[#0B1958] to-[#0D1677] text-white border-2 border-amber-400 shadow-lg flex flex-col justify-between">
+                        <div>
+                            <span class="px-2.5 py-0.5 bg-amber-400 text-slate-950 font-black text-[10px] rounded-full uppercase">GÓI 2 · MUA THEO KHÓA (PHỔ BIẾN NHẤT)</span>
+                            <div class="mt-2 flex items-baseline gap-2">
+                                <span class="text-2xl font-black text-amber-300">199.000đ</span>
+                                <span class="text-xs text-slate-300 line-through">890.000đ</span>
+                                <span class="text-[11px] font-bold text-sky-200">/ trọn bộ 1 Khóa lớn</span>
+                            </div>
+                            <p class="text-xs text-slate-200 mt-1.5 leading-relaxed">Mở khóa toàn bộ 1 Khóa lớn: <strong>Khóa Lớp 12 (2K9)</strong>, <strong>Khóa Lớp 11 (2K10)</strong>, <strong>Khóa HSA</strong>, <strong>Khóa TSA</strong>, <strong>Khóa V-ACT</strong> hoặc <strong>BCA-QDA-VSAT</strong> + <strong>Tặng App (1 máy)</strong>.</p>
+                        </div>
+                    </div>
+                    <div onclick="openCourseCheckoutModal('ALL-COURSES-399K')" class="p-4 rounded-2xl bg-gradient-to-br from-rose-600 to-red-700 text-white border-2 border-amber-300 shadow-xl cursor-pointer hover:scale-[1.01] transition flex flex-col justify-between">
+                        <div>
+                            <span class="px-2.5 py-0.5 bg-white text-rose-700 font-black text-[10px] rounded-full uppercase">GÓI 3 · VIP FULL TOÀN HỆ THỐNG</span>
+                            <div class="mt-2 flex items-baseline gap-2">
+                                <span class="text-2xl font-black text-amber-300">399.000đ</span>
+                                <span class="text-xs text-rose-200 line-through">2.500.000đ</span>
+                                <span class="text-[11px] font-bold text-white">/ TẤT CẢ 66+ Khóa học</span>
+                            </div>
+                            <p class="text-xs text-rose-100 mt-1.5 leading-relaxed">Mở khóa <strong>TOÀN BỘ Kho Khóa Học 2K9 + 2K10 + ĐGNL (HSA, TSA, V-ACT, BCA, QDA, VSAT)</strong> + <strong>Tặng App Điệp Viên Study Pro (1 máy)</strong>. Bấm để đăng ký ngay!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6 p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 flex flex-wrap items-center justify-between gap-3 text-xs text-emerald-950">
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">🎁</span>
+                        <span><strong>Đặc quyền khi mua bất kỳ gói Khóa Học nào:</strong> Được cấp quyền Google Drive trực tiếp + <strong>Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập là Email của bạn</strong> (Bảo mật khóa cứng cố định trên <strong>01 thiết bị duy nhất</strong>, không chia sẻ sang máy thứ 2 hay tài khoản thứ 2).</span>
+                    </div>
+                    <button onclick="openCustomerSyncModal()" class="px-3.5 py-1.5 bg-[#0D1677] hover:bg-blue-800 text-white font-black rounded-xl text-[11px] whitespace-nowrap shadow">
+                        🔐 Đăng Nhập Email Đã Mua
+                    </button>
+                </div>
+
+                <!-- Category Filter Tabs & Search -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-8">
+                    <div class="flex flex-wrap items-center gap-2" id="courseCategoryTabs">
+                        <!-- Rendered by JS -->
+                    </div>
+                    <div class="w-full md:w-72">
+                        <input id="courseSearchInput" type="search" oninput="renderCourses()" placeholder="🔍 Tìm môn, thầy cô, HSA, TSA, 2K9..." class="w-full px-4 py-2.5 bg-white border-2 border-slate-200 focus:border-[#0D1677] rounded-xl text-xs font-semibold outline-none shadow-sm">
+                    </div>
                 </div>
 
                 <!-- Courses Grid -->
@@ -798,8 +850,19 @@
                         </div>
                     </div>
 
-                    <!-- Form -->
+                    <!-- Form & 3-Tier Selector -->
                     <div class="p-6 space-y-4">
+                        <div id="courseTierSelectorBox" class="space-y-2">
+                            <label class="block text-xs font-black text-slate-800 uppercase tracking-wider">1. Chọn Gói Học Phí Phù Hợp (Tặng Kèm App Điệp Viên Study 1 Máy):</label>
+                            <div id="courseTierOptionsList" class="grid grid-cols-1 gap-2">
+                                <!-- Injected dynamically by JS: 69k / 199k / 399k -->
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-900 leading-relaxed">
+                            🎁 <strong>Tặng kèm App Điệp Viên Study:</strong> Sau khi thanh toán, Email của bạn sẽ tự động trở thành <strong>tài khoản đăng nhập App</strong> (đã mở khóa sẵn gói học).<br>
+                            🔒 <strong>Bảo mật 1 máy duy nhất:</strong> Tài khoản chỉ hoạt động cố định trên <strong>01 thiết bị duy nhất</strong>, nghiêm cấm chia sẻ sang máy thứ 2 hoặc tài khoản thứ 2.
+                        </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1.5">Họ và tên học viên <span class="text-red-500">*</span></label>
                             <input id="courseStudentName" type="text" placeholder="Nguyễn Văn A" class="w-full px-4 py-3 bg-slate-50 border-2 border-slate-200 rounded-xl text-sm focus:border-[#0D1677] focus:ring-2 focus:ring-blue-100 outline-none transition">
@@ -877,10 +940,21 @@
                         Link lớp học & tài liệu sẽ được gửi qua <strong>Email bạn cung cấp</strong> trong <strong class="text-emerald-600">1-2 phút</strong> tới.
                     </p>
 
-                    <div class="bg-slate-50 p-4 rounded-xl text-left text-xs space-y-1.5 mb-6 border border-slate-200">
+                    <div class="bg-slate-50 p-4 rounded-xl text-left text-xs space-y-1.5 mb-4 border border-slate-200">
                         <div class="flex justify-between"><span class="text-slate-500">Mã Đơn Hàng:</span><strong id="courseSuccessOrderId" class="font-mono text-[#0D1677]"></strong></div>
-                        <div class="flex justify-between"><span class="text-slate-500">Khóa Học:</span><strong id="courseSuccessTitle" class="text-slate-900"></strong></div>
-                        <div class="flex justify-between"><span class="text-slate-500">Email nhận tài liệu:</span><strong id="courseSuccessEmail" class="text-slate-900"></strong></div>
+                        <div class="flex justify-between"><span class="text-slate-500">Khóa Học Đã Mở:</span><strong id="courseSuccessTitle" class="text-slate-900"></strong></div>
+                        <div class="flex justify-between"><span class="text-slate-500">Tài Khoản Email (1 Máy):</span><strong id="courseSuccessEmail" class="text-emerald-700 font-bold"></strong></div>
+                    </div>
+
+                    <div class="space-y-2.5 mb-5 text-left">
+                        <a id="courseSuccessDriveLink" href="https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow flex items-center justify-center gap-2 transition uppercase">
+                            <span>📂 Mở Ngay Thư Mục Khóa Học Trên Google Drive</span>
+                        </a>
+                        <div class="p-3 rounded-xl bg-blue-50 border border-blue-200 text-[11px] text-slate-700 leading-relaxed">
+                            💻 <strong>Tài khoản App Điệp Viên Study của bạn đã kích hoạt!</strong><br>
+                            • Đăng nhập trên App bằng chính Email: <strong id="courseSuccessAppEmail" class="text-[#0D1677]"></strong><br>
+                            • 🔒 Lưu ý: Tài khoản đã được khóa bảo mật cố định vào <strong>01 thiết bị duy nhất</strong> của bạn (Không thể đăng nhập sang máy thứ 2).
+                        </div>
                     </div>
 
                     <button onclick="closeCourseCheckoutModal()" class="w-full py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-sm rounded-xl shadow transition">

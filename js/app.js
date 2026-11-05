@@ -140,7 +140,7 @@ function renderHotSearches(list) {
             <button type="button" 
                     onclick="selectHotSearch('${kw.replace(/'/g, "\\'")}', '${cleanTerm.replace(/'/g, "\\'")}')" 
                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-[#FFA000] hover:text-slate-950 dark:bg-white/10 dark:hover:bg-amber-400 dark:hover:text-slate-950 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl border border-slate-200 dark:border-white/10 transition-all shadow-sm hover:shadow active:scale-95 text-left cursor-pointer">
-                <span class="${isTop3 ? 'text-red-500 font-black' : 'text-amber-500'} group-hover:text-slate-950 transition-colors">🔥</span>
+                <svg class="w-3.5 h-3.5 ${isTop3 ? 'text-red-500' : 'text-amber-500'} group-hover:text-slate-950 transition-colors flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                 <span>${kw}</span>
             </button>
         `;
@@ -296,7 +296,7 @@ function renderUniOptions(list) {
                     ${u.code}
                 </span>
                 <span class="truncate text-xs flex-1">${u.name}</span>
-                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold">✓</span>' : ''}
+                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold"></span>' : ''}
             </div>
         `;
     }
@@ -390,7 +390,7 @@ function updateUniDisplay() {
     if (!displayContent) return;
 
     if (!state.selectedUniversity) {
-        displayContent.innerHTML = `<span class="text-slate-400 font-medium">🏫 Chọn Trường Của Bạn</span>`;
+        displayContent.innerHTML = `<span class="text-slate-400 font-medium">Chọn Trường Của Bạn</span>`;
         if (clearBtn) clearBtn.classList.add("hidden");
     } else {
         const u = UNIVERSITIES.find(item => item.id === state.selectedUniversity);
@@ -411,7 +411,7 @@ function updateUniDisplay() {
             `;
             if (clearBtn) clearBtn.classList.remove("hidden");
         } else {
-            displayContent.innerHTML = `<span class="text-slate-400 font-medium">🏫 Chọn Trường Của Bạn</span>`;
+            displayContent.innerHTML = `<span class="text-slate-400 font-medium">Chọn Trường Của Bạn</span>`;
             if (clearBtn) clearBtn.classList.add("hidden");
         }
     }
@@ -621,13 +621,13 @@ function renderDocuments() {
         const fallbackBadge = UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code || "ĐẠI CƯƠNG TOÀN QUỐC";
         container.innerHTML = `
             <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4">🔍</div>
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"></div>
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy đề cương "${state.searchQuery || 'này'}"</h3>
                 <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
                     Đừng lo! Điệp Viên Tài Liệu có kho tài liệu riêng đầy đủ mọi môn theo trường ${fallbackBadge}. Bạn hãy nhắn Zalo để nhân viên gửi link Google Drive cho bạn ngay nhé!
                 </p>
                 <button onclick="openChatModal()" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
-                    <span>💬 Nhắn Zalo Đặt Lấy Đề Cương Ngay</span>
+                    <span>Nhắn Zalo Đặt Lấy Đề Cương Ngay</span>
                 </button>
             </div>
         `;
@@ -657,7 +657,7 @@ function renderDocuments() {
 
         const cleanDocBaseUpper = String(doc.baseName || "").replace(/^(bộ\s+)?đề\s+cương\s+/i, "").trim().toUpperCase();
         const fullDocTitle = `ĐỀ CƯƠNG ${cleanDocBaseUpper} — ${docUniBadge}`;
-        const iconSymbol = doc.icon || "📚";
+        const iconSymbol = doc.icon || "";
         const mascotBadge = "images/favicon_badge.png";
         const discountPercent = (doc.originalPrice && doc.originalPrice > doc.price) 
             ? Math.round((1 - (doc.price / doc.originalPrice)) * 100) 
@@ -701,24 +701,24 @@ function renderDocuments() {
                     <!-- Center Title with High-Contrast Typography -->
                     <div class="relative my-3 z-10">
                         <div class="flex items-center gap-1.5 mb-1.5">
-                            <span class="text-base">${iconSymbol}</span>
+                            
                             <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
-                            ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto">⚡ CÓ SẴN FILE DRIVE</span>' : ''}
+                            ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto">CÓ SẴN FILE DRIVE</span>' : ''}
                         </div>
                         <h4 class="font-condensed font-black text-lg sm:text-xl text-white tracking-wide uppercase leading-tight line-clamp-2 drop-shadow-md">
                             ${fullDocTitle}
                         </h4>
                         <div class="flex items-center gap-2.5 mt-2.5 text-[10px]">
-                            <span class="text-amber-300 font-bold">📄 ${doc.pages} Trang A4</span>
-                            <span class="text-emerald-300 font-bold">⭐ ${doc.rating} (${doc.reviewsCount})</span>
-                            <span class="text-sky-200 font-bold">⚡ Google Drive</span>
+                            <span class="text-amber-300 font-bold">${doc.pages} Trang A4</span>
+                            <span class="text-emerald-300 font-bold">${doc.rating} (${doc.reviewsCount})</span>
+                            <span class="text-sky-200 font-bold">Google Drive</span>
                         </div>
                     </div>
 
                     <!-- Bottom Bar: Verified Badge + Website -->
                     <div class="relative z-10 flex items-center justify-between pt-2.5 border-t border-white/20">
                         <span class="text-[10px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
-                            <span>★</span> CHUẨN ĐỀ THI ${docUniBadge} 2026
+                            <span></span> CHUẨN ĐỀ THI ${docUniBadge} 2026
                         </span>
                         <span class="text-[10px] font-mono text-sky-200">
                             diepvientailieu.store
@@ -749,10 +749,10 @@ function renderDocuments() {
 
                         <div class="grid grid-cols-2 gap-2">
                             <button onclick="window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2.5 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
-                                <span>💬 Hỏi Shop</span>
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Hỏi Shop</span>
                             </button>
                             <button onclick="openDocCheckoutModal('${doc.id}', this.dataset.title)" data-title="${fullDocTitle.replace(/'/g, '&#39;').replace(/"/g, '&quot;')}" class="px-3 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
-                                <span>🛒 Mua Ngay</span>
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span>Mua Ngay</span>
                             </button>
                         </div>
                     </div>
@@ -900,12 +900,12 @@ function goToDocPaymentStep(e) {
     const email = document.getElementById("checkoutEmailInput").value.trim();
     
     if (!name || !phone || !email) {
-        alert("⚠️ Vui lòng điền đầy đủ Họ tên, Số điện thoại và Email Gmail!");
+        alert("Vui lòng điền đầy đủ Họ tên, Số điện thoại và Email Gmail!");
         return;
     }
     
     if (!email.includes("@")) {
-        alert("⚠️ Vui lòng nhập địa chỉ Email chính xác để nhận link Google Drive!");
+        alert("Vui lòng nhập địa chỉ Email chính xác để nhận link Google Drive!");
         return;
     }
     
@@ -995,7 +995,7 @@ async function confirmDocManualPayment() {
     const fbEl = document.getElementById("docVerifyFeedbackMsg");
     if (fbEl) {
         fbEl.classList.remove("hidden");
-        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB cho mã đơn #" + orderCode + "...";
+        fbEl.textContent = "Đang đối soát Email biến động số dư ngân hàng ACB cho mã đơn #" + orderCode + "...";
     }
     if (!state.webhookUrl) return;
     try {
@@ -1005,11 +1005,11 @@ async function confirmDocManualPayment() {
         if (data && data.verified === true) {
             onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
         } else if (fbEl) {
-            fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
+            fbEl.textContent = "Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
         }
     } catch (e) {
         if (fbEl) {
-            fbEl.textContent = "⚠️ Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
+            fbEl.textContent = "Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
         }
     }
 }
@@ -1106,20 +1106,20 @@ async function submitServiceOrder(e) {
     const totalEst = document.getElementById("calcTotalEst").textContent;
     
     if (!name || !phone || !email || !deadline || !topic) {
-        alert("⚠️ Vui lòng điền đầy đủ các thông tin bắt buộc và hạn nộp (Deadline)!");
+        alert("Vui lòng điền đầy đủ các thông tin bắt buộc và hạn nộp (Deadline)!");
         return;
     }
     
     const privacyCheckbox = document.getElementById("srvPrivacyCheckbox");
     if (privacyCheckbox && !privacyCheckbox.checked) {
-        alert("⚠️ Bạn cần tích xác nhận thông tin chính xác và đồng ý điều khoản trước khi gửi yêu cầu đặt bài!");
+        alert("Bạn cần tích xác nhận thông tin chính xác và đồng ý điều khoản trước khi gửi yêu cầu đặt bài!");
         privacyCheckbox.focus();
         return;
     }
     
     const btnSubmit = document.getElementById("btnSubmitServiceOrder");
     btnSubmit.disabled = true;
-    btnSubmit.innerHTML = `<span class="inline-block animate-spin mr-2">⏳</span> Đang gửi hồ sơ đặt bài...`;
+    btnSubmit.innerHTML = `<span class="inline-block animate-spin mr-2"></span> Đang gửi hồ sơ đặt bài...`;
     
     const payload = {
         type: "SERVICE_ORDER",
@@ -1289,10 +1289,10 @@ function openSuccessModal(type, orderData) {
     if (customerMail) customerMail.textContent = orderData.customer.email;
     
     if (type === "DOC") {
-        if (title) title.textContent = "🎉 Gửi Đơn Thành Công!";
+        if (title) title.textContent = "Gửi Đơn Thành Công!";
         if (desc) desc.textContent = "Hệ thống đã ghi nhận mã đơn của bạn và phân quyền Google Drive vào Gmail!";
     } else {
-        if (title) title.textContent = "🎉 Đã Ghi Nhận Đơn Hàng!";
+        if (title) title.textContent = "Đã Ghi Nhận Đơn Hàng!";
         if (desc) desc.textContent = "Hồ sơ đề bài của bạn đã được chuyển tới Nhân viên học thuật. Nhân viên sẽ liên hệ Zalo & gửi email xác nhận trong vòng 15-30 phút!";
     }
     
@@ -1314,11 +1314,11 @@ function copyToClipboard(text, elemId = null) {
             const el = document.getElementById(elemId);
             if (el) {
                 const oldText = el.textContent;
-                el.textContent = "✓ Đã copy!";
+                el.textContent = "Đã copy!";
                 setTimeout(() => el.textContent = oldText, 2000);
             }
         } else {
-            alert("✓ Đã sao chép: " + text);
+            alert("Đã sao chép: " + text);
         }
     });
 }
@@ -1340,7 +1340,7 @@ function saveSettings() {
     if (input) {
         state.webhookUrl = input.value.trim();
         localStorage.setItem("dvtl_webhook_url", state.webhookUrl);
-        alert("✓ Đã lưu cấu hình Google Apps Script Webhook!");
+        alert("Đã lưu cấu hình Google Apps Script Webhook!");
         closeSettingsModal();
     }
 }
@@ -1542,12 +1542,12 @@ function renderSingleCourseCardHtml(course) {
     const durationText = (course.duration || "Full lộ trình 2027 · Video + PDF") + (unlocked ? " · Đã mở khóa" : "");
 
     return `
-        <article onclick="handleWebCourseCardClick('${course.id}')" class="rounded-[18px] overflow-hidden flex flex-col bg-white/95 dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70' : 'border-slate-200/90 dark:border-white/10 hover:border-blue-600/45 dark:hover:border-sky-400/50'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+        <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="rounded-[18px] overflow-hidden flex flex-col bg-white/95 dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70' : 'border-slate-200/90 dark:border-white/10 hover:border-blue-600/45 dark:hover:border-sky-400/50'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
             
             <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
             <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
                 ${coverUrl ? `
-                    <img src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block" loading="lazy">
+                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block" loading="lazy">
                 ` : `
                     <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
@@ -1558,22 +1558,22 @@ function renderSingleCourseCardHtml(course) {
                 </button>
             </div>
 
-            <!-- CARD BODY (TOP = TRUNG TÂM DẠY + TÊN THẦY CÔ NỔI BẬT, BELOW = TÊN KHÓA HỌC) -->
+            <!-- CARD BODY (TOP = TRUNG TÂM DẠY + TÊN THẦY CÔ NỔI BẬT, BELOW = TÊN KHÓA HỌC CHUẨN SEO) -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <h3 class="text-[15px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
+                <h3 itemprop="provider" class="text-[15px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
                     ${centerTeacherText}
                 </h3>
-                <p class="text-[13.5px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0" title="${courseTitleText}">
+                <h4 itemprop="name" class="text-[13.5px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0" title="${courseTitleText}">
                     ${courseTitleText}
-                </p>
+                </h4>
 
                 <div class="flex items-center justify-between gap-2.5 pt-2.5 mt-auto border-t border-slate-200/70 dark:border-white/10">
                     <div class="flex flex-col gap-0.5 min-w-0">
-                        <strong class="text-[12px] font-bold text-slate-700 dark:text-slate-200 truncate">${footerCategoryText}</strong>
+                        <strong itemprop="educationalLevel" class="text-[12px] font-bold text-slate-700 dark:text-slate-200 truncate">${footerCategoryText}</strong>
                         <small class="text-[11px] text-slate-500 dark:text-slate-400 truncate">${durationText}</small>
                     </div>
                     <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">
-                        ${!unlocked ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' : ''}
+                        ${!unlocked ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' : '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>'}
                         <span>Vào học</span>
                     </button>
                 </div>
@@ -1615,13 +1615,13 @@ function renderCourses() {
     if (courses.length === 0) {
         grid.innerHTML = `
             <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4">🔍</div>
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"></div>
                 <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp từ khóa này</h3>
                 <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
                     Bạn hãy thử chọn lại danh mục hoặc tìm từ khóa khác nhé!
                 </p>
                 <button onclick="filterCoursesByCategory('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
-                    <span>🔄 Xem Toàn Bộ 50 Khóa Học</span>
+                    <span>Xem Toàn Bộ 50 Khóa Học</span>
                 </button>
             </div>
         `;
@@ -1723,7 +1723,7 @@ function selectCourseCheckoutTier(tierKey) {
             <div onclick="selectCourseCheckoutTier('${it.key}')" class="p-3 rounded-xl border-2 cursor-pointer transition flex items-start justify-between gap-2 ${active ? 'border-[#0D1677] dark:border-amber-400 bg-blue-50/70 dark:bg-white/10 shadow-sm' : 'border-slate-200 dark:border-white/10 hover:border-blue-300 bg-white dark:bg-[#060E2C]'}">
                 <div class="min-w-0">
                     <div class="flex items-center gap-1.5">
-                        <span class="w-4 h-4 rounded-full border-2 flex items-center justify-center text-[10px] font-black ${active ? 'border-[#0D1677] bg-[#0D1677] text-white' : 'border-slate-300'}">${active ? '✓' : ''}</span>
+                        <span class="w-4 h-4 rounded-full border-2 flex items-center justify-center text-[10px] font-black ${active ? 'border-[#0D1677] bg-[#0D1677] text-white' : 'border-slate-300'}">${active ? '<svg class="w-3 h-3 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' : ''}</span>
                         <span class="text-xs font-black text-slate-900 dark:text-white">${it.label}</span>
                     </div>
                     <p class="text-[11px] font-bold text-[#0D1677] dark:text-amber-400 truncate mt-0.5 pl-5">${it.title}</p>
@@ -1771,17 +1771,17 @@ function goToCoursePaymentStep() {
     const email = document.getElementById("courseStudentEmail").value.trim().toLowerCase();
 
     if (!name || !rawPhone || !email) {
-        alert("⚠️ Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
+        alert("Vui lòng điền đầy đủ Họ tên, SĐT Zalo và Email!");
         return;
     }
 
     if (!email.includes("@")) {
-        alert("⚠️ Vui lòng nhập địa chỉ Email chính xác!");
+        alert("Vui lòng nhập địa chỉ Email chính xác!");
         return;
     }
 
     if (!selectedCourseForCheckout) {
-        alert("⚠️ Không tìm thấy thông tin khóa học!");
+        alert("Không tìm thấy thông tin khóa học!");
         return;
     }
 
@@ -1931,15 +1931,15 @@ function backToCourseStep1() {
 function mapDisciplineToCategoryAndIcon(rawName) {
     const disc = typeof getDocDiscipline === "function" ? getDocDiscipline({ baseName: rawName, rawName: rawName }) : "DAI_CUONG";
     switch (disc) {
-        case "DAI_CUONG": return { category: "Các Môn Đại Cương", icon: "🧠" };
-        case "TAI_CHINH": return { category: "Tài Chính - Ngân Hàng", icon: "💰" };
-        case "QUAN_TRI":  return { category: "Marketing & Quản Trị", icon: "📊" };
-        case "CONG_NGHE": return { category: "Công Nghệ & Kỹ Thuật", icon: "💻" };
+        case "DAI_CUONG": return { category: "Các Môn Đại Cương", icon: "" };
+        case "TAI_CHINH": return { category: "Tài Chính - Ngân Hàng", icon: "" };
+        case "QUAN_TRI":  return { category: "Marketing & Quản Trị", icon: "" };
+        case "CONG_NGHE": return { category: "Công Nghệ & Kỹ Thuật", icon: "" };
         case "LUAT":
         case "SU_PHAM":
         case "NGOAI_NGU":
         case "DU_LICH":
-        default:          return { category: "Luật & Xã Hội", icon: "⚖️" };
+        default:          return { category: "Luật & Xã Hội", icon: "" };
     }
 }
 
@@ -2092,13 +2092,13 @@ function renderSyncedCustomerEntitlements(cust) {
     let html = "";
     courses.forEach(c => {
         html += `<div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex justify-between items-center">
-            <div><strong class="text-emerald-900">🎓 Khóa học: ${c}</strong><div class="text-[10px] text-emerald-700">Đã mở khóa trên App Điệp Viên Study & Google Drive</div></div>
+            <div><strong class="text-emerald-900">Khóa học: ${c}</strong><div class="text-[10px] text-emerald-700">Đã mở khóa trên App Điệp Viên Study & Google Drive</div></div>
             <span class="px-2 py-0.5 bg-emerald-600 text-white font-black text-[10px] rounded">ĐÃ MỞ KHÓA</span>
         </div>`;
     });
     docs.forEach(d => {
         html += `<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl flex justify-between items-center">
-            <div><strong class="text-[#0D1677]">📚 ${d.title || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
+            <div><strong class="text-[#0D1677]">${d.title || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
             ${d.driveUrl ? `<a href="${d.driveUrl}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-bold text-[10px] rounded-lg">Mở Drive</a>` : `<span class="text-emerald-700 font-bold text-[10px]">PAID_SUCCESS</span>`}
         </div>`;
     });
@@ -2113,13 +2113,13 @@ async function submitCustomerSyncWeb() {
     const msgEl = document.getElementById("syncCustomerStatusMsg");
 
     if (!email || !email.includes("@")) {
-        alert("⚠️ Vui lòng nhập đúng địa chỉ Email Gmail của bạn!");
+        alert("Vui lòng nhập đúng địa chỉ Email Gmail của bạn!");
         return;
     }
     const myWebDevId = getWebDeviceId();
     if (msgEl) {
         msgEl.classList.remove("hidden");
-        msgEl.textContent = "⏳ Đang kiểm tra tài khoản & xác thực khóa bảo mật 1 thiết bị...";
+        msgEl.textContent = "Đang kiểm tra tài khoản & xác thực khóa bảo mật 1 thiết bị...";
     }
 
     let syncedProfile = {
@@ -2137,9 +2137,9 @@ async function submitCustomerSyncWeb() {
             const data = await res.json();
             if (data && data.deviceLocked) {
                 if (msgEl) {
-                    msgEl.textContent = data.message || "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể đăng nhập trên máy thứ 2!";
+                    msgEl.textContent = data.message || "Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể đăng nhập trên máy thứ 2!";
                 }
-                alert(data.message || "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể chia sẻ sang máy thứ 2!");
+                alert(data.message || "Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị duy nhất. Không thể chia sẻ sang máy thứ 2!");
                 return;
             }
             if (data && data.ok && data.customer) {
@@ -2147,7 +2147,7 @@ async function submitCustomerSyncWeb() {
                 const wbMatch = rawServerPhone.match(/\[WB:([A-Za-z0-9\-_]+)\]/);
                 const hwMatch = rawServerPhone.match(/\[HW:([A-Za-z0-9\-_]+)\]/);
                 if (wbMatch && wbMatch[1] && wbMatch[1] !== myWebDevId) {
-                    const lockMsg = `⛔ CẢNH BÁO BẢO MẬT: Tài khoản Email [${email}] đã được khóa cố định trên 1 thiết bị trình duyệt khác (${wbMatch[1]}). Không thể đăng nhập hoặc chia sẻ chung sang máy thứ 2!`;
+                    const lockMsg = `CẢNH BÁO BẢO MẬT: Tài khoản Email [${email}] đã được khóa cố định trên 1 thiết bị trình duyệt khác (${wbMatch[1]}). Không thể đăng nhập hoặc chia sẻ chung sang máy thứ 2!`;
                     if (msgEl) msgEl.textContent = lockMsg;
                     alert(lockMsg);
                     return;
@@ -2188,7 +2188,7 @@ async function submitCustomerSyncWeb() {
     renderSyncedCustomerEntitlements(syncedProfile);
     renderCourses();
     if (msgEl) {
-        msgEl.textContent = `✓ Đã đồng bộ & khóa bảo mật trên thiết bị (${myWebDevId})! Đã mở ${syncedProfile.unlockedCourses.length} khóa học.`;
+        msgEl.textContent = `Đã đồng bộ & khóa bảo mật trên thiết bị (${myWebDevId})! Đã mở ${syncedProfile.unlockedCourses.length} khóa học.`;
     }
 }
 
@@ -2345,7 +2345,7 @@ async function sendAppDownloadOtp(isResend = false) {
     const email = (emailInp?.value || pendingAppOtpEmail || "").trim().toLowerCase();
 
     if (!email || !email.includes("@")) {
-        alert("⚠️ Vui lòng nhập đúng địa chỉ Email (Gmail) của bạn để nhận mã xác nhận OTP!");
+        alert("Vui lòng nhập đúng địa chỉ Email (Gmail) của bạn để nhận mã xác nhận OTP!");
         return;
     }
 
@@ -2355,7 +2355,7 @@ async function sendAppDownloadOtp(isResend = false) {
     const activeMsg = isResend ? msg2 : msg1;
     if (activeMsg) {
         activeMsg.className = "text-[11px] font-bold text-center text-blue-700 dark:text-sky-300";
-        activeMsg.textContent = "⏳ Đang gửi mã xác nhận OTP 6 số về Email " + email + "...";
+        activeMsg.textContent = "Đang gửi mã xác nhận OTP 6 số về Email " + email + "...";
         activeMsg.classList.remove("hidden");
     }
     if (btn) btn.disabled = true;
@@ -2375,13 +2375,13 @@ async function sendAppDownloadOtp(isResend = false) {
             showAppOtpStep(2, email);
             if (msg2) {
                 msg2.className = "text-[11px] font-bold text-center text-emerald-700 dark:text-emerald-300";
-                msg2.textContent = data.message || ("✅ Đã gửi mã OTP 6 số tới " + email + ". Vui lòng kiểm tra hộp thư!");
+                msg2.textContent = data.message || ("Đã gửi mã OTP 6 số tới " + email + ". Vui lòng kiểm tra hộp thư!");
                 msg2.classList.remove("hidden");
             }
         } else {
             if (activeMsg) {
                 activeMsg.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
-                activeMsg.textContent = (data && data.message) || "⚠️ Không thể gửi mã OTP lúc này, vui lòng kiểm tra lại Email!";
+                activeMsg.textContent = (data && data.message) || "Không thể gửi mã OTP lúc này, vui lòng kiểm tra lại Email!";
                 activeMsg.classList.remove("hidden");
             }
         }
@@ -2390,7 +2390,7 @@ async function sendAppDownloadOtp(isResend = false) {
         showAppOtpStep(2, email);
         if (msg2) {
             msg2.className = "text-[11px] font-bold text-center text-emerald-700 dark:text-emerald-300";
-            msg2.textContent = "📩 Yêu cầu gửi OTP đã được xử lý cho " + email + ". Vui lòng kiểm tra hộp thư đến hoặc Spam!";
+            msg2.textContent = "Yêu cầu gửi OTP đã được xử lý cho " + email + ". Vui lòng kiểm tra hộp thư đến hoặc Spam!";
             msg2.classList.remove("hidden");
         }
     }
@@ -2406,13 +2406,13 @@ async function verifyAppDownloadOtp() {
     const name = (pendingAppOtpName || document.getElementById("appOtpNameInput")?.value || "Học Viên Điệp Viên").trim();
 
     if (!otp || otp.length < 6) {
-        alert("⚠️ Vui lòng nhập đủ 6 chữ số mã OTP đã gửi về Email của bạn!");
+        alert("Vui lòng nhập đủ 6 chữ số mã OTP đã gửi về Email của bạn!");
         return;
     }
 
     if (msg2) {
         msg2.className = "text-[11px] font-bold text-center text-blue-700 dark:text-sky-300";
-        msg2.textContent = "⏳ Đang kiểm tra mã OTP & kích hoạt tài khoản App...";
+        msg2.textContent = "Đang kiểm tra mã OTP & kích hoạt tài khoản App...";
         msg2.classList.remove("hidden");
     }
     if (btn) btn.disabled = true;
@@ -2449,7 +2449,7 @@ async function verifyAppDownloadOtp() {
         } else {
             if (msg2) {
                 msg2.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
-                msg2.textContent = (data && data.message) || "❌ Mã OTP không chính xác hoặc đã hết hạn. Vui lòng kiểm tra lại!";
+                msg2.textContent = (data && data.message) || "Mã OTP không chính xác hoặc đã hết hạn. Vui lòng kiểm tra lại!";
                 msg2.classList.remove("hidden");
             }
         }
@@ -2457,7 +2457,7 @@ async function verifyAppDownloadOtp() {
         if (btn) btn.disabled = false;
         if (msg2) {
             msg2.className = "text-[11px] font-bold text-center text-red-600 dark:text-red-400";
-            msg2.textContent = "⚠️ Lỗi kết nối máy chủ xác thực OTP. Vui lòng thử lại sau giây lát!";
+            msg2.textContent = "Lỗi kết nối máy chủ xác thực OTP. Vui lòng thử lại sau giây lát!";
             msg2.classList.remove("hidden");
         }
     }

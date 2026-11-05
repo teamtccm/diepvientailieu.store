@@ -1484,6 +1484,57 @@ function isWebCourseUnlocked(courseId) {
     return expanded.includes("ALL-COURSES-399K") || expanded.includes("__ALL_COURSES_399K__") || expanded.includes(String(courseId || "").toUpperCase());
 }
 
+function getWebDeviceId() {
+    let devId = localStorage.getItem("dvtl_web_device_id");
+    if (!devId) {
+        const raw = [
+            navigator.userAgent || "",
+            navigator.language || "",
+            screen.width + "x" + screen.height,
+            Intl.DateTimeFormat().resolvedOptions().timeZone || ""
+        ].join("|");
+        let h = 2166136261;
+        for (let i = 0; i < raw.length; i++) {
+            h ^= raw.charCodeAt(i);
+            h = Math.imul(h, 16777619);
+        }
+        const rand = Math.random().toString(36).substring(2, 6).toUpperCase();
+        devId = "DVS-WB-" + (h >>> 0).toString(16).toUpperCase().padStart(8, "0") + rand;
+        localStorage.setItem("dvtl_web_device_id", devId);
+    }
+    return devId;
+}
+
+function expandWebUnlockedCourses(rawList) {
+    const set = new Set((rawList || []).map(x => String(x || "").trim().toUpperCase()).filter(Boolean));
+    if (set.has("ALL-COURSES-399K") || set.has("COURSE-FULL-399K") || set.has("FULL-COMBO-399K") || set.has("__ALL_COURSES_399K__")) {
+        set.add("ALL-COURSES-399K");
+        set.add("__ALL_COURSES_399K__");
+        if (typeof COURSES_DATABASE !== "undefined") {
+            COURSES_DATABASE.forEach(c => set.add(c.id.toUpperCase()));
+        }
+        return Array.from(set);
+    }
+    const initial = Array.from(set);
+    if (typeof COURSES_DATABASE !== "undefined") {
+        initial.forEach(k => {
+            COURSES_DATABASE.forEach(c => {
+                if (String(c.parentCourseId || "").toUpperCase() === k || String(c.parentSubjectId || "").toUpperCase() === k) {
+                    set.add(c.id.toUpperCase());
+                }
+            });
+        });
+    }
+    return Array.from(set);
+}
+
+function isWebCourseUnlocked(courseId) {
+    const cust = getSyncedCustomerLocal();
+    if (!cust || !Array.isArray(cust.unlockedCourses)) return false;
+    const expanded = expandWebUnlockedCourses(cust.unlockedCourses);
+    return expanded.includes("ALL-COURSES-399K") || expanded.includes("__ALL_COURSES_399K__") || expanded.includes(String(courseId || "").toUpperCase());
+}
+
 function renderCourses() {
     const grid = document.getElementById("coursesGrid");
     if (!grid || typeof COURSES_DATABASE === "undefined") return;

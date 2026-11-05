@@ -13817,3 +13817,21 @@ const COURSE_DRIVE_MAP = {
         "parentSubjectId": "COURSE-SUBJ-ANH12-2K9"
     }
 };
+
+const PAYMENT_INFO = {
+    bankName: "ACB",
+    bankCode: "ACB",
+    accountName: "NGO BAO THACH",
+    accountNumber: "27384751",
+    provider: "Ngân hàng ACB - Chuyển khoản 24/7",
+    qrBaseUrl: "https://img.vietqr.io/image/ACB-27384751-compact2.png"
+};
+
+const APP_CONFIG = {
+    brandName: "Điệp Viên Tài Liệu",
+    slogan: "Bản Quyền Đề Cương & Dịch Vụ Học Thuật Số 1 Sinh Viên",
+    zaloUrl: "https://zalo.me/0792453169",
+    phone: "0792 453 169",
+    emailSupport: "support@diepvientailieu.vn",
+    defaultWebhookUrl: "https://script.google.com/macros/s/AKfycbzdPmHlspKtFugSDT53B0Vfmz-kw_6KslTh1FZbCG-RAk9Bm5dg5w2tfepCKGg-FWciVg/exec"
+};

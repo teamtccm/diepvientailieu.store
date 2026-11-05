@@ -104,15 +104,17 @@
                 <button onclick="switchView('faq')" data-view="faq" class="nav-tab-btn px-3.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap">💡 Hỏi Đáp</button>
             </nav>
 
-            <!-- Unified Account & App Sync Button -->
+            <!-- Unified Account & App Download / Sync Buttons -->
             <div class="flex items-center gap-2 ml-2">
+                <button id="headerDownloadAppBtn" onclick="openAppDownloadModal()" class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs rounded-full shadow-md transition whitespace-nowrap">
+                    <span>💻</span>
+                    <span id="headerDownloadAppLabel">Tải App Điệp Viên Study</span>
+                </button>
                 <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-xs rounded-full shadow-md transition whitespace-nowrap">
                     <span>👤</span>
                     <span id="headerAccountSyncLabel">Đăng Nhập · Đồng Bộ App</span>
                 </button>
             </div>
-
-
         </div>
     </header>
 
@@ -672,16 +674,16 @@
                             </div>
                         </div>
 
-                                                                                                                        <!-- Menu 3: Khóa Học Bản Quyền -->
+                                                                                                                                                                        <!-- Menu 3: Khóa Học Bản Quyền -->
                         <div onclick="switchView('courses')" class="group clean-card hover-lift cursor-pointer p-6 border-2 border-indigo-200 hover:border-[#0D1677] flex flex-col justify-between transition-all bg-white shadow-sm hover:shadow-xl rounded-2xl">
                             <div>
                                 <div class="w-12 h-12 rounded-2xl bg-[#0D1677] text-white flex items-center justify-center text-2xl shadow-md mb-4 group-hover:scale-110 transition-transform">
                                     🎓
                                 </div>
-                                <span class="px-2.5 py-0.5 bg-amber-100 text-amber-900 font-bold text-[10px] rounded-full uppercase tracking-wider">69K · 199K · 399K</span>
+                                <span class="px-2.5 py-0.5 bg-amber-100 text-amber-900 font-bold text-[10px] rounded-full uppercase tracking-wider">50 KHÓA HỌC · TẶNG APP</span>
                                 <h3 class="text-lg font-black text-slate-900 mt-2.5 mb-1.5 font-condensed tracking-wide uppercase">Khóa Học Bản Quyền</h3>
                                 <p class="text-xs text-slate-600 leading-relaxed line-clamp-3">
-                                    Trọn bộ 66+ khóa học 2K9, 2K10, ĐGNL HSA, TSA, V-ACT, BCA, QDA, VSAT. Tặng kèm App Điệp Viên Study (1 máy).
+                                    Hệ thống 50 khóa học 2K9, 2K10, ĐGNL HSA, TSA, V-ACT, BCA, QDA, VSAT. Mua khóa mở khóa học đó, trọn bộ mở khóa Full cả App.
                                 </p>
                             </div>
                             <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between font-black text-xs text-[#0D1677] group-hover:text-blue-600 transition">
@@ -750,7 +752,7 @@
                             <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white flex flex-wrap items-center gap-2.5 font-condensed tracking-wide uppercase">
                                 <span>🎓 Hệ Thống Khóa Học & Ôn Thi</span>
                                 <span id="courseCountBadge" class="text-xs font-bold bg-[#0D1677] text-white px-3 py-1 rounded-full normal-case font-sans">
-                                    66 Khóa Học (69K · 199K · 399K)
+                                    50 Khóa Học Bản Quyền
                                 </span>
                                 <span class="text-xs font-bold bg-emerald-600 text-white px-3 py-1 rounded-full flex items-center gap-1.5 normal-case font-sans shadow-sm">
                                     <span class="w-2 h-2 rounded-full bg-emerald-300 animate-pulse"></span>
@@ -761,9 +763,36 @@
                                 Hệ thống ôn thi 2K9, 2K10, HSA, TSA, V-ACT, BCA và khóa học tích hợp AI.
                             </p>
                         </div>
-                        <button onclick="openCustomerSyncModal()" class="px-4 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow-md transition flex items-center gap-1.5 flex-shrink-0">
-                            <span>🔐 Đã Mua? Đăng Nhập Email Mở Khóa</span>
-                        </button>
+                        <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
+                            <button onclick="openAppDownloadModal()" class="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs rounded-xl shadow-md transition flex items-center gap-1.5">
+                                <span>💻 Tải App Điệp Viên Study</span>
+                            </button>
+                            <button onclick="openCustomerSyncModal()" class="px-4 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow-md transition flex items-center gap-1.5">
+                                <span>🔐 Đã Mua? Đăng Nhập Email Mở Khóa</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Direct Unlimited Download Banner (Visible once Email OTP is verified) -->
+                    <div id="verifiedAppDownloadBar" class="hidden mt-4 p-3.5 rounded-2xl bg-gradient-to-r from-emerald-950 via-[#081C3A] to-[#0D1677] text-white border border-emerald-400/40 shadow-lg flex flex-wrap items-center justify-between gap-3">
+                        <div class="flex items-center gap-2.5 text-xs">
+                            <span class="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-base">✅</span>
+                            <div>
+                                <div class="font-black text-emerald-300 uppercase tracking-wide">Tài khoản App (<span id="verifiedBarEmailText"></span>) đã xác thực OTP & kích hoạt!</div>
+                                <div class="text-[11px] text-slate-200">Giờ bạn có thể tải bộ cài đặt App Điệp Viên Study trực tiếp ngay trên Web bất cứ lúc nào:</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <a href="DiepVienStudy_Setup.exe" download="DiepVienStudy_Setup.exe" class="px-3.5 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-black text-xs rounded-xl shadow transition flex items-center gap-1.5">
+                                <span>⬇️ Tải Ngay Cho Windows (.EXE)</span>
+                            </a>
+                            <button type="button" onclick="triggerDirectAppDownload('windows')" class="px-3.5 py-2 bg-white/15 hover:bg-white/25 text-white font-bold text-xs rounded-xl border border-white/20 transition flex items-center gap-1.5">
+                                <span>📦 Bản Đầy Đủ Windows (.ZIP)</span>
+                            </button>
+                            <button type="button" onclick="triggerDirectAppDownload('macos')" class="px-3.5 py-2 bg-white/15 hover:bg-white/25 text-white font-bold text-xs rounded-xl border border-white/20 transition flex items-center gap-1.5">
+                                <span>🍎 Tải Cho macOS (.ZIP)</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -772,23 +801,15 @@
 
                 <!-- COMPACT TOOLBAR ROW: SEGMENTED CATEGORY TABS (LEFT) + STREAMLINED SEARCH BAR (RIGHT) -->
                 <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
-                    <!-- Segmented Category Tabs -->
+                    <!-- Segmented Category Tabs (Identical to App) -->
                     <div id="courseCategoryTabs" class="inline-flex flex-wrap items-center gap-1 p-1 rounded-xl bg-slate-200/75 dark:bg-white/5 border border-slate-300/70 dark:border-white/10">
                         <!-- Rendered by JS -->
                     </div>
 
-                    <!-- Streamlined Search Bar with Inline Gói Filter -->
-                    <div class="flex items-center flex-1 sm:flex-initial min-w-[280px] sm:min-w-[400px] bg-white dark:bg-[#0A143D] border border-slate-300/90 dark:border-white/15 focus-within:border-[#0D1677] dark:focus-within:border-sky-400 rounded-xl shadow-sm overflow-hidden transition">
-                        <select id="courseTierFilterSelect" onchange="onCourseSelectChange()" class="bg-slate-100/90 dark:bg-white/5 text-slate-700 dark:text-slate-200 text-xs font-bold px-3 py-2.5 border-r border-slate-200 dark:border-white/10 outline-none cursor-pointer">
-                            <option value="all">Tất cả gói</option>
-                            <option value="bundle_69k">Theo môn · 69K</option>
-                            <option value="teacher_69k">Thầy cô · 69K</option>
-                            <option value="course_199k">Theo khóa · 199K</option>
-                            <option value="full_399k">Full VIP · 399K</option>
-                        </select>
-                        <div class="relative flex-1 flex items-center">
-                            <input id="courseSearchInput" type="search" oninput="renderCourses()" placeholder="Tìm môn học, khóa học, TSA, HSA…" class="w-full bg-transparent px-3.5 py-2 text-xs sm:text-[13px] text-slate-800 dark:text-slate-100 outline-none">
-                        </div>
+                    <!-- Streamlined Single Search Bar (Identical to App) -->
+                    <div class="relative flex items-center flex-1 sm:flex-initial min-w-[260px] sm:min-w-[340px] bg-white dark:bg-[#0A143D] border border-slate-300/90 dark:border-white/15 focus-within:border-[#0D1677] dark:focus-within:border-sky-400 rounded-xl shadow-sm overflow-hidden transition">
+                        <span class="pl-3.5 text-slate-400 text-xs select-none">🔍</span>
+                        <input id="courseSearchInput" type="search" oninput="renderCourses()" placeholder="Tìm môn học, khóa học, TSA, HSA…" class="w-full bg-transparent px-2.5 py-2 text-xs sm:text-[13px] text-slate-800 dark:text-slate-100 outline-none">
                     </div>
                 </div>
 
@@ -812,7 +833,7 @@
                 <div id="courseCheckoutStep1">
                     <!-- Modal Header -->
                     <div class="p-6 pb-4 border-b border-slate-100 dark:border-white/10">
-                        <span class="px-3 py-1 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[10px] rounded-full uppercase border border-blue-200 dark:border-blue-800">BƯỚC 1 / 3 — CHỌN GÓI & ĐIỀN EMAIL NHẬN KHÓA HỌC</span>
+                        <span class="px-3 py-1 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[10px] rounded-full uppercase border border-blue-200 dark:border-blue-800">BƯỚC 1 / 3 — CHỌN HÌNH THỨC MỞ KHÓA & ĐIỀN EMAIL</span>
                         <h2 id="courseCheckoutTitle" class="text-xl font-black text-slate-900 dark:text-white mt-2 font-condensed tracking-wide uppercase leading-tight"></h2>
                         <div class="flex items-center gap-3 mt-3">
                             <span id="courseCheckoutPrice" class="text-2xl font-black text-[#0D1677] dark:text-amber-400 font-condensed"></span>
@@ -824,15 +845,15 @@
                     <!-- Form & 3-Tier Selector -->
                     <div class="p-6 space-y-4">
                         <div id="courseTierSelectorBox" class="space-y-2">
-                            <label class="block text-xs font-black text-slate-800 dark:text-slate-200 uppercase tracking-wider">1. Chọn Gói Học Phí (Mọi Gói Đều Tặng Kèm App Điệp Viên Study 1 Máy):</label>
+                            <label class="block text-xs font-black text-slate-800 dark:text-slate-200 uppercase tracking-wider">1. Chọn Hình Thức Mở Khóa (Tặng Kèm App Điệp Viên Study 1 Máy):</label>
                             <div id="courseTierOptionsList" class="grid grid-cols-1 gap-2">
                                 <!-- Injected dynamically by JS: 69k / 199k / 399k -->
                             </div>
                         </div>
 
                         <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-[11px] text-emerald-900 dark:text-emerald-200 leading-relaxed">
-                            🎁 <strong>Tặng kèm App Điệp Viên Study:</strong> Sau khi thanh toán, Email của bạn sẽ tự động trở thành <strong>tài khoản đăng nhập App</strong> (đã mở khóa sẵn gói học).<br>
-                            🔒 <strong>Bảo mật 1 máy duy nhất:</strong> Tài khoản chỉ hoạt động cố định trên <strong>01 thiết bị duy nhất</strong>, nghiêm cấm chia sẻ sang máy thứ 2 hoặc tài khoản thứ 2.
+                            🎁 <strong>Tặng kèm App Điệp Viên Study:</strong> Sau khi thanh toán, Email của bạn sẽ tự động trở thành <strong>tài khoản đăng nhập App</strong> (đã mở khóa sẵn khóa học).<br>
+                            🔒 <strong>Bảo mật 1 máy duy nhất:</strong> Tài khoản chỉ hoạt động cố định trên <strong>01 thiết bị duy nhất</strong>, không chia sẻ sang máy thứ 2.
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Họ và tên học viên <span class="text-red-500">*</span></label>
@@ -924,6 +945,9 @@
                         <a id="courseSuccessDriveLink" href="https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow flex items-center justify-center gap-2 transition uppercase">
                             <span>📂 Mở Ngay Thư Mục Khóa Học Trên Google Drive</span>
                         </a>
+                        <button type="button" onclick="closeCourseCheckoutModal(); openAppDownloadModal();" class="w-full py-3 px-4 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-xs rounded-xl shadow flex items-center justify-center gap-2 transition uppercase">
+                            <span>💻 Tải Ngay App Điệp Viên Study Về Máy</span>
+                        </button>
                         <div class="p-3 rounded-xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-[11px] text-slate-700 dark:text-slate-200 leading-relaxed">
                             💻 <strong>Tài khoản App Điệp Viên Study của bạn đã kích hoạt!</strong><br>
                             • Đăng nhập trên App bằng chính Email: <strong id="courseSuccessAppEmail" class="text-[#0D1677] dark:text-amber-400"></strong><br>
@@ -2130,8 +2154,8 @@ function doPost(e) {
     </footer>
 
     <!-- Scripts with cache busting query string -->
-    <script src="js/data.js?v=10.69"></script>
-    <script src="js/app.js?v=10.69"></script>
+    <script src="js/data.js?v=10.75"></script>
+    <script src="js/app.js?v=10.75"></script>
     <script>
         function openTrackingModal() {
             document.getElementById('trackingModal').classList.remove('hidden');
@@ -2214,6 +2238,136 @@ function doPost(e) {
                 <div id="syncCustomerEntitlementsBox" class="hidden pt-4 border-t border-slate-200 space-y-3">
                     <div class="font-black text-slate-900 uppercase text-xs">Khóa Học & Tài Liệu Đã Xác Thực Thanh Toán (PAID_SUCCESS):</div>
                     <div id="syncCustomerItemsList" class="space-y-2 max-h-48 overflow-y-auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- ================================================================
+         MODAL: TẢI APP ĐIỆP VIÊN STUDY (XÁC THỰC EMAIL OTP & KÍCH HOẠT TÀI KHOẢN)
+         ================================================================ -->
+    <div id="appDownloadOtpModal" class="fixed inset-0 z-[105] hidden items-center justify-center p-4 bg-slate-950/85 backdrop-blur-sm" onclick="if(event.target===this)closeAppDownloadModal()">
+        <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-slate-200 dark:border-white/10 relative max-h-[92vh] overflow-y-auto" onclick="event.stopPropagation()">
+            <button onclick="closeAppDownloadModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition">✕</button>
+
+            <div class="mb-4">
+                <span class="px-3 py-1 bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-extrabold text-[10px] rounded-full uppercase border border-emerald-200 dark:border-emerald-800">
+                    💻 BỘ CÀI ĐẶT CHÍNH THỨC · ĐIỆP VIÊN STUDY DESKTOP
+                </span>
+                <h3 class="text-xl font-black text-slate-900 dark:text-white mt-2 font-condensed uppercase tracking-wide">
+                    Tải App Điệp Viên Study & Kích Hoạt Tài Khoản
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-300 mt-1 leading-relaxed">
+                    Xác thực Email bằng mã OTP để kích hoạt tài khoản App bản quyền (đồng bộ khóa học & đề cương). Sau khi xác thực, bạn có thể tải App về máy tính vô tư.
+                </p>
+            </div>
+
+            <!-- STEP 1: NHẬP EMAIL ĐỂ NHẬN MÃ OTP -->
+            <div id="appOtpStep1" class="space-y-3.5 text-xs">
+                <div class="p-3.5 rounded-2xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-slate-700 dark:text-slate-200 leading-relaxed">
+                    🔐 <strong>Bước 1 / 2 — Đăng nhập Email xác nhận tài khoản:</strong><br>
+                    Nhập địa chỉ Gmail của bạn để hệ thống gửi <strong>mã xác nhận OTP (6 chữ số)</strong> về hộp thư và kích hoạt tài khoản App.
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Họ và tên học viên</label>
+                    <input id="appOtpNameInput" type="text" placeholder="Nguyễn Văn A" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/10 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
+                </div>
+                <div>
+                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Email Google nhận mã OTP & kích hoạt App <span class="text-red-500">*</span></label>
+                    <input id="appOtpEmailInput" type="email" placeholder="sinhvien@gmail.com" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/10 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
+                </div>
+
+                <button type="button" id="btnSendAppOtp" onclick="sendAppDownloadOtp(false)" class="w-full py-3.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs sm:text-sm rounded-xl shadow-lg transition uppercase tracking-wider">
+                    📨 Gửi Mã Xác Nhận OTP Về Email
+                </button>
+
+                <p id="appOtpStep1Msg" class="text-[11px] font-bold text-center hidden"></p>
+            </div>
+
+            <!-- STEP 2: NHẬP MÃ OTP 6 SỐ ĐÃ GỬI VỀ EMAIL -->
+            <div id="appOtpStep2" class="hidden space-y-3.5 text-xs">
+                <div class="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 text-amber-900 dark:text-amber-200 leading-relaxed">
+                    📩 Mã xác nhận OTP (6 chữ số) đã được gửi tới hộp thư: <strong id="appOtpSentEmailDisplay" class="underline"></strong>.<br>
+                    Vui lòng kiểm tra Hộp thư đến (hoặc mục Quảng cáo / Spam) và nhập mã vào ô bên dưới:
+                </div>
+
+                <div>
+                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1 text-center">Nhập mã OTP 6 chữ số <span class="text-red-500">*</span></label>
+                    <input id="appOtpCodeInput" type="text" maxlength="6" placeholder="••••••" class="w-full px-4 py-3 bg-slate-50 dark:bg-[#060E2C] border-2 border-[#0D1677] dark:border-amber-400 rounded-xl text-center font-mono text-2xl font-black tracking-[10px] text-[#0D1677] dark:text-amber-400 outline-none">
+                </div>
+
+                <button type="button" id="btnVerifyAppOtp" onclick="verifyAppDownloadOtp()" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm rounded-xl shadow-lg transition uppercase tracking-wider">
+                    ✅ Xác Nhận Mã OTP & Kích Hoạt Tài Khoản App
+                </button>
+
+                <div class="flex items-center justify-between pt-1 text-[11px]">
+                    <button type="button" onclick="sendAppDownloadOtp(true)" class="font-bold text-[#0D1677] dark:text-sky-300 hover:underline">
+                        🔄 Gửi lại mã OTP mới
+                    </button>
+                    <button type="button" onclick="resetAppOtpEmailStep(false)" class="font-bold text-slate-500 hover:text-slate-800 dark:text-slate-400">
+                        ← Đổi địa chỉ Email khác
+                    </button>
+                </div>
+
+                <p id="appOtpStep2Msg" class="text-[11px] font-bold text-center hidden"></p>
+            </div>
+
+            <!-- STEP 3: ĐÃ XÁC THỰC & KÍCH HOẠT -> TẢI APP VÔ TƯ NGAY TRÊN WEB -->
+            <div id="appOtpStep3" class="hidden space-y-4 text-xs">
+                <div class="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/70 border-2 border-emerald-400 dark:border-emerald-600 text-emerald-950 dark:text-emerald-100">
+                    <div class="flex items-center gap-2.5 mb-1.5">
+                        <span class="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center font-black text-sm">✓</span>
+                        <div class="font-black text-sm uppercase tracking-wide text-emerald-800 dark:text-emerald-300">
+                            Tài Khoản App Đã Được Kích Hoạt & Xác Thực!
+                        </div>
+                    </div>
+                    <p class="text-[11px] leading-relaxed">
+                        • Tài khoản Email kích hoạt: <strong id="appOtpVerifiedEmailLabel" class="text-[#0D1677] dark:text-amber-300"></strong><br>
+                        • Mã thiết bị bảo mật (1 máy): <strong id="appOtpDeviceIdLabel" class="font-mono text-emerald-700 dark:text-emerald-300"></strong><br>
+                        • Giờ bạn có thể tải bộ cài App Điệp Viên Study về máy vô tư ngay bên dưới:
+                    </p>
+                </div>
+
+                <div class="space-y-2.5">
+                    <a id="btnDirectDownloadWinExe" href="DiepVienStudy_Setup.exe" download="DiepVienStudy_Setup.exe" class="w-full py-3.5 px-4 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs sm:text-sm rounded-xl shadow-lg flex items-center justify-between transition">
+                        <span class="flex items-center gap-2.5">
+                            <span class="text-lg">💻</span>
+                            <span class="text-left">
+                                <span class="block uppercase tracking-wide">Tải Ngay Cho Windows (Bản .EXE Chạy Ngay)</span>
+                                <span class="block text-[10px] font-normal text-sky-200">Tải trực tiếp trên Web · Mở lên dùng ngay trên Windows 10 / 11</span>
+                            </span>
+                        </span>
+                        <span class="px-2.5 py-1 bg-[#FFA000] text-slate-950 rounded-lg text-[10px] font-black whitespace-nowrap">TẢI NGAY ⬇</span>
+                    </a>
+
+                    <button type="button" onclick="triggerDirectAppDownload('windows')" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs rounded-xl shadow flex items-center justify-between transition">
+                        <span class="flex items-center gap-2.5">
+                            <span class="text-lg">📦</span>
+                            <span class="text-left">
+                                <span class="block uppercase tracking-wide">Tải Trọn Bộ Cài Đặt Windows 1-Click (.ZIP)</span>
+                                <span class="block text-[10px] font-normal text-emerald-100">Bao gồm bộ cài 1-Click + tự tạo biểu tượng ngoài màn hình Desktop</span>
+                            </span>
+                        </span>
+                        <span class="px-2.5 py-1 bg-white/20 rounded-lg text-[10px] font-black whitespace-nowrap">14 MB ⬇</span>
+                    </button>
+
+                    <button type="button" onclick="triggerDirectAppDownload('macos')" class="w-full py-3 px-4 bg-slate-800 hover:bg-slate-700 text-white font-black text-xs rounded-xl shadow flex items-center justify-between transition">
+                        <span class="flex items-center gap-2.5">
+                            <span class="text-lg">🍎</span>
+                            <span class="text-left">
+                                <span class="block uppercase tracking-wide">Tải Bộ Cài Đặt Cho macOS (MacBook .ZIP)</span>
+                                <span class="block text-[10px] font-normal text-slate-300">Hỗ trợ Apple Silicon (M1/M2/M3/M4) & Mac Intel</span>
+                            </span>
+                        </span>
+                        <span class="px-2.5 py-1 bg-white/20 rounded-lg text-[10px] font-black whitespace-nowrap">macOS ⬇</span>
+                    </button>
+                </div>
+
+                <div class="pt-2 border-t border-slate-200 dark:border-white/10 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                    <span>Khi mở App, hãy đăng nhập đúng Email đã xác thực ở trên.</span>
+                    <button type="button" onclick="resetAppOtpEmailStep(true)" class="text-[#0D1677] dark:text-sky-300 font-bold hover:underline whitespace-nowrap ml-2">
+                        Đổi Email khác
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,32 +1,26 @@
 {
-  "version": "3.5.0",
-  "releasedAt": "2026-11-05T17:26:48Z",
-  "notes": "Auto-Update OTA: Lưu hồ sơ khách hàng 1-Click, Hướng dẫn cài đặt PDF hoạt họa, Đồng bộ 66 Khóa học & 600+ Đề cương",
+  "version": "3.6.1793932957",
+  "releasedAt": "2026-11-06T02:42:37Z",
+  "notes": "OTA Auto-Update: Đồng bộ Combobox chọn Trường Đại Học (kèm 71 Logo trường thật) & Chọn Môn/Khóa học",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "afb82887a188ef5b97a10a511dd7648999920c584f67c6445a26974cf0a47caa",
-      "size": 2212002,
+      "sha256": "132110fc1c65c6178279fb949f85087412e545423f557bd4713b99a4021b4db5",
+      "size": 2264800,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
       "path": "web_dist/assets/index-si95EOa3.css",
-      "sha256": "d8a6ae431a7ded95a80cad6c2bda203025129455ebf6a4bd5c075bb029e7c57e",
-      "size": 313223,
+      "sha256": "867bbc200c763281e8e6a9ce7bde374482e1a2310f7cd159e05cec119adc58eb",
+      "size": 317839,
       "url": "https://diepvientailieu.store/index-si95EOa3.css"
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "10d51f6f8340eb334965d6277ebea16b7598f7500daac82d991facfb78766b5a",
-      "size": 293073,
+      "sha256": "b3ab4592c06a9b7ce78ee52a6f391fb49a4a8aa97d83f36f21c87eed9b5a81da",
+      "size": 293531,
       "url": "https://diepvientailieu.store/DiepVienStudy.pyw"
-    },
-    {
-      "path": "Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
-      "sha256": "11c0b22b0382bba2a1f16cc823f11c31218520bdde9b51d028e207f68cbeb5d8",
-      "size": 666689,
-      "url": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf"
     }
   ]
 }

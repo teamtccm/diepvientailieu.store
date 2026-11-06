@@ -1732,7 +1732,8 @@ function openDocCheckoutModal(docId, customTitle = null) {
             transferMemo: fullMemo,
             name: savedName,
             email: savedEmail,
-            phone: savedPhone || "0900000000",
+            phone: savedPhone || "",
+            deviceId: getWebDeviceId(),
             sku: doc.code || "",
             itemName: doc.name || "",
             price: doc.price || 0,
@@ -1796,7 +1797,7 @@ function goToDocPaymentStep(e) {
     const name = document.getElementById("checkoutNameInput").value.trim();
     const rawPhone = document.getElementById("checkoutPhoneInput").value.trim();
     const email = document.getElementById("checkoutEmailInput").value.trim().toLowerCase();
-    const phone = rawPhone || "0900000000";
+    const phone = rawPhone.replace(/\[.*\]/g, "").trim();
 
     if (!name || !email) {
         alert("Vui lòng điền Họ tên và Email nhận tài liệu!");
@@ -1833,7 +1834,8 @@ function goToDocPaymentStep(e) {
         orderType: "Mua File",
         school: state.selectedDoc?.school || (state.selectedUniversity ? (UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code) : "Toàn quốc"),
         stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "27384751",
-        driveId: state.selectedDoc?.driveId || ""
+        driveId: state.selectedDoc?.driveId || "",
+        deviceId: getWebDeviceId()
     };
     saveOrderToLocal(payload);
     try { sendWebhookData(payload); } catch(e) {}
@@ -1847,61 +1849,37 @@ function goToDocPaymentStep(e) {
 let docPollingInterval = null;
 
 function startDocPaymentPolling(orderCode, email) {
-
     if (docPollingInterval) clearInterval(docPollingInterval);
-
     let elapsed = 0;
-
     const timerEl = document.getElementById("docPaymentTimer");
 
-    
+    setTimeout(() => checkDocPaymentStatus(orderCode, email), 1500);
 
     docPollingInterval = setInterval(() => {
-
         elapsed += 5;
-
         const mins = Math.floor(elapsed / 60);
-
         const secs = elapsed % 60;
-
         if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
-
-        
-
-        // Poll verification endpoint
-
         checkDocPaymentStatus(orderCode, email);
-
     }, 5000);
-
 }
 
-
-
 async function checkDocPaymentStatus(orderCode, email) {
-
-    if (!state.webhookUrl) return;
-
+    if (!state.webhookUrl || !orderCode) return;
     try {
-
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-
+        const cleanCode = String(orderCode).trim().split(" ")[0];
+        const driveIdParam = encodeURIComponent(state.selectedDoc?.driveId || "");
+        const emailParam = encodeURIComponent(email || "");
+        const devParam = encodeURIComponent(typeof getWebDeviceId === "function" ? getWebDeviceId() : "");
+        const verifyUrl = `${state.webhookUrl}?action=verify&orderId=${encodeURIComponent(cleanCode)}&email=${emailParam}&driveId=${driveIdParam}&deviceId=${devParam}`;
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
-
         const data = await res.json();
-
-        if (data && data.verified === true) {
-
-            onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
-
+        if (data && (data.verified === true || data.paid === true)) {
+            onDocPaymentConfirmed(cleanCode, email || data.email || "", data.driveUrl || "");
         }
-
     } catch(e) {
-
         // Silently retry on next interval
-
     }
-
 }
 
 
@@ -1949,51 +1927,29 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
 
 
 async function confirmDocManualPayment() {
-
-    const orderCode = document.getElementById("checkoutOrderCode")?.textContent || "";
-
-    const email = document.getElementById("checkoutEmailInput")?.value || "";
-
+    const orderCode = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
+    const email = (document.getElementById("checkoutEmailInput")?.value || getSyncedCustomerLocal()?.email || "").trim().toLowerCase();
     const fbEl = document.getElementById("docVerifyFeedbackMsg");
-
     if (fbEl) {
-
         fbEl.classList.remove("hidden");
-
-        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB cho mã đơn #" + orderCode + "...";
-
+        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa Google Drive cho mã đơn #" + orderCode + "...";
     }
-
-    if (!state.webhookUrl) return;
-
+    if (!state.webhookUrl || !orderCode) return;
     try {
-
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-
+        const driveIdParam = encodeURIComponent(state.selectedDoc?.driveId || "");
+        const verifyUrl = `${state.webhookUrl}?action=verify&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email)}&driveId=${driveIdParam}&deviceId=${encodeURIComponent(getWebDeviceId())}`;
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
-
         const data = await res.json();
-
-        if (data && data.verified === true) {
-
-            onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
-
+        if (data && (data.verified === true || data.paid === true)) {
+            onDocPaymentConfirmed(orderCode, email || data.email || "", data.driveUrl || "");
         } else if (fbEl) {
-
-            fbEl.textContent = "️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
-
+            fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống tự động bàn giao ngay khi ngân hàng báo tiền về!";
         }
-
     } catch (e) {
-
         if (fbEl) {
-
-            fbEl.textContent = "️ Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
-
+            fbEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
         }
-
     }
-
 }
 
 
@@ -2150,7 +2106,7 @@ async function submitServiceOrder(e) {
     const cust = getSyncedCustomerLocal() || {};
     const name = (document.getElementById("srvNameInput").value.trim()) || cust.name || "";
     const rawPhone = (document.getElementById("srvPhoneInput").value.trim()) || cust.phone || "";
-    const phone = rawPhone || "0900000000";
+    const phone = rawPhone.replace(/\[.*\]/g, "").trim();
     const email = (document.getElementById("srvEmailInput").value.trim().toLowerCase()) || cust.email || "";
     const studentId = document.getElementById("srvStudentIdInput").value.trim();
     const school = document.getElementById("srvSchoolInput").value.trim();
@@ -2366,29 +2322,26 @@ function dismissLiveProofToast() {
 
 
 async function sendWebhookData(payload) {
-
     if (!state.webhookUrl || state.webhookUrl.includes("SAMPLE_WEBHOOK_URL")) {
-
         console.log("Mock Webhook Dispatch:", payload);
-
         return { status: "MOCK_SUCCESS", message: "Đã lưu vào bộ nhớ cục bộ" };
-
     }
-
-    
-
-    return fetch(state.webhookUrl, {
-
-        method: "POST",
-
-        mode: "no-cors",
-
-        headers: { "Content-Type": "application/json" },
-
-        body: JSON.stringify(payload)
-
-    });
-
+    try {
+        const res = await fetch(state.webhookUrl, {
+            method: "POST",
+            mode: "cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+        });
+        return await res.json().catch(() => ({ ok: true }));
+    } catch (e) {
+        return fetch(state.webhookUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+        });
+    }
 }
 
 
@@ -3576,7 +3529,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
     const cust = getSyncedCustomerLocal() || {};
     const name = (document.getElementById("courseStudentName").value.trim()) || cust.name || "";
     const rawPhoneInput = (document.getElementById("courseStudentPhone").value.trim()) || (cust.phone || "").replace(/\[.*\]/g, "").trim();
-    const rawPhone = rawPhoneInput || "0900000000";
+    const rawPhone = rawPhoneInput.replace(/\[.*\]/g, "").trim();
     const email = ((document.getElementById("courseStudentEmail").value.trim()) || cust.email || "").toLowerCase();
 
     if (!name || !email) {
@@ -3624,7 +3577,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
     }
 
     const webDevId = getWebDeviceId();
-    const phoneWithDeviceLock = `${rawPhone} [WB:${webDevId}]`;
+    const phoneWithDeviceLock = rawPhone;
 
     const payload = {
         action: "createOrder",
@@ -3647,7 +3600,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
     };
 
     if (state.webhookUrl) {
-        fetch(state.webhookUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }).catch(() => {});
+        fetch(state.webhookUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) }).catch(() => {});
     }
     state.orderHistory.unshift(payload);
     localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
@@ -3702,7 +3655,7 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
             fetch(warehouseWebhook, {
                 method: "POST",
                 mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
                 body: JSON.stringify({
                     email: email,
                     name: name,
@@ -4022,12 +3975,13 @@ function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", sour
         fetch(webhook, {
             method: "POST",
             mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 action: "registerOrLoginCustomer",
                 email: cleanEmail,
                 name: cleanName,
                 phone: cleanPhone,
+                deviceId: typeof getWebDeviceId === "function" ? getWebDeviceId() : "",
                 source: source
             })
         }).catch(() => {});
@@ -4050,7 +4004,7 @@ function sendAppInviteEmailAfterPurchase({ email = "", name = "", orderCode = ""
         fetch(url, {
             method: "POST",
             mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 action: "send_app_invite",
                 email: cleanEmail,
@@ -4133,6 +4087,12 @@ function renderSyncedCustomerEntitlements(cust) {
         html += `<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl flex justify-between items-center">
             <div><strong class="text-[#0D1677]"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> ${d.title || d.name || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
             ${d.driveUrl ? `<a href="${d.driveUrl}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-bold text-[10px] rounded-lg">Mở Drive</a>` : `<span class="text-emerald-700 font-bold text-[10px]">PAID_SUCCESS</span>`}
+        </div>`;
+    });
+    btls.forEach(b => {
+        html += `<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl flex justify-between items-center gap-2">
+            <div><strong class="text-slate-900">🎓 BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
+            ${b.driveUrl ? `<a href="${b.driveUrl}" target="_blank" class="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-lg whitespace-nowrap">Mở BTL Drive</a>` : `<span class="text-amber-700 font-bold text-[10px] whitespace-nowrap">${b.status || "ĐANG LÀM"}</span>`}
         </div>`;
     });
     list.innerHTML = html;
@@ -4363,7 +4323,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
         fetch(warehouseWebhook, {
             method: "POST",
             mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 email: email,
                 name: custName,
@@ -4410,18 +4370,33 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     }
 }
 
-// Upgrade openSuccessModal so BTL Service orders also show the 10% Deposit VietQR with customer name embedded in memo
+let servicePollingInterval = null;
+let currentServiceOrderData = null;
+
+function closeSuccessModal() {
+    if (servicePollingInterval) {
+        clearInterval(servicePollingInterval);
+        servicePollingInterval = null;
+    }
+    const modal = document.getElementById("successModal");
+    if (modal) modal.classList.add("hidden");
+}
+
 function openSuccessModal(type, orderData) {
     const modal = document.getElementById("successModal");
     if (!modal) return;
+    currentServiceOrderData = orderData || null;
 
     const title = document.getElementById("successModalTitle");
     const desc = document.getElementById("successModalDesc");
     const orderId = document.getElementById("successOrderId");
     const customerMail = document.getElementById("successCustomerEmail");
 
-    if (orderId) orderId.textContent = orderData.orderId || "";
-    if (customerMail) customerMail.textContent = orderData?.customer?.email || "";
+    const cleanOrderId = String(orderData?.orderId || "").trim().split(" ")[0];
+    const custEmail = String(orderData?.customer?.email || getSyncedCustomerLocal()?.email || "").trim().toLowerCase();
+
+    if (orderId) orderId.textContent = cleanOrderId;
+    if (customerMail) customerMail.textContent = custEmail;
 
     let qrBox = document.getElementById("serviceDepositQrBox");
     if (!qrBox && desc && desc.parentElement) {
@@ -4440,7 +4415,7 @@ function openSuccessModal(type, orderData) {
         const depAmount = Number(rawDep) || 50000;
         const custName = orderData?.customer?.name || getSyncedCustomerLocal()?.name || "";
         const cleanName = removeVietnameseTones(custName).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
-        const memo = orderData?.transferMemo || `${String(orderData?.orderId || "COCBTL").trim()} ${cleanName}`.trim();
+        const memo = orderData?.transferMemo || `${cleanOrderId || "COCBTL"} ${cleanName}`.trim();
         const qrSrc = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${depAmount}&addInfo=${encodeURIComponent(memo)}&accountName=NGO%20BAO%20THACH`;
         if (title) title.textContent = "Đã Ghi Nhận Đơn Đặt Làm Bài!";
         if (desc) desc.textContent = "Quét mã VietQR bên dưới để đặt cọc 10% khởi động bài viết (ACB · 27384751 · NGO BAO THACH):";
@@ -4450,11 +4425,108 @@ function openSuccessModal(type, orderData) {
                 <img id="serviceDepositQrImg" src="${qrSrc}" alt="VietQR Đặt Cọc 10% BTL" class="w-44 h-44 mx-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm mb-2 object-contain">
                 <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Số tiền cọc (10%): ${depAmount.toLocaleString("vi-VN")} VNĐ</div>
                 <div class="text-[11px] font-mono text-slate-600 dark:text-slate-300 mt-0.5">Nội dung CK: <strong>${memo}</strong></div>
+                <div id="serviceVerifyStatusText" class="text-[11px] text-amber-700 dark:text-amber-300 font-bold mt-2">⏳ Đang tự động quét biến động số dư ACB & đối soát hạn nộp (Deadline)...</div>
+                <button type="button" onclick="checkServicePaymentStatus('${cleanOrderId}', '${custEmail}', true)" class="mt-2.5 w-full py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow transition">
+                    🔄 Tôi Đã Chuyển Khoản Cọc — Kiểm Tra & Nhận Bản Check Ngay
+                </button>
             `;
         }
+        startServicePaymentPolling(cleanOrderId, custEmail);
     }
 
     modal.classList.remove("hidden");
+}
+
+function startServicePaymentPolling(orderCode, email) {
+    if (servicePollingInterval) clearInterval(servicePollingInterval);
+    if (!orderCode) return;
+    setTimeout(() => checkServicePaymentStatus(orderCode, email, false), 2000);
+    servicePollingInterval = setInterval(() => {
+        checkServicePaymentStatus(orderCode, email, false);
+    }, 5000);
+}
+
+async function checkServicePaymentStatus(orderCode, email, isManual = false) {
+    if (!state.webhookUrl || !orderCode) return;
+    const stEl = document.getElementById("serviceVerifyStatusText");
+    if (isManual && stEl) {
+        stEl.textContent = "⏳ Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+    }
+    try {
+        const verifyUrl = `${state.webhookUrl}?action=verify&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}`;
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const data = await res.json();
+        if (data && (data.verified === true || data.paid === true)) {
+            if (servicePollingInterval && data.btlDelivered === true) {
+                clearInterval(servicePollingInterval);
+                servicePollingInterval = null;
+            }
+            const title = document.getElementById("successModalTitle");
+            const desc = document.getElementById("successModalDesc");
+            const qrBox = document.getElementById("serviceDepositQrBox");
+            const previewUrl = data.previewDriveUrl || "https://drive.google.com/drive/folders/1TMds7tiynuR0UV9HUGhICJMHY37K99DK";
+            const fullUrl = data.fullDriveUrl || data.driveUrl || "";
+            const deadlineStr = data.deadline || currentServiceOrderData?.assignment?.deadline || "Theo đúng hạn nộp";
+
+            if (data.btlDelivered === true && fullUrl) {
+                if (title) title.textContent = "🎉 Đã Tự Động Bàn Giao Bài Tập Lớn (BTL)!";
+                if (desc) desc.textContent = "Bài Tập Lớn / Tiểu Luận của bạn đã hoàn tất và được cấp quyền Google Drive trực tiếp cho Email của bạn!";
+                if (qrBox) {
+                    qrBox.innerHTML = `
+                        <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ BÀN GIAO BTL ĐÚNG HẠN (${deadlineStr})</div>
+                            <div class="text-[11px] text-slate-600 dark:text-slate-300">Quyền truy cập Google Drive đã được mở tự động cho <strong>${email}</strong>.</div>
+                            <a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">
+                                🚀 MỞ FILE BÀI TẬP LỚN HOÀN CHỈNH (GOOGLE DRIVE)
+                            </a>
+                            <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 bg-slate-200 dark:bg-white/10 text-slate-800 dark:text-white font-bold text-[11px] rounded-xl text-center">
+                                📂 Mở Kho Bản Xem Trước / Đề Cương BTL
+                            </a>
+                        </div>
+                    `;
+                }
+            } else {
+                if (title) title.textContent = "✅ Đã Xác Nhận Đặt Cọc 10% BTL!";
+                if (desc) desc.textContent = "Hệ thống đã nhận cọc 10% qua ACB, gửi bản xem trước qua Email và hẹn giờ tự động bàn giao bản Full đúng Deadline!";
+                if (qrBox) {
+                    qrBox.innerHTML = `
+                        <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ XÁC NHẬN CỌC #${orderCode}</div>
+                            <div class="text-[11px] text-slate-700 dark:text-slate-200">📅 Hạn tự động bàn giao BTL hoàn chỉnh: <strong>${deadlineStr}</strong></div>
+                            <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl text-center shadow">
+                                📂 MỞ BẢN XEM TRƯỚC / ĐỀ CƯƠNG BTL (GOOGLE DRIVE)
+                            </a>
+                            ${fullUrl ? `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">🚀 MỞ FILE BTL HOÀN CHỈNH (GOOGLE DRIVE)</a>` : ""}
+                        </div>
+                    `;
+                }
+            }
+
+            // Lưu đơn BTL vào hồ sơ đồng bộ của khách hàng
+            const prev = getSyncedCustomerLocal() || {};
+            const prevBtls = Array.isArray(prev.btlOrders) ? prev.btlOrders : [];
+            const updatedCust = {
+                ...prev,
+                btlOrders: [
+                    {
+                        orderCode,
+                        topic: data.topic || currentServiceOrderData?.assignment?.topic || "Bài Tập Lớn",
+                        deadline: deadlineStr,
+                        status: data.status || (data.btlDelivered ? "ĐÃ GIAO BÀI" : "ĐÃ CỌC"),
+                        driveUrl: fullUrl || previewUrl
+                    },
+                    ...prevBtls.filter(x => x.orderCode !== orderCode)
+                ]
+            };
+            localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
+        } else if (isManual && stEl) {
+            stEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động cập nhật ngay khi tiền về!";
+        }
+    } catch (e) {
+        if (isManual && stEl) {
+            stEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB. Vui lòng thử lại sau vài giây!";
+        }
+    }
 }
 
 function startDirectFileDownload(hrefUrl, downloadFilename = "Cài Đặt App Điệp Viên Study (Windows).exe") {

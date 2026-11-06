@@ -3154,6 +3154,8 @@ let baseClickedCourseForCheckout = null;
 let activeCourseCheckoutTierKey = "course_199k";
 let selectedSubject69kId = "";
 let selectedCourse199kId = "";
+let courseTargetDropdownOpen = false;
+let courseTargetSearchQuery = "";
 
 function getSubject69kCatalogList() {
     const db = typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE : [];
@@ -3169,6 +3171,202 @@ function getCourse199kCatalogList() {
     return [...items, ...combos];
 }
 
+function getCourseVisualMeta(c) {
+    if (!c) return { badge: "KHÓA HỌC", cleanTitle: "Khóa Học Ôn Thi", colorClass: "text-[#0D1677] bg-blue-50", svg: '<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>' };
+    const text = `${c.id || ""} ${c.title || ""} ${c.groupName || ""} ${c.category || ""}`.toLowerCase();
+
+    let badge = "KHÓA HỌC";
+    let colorClass = "text-[#0D1677] bg-blue-50 border-blue-200";
+    let svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>';
+
+    if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) {
+        badge = "TOÁN 12";
+        colorClass = "text-blue-700 bg-blue-50 border-blue-200";
+        svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>';
+    } else if (text.includes("vật lý 12") || text.includes("ly12") || (text.includes("vật lý") && text.includes("12"))) {
+        badge = "VẬT LÝ 12";
+        colorClass = "text-amber-700 bg-amber-50 border-amber-200";
+        svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-30 12 12)"/></svg>';
+    } else if (text.includes("hóa học 12") || text.includes("hoa12") || (text.includes("hóa") && text.includes("12"))) {
+        badge = "HÓA 12";
+        colorClass = "text-emerald-700 bg-emerald-50 border-emerald-200";
+        svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><line x1="5.52" x2="18.48" y1="16" y2="16"/></svg>';
+    } else if (text.includes("tiếng anh 12") || text.includes("anh12") || text.includes("mai phương") || (text.includes("tiếng anh") && text.includes("12"))) {
+        badge = "ANH 12";
+        colorClass = "text-purple-700 bg-purple-50 border-purple-200";
+        svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>';
+    } else if (text.includes("ngữ văn")) {
+        badge = "VĂN 12";
+        colorClass = "text-rose-700 bg-rose-50 border-rose-200";
+    } else if (text.includes("sinh học")) {
+        badge = "SINH 12";
+        colorClass = "text-emerald-700 bg-emerald-50 border-emerald-200";
+    } else if (text.includes("topuni")) {
+        badge = "TOPUNI 12";
+        colorClass = "text-indigo-700 bg-indigo-50 border-indigo-200";
+    } else if (text.includes("toán 11") || text.includes("toan11")) {
+        badge = "TOÁN 11";
+        colorClass = "text-blue-700 bg-blue-50 border-blue-200";
+    } else if (text.includes("vật lý 11") || text.includes("ly11")) {
+        badge = "LÝ 11";
+        colorClass = "text-amber-700 bg-amber-50 border-amber-200";
+    } else if (text.includes("hóa học 11") || text.includes("hoa11")) {
+        badge = "HÓA 11";
+        colorClass = "text-emerald-700 bg-emerald-50 border-emerald-200";
+    } else if (text.includes("tin học") || text.includes("lập trình") || text.includes("tin11")) {
+        badge = "TIN HỌC";
+        colorClass = "text-sky-700 bg-sky-50 border-sky-200";
+    } else if (text.includes("hsa")) {
+        badge = "HSA";
+        colorClass = "text-red-700 bg-red-50 border-red-200";
+    } else if (text.includes("tsa")) {
+        badge = "TSA";
+        colorClass = "text-amber-800 bg-amber-50 border-amber-200";
+    } else if (text.includes("v-act") || text.includes("vact")) {
+        badge = "V-ACT";
+        colorClass = "text-blue-800 bg-blue-50 border-blue-200";
+    } else if (text.includes("công an") || text.includes("bca")) {
+        badge = "BCA";
+        colorClass = "text-emerald-800 bg-emerald-50 border-emerald-200";
+    } else if (text.includes("quân đội") || text.includes("qda")) {
+        badge = "QDA";
+        colorClass = "text-emerald-800 bg-emerald-50 border-emerald-200";
+    } else if (text.includes("vsat")) {
+        badge = "VSAT";
+        colorClass = "text-purple-800 bg-purple-50 border-purple-200";
+    } else if (text.includes("lớp 12")) {
+        badge = "COMBO 12";
+    } else if (text.includes("lớp 11")) {
+        badge = "COMBO 11";
+    }
+
+    // Build clean, concise 1-line title (Teacher/Unit + Short Course Name)
+    let rawInst = String(c.instructor || "").trim();
+    let shortTeacher = rawInst;
+    if (rawInst.includes("—")) {
+        const parts = rawInst.split("—").map(s => s.trim());
+        // Prefer the Teacher name part (e.g. "THẦY ĐỖ VĂN ĐỨC (TENSCHOOL)")
+        if (parts[1] && (parts[1].startsWith("THẦY") || parts[1].startsWith("CÔ"))) {
+            shortTeacher = `${parts[1]} (${parts[0]})`;
+        } else {
+            shortTeacher = parts[0];
+        }
+    }
+    const toNiceCase = (str) => str.toLowerCase().split(/(\s+|\(|\)|-)/).map(tok => {
+        if (!tok || /^(\s+|\(|\)|-)$/.test(tok)) return tok;
+        const up = tok.toUpperCase();
+        if (up === "TENSCHOOL") return "TenSchool";
+        if (up === "MAPSTUDY") return "MapStudy";
+        if (up === "HOCMAI") return "HocMai";
+        if (["HSA","TSA","V-ACT","BCA","QDA","VSAT","THPTQG","2K9","2K10","SGK","VIP90","PRO3M","IOME","XPS","TMT","LXO","NAP","TYHH","BMC","TDMU","IPCLASS"].includes(up)) return up;
+        return tok.charAt(0).toUpperCase() + tok.slice(1);
+    }).join("");
+
+    let cleanTitle = String(c.title || "").trim();
+    if (cleanTitle.includes("—")) {
+        const tParts = cleanTitle.split("—").map(s => s.trim());
+        if (String(c.id).startsWith("COURSE-SUBJ-")) {
+            cleanTitle = `${tParts[0]} (${tParts[1] || "Trọn bộ"})`;
+        } else {
+            cleanTitle = (tParts.slice(1).join(" · ") || tParts[0])
+                .replace(/^Lộ Trình Chinh Phục THPTQG 2027\s*/i, "")
+                .replace(/^Lộ Trình Toàn Diện THPTQG 2027\s*/i, "Lộ Trình Toàn Diện ")
+                .replace(/^Xuất Phát Sớm \(XPS\)\s*/i, "XPS ")
+                .replace(/^Trọn Bộ Lộ Trình\s*/i, "Lộ Trình ")
+                .replace(/^Full Lộ Trình Xuất Phát Sớm \(XPS\)/i, "Full Lộ Trình XPS");
+            if (cleanTitle.startsWith("(") && cleanTitle.endsWith(")")) {
+                cleanTitle = cleanTitle.slice(1, -1);
+            }
+        }
+    }
+
+    const displayLine = String(c.id).startsWith("COURSE-SUBJ-")
+        ? cleanTitle
+        : (shortTeacher ? `${toNiceCase(shortTeacher)} — ${cleanTitle}` : cleanTitle);
+
+    return {
+        badge,
+        cleanTitle: displayLine,
+        colorClass,
+        svg
+    };
+}
+
+function renderCourseTargetOptionsHtml(list, chosenId) {
+    if (!list || list.length === 0) {
+        return `<div class="p-3 text-center text-slate-400 text-xs">Không tìm thấy môn hoặc khóa học phù hợp</div>`;
+    }
+    return list.map(item => {
+        const isSelected = item.id === chosenId;
+        const meta = getCourseVisualMeta(item);
+        return `
+            <div onclick="onChangeCourseCheckoutTarget('${item.id}')" class="flex items-center gap-2.5 px-3 py-2 hover:bg-sky-50 dark:hover:bg-white/10 cursor-pointer rounded-xl transition ${isSelected ? 'bg-sky-100/70 dark:bg-sky-900/40 text-[#0D1677] dark:text-sky-300 font-bold' : 'text-slate-700 dark:text-slate-200'}">
+                <div class="w-6 h-6 rounded border p-0.5 shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0 ${meta.colorClass}">
+                    ${meta.svg}
+                </div>
+                <span class="px-1.5 py-0.5 bg-slate-200 dark:bg-white/15 text-slate-900 dark:text-white font-mono font-bold text-[10px] rounded flex-shrink-0">
+                    ${meta.badge}
+                </span>
+                <span class="truncate text-xs flex-1">${meta.cleanTitle}</span>
+                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold">✓</span>' : ''}
+            </div>
+        `;
+    }).join("");
+}
+
+function toggleCourseTargetDropdown(e) {
+    if (e) e.stopPropagation();
+    const menu = document.getElementById("courseTargetDropdownMenu");
+    const chevron = document.getElementById("courseTargetDropdownChevron");
+    if (!menu) return;
+    const isHidden = menu.classList.contains("hidden");
+    if (isHidden) {
+        courseTargetDropdownOpen = true;
+        menu.classList.remove("hidden");
+        if (chevron) chevron.textContent = "▲";
+        const inp = document.getElementById("courseTargetFilterInput");
+        if (inp) {
+            inp.value = "";
+            filterCourseTargetList("");
+            setTimeout(() => inp.focus(), 40);
+        }
+    } else {
+        closeCourseTargetDropdown();
+    }
+}
+
+function closeCourseTargetDropdown() {
+    courseTargetDropdownOpen = false;
+    const menu = document.getElementById("courseTargetDropdownMenu");
+    const chevron = document.getElementById("courseTargetDropdownChevron");
+    if (menu) menu.classList.add("hidden");
+    if (chevron) chevron.textContent = "▼";
+}
+
+function filterCourseTargetList(query) {
+    courseTargetSearchQuery = (query || "").trim();
+    const raw = courseTargetSearchQuery.toLowerCase();
+    const rawNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(raw) : raw;
+    const list = activeCourseCheckoutTierKey === "subject_69k" ? getSubject69kCatalogList() : getCourse199kCatalogList();
+    const chosenId = selectedCourseForCheckout?.id || "";
+
+    const container = document.getElementById("courseTargetOptionsList");
+    if (!container) return;
+
+    if (!raw) {
+        container.innerHTML = renderCourseTargetOptionsHtml(list, chosenId);
+        return;
+    }
+
+    const filtered = list.filter(c => {
+        const meta = getCourseVisualMeta(c);
+        const hay = `${meta.badge} ${meta.cleanTitle} ${c.title || ""} ${c.instructor || ""} ${c.code || ""}`.toLowerCase();
+        const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
+        return hay.includes(raw) || hayNorm.includes(rawNorm);
+    });
+    container.innerHTML = renderCourseTargetOptionsHtml(filtered, chosenId);
+}
+
 function onChangeCourseCheckoutTarget(targetId) {
     if (!targetId) return;
     const found = (typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE : []).find(c => c.id === targetId);
@@ -3178,6 +3376,7 @@ function onChangeCourseCheckoutTarget(targetId) {
     } else if (activeCourseCheckoutTierKey === "course_199k") {
         selectedCourse199kId = found.id;
     }
+    closeCourseTargetDropdown();
     selectCourseCheckoutTier(activeCourseCheckoutTierKey);
 }
 
@@ -3260,36 +3459,48 @@ function selectCourseCheckoutTier(tierKey) {
         `;
 
         let pickerHtml = "";
-        if (activeCourseCheckoutTierKey === "subject_69k") {
-            const optionsHtml = subjList.map(s => {
-                const labelText = `${s.instructor ? s.instructor + ' — ' : ''}${s.title}`;
-                const sel = s.id === chosen.id ? "selected" : "";
-                return `<option value="${s.id}" ${sel}>${labelText}</option>`;
-            }).join("");
+        if (activeCourseCheckoutTierKey === "subject_69k" || activeCourseCheckoutTierKey === "course_199k") {
+            const activeList = activeCourseCheckoutTierKey === "subject_69k" ? subjList : courseList;
+            const chosenMeta = getCourseVisualMeta(chosen);
+            const labelHeading = activeCourseCheckoutTierKey === "subject_69k"
+                ? "1. Môn Học Cần Mở Khóa (Tìm mã/tên môn hoặc chọn danh sách):"
+                : "1. Khóa Học Cần Mở Khóa (Tìm mã/tên thầy cô hoặc chọn danh sách):";
+
             pickerHtml = `
-                <div class="mt-2 p-2.5 rounded-xl bg-blue-50/70 dark:bg-[#060E2C] border border-blue-200 dark:border-white/15">
-                    <label for="courseCheckoutTargetSelect" class="block text-[11px] font-black text-[#0D1677] dark:text-amber-400 uppercase mb-1">
-                        Chọn môn học cần mở khóa (69.000đ / 1 môn + Tặng App 1 máy):
+                <div class="mt-2.5 relative" id="courseTargetComboboxWrapper">
+                    <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                        ${labelHeading}
                     </label>
-                    <select id="courseCheckoutTargetSelect" onchange="onChangeCourseCheckoutTarget(this.value)" class="w-full px-3 py-2 rounded-lg bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 text-xs font-bold text-slate-900 dark:text-white outline-none focus:border-[#0D1677] cursor-pointer">
-                        ${optionsHtml}
+                    <select id="courseCheckoutTargetSelect" class="hidden" onchange="onChangeCourseCheckoutTarget(this.value)">
+                        <option value="${chosen.id}" selected>${chosen.title}</option>
                     </select>
-                </div>
-            `;
-        } else if (activeCourseCheckoutTierKey === "course_199k") {
-            const optionsHtml = courseList.map(c => {
-                const labelText = `${c.instructor ? c.instructor + ' — ' : ''}${c.title}`;
-                const sel = c.id === chosen.id ? "selected" : "";
-                return `<option value="${c.id}" ${sel}>${labelText}</option>`;
-            }).join("");
-            pickerHtml = `
-                <div class="mt-2 p-2.5 rounded-xl bg-blue-50/70 dark:bg-[#060E2C] border border-blue-200 dark:border-white/15">
-                    <label for="courseCheckoutTargetSelect" class="block text-[11px] font-black text-[#0D1677] dark:text-amber-400 uppercase mb-1">
-                        Chọn khóa học cần mở khóa (199.000đ / 1 khóa + Tặng App 1 máy):
-                    </label>
-                    <select id="courseCheckoutTargetSelect" onchange="onChangeCourseCheckoutTarget(this.value)" class="w-full px-3 py-2 rounded-lg bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 text-xs font-bold text-slate-900 dark:text-white outline-none focus:border-[#0D1677] cursor-pointer">
-                        ${optionsHtml}
-                    </select>
+
+                    <!-- Custom Interactive Combobox Trigger (Identical to 1. Trường Đại Học) -->
+                    <div id="courseTargetSelectedDisplay" onclick="toggleCourseTargetDropdown(event)" class="w-full bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/15 hover:border-sky-400 dark:hover:border-sky-500 rounded-xl px-3 py-2.5 text-xs font-semibold text-slate-800 dark:text-slate-100 transition cursor-pointer flex items-center justify-between shadow-sm">
+                        <div class="flex items-center gap-2 min-w-0 flex-1 pr-2">
+                            <div class="w-6 h-6 rounded border p-0.5 shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0 ${chosenMeta.colorClass}">
+                                ${chosenMeta.svg}
+                            </div>
+                            <span class="px-1.5 py-0.5 bg-slate-200 dark:bg-white/15 text-slate-900 dark:text-white font-mono font-bold text-[10px] rounded flex-shrink-0">
+                                ${chosenMeta.badge}
+                            </span>
+                            <span class="truncate text-xs font-bold text-slate-800 dark:text-white">${chosenMeta.cleanTitle}</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 flex-shrink-0 text-slate-400">
+                            <span class="text-[10px] font-bold text-[#0D1677] dark:text-amber-300 bg-blue-50 dark:bg-white/10 px-1.5 py-0.5 rounded border border-blue-200 dark:border-white/15">Đổi</span>
+                            <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform">▼</span>
+                        </div>
+                    </div>
+
+                    <!-- Searchable Dropdown Menu (Identical to 1. Trường Đại Học) -->
+                    <div id="courseTargetDropdownMenu" class="hidden mt-1.5 bg-white dark:bg-[#060E2C] border-2 border-sky-400 dark:border-sky-600 rounded-2xl shadow-2xl z-50 overflow-hidden">
+                        <div class="p-2 border-b border-slate-100 dark:border-white/10 bg-slate-50 dark:bg-[#0A143D]">
+                            <input type="text" id="courseTargetFilterInput" oninput="filterCourseTargetList(this.value)" onclick="event.stopPropagation()" placeholder="Gõ mã môn (Toán 12, Lý 12, HSA, TSA...) hoặc tên thầy cô..." class="w-full bg-white dark:bg-[#03081E] border-2 border-[#0D1677] dark:border-sky-500 rounded-xl px-3 py-2 text-xs text-slate-800 dark:text-slate-100 outline-none shadow-inner">
+                        </div>
+                        <div id="courseTargetOptionsList" class="max-h-56 overflow-y-auto p-1 divide-y divide-slate-100 dark:divide-white/5 text-xs">
+                            ${renderCourseTargetOptionsHtml(activeList, chosen.id)}
+                        </div>
+                    </div>
                 </div>
             `;
         } else {

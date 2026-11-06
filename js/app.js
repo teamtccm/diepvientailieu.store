@@ -2699,19 +2699,16 @@ let pendingWebCoverCourseId = null;
 
 
 const WEB_COURSE_TAB_LABELS = {
-
-    "all": "Tất cả",
-
-    "lop12_2k9": "Lớp 12 (2K9)",
-
-    "lop11_2k10": "Lớp 11 (2K10)",
-
+    "all": "Tất cả (82+ Khóa)",
+    "ngoai_ngu_khxh": "Văn · Sử · Địa · Anh · Trung",
+    "khtn_toan_ly_hoa_sinh": "Toán · Lý · Hóa · Sinh",
+    "tin_hoc_mos_dai_hoc": "Tin MOS · Kinh Tế Lượng · ĐH",
+    "nghe_thuat_am_nhac": "Guitar · Piano · Nghệ Thuật",
     "dgnl_hsa": "ĐGNL HSA",
-
     "dgtd_tsa": "ĐGTD TSA",
-
-    "dgnl_vact_bca": "V-ACT / BCA / QDA / VSAT"
-
+    "dgnl_vact_bca": "V-ACT · BCA · QDA · VSAT",
+    "lop12_2k9": "Lớp 12 (2K9)",
+    "lop11_2k10": "Lớp 11 (2K10)"
 };
 
 
@@ -3007,7 +3004,7 @@ function renderCourses() {
 
         if (activeCourseCategory !== "all") {
 
-            const matchCat = (c.category === activeCourseCategory) || (c.subCategory === activeCourseCategory);
+            const matchCat = (c.category === activeCourseCategory) || (c.subCategory === activeCourseCategory) || (Array.isArray(c.categories) && c.categories.includes(activeCourseCategory));
 
             if (!matchCat) return false;
 
@@ -3015,7 +3012,7 @@ function renderCourses() {
 
         if (searchQ) {
 
-            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
+            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.categoryLabel || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
 
             const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
 
@@ -3061,7 +3058,7 @@ function renderCourses() {
 
                 <button onclick="filterCoursesByCategory('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
 
-                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg> Xem Toàn Bộ 50 Khóa Học</span>
+                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg> Xem Toàn Bộ 82 Khóa Học Đa Môn</span>
 
                 </button>
 
@@ -3132,7 +3129,37 @@ function getCourseVisualMeta(c) {
     let colorClass = "text-[#0D1677] bg-blue-50 border-blue-200";
     let svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>';
 
-    if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) {
+    if (text.includes("tiếng trung") || text.includes("hán ngữ") || text.includes("hsk") || text.includes("yangdexin") || text.includes("d04")) {
+        badge = "TIẾNG TRUNG";
+        colorClass = "text-red-700 bg-red-50 border-red-200";
+    } else if (text.includes("lịch sử") || text.includes("lichsu")) {
+        badge = "LỊCH SỬ";
+        colorClass = "text-amber-800 bg-amber-50 border-amber-200";
+    } else if (text.includes("địa lý") || text.includes("địa lí") || text.includes("dialy")) {
+        badge = "ĐỊA LÝ";
+        colorClass = "text-teal-700 bg-teal-50 border-teal-200";
+    } else if (text.includes("ngữ văn") || text.includes("nguvan") || text.includes("văn học")) {
+        badge = "NGỮ VĂN";
+        colorClass = "text-rose-700 bg-rose-50 border-rose-200";
+    } else if (text.includes("sinh học") || text.includes("sinh12")) {
+        badge = "SINH HỌC";
+        colorClass = "text-emerald-700 bg-emerald-50 border-emerald-200";
+    } else if (text.includes("kinh tế lượng") || text.includes("eviews") || text.includes("stata") || text.includes("spss")) {
+        badge = "KINH TẾ LƯỢNG";
+        colorClass = "text-indigo-700 bg-indigo-50 border-indigo-200";
+    } else if (text.includes("triết học") || text.includes("mác - lênin")) {
+        badge = "TRIẾT HỌC";
+        colorClass = "text-purple-700 bg-purple-50 border-purple-200";
+    } else if (text.includes("nghiên cứu khoa học") || text.includes("tiểu luận") || text.includes("apa 7") || text.includes("xác suất")) {
+        badge = "ĐẠI HỌC · BTL";
+        colorClass = "text-blue-800 bg-blue-50 border-blue-200";
+    } else if (text.includes("guitar") || text.includes("piano") || text.includes("thanh nhạc") || text.includes("ukulele") || text.includes("sáo trúc") || text.includes("dj") || text.includes("nhảy") || text.includes("nghệ thuật")) {
+        badge = "NGHỆ THUẬT";
+        colorClass = "text-pink-700 bg-pink-50 border-pink-200";
+    } else if (text.includes("mos") || text.includes("excel") || text.includes("word") || text.includes("powerpoint") || text.includes("access") || text.includes("google sheets") || text.includes("văn phòng")) {
+        badge = "MOS · THVP";
+        colorClass = "text-sky-700 bg-sky-50 border-sky-200";
+    } else if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) {
         badge = "TOÁN 12";
         colorClass = "text-blue-700 bg-blue-50 border-blue-200";
         svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>';

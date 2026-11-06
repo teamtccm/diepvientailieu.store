@@ -1847,84 +1847,72 @@ function goToDocPaymentStep(e) {
 }
 
 let docPollingInterval = null;
+let isDocVerifyInFlight = false;
+
+function buildDocVerifyUrl(orderCode, email) {
+    const cleanCode = String(orderCode || "").trim().split(" ")[0];
+    const cust = typeof getSyncedCustomerLocal === "function" ? (getSyncedCustomerLocal() || {}) : {};
+    const nameVal = (document.getElementById("checkoutNameInput")?.value || cust.name || "Khách Hàng").trim();
+    const phoneVal = (document.getElementById("checkoutPhoneInput")?.value || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const emailVal = (email || document.getElementById("checkoutEmailInput")?.value || cust.email || "").trim().toLowerCase();
+    const skuVal = state.selectedDoc?.code || "";
+    const itemNameVal = state.selectedDoc?.name || "";
+    const amountVal = String(state.selectedDoc?.price || 50000);
+    const driveIdVal = state.selectedDoc?.driveId || "";
+    const devVal = typeof getWebDeviceId === "function" ? getWebDeviceId() : "";
+    const params = new URLSearchParams({
+        action: "verify",
+        orderId: cleanCode,
+        orderType: "Mua File",
+        email: emailVal,
+        name: nameVal,
+        phone: phoneVal,
+        sku: skuVal,
+        itemName: itemNameVal,
+        amount: amountVal,
+        driveId: driveIdVal,
+        deviceId: devVal
+    });
+    return `${state.webhookUrl}?${params.toString()}`;
+}
 
 function startDocPaymentPolling(orderCode, email) {
     if (docPollingInterval) clearInterval(docPollingInterval);
+    isDocVerifyInFlight = false;
     let elapsed = 0;
     const timerEl = document.getElementById("docPaymentTimer");
 
-    setTimeout(() => checkDocPaymentStatus(orderCode, email), 1500);
+    setTimeout(() => checkDocPaymentStatus(orderCode, email, false), 1500);
 
     docPollingInterval = setInterval(() => {
-        elapsed += 5;
+        elapsed += 4;
         const mins = Math.floor(elapsed / 60);
         const secs = elapsed % 60;
         if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
-        checkDocPaymentStatus(orderCode, email);
-    }, 5000);
+        checkDocPaymentStatus(orderCode, email, false);
+    }, 4000);
 }
 
-async function checkDocPaymentStatus(orderCode, email) {
+async function checkDocPaymentStatus(orderCode, email, isManual = false) {
     if (!state.webhookUrl || !orderCode) return;
+    if (!isManual && isDocVerifyInFlight) return;
+    isDocVerifyInFlight = true;
     try {
         const cleanCode = String(orderCode).trim().split(" ")[0];
-        const driveIdParam = encodeURIComponent(state.selectedDoc?.driveId || "");
-        const emailParam = encodeURIComponent(email || "");
-        const devParam = encodeURIComponent(typeof getWebDeviceId === "function" ? getWebDeviceId() : "");
-        const verifyUrl = `${state.webhookUrl}?action=verify&orderId=${encodeURIComponent(cleanCode)}&email=${emailParam}&driveId=${driveIdParam}&deviceId=${devParam}`;
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = buildDocVerifyUrl(cleanCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
             onDocPaymentConfirmed(cleanCode, email || data.email || "", data.driveUrl || "");
+            return true;
         }
-    } catch(e) {
+    } catch (e) {
         // Silently retry on next interval
+    } finally {
+        isDocVerifyInFlight = false;
     }
+    return false;
 }
-
-
-
-function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
-
-    if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
-
-    
-
-    // Switch to Step 3 (Success)
-
-    document.getElementById("docCheckoutStep2").classList.add("hidden");
-
-    document.getElementById("docCheckoutStep3").classList.remove("hidden");
-
-    document.getElementById("docSuccessOrderId").textContent = orderCode;
-
-    document.getElementById("docSuccessEmail").textContent = email;
-
-
-
-    const driveBtn = document.getElementById("docSuccessDriveBtn");
-
-    const fallbackUrl = driveUrl || (state.selectedDoc?.driveId ? (state.selectedDoc?.driveType === "folder" ? `https://drive.google.com/drive/folders/${state.selectedDoc.driveId}` : `https://drive.google.com/file/d/${state.selectedDoc.driveId}/view`) : "");
-
-    if (driveBtn) {
-
-        if (fallbackUrl) {
-
-            driveBtn.href = fallbackUrl;
-
-            driveBtn.classList.remove("hidden");
-
-        } else {
-
-            driveBtn.classList.add("hidden");
-
-        }
-
-    }
-
-}
-
-
 
 async function confirmDocManualPayment() {
     const orderCode = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
@@ -1936,9 +1924,8 @@ async function confirmDocManualPayment() {
     }
     if (!state.webhookUrl || !orderCode) return;
     try {
-        const driveIdParam = encodeURIComponent(state.selectedDoc?.driveId || "");
-        const verifyUrl = `${state.webhookUrl}?action=verify&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email)}&driveId=${driveIdParam}&deviceId=${encodeURIComponent(getWebDeviceId())}`;
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = buildDocVerifyUrl(orderCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
             onDocPaymentConfirmed(orderCode, email || data.email || "", data.driveUrl || "");
@@ -2323,7 +2310,6 @@ function dismissLiveProofToast() {
 
 async function sendWebhookData(payload) {
     if (!state.webhookUrl || state.webhookUrl.includes("SAMPLE_WEBHOOK_URL")) {
-        console.log("Mock Webhook Dispatch:", payload);
         return { status: "MOCK_SUCCESS", message: "Đã lưu vào bộ nhớ cục bộ" };
     }
     try {
@@ -2335,6 +2321,24 @@ async function sendWebhookData(payload) {
         });
         return await res.json().catch(() => ({ ok: true }));
     } catch (e) {
+        try {
+            if (payload && payload.action === "createOrder") {
+                const q = new URLSearchParams({
+                    action: "createOrder",
+                    orderCode: payload.orderCode || payload.orderId || "",
+                    orderType: payload.orderType || "Mua File",
+                    name: payload.name || "Khách Hàng",
+                    email: payload.email || "",
+                    phone: payload.phone || "",
+                    deviceId: payload.deviceId || "",
+                    sku: payload.sku || "",
+                    itemName: payload.itemName || "",
+                    amount: String(payload.amount || payload.price || 50000),
+                    driveId: payload.driveId || ""
+                });
+                fetch(`${state.webhookUrl}?${q.toString()}`, { method: "GET", mode: "no-cors" }).catch(() => {});
+            }
+        } catch (_) {}
         return fetch(state.webhookUrl, {
             method: "POST",
             mode: "no-cors",
@@ -2422,59 +2426,7 @@ function renderRecentOrdersTicker() {
 
 
 
-function openSuccessModal(type, orderData) {
-
-    const modal = document.getElementById("successModal");
-
-    if (!modal) return;
-
-    
-
-    const title = document.getElementById("successModalTitle");
-
-    const desc = document.getElementById("successModalDesc");
-
-    const orderId = document.getElementById("successOrderId");
-
-    const customerMail = document.getElementById("successCustomerEmail");
-
-    
-
-    if (orderId) orderId.textContent = orderData.orderId;
-
-    if (customerMail) customerMail.textContent = orderData.customer.email;
-
-    
-
-    if (type === "DOC") {
-
-        if (title) title.textContent = "Gửi Đơn Thành Công!";
-
-        if (desc) desc.textContent = "Hệ thống đã ghi nhận mã đơn của bạn và phân quyền Google Drive vào Gmail!";
-
-    } else {
-
-        if (title) title.textContent = "Đã Ghi Nhận Đơn Hàng!";
-
-        if (desc) desc.textContent = "Hồ sơ đề bài của bạn đã được chuyển tới Nhân viên học thuật. Nhân viên sẽ liên hệ Zalo & gửi email xác nhận trong vòng 15-30 phút!";
-
-    }
-
-    
-
-    modal.classList.remove("hidden");
-
-}
-
-
-
-function closeSuccessModal() {
-
-    const modal = document.getElementById("successModal");
-
-    if (modal) modal.classList.add("hidden");
-
-}
+// openSuccessModal & closeSuccessModal defined in Section 10 with live VietQR polling
 
 
 
@@ -3617,6 +3569,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
         itemName: course.title,
         price: course.price,
         amount: course.price,
+        driveId: course.driveFolderId || "",
         name: name,
         phone: phoneWithDeviceLock,
         email: email,
@@ -3626,9 +3579,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
         timestamp: new Date().toISOString()
     };
 
-    if (state.webhookUrl) {
-        fetch(state.webhookUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) }).catch(() => {});
-    }
+    try { sendWebhookData(payload); } catch (e) {}
     state.orderHistory.unshift(payload);
     localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
 
@@ -3639,32 +3590,64 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
 }
 
 let coursePollingInterval = null;
+let isCourseVerifyInFlight = false;
+
+function buildCourseVerifyUrl(orderCode, email) {
+    const cleanCode = String(orderCode || "").trim().split(" ")[0];
+    const course = selectedCourseForCheckout || (typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE[0] : {}) || {};
+    const cust = typeof getSyncedCustomerLocal === "function" ? (getSyncedCustomerLocal() || {}) : {};
+    const nameVal = (document.getElementById("courseStudentName")?.value || cust.name || "Học Viên Điệp Viên").trim();
+    const phoneVal = (document.getElementById("courseStudentPhone")?.value || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const emailVal = (email || document.getElementById("courseStudentEmail")?.value || cust.email || "").trim().toLowerCase();
+    const params = new URLSearchParams({
+        action: "verify",
+        orderId: cleanCode,
+        orderType: "Khóa Học",
+        email: emailVal,
+        name: nameVal,
+        phone: phoneVal,
+        sku: course.id || "",
+        itemName: course.title || "",
+        amount: String(course.price || 199000),
+        driveId: course.driveFolderId || "",
+        deviceId: typeof getWebDeviceId === "function" ? getWebDeviceId() : ""
+    });
+    return `${state.webhookUrl}?${params.toString()}`;
+}
 
 function startCoursePaymentPolling(orderCode, courseTitle, email) {
     if (coursePollingInterval) clearInterval(coursePollingInterval);
+    isCourseVerifyInFlight = false;
     let elapsed = 0;
     const timerEl = document.getElementById("coursePaymentTimer");
 
+    setTimeout(() => checkCoursePaymentStatus(orderCode, courseTitle, email, false), 1500);
+
     coursePollingInterval = setInterval(() => {
-        elapsed += 5;
+        elapsed += 4;
         const mins = Math.floor(elapsed / 60);
         const secs = elapsed % 60;
         if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
 
-        checkCoursePaymentStatus(orderCode, courseTitle, email);
-    }, 5000);
+        checkCoursePaymentStatus(orderCode, courseTitle, email, false);
+    }, 4000);
 }
 
-async function checkCoursePaymentStatus(orderCode, courseTitle, email) {
-    if (!state.webhookUrl) return;
+async function checkCoursePaymentStatus(orderCode, courseTitle, email, isManual = false) {
+    if (!state.webhookUrl || !orderCode) return;
+    if (!isManual && isCourseVerifyInFlight) return;
+    isCourseVerifyInFlight = true;
     try {
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode) + "&deviceId=" + encodeURIComponent(getWebDeviceId());
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = buildCourseVerifyUrl(orderCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
-            onCoursePaymentConfirmed(orderCode, courseTitle, email);
+            onCoursePaymentConfirmed(orderCode, courseTitle, email || data.email || "");
         }
-    } catch(e) {}
+    } catch (e) {
+    } finally {
+        isCourseVerifyInFlight = false;
+    }
 }
 
 function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
@@ -4233,20 +4216,20 @@ async function verifyCourseBankPaymentNow() {
     const orderCode = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
     const email = document.getElementById("courseStudentEmail")?.value.trim() || getSyncedCustomerLocal()?.email || "";
     const statusText = document.getElementById("courseWaitingStatusText");
-    if (statusText) statusText.textContent = "Đang đối soát Email biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+    if (statusText) statusText.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa cho mã #" + orderCode + "...";
     if (!state.webhookUrl || !orderCode) return;
     try {
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = buildCourseVerifyUrl(orderCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
-        if (data && data.verified === true) {
-            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email);
+        if (data && (data.verified === true || data.paid === true)) {
+            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email || data.email || "");
         } else if (statusText) {
-            statusText.textContent = "Chưa nhận được Email biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng hoàn tất chuyển khoản!";
+            statusText.textContent = "⚠️ Chưa nhận được Email biến động số dư ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động mở khóa ngay khi tiền về!";
         }
     } catch (e) {
         if (statusText) {
-            statusText.textContent = "Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Hệ thống đang tiếp tục quét tự động...";
+            statusText.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
         }
     }
 }
@@ -4399,6 +4382,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
 
 let servicePollingInterval = null;
 let currentServiceOrderData = null;
+let isServiceVerifyInFlight = false;
 
 function closeSuccessModal() {
     if (servicePollingInterval) {
@@ -4475,13 +4459,15 @@ function startServicePaymentPolling(orderCode, email) {
 
 async function checkServicePaymentStatus(orderCode, email, isManual = false) {
     if (!state.webhookUrl || !orderCode) return;
+    if (!isManual && isServiceVerifyInFlight) return;
+    isServiceVerifyInFlight = true;
     const stEl = document.getElementById("serviceVerifyStatusText");
     if (isManual && stEl) {
         stEl.textContent = "⏳ Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
     }
     try {
-        const verifyUrl = `${state.webhookUrl}?action=verify&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}`;
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = `${state.webhookUrl}?action=verify&orderType=btl&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}`;
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
             if (servicePollingInterval && data.btlDelivered === true) {
@@ -4551,9 +4537,42 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
         }
     } catch (e) {
         if (isManual && stEl) {
-            stEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB. Vui lòng thử lại sau vài giây!";
+            stEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ACB. Hệ thống vẫn đang quét tự động mỗi 5 giây...";
         }
+    } finally {
+        isServiceVerifyInFlight = false;
     }
+}
+
+// Tự động kiểm tra thanh toán ngay lập tức khi khách hàng chuyển từ App Ngân Hàng quay lại trình duyệt
+if (typeof window !== "undefined") {
+    const triggerActivePaymentChecksOnFocus = () => {
+        try {
+            const docStep2 = document.getElementById("docCheckoutStep2");
+            if (docStep2 && !docStep2.classList.contains("hidden")) {
+                const ord = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
+                const em = (document.getElementById("checkoutEmailInput")?.value || "").trim().toLowerCase();
+                if (ord) checkDocPaymentStatus(ord, em, false);
+            }
+            const courseStep2 = document.getElementById("courseCheckoutStep2");
+            if (courseStep2 && !courseStep2.classList.contains("hidden") && selectedCourseForCheckout) {
+                const noteEl = document.getElementById("courseTransferNote");
+                const ord = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
+                const em = (document.getElementById("courseStudentEmail")?.value || "").trim().toLowerCase();
+                if (ord) checkCoursePaymentStatus(ord, selectedCourseForCheckout.title, em, false);
+            }
+            const srvModal = document.getElementById("successModal");
+            if (srvModal && !srvModal.classList.contains("hidden") && servicePollingInterval) {
+                const ord = (document.getElementById("successOrderId")?.textContent || "").trim().split(" ")[0];
+                const em = (document.getElementById("successCustomerEmail")?.textContent || "").trim().toLowerCase();
+                if (ord) checkServicePaymentStatus(ord, em, false);
+            }
+        } catch (_) {}
+    };
+    window.addEventListener("focus", triggerActivePaymentChecksOnFocus);
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") triggerActivePaymentChecksOnFocus();
+    });
 }
 
 function startDirectFileDownload(hrefUrl, downloadFilename = "Cài Đặt App Điệp Viên Study (Windows).exe") {

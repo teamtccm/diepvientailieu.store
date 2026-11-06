@@ -3989,9 +3989,9 @@ function doPost(e) {
 
     <!-- Scripts with cache busting query string -->
 
-    <script src="js/data.js?v=10.96"></script>
+    <script src="js/data.js?v=1793932365"></script>
 
-    <script src="js/app.js?v=10.96"></script>
+    <script src="js/app.js?v=1793932365"></script>
 
     <script>
 
@@ -4128,7 +4128,7 @@ function doPost(e) {
          MODAL: APP DIEP VIEN STUDY (CẮT NHỎ TÍNH NĂNG VỪA NHÌN, ÍT CHỮ + ĐIỀN TÊN ĐĂNG NHẬP & EMAIL + LOGO WINDOWS & APPLE)
          ================================================================ -->
     <div id="appDownloadOtpModal" itemscope itemtype="https://schema.org/SoftwareApplication" class="fixed inset-0 z-[105] hidden items-center justify-center p-3 sm:p-4 bg-slate-950/85 backdrop-blur-sm" onclick="if(event.target===this)closeAppDownloadModal()">
-        <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-xl w-full p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-white/10 relative max-h-[94vh] overflow-y-auto" onclick="event.stopPropagation()">
+        <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-2xl w-full p-4 sm:p-5 shadow-2xl border border-slate-200 dark:border-white/10 relative max-h-[94vh] overflow-y-auto" onclick="event.stopPropagation()">
             <button onclick="closeAppDownloadModal()" class="absolute top-3.5 right-3.5 w-7 h-7 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition z-10 text-xs">✕</button>
 
             <!-- 1. Compact Brand Header (Minimal Text, SEO Schema) -->
@@ -4149,96 +4149,192 @@ function doPost(e) {
                 </div>
             </div>
 
-            <!-- 2. 4 Native Web-Styled Feature Illustration Cards (2x2 Grid, Crisp, Zero Blurry Screenshots) -->
-            <div class="grid grid-cols-2 gap-2.5 mb-3.5">
-                <!-- Card 1: 50+ Khóa Học Ôn Thi -->
+            <!-- 2. 4 Bento Mini-UI Visual Illustration Cards (Inspired by Notion / Linear / Quizlet — Clear Visual Mockups) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3.5">
+                <!-- Card 1: 50+ Khóa Học Ôn Thi (Mini Video Player + Lesson Checklist Illustration) -->
                 <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white dark:bg-[#060E2C] shadow-sm flex flex-col">
-                    <div class="p-3 bg-gradient-to-br from-[#0B1958] via-[#0D1677] to-[#1E3A8A] text-white flex flex-col justify-between min-h-[88px] relative overflow-hidden">
-                        <div class="flex items-center justify-between gap-1.5 z-10">
-                            <span class="w-7 h-7 rounded-lg bg-white/15 border border-white/25 flex items-center justify-center text-amber-300">
-                                <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>
-                            </span>
-                            <span class="px-2 py-0.5 rounded-full bg-[#FFA000] text-slate-950 font-black text-[9px] uppercase tracking-wider shadow-sm">
-                                Video + PDF
-                            </span>
+                    <div class="p-2.5 bg-gradient-to-br from-[#EEF2FF] via-[#F8FAFC] to-[#DBEAFE] dark:from-[#0B1958] dark:to-[#060E2C] border-b border-slate-200/80 dark:border-white/10 flex items-stretch gap-2 h-[116px]">
+                        <!-- Left: Mini Video Lecture Screen -->
+                        <div class="w-[55%] rounded-xl bg-gradient-to-br from-[#0B1958] to-[#1E3A8A] p-2.5 text-white shadow-md flex flex-col justify-between relative overflow-hidden border border-blue-400/30">
+                            <div class="flex items-center justify-between gap-1 text-[8.5px] font-bold">
+                                <span class="px-1.5 py-0.5 rounded bg-rose-500 text-white font-black uppercase whitespace-nowrap">● LIVE HD</span>
+                                <span class="text-sky-200 whitespace-nowrap">Toán · Lý · HSA</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2 my-auto">
+                                <div class="min-w-0">
+                                    <div class="text-[10.5px] font-mono font-black text-amber-300 whitespace-nowrap">∫ f(x)dx = F(x)</div>
+                                    <div class="text-[8.5px] font-semibold text-sky-200 whitespace-nowrap">Thầy Đỗ Văn Đức</div>
+                                </div>
+                                <div class="w-7 h-7 rounded-full bg-[#FFA000] text-slate-950 flex items-center justify-center shadow-md shrink-0">
+                                    <svg class="w-3.5 h-3.5 ml-0.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="w-full h-1.5 rounded-full bg-white/20 overflow-hidden">
+                                    <div class="w-2/3 h-full bg-[#FFA000] rounded-full"></div>
+                                </div>
+                                <div class="flex justify-between text-[7.5px] text-sky-200 font-mono">
+                                    <span>32:15 / 45:00</span>
+                                    <span>1080p</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex flex-wrap gap-1 mt-2 z-10">
-                            <span class="px-1.5 py-0.5 rounded bg-white/15 border border-white/20 text-[9.5px] font-bold text-sky-100">2K9 · 2K10</span>
-                            <span class="px-1.5 py-0.5 rounded bg-white/15 border border-white/20 text-[9.5px] font-bold text-amber-200">HSA · TSA</span>
-                            <span class="px-1.5 py-0.5 rounded bg-white/15 border border-white/20 text-[9.5px] font-bold text-emerald-200">V-ACT · BCA</span>
+                        <!-- Right: Mini Lesson Playlist -->
+                        <div class="flex-1 rounded-xl bg-white dark:bg-[#0A143D] border border-slate-200 dark:border-white/15 p-2 shadow-sm flex flex-col justify-between text-[8.5px]">
+                            <div class="font-black text-slate-800 dark:text-white uppercase text-[8px] border-b border-slate-100 dark:border-white/10 pb-0.5 whitespace-nowrap">Lộ trình bài giảng</div>
+                            <div class="flex items-center gap-1 px-1.5 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-bold whitespace-nowrap">
+                                <span class="text-emerald-600 font-black">✓</span>
+                                <span>1. Nền tảng 9+</span>
+                            </div>
+                            <div class="flex items-center gap-1 px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/80 text-[#0D1677] dark:text-sky-300 font-extrabold border border-blue-200 dark:border-blue-800 whitespace-nowrap">
+                                <span>▶</span>
+                                <span>2. Luyện đề HSA</span>
+                            </div>
+                            <div class="flex items-center gap-1 px-1.5 py-0.5 rounded bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 font-bold whitespace-nowrap">
+                                <span class="font-black">PDF</span>
+                                <span>3. Giải chi tiết</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="px-3 py-2 flex items-center justify-between gap-1.5 bg-slate-50 dark:bg-[#0A143D]">
-                        <span class="text-[11.5px] font-black text-[#0D1677] dark:text-amber-400 truncate">50+ Khóa Học Ôn Thi</span>
-                        <span class="text-[9.5px] font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-1.5 py-0.5 rounded">Full 2027</span>
+                    <div class="px-3 py-2 flex items-center justify-between gap-2 bg-white dark:bg-[#0A143D]">
+                        <div class="min-w-0">
+                            <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">50+ Khóa Học Ôn Thi</div>
+                            <div class="text-[10px] text-slate-500 dark:text-slate-300 whitespace-nowrap">2K9 · 2K10 · ĐGNL HSA · ĐGTD TSA · V-ACT</div>
+                        </div>
+                        <span class="text-[9.5px] font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full shrink-0">Video + PDF</span>
                     </div>
                 </div>
 
-                <!-- Card 2: 600+ Đề Cương Đại Học -->
+                <!-- Card 2: 600+ Đề Cương Đại Học (Stacked A4 Exam Sheet + University Logos + Auto Drive Unlock) -->
                 <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white dark:bg-[#060E2C] shadow-sm flex flex-col">
-                    <div class="p-3 bg-gradient-to-br from-[#071135] via-[#0B1958] to-[#0D1677] text-white flex flex-col justify-between min-h-[88px] relative overflow-hidden">
-                        <div class="flex items-center justify-between gap-1.5 z-10">
-                            <span class="w-7 h-7 rounded-lg bg-white/15 border border-white/25 flex items-center justify-center text-amber-300">
-                                <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg>
-                            </span>
-                            <span class="px-2 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-black text-[9px] uppercase tracking-wider shadow-sm">
-                                Drive Tự Động
-                            </span>
+                    <div class="p-2.5 bg-gradient-to-br from-[#F0FDF4] via-[#F8FAFC] to-[#DBEAFE] dark:from-[#071135] dark:to-[#060E2C] border-b border-slate-200/80 dark:border-white/10 flex items-stretch gap-2 h-[116px]">
+                        <!-- Left: Mini A4 Exam Outline Document -->
+                        <div class="w-[58%] rounded-xl bg-white dark:bg-[#0A143D] border border-slate-200 dark:border-white/15 p-2 shadow-md flex flex-col justify-between relative">
+                            <div class="flex items-center justify-between gap-1">
+                                <div class="flex items-center gap-1">
+                                    <img src="images/logos/neu.png" alt="NEU" class="w-4 h-4 rounded bg-white border border-slate-200 object-contain">
+                                    <img src="images/logos/bkhn.png" alt="BKHN" class="w-4 h-4 rounded bg-white border border-slate-200 object-contain">
+                                    <img src="images/logos/ftu.png" alt="FTU" class="w-4 h-4 rounded bg-white border border-slate-200 object-contain">
+                                </div>
+                                <span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 font-black text-[8px] whitespace-nowrap">★ 5.0 CHUẨN THI</span>
+                            </div>
+                            <div class="space-y-1 my-auto">
+                                <div class="text-[9.5px] font-black text-[#0D1677] dark:text-white leading-tight whitespace-nowrap">ĐỀ CƯƠNG ÔN THI ĐẠI HỌC</div>
+                                <div class="h-1.5 w-11/12 rounded bg-amber-200/90"></div>
+                                <div class="h-1.5 w-3/4 rounded bg-slate-200 dark:bg-white/20"></div>
+                            </div>
+                            <div class="flex items-center justify-between text-[8px] font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 px-1.5 py-0.5 rounded whitespace-nowrap">
+                                <span>✓ Có Đáp Án &amp; Lời Giải</span>
+                                <span>A4</span>
+                            </div>
                         </div>
-                        <div class="flex flex-wrap gap-1 mt-2 z-10">
-                            <span class="px-1.5 py-0.5 rounded bg-white/15 border border-white/20 text-[9.5px] font-bold text-amber-200">NEU · FTU</span>
-                            <span class="px-1.5 py-0.5 rounded bg-white/15 border border-white/20 text-[9.5px] font-bold text-sky-100">BKHN · TMU</span>
-                            <span class="px-1.5 py-0.5 rounded bg-white/15 border border-white/20 text-[9.5px] font-bold text-emerald-200">AOF · UEH</span>
+                        <!-- Right: Auto Google Drive Unlock Badge -->
+                        <div class="flex-1 rounded-xl bg-gradient-to-br from-[#0D1677] to-[#1E40AF] text-white p-2 shadow-md flex flex-col items-center justify-between text-center">
+                            <div class="w-7 h-7 rounded-lg bg-white/15 border border-white/25 flex items-center justify-center text-emerald-300">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><path d="m9 14 2 2 4-4"/></svg>
+                            </div>
+                            <div class="text-[9px] font-black leading-tight text-white">Mở Khóa Drive Tự Động</div>
+                            <span class="px-2 py-0.5 rounded bg-[#FFA000] text-slate-950 font-black text-[8px] uppercase whitespace-nowrap">60+ Trường ĐH</span>
                         </div>
                     </div>
-                    <div class="px-3 py-2 flex items-center justify-between gap-1.5 bg-slate-50 dark:bg-[#0A143D]">
-                        <span class="text-[11.5px] font-black text-[#0D1677] dark:text-amber-400 truncate">600+ Đề Cương Đại Học</span>
-                        <span class="text-[9.5px] font-extrabold text-amber-800 dark:text-amber-300 bg-amber-100 dark:bg-amber-950/60 px-1.5 py-0.5 rounded">50K / Bộ</span>
+                    <div class="px-3 py-2 flex items-center justify-between gap-2 bg-white dark:bg-[#0A143D]">
+                        <div class="min-w-0">
+                            <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">600+ Đề Cương Đại Học</div>
+                            <div class="text-[10px] text-slate-500 dark:text-slate-300 whitespace-nowrap">NEU · FTU · BKHN · TMU · AOF · UEH · USSH</div>
+                        </div>
+                        <span class="text-[9.5px] font-extrabold text-amber-900 dark:text-amber-300 bg-amber-100 dark:bg-amber-950/60 px-2 py-0.5 rounded-full shrink-0">50K / Bộ</span>
                     </div>
                 </div>
 
-                <!-- Card 3: Ghi Âm & Tóm Tắt AI -->
+                <!-- Card 3: Ghi Âm & Tóm Tắt AI (Live Audio Waveform Equalizer -> AI Summary Note Illustration) -->
                 <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white dark:bg-[#060E2C] shadow-sm flex flex-col">
-                    <div class="p-3 bg-gradient-to-br from-[#0D1677] via-[#1E3A8A] to-[#0F172A] text-white flex flex-col justify-between min-h-[88px] relative overflow-hidden">
-                        <div class="flex items-center justify-between gap-1.5 z-10">
-                            <span class="w-7 h-7 rounded-lg bg-white/15 border border-white/25 flex items-center justify-center text-sky-300">
-                                <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
-                            </span>
-                            <span class="px-2 py-0.5 rounded-full bg-sky-300 text-slate-950 font-black text-[9px] uppercase tracking-wider shadow-sm">
-                                Trợ Lý AI
-                            </span>
+                    <div class="p-2.5 bg-gradient-to-br from-[#EFF6FF] via-[#F8FAFC] to-[#E0E7FF] dark:from-[#0D1677] dark:to-[#060E2C] border-b border-slate-200/80 dark:border-white/10 flex items-center gap-1.5 h-[116px]">
+                        <!-- Left: Live Voice Waveform Box -->
+                        <div class="w-[41%] h-full rounded-xl bg-[#0B1958] text-white p-2 shadow-md flex flex-col justify-between border border-blue-400/30">
+                            <div class="flex items-center justify-between text-[8px] font-bold">
+                                <span class="text-rose-400 font-black flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>REC</span>
+                                <span class="font-mono text-sky-200">45:12</span>
+                            </div>
+                            <!-- SVG Multi-Bar Waveform -->
+                            <div class="flex items-end justify-between gap-0.5 h-8 px-0.5 my-auto">
+                                <span class="w-1 bg-sky-400 rounded-full h-3"></span>
+                                <span class="w-1 bg-amber-400 rounded-full h-6"></span>
+                                <span class="w-1 bg-sky-300 rounded-full h-8"></span>
+                                <span class="w-1 bg-amber-400 rounded-full h-5"></span>
+                                <span class="w-1 bg-emerald-400 rounded-full h-7"></span>
+                                <span class="w-1 bg-sky-400 rounded-full h-4"></span>
+                                <span class="w-1 bg-amber-300 rounded-full h-8"></span>
+                                <span class="w-1 bg-sky-300 rounded-full h-5"></span>
+                                <span class="w-1 bg-emerald-400 rounded-full h-3"></span>
+                            </div>
+                            <div class="text-[8px] text-center text-sky-200 font-semibold whitespace-nowrap">Thu âm bài giảng</div>
                         </div>
-                        <div class="flex items-center gap-1.5 mt-2 z-10 bg-white/10 border border-white/15 rounded-lg px-2 py-1">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                            <span class="text-[9.5px] font-bold text-slate-100 truncate">Gỡ băng bài giảng · Tóm tắt ý chính</span>
+                        <!-- Center Arrow -->
+                        <div class="px-1.5 py-0.5 rounded-full bg-[#FFA000] text-slate-950 font-black text-[8px] shadow shrink-0 whitespace-nowrap">
+                            AI ➔
+                        </div>
+                        <!-- Right: AI Structured Note Card -->
+                        <div class="flex-1 h-full rounded-xl bg-white dark:bg-[#0A143D] border border-blue-200 dark:border-white/15 p-2 shadow-md flex flex-col justify-between text-[8.5px]">
+                            <div class="font-black text-[#0D1677] dark:text-amber-300 flex items-center justify-between gap-1">
+                                <span class="whitespace-nowrap">✦ Tóm Tắt AI</span>
+                                <span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[7.5px] whitespace-nowrap">Tự động</span>
+                            </div>
+                            <div class="space-y-1 text-slate-700 dark:text-slate-200 font-bold">
+                                <div class="px-1.5 py-0.5 rounded bg-amber-50 dark:bg-white/10 text-amber-900 dark:text-amber-200 whitespace-nowrap">• Công thức trọng tâm</div>
+                                <div class="px-1.5 py-0.5 rounded bg-blue-50 dark:bg-white/10 text-[#0D1677] dark:text-sky-200 whitespace-nowrap">• Dạng bài hay ra thi</div>
+                                <div class="px-1.5 py-0.5 rounded bg-emerald-50 dark:bg-white/10 text-emerald-800 dark:text-emerald-200 whitespace-nowrap">• Sơ đồ &amp; Flashcard</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="px-3 py-2 flex items-center justify-between gap-1.5 bg-slate-50 dark:bg-[#0A143D]">
-                        <span class="text-[11.5px] font-black text-[#0D1677] dark:text-amber-400 truncate">Ghi Âm & Tóm Tắt AI</span>
-                        <span class="text-[9.5px] font-extrabold text-blue-800 dark:text-sky-300 bg-blue-100 dark:bg-blue-950/60 px-1.5 py-0.5 rounded">Real-time</span>
+                    <div class="px-3 py-2 flex items-center justify-between gap-2 bg-white dark:bg-[#0A143D]">
+                        <div class="min-w-0">
+                            <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Ghi Âm &amp; Tóm Tắt AI</div>
+                            <div class="text-[10px] text-slate-500 dark:text-slate-300 whitespace-nowrap">Gỡ băng bài giảng &amp; tạo tóm tắt ý chính tức thì</div>
+                        </div>
+                        <span class="text-[9.5px] font-extrabold text-blue-800 dark:text-sky-300 bg-blue-100 dark:bg-blue-950/60 px-2 py-0.5 rounded-full shrink-0">Miễn Phí</span>
                     </div>
                 </div>
 
-                <!-- Card 4: Dịch File & PDF → Word -->
+                <!-- Card 4: Dịch File & PDF → Word (Side-by-side PDF Formula Sheet -> 1-Click -> Word .DOCX Sheet) -->
                 <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white dark:bg-[#060E2C] shadow-sm flex flex-col">
-                    <div class="p-3 bg-gradient-to-br from-[#0A143D] via-[#0D1677] to-[#172554] text-white flex flex-col justify-between min-h-[88px] relative overflow-hidden">
-                        <div class="flex items-center justify-between gap-1.5 z-10">
-                            <span class="w-7 h-7 rounded-lg bg-white/15 border border-white/25 flex items-center justify-center text-amber-300">
-                                <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
-                            </span>
-                            <span class="px-2 py-0.5 rounded-full bg-[#FFA000] text-slate-950 font-black text-[9px] uppercase tracking-wider shadow-sm">
-                                Giữ Công Thức
-                            </span>
+                    <div class="p-2.5 bg-gradient-to-br from-[#FFFBEB] via-[#F8FAFC] to-[#DBEAFE] dark:from-[#0A143D] dark:to-[#060E2C] border-b border-slate-200/80 dark:border-white/10 flex items-center gap-1.5 h-[116px]">
+                        <!-- Left: PDF Sheet -->
+                        <div class="flex-1 h-full rounded-xl bg-white dark:bg-[#0A143D] border-2 border-rose-200 dark:border-rose-800/70 p-2 shadow-sm flex flex-col justify-between">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-1.5 py-0.5 rounded bg-rose-600 text-white font-black text-[8px] whitespace-nowrap">PDF</span>
+                                <span class="text-[8px] font-bold text-slate-400 whitespace-nowrap">File gốc</span>
+                            </div>
+                            <div class="px-1.5 py-1 rounded bg-rose-50 dark:bg-white/5 border border-rose-200/70 font-mono font-black text-[9.5px] text-rose-900 dark:text-rose-200 text-center whitespace-nowrap">
+                                ∑ x² + √y = Δ
+                            </div>
+                            <div class="text-[8px] font-bold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-white/10 rounded py-0.5 text-center whitespace-nowrap">
+                                Bảng biểu &amp; Đồ thị
+                            </div>
                         </div>
-                        <div class="flex items-center justify-between gap-1 mt-2 z-10 bg-white/10 border border-white/15 rounded-lg px-2 py-1 text-[9.5px] font-bold">
-                            <span class="text-amber-200">PDF / Tài Liệu</span>
-                            <span class="text-sky-300">➔</span>
-                            <span class="text-emerald-300">Word (.DOCX)</span>
+                        <!-- Center Arrow -->
+                        <div class="px-1.5 py-0.5 rounded-full bg-[#0D1677] text-amber-300 font-black text-[8px] shadow shrink-0 whitespace-nowrap">
+                            1-Click ➔
+                        </div>
+                        <!-- Right: Word DOCX Sheet -->
+                        <div class="flex-1 h-full rounded-xl bg-white dark:bg-[#0A143D] border-2 border-blue-400 dark:border-sky-500 p-2 shadow-md flex flex-col justify-between">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-1.5 py-0.5 rounded bg-[#1E40AF] text-white font-black text-[8px] whitespace-nowrap">DOCX</span>
+                                <span class="text-[8px] font-black text-emerald-600 whitespace-nowrap">✓ 100%</span>
+                            </div>
+                            <div class="px-1.5 py-1 rounded bg-blue-50 dark:bg-white/10 border border-blue-200 font-mono font-black text-[9.5px] text-[#0D1677] dark:text-sky-200 text-center whitespace-nowrap">
+                                ∑ x² + √y = Δ
+                            </div>
+                            <div class="text-[8px] font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 rounded py-0.5 text-center whitespace-nowrap">
+                                Giữ nguyên công thức
+                            </div>
                         </div>
                     </div>
-                    <div class="px-3 py-2 flex items-center justify-between gap-1.5 bg-slate-50 dark:bg-[#0A143D]">
-                        <span class="text-[11.5px] font-black text-[#0D1677] dark:text-amber-400 truncate">Dịch File & PDF → Word</span>
-                        <span class="text-[9.5px] font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-1.5 py-0.5 rounded">Chuẩn A4</span>
+                    <div class="px-3 py-2 flex items-center justify-between gap-2 bg-white dark:bg-[#0A143D]">
+                        <div class="min-w-0">
+                            <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Dịch File &amp; PDF → Word</div>
+                            <div class="text-[10px] text-slate-500 dark:text-slate-300 whitespace-nowrap">Giữ nguyên 100% công thức Toán, Lý, Hóa</div>
+                        </div>
+                        <span class="text-[9.5px] font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full shrink-0">Chuẩn A4</span>
                     </div>
                 </div>
             </div>

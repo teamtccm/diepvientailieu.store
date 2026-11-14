@@ -1551,55 +1551,56 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 items-center">
                         
-                        <!-- Ô 1: Chọn Môn Học -->
-                        <div class="lg:col-span-4">
+                        <!-- Ô 1: Chọn Môn Học (Custom Searchable Combobox Identical to App) -->
+                        <div class="lg:col-span-4 relative dvs-uni-combobox-wrap" id="webSubjComboboxContainer">
                             <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
                                 1. Chọn Môn Học:
                             </label>
-                            <div class="relative">
-                                <select id="courseSubjectSelect" onchange="handleWebSubjectFilterChange(this.value)" class="w-full h-10 px-3 pr-8 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300/80 dark:border-white/15 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 outline-none focus:border-[#0D1677] dark:focus:border-sky-400 transition appearance-none cursor-pointer">
-                                    <option value="ALL">★ Tất cả các môn học</option>
-                                    <option value="TOAN">Toán Học (Toán 12 · Toán 11 · XPS)</option>
-                                    <option value="VAN">Ngữ Văn (Đọc hiểu · Nghị luận · Văn bản)</option>
-                                    <option value="ANH">Tiếng Anh (Pro3M · Pro3MPlus · VIP90)</option>
-                                    <option value="LY">Vật Lý (Vũ Ngọc Anh · Chu Văn Biên · Tùng Ưng · Tuấn Anh)</option>
-                                    <option value="HOA">Hóa Học (Phạm Văn Trọng · NAP · SangSang)</option>
-                                    <option value="SINH">Sinh Học (Di truyền · Tế bào · Tiến hóa)</option>
-                                    <option value="SU">Lịch Sử (Cô Sen · Cô Lan Hương · 22 Chuyên đề)</option>
-                                    <option value="DIA">Địa Lý (Thầy Tùng · Thầy Tài · Kinh tế vùng)</option>
-                                    <option value="TRUNG">Tiếng Trung (Hán Ngữ 1-6 · HSK · Khối D04)</option>
-                                    <option value="TIN_MOS">Tin Học (MOS Word · Excel · PowerPoint · Access)</option>
-                                    <option value="DAI_HOC">Đại Học (Kinh tế lượng · Triết học · Master BTL)</option>
-                                    <option value="NGHE_THUAT">Nghệ Thuật (Guitar · Piano · Sáo · DJ · Shuffle)</option>
-                                </select>
-                                <div class="absolute inset-y-0 right-0 flex items-center px-2.5 pointer-events-none text-slate-400">
-                                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                            <div class="dvs-uni-combobox-rel">
+                                <button type="button" id="webSubjTriggerBtn" onclick="toggleWebSubjDropdown(event)" class="dvs-uni-selected-trigger">
+                                    <div class="dvs-uni-trigger-left" id="webSubjTriggerLeft">
+                                        <!-- Rendered by JS -->
+                                    </div>
+                                    <div class="dvs-uni-trigger-right">
+                                        <span id="webSubjClearBtn" onclick="clearWebSubjFilter(event)" class="dvs-uni-clear-btn hidden" title="Xóa lọc">✕</span>
+                                        <span class="dvs-uni-change-tag">Đổi</span>
+                                        <span class="dvs-uni-chevron" id="webSubjChevron">▼</span>
+                                    </div>
+                                </button>
+                                <div id="webSubjDropdownPanel" class="dvs-uni-dropdown-panel hidden">
+                                    <div class="dvs-uni-filter-bar">
+                                        <input type="text" id="webSubjFilterInput" oninput="handleWebSubjSearch(this.value)" class="dvs-uni-filter-input" placeholder="Tìm môn học (Toán, Ngữ Văn, Tiếng Anh, Vật Lý, Hóa, Sinh, Sử, Địa...)" autocomplete="off">
+                                    </div>
+                                    <div class="dvs-uni-options-scroll" id="webSubjOptionsList">
+                                        <!-- Rendered by JS -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Ô 2: Chọn Kỳ Thi / Chương Trình -->
-                        <div class="lg:col-span-4">
+                        <!-- Ô 2: Chọn Kỳ Thi / Chương Trình (Custom Searchable Combobox Identical to App) -->
+                        <div class="lg:col-span-4 relative dvs-uni-combobox-wrap" id="webProgComboboxContainer">
                             <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
                                 2. Chọn Khóa Học / Kỳ Thi:
                             </label>
-                            <div class="relative">
-                                <select id="courseProgramSelect" onchange="handleWebProgramFilterChange(this.value)" class="w-full h-10 px-3 pr-8 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300/80 dark:border-white/15 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 outline-none focus:border-[#0D1677] dark:focus:border-sky-400 transition appearance-none cursor-pointer">
-                                    <option value="ALL">★ Tất cả các khóa học & kỳ thi</option>
-                                    <option value="PROG:lop12_2k9">Luyện Thi THPTQG Lớp 12 (2K9)</option>
-                                    <option value="PROG:lop11_2k10">Xuất Phát Sớm Lớp 11 (2K10)</option>
-                                    <option value="PROG:dgnl_hsa">ĐGNL HSA — ĐHQG Hà Nội 2027</option>
-                                    <option value="PROG:dgtd_tsa">ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027</option>
-                                    <option value="PROG:vact">ĐGNL V-ACT — ĐHQG TP.HCM 2027</option>
-                                    <option value="PROG:bca">ĐGNL BCA — Bộ Công An 2027</option>
-                                    <option value="PROG:qda">ĐGNL QDA — Khối Quân Đội 2027</option>
-                                    <option value="PROG:vsat">ĐGNL VSAT Máy Tính 2027</option>
-                                    <option value="PROG:mos">Chứng Chỉ MOS & Tin Học Văn Phòng</option>
-                                    <option value="PROG:daihoc">Đại Học Điểm A+ & Nghiên Cứu Khoa Học</option>
-                                    <option value="PROG:nghe_thuat">Nghệ Thuật & Âm Nhạc Trọn Gói</option>
-                                </select>
-                                <div class="absolute inset-y-0 right-0 flex items-center px-2.5 pointer-events-none text-slate-400">
-                                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                            <div class="dvs-uni-combobox-rel">
+                                <button type="button" id="webProgTriggerBtn" onclick="toggleWebProgDropdown(event)" class="dvs-uni-selected-trigger">
+                                    <div class="dvs-uni-trigger-left" id="webProgTriggerLeft">
+                                        <!-- Rendered by JS -->
+                                    </div>
+                                    <div class="dvs-uni-trigger-right">
+                                        <span id="webProgClearBtn" onclick="clearWebProgFilter(event)" class="dvs-uni-clear-btn hidden" title="Xóa lọc">✕</span>
+                                        <span class="dvs-uni-change-tag">Đổi</span>
+                                        <span class="dvs-uni-chevron" id="webProgChevron">▼</span>
+                                    </div>
+                                </button>
+                                <div id="webProgDropdownPanel" class="dvs-uni-dropdown-panel hidden">
+                                    <div class="dvs-uni-filter-bar">
+                                        <input type="text" id="webProgFilterInput" oninput="handleWebProgSearch(this.value)" class="dvs-uni-filter-input" placeholder="Tìm khóa học (HSA, TSA, V-ACT, BCA, THPTQG 2K9, 2K10, tên thầy cô...)" autocomplete="off">
+                                    </div>
+                                    <div class="dvs-uni-options-scroll" id="webProgOptionsList">
+                                        <!-- Rendered by JS -->
+                                    </div>
                                 </div>
                             </div>
                         </div>

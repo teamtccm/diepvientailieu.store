@@ -1,13 +1,13 @@
 {
-  "version": "3.9.1794632378",
-  "releasedAt": "2026-11-14T04:59:38Z",
-  "notes": "OTA Auto-Update v3.9: Khôi phục trọn bộ 112 khóa học bản chuẩn của App, đồng bộ ảnh bìa Google Drive thật & làm sạch thanh lọc Web",
+  "version": "4.0.1794636401",
+  "releasedAt": "2026-11-14T06:06:41Z",
+  "notes": "OTA Auto-Update v4.0: Bổ sung trọn bộ ảnh bìa sắc nét chuẩn thầy cô Toán, Văn, Anh, Hóa, Sinh, Sử, Địa, ĐGNL HSA, ĐGTD TSA, Tiếng Trung, Tin học MOS & Đại học",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "a497fc66f73274da6b284c076ffe160e8c26e6189c334c1bccbab82c9b8c77b3",
-      "size": 2688999,
+      "sha256": "1792535de27fe159d9c76bbffada2c4eaae6f625f21ee148e1289e73422854ed",
+      "size": 2589254,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {

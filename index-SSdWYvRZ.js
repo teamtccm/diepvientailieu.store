@@ -4697,7 +4697,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "all",
-    "title": "Trọn Bộ Full 90+ Khóa Học Đa Môn (Toán · Văn · Anh · Trung · Lý · Hóa · Sinh · Sử · Địa · Tin MOS · Đại Học · Nghệ Thuật · ĐGNL)",
+    "title": "399k/Full Khóa học — Trọn Bộ Khóa Học THPTQG, ĐGNL & Đại Học",
     "instructor": "TẤT CẢ TRUNG TÂM & THẦY CÔ (EMPIRE · MAPSTUDY · HOCMAI · TENS · YANGDEXIN · GITIHO)",
     "duration": "Trọn bộ 90+ khóa học · Video + PDF",
     "lessons": 1850,
@@ -4713,9 +4713,9 @@ const DVS_COURSES_DB = [
     "tierType": "full_399k",
     "subTier": "full_399k",
     "isPackageOnly": true,
-    "tierShortBadge": "TRỌN BỘ FULL APP 399K",
+    "tierShortBadge": "399k/Full Khóa học",
     "tierLabel": "Gói Full Toàn Hệ Thống (399k)",
-    "badge": "VIP Full 399K · Tặng App",
+    "badge": "399k/Full Khóa học",
     "parentCourseId": "ALL-COURSES-399K",
     "parentSubjectId": "ALL-COURSES-399K",
     "childCourseIds": [
@@ -4829,9 +4829,7 @@ const DVS_COURSES_DB = [
       "COURSE-ITEM-79",
       "COURSE-ITEM-80",
       "COURSE-ITEM-81",
-      "COURSE-ITEM-82",
-      "COURSE-ITEM-SU-LAN-HUONG",
-      "COURSE-ITEM-DIA-TAI"
+      "COURSE-ITEM-82"
     ],
     "extraFolderIds": [
       "1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
@@ -4909,7 +4907,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Combo Khóa Học THPT Lớp 12 Cho 2K9 (Toán · Văn · Anh · Tiếng Trung · Lý · Hóa · Sinh · Sử · Địa · TopUni 12)",
+    "title": "199k/1 Khóa — Combo Lớp 12 THPTQG (2K9)",
     "instructor": "TENSCHOOL · MAPSTUDY · HOCMAI · CÔ MAI PHƯƠNG · YANGDEXIN · EMPIRE",
     "duration": "Trọn bộ các môn Lớp 12 · Video + PDF",
     "lessons": 680,
@@ -4925,9 +4923,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [
@@ -5038,7 +5036,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Combo Ngoại Ngữ & Xã Hội: Tiếng Trung (Hán Ngữ 1–6 · HSK · Khối D04) · Tiếng Anh · Ngữ Văn · Lịch Sử · Địa Lý",
+    "title": "199k/1 Khóa — Ngoại Ngữ & KHXH (Anh · Trung · Văn · Sử · Địa)",
     "instructor": "YANGDEXIN · HANKA · CÔ VŨ MAI PHƯƠNG · HOCMAI · EMPIRE",
     "duration": "Trọn bộ Anh · Trung · Văn · Sử · Địa",
     "lessons": 420,
@@ -5054,9 +5052,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9",
     "childCourseIds": [
@@ -5072,9 +5070,7 @@ const DVS_COURSES_DB = [
       "COURSE-ITEM-52",
       "COURSE-ITEM-53",
       "COURSE-ITEM-54",
-      "COURSE-ITEM-61",
-      "COURSE-ITEM-SU-LAN-HUONG",
-      "COURSE-ITEM-DIA-TAI"
+      "COURSE-ITEM-61"
     ],
     "extraFolderIds": [
       "1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR",
@@ -5155,7 +5151,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop11_2k10",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Combo 30 Khóa Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (Word · Excel · PowerPoint · Access · VBA · Google Tools)",
+    "title": "199k/1 Khóa — Tin Học Văn Phòng & Chứng Chỉ MOS",
     "instructor": "GITIHO · NIMBUS · LAKITA · HỌC VIỆN TIN HỌC",
     "duration": "Trọn bộ 30 khóa Tin Văn Phòng & MOS",
     "lessons": 350,
@@ -5171,9 +5167,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [
@@ -5260,7 +5256,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "all",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Combo Đại Học Điểm A+: Kinh Tế Lượng (EViews, Stata, SPSS) · Triết Học Mác-Lênin · Master BTL & NCKH APA 7 · SQL & Excel",
+    "title": "199k/1 Khóa — Đại Học: Kinh Tế Lượng, Triết Học & BTL",
     "instructor": "ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN ĐẠI HỌC & NCKH",
     "duration": "Trọn bộ Đại học & NCKH · Video + File mẫu",
     "lessons": 180,
@@ -5276,9 +5272,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL",
     "childCourseIds": [
@@ -5368,7 +5364,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "all",
     "categoryLabel": "Nghệ Thuật & Âm Nhạc",
-    "title": "Combo 31 Khóa Nghệ Thuật, Âm Nhạc & Vũ Đạo (Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo Trúc · DJ · Shuffle Dance)",
+    "title": "199k/1 Khóa — Nghệ Thuật & Âm Nhạc (Guitar · Piano · Thanh Nhạc)",
     "instructor": "HAKETU · THIỆN ORGAN · HIỂN RÂU · PRODUCER & DJ STUDIO",
     "duration": "Trọn bộ 31 khóa Nghệ Thuật · Video HD",
     "lessons": 460,
@@ -5384,9 +5380,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [
@@ -5474,7 +5470,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 11 (2K10)",
-    "title": "Combo Khóa Học THPT Lớp 11 Cho 2K10 (Toán · Lý · Hóa · Tin Học KHMT & Ứng Dụng)",
+    "title": "199k/1 Khóa — Combo Lớp 11 THPT (2K10)",
     "instructor": "TENSCHOOL · TUYENSINH247 · HOCMAI",
     "duration": "10 Khóa Học Lớp 11 · Video + PDF",
     "lessons": 240,
@@ -5490,9 +5486,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10",
     "childCourseIds": [
@@ -5583,7 +5579,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "ĐGNL HSA",
-    "title": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội 2027 (Định Lượng · Định Tính Ngữ Văn · Khoa Học · Tiếng Anh)",
+    "title": "199k/1 Khóa — Luyện Thi ĐGNL HSA ĐHQG Hà Nội",
     "instructor": "EMPIRE TEAM · MAPSTUDY · HOCMAI · HSA EDU · TOPUNI",
     "duration": "5 Lộ Trình HSA Toàn Diện · Video + PDF",
     "lessons": 210,
@@ -5599,9 +5595,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-ITEM-35",
     "childCourseIds": [
@@ -5689,7 +5685,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "ĐGTD TSA",
-    "title": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027 (Tư Duy Toán · Đọc Hiểu · Khoa Học)",
+    "title": "199k/1 Khóa — Luyện Thi ĐGTD TSA ĐH Bách Khoa",
     "instructor": "EMPIRE TEAM · TSA BMC · HOCMAI · TUYENSINH247 · TDMU",
     "duration": "5 Lộ Trình TSA Bách Khoa · Video + PDF",
     "lessons": 195,
@@ -5705,9 +5701,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-DGTD-TSA",
     "parentSubjectId": "COURSE-ITEM-40",
     "childCourseIds": [
@@ -5792,7 +5788,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "V-ACT · BCA · QDA · VSAT",
-    "title": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM 2027 (Ngôn Ngữ · Toán Học · Tư Duy Khoa Học)",
+    "title": "199k/1 Khóa — Luyện Thi ĐGNL V-ACT ĐHQG TP.HCM",
     "instructor": "EMPIRE TEAM · MAPSTUDY · HOCMAI",
     "duration": "Trọn bộ V-ACT & ĐGNL · Video + PDF",
     "lessons": 160,
@@ -5808,9 +5804,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-DGNL-VACT",
     "parentSubjectId": "COURSE-ITEM-45",
     "childCourseIds": [
@@ -5896,7 +5892,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "V-ACT · BCA · QDA · VSAT",
-    "title": "Combo Luyện Thi ĐGNL Bộ Công An (BCA) · Quân Đội (QDA) · VSAT 8 Môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa)",
+    "title": "199k/1 Khóa — Luyện Thi ĐGNL Bộ Công An · Quân Đội · VSAT",
     "instructor": "EMPIRE TEAM — KHỐI CÔNG AN · QUÂN ĐỘI · VSAT 8 MÔN",
     "duration": "Trọn bộ BCA · QDA · VSAT 8 Môn",
     "lessons": 220,
@@ -5912,9 +5908,9 @@ const DVS_COURSES_DB = [
     "tierType": "course_199k",
     "subTier": "course_199k",
     "isPackageOnly": true,
-    "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K",
+    "tierShortBadge": "199k/1 Khóa",
     "tierLabel": "Gói Theo Khóa (199k)",
-    "badge": "Trọn Khóa 199K · Tặng App",
+    "badge": "199k/1 Khóa",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-ITEM-48",
     "childCourseIds": [
@@ -6002,7 +5998,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Toán · Lý · Hóa · Sinh",
-    "title": "Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027",
+    "title": "69k/1 Môn — Môn Toán 12 (2K9) Luyện Thi THPTQG",
     "instructor": "TENS · MAPSTUDY · PHAN TIẾN · ANH SHIPPER · HOCMAI",
     "duration": "Trọn bộ 7 khóa Toán 12 · Video + PDF",
     "lessons": 180,
@@ -6018,9 +6014,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [
@@ -6113,7 +6109,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Trọn Bộ Môn Ngữ Văn 12 (2K9) — Đọc Hiểu Văn Bản, Tiếng Việt & Nghị Luận Văn Học / Xã Hội",
+    "title": "69k/1 Môn — Môn Ngữ Văn 12 (2K9) Đọc Hiểu & Nghị Luận",
     "instructor": "HOCMAI TOPUNI · EMPIRE TEAM — BAN GIẢNG HUẤN NGỮ VĂN",
     "duration": "Trọn bộ Ngữ Văn 12 · THPTQG & ĐGNL",
     "lessons": 95,
@@ -6129,9 +6125,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-VAN12-2K9",
     "childCourseIds": [
@@ -6215,7 +6211,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh",
+    "title": "69k/1 Môn — Môn Tiếng Anh 12 (2K9) Luyện Thi THPTQG",
     "instructor": "NGOAINGU24H — CÔ VŨ MAI PHƯƠNG · HOCMAI · EMPIRE",
     "duration": "Full Pro3M + Pro3MPlus + VIP90",
     "lessons": 140,
@@ -6231,9 +6227,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-ANH12-2K9",
     "childCourseIds": [
@@ -6318,7 +6314,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Trọn Bộ Môn Tiếng Trung (Hán Ngữ 6 Quyển · Bộ Đề HSK · Tiếng Trung Chuyên Ngành & Ôn Thi ĐH Khối D04)",
+    "title": "69k/1 Môn — Môn Tiếng Trung (Hán Ngữ · HSK · Khối D04)",
     "instructor": "YANGDEXIN · HANKA — HỆ THỐNG ĐÀO TẠO TIẾNG TRUNG",
     "duration": "Full 6 Quyển Hán Ngữ + HSK + D04",
     "lessons": 160,
@@ -6334,9 +6330,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9",
     "childCourseIds": [
@@ -6422,7 +6418,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
+    "title": "69k/1 Môn — Môn Lịch Sử 12 (2K9) Luyện Thi THPTQG",
     "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ THPT & ĐGNL",
     "duration": "Full 22 chuyên đề Lịch Sử 12",
     "lessons": 90,
@@ -6438,14 +6434,13 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-SU12-2K9",
     "childCourseIds": [
-      "COURSE-ITEM-57",
-      "COURSE-ITEM-SU-LAN-HUONG"
+      "COURSE-ITEM-57"
     ],
     "extraFolderIds": [
       "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
@@ -6523,7 +6518,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam",
+    "title": "69k/1 Môn — Môn Địa Lý 12 (2K9) Luyện Thi THPTQG",
     "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ THPT & ĐGNL",
     "duration": "Full chuyên đề Địa Lý 12",
     "lessons": 85,
@@ -6539,14 +6534,13 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-DIA12-2K9",
     "childCourseIds": [
-      "COURSE-ITEM-58",
-      "COURSE-ITEM-DIA-TAI"
+      "COURSE-ITEM-58"
     ],
     "extraFolderIds": [
       "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
@@ -6624,7 +6618,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Toán · Lý · Hóa · Sinh",
-    "title": "Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học",
+    "title": "69k/1 Môn — Môn Sinh Học 12 (2K9) Luyện Thi THPTQG",
     "instructor": "HOCMAI TOPUNI · EMPIRE TEAM — BAN GIẢNG HUẤN SINH HỌC",
     "duration": "Full chuyên đề Sinh Học 12",
     "lessons": 110,
@@ -6640,9 +6634,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-SINH12-2K9",
     "childCourseIds": [
@@ -6654,7 +6648,7 @@ const DVS_COURSES_DB = [
       "1ryKQMaBjhkBx9W0qQaELK6_vmVw4fucr",
       "1CTrlYhRiXh7phi2qPwE3l_c2sOCsxS92"
     ],
-    "defaultCover": "",
+    "defaultCover": "courses/covers/nen_tang_sinh.jpg",
     "driveFolderId": "1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
     "driveFolderName": "Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
@@ -6726,7 +6720,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Toán · Lý · Hóa · Sinh",
-    "title": "Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027",
+    "title": "69k/1 Môn — Môn Vật Lý 12 (2K9) Luyện Thi THPTQG",
     "instructor": "MAPSTUDY · IPCLASS · TENS · SANGSANG · HOCMAI",
     "duration": "Trọn bộ 5 khóa Lý 12 · Video + PDF",
     "lessons": 140,
@@ -6742,9 +6736,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [
@@ -6831,7 +6825,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Toán · Lý · Hóa · Sinh",
-    "title": "Trọn Bộ Môn Hóa Học 12 (2K9) — 4 Khóa Luyện Thi THPTQG 2027",
+    "title": "69k/1 Môn — Môn Hóa Học 12 (2K9) Luyện Thi THPTQG",
     "instructor": "TENS · NAP · SANGSANG · THẦY PHẠM THANH TÙNG",
     "duration": "Trọn bộ 4 khóa Hóa 12 · Video + PDF",
     "lessons": 130,
@@ -6847,9 +6841,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [
@@ -6935,7 +6929,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop11_2k10",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Trọn Bộ Môn Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (30 Khóa Word · Excel · PowerPoint · Access · Google Tools)",
+    "title": "69k/1 Môn — Tin Học Văn Phòng & Chứng Chỉ MOS",
     "instructor": "GITIHO · NIMBUS · LAKITA · HỌC VIỆN TIN HỌC",
     "duration": "Full 30 khóa Tin Văn Phòng & MOS",
     "lessons": 280,
@@ -6951,9 +6945,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [
@@ -7041,7 +7035,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop11_2k10",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Trọn Bộ Môn Tin Học 11 (2K10) — Tin Học Ứng Dụng · Khoa Học Máy Tính · Thuật Toán & CSDL",
+    "title": "69k/1 Môn — Môn Tin Học 11 (2K10) KHMT & Ứng Dụng",
     "instructor": "TUYENSINH247 — THẦY PHƯƠNG & CÔ DUNG",
     "duration": "Trọn bộ 3 khóa Tin 11",
     "lessons": 65,
@@ -7057,9 +7051,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TIN11-2K10",
     "childCourseIds": [
@@ -7140,7 +7134,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "all",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS)",
+    "title": "69k/1 Môn — Kinh Tế Lượng Đại Học (EViews · Stata · SPSS)",
     "instructor": "ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN KINH TẾ LƯỢNG",
     "duration": "Full thực hành EViews · Stata · SPSS",
     "lessons": 45,
@@ -7156,9 +7150,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL",
     "childCourseIds": [
@@ -7241,7 +7235,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "ngoai_ngu_khxh",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm)",
+    "title": "69k/1 Môn — Triết Học Mác - Lênin Đại Học",
     "instructor": "ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN LÝ LUẬN CHÍNH TRỊ",
     "duration": "Full Sơ đồ tư duy & Đề cương A+",
     "lessons": 40,
@@ -7257,9 +7251,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-TRIETHOC",
     "childCourseIds": [
@@ -7337,7 +7331,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "all",
     "categoryLabel": "Tin Học · MOS · Đại Học",
-    "title": "Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7",
+    "title": "69k/1 Môn — Phương Pháp Viết BTL, Tiểu Luận & NCKH",
     "instructor": "ĐIỆP VIÊN ACADEMY — BAN HƯỚNG DẪN HỌC THUẬT & NCKH",
     "duration": "Full Khung dàn ý & Chuẩn trích dẫn APA 7",
     "lessons": 40,
@@ -7353,9 +7347,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-NCKH-APA7",
     "childCourseIds": [
@@ -7433,7 +7427,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "all",
     "categoryLabel": "Nghệ Thuật & Âm Nhạc",
-    "title": "Môn Nghệ Thuật, Âm Nhạc & Vũ Đạo (31 Khóa Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo · DJ · Shuffle Dance)",
+    "title": "69k/1 Môn — Nghệ Thuật & Âm Nhạc (Guitar · Piano · Thanh Nhạc)",
     "instructor": "HAKETU · THIỆN ORGAN · HIỂN RÂU · PRODUCER STUDIO",
     "duration": "Trọn bộ 31 khóa Nghệ Thuật",
     "lessons": 310,
@@ -7449,9 +7443,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [
@@ -7539,7 +7533,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học)",
+    "title": "69k/1 Môn — Nền Tảng Lớp 12 Đa Môn (TopUni)",
     "instructor": "HOCMAI — HỆ THỐNG TOPUNI NỀN TẢNG 12",
     "duration": "Trọn bộ 7 môn Nền Tảng 12",
     "lessons": 160,
@@ -7555,9 +7549,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOPUNI12-2K9",
     "childCourseIds": [],
@@ -7634,7 +7628,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 11 (2K10)",
-    "title": "Trọn Bộ Môn Toán 11 (2K10) — Lộ Trình Cơ Bản & Nâng Cao 2027",
+    "title": "69k/1 Môn — Môn Toán 11 (2K10) Cơ Bản & Nâng Cao",
     "instructor": "TENSCHOOL · TUYENSINH247 — THẦY ĐỨC & THẦY QUÂN",
     "duration": "Trọn bộ Toán 11 2K10",
     "lessons": 85,
@@ -7650,9 +7644,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10",
     "childCourseIds": [
@@ -7733,7 +7727,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 11 (2K10)",
-    "title": "Trọn Bộ Môn Vật Lý 11 (2K10) — Chuyên Đề & Luyện Đề Học Kỳ",
+    "title": "69k/1 Môn — Môn Vật Lý 11 (2K10) Cơ Bản & Nâng Cao",
     "instructor": "TUYENSINH247 — THẦY VŨ HOÀNG QUÂN & THẦY LONG",
     "duration": "Trọn bộ 3 khóa Lý 11",
     "lessons": 80,
@@ -7749,9 +7743,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-LY11-2K10",
     "childCourseIds": [
@@ -7832,7 +7826,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 11 (2K10)",
-    "title": "Trọn Bộ Môn Hóa Học 11 (2K10) — Lớp Tương Tác & Nâng Cao",
+    "title": "69k/1 Môn — Môn Hóa Học 11 (2K10) Cơ Bản & Nâng Cao",
     "instructor": "HOCMAI · TUYENSINH247 — CÔ DƯƠNG, CÔ HUỆ & THẦY TÙNG",
     "duration": "Trọn bộ 2 khóa Hóa 11",
     "lessons": 75,
@@ -7848,9 +7842,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "bundle_69k",
     "isPackageOnly": true,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn (69k)",
-    "badge": "Gói Môn 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-HOA11-2K10",
     "childCourseIds": [
@@ -7930,7 +7924,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Toán 12 (2K9) — Lộ Trình Chinh Phục THPTQG 2027 (Khóa T · E · Đom Đóm)",
+    "title": "Khóa Toán 12 (2K9) — (Khóa T · E · Đom Đóm)",
     "instructor": "TENSCHOOL — THẦY ĐỖ VĂN ĐỨC",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -7946,9 +7940,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -8028,7 +8022,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu Thơ, Truyện, Ký, Văn Bản Thông Tin & Nghị Luận Văn Học",
+    "title": "Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu & Nghị Luận Văn Học",
     "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN NGỮ VĂN",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 50,
@@ -8044,9 +8038,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-VAN12-2K9",
     "childCourseIds": [],
@@ -8125,7 +8119,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "ngoai_ngu_khxh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Tiếng Anh 12 (2K9) — Trọn Bộ Lộ Trình Pro3M · Pro3MPlus · VIP90 2027",
+    "title": "Khóa Tiếng Anh 12 (2K9) — Pro3M · Pro3MPlus · VIP90 2027",
     "instructor": "NGOAINGU24H — CÔ VŨ MAI PHƯƠNG",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -8141,9 +8135,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-ANH12-2K9",
     "childCourseIds": [],
@@ -8238,9 +8232,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9",
     "childCourseIds": [],
@@ -8321,8 +8315,8 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen",
-    "instructor": "CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ",
+    "title": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
+    "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 50,
     "level": "Môn Lịch Sử 12 (2K9)",
@@ -8337,9 +8331,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-SU12-2K9",
     "childCourseIds": [],
@@ -8348,7 +8342,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/su_co_sen.jpg",
     "driveFolderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-    "driveFolderName": "Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen",
+    "driveFolderName": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
     "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
     "driveFileId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
@@ -8367,29 +8361,29 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-57-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen",
-              "Giảng viên / Đơn vị biên soạn: CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ",
+              "Kho tài liệu Google Drive chính thức: Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
+              "Giảng viên / Đơn vị biên soạn: EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
             "lectureScript": [
               {
                 "time": "00:00",
-                "speaker": "CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ",
-                "text": "Chào mừng bạn đến với Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "speaker": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ",
+                "text": "Chào mừng bạn đến với Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
-                "speaker": "CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ",
+                "speaker": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ",
                 "text": "Bạn có thể bật tính năng Ghi âm & Tóm tắt AI bên phải để lưu lại các công thức trọng tâm và hỏi đáp trực tiếp cùng trợ lý AI."
               }
             ]
           },
           {
             "id": "course-item-57-les-2",
-            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ)",
+            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ)",
             "duration": "50:00",
             "keyFormulas": [
               "Phương pháp phân tích ma trận đề thi và nhận diện câu hỏi vận dụng cao",
@@ -8398,8 +8392,8 @@ const DVS_COURSES_DB = [
             "lectureScript": [
               {
                 "time": "00:00",
-                "speaker": "CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ",
-                "text": "Trong chuyên đề này của Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "speaker": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ",
+                "text": "Trong chuyên đề này của Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -8419,8 +8413,8 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý",
-    "instructor": "THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ",
+    "title": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
+    "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 50,
     "level": "Môn Địa Lý 12 (2K9)",
@@ -8435,9 +8429,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-DIA12-2K9",
     "childCourseIds": [],
@@ -8446,7 +8440,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/dia_thay_tung.jpg",
     "driveFolderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-    "driveFolderName": "Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý",
+    "driveFolderName": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
     "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
     "driveFileId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
@@ -8465,29 +8459,29 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-58-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý",
-              "Giảng viên / Đơn vị biên soạn: THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ",
+              "Kho tài liệu Google Drive chính thức: Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
+              "Giảng viên / Đơn vị biên soạn: EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
             "lectureScript": [
               {
                 "time": "00:00",
-                "speaker": "THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ",
-                "text": "Chào mừng bạn đến với Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "speaker": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ",
+                "text": "Chào mừng bạn đến với Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
-                "speaker": "THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ",
+                "speaker": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ",
                 "text": "Bạn có thể bật tính năng Ghi âm & Tóm tắt AI bên phải để lưu lại các công thức trọng tâm và hỏi đáp trực tiếp cùng trợ lý AI."
               }
             ]
           },
           {
             "id": "course-item-58-les-2",
-            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ)",
+            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ)",
             "duration": "50:00",
             "keyFormulas": [
               "Phương pháp phân tích ma trận đề thi và nhận diện câu hỏi vận dụng cao",
@@ -8496,8 +8490,8 @@ const DVS_COURSES_DB = [
             "lectureScript": [
               {
                 "time": "00:00",
-                "speaker": "THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ",
-                "text": "Trong chuyên đề này của Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "speaker": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ",
+                "text": "Trong chuyên đề này của Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -8533,9 +8527,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-SINH12-2K9",
     "childCourseIds": [],
@@ -8614,7 +8608,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh",
+    "title": "Khóa Vật Lý 12 (2K9) — IOME Chinh Phục 9+ 2027",
     "instructor": "MAPSTUDY — THẦY VŨ NGỌC ANH",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -8630,9 +8624,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -8641,7 +8635,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/ly_thay_ngoc_anh.jpg",
     "driveFolderId": "1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
-    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh",
+    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
     "driveUrl": "https://drive.google.com/drive/folders/1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
     "driveFileId": "1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
@@ -8660,10 +8654,10 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-08-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh",
+              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027",
               "Giảng viên / Đơn vị biên soạn: MAPSTUDY — THẦY VŨ NGỌC ANH",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
@@ -8671,7 +8665,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "MAPSTUDY — THẦY VŨ NGỌC ANH",
-                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
@@ -8692,7 +8686,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "MAPSTUDY — THẦY VŨ NGỌC ANH",
-                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -8711,7 +8705,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Hóa Học 12 (2K9) — Lộ Trình Toàn Diện Luyện Thi THPTQG 2027",
+    "title": "Khóa Hóa Học 12 (2K9) — Lộ Trình Toàn Diện 2027",
     "instructor": "TENSCHOOL — THẦY PHẠM VĂN TRỌNG",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -8727,9 +8721,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [],
@@ -8824,9 +8818,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -8924,9 +8918,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TIN11-2K10",
     "childCourseIds": [],
@@ -9020,9 +9014,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL",
     "childCourseIds": [],
@@ -9117,9 +9111,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-TRIETHOC",
     "childCourseIds": [],
@@ -9213,9 +9207,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-NCKH-APA7",
     "childCourseIds": [],
@@ -9309,9 +9303,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -9408,9 +9402,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -9507,9 +9501,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -9606,9 +9600,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-ITEM-35",
     "childCourseIds": [
@@ -9703,9 +9697,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGTD-TSA",
     "parentSubjectId": "COURSE-ITEM-40",
     "childCourseIds": [
@@ -9800,9 +9794,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-VACT",
     "parentSubjectId": "COURSE-ITEM-45",
     "childCourseIds": [
@@ -9897,9 +9891,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-ITEM-48",
     "childCourseIds": [
@@ -9994,9 +9988,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-ITEM-49",
     "childCourseIds": [],
@@ -10089,9 +10083,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-ITEM-50",
     "childCourseIds": [],
@@ -10184,9 +10178,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9",
     "childCourseIds": [],
@@ -10282,9 +10276,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -10379,9 +10373,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -10476,9 +10470,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -10573,9 +10567,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -10670,9 +10664,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -10767,9 +10761,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -10848,7 +10842,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng",
+    "title": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12",
     "instructor": "IPCLASS — THẦY THẮNG & THẦY TIẾN",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -10864,9 +10858,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -10875,7 +10869,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/ly_thay_tien_thang.jpg",
     "driveFolderId": "1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
-    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng",
+    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
     "driveUrl": "https://drive.google.com/drive/folders/1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
     "driveFileId": "1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
@@ -10894,10 +10888,10 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-09-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng",
+              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12",
               "Giảng viên / Đơn vị biên soạn: IPCLASS — THẦY THẮNG & THẦY TIẾN",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
@@ -10905,7 +10899,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "IPCLASS — THẦY THẮNG & THẦY TIẾN",
-                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
@@ -10926,7 +10920,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "IPCLASS — THẦY THẮNG & THẦY TIẾN",
-                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -10945,7 +10939,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng",
+    "title": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027",
     "instructor": "TENSCHOOL — THẦY LÊ TÙNG ƯNG",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -10961,9 +10955,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -10972,7 +10966,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/ly_tung_ung.jpg",
     "driveFolderId": "1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
-    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng",
+    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
     "driveUrl": "https://drive.google.com/drive/folders/1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
     "driveFileId": "1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
@@ -10991,10 +10985,10 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-10-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng",
+              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027",
               "Giảng viên / Đơn vị biên soạn: TENSCHOOL — THẦY LÊ TÙNG ƯNG",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
@@ -11002,7 +10996,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "TENSCHOOL — THẦY LÊ TÙNG ƯNG",
-                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
@@ -11023,7 +11017,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "TENSCHOOL — THẦY LÊ TÙNG ƯNG",
-                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -11042,7 +11036,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh",
+    "title": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027",
     "instructor": "SANGSANG EDU — THẦY VŨ TUẤN ANH",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -11058,9 +11052,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -11069,7 +11063,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/ly_thay_tuan_anh.jpg",
     "driveFolderId": "1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
-    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh",
+    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
     "driveUrl": "https://drive.google.com/drive/folders/1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
     "driveFileId": "1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
@@ -11088,10 +11082,10 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-11-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh",
+              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027",
               "Giảng viên / Đơn vị biên soạn: SANGSANG EDU — THẦY VŨ TUẤN ANH",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
@@ -11099,7 +11093,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "SANGSANG EDU — THẦY VŨ TUẤN ANH",
-                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
@@ -11120,7 +11114,7 @@ const DVS_COURSES_DB = [
               {
                 "time": "00:00",
                 "speaker": "SANGSANG EDU — THẦY VŨ TUẤN ANH",
-                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -11139,8 +11133,8 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên",
-    "instructor": "THẦY CHU VĂN BIÊN — VẬT LÝ 12",
+    "title": "Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới",
+    "instructor": "HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
     "level": "Môn Vật Lý 12 (2K9)",
@@ -11155,9 +11149,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -11166,7 +11160,7 @@ const DVS_COURSES_DB = [
     ],
     "defaultCover": "courses/covers/ly_thay_bien.jpg",
     "driveFolderId": "1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
-    "driveFolderName": "Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên",
+    "driveFolderName": "Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
     "driveUrl": "https://drive.google.com/drive/folders/1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
     "driveFileId": "1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
@@ -11185,29 +11179,29 @@ const DVS_COURSES_DB = [
         "lessons": [
           {
             "id": "course-item-12-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên",
+            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới",
             "duration": "45:00",
             "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên",
-              "Giảng viên / Đơn vị biên soạn: THẦY CHU VĂN BIÊN — VẬT LÝ 12",
+              "Kho tài liệu Google Drive chính thức: Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới",
+              "Giảng viên / Đơn vị biên soạn: HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG",
               "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
             ],
             "lectureScript": [
               {
                 "time": "00:00",
-                "speaker": "THẦY CHU VĂN BIÊN — VẬT LÝ 12",
-                "text": "Chào mừng bạn đến với Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
+                "speaker": "HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG",
+                "text": "Chào mừng bạn đến với Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
               },
               {
                 "time": "02:15",
-                "speaker": "THẦY CHU VĂN BIÊN — VẬT LÝ 12",
+                "speaker": "HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG",
                 "text": "Bạn có thể bật tính năng Ghi âm & Tóm tắt AI bên phải để lưu lại các công thức trọng tâm và hỏi đáp trực tiếp cùng trợ lý AI."
               }
             ]
           },
           {
             "id": "course-item-12-les-2",
-            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (THẦY CHU VĂN BIÊN — VẬT LÝ 12)",
+            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG)",
             "duration": "50:00",
             "keyFormulas": [
               "Phương pháp phân tích ma trận đề thi và nhận diện câu hỏi vận dụng cao",
@@ -11216,8 +11210,8 @@ const DVS_COURSES_DB = [
             "lectureScript": [
               {
                 "time": "00:00",
-                "speaker": "THẦY CHU VĂN BIÊN — VẬT LÝ 12",
-                "text": "Trong chuyên đề này của Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
+                "speaker": "HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG",
+                "text": "Trong chuyên đề này của Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
               }
             ]
           }
@@ -11236,7 +11230,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình IOME Hóa Học 2027",
+    "title": "Khóa Hóa Học 12 (2K9) — IOME Hóa Học 2027",
     "instructor": "NAP EDUCATION — THẦY NGUYỄN ANH PHONG",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -11252,9 +11246,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [],
@@ -11333,7 +11327,7 @@ const DVS_COURSES_DB = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Lớp 12 (2K9)",
-    "title": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình CTG Chinh Phục Hóa 12",
+    "title": "Khóa Hóa Học 12 (2K9) — CTG Chinh Phục Hóa 12",
     "instructor": "SANGSANG EDU — THẦY PHẠM VĂN THUẬN",
     "duration": "Full lộ trình 2027 · Video + PDF",
     "lessons": 45,
@@ -11349,9 +11343,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [],
@@ -11446,9 +11440,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [],
@@ -11543,9 +11537,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -11640,16 +11634,16 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
     "extraFolderIds": [
       "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
     ],
-    "defaultCover": "",
+    "defaultCover": "courses/covers/nen_tang_toan.jpg",
     "driveFolderId": "1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj",
     "driveFolderName": "Khóa TopUni Nền Tảng 12 — Môn Toán (Bản Đầy Đủ Chuyên Đề)",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj",
@@ -11737,9 +11731,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-VAN12-2K9",
     "childCourseIds": [],
@@ -11834,9 +11828,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-ANH12-2K9",
     "childCourseIds": [],
@@ -11931,9 +11925,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -12028,9 +12022,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [],
@@ -12125,9 +12119,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K9-LOP12",
     "parentSubjectId": "COURSE-SUBJ-SINH12-2K9",
     "childCourseIds": [],
@@ -12222,9 +12216,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10",
     "childCourseIds": [],
@@ -12319,9 +12313,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10",
     "childCourseIds": [],
@@ -12416,9 +12410,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-LY11-2K10",
     "childCourseIds": [],
@@ -12513,9 +12507,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-LY11-2K10",
     "childCourseIds": [],
@@ -12610,9 +12604,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-LY11-2K10",
     "childCourseIds": [],
@@ -12707,9 +12701,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-HOA11-2K10",
     "childCourseIds": [],
@@ -12804,9 +12798,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-HOA11-2K10",
     "childCourseIds": [],
@@ -12901,9 +12895,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-K10-LOP11",
     "parentSubjectId": "COURSE-SUBJ-TIN11-2K10",
     "childCourseIds": [],
@@ -12998,9 +12992,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -13095,9 +13089,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-ITEM-36",
     "childCourseIds": [],
@@ -13190,9 +13184,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-ITEM-37",
     "childCourseIds": [],
@@ -13285,9 +13279,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-ITEM-38",
     "childCourseIds": [],
@@ -13380,9 +13374,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-ITEM-39",
     "childCourseIds": [],
@@ -13475,9 +13469,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGTD-TSA",
     "parentSubjectId": "COURSE-ITEM-41",
     "childCourseIds": [],
@@ -13570,9 +13564,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGTD-TSA",
     "parentSubjectId": "COURSE-ITEM-42",
     "childCourseIds": [],
@@ -13665,9 +13659,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGTD-TSA",
     "parentSubjectId": "COURSE-ITEM-43",
     "childCourseIds": [],
@@ -13760,9 +13754,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGTD-TSA",
     "parentSubjectId": "COURSE-ITEM-44",
     "childCourseIds": [],
@@ -13855,9 +13849,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-VACT",
     "parentSubjectId": "COURSE-ITEM-46",
     "childCourseIds": [],
@@ -13950,9 +13944,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-VACT",
     "parentSubjectId": "COURSE-ITEM-47",
     "childCourseIds": [],
@@ -14045,9 +14039,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9",
     "childCourseIds": [],
@@ -14142,9 +14136,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9",
     "childCourseIds": [],
@@ -14241,9 +14235,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-SUBJ-VAN12-2K9",
     "childCourseIds": [],
@@ -14339,9 +14333,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DGNL-HSA",
     "parentSubjectId": "COURSE-SUBJ-SINH12-2K9",
     "childCourseIds": [],
@@ -14437,9 +14431,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
     "parentSubjectId": "COURSE-SUBJ-ANH12-2K9",
     "childCourseIds": [],
@@ -14535,9 +14529,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9",
     "childCourseIds": [],
@@ -14633,9 +14627,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
     "childCourseIds": [],
@@ -14731,9 +14725,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-BCA-QDA-VSAT",
     "parentSubjectId": "COURSE-SUBJ-HOA12-2K9",
     "childCourseIds": [],
@@ -14827,9 +14821,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -14923,9 +14917,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -15021,9 +15015,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -15117,9 +15111,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-THVP-MOS-199K",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -15213,9 +15207,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-MOS-THVP",
     "childCourseIds": [],
@@ -15310,9 +15304,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
     "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL",
     "childCourseIds": [],
@@ -15407,9 +15401,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -15505,9 +15499,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -15602,9 +15596,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -15699,9 +15693,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -15798,9 +15792,9 @@ const DVS_COURSES_DB = [
     "tierType": "subject_69k",
     "subTier": "teacher_69k",
     "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
+    "tierShortBadge": "69k/1 Môn",
     "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Gói Lẻ 69K · Tặng App",
+    "badge": "69k/1 Môn",
     "parentCourseId": "COURSE-NGHETHUAT-199K",
     "parentSubjectId": "COURSE-SUBJ-NGHETHUAT",
     "childCourseIds": [],
@@ -15868,202 +15862,6 @@ const DVS_COURSES_DB = [
         ]
       }
     ]
-  },
-  {
-    "id": "COURSE-ITEM-SU-LAN-HUONG",
-    "sku": "DVSU12LANHUONG",
-    "code": "DVSU12LANHUONG",
-    "category": "ngoai_ngu_khxh",
-    "categories": [
-      "ngoai_ngu_khxh",
-      "lop12_2k9",
-      "dgnl_vact_bca"
-    ],
-    "subCategory": "lop12_2k9",
-    "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương",
-    "instructor": "CÔ LAN HƯƠNG — LỊCH SỬ 12",
-    "duration": "Full lộ trình 2027 · Video + PDF",
-    "lessons": 50,
-    "level": "Môn Lịch Sử 12 (2K9)",
-    "groupName": "Môn Lịch Sử 12 (2K9)",
-    "rating": 5.0,
-    "students": "1.4k+",
-    "price": 69000,
-    "originalPrice": 250000,
-    "singlePrice": 69000,
-    "coursePrice": 199000,
-    "tier": "subject_69k",
-    "tierType": "subject_69k",
-    "subTier": "teacher_69k",
-    "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
-    "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Môn Lịch Sử 12 · 69K",
-    "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-    "parentSubjectId": "COURSE-SUBJ-SU12-2K9",
-    "childCourseIds": [],
-    "extraFolderIds": [
-      "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
-    ],
-    "defaultCover": "courses/covers/su_co_lan_huong.jpg",
-    "driveFolderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-    "driveFolderName": "Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương",
-    "driveFolderUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-    "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-    "driveFileId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-    "driveFileName": "Folder_Drive_COURSE-ITEM-SU-LAN-HUONG",
-    "driveFileUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-    "summary": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
-    "description": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông do EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.",
-    "highlights": [
-      "Mở khóa trực tiếp thư mục khóa học: Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
-      "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
-      "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"
-    ],
-    "modules": [
-      {
-        "moduleTitle": "Học phần 1: Hệ thống bài giảng & Tài liệu gốc (Văn · Sử · Địa · Anh · Trung)",
-        "lessons": [
-          {
-            "id": "course-item-su-lan-huong-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương",
-            "duration": "45:00",
-            "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương",
-              "Giảng viên / Đơn vị biên soạn: CÔ LAN HƯƠNG — LỊCH SỬ 12",
-              "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
-            ],
-            "lectureScript": [
-              {
-                "time": "00:00",
-                "speaker": "CÔ LAN HƯƠNG — LỊCH SỬ 12",
-                "text": "Chào mừng bạn đến với Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
-              },
-              {
-                "time": "02:15",
-                "speaker": "CÔ LAN HƯƠNG — LỊCH SỬ 12",
-                "text": "Bạn có thể bật tính năng Ghi âm & Tóm tắt AI bên phải để lưu lại các công thức trọng tâm và hỏi đáp trực tiếp cùng trợ lý AI."
-              }
-            ]
-          },
-          {
-            "id": "course-item-su-lan-huong-les-2",
-            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (CÔ LAN HƯƠNG — LỊCH SỬ 12)",
-            "duration": "50:00",
-            "keyFormulas": [
-              "Phương pháp phân tích ma trận đề thi và nhận diện câu hỏi vận dụng cao",
-              "Hệ thống công thức giải nhanh và bẫy thường gặp trong phòng thi"
-            ],
-            "lectureScript": [
-              {
-                "time": "00:00",
-                "speaker": "CÔ LAN HƯƠNG — LỊCH SỬ 12",
-                "text": "Trong chuyên đề này của Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "COURSE-ITEM-DIA-TAI",
-    "sku": "DVDIA12TAI",
-    "code": "DVDIA12TAI",
-    "category": "ngoai_ngu_khxh",
-    "categories": [
-      "ngoai_ngu_khxh",
-      "lop12_2k9",
-      "dgnl_vact_bca"
-    ],
-    "subCategory": "lop12_2k9",
-    "categoryLabel": "Văn · Sử · Địa · Anh · Trung",
-    "title": "Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài",
-    "instructor": "THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12",
-    "duration": "Full lộ trình 2027 · Video + PDF",
-    "lessons": 50,
-    "level": "Môn Địa Lý 12 (2K9)",
-    "groupName": "Môn Địa Lý 12 (2K9)",
-    "rating": 5.0,
-    "students": "1.4k+",
-    "price": 69000,
-    "originalPrice": 250000,
-    "singlePrice": 69000,
-    "coursePrice": 199000,
-    "tier": "subject_69k",
-    "tierType": "subject_69k",
-    "subTier": "teacher_69k",
-    "isPackageOnly": false,
-    "tierShortBadge": "THEO MÔN 69K",
-    "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
-    "badge": "Môn Địa Lý 12 · 69K",
-    "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-    "parentSubjectId": "COURSE-SUBJ-DIA12-2K9",
-    "childCourseIds": [],
-    "extraFolderIds": [
-      "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
-    ],
-    "defaultCover": "courses/covers/dia_thay_tai.jpg",
-    "driveFolderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-    "driveFolderName": "Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài",
-    "driveFolderUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-    "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-    "driveFileId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-    "driveFileName": "Folder_Drive_COURSE-ITEM-DIA-TAI",
-    "driveFileUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-    "summary": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
-    "description": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam do EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.",
-    "highlights": [
-      "Mở khóa trực tiếp thư mục khóa học: Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
-      "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
-      "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"
-    ],
-    "modules": [
-      {
-        "moduleTitle": "Học phần 1: Hệ thống bài giảng & Tài liệu gốc (Văn · Sử · Địa · Anh · Trung)",
-        "lessons": [
-          {
-            "id": "course-item-dia-tai-les-1",
-            "title": "Bài 1: Tổng quan lộ trình & Hướng dẫn học Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài",
-            "duration": "45:00",
-            "keyFormulas": [
-              "Kho tài liệu Google Drive chính thức: Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài",
-              "Giảng viên / Đơn vị biên soạn: THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12",
-              "Bấm nút 'Mở thư mục Drive' để truy cập toàn bộ Video bài giảng, PDF đề thi và lời giải chi tiết"
-            ],
-            "lectureScript": [
-              {
-                "time": "00:00",
-                "speaker": "THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12",
-                "text": "Chào mừng bạn đến với Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài. Toàn bộ tài liệu PDF, đề luyện tập và video bài giảng đã được đồng bộ trực tiếp trong thư mục Google Drive của khóa học."
-              },
-              {
-                "time": "02:15",
-                "speaker": "THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12",
-                "text": "Bạn có thể bật tính năng Ghi âm & Tóm tắt AI bên phải để lưu lại các công thức trọng tâm và hỏi đáp trực tiếp cùng trợ lý AI."
-              }
-            ]
-          },
-          {
-            "id": "course-item-dia-tai-les-2",
-            "title": "Bài 2: Chuyên đề trọng tâm & Kỹ thuật giải nhanh (THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12)",
-            "duration": "50:00",
-            "keyFormulas": [
-              "Phương pháp phân tích ma trận đề thi và nhận diện câu hỏi vận dụng cao",
-              "Hệ thống công thức giải nhanh và bẫy thường gặp trong phòng thi"
-            ],
-            "lectureScript": [
-              {
-                "time": "00:00",
-                "speaker": "THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12",
-                "text": "Trong chuyên đề này của Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài, chúng ta đi sâu vào các dạng bài cốt lõi thường xuất hiện trong đề thi chính thức."
-              }
-            ]
-          }
-        ]
-      }
-    ]
   }
 ];
 
@@ -16117,22 +15915,22 @@ function DvsBtnPadlockIcon({ size = 14 }) {
 const DVS_PRICING_PLANS = [
   {
     id: "single_subject_69k",
-    name: "Mở Khóa Theo Môn",
-    shortLabel: "Theo môn · 69.000đ",
+    name: "69k/1 Môn",
+    shortLabel: "69k/1 Môn",
     price: "69.000đ",
     amount: 69000
   },
   {
     id: "single_course_199k",
-    name: "Mở Khóa Khóa Học Này",
-    shortLabel: "Mua khóa · 199.000đ",
+    name: "199k/1 Khóa",
+    shortLabel: "199k/1 Khóa",
     price: "199.000đ",
     amount: 199000
   },
   {
     id: "all_courses_399k",
-    name: "Trọn Bộ Mở Khóa Full Cả App",
-    shortLabel: "Trọn bộ Full App · 399.000đ",
+    name: "399k/Full Khóa học",
+    shortLabel: "399k/Full Khóa học",
     price: "399.000đ",
     amount: 399000
   }
@@ -16164,37 +15962,375 @@ const DVS_COURSE_199K_OPTIONS = [
   ...DVS_COURSES_DB.filter(c => c.tierType === "course_199k" && c.isPackageOnly)
 ];
 
+const DVS_SUBJECT_CATALOG_OPTIONS = [
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các môn học", iconKey: "all" },
+  { id: "TOAN", badge: "TOÁN HỌC", name: "Môn Toán", iconKey: "toan" },
+  { id: "VAN", badge: "NGỮ VĂN", name: "Môn Ngữ Văn", iconKey: "van" },
+  { id: "ANH", badge: "TIẾNG ANH", name: "Môn Tiếng Anh", iconKey: "anh" },
+  { id: "LY", badge: "VẬT LÝ", name: "Môn Vật Lý", iconKey: "ly" },
+  { id: "HOA", badge: "HÓA HỌC", name: "Môn Hóa Học", iconKey: "hoa" },
+  { id: "SINH", badge: "SINH HỌC", name: "Môn Sinh Học", iconKey: "sinh" },
+  { id: "SU", badge: "LỊCH SỬ", name: "Môn Lịch Sử", iconKey: "su" },
+  { id: "DIA", badge: "ĐỊA LÝ", name: "Môn Địa Lý", iconKey: "dia" },
+  { id: "TRUNG", badge: "TIẾNG TRUNG", name: "Môn Tiếng Trung (HSK · D04)", iconKey: "trung" },
+  { id: "TIN_MOS", badge: "TIN HỌC", name: "Môn Tin Học & Văn Phòng", iconKey: "tin_mos" },
+  { id: "DAI_HOC", badge: "ĐẠI HỌC", name: "Kinh Tế Lượng · Triết Học · Đại Học", iconKey: "dai_hoc" },
+  { id: "NGHE_THUAT", badge: "NGHỆ THUẬT", name: "Âm Nhạc · Guitar · Piano · Thanh Nhạc", iconKey: "nghe_thuat" }
+];
+
+const DVS_COURSE_PROGRAM_OPTIONS = [
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các khóa học", iconKey: "all" },
+  { id: "PROG:lop12_2k9", badge: "THPTQG 2K9", name: "Khóa Luyện Thi THPTQG Lớp 12 (2K9)", iconKey: "dai_hoc" },
+  { id: "PROG:lop11_2k10", badge: "LỚP 11 · 2K10", name: "Khóa Xuất Phát Sớm Lớp 11 (2K10)", iconKey: "van" },
+  { id: "PROG:dgnl_hsa", badge: "ĐGNL HSA", name: "Khóa Luyện Thi ĐGNL HSA — ĐHQG Hà Nội", iconKey: "hsa_tsa" },
+  { id: "PROG:dgtd_tsa", badge: "ĐGTD TSA", name: "Khóa Luyện Thi ĐGTD TSA — ĐH Bách Khoa", iconKey: "hsa_tsa" },
+  { id: "PROG:vact", badge: "ĐGNL V-ACT", name: "Khóa Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM", iconKey: "vact_bca" },
+  { id: "PROG:bca", badge: "ĐGNL BCA", name: "Khóa Luyện Thi ĐGNL Bộ Công An (BCA)", iconKey: "vact_bca" },
+  { id: "PROG:qda", badge: "ĐGNL QDA", name: "Khóa Luyện Thi ĐGNL Quân Đội (QDA)", iconKey: "vact_bca" },
+  { id: "PROG:vsat", badge: "ĐGNL VSAT", name: "Khóa Luyện Thi ĐGNL VSAT", iconKey: "vact_bca" },
+  { id: "PROG:mos", badge: "CHỨNG CHỈ MOS", name: "Khóa Tin Học Văn Phòng & Chứng Chỉ MOS", iconKey: "tin_mos" },
+  { id: "PROG:daihoc", badge: "ĐẠI HỌC · BTL", name: "Khóa Đại Học · Kinh Tế Lượng · NCKH", iconKey: "dai_hoc" },
+  { id: "PROG:nghe_thuat", badge: "NGHỆ THUẬT", name: "Khóa Nghệ Thuật · Guitar · Piano", iconKey: "nghe_thuat" }
+];
+
+const DVS_COURSE_HOT_KEYWORDS = [
+  { label: "Khóa ĐGNL HSA — ĐHQG Hà Nội", subj: "ALL", courseId: "PROG:dgnl_hsa", kw: "" },
+  { label: "Khóa ĐGTD TSA — ĐH Bách Khoa", subj: "ALL", courseId: "PROG:dgtd_tsa", kw: "" },
+  { label: "Khóa ĐGNL V-ACT — ĐHQG TP.HCM", subj: "ALL", courseId: "PROG:vact", kw: "" },
+  { label: "Khóa ĐGNL Bộ Công An (BCA)", subj: "ALL", courseId: "PROG:bca", kw: "" },
+  { label: "Toán 12 — Thầy Đỗ Văn Đức", subj: "TOAN", courseId: "ALL", kw: "Đỗ Văn Đức" },
+  { label: "Vật Lý 12 — Thầy Vũ Ngọc Anh", subj: "LY", courseId: "ALL", kw: "Vũ Ngọc Anh" },
+  { label: "Tiếng Anh — Cô Vũ Mai Phương", subj: "ANH", courseId: "ALL", kw: "Vũ Mai Phương" },
+  { label: "Ngữ Văn — Cô Sương Mai", subj: "VAN", courseId: "ALL", kw: "Sương Mai" },
+  { label: "Hóa Học — Thầy Nguyễn Anh Phong", subj: "HOA", courseId: "ALL", kw: "Nguyễn Anh Phong" },
+  { label: "Khóa Tin Học Văn Phòng MOS", subj: "TIN_MOS", courseId: "PROG:mos", kw: "" }
+];
+
+function getDvsIconThemeByKey(iconKey) {
+  switch (iconKey) {
+    case "toan":
+      return { color: "#1D4ED8", bg: "#EFF6FF", border: "#BFDBFE", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    case "van":
+      return { color: "#BE123C", bg: "#FFF1F2", border: "#FECDD3", pillBg: "#FFE4E6", pillColor: "#9F1239" };
+    case "anh":
+      return { color: "#0284C7", bg: "#F0F9FF", border: "#BAE6FD", pillBg: "#E0F2FE", pillColor: "#075985" };
+    case "ly":
+      return { color: "#D97706", bg: "#FFFBEB", border: "#FDE68A", pillBg: "#FEF3C7", pillColor: "#92400E" };
+    case "hoa":
+      return { color: "#059669", bg: "#ECFDF5", border: "#A7F3D0", pillBg: "#D1FAE5", pillColor: "#065F46" };
+    case "sinh":
+      return { color: "#16A34A", bg: "#F0FDF4", border: "#BBF7D0", pillBg: "#DCFCE7", pillColor: "#166534" };
+    case "su":
+      return { color: "#B45309", bg: "#FFF7ED", border: "#FED7AA", pillBg: "#FFEDD5", pillColor: "#9A3412" };
+    case "dia":
+      return { color: "#0891B2", bg: "#ECFEFF", border: "#A5F3FC", pillBg: "#CFFAFE", pillColor: "#155E75" };
+    case "trung":
+      return { color: "#DC2626", bg: "#FEF2F2", border: "#FECACA", pillBg: "#FEE2E2", pillColor: "#991B1B" };
+    case "hsa_tsa":
+      return { color: "#7C3AED", bg: "#F5F3FF", border: "#DDD6FE", pillBg: "#EDE9FE", pillColor: "#5B21B6" };
+    case "vact_bca":
+      return { color: "#0F766E", bg: "#F0FDFA", border: "#99F6E4", pillBg: "#CCFBF1", pillColor: "#115E59" };
+    case "tin_mos":
+      return { color: "#4338CA", bg: "#EEF2FF", border: "#C7D2FE", pillBg: "#E0E7FF", pillColor: "#3730A3" };
+    case "dai_hoc":
+      return { color: "#0D1677", bg: "#EFF6FF", border: "#BFDBFE", pillBg: "#DBEAFE", pillColor: "#1E3A8A" };
+    case "nghe_thuat":
+      return { color: "#DB2777", bg: "#FDF2F8", border: "#FBCFE8", pillBg: "#FCE7F3", pillColor: "#9D174D" };
+    default:
+      return { color: "#0D1677", bg: "#F8FAFC", border: "#CBD5E1", pillBg: "#E2E8F0", pillColor: "#0F172A" };
+  }
+}
+
+function renderDvsSubjectCourseSvg(iconKey, size = 14) {
+  const props = {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2.1,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  };
+  switch (iconKey) {
+    case "toan":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("rect", { x: "4", y: "2", width: "16", height: "20", rx: "2" }),
+          g.jsx("line", { x1: "8", y1: "6", x2: "16", y2: "6" }),
+          g.jsx("line", { x1: "8", y1: "11", x2: "10", y2: "11" }),
+          g.jsx("line", { x1: "14", y1: "11", x2: "16", y2: "11" }),
+          g.jsx("line", { x1: "8", y1: "15", x2: "10", y2: "15" }),
+          g.jsx("line", { x1: "14", y1: "15", x2: "16", y2: "15" })
+        ]
+      });
+    case "van":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" }),
+          g.jsx("line", { x1: "16", y1: "8", x2: "2", y2: "22" }),
+          g.jsx("line", { x1: "17.5", y1: "15", x2: "9", y2: "15" })
+        ]
+      });
+    case "anh":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("circle", { cx: "12", cy: "12", r: "10" }),
+          g.jsx("line", { x1: "2", y1: "12", x2: "22", y2: "12" }),
+          g.jsx("path", { d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" })
+        ]
+      });
+    case "ly":
+      return g.jsx("svg", {
+        ...props,
+        children: g.jsx("polygon", { points: "13 2 3 14 12 14 11 22 21 10 12 10 13 2" })
+      });
+    case "hoa":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "M10 2v7.31" }),
+          g.jsx("path", { d: "M14 9.3V1.99" }),
+          g.jsx("path", { d: "M8.5 2h7" }),
+          g.jsx("path", { d: "M14 9.3a6.5 6.5 0 1 1-4 0" }),
+          g.jsx("path", { d: "M5.52 16h12.96" })
+        ]
+      });
+    case "sinh":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" }),
+          g.jsx("path", { d: "M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" })
+        ]
+      });
+    case "su":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("line", { x1: "3", y1: "22", x2: "21", y2: "22" }),
+          g.jsx("line", { x1: "6", y1: "18", x2: "6", y2: "11" }),
+          g.jsx("line", { x1: "10", y1: "18", x2: "10", y2: "11" }),
+          g.jsx("line", { x1: "14", y1: "18", x2: "14", y2: "11" }),
+          g.jsx("line", { x1: "18", y1: "18", x2: "18", y2: "11" }),
+          g.jsx("polygon", { points: "12 2 20 7 4 7" })
+        ]
+      });
+    case "dia":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("polygon", { points: "3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" }),
+          g.jsx("line", { x1: "9", y1: "3", x2: "9", y2: "18" }),
+          g.jsx("line", { x1: "15", y1: "6", x2: "15", y2: "21" })
+        ]
+      });
+    case "trung":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "m5 8 6 6" }),
+          g.jsx("path", { d: "m4 14 6-6 2-3" }),
+          g.jsx("path", { d: "M2 5h12" }),
+          g.jsx("path", { d: "M7 2h1" }),
+          g.jsx("path", { d: "m22 22-5-10-5 10" }),
+          g.jsx("path", { d: "M14 18h6" })
+        ]
+      });
+    case "hsa_tsa":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("circle", { cx: "12", cy: "12", r: "10" }),
+          g.jsx("circle", { cx: "12", cy: "12", r: "6" }),
+          g.jsx("circle", { cx: "12", cy: "12", r: "2" })
+        ]
+      });
+    case "vact_bca":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" }),
+          g.jsx("path", { d: "m9 12 2 2 4-4" })
+        ]
+      });
+    case "tin_mos":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("rect", { width: "18", height: "12", x: "3", y: "4", rx: "2" }),
+          g.jsx("line", { x1: "2", y1: "20", x2: "22", y2: "20" })
+        ]
+      });
+    case "dai_hoc":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "M22 10L12 5 2 10l10 5 10-5z" }),
+          g.jsx("path", { d: "M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5" })
+        ]
+      });
+    case "nghe_thuat":
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("path", { d: "M9 18V5l12-2v13" }),
+          g.jsx("circle", { cx: "6", cy: "18", r: "3" }),
+          g.jsx("circle", { cx: "18", cy: "16", r: "3" })
+        ]
+      });
+    default:
+      return g.jsxs("svg", {
+        ...props,
+        children: [
+          g.jsx("rect", { x: "3", y: "3", width: "7", height: "7", rx: "1.5" }),
+          g.jsx("rect", { x: "14", y: "3", width: "7", height: "7", rx: "1.5" }),
+          g.jsx("rect", { x: "14", y: "14", width: "7", height: "7", rx: "1.5" }),
+          g.jsx("rect", { x: "3", y: "14", width: "7", height: "7", rx: "1.5" })
+        ]
+      });
+  }
+}
+
+function renderDvsSubjectCourseIconBox(iconKey, size = 14) {
+  const th = getDvsIconThemeByKey(iconKey);
+  return g.jsx("span", {
+    className: "dvs-uni-icon-box",
+    style: {
+      background: th.bg,
+      borderColor: th.border,
+      color: th.color
+    },
+    children: renderDvsSubjectCourseSvg(iconKey, size)
+  });
+}
+
+function doesCourseMatchSubjectFilter(c, subjId) {
+  if (!c || !subjId || subjId === "ALL") return true;
+  const hay = stripViAccentsJs(`${c.id || ""} ${c.title || ""} ${c.instructor || ""} ${c.groupName || ""} ${c.summary || ""} ${c.category || ""} ${c.subCategory || ""} ${c.sku || ""}`).toLowerCase();
+  if (subjId === "TOAN") return hay.includes("toan") || hay.includes("dinh luong");
+  if (subjId === "VAN") return hay.includes("ngu van") || hay.includes("van hoc") || hay.includes("suong mai") || hay.includes("minh nga") || hay.includes("dinh tinh");
+  if (subjId === "ANH") return hay.includes("tieng anh") || hay.includes("mai phuong") || hay.includes("pro3m") || hay.includes("kieu anh");
+  if (subjId === "LY") return hay.includes("vat ly") || hay.includes("vu ngoc anh") || hay.includes("di than");
+  if (subjId === "HOA") return hay.includes("hoa hoc") || hay.includes("ester") || hay.includes("anh phong") || hay.includes("pham van");
+  if (subjId === "SINH") return hay.includes("sinh hoc") || hay.includes("di truyen") || hay.includes("khac nghe");
+  if (subjId === "SU") return hay.includes("lich su") || hay.includes("lichsu");
+  if (subjId === "DIA") return hay.includes("dia ly") || hay.includes("dia li") || hay.includes("dialy");
+  if (subjId === "TRUNG") return hay.includes("tieng trung") || hay.includes("han ngu") || hay.includes("hsk") || hay.includes("d04");
+  if (subjId === "TIN_MOS" || subjId === "TIN") return hay.includes("mos") || hay.includes("excel") || hay.includes("word") || hay.includes("tin hoc") || hay.includes("powerpoint") || hay.includes("access") || hay.includes("sql") || hay.includes("google sheets");
+  if (subjId === "DAI_HOC") return hay.includes("kinh te luong") || hay.includes("triet hoc") || hay.includes("tieu luan") || hay.includes("xac suat") || hay.includes("nghien cuu khoa hoc");
+  if (subjId === "NGHE_THUAT") return c.category === "nghe_thuat" || hay.includes("guitar") || hay.includes("piano") || hay.includes("thanh nhac") || hay.includes("ukulele");
+  return true;
+}
+
+function doesCourseMatchProgramFilter(c, progSel) {
+  if (!c || !progSel || progSel === "ALL") return true;
+  if (progSel.startsWith("COURSE-")) return c.id === progSel;
+  const hay = stripViAccentsJs(`${c.id || ""} ${c.title || ""} ${c.groupName || ""} ${c.category || ""} ${c.subCategory || ""} ${c.sku || ""}`).toLowerCase();
+  if (progSel === "PROG:lop12_2k9" || progSel === "lop12_2k9") return c.category === "lop12_2k9" || c.subCategory === "lop12_2k9";
+  if (progSel === "PROG:lop11_2k10" || progSel === "lop11_2k10") return c.category === "lop11_2k10" || c.subCategory === "lop11_2k10";
+  if (progSel === "PROG:dgnl_hsa" || progSel === "dgnl_hsa") return c.category === "dgnl_hsa" || hay.includes("hsa");
+  if (progSel === "PROG:dgtd_tsa" || progSel === "dgtd_tsa") return c.category === "dgtd_tsa" || hay.includes("tsa");
+  if (progSel === "PROG:vact") return hay.includes("v-act") || hay.includes("vact");
+  if (progSel === "PROG:bca") return hay.includes("bca") || hay.includes("cong an");
+  if (progSel === "PROG:qda") return hay.includes("qda") || hay.includes("quan doi");
+  if (progSel === "PROG:vsat") return hay.includes("vsat");
+  if (progSel === "PROG:mos") return hay.includes("mos") || hay.includes("excel") || hay.includes("word") || hay.includes("powerpoint") || hay.includes("access") || hay.includes("google sheets");
+  if (progSel === "PROG:daihoc") return hay.includes("kinh te luong") || hay.includes("triet hoc") || hay.includes("tieu luan") || hay.includes("xac suat") || hay.includes("nghien cuu khoa hoc");
+  if (progSel === "PROG:nghe_thuat" || progSel === "nghe_thuat") return c.category === "nghe_thuat";
+  return c.category === progSel || c.subCategory === progSel;
+}
+
 function getDvsCourseVisualMeta(c) {
-  if (!c) return { badge: "KHÓA HỌC", cleanTitle: "Khóa Học Ôn Thi" };
+  if (!c) return { badge: "KHÓA HỌC", cleanTitle: "Khóa Học Ôn Thi", iconKey: "all" };
   const text = `${c.id || ""} ${c.title || ""} ${c.groupName || ""} ${c.category || ""} ${c.subCategory || ""}`.toLowerCase();
   let badge = "KHÓA HỌC";
-  if (text.includes("tiếng trung") || text.includes("hán ngữ") || text.includes("hsk") || text.includes("yangdexin") || text.includes("d04")) badge = "TIẾNG TRUNG";
-  else if (text.includes("lịch sử") || text.includes("lichsu")) badge = "LỊCH SỬ";
-  else if (text.includes("địa lý") || text.includes("địa lí") || text.includes("dialy")) badge = "ĐỊA LÝ";
-  else if (text.includes("ngữ văn") || text.includes("nguvan") || text.includes("văn học")) badge = "NGỮ VĂN";
-  else if (text.includes("sinh học") || text.includes("sinh12")) badge = "SINH HỌC";
-  else if (text.includes("kinh tế lượng") || text.includes("eviews") || text.includes("stata") || text.includes("spss")) badge = "KINH TẾ LƯỢNG";
-  else if (text.includes("triết học") || text.includes("mác - lênin")) badge = "TRIẾT HỌC";
-  else if (text.includes("nghiên cứu khoa học") || text.includes("tiểu luận") || text.includes("apa 7") || text.includes("xác suất")) badge = "ĐẠI HỌC · BTL";
-  else if (text.includes("guitar") || text.includes("piano") || text.includes("thanh nhạc") || text.includes("ukulele") || text.includes("sáo trúc") || text.includes("dj") || text.includes("nhảy") || text.includes("nghệ thuật")) badge = "NGHỆ THUẬT";
-  else if (text.includes("mos") || text.includes("excel") || text.includes("word") || text.includes("powerpoint") || text.includes("access") || text.includes("google sheets") || text.includes("văn phòng")) badge = "MOS · THVP";
-  else if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) badge = "TOÁN 12";
-  else if (text.includes("vật lý 12") || text.includes("ly12") || (text.includes("vật lý") && text.includes("12"))) badge = "VẬT LÝ 12";
-  else if (text.includes("hóa học 12") || text.includes("hoa12") || (text.includes("hóa") && text.includes("12"))) badge = "HÓA 12";
-  else if (text.includes("tiếng anh 12") || text.includes("anh12") || text.includes("mai phương") || (text.includes("tiếng anh") && text.includes("12"))) badge = "ANH 12";
-  else if (text.includes("ngữ văn")) badge = "VĂN 12";
-  else if (text.includes("sinh học")) badge = "SINH 12";
-  else if (text.includes("topuni")) badge = "TOPUNI 12";
-  else if (text.includes("toán 11") || text.includes("toan11")) badge = "TOÁN 11";
-  else if (text.includes("vật lý 11") || text.includes("ly11")) badge = "LÝ 11";
-  else if (text.includes("hóa học 11") || text.includes("hoa11")) badge = "HÓA 11";
-  else if (text.includes("tin học") || text.includes("lập trình") || text.includes("tin11")) badge = "TIN HỌC";
-  else if (text.includes("hsa")) badge = "HSA";
-  else if (text.includes("tsa")) badge = "TSA";
-  else if (text.includes("v-act") || text.includes("vact")) badge = "V-ACT";
-  else if (text.includes("công an") || text.includes("bca")) badge = "BCA";
-  else if (text.includes("quân đội") || text.includes("qda")) badge = "QDA";
-  else if (text.includes("vsat")) badge = "VSAT";
+  let iconKey = "all";
+  if (text.includes("tiếng trung") || text.includes("hán ngữ") || text.includes("hsk") || text.includes("yangdexin") || text.includes("d04")) {
+    badge = "TIẾNG TRUNG";
+    iconKey = "trung";
+  } else if (text.includes("lịch sử") || text.includes("lichsu")) {
+    badge = "LỊCH SỬ";
+    iconKey = "su";
+  } else if (text.includes("địa lý") || text.includes("địa lí") || text.includes("dialy")) {
+    badge = "ĐỊA LÝ";
+    iconKey = "dia";
+  } else if (text.includes("ngữ văn") || text.includes("nguvan") || text.includes("văn học")) {
+    badge = text.includes("11") ? "VĂN 11" : "NGỮ VĂN 12";
+    iconKey = "van";
+  } else if (text.includes("sinh học") || text.includes("sinh12")) {
+    badge = "SINH HỌC 12";
+    iconKey = "sinh";
+  } else if (text.includes("kinh tế lượng") || text.includes("eviews") || text.includes("stata") || text.includes("spss")) {
+    badge = "KINH TẾ LƯỢNG";
+    iconKey = "dai_hoc";
+  } else if (text.includes("triết học") || text.includes("mác - lênin")) {
+    badge = "TRIẾT HỌC";
+    iconKey = "dai_hoc";
+  } else if (text.includes("nghiên cứu khoa học") || text.includes("tiểu luận") || text.includes("apa 7") || text.includes("xác suất")) {
+    badge = "ĐẠI HỌC · BTL";
+    iconKey = "dai_hoc";
+  } else if (text.includes("guitar") || text.includes("piano") || text.includes("thanh nhạc") || text.includes("ukulele") || text.includes("sáo trúc") || text.includes("dj") || text.includes("nhảy") || text.includes("nghệ thuật")) {
+    badge = "NGHỆ THUẬT";
+    iconKey = "nghe_thuat";
+  } else if (text.includes("mos") || text.includes("excel") || text.includes("word") || text.includes("powerpoint") || text.includes("access") || text.includes("google sheets") || text.includes("văn phòng")) {
+    badge = "MOS · THVP";
+    iconKey = "tin_mos";
+  } else if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) {
+    badge = "TOÁN 12";
+    iconKey = "toan";
+  } else if (text.includes("vật lý 12") || text.includes("ly12") || (text.includes("vật lý") && text.includes("12"))) {
+    badge = "VẬT LÝ 12";
+    iconKey = "ly";
+  } else if (text.includes("hóa học 12") || text.includes("hoa12") || (text.includes("hóa") && text.includes("12"))) {
+    badge = "HÓA 12";
+    iconKey = "hoa";
+  } else if (text.includes("tiếng anh 12") || text.includes("anh12") || text.includes("mai phương") || (text.includes("tiếng anh") && text.includes("12"))) {
+    badge = "ANH 12";
+    iconKey = "anh";
+  } else if (text.includes("topuni")) {
+    badge = "TOPUNI 12";
+    iconKey = "hsa_tsa";
+  } else if (text.includes("toán 11") || text.includes("toan11")) {
+    badge = "TOÁN 11";
+    iconKey = "toan";
+  } else if (text.includes("vật lý 11") || text.includes("ly11")) {
+    badge = "LÝ 11";
+    iconKey = "ly";
+  } else if (text.includes("hóa học 11") || text.includes("hoa11")) {
+    badge = "HÓA 11";
+    iconKey = "hoa";
+  } else if (text.includes("tin học") || text.includes("lập trình") || text.includes("tin11")) {
+    badge = "TIN HỌC";
+    iconKey = "tin_mos";
+  } else if (text.includes("hsa")) {
+    badge = "HSA";
+    iconKey = "hsa_tsa";
+  } else if (text.includes("tsa")) {
+    badge = "TSA";
+    iconKey = "hsa_tsa";
+  } else if (text.includes("v-act") || text.includes("vact")) {
+    badge = "V-ACT";
+    iconKey = "vact_bca";
+  } else if (text.includes("công an") || text.includes("bca")) {
+    badge = "BCA";
+    iconKey = "vact_bca";
+  } else if (text.includes("quân đội") || text.includes("qda")) {
+    badge = "QDA";
+    iconKey = "vact_bca";
+  } else if (text.includes("vsat")) {
+    badge = "VSAT";
+    iconKey = "vact_bca";
+  } else if (text.includes("toán")) {
+    badge = "TOÁN HỌC";
+    iconKey = "toan";
+  } else if (text.includes("tiếng anh")) {
+    badge = "TIẾNG ANH";
+    iconKey = "anh";
+  }
 
   let rawInst = String(c.instructor || "").trim();
   let shortTeacher = rawInst;
@@ -16210,7 +16346,7 @@ function getDvsCourseVisualMeta(c) {
     str
       .toLowerCase()
       .replace(/(^|\s|\(|-)(\S)/g, (m, p1, p2) => p1 + p2.toUpperCase())
-      .replace(/\b(Hsa|Tsa|V-Act|Bca|Qda|Vsat|Thptqg|2k9|2k10|Sgk|Vip90|Pro3m|Iome|Xps|Tmt|Lxo|Nap|Tyhh|Bmc|Tdmu|12a3|Ctg)\b/gi, s => s.toUpperCase())
+      .replace(/\b(Hsa|Tsa|V-Act|Bca|Qda|Vsat|Thptqg|2k9|2k10|Sgk|Vip90|Pro3m|Iome|Xps|Tmt|Lxo|Nap|Tyhh|Bmc|Tdmu|12a3|Ctg|Mos)\b/gi, s => s.toUpperCase())
       .replace(/Tenschool/gi, "TenSchool")
       .replace(/Mapstudy/gi, "MapStudy")
       .replace(/Hocmai/gi, "HocMai")
@@ -16218,35 +16354,26 @@ function getDvsCourseVisualMeta(c) {
       .replace(/Sangsang/gi, "SangSang")
       .replace(/Ngoaingu24h/gi, "NgoaiNgu24h");
 
-  let cleanTitle = String(c.title || "").trim();
+  let cleanTitle = String(c.title || "")
+    .replace(/^(69k\/1 Môn|199k\/1 Khóa|399k\/Full Khóa học)\s*—\s*/i, "")
+    .trim();
   if (cleanTitle.includes("—")) {
     const tParts = cleanTitle.split("—").map(s => s.trim());
     if (String(c.id).startsWith("COURSE-SUBJ-")) {
       cleanTitle = `${tParts[0]} (${tParts[1] || "Trọn bộ"})`;
     } else {
-      cleanTitle = tParts.slice(1).join(" · ") || tParts[0];
+      cleanTitle = tParts.join(" — ");
     }
   }
-  cleanTitle = cleanTitle
-    .replace(/Lộ Trình Chinh Phục THPTQG 2027 \(([^)]+)\)/i, "$1")
-    .replace(/Lộ Trình Toàn Diện THPTQG 2027 \(([^)]+)\)/i, "$1")
-    .replace(/Lộ Trình Toàn Diện Luyện Thi THPTQG 2027/i, "Lộ Trình Toàn Diện 2027")
-    .replace(/Toàn Diện Kiến Thức SGK Mới/i, "Toàn Diện SGK Mới");
   const displayLine = String(c.id).startsWith("COURSE-SUBJ-")
     ? cleanTitle
-    : shortTeacher
-      ? `${toNice(shortTeacher)} — ${cleanTitle}`
+    : shortTeacher && !cleanTitle.toLowerCase().includes(shortTeacher.split("(")[0].trim().toLowerCase())
+      ? `${cleanTitle} — ${toNice(shortTeacher)}`
       : cleanTitle;
 
-  return { badge, cleanTitle: displayLine };
+  return { badge, cleanTitle: displayLine, iconKey };
 }
 
-/* =========================================================================
-   MODAL THANH TOÁN VIETQR TỨC THÌ & KIỂM TRA BIẾN ĐỘNG SỐ DƯ NGÂN HÀNG THẬT
-   - Tuyệt đối không mở khóa thủ công khi chưa thanh toán
-   - Tự động đối soát biến động số dư ACB 27384751 NGO BAO THACH
-   - Khóa cứng 1 tài khoản Email = 1 thiết bị duy nhất
-   ========================================================================= */
 function DvsDiepVienCheckoutModal({
   open,
   mode = "course",
@@ -16282,6 +16409,7 @@ function DvsDiepVienCheckoutModal({
   const [submitting, setSubmitting] = E.useState(false);
   const [payNotice, setPayNotice] = E.useState("");
   const [deliveredState, setDeliveredState] = E.useState(null);
+  const [editingCust, setEditingCust] = E.useState(false);
 
   E.useEffect(() => {
     if (open && mode === "course") {
@@ -16354,6 +16482,7 @@ function DvsDiepVienCheckoutModal({
       setOrderSeed(String(Math.floor(1000 + Math.random() * 9000)));
       setPayNotice("");
       setDeliveredState(null);
+      setEditingCust(false);
       if (targetBtl) {
         if (targetBtl.name) setCustName(targetBtl.name);
         if (targetBtl.phone) setCustPhone(targetBtl.phone);
@@ -16526,7 +16655,7 @@ function DvsDiepVienCheckoutModal({
   const handleConfirmPaid = async () => {
     const cleanEmail = custEmail.trim().toLowerCase();
     if (!cleanEmail || !cleanEmail.includes("@")) {
-      setPayNotice("Vui lòng nhập chính xác Email (Gmail) để hệ thống cấp quyền Google Drive và kích hoạt tài khoản App 1 máy.");
+      setPayNotice("Vui lòng nhập địa chỉ Email (Gmail) để hệ thống tự động cấp quyền Google Drive.");
       return;
     }
     try {
@@ -16617,7 +16746,7 @@ function DvsDiepVienCheckoutModal({
                 g.jsx("span", {
                   className: "dvs-qr-instant-badge",
                   children: mode === "course"
-                    ? "MỞ KHÓA KHÓA HỌC + TẶNG APP (1 EMAIL · 1 MÁY DUY NHẤT)"
+                    ? "69K/1 MÔN · 199K/1 KHÓA · 399K/FULL KHÓA HỌC"
                     : mode === "doc"
                       ? "THANH TOÁN ĐỀ CƯƠNG · 50.000Đ"
                       : "ĐẶT CỌC BTL · 10%"
@@ -16690,22 +16819,15 @@ function DvsDiepVienCheckoutModal({
                             g.jsxs("div", {
                               className: "dvs-uni-trigger-left",
                               children: [
+                                renderDvsSubjectCourseIconBox(activeMeta.iconKey, 14),
                                 g.jsx("span", {
-                                  className: "dvs-uni-icon-box",
-                                  children: g.jsxs("svg", {
-                                    width: 14,
-                                    height: 14,
-                                    viewBox: "0 0 24 24",
-                                    fill: "none",
-                                    stroke: "currentColor",
-                                    strokeWidth: 2.2,
-                                    children: [
-                                      g.jsx("path", { d: "M22 10L12 5 2 10l10 5 10-5z" }),
-                                      g.jsx("path", { d: "M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5" })
-                                    ]
-                                  })
+                                  className: "dvs-uni-code-pill",
+                                  style: {
+                                    background: getDvsIconThemeByKey(activeMeta.iconKey).pillBg,
+                                    color: getDvsIconThemeByKey(activeMeta.iconKey).pillColor
+                                  },
+                                  children: activeMeta.badge
                                 }),
-                                g.jsx("span", { className: "dvs-uni-code-pill", children: activeMeta.badge }),
                                 g.jsx("span", { className: "dvs-uni-name-text", children: activeMeta.cleanTitle })
                               ]
                             }),
@@ -16746,22 +16868,15 @@ function DvsDiepVienCheckoutModal({
                                       setTargetDropdownOpen(false);
                                     },
                                     children: [
+                                      renderDvsSubjectCourseIconBox(m.iconKey, 13),
                                       g.jsx("span", {
-                                        className: "dvs-uni-icon-box",
-                                        children: g.jsxs("svg", {
-                                          width: 13,
-                                          height: 13,
-                                          viewBox: "0 0 24 24",
-                                          fill: "none",
-                                          stroke: "currentColor",
-                                          strokeWidth: 2.2,
-                                          children: [
-                                            g.jsx("path", { d: "M22 10L12 5 2 10l10 5 10-5z" }),
-                                            g.jsx("path", { d: "M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5" })
-                                          ]
-                                        })
+                                        className: "dvs-uni-code-pill",
+                                        style: {
+                                          background: getDvsIconThemeByKey(m.iconKey).pillBg,
+                                          color: getDvsIconThemeByKey(m.iconKey).pillColor
+                                        },
+                                        children: m.badge
                                       }),
-                                      g.jsx("span", { className: "dvs-uni-code-pill", children: m.badge }),
                                       g.jsx("span", { className: "dvs-uni-name-text", children: m.cleanTitle }),
                                       isSel && g.jsx("span", { className: "dvs-uni-check", children: "✓" })
                                     ]
@@ -16775,52 +16890,84 @@ function DvsDiepVienCheckoutModal({
                   })()
                 : g.jsx("div", {
                     className: "dvs-qr-target-full-pill",
-                    children: "Mở Khóa Trọn Bộ Full Cả App Điệp Viên Study (Tất Cả 50 Khóa Học · 2K9 · 2K10 · HSA · TSA · V-ACT · BCA)"
+                    children: "399k/Full Khóa học — Mở khóa toàn bộ các môn Lớp 12, Lớp 11, HSA, TSA, V-ACT, BCA, Đại Học & MOS"
                   })
             ]
           }),
 
-        g.jsxs("div", {
-          className: "dvs-qr-customer-strip",
-          children: [
-            g.jsxs("label", {
-              className: "dvs-qr-mini-field",
+        (Boolean(custEmail && custEmail.includes("@")) && !editingCust)
+          ? g.jsxs("div", {
+              style: {
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: "8px",
+                padding: "8px 12px",
+                borderRadius: "10px",
+                background: "rgba(15, 23, 42, 0.04)",
+                border: "1px solid rgba(15, 23, 42, 0.09)",
+                fontSize: "12px",
+                color: "#334155"
+              },
               children: [
-                g.jsx("span", { children: "Họ và tên *" }),
-                g.jsx("input", {
-                  type: "text",
-                  value: custName,
-                  onChange: ev => setCustName(ev.target.value),
-                  placeholder: "Nguyễn Văn A"
-                })
-              ]
-            }),
-            g.jsxs("label", {
-              className: "dvs-qr-mini-field",
-              children: [
-                g.jsx("span", { children: "Số điện thoại Zalo *" }),
-                g.jsx("input", {
-                  type: "tel",
-                  value: custPhone,
-                  onChange: ev => setCustPhone(ev.target.value),
-                  placeholder: "0987654321"
-                })
-              ]
-            }),
-            g.jsxs("label", {
-              className: "dvs-qr-mini-field",
-              children: [
-                g.jsx("span", { children: "Email nhận Drive & App (1 máy) *" }),
-                g.jsx("input", {
-                  type: "email",
-                  value: custEmail,
-                  onChange: ev => setCustEmail(ev.target.value),
-                  placeholder: "sinhvien@gmail.com"
+                g.jsxs("span", {
+                  children: [
+                    "Tài khoản nhận khóa học / tài liệu: ",
+                    g.jsx("strong", {
+                      style: { color: "#0f172a" },
+                      children: `${custName || custEmail.split("@")[0]} · ${custEmail}${custPhone ? ` · ${custPhone}` : ""}`
+                    })
+                  ]
+                }),
+                g.jsx("button", {
+                  type: "button",
+                  className: "copy-btn",
+                  onClick: () => setEditingCust(true),
+                  children: "Đổi TK"
                 })
               ]
             })
-          ]
-        }),
+          : g.jsxs("div", {
+              className: "dvs-qr-customer-strip",
+              children: [
+                g.jsxs("label", {
+                  className: "dvs-qr-mini-field",
+                  children: [
+                    g.jsx("span", { children: "Họ và tên" }),
+                    g.jsx("input", {
+                      type: "text",
+                      value: custName,
+                      onChange: ev => setCustName(ev.target.value),
+                      placeholder: "Nhập họ tên"
+                    })
+                  ]
+                }),
+                g.jsxs("label", {
+                  className: "dvs-qr-mini-field",
+                  children: [
+                    g.jsx("span", { children: "Số điện thoại Zalo" }),
+                    g.jsx("input", {
+                      type: "tel",
+                      value: custPhone,
+                      onChange: ev => setCustPhone(ev.target.value),
+                      placeholder: "Số Zalo (không bắt buộc)"
+                    })
+                  ]
+                }),
+                g.jsxs("label", {
+                  className: "dvs-qr-mini-field",
+                  children: [
+                    g.jsx("span", { children: "Email nhận Google Drive *" }),
+                    g.jsx("input", {
+                      type: "email",
+                      value: custEmail,
+                      onChange: ev => setCustEmail(ev.target.value),
+                      placeholder: "sinhvien@gmail.com"
+                    })
+                  ]
+                })
+              ]
+            }),
 
         payNotice &&
           g.jsx("div", {
@@ -16851,8 +16998,8 @@ function DvsDiepVienCheckoutModal({
                 g.jsx("div", {
                   style: { fontSize: "16px", fontWeight: 800, color: "#059669", marginBottom: "6px" },
                   children: mode === "btl" && !deliveredState.btlDelivered
-                    ? `✅ ĐÃ XÁC NHẬN ĐẶT CỌC 10% (#${deliveredState.orderCode})`
-                    : `🎉 BÀN GIAO THÀNH CÔNG (#${deliveredState.orderCode})`
+                    ? `ĐÃ XÁC NHẬN ĐẶT CỌC 10% (#${deliveredState.orderCode})`
+                    : `BÀN GIAO THÀNH CÔNG (#${deliveredState.orderCode})`
                 }),
                 g.jsx("p", {
                   style: { fontSize: "12.5px", color: "#334155", margin: "0 0 12px" },
@@ -16872,12 +17019,12 @@ function DvsDiepVienCheckoutModal({
                         oe("open_external_url", { url: targetUrl }).catch(() => window.open(targetUrl, "_blank"));
                       },
                       children: mode === "doc"
-                        ? "🚀 Mở Đề Cương Trên Google Drive Ngay"
+                        ? "Mở Đề Cương Trên Google Drive Ngay"
                         : mode === "course"
-                          ? "🚀 Mở Kho Khóa Học Trên Google Drive Ngay"
+                          ? "Mở Kho Khóa Học Trên Google Drive Ngay"
                           : deliveredState.btlDelivered
-                            ? "🚀 Mở File Bài Tập Lớn Hoàn Chỉnh (Google Drive)"
-                            : "📂 Mở Bản Xem Trước / Đề Cương BTL (Google Drive)"
+                            ? "Mở File Bài Tập Lớn Hoàn Chỉnh (Google Drive)"
+                            : "Mở Bản Xem Trước / Đề Cương BTL (Google Drive)"
                     }),
                     g.jsx("button", {
                       type: "button",
@@ -17160,6 +17307,11 @@ function fue({model:t, setPage:e}) {
   const [catFilter, setCatFilter] = E.useState("ALL");
   const [tierFilter, setTierFilter] = E.useState("ALL");
   const [searchQ, setSearchQ] = E.useState("");
+  const [subjDropdownOpen, setSubjDropdownOpen] = E.useState(false);
+  const [subjFilterQuery, setSubjFilterQuery] = E.useState("");
+  const [courseDropdownOpen, setCourseDropdownOpen] = E.useState(false);
+  const [courseFilterQuery, setCourseFilterQuery] = E.useState("");
+  const [hotSearchOpen, setHotSearchOpen] = E.useState(false);
   const [activeCourseId, setActiveCourseId] = E.useState("COURSE-DGNL-HSA");
   const [activeLessonId, setActiveLessonId] = E.useState(null);
   const [customVideoUrl, setCustomVideoUrl] = E.useState("");
@@ -17397,13 +17549,14 @@ function fue({model:t, setPage:e}) {
 
   const filteredCourses = E.useMemo(() => {
     const q = stripViAccentsJs(searchQ).toLowerCase();
-    const normCat = String(catFilter || "ALL").toUpperCase();
+    const normCourseSel = String(catFilter || "ALL");
+    const normSubj = String(tierFilter || "ALL").toUpperCase();
     return DVS_COURSES_DB.filter(c => {
       if (c.isPackageOnly) return false;
-      if (normCat !== "ALL" && c.category !== catFilter && c.subCategory !== catFilter && !(Array.isArray(c.categories) && c.categories.includes(catFilter))) return false;
-      if (tierFilter !== "ALL" && c.tierType !== tierFilter) return false;
+      if (normSubj !== "ALL" && !doesCourseMatchSubjectFilter(c, normSubj)) return false;
+      if (normCourseSel !== "ALL" && !doesCourseMatchProgramFilter(c, normCourseSel)) return false;
       if (!q) return true;
-      const hay = stripViAccentsJs(`${c.title} ${c.instructor} ${c.summary} ${c.categoryLabel} ${c.sku}`).toLowerCase();
+      const hay = stripViAccentsJs(`${c.title} ${c.instructor} ${c.groupName || ""} ${c.summary} ${c.categoryLabel} ${c.sku}`).toLowerCase();
       return hay.includes(q);
     });
   }, [catFilter, tierFilter, searchQ]);
@@ -18023,6 +18176,11 @@ function fue({model:t, setPage:e}) {
      ========================================================================= */
   return g.jsxs("main", {
     className: "page-scroll dvs-catalog-scroll-host",
+    onClick: () => {
+      if (subjDropdownOpen) setSubjDropdownOpen(false);
+      if (courseDropdownOpen) setCourseDropdownOpen(false);
+      if (hotSearchOpen) setHotSearchOpen(false);
+    },
     children: [
       g.jsx("input", {
         ref: coverInputRef,
@@ -18076,21 +18234,30 @@ function fue({model:t, setPage:e}) {
                   }),
                   g.jsx("p", {
                     className: "page-subtitle",
-                    children: "Hệ thống ôn thi 2K9, 2K10, HSA, TSA, V-ACT, BCA và khóa học tích hợp AI."
+                    children: "69k/1 Môn · 199k/1 Khóa · 399k/Full Khóa học — Ôn thi THPTQG 2K9, 2K10, ĐGNL HSA, TSA, V-ACT, BCA & Đại học"
                   })
                 ]
               }),
-              g.jsx("div", {
+              g.jsxs("div", {
                 className: "dvs-catalog-top-actions",
-                children: g.jsxs("button", {
-                  type: "button",
-                  className: "pill-btn",
-                  onClick: () => setViewMode("external"),
-                  children: [
-                    g.jsx(Zb, { size: 15 }),
-                    "Mở video từ máy / link"
-                  ]
-                })
+                style: { display: "flex", gap: "8px", alignItems: "center" },
+                children: [
+                  g.jsx("button", {
+                    type: "button",
+                    className: "pill-btn primary",
+                    onClick: () => setCheckoutTargetCourse(DVS_COURSES_DB[0]),
+                    children: "Bảng giá: 69k/1 Môn · 199k/1 Khóa · 399k/Full Khóa học"
+                  }),
+                  g.jsxs("button", {
+                    type: "button",
+                    className: "pill-btn",
+                    onClick: () => setViewMode("external"),
+                    children: [
+                      g.jsx(Zb, { size: 15 }),
+                      "Mở video ngoài"
+                    ]
+                  })
+                ]
               })
             ]
           }),
@@ -18102,32 +18269,358 @@ function fue({model:t, setPage:e}) {
               children: statusBanner
             }),
 
-          g.jsxs("div", {
-            className: "dvs-course-toolbar-row",
-            children: [
-              g.jsx("div", {
-                className: "segmented dvs-course-seg",
-                role: "tablist",
-                children: DVS_COURSE_CATEGORIES.map(cat => {
-                  const isCatSelected = String(catFilter || "ALL").toUpperCase() === String(cat.id).toUpperCase();
-                  return g.jsx("button", {
-                    type: "button",
-                    role: "tab",
-                    "aria-selected": isCatSelected,
-                    className: isCatSelected ? "selected" : "",
-                    onClick: () => setCatFilter(cat.id),
-                    children: cat.label
-                  }, cat.id);
+          /* KHUNG LỌC 3 Ô CHUẨN: 1. MÔN HỌC · 2. KHÓA HỌC · 3. TÌM KIẾM (CÓ ICON THEO TỪNG MÔN & KHÓA HỌC) */
+          g.jsx("section", {
+            className: "glass-card strong dvs-decuong-search-card",
+            style: { padding: "16px 18px", marginBottom: "16px" },
+            onClick: ev => ev.stopPropagation(),
+            children: g.jsxs("div", {
+              className: "dvs-decuong-filters-grid",
+              style: { gridTemplateColumns: "0.95fr 1.2fr 1.15fr" },
+              children: [
+                /* Ô 1: MÔN HỌC (CHỈ CÁC MÔN HỌC: TOÁN, VĂN, ANH, LÝ, HÓA, SINH, SỬ, ĐỊA, TRUNG, TIN, ĐẠI HỌC, NGHỆ THUẬT) */
+                (() => {
+                  const selectedSubjObj = DVS_SUBJECT_CATALOG_OPTIONS.find(s => s.id === tierFilter) || DVS_SUBJECT_CATALOG_OPTIONS[0];
+                  const subjTheme = getDvsIconThemeByKey(selectedSubjObj.iconKey);
+                  const qSubj = stripViAccentsJs(subjFilterQuery).toLowerCase();
+                  const filteredSubjList = DVS_SUBJECT_CATALOG_OPTIONS.filter(s => {
+                    if (!qSubj) return true;
+                    const hay = stripViAccentsJs(`${s.badge} ${s.name} ${s.id}`).toLowerCase();
+                    return hay.includes(qSubj);
+                  });
+                  return g.jsxs("div", {
+                    className: "dvs-checkout-field dvs-uni-combobox-wrap",
+                    children: [
+                      g.jsx("span", { children: "1. Môn Học:" }),
+                      g.jsxs("div", {
+                        className: "dvs-uni-combobox-rel",
+                        children: [
+                          g.jsxs("button", {
+                            type: "button",
+                            className: "dvs-uni-selected-trigger",
+                            onClick: () => {
+                              setCourseDropdownOpen(false);
+                              setHotSearchOpen(false);
+                              setSubjDropdownOpen(v => !v);
+                            },
+                            children: [
+                              g.jsxs("div", {
+                                className: "dvs-uni-trigger-left",
+                                children: [
+                                  renderDvsSubjectCourseIconBox(selectedSubjObj.iconKey, 14),
+                                  g.jsx("span", {
+                                    className: "dvs-uni-code-pill",
+                                    style: { background: subjTheme.pillBg, color: subjTheme.pillColor },
+                                    children: selectedSubjObj.badge
+                                  }),
+                                  g.jsx("span", {
+                                    className: "dvs-uni-name-text",
+                                    style: { fontWeight: tierFilter === "ALL" ? 600 : 700, color: "#0F172A" },
+                                    children: selectedSubjObj.name
+                                  })
+                                ]
+                              }),
+                              g.jsxs("div", {
+                                className: "dvs-uni-trigger-right",
+                                children: [
+                                  tierFilter !== "ALL" &&
+                                    g.jsx("span", {
+                                      className: "dvs-uni-clear-x",
+                                      title: "Bỏ lọc môn học",
+                                      onClick: ev => {
+                                        ev.stopPropagation();
+                                        setTierFilter("ALL");
+                                      },
+                                      children: "✕"
+                                    }),
+                                  g.jsx("span", { className: "dvs-uni-chevron", children: subjDropdownOpen ? "▲" : "▼" })
+                                ]
+                              })
+                            ]
+                          }),
+                          subjDropdownOpen &&
+                            g.jsxs("div", {
+                              className: "dvs-uni-dropdown-panel",
+                              children: [
+                                g.jsx("div", {
+                                  className: "dvs-uni-filter-bar",
+                                  children: g.jsx("input", {
+                                    type: "text",
+                                    className: "dvs-uni-filter-input",
+                                    placeholder: "Tìm môn học (Toán, Ngữ Văn, Tiếng Anh, Vật Lý, Hóa, Sinh, Sử, Địa...)",
+                                    value: subjFilterQuery,
+                                    autoFocus: true,
+                                    onChange: ev => setSubjFilterQuery(ev.target.value)
+                                  })
+                                }),
+                                g.jsx("div", {
+                                  className: "dvs-uni-options-scroll",
+                                  children: filteredSubjList.map(s => {
+                                    const isSel = tierFilter === s.id;
+                                    const th = getDvsIconThemeByKey(s.iconKey);
+                                    return g.jsxs("div", {
+                                      className: `dvs-uni-option-row ${isSel ? "selected" : ""}`,
+                                      onClick: () => {
+                                        setTierFilter(s.id);
+                                        if (s.id !== "ALL" && catFilter !== "ALL") {
+                                          const hasMatch = DVS_COURSES_DB.some(c => !c.isPackageOnly && doesCourseMatchSubjectFilter(c, s.id) && doesCourseMatchProgramFilter(c, catFilter));
+                                          if (!hasMatch) setCatFilter("ALL");
+                                        }
+                                        setSubjDropdownOpen(false);
+                                      },
+                                      children: [
+                                        renderDvsSubjectCourseIconBox(s.iconKey, 13),
+                                        g.jsx("span", {
+                                          className: "dvs-uni-code-pill",
+                                          style: { background: th.pillBg, color: th.pillColor },
+                                          children: s.badge
+                                        }),
+                                        g.jsx("span", { className: "dvs-uni-name-text", children: s.name }),
+                                        isSel && g.jsx("span", { className: "dvs-uni-check", children: "✓" })
+                                      ]
+                                    }, s.id);
+                                  })
+                                })
+                              ]
+                            })
+                        ]
+                      })
+                    ]
+                  });
+                })(),
+
+                /* Ô 2: KHÓA HỌC (CÁC KHÓA HSA, TSA, V-ACT, BCA, THPTQG 2K9, 2K10, MOS + KHÓA THẦY CÔ) */
+                (() => {
+                  const selectedProgObj = DVS_COURSE_PROGRAM_OPTIONS.find(p => p.id === catFilter);
+                  const selectedCourseObj = (!selectedProgObj && catFilter !== "ALL") ? DVS_COURSES_DB.find(c => c.id === catFilter) : null;
+                  const selMeta = selectedProgObj
+                    ? { badge: selectedProgObj.badge, cleanTitle: selectedProgObj.name, iconKey: selectedProgObj.iconKey }
+                    : selectedCourseObj
+                      ? getDvsCourseVisualMeta(selectedCourseObj)
+                      : { badge: "TẤT CẢ", cleanTitle: "Tất cả các khóa học", iconKey: "all" };
+                  const selTheme = getDvsIconThemeByKey(selMeta.iconKey);
+
+                  const qCourse = stripViAccentsJs(courseFilterQuery).toLowerCase();
+                  const filteredPrograms = DVS_COURSE_PROGRAM_OPTIONS.filter(p => {
+                    if (!qCourse) return true;
+                    const hay = stripViAccentsJs(`${p.badge} ${p.name}`).toLowerCase();
+                    return hay.includes(qCourse);
+                  });
+                  const availableCourses = DVS_COURSES_DB.filter(c => !c.isPackageOnly && doesCourseMatchSubjectFilter(c, tierFilter));
+                  const filteredCourseOptions = availableCourses.filter(c => {
+                    if (!qCourse) return true;
+                    const m = getDvsCourseVisualMeta(c);
+                    const hay = stripViAccentsJs(`${m.badge} ${m.cleanTitle} ${c.title} ${c.instructor} ${c.sku}`).toLowerCase();
+                    return hay.includes(qCourse);
+                  });
+
+                  return g.jsxs("div", {
+                    className: "dvs-checkout-field dvs-uni-combobox-wrap",
+                    children: [
+                      g.jsx("span", { children: "2. Khóa Học:" }),
+                      g.jsxs("div", {
+                        className: "dvs-uni-combobox-rel",
+                        children: [
+                          g.jsxs("button", {
+                            type: "button",
+                            className: "dvs-uni-selected-trigger",
+                            onClick: () => {
+                              setSubjDropdownOpen(false);
+                              setHotSearchOpen(false);
+                              setCourseDropdownOpen(v => !v);
+                            },
+                            children: [
+                              g.jsxs("div", {
+                                className: "dvs-uni-trigger-left",
+                                children: [
+                                  renderDvsSubjectCourseIconBox(selMeta.iconKey, 14),
+                                  g.jsx("span", {
+                                    className: "dvs-uni-code-pill",
+                                    style: { background: selTheme.pillBg, color: selTheme.pillColor },
+                                    children: selMeta.badge
+                                  }),
+                                  g.jsx("span", {
+                                    className: "dvs-uni-name-text",
+                                    style: { fontWeight: catFilter !== "ALL" ? 700 : 600, color: "#0F172A" },
+                                    children: selMeta.cleanTitle
+                                  })
+                                ]
+                              }),
+                              g.jsxs("div", {
+                                className: "dvs-uni-trigger-right",
+                                children: [
+                                  catFilter !== "ALL" &&
+                                    g.jsx("span", {
+                                      className: "dvs-uni-clear-x",
+                                      title: "Bỏ lọc khóa học",
+                                      onClick: ev => {
+                                        ev.stopPropagation();
+                                        setCatFilter("ALL");
+                                      },
+                                      children: "✕"
+                                    }),
+                                  g.jsx("span", { className: "dvs-uni-chevron", children: courseDropdownOpen ? "▲" : "▼" })
+                                ]
+                              })
+                            ]
+                          }),
+                          courseDropdownOpen &&
+                            g.jsxs("div", {
+                              className: "dvs-uni-dropdown-panel",
+                              children: [
+                                g.jsx("div", {
+                                  className: "dvs-uni-filter-bar",
+                                  children: g.jsx("input", {
+                                    type: "text",
+                                    className: "dvs-uni-filter-input",
+                                    placeholder: "Tìm khóa học (HSA, TSA, V-ACT, BCA, THPTQG 2K9, 2K10, tên thầy cô...)",
+                                    value: courseFilterQuery,
+                                    autoFocus: true,
+                                    onChange: ev => setCourseFilterQuery(ev.target.value)
+                                  })
+                                }),
+                                g.jsxs("div", {
+                                  className: "dvs-uni-options-scroll",
+                                  children: [
+                                    ...filteredPrograms.map(p => {
+                                      const th = getDvsIconThemeByKey(p.iconKey);
+                                      const isSel = catFilter === p.id;
+                                      return g.jsxs("div", {
+                                        className: `dvs-uni-option-row ${isSel ? "selected" : ""}`,
+                                        onClick: () => {
+                                          setCatFilter(p.id);
+                                          if (p.id !== "ALL" && tierFilter !== "ALL") {
+                                            const hasMatch = DVS_COURSES_DB.some(c => !c.isPackageOnly && doesCourseMatchSubjectFilter(c, tierFilter) && doesCourseMatchProgramFilter(c, p.id));
+                                            if (!hasMatch) setTierFilter("ALL");
+                                          }
+                                          setCourseDropdownOpen(false);
+                                        },
+                                        children: [
+                                          renderDvsSubjectCourseIconBox(p.iconKey, 13),
+                                          g.jsx("span", {
+                                            className: "dvs-uni-code-pill",
+                                            style: { background: th.pillBg, color: th.pillColor },
+                                            children: p.badge
+                                          }),
+                                          g.jsx("span", { className: "dvs-uni-name-text", children: p.name }),
+                                          isSel && g.jsx("span", { className: "dvs-uni-check", children: "✓" })
+                                        ]
+                                      }, p.id);
+                                    }),
+                                    ...filteredCourseOptions.map(c => {
+                                      const m = getDvsCourseVisualMeta(c);
+                                      const th = getDvsIconThemeByKey(m.iconKey);
+                                      const isSel = catFilter === c.id;
+                                      return g.jsxs("div", {
+                                        className: `dvs-uni-option-row ${isSel ? "selected" : ""}`,
+                                        onClick: () => {
+                                          setCatFilter(c.id);
+                                          setCourseDropdownOpen(false);
+                                        },
+                                        children: [
+                                          renderDvsSubjectCourseIconBox(m.iconKey, 13),
+                                          g.jsx("span", {
+                                            className: "dvs-uni-code-pill",
+                                            style: { background: th.pillBg, color: th.pillColor },
+                                            children: m.badge
+                                          }),
+                                          g.jsx("span", { className: "dvs-uni-name-text", children: m.cleanTitle }),
+                                          isSel && g.jsx("span", { className: "dvs-uni-check", children: "✓" })
+                                        ]
+                                      }, c.id);
+                                    })
+                                  ]
+                                })
+                              ]
+                            })
+                        ]
+                      })
+                    ]
+                  });
+                })(),
+
+                /* Ô 3: TÌM KIẾM */
+                g.jsxs("div", {
+                  className: "dvs-checkout-field dvs-hot-search-wrap",
+                  children: [
+                    g.jsx("span", { children: "3. Tìm Kiếm:" }),
+                    g.jsxs("div", {
+                      className: "dvs-search-input-btn-row",
+                      children: [
+                        g.jsx("input", {
+                          type: "search",
+                          value: searchQ,
+                          onFocus: () => {
+                            setSubjDropdownOpen(false);
+                            setCourseDropdownOpen(false);
+                            setHotSearchOpen(true);
+                          },
+                          onClick: () => {
+                            setSubjDropdownOpen(false);
+                            setCourseDropdownOpen(false);
+                            setHotSearchOpen(true);
+                          },
+                          onChange: ev => setSearchQ(ev.target.value),
+                          placeholder: "Tìm tên môn, khóa học hoặc thầy cô (VD: Đỗ Văn Đức, Vũ Ngọc Anh, HSA...)"
+                        }),
+                        g.jsx("button", {
+                          type: "button",
+                          className: "pill-btn primary",
+                          onClick: () => setHotSearchOpen(false),
+                          children: "Tìm"
+                        })
+                      ]
+                    }),
+                    hotSearchOpen &&
+                      g.jsxs("div", {
+                        className: "dvs-hot-dropdown-popup",
+                        children: [
+                          g.jsxs("div", {
+                            className: "dvs-hot-dropdown-head",
+                            children: [
+                              g.jsx("span", { children: "GỢI Ý TÌM KIẾM NHANH" }),
+                              g.jsx("button", {
+                                type: "button",
+                                onClick: () => setHotSearchOpen(false),
+                                children: "✕"
+                              })
+                            ]
+                          }),
+                          g.jsxs("div", {
+                            className: "dvs-hot-chips-list",
+                            children: [
+                              g.jsx("button", {
+                                type: "button",
+                                className: `dvs-hot-chip ${tierFilter === "ALL" && catFilter === "ALL" && searchQ === "" ? "active" : ""}`,
+                                onClick: () => {
+                                  setTierFilter("ALL");
+                                  setCatFilter("ALL");
+                                  setSearchQ("");
+                                  setHotSearchOpen(false);
+                                },
+                                children: "Tất cả"
+                              }),
+                              ...DVS_COURSE_HOT_KEYWORDS.map(item =>
+                                g.jsx("button", {
+                                  type: "button",
+                                  className: `dvs-hot-chip ${(item.kw ? searchQ === item.kw : catFilter === item.courseId) ? "active" : ""}`,
+                                  onClick: () => {
+                                    setTierFilter(item.subj);
+                                    setCatFilter(item.courseId);
+                                    setSearchQ(item.kw);
+                                    setHotSearchOpen(false);
+                                  },
+                                  children: item.label
+                                }, item.label)
+                              )
+                            ]
+                          })
+                        ]
+                      })
+                  ]
                 })
-              }),
-              g.jsx("input", {
-                type: "search",
-                className: "dvs-course-search-input",
-                placeholder: "Tìm môn học, khóa học, TSA, HSA…",
-                value: searchQ,
-                onChange: ev => setSearchQ(ev.target.value)
-              })
-            ]
+              ]
+            })
           }),
 
           g.jsx("div", {
@@ -18168,6 +18661,21 @@ function fue({model:t, setPage:e}) {
                   g.jsxs("div", {
                     className: "dvs-course-card-body",
                     children: [
+                      (() => {
+                        const cm = getDvsCourseVisualMeta(course);
+                        const cth = getDvsIconThemeByKey(cm.iconKey);
+                        return g.jsxs("div", {
+                          style: { display: "flex", alignItems: "center", gap: "6px", marginBottom: "4px" },
+                          children: [
+                            renderDvsSubjectCourseIconBox(cm.iconKey, 12),
+                            g.jsx("span", {
+                              className: "dvs-uni-code-pill",
+                              style: { background: cth.pillBg, color: cth.pillColor },
+                              children: cm.badge
+                            })
+                          ]
+                        });
+                      })(),
                       g.jsx("h3", { className: "dvs-course-card-title", children: course.instructor }),
                       g.jsx("p", { className: "dvs-course-card-summary", style: { fontWeight: 600 }, children: course.title }),
                       g.jsxs("div", {
@@ -18830,6 +19338,7 @@ function DvsDatLamBtlPage({ model: t }) {
   const [srvConfirmed, setSrvConfirmed] = E.useState(true);
   const [activeBtlForPay, setActiveBtlForPay] = E.useState(null);
   const [bannerMsg, setBannerMsg] = E.useState("");
+  const [editingBtlCust, setEditingBtlCust] = E.useState(false);
 
   E.useEffect(() => {
     oe("dvtl_get_device_license").then(lic => {
@@ -18878,16 +19387,19 @@ function DvsDatLamBtlPage({ model: t }) {
 
   const handleSubmitBtlOrder = (ev) => {
     ev.preventDefault();
-    if (!srvName.trim() || !srvPhone.trim() || !srvEmail.trim() || !srvSubject.trim() || !srvTopic.trim()) {
-      setBannerMsg("Vui lòng điền Họ tên, Số điện thoại, Email, Tên môn học và Tên đề tài.");
+    const finalEmail = (srvEmail || userEmail || "").trim().toLowerCase();
+    const finalName = (srvName || "").trim() || (finalEmail.includes("@") ? finalEmail.split("@")[0] : "");
+    const finalPhone = (srvPhone || "").trim() || "Đã xác thực TK";
+    if (!finalEmail || !finalEmail.includes("@") || !srvSubject.trim() || !srvTopic.trim()) {
+      setBannerMsg("Vui lòng điền Email nhận bài, Tên môn học và Tên đề tài.");
       return;
     }
     const orderCode = `COC${srvType.toUpperCase().replace(/[^A-Z]/g, "")}${Math.floor(1000 + Math.random() * 9000)}`;
     setActiveBtlForPay({
       orderCode,
-      name: srvName.trim(),
-      phone: srvPhone.trim(),
-      email: srvEmail.trim(),
+      name: finalName,
+      phone: finalPhone,
+      email: finalEmail,
       studentId: srvStudentId.trim(),
       school: srvSchool.trim() || "Toàn quốc",
       faculty: srvFaculty,
@@ -18950,68 +19462,103 @@ function DvsDatLamBtlPage({ model: t }) {
                     className: "dvs-btl-form",
                     onSubmit: handleSubmitBtlOrder,
                     children: [
-                      g.jsxs("div", {
-                        className: "dvs-btl-row-2",
-                        children: [
-                          g.jsxs("label", {
-                            className: "dvs-checkout-field",
+                      (Boolean((srvEmail || userEmail) && (srvEmail || userEmail).includes("@")) && !editingBtlCust)
+                        ? g.jsxs("div", {
+                            style: {
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              gap: "10px",
+                              padding: "10px 14px",
+                              borderRadius: "12px",
+                              background: "rgba(13, 22, 119, 0.05)",
+                              border: "1px solid rgba(13, 22, 119, 0.14)",
+                              fontSize: "12.5px",
+                              color: "#1e293b",
+                              marginBottom: "4px"
+                            },
                             children: [
-                              g.jsx("span", { children: "Họ và Tên: *" }),
-                              g.jsx("input", {
-                                type: "text",
-                                required: true,
-                                value: srvName,
-                                onChange: ev => setSrvName(ev.target.value),
-                                placeholder: "Nhập họ và tên của bạn"
-                              })
-                            ]
-                          }),
-                          g.jsxs("label", {
-                            className: "dvs-checkout-field",
-                            children: [
-                              g.jsx("span", { children: "Số Điện Thoại / Zalo: *" }),
-                              g.jsx("input", {
-                                type: "tel",
-                                required: true,
-                                value: srvPhone,
-                                onChange: ev => setSrvPhone(ev.target.value),
-                                placeholder: "Nhập số điện thoại Zalo"
+                              g.jsxs("span", {
+                                children: [
+                                  "Tài khoản nhận bài Google Docs: ",
+                                  g.jsx("strong", {
+                                    style: { color: "#0D1677" },
+                                    children: `${srvName || (srvEmail || userEmail).split("@")[0]} · ${srvEmail || userEmail}${srvPhone ? ` · ${srvPhone}` : ""}`
+                                  })
+                                ]
+                              }),
+                              g.jsx("button", {
+                                type: "button",
+                                className: "copy-btn",
+                                onClick: () => setEditingBtlCust(true),
+                                children: "Đổi thông tin"
                               })
                             ]
                           })
-                        ]
-                      }),
+                        : g.jsxs(g.Fragment, {
+                            children: [
+                              g.jsxs("div", {
+                                className: "dvs-btl-row-2",
+                                children: [
+                                  g.jsxs("label", {
+                                    className: "dvs-checkout-field",
+                                    children: [
+                                      g.jsx("span", { children: "Họ và Tên:" }),
+                                      g.jsx("input", {
+                                        type: "text",
+                                        value: srvName,
+                                        onChange: ev => setSrvName(ev.target.value),
+                                        placeholder: "Nhập họ và tên của bạn"
+                                      })
+                                    ]
+                                  }),
+                                  g.jsxs("label", {
+                                    className: "dvs-checkout-field",
+                                    children: [
+                                      g.jsx("span", { children: "Số Điện Thoại / Zalo:" }),
+                                      g.jsx("input", {
+                                        type: "tel",
+                                        value: srvPhone,
+                                        onChange: ev => setSrvPhone(ev.target.value),
+                                        placeholder: "Nhập số điện thoại Zalo"
+                                      })
+                                    ]
+                                  })
+                                ]
+                              }),
 
-                      g.jsxs("div", {
-                        className: "dvs-btl-row-2",
-                        children: [
-                          g.jsxs("label", {
-                            className: "dvs-checkout-field",
-                            children: [
-                              g.jsx("span", { children: "Email (Nhận bài Google Docs): *" }),
-                              g.jsx("input", {
-                                type: "email",
-                                required: true,
-                                value: srvEmail,
-                                onChange: ev => setSrvEmail(ev.target.value),
-                                placeholder: "sinhvien@gmail.com"
+                              g.jsxs("div", {
+                                className: "dvs-btl-row-2",
+                                children: [
+                                  g.jsxs("label", {
+                                    className: "dvs-checkout-field",
+                                    children: [
+                                      g.jsx("span", { children: "Email (Nhận bài Google Docs): *" }),
+                                      g.jsx("input", {
+                                        type: "email",
+                                        required: true,
+                                        value: srvEmail,
+                                        onChange: ev => setSrvEmail(ev.target.value),
+                                        placeholder: "sinhvien@gmail.com"
+                                      })
+                                    ]
+                                  }),
+                                  g.jsxs("label", {
+                                    className: "dvs-checkout-field",
+                                    children: [
+                                      g.jsx("span", { children: "Mã Sinh Viên (Không bắt buộc):" }),
+                                      g.jsx("input", {
+                                        type: "text",
+                                        value: srvStudentId,
+                                        onChange: ev => setSrvStudentId(ev.target.value),
+                                        placeholder: "11204859 (Không bắt buộc)"
+                                      })
+                                    ]
+                                  })
+                                ]
                               })
                             ]
                           }),
-                          g.jsxs("label", {
-                            className: "dvs-checkout-field",
-                            children: [
-                              g.jsx("span", { children: "Mã Sinh Viên (Bảo mật 100%):" }),
-                              g.jsx("input", {
-                                type: "text",
-                                value: srvStudentId,
-                                onChange: ev => setSrvStudentId(ev.target.value),
-                                placeholder: "11204859 (Không bắt buộc)"
-                              })
-                            ]
-                          })
-                        ]
-                      }),
 
                       g.jsxs("div", {
                         className: "dvs-btl-row-2",

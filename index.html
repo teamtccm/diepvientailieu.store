@@ -1427,34 +1427,214 @@
 
              ================================================================ -->
 
-        <div id="viewCourses" class="hidden pt-4 pb-10 bg-slate-50 dark:bg-[#03081E] min-h-screen transition-colors">
+        <div id="viewCourses" class="hidden pt-4 pb-12 bg-slate-50 dark:bg-[#03081E] min-h-screen transition-colors">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <!-- Top Header (Clean App-Aligned Hierarchy — Custom Basic SVG Icon) -->
-                <div class="mb-4 pb-3 border-b border-slate-200 dark:border-white/10">
-                    <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white flex flex-wrap items-center gap-2.5 font-condensed tracking-wide uppercase">
-                        <svg class="inline-block w-7 h-7 shrink-0 text-[#0D1677] dark:text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>
-                        <span>Hệ Thống Khóa Học & Ôn Thi</span>
-                    </h1>
-                    <p class="text-xs sm:text-[13px] text-slate-500 dark:text-slate-400 mt-0.5">
-                        Hệ thống ôn thi 2K9, 2K10, HSA, TSA, V-ACT, BCA và khóa học tích hợp AI.
-                    </p>
+                <!-- TOP HEADER (IDENTICAL TO APP DVS-CATALOG-HEADER) -->
+                <div class="mb-5 pb-4 border-b border-slate-200/80 dark:border-white/10 flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white flex items-center gap-2.5 font-condensed tracking-wide uppercase">
+                            <svg class="inline-block w-7 h-7 shrink-0 text-[#0D1677] dark:text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>
+                            <span>Hệ Thống Khóa Học & Lớp Học Điệp Viên Study</span>
+                        </h1>
+                        <p class="text-xs sm:text-[13px] text-slate-500 dark:text-slate-400 mt-1">
+                            Học liệu chuẩn hóa 100% video bài giảng + đề thi PDF + trợ lý AI tóm tắt bài học & lưu vào ghi chú.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span id="courseCountBadge" class="px-3 py-1 rounded-full text-xs font-black bg-blue-50 text-[#0D1677] dark:bg-white/10 dark:text-amber-300 border border-blue-200 dark:border-white/15">
+                            82+ Khóa Học Bản Quyền
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 3 PRICING OVERVIEW CARDS (IDENTICAL TO APP 3-TIER ARCHITECTURE) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    
+                    <!-- Card 1: Gói Môn Lẻ 69K -->
+                    <div class="rounded-2xl p-4 sm:p-5 bg-white/95 dark:bg-[#0A143D] border border-amber-300/80 dark:border-amber-500/30 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-24 h-24 bg-amber-400/10 rounded-full blur-xl pointer-events-none"></div>
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+                                    CHỌN MÔN THEO YÊU CẦU
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">450.000đ</span>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Gói Môn Học Lẻ</h3>
+                            <div class="mt-1 flex items-baseline gap-1.5">
+                                <span class="text-2xl sm:text-3xl font-black text-amber-600 dark:text-amber-400">69.000đ</span>
+                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ môn học</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                                Đăng ký theo từng môn học độc lập (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa, Tiếng Trung, Tin học...).
+                            </p>
+                            <ul class="mt-3.5 space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Full Video bài giảng & PDF đề thi của môn</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cập nhật chuyên đề mới liên tục 2027</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cấp link Drive mở học ngay lập tức</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCourseCheckoutModalByTier('subject_69k')" class="mt-4 w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-amber-900 dark:text-amber-200 bg-amber-400 hover:bg-amber-300 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 border border-amber-300 dark:border-amber-500/40 shadow-sm transition flex items-center justify-center gap-1.5">
+                            <span>Đăng Ký Môn Lẻ 69K</span>
+                            <span class="text-xs">➔</span>
+                        </button>
+                    </div>
+
+                    <!-- Card 2: Trọn Bộ Khối / Kỳ Thi 199K -->
+                    <div class="rounded-2xl p-4 sm:p-5 bg-white/95 dark:bg-[#0A143D] border-2 border-[#0D1677] dark:border-sky-400 shadow-md hover:shadow-xl hover:-translate-y-0.5 transition flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-24 h-24 bg-blue-600/10 rounded-full blur-xl pointer-events-none"></div>
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-100 text-[#0D1677] dark:bg-sky-950 dark:text-sky-300 border border-blue-200 dark:border-sky-800">
+                                    PHỔ BIẾN NHẤT · TIẾT KIỆM 75%
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">1.200.000đ</span>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Trọn Bộ Theo Khối / Kỳ Thi</h3>
+                            <div class="mt-1 flex items-baseline gap-1.5">
+                                <span class="text-2xl sm:text-3xl font-black text-[#0D1677] dark:text-sky-400">199.000đ</span>
+                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ trọn gói</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                                Trọn bộ toàn bộ các môn theo khối THPT 12 (2K9), Lớp 11 (2K10), HSA, TSA, V-ACT, BCA.
+                            </p>
+                            <ul class="mt-3.5 space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa TOÀN BỘ môn thi trong gói đã chọn</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Kèm kho đề thi thử có lời giải chi tiết</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Phù hợp xuất phát sớm & bứt phá điểm 9+</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCourseCheckoutModalByTier('course_199k')" class="mt-4 w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-[#0D1677] hover:bg-[#1E40AF] dark:bg-sky-500 dark:hover:bg-sky-400 shadow-md transition flex items-center justify-center gap-1.5">
+                            <span>Đăng Ký Gói 199K</span>
+                            <span class="text-xs">➔</span>
+                        </button>
+                    </div>
+
+                    <!-- Card 3: VIP Full 90+ Khóa Học 399K -->
+                    <div class="rounded-2xl p-4 sm:p-5 bg-gradient-to-br from-purple-50/90 via-white to-amber-50/50 dark:from-[#130d3a] dark:via-[#0A143D] dark:to-[#1a1236] border-2 border-purple-500 dark:border-purple-400 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-28 h-28 bg-purple-500/15 rounded-full blur-xl pointer-events-none"></div>
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-purple-100 text-purple-900 dark:bg-purple-950 dark:text-purple-300 border border-purple-300 dark:border-purple-700 animate-pulse">
+                                    VIP TOÀN HỆ THỐNG · TẶNG APP PRO
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">2.500.000đ</span>
+                            </div>
+                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Full 90+ Khóa Học Đa Môn</h3>
+                            <div class="mt-1 flex items-baseline gap-1.5">
+                                <span class="text-2xl sm:text-3xl font-black text-purple-700 dark:text-purple-300">399.000đ</span>
+                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ trọn đời</span>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                                Mở khóa TOÀN BỘ 90+ khóa học tất cả các môn: Toán, Văn, Anh, Trung, Lý, Hóa, Sinh, Sử, Địa, Tin MOS, Đại Học...
+                            </p>
+                            <ul class="mt-3.5 space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa TOÀN BỘ 90+ khóa học mọi môn, mọi thầy cô</li>
+                                <li class="flex items-center gap-2 font-bold text-purple-900 dark:text-purple-200"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> TẶNG App Điệp Viên Study Pro (Khóa 1 máy cố định)</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Trợ lý AI tóm tắt bài học & cấp quyền Drive vĩnh viễn</li>
+                            </ul>
+                        </div>
+                        <button onclick="openCourseCheckoutModalByTier('full_399k')" class="mt-4 w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:opacity-95 shadow-lg shadow-purple-600/30 transition flex items-center justify-center gap-1.5">
+                            <span>Mở Khóa Full 399K</span>
+                            <span class="text-xs">★</span>
+                        </button>
+                    </div>
+
                 </div>
 
                 <!-- Hidden file input for 16:9 Course Cover Upload on Web (matching App) -->
                 <input id="webCourseCoverInput" type="file" accept="image/*" class="hidden" onchange="handleWebCourseCoverChange(event)">
 
-                <!-- COMPACT TOOLBAR ROW: SEGMENTED CATEGORY TABS (LEFT) + STREAMLINED SEARCH BAR (RIGHT) -->
-                <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+                <!-- COMPACT TOOLBAR ROW: DUAL-COMBOBOX FILTERS + SEARCH BAR (IDENTICAL TO APP) -->
+                <div class="p-3.5 sm:p-4 rounded-2xl bg-white/95 dark:bg-[#0A143D] border border-slate-200/90 dark:border-white/10 shadow-sm mb-5">
+                    
                     <!-- Segmented Category Tabs (Identical to App) -->
-                    <div id="courseCategoryTabs" class="inline-flex flex-wrap items-center gap-1 p-1 rounded-xl bg-slate-200/75 dark:bg-white/5 border border-slate-300/70 dark:border-white/10">
+                    <div id="courseCategoryTabs" class="inline-flex flex-wrap items-center gap-1 p-1 rounded-xl bg-slate-200/75 dark:bg-white/5 border border-slate-300/70 dark:border-white/10 mb-3.5">
                         <!-- Rendered by JS -->
                     </div>
 
-                    <!-- Streamlined Single Search Bar (Identical to App) -->
-                    <div class="relative flex items-center flex-1 sm:flex-initial min-w-[260px] sm:min-w-[340px] bg-white dark:bg-[#0A143D] border border-slate-300/90 dark:border-white/15 focus-within:border-[#0D1677] dark:focus-within:border-sky-400 rounded-xl shadow-sm overflow-hidden transition">
-                        <span class="pl-3.5 text-slate-400 text-xs select-none flex items-center"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
-                        <input id="courseSearchInput" type="search" oninput="renderCourses()" placeholder="Tìm môn học, khóa học, TSA, HSA…" class="w-full bg-transparent px-2.5 py-2 text-xs sm:text-[13px] text-slate-800 dark:text-slate-100 outline-none">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 items-center">
+                        
+                        <!-- Ô 1: Chọn Môn Học -->
+                        <div class="lg:col-span-4">
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+                                1. Chọn Môn Học:
+                            </label>
+                            <div class="relative">
+                                <select id="courseSubjectSelect" onchange="handleWebSubjectFilterChange(this.value)" class="w-full h-10 px-3 pr-8 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300/80 dark:border-white/15 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 outline-none focus:border-[#0D1677] dark:focus:border-sky-400 transition appearance-none cursor-pointer">
+                                    <option value="ALL">★ Tất cả các môn học</option>
+                                    <option value="TOAN">Toán Học (Toán 12 · Toán 11 · XPS)</option>
+                                    <option value="VAN">Ngữ Văn (Đọc hiểu · Nghị luận · Văn bản)</option>
+                                    <option value="ANH">Tiếng Anh (Pro3M · Pro3MPlus · VIP90)</option>
+                                    <option value="LY">Vật Lý (Vũ Ngọc Anh · Chu Văn Biên · Tùng Ưng · Tuấn Anh)</option>
+                                    <option value="HOA">Hóa Học (Phạm Văn Trọng · NAP · SangSang)</option>
+                                    <option value="SINH">Sinh Học (Di truyền · Tế bào · Tiến hóa)</option>
+                                    <option value="SU">Lịch Sử (Cô Sen · Cô Lan Hương · 22 Chuyên đề)</option>
+                                    <option value="DIA">Địa Lý (Thầy Tùng · Thầy Tài · Kinh tế vùng)</option>
+                                    <option value="TRUNG">Tiếng Trung (Hán Ngữ 1-6 · HSK · Khối D04)</option>
+                                    <option value="TIN_MOS">Tin Học (MOS Word · Excel · PowerPoint · Access)</option>
+                                    <option value="DAI_HOC">Đại Học (Kinh tế lượng · Triết học · Master BTL)</option>
+                                    <option value="NGHE_THUAT">Nghệ Thuật (Guitar · Piano · Sáo · DJ · Shuffle)</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-2.5 pointer-events-none text-slate-400">
+                                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ô 2: Chọn Kỳ Thi / Chương Trình -->
+                        <div class="lg:col-span-4">
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+                                2. Chọn Khóa Học / Kỳ Thi:
+                            </label>
+                            <div class="relative">
+                                <select id="courseProgramSelect" onchange="handleWebProgramFilterChange(this.value)" class="w-full h-10 px-3 pr-8 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300/80 dark:border-white/15 text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 outline-none focus:border-[#0D1677] dark:focus:border-sky-400 transition appearance-none cursor-pointer">
+                                    <option value="ALL">★ Tất cả các khóa học & kỳ thi</option>
+                                    <option value="PROG:lop12_2k9">Luyện Thi THPTQG Lớp 12 (2K9)</option>
+                                    <option value="PROG:lop11_2k10">Xuất Phát Sớm Lớp 11 (2K10)</option>
+                                    <option value="PROG:dgnl_hsa">ĐGNL HSA — ĐHQG Hà Nội 2027</option>
+                                    <option value="PROG:dgtd_tsa">ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027</option>
+                                    <option value="PROG:vact">ĐGNL V-ACT — ĐHQG TP.HCM 2027</option>
+                                    <option value="PROG:bca">ĐGNL BCA — Bộ Công An 2027</option>
+                                    <option value="PROG:qda">ĐGNL QDA — Khối Quân Đội 2027</option>
+                                    <option value="PROG:vsat">ĐGNL VSAT Máy Tính 2027</option>
+                                    <option value="PROG:mos">Chứng Chỉ MOS & Tin Học Văn Phòng</option>
+                                    <option value="PROG:daihoc">Đại Học Điểm A+ & Nghiên Cứu Khoa Học</option>
+                                    <option value="PROG:nghe_thuat">Nghệ Thuật & Âm Nhạc Trọn Gói</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-2.5 pointer-events-none text-slate-400">
+                                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ô 3: Tìm Kiếm Nhanh -->
+                        <div class="lg:col-span-4">
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+                                3. Tìm Kiếm:
+                            </label>
+                            <div class="relative flex items-center bg-slate-100 dark:bg-white/5 border border-slate-300/80 dark:border-white/15 focus-within:border-[#0D1677] dark:focus-within:border-sky-400 rounded-xl overflow-hidden transition">
+                                <span class="pl-3 text-slate-400 text-xs select-none flex items-center"><svg class="inline-block w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+                                <input id="courseSearchInput" type="search" oninput="renderCourses()" placeholder="Tìm tên môn, thầy cô (Đỗ Văn Đức, Vũ Ngọc Anh, HSA…)" class="w-full bg-transparent px-2.5 py-2 text-xs sm:text-sm text-slate-800 dark:text-slate-100 outline-none">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Gợi ý tìm kiếm nhanh (Hot chips identical to App) -->
+                    <div class="mt-3 pt-2.5 border-t border-slate-200/70 dark:border-white/10 flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+                        <span class="text-[11px] font-extrabold uppercase text-slate-400 shrink-0">Gợi ý nhanh:</span>
+                        <button type="button" onclick="quickFilterWebCourse('ALL', 'ALL', '')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Tất cả</button>
+                        <button type="button" onclick="quickFilterWebCourse('ALL', 'PROG:dgnl_hsa', 'HSA')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">ĐGNL HSA</button>
+                        <button type="button" onclick="quickFilterWebCourse('ALL', 'PROG:dgtd_tsa', 'TSA')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">ĐGTD TSA</button>
+                        <button type="button" onclick="quickFilterWebCourse('TOAN', 'ALL', 'Đỗ Văn Đức')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Thầy Đỗ Văn Đức</button>
+                        <button type="button" onclick="quickFilterWebCourse('LY', 'ALL', 'Vũ Ngọc Anh')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Thầy Vũ Ngọc Anh</button>
+                        <button type="button" onclick="quickFilterWebCourse('LY', 'ALL', 'Chu Văn Biên')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Thầy Chu Văn Biên</button>
+                        <button type="button" onclick="quickFilterWebCourse('ANH', 'ALL', 'Vũ Mai Phương')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Cô Vũ Mai Phương</button>
+                        <button type="button" onclick="quickFilterWebCourse('DIA', 'ALL', 'Thầy Tùng')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Thầy Tùng Địa</button>
+                        <button type="button" onclick="quickFilterWebCourse('SU', 'ALL', 'Cô Sen')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Cô Sen Sử</button>
+                        <button type="button" onclick="quickFilterWebCourse('TRUNG', 'ALL', 'Tiếng Trung')" class="px-2.5 py-1 rounded-lg font-bold text-[11px] bg-slate-200/75 dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:bg-[#0D1677] hover:text-white transition whitespace-nowrap">Tiếng Trung HSK</button>
                     </div>
                 </div>
 
@@ -3989,9 +4169,9 @@ function doPost(e) {
 
     <!-- Scripts with cache busting query string -->
 
-    <script src="js/data.js?v=1793934045"></script>
+    <script src="js/data.js?v=1793981382"></script>
 
-    <script src="js/app.js?v=1793934045"></script>
+    <script src="js/app.js?v=1793981382"></script>
 
     <script>
 

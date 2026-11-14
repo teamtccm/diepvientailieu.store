@@ -1732,7 +1732,8 @@ function openDocCheckoutModal(docId, customTitle = null) {
             transferMemo: fullMemo,
             name: savedName,
             email: savedEmail,
-            phone: savedPhone || "0900000000",
+            phone: savedPhone || "",
+            deviceId: getWebDeviceId(),
             sku: doc.code || "",
             itemName: doc.name || "",
             price: doc.price || 0,
@@ -1796,7 +1797,7 @@ function goToDocPaymentStep(e) {
     const name = document.getElementById("checkoutNameInput").value.trim();
     const rawPhone = document.getElementById("checkoutPhoneInput").value.trim();
     const email = document.getElementById("checkoutEmailInput").value.trim().toLowerCase();
-    const phone = rawPhone || "0900000000";
+    const phone = rawPhone.replace(/\[.*\]/g, "").trim();
 
     if (!name || !email) {
         alert("Vui lòng điền Họ tên và Email nhận tài liệu!");
@@ -1833,7 +1834,8 @@ function goToDocPaymentStep(e) {
         orderType: "Mua File",
         school: state.selectedDoc?.school || (state.selectedUniversity ? (UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code) : "Toàn quốc"),
         stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "27384751",
-        driveId: state.selectedDoc?.driveId || ""
+        driveId: state.selectedDoc?.driveId || "",
+        deviceId: getWebDeviceId()
     };
     saveOrderToLocal(payload);
     try { sendWebhookData(payload); } catch(e) {}
@@ -1845,155 +1847,96 @@ function goToDocPaymentStep(e) {
 }
 
 let docPollingInterval = null;
+let isDocVerifyInFlight = false;
+
+function buildDocVerifyUrl(orderCode, email) {
+    const cleanCode = String(orderCode || "").trim().split(" ")[0];
+    const cust = typeof getSyncedCustomerLocal === "function" ? (getSyncedCustomerLocal() || {}) : {};
+    const nameVal = (document.getElementById("checkoutNameInput")?.value || cust.name || "Khách Hàng").trim();
+    const phoneVal = (document.getElementById("checkoutPhoneInput")?.value || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const emailVal = (email || document.getElementById("checkoutEmailInput")?.value || cust.email || "").trim().toLowerCase();
+    const skuVal = state.selectedDoc?.code || "";
+    const itemNameVal = state.selectedDoc?.name || "";
+    const amountVal = String(state.selectedDoc?.price || 50000);
+    const driveIdVal = state.selectedDoc?.driveId || "";
+    const devVal = typeof getWebDeviceId === "function" ? getWebDeviceId() : "";
+    const params = new URLSearchParams({
+        action: "verify",
+        orderId: cleanCode,
+        orderType: "Mua File",
+        email: emailVal,
+        name: nameVal,
+        phone: phoneVal,
+        sku: skuVal,
+        itemName: itemNameVal,
+        amount: amountVal,
+        driveId: driveIdVal,
+        deviceId: devVal
+    });
+    return `${state.webhookUrl}?${params.toString()}`;
+}
 
 function startDocPaymentPolling(orderCode, email) {
-
     if (docPollingInterval) clearInterval(docPollingInterval);
-
+    isDocVerifyInFlight = false;
     let elapsed = 0;
-
     const timerEl = document.getElementById("docPaymentTimer");
 
-    
+    setTimeout(() => checkDocPaymentStatus(orderCode, email, false), 1500);
 
     docPollingInterval = setInterval(() => {
-
-        elapsed += 5;
-
+        elapsed += 4;
         const mins = Math.floor(elapsed / 60);
-
         const secs = elapsed % 60;
-
         if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
-
-        
-
-        // Poll verification endpoint
-
-        checkDocPaymentStatus(orderCode, email);
-
-    }, 5000);
-
+        checkDocPaymentStatus(orderCode, email, false);
+    }, 4000);
 }
 
-
-
-async function checkDocPaymentStatus(orderCode, email) {
-
-    if (!state.webhookUrl) return;
-
+async function checkDocPaymentStatus(orderCode, email, isManual = false) {
+    if (!state.webhookUrl || !orderCode) return;
+    if (!isManual && isDocVerifyInFlight) return;
+    isDocVerifyInFlight = true;
     try {
-
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
-
+        const cleanCode = String(orderCode).trim().split(" ")[0];
+        const verifyUrl = buildDocVerifyUrl(cleanCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
-
-        if (data && data.verified === true) {
-
-            onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
-
+        if (data && (data.verified === true || data.paid === true)) {
+            onDocPaymentConfirmed(cleanCode, email || data.email || "", data.driveUrl || "");
+            return true;
         }
-
-    } catch(e) {
-
+    } catch (e) {
         // Silently retry on next interval
-
+    } finally {
+        isDocVerifyInFlight = false;
     }
-
+    return false;
 }
-
-
-
-function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
-
-    if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
-
-    
-
-    // Switch to Step 3 (Success)
-
-    document.getElementById("docCheckoutStep2").classList.add("hidden");
-
-    document.getElementById("docCheckoutStep3").classList.remove("hidden");
-
-    document.getElementById("docSuccessOrderId").textContent = orderCode;
-
-    document.getElementById("docSuccessEmail").textContent = email;
-
-
-
-    const driveBtn = document.getElementById("docSuccessDriveBtn");
-
-    const fallbackUrl = driveUrl || (state.selectedDoc?.driveId ? (state.selectedDoc?.driveType === "folder" ? `https://drive.google.com/drive/folders/${state.selectedDoc.driveId}` : `https://drive.google.com/file/d/${state.selectedDoc.driveId}/view`) : "");
-
-    if (driveBtn) {
-
-        if (fallbackUrl) {
-
-            driveBtn.href = fallbackUrl;
-
-            driveBtn.classList.remove("hidden");
-
-        } else {
-
-            driveBtn.classList.add("hidden");
-
-        }
-
-    }
-
-}
-
-
 
 async function confirmDocManualPayment() {
-
-    const orderCode = document.getElementById("checkoutOrderCode")?.textContent || "";
-
-    const email = document.getElementById("checkoutEmailInput")?.value || "";
-
+    const orderCode = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
+    const email = (document.getElementById("checkoutEmailInput")?.value || getSyncedCustomerLocal()?.email || "").trim().toLowerCase();
     const fbEl = document.getElementById("docVerifyFeedbackMsg");
-
     if (fbEl) {
-
         fbEl.classList.remove("hidden");
-
-        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB cho mã đơn #" + orderCode + "...";
-
+        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa Google Drive cho mã đơn #" + orderCode + "...";
     }
-
-    if (!state.webhookUrl) return;
-
+    if (!state.webhookUrl || !orderCode) return;
     try {
-
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
-
+        const verifyUrl = buildDocVerifyUrl(orderCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
-
-        if (data && data.verified === true) {
-
-            onDocPaymentConfirmed(orderCode, email, data.driveUrl || "");
-
+        if (data && (data.verified === true || data.paid === true)) {
+            onDocPaymentConfirmed(orderCode, email || data.email || "", data.driveUrl || "");
         } else if (fbEl) {
-
-            fbEl.textContent = "️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống chỉ tự động giao tài liệu sau khi ngân hàng báo tiền về!";
-
+            fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống tự động bàn giao ngay khi ngân hàng báo tiền về!";
         }
-
     } catch (e) {
-
         if (fbEl) {
-
-            fbEl.textContent = "️ Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng kiểm tra lại nội dung chuyển khoản!";
-
+            fbEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
         }
-
     }
-
 }
 
 
@@ -2150,7 +2093,7 @@ async function submitServiceOrder(e) {
     const cust = getSyncedCustomerLocal() || {};
     const name = (document.getElementById("srvNameInput").value.trim()) || cust.name || "";
     const rawPhone = (document.getElementById("srvPhoneInput").value.trim()) || cust.phone || "";
-    const phone = rawPhone || "0900000000";
+    const phone = rawPhone.replace(/\[.*\]/g, "").trim();
     const email = (document.getElementById("srvEmailInput").value.trim().toLowerCase()) || cust.email || "";
     const studentId = document.getElementById("srvStudentIdInput").value.trim();
     const school = document.getElementById("srvSchoolInput").value.trim();
@@ -2366,29 +2309,43 @@ function dismissLiveProofToast() {
 
 
 async function sendWebhookData(payload) {
-
     if (!state.webhookUrl || state.webhookUrl.includes("SAMPLE_WEBHOOK_URL")) {
-
-        console.log("Mock Webhook Dispatch:", payload);
-
         return { status: "MOCK_SUCCESS", message: "Đã lưu vào bộ nhớ cục bộ" };
-
     }
-
-    
-
-    return fetch(state.webhookUrl, {
-
-        method: "POST",
-
-        mode: "no-cors",
-
-        headers: { "Content-Type": "application/json" },
-
-        body: JSON.stringify(payload)
-
-    });
-
+    try {
+        const res = await fetch(state.webhookUrl, {
+            method: "POST",
+            mode: "cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+        });
+        return await res.json().catch(() => ({ ok: true }));
+    } catch (e) {
+        try {
+            if (payload && payload.action === "createOrder") {
+                const q = new URLSearchParams({
+                    action: "createOrder",
+                    orderCode: payload.orderCode || payload.orderId || "",
+                    orderType: payload.orderType || "Mua File",
+                    name: payload.name || "Khách Hàng",
+                    email: payload.email || "",
+                    phone: payload.phone || "",
+                    deviceId: payload.deviceId || "",
+                    sku: payload.sku || "",
+                    itemName: payload.itemName || "",
+                    amount: String(payload.amount || payload.price || 50000),
+                    driveId: payload.driveId || ""
+                });
+                fetch(`${state.webhookUrl}?${q.toString()}`, { method: "GET", mode: "no-cors" }).catch(() => {});
+            }
+        } catch (_) {}
+        return fetch(state.webhookUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(payload)
+        });
+    }
 }
 
 
@@ -2469,59 +2426,7 @@ function renderRecentOrdersTicker() {
 
 
 
-function openSuccessModal(type, orderData) {
-
-    const modal = document.getElementById("successModal");
-
-    if (!modal) return;
-
-    
-
-    const title = document.getElementById("successModalTitle");
-
-    const desc = document.getElementById("successModalDesc");
-
-    const orderId = document.getElementById("successOrderId");
-
-    const customerMail = document.getElementById("successCustomerEmail");
-
-    
-
-    if (orderId) orderId.textContent = orderData.orderId;
-
-    if (customerMail) customerMail.textContent = orderData.customer.email;
-
-    
-
-    if (type === "DOC") {
-
-        if (title) title.textContent = "Gửi Đơn Thành Công!";
-
-        if (desc) desc.textContent = "Hệ thống đã ghi nhận mã đơn của bạn và phân quyền Google Drive vào Gmail!";
-
-    } else {
-
-        if (title) title.textContent = "Đã Ghi Nhận Đơn Hàng!";
-
-        if (desc) desc.textContent = "Hồ sơ đề bài của bạn đã được chuyển tới Nhân viên học thuật. Nhân viên sẽ liên hệ Zalo & gửi email xác nhận trong vòng 15-30 phút!";
-
-    }
-
-    
-
-    modal.classList.remove("hidden");
-
-}
-
-
-
-function closeSuccessModal() {
-
-    const modal = document.getElementById("successModal");
-
-    if (modal) modal.classList.add("hidden");
-
-}
+// openSuccessModal & closeSuccessModal defined in Section 10 with live VietQR polling
 
 
 
@@ -2746,19 +2651,16 @@ let pendingWebCoverCourseId = null;
 
 
 const WEB_COURSE_TAB_LABELS = {
-
-    "all": "Tất cả",
-
-    "lop12_2k9": "Lớp 12 (2K9)",
-
-    "lop11_2k10": "Lớp 11 (2K10)",
-
+    "all": "Tất cả (82+ Khóa)",
+    "ngoai_ngu_khxh": "Văn · Sử · Địa · Anh · Trung",
+    "khtn_toan_ly_hoa_sinh": "Toán · Lý · Hóa · Sinh",
+    "tin_hoc_mos_dai_hoc": "Tin MOS · Kinh Tế Lượng · ĐH",
+    "nghe_thuat_am_nhac": "Guitar · Piano · Nghệ Thuật",
     "dgnl_hsa": "ĐGNL HSA",
-
     "dgtd_tsa": "ĐGTD TSA",
-
-    "dgnl_vact_bca": "V-ACT / BCA / QDA / VSAT"
-
+    "dgnl_vact_bca": "V-ACT · BCA · QDA · VSAT",
+    "lop12_2k9": "Lớp 12 (2K9)",
+    "lop11_2k10": "Lớp 11 (2K10)"
 };
 
 
@@ -2868,13 +2770,26 @@ function renderCourseCategoryTabs() {
 
 
 function filterCoursesByCategory(categoryId) {
-
     activeCourseCategory = categoryId;
-
+    if (categoryId === "all") {
+        activeWebCourseSubject = "ALL";
+        activeWebCourseProgram = "ALL";
+    } else {
+        activeWebCourseProgram = categoryId;
+    }
+    const subjSel = document.getElementById("courseSubjectSelect");
+    if (subjSel && categoryId === "all") subjSel.value = "ALL";
+    const progSel = document.getElementById("courseProgramSelect");
+    if (progSel) {
+        if (categoryId === "all") {
+            progSel.value = "ALL";
+        } else {
+            const opt = progSel.querySelector(`option[value*="${categoryId}"]`);
+            if (opt) progSel.value = opt.value;
+        }
+    }
     renderCourseCategoryTabs();
-
     renderCourses();
-
 }
 
 
@@ -2981,6 +2896,136 @@ function isWebCourseUnlocked(courseId) {
 
 
 
+function openCourseCheckoutModalByTier(tier) {
+    if (typeof COURSES_DATABASE === "undefined") return;
+    if (tier === "full_399k") {
+        openCourseCheckoutModal("ALL-COURSES-399K");
+    } else if (tier === "subject_69k") {
+        const firstSubj = COURSES_DATABASE.find(c => String(c.id).startsWith("COURSE-SUBJ-")) || COURSES_DATABASE[0];
+        openCourseCheckoutModal(firstSubj ? firstSubj.id : "COURSE-SUBJ-TOAN12-2K9");
+    } else {
+        const first199 = COURSES_DATABASE.find(c => !c.isPackageOnly && c.tierType === "course_199k") || COURSES_DATABASE[1] || COURSES_DATABASE[0];
+        openCourseCheckoutModal(first199 ? first199.id : "COURSE-ITEM-01");
+    }
+}
+
+let activeWebCourseSubject = "ALL";
+let activeWebCourseProgram = "ALL";
+
+function handleWebSubjectFilterChange(val) {
+    activeWebCourseSubject = val || "ALL";
+    renderCourses();
+}
+
+function handleWebProgramFilterChange(val) {
+    activeWebCourseProgram = val || "ALL";
+    renderCourses();
+}
+
+function quickFilterWebCourse(subj, prog, kw) {
+    activeWebCourseSubject = subj || "ALL";
+    activeWebCourseProgram = prog || "ALL";
+    const subjSel = document.getElementById("courseSubjectSelect");
+    if (subjSel) subjSel.value = activeWebCourseSubject;
+    const progSel = document.getElementById("courseProgramSelect");
+    if (progSel) progSel.value = activeWebCourseProgram;
+    const searchInput = document.getElementById("courseSearchInput");
+    if (searchInput) searchInput.value = kw || "";
+    renderCourses();
+}
+
+function doesCourseMatchSubject(course, subj) {
+    if (!subj || subj === "ALL") return true;
+    const t = `${course.id} ${course.title} ${course.instructor} ${course.groupName || ""}`.toLowerCase();
+    switch (subj) {
+        case "TOAN": return t.includes("toán") || t.includes("toan");
+        case "VAN": return t.includes("văn") || t.includes("van");
+        case "ANH": return t.includes("tiếng anh") || t.includes("anh12") || t.includes("pro3m");
+        case "LY": return t.includes("vật lý") || t.includes("ly12") || t.includes("vật lí");
+        case "HOA": return t.includes("hóa") || t.includes("hoa12");
+        case "SINH": return t.includes("sinh") || t.includes("sinh12");
+        case "SU": return t.includes("lịch sử") || t.includes("su12");
+        case "DIA": return t.includes("địa") || t.includes("dia12");
+        case "TRUNG": return t.includes("tiếng trung") || t.includes("hán ngữ") || t.includes("hsk") || t.includes("d04");
+        case "TIN_MOS": return t.includes("mos") || t.includes("excel") || t.includes("word") || t.includes("tin học");
+        case "DAI_HOC": return t.includes("kinh tế lượng") || t.includes("triết học") || t.includes("apa 7") || t.includes("đại học");
+        case "NGHE_THUAT": return t.includes("guitar") || t.includes("piano") || t.includes("thanh nhạc") || t.includes("nghệ thuật");
+        default: return true;
+    }
+}
+
+function doesCourseMatchProgram(course, prog) {
+    if (!prog || prog === "ALL") return true;
+    const p = prog.replace("PROG:", "");
+    if (course.category === p || course.subCategory === p) return true;
+    if (Array.isArray(course.categories) && course.categories.includes(p)) return true;
+    const t = `${course.id} ${course.title} ${course.instructor}`.toLowerCase();
+    if (p === "lop12_2k9") return t.includes("12") || t.includes("2k9");
+    if (p === "lop11_2k10") return t.includes("11") || t.includes("2k10");
+    if (p === "dgnl_hsa") return t.includes("hsa");
+    if (p === "dgtd_tsa") return t.includes("tsa");
+    if (p === "vact") return t.includes("v-act") || t.includes("vact");
+    if (p === "bca") return t.includes("bca");
+    if (p === "qda") return t.includes("qda") || t.includes("quân đội");
+    if (p === "vsat") return t.includes("vsat");
+    if (p === "mos") return t.includes("mos") || t.includes("tin học");
+    if (p === "daihoc") return t.includes("đại học") || t.includes("kinh tế lượng") || t.includes("triết");
+    if (p === "nghe_thuat") return t.includes("nghệ thuật") || t.includes("guitar") || t.includes("piano");
+    return true;
+}
+
+function getWebCourseVisualMeta(c) {
+    if (!c) return { badge: "KHÓA HỌC", iconKey: "all", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    const text = `${c.id || ""} ${c.title || ""} ${c.groupName || ""} ${c.instructor || ""} ${c.category || ""} ${c.subCategory || ""}`.toLowerCase();
+    
+    if (text.includes("tiếng trung") || text.includes("hán ngữ") || text.includes("hsk") || text.includes("yangdexin") || text.includes("d04")) {
+        return { badge: "TIẾNG TRUNG", iconKey: "trung", pillBg: "#FEE2E2", pillColor: "#991B1B" };
+    }
+    if (text.includes("lịch sử") || text.includes("lichsu") || text.includes("cô sen") || text.includes("lan hương")) {
+        return { badge: "LỊCH SỬ", iconKey: "su", pillBg: "#FFEDD5", pillColor: "#9A3412" };
+    }
+    if (text.includes("địa lý") || text.includes("địa lí") || text.includes("dialy") || text.includes("thầy tùng") || text.includes("thầy tài")) {
+        return { badge: "ĐỊA LÝ", iconKey: "dia", pillBg: "#CFFAFE", pillColor: "#155E75" };
+    }
+    if (text.includes("ngữ văn") || text.includes("nguvan") || text.includes("văn học")) {
+        return { badge: text.includes("11") ? "VĂN 11" : "NGỮ VĂN 12", iconKey: "van", pillBg: "#FFE4E6", pillColor: "#9F1239" };
+    }
+    if (text.includes("sinh học") || text.includes("sinh12") || text.includes("sinh 12")) {
+        return { badge: "SINH HỌC 12", iconKey: "sinh", pillBg: "#DCFCE7", pillColor: "#166534" };
+    }
+    if (text.includes("hóa học") || text.includes("hoa12") || text.includes("phạm văn trọng") || text.includes("nap")) {
+        return { badge: text.includes("11") ? "HÓA 11" : "HÓA HỌC 12", iconKey: "hoa", pillBg: "#D1FAE5", pillColor: "#065F46" };
+    }
+    if (text.includes("vật lý") || text.includes("ly12") || text.includes("vũ ngọc anh") || text.includes("chu văn biên") || text.includes("tùng ưng") || text.includes("tuấn anh")) {
+        return { badge: text.includes("11") ? "VẬT LÝ 11" : "VẬT LÝ 12", iconKey: "ly", pillBg: "#FEF3C7", pillColor: "#92400E" };
+    }
+    if (text.includes("toán 12") || text.includes("toan12") || text.includes("đỗ văn đức") || (text.includes("môn toán") && text.includes("12"))) {
+        return { badge: "TOÁN 12", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    }
+    if (text.includes("toán 11") || text.includes("toan11")) {
+        return { badge: "TOÁN 11", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    }
+    if (text.includes("tiếng anh") || text.includes("anh12") || text.includes("vũ mai phương") || text.includes("pro3m")) {
+        return { badge: "TIẾNG ANH 12", iconKey: "anh", pillBg: "#E0F2FE", pillColor: "#075985" };
+    }
+    if (text.includes("hsa") || text.includes("đgnl")) {
+        return { badge: "ĐGNL HSA", iconKey: "hsa_tsa", pillBg: "#EDE9FE", pillColor: "#5B21B6" };
+    }
+    if (text.includes("tsa") || text.includes("đgtd")) {
+        return { badge: "ĐGTD TSA", iconKey: "hsa_tsa", pillBg: "#EDE9FE", pillColor: "#5B21B6" };
+    }
+    if (text.includes("kinh tế lượng") || text.includes("triết học") || text.includes("tiểu luận") || text.includes("apa 7") || text.includes("đại học")) {
+        return { badge: "ĐẠI HỌC · BTL", iconKey: "dai_hoc", pillBg: "#EEF2FF", pillColor: "#4338CA" };
+    }
+    if (text.includes("mos") || text.includes("excel") || text.includes("word") || text.includes("access") || text.includes("văn phòng")) {
+        return { badge: "MOS · THVP", iconKey: "tin_mos", pillBg: "#E0E7FF", pillColor: "#3730A3" };
+    }
+    if (text.includes("guitar") || text.includes("piano") || text.includes("thanh nhạc") || text.includes("sáo") || text.includes("nghệ thuật")) {
+        return { badge: "NGHỆ THUẬT", iconKey: "nghe_thuat", pillBg: "#FCE7F3", pillColor: "#9D174D" };
+    }
+    return { badge: "KHÓA HỌC", iconKey: "all", pillBg: "#F1F5F9", pillColor: "#334155" };
+}
+
 function renderSingleCourseCardHtml(course) {
     const unlocked = isWebCourseUnlocked(course.id);
     const customCovers = getWebCourseCustomCovers();
@@ -2989,39 +3034,48 @@ function renderSingleCourseCardHtml(course) {
     const courseTitleText = course.title || "";
     const footerCategoryText = course.groupName || course.level || course.categoryName || "Khóa Học 2027";
     const durationText = (course.duration || "Full lộ trình 2027 · Video + PDF") + (unlocked ? " · Đã mở khóa" : "");
+    const meta = getWebCourseVisualMeta(course);
 
     return `
-        <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="rounded-[18px] overflow-hidden flex flex-col bg-white/95 dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70' : 'border-slate-200/90 dark:border-white/10 hover:border-blue-600/45 dark:hover:border-sky-400/50'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+        <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="group rounded-2xl overflow-hidden flex flex-col bg-white dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70 shadow-emerald-500/10' : 'border-slate-200/90 dark:border-white/10 hover:border-[#0D1677]/60 dark:hover:border-sky-400/60'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
             
             <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
             <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
                 ${coverUrl ? `
-                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block" loading="lazy">
+                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none\'><span class=\'text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25\'>KHUNG ẢNH 16:9</span></div>';">
                 ` : `
                     <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
                     </div>
                 `}
-                <button type="button" onclick="triggerWebCourseCoverUpload(event, '${course.id}')" class="absolute bottom-2.5 right-2.5 z-10 px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/75 hover:bg-blue-600 text-white border border-white/25 backdrop-blur-md transition">
+                <button type="button" onclick="triggerWebCourseCoverUpload(event, '${course.id}')" class="absolute bottom-2.5 right-2.5 z-10 px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/75 hover:bg-blue-600 text-white border border-white/25 backdrop-blur-md opacity-0 group-hover:opacity-100 transition">
                     ${coverUrl ? "Đổi ảnh" : "Chèn ảnh"}
                 </button>
             </div>
 
-            <!-- CARD BODY (TOP = TRUNG TÂM DẠY + TÊN THẦY CÔ NỔI BẬT, BELOW = TÊN KHÓA HỌC) -->
+            <!-- CARD BODY (TOP = BADGE & INSTRUCTOR, MIDDLE = COURSE TITLE, BOTTOM = STATS & ACTION) -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <h3 itemprop="provider" class="text-[15px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
+                <!-- Subject Badge & Code Pill -->
+                <div class="flex items-center gap-1.5 mb-0.5">
+                    <span class="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md" style="background: ${meta.pillBg}; color: ${meta.pillColor};">
+                        <svg class="w-3 h-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"></path><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"></path></svg>
+                        <span>${meta.badge}</span>
+                    </span>
+                </div>
+
+                <h3 itemprop="provider" class="text-[14.5px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
                     ${centerTeacherText}
                 </h3>
-                <h4 itemprop="name" class="text-[13.5px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0" title="${courseTitleText}">
+                <h4 itemprop="name" class="text-[13px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0 min-h-[36px]" title="${courseTitleText}">
                     ${courseTitleText}
                 </h4>
 
-                <div class="flex items-center justify-between gap-2.5 pt-2.5 mt-auto border-t border-slate-200/70 dark:border-white/10">
+                <div class="flex items-center justify-between gap-2.5 pt-3 mt-auto border-t border-slate-200/70 dark:border-white/10">
                     <div class="flex flex-col gap-0.5 min-w-0">
                         <strong itemprop="educationalLevel" class="text-[12px] font-bold text-slate-700 dark:text-slate-200 truncate">${footerCategoryText}</strong>
                         <small class="text-[11px] text-slate-500 dark:text-slate-400 truncate">${durationText}</small>
                     </div>
-                    <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">
+                    <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow-sm flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">
                         ${!unlocked ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' : ''}
                         <span>Vào học</span>
                     </button>
@@ -3033,100 +3087,60 @@ function renderSingleCourseCardHtml(course) {
 }
 
 function renderCourses() {
-
     const grid = document.getElementById("coursesGrid");
-
     if (!grid || typeof COURSES_DATABASE === "undefined") return;
 
-
-
     const searchQ = (document.getElementById("courseSearchInput")?.value || "").trim().toLowerCase();
-
     const searchNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(searchQ) : searchQ;
-
-
 
     const visibleCatalogCourses = COURSES_DATABASE.filter(c => !c.isPackageOnly);
 
-
-
     let courses = visibleCatalogCourses.filter(c => {
-
-        if (activeCourseCategory !== "all") {
-
-            const matchCat = (c.category === activeCourseCategory) || (c.subCategory === activeCourseCategory);
-
-            if (!matchCat) return false;
-
+        // Filter by subject
+        if (activeWebCourseSubject && activeWebCourseSubject !== "ALL") {
+            if (!doesCourseMatchSubject(c, activeWebCourseSubject)) return false;
         }
 
+        // Filter by program
+        if (activeWebCourseProgram && activeWebCourseProgram !== "ALL") {
+            if (!doesCourseMatchProgram(c, activeWebCourseProgram)) return false;
+        }
+
+        // Filter by search text
         if (searchQ) {
-
-            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
-
+            const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.categoryLabel || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
             const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
-
             return hay.includes(searchQ) || hayNorm.includes(searchNorm);
-
         }
 
         return true;
-
     });
 
-
-
     const badge = document.getElementById("courseCountBadge");
-
     if (badge) {
-
-        badge.textContent = (activeCourseCategory === "all" && !searchQ)
-
-            ? `${visibleCatalogCourses.length} Khóa Học Bản Quyền`
-
+        badge.textContent = (activeWebCourseSubject === "ALL" && activeWebCourseProgram === "ALL" && !searchQ)
+            ? `${visibleCatalogCourses.length}+ Khóa Học Bản Quyền`
             : `${courses.length} Khóa Học Phù Hợp`;
-
     }
-
-
 
     if (courses.length === 0) {
-
         grid.innerHTML = `
-
             <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
-
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp từ khóa này</h3>
-
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp với bộ lọc này</h3>
                 <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
-
-                    Bạn hãy thử chọn lại danh mục hoặc tìm từ khóa khác nhé!
-
+                    Bạn hãy thử bấm "Tất cả" hoặc tìm kiếm theo từ khóa môn học khác nhé!
                 </p>
-
-                <button onclick="filterCoursesByCategory('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
-
-                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg> Xem Toàn Bộ 50 Khóa Học</span>
-
+                <button onclick="quickFilterWebCourse('ALL', 'ALL', '');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
+                    <span>Xem Toàn Bộ Khóa Học</span>
                 </button>
-
             </div>
-
         `;
-
         return;
-
     }
 
-
-
     grid.innerHTML = courses.map(renderSingleCourseCardHtml).join("");
-
 }
-
-
 
 function handleWebCourseCardClick(courseId) {
 
@@ -3179,7 +3193,37 @@ function getCourseVisualMeta(c) {
     let colorClass = "text-[#0D1677] bg-blue-50 border-blue-200";
     let svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>';
 
-    if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) {
+    if (text.includes("tiếng trung") || text.includes("hán ngữ") || text.includes("hsk") || text.includes("yangdexin") || text.includes("d04")) {
+        badge = "TIẾNG TRUNG";
+        colorClass = "text-red-700 bg-red-50 border-red-200";
+    } else if (text.includes("lịch sử") || text.includes("lichsu")) {
+        badge = "LỊCH SỬ";
+        colorClass = "text-amber-800 bg-amber-50 border-amber-200";
+    } else if (text.includes("địa lý") || text.includes("địa lí") || text.includes("dialy")) {
+        badge = "ĐỊA LÝ";
+        colorClass = "text-teal-700 bg-teal-50 border-teal-200";
+    } else if (text.includes("ngữ văn") || text.includes("nguvan") || text.includes("văn học")) {
+        badge = "NGỮ VĂN";
+        colorClass = "text-rose-700 bg-rose-50 border-rose-200";
+    } else if (text.includes("sinh học") || text.includes("sinh12")) {
+        badge = "SINH HỌC";
+        colorClass = "text-emerald-700 bg-emerald-50 border-emerald-200";
+    } else if (text.includes("kinh tế lượng") || text.includes("eviews") || text.includes("stata") || text.includes("spss")) {
+        badge = "KINH TẾ LƯỢNG";
+        colorClass = "text-indigo-700 bg-indigo-50 border-indigo-200";
+    } else if (text.includes("triết học") || text.includes("mác - lênin")) {
+        badge = "TRIẾT HỌC";
+        colorClass = "text-purple-700 bg-purple-50 border-purple-200";
+    } else if (text.includes("nghiên cứu khoa học") || text.includes("tiểu luận") || text.includes("apa 7") || text.includes("xác suất")) {
+        badge = "ĐẠI HỌC · BTL";
+        colorClass = "text-blue-800 bg-blue-50 border-blue-200";
+    } else if (text.includes("guitar") || text.includes("piano") || text.includes("thanh nhạc") || text.includes("ukulele") || text.includes("sáo trúc") || text.includes("dj") || text.includes("nhảy") || text.includes("nghệ thuật")) {
+        badge = "NGHỆ THUẬT";
+        colorClass = "text-pink-700 bg-pink-50 border-pink-200";
+    } else if (text.includes("mos") || text.includes("excel") || text.includes("word") || text.includes("powerpoint") || text.includes("access") || text.includes("google sheets") || text.includes("văn phòng")) {
+        badge = "MOS · THVP";
+        colorClass = "text-sky-700 bg-sky-50 border-sky-200";
+    } else if (text.includes("toán 12") || text.includes("toan12") || (text.includes("môn toán") && text.includes("12"))) {
         badge = "TOÁN 12";
         colorClass = "text-blue-700 bg-blue-50 border-blue-200";
         svg = '<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>';
@@ -3576,7 +3620,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
     const cust = getSyncedCustomerLocal() || {};
     const name = (document.getElementById("courseStudentName").value.trim()) || cust.name || "";
     const rawPhoneInput = (document.getElementById("courseStudentPhone").value.trim()) || (cust.phone || "").replace(/\[.*\]/g, "").trim();
-    const rawPhone = rawPhoneInput || "0900000000";
+    const rawPhone = rawPhoneInput.replace(/\[.*\]/g, "").trim();
     const email = ((document.getElementById("courseStudentEmail").value.trim()) || cust.email || "").toLowerCase();
 
     if (!name || !email) {
@@ -3624,7 +3668,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
     }
 
     const webDevId = getWebDeviceId();
-    const phoneWithDeviceLock = `${rawPhone} [WB:${webDevId}]`;
+    const phoneWithDeviceLock = rawPhone;
 
     const payload = {
         action: "createOrder",
@@ -3637,6 +3681,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
         itemName: course.title,
         price: course.price,
         amount: course.price,
+        driveId: course.driveFolderId || "",
         name: name,
         phone: phoneWithDeviceLock,
         email: email,
@@ -3646,9 +3691,7 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
         timestamp: new Date().toISOString()
     };
 
-    if (state.webhookUrl) {
-        fetch(state.webhookUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }).catch(() => {});
-    }
+    try { sendWebhookData(payload); } catch (e) {}
     state.orderHistory.unshift(payload);
     localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
 
@@ -3659,32 +3702,64 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
 }
 
 let coursePollingInterval = null;
+let isCourseVerifyInFlight = false;
+
+function buildCourseVerifyUrl(orderCode, email) {
+    const cleanCode = String(orderCode || "").trim().split(" ")[0];
+    const course = selectedCourseForCheckout || (typeof COURSES_DATABASE !== "undefined" ? COURSES_DATABASE[0] : {}) || {};
+    const cust = typeof getSyncedCustomerLocal === "function" ? (getSyncedCustomerLocal() || {}) : {};
+    const nameVal = (document.getElementById("courseStudentName")?.value || cust.name || "Học Viên Điệp Viên").trim();
+    const phoneVal = (document.getElementById("courseStudentPhone")?.value || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const emailVal = (email || document.getElementById("courseStudentEmail")?.value || cust.email || "").trim().toLowerCase();
+    const params = new URLSearchParams({
+        action: "verify",
+        orderId: cleanCode,
+        orderType: "Khóa Học",
+        email: emailVal,
+        name: nameVal,
+        phone: phoneVal,
+        sku: course.id || "",
+        itemName: course.title || "",
+        amount: String(course.price || 199000),
+        driveId: course.driveFolderId || "",
+        deviceId: typeof getWebDeviceId === "function" ? getWebDeviceId() : ""
+    });
+    return `${state.webhookUrl}?${params.toString()}`;
+}
 
 function startCoursePaymentPolling(orderCode, courseTitle, email) {
     if (coursePollingInterval) clearInterval(coursePollingInterval);
+    isCourseVerifyInFlight = false;
     let elapsed = 0;
     const timerEl = document.getElementById("coursePaymentTimer");
 
+    setTimeout(() => checkCoursePaymentStatus(orderCode, courseTitle, email, false), 1500);
+
     coursePollingInterval = setInterval(() => {
-        elapsed += 5;
+        elapsed += 4;
         const mins = Math.floor(elapsed / 60);
         const secs = elapsed % 60;
         if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
 
-        checkCoursePaymentStatus(orderCode, courseTitle, email);
-    }, 5000);
+        checkCoursePaymentStatus(orderCode, courseTitle, email, false);
+    }, 4000);
 }
 
-async function checkCoursePaymentStatus(orderCode, courseTitle, email) {
-    if (!state.webhookUrl) return;
+async function checkCoursePaymentStatus(orderCode, courseTitle, email, isManual = false) {
+    if (!state.webhookUrl || !orderCode) return;
+    if (!isManual && isCourseVerifyInFlight) return;
+    isCourseVerifyInFlight = true;
     try {
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode) + "&deviceId=" + encodeURIComponent(getWebDeviceId());
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = buildCourseVerifyUrl(orderCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
-            onCoursePaymentConfirmed(orderCode, courseTitle, email);
+            onCoursePaymentConfirmed(orderCode, courseTitle, email || data.email || "");
         }
-    } catch(e) {}
+    } catch (e) {
+    } finally {
+        isCourseVerifyInFlight = false;
+    }
 }
 
 function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
@@ -3702,7 +3777,7 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
             fetch(warehouseWebhook, {
                 method: "POST",
                 mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
                 body: JSON.stringify({
                     email: email,
                     name: name,
@@ -4022,12 +4097,13 @@ function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", sour
         fetch(webhook, {
             method: "POST",
             mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 action: "registerOrLoginCustomer",
                 email: cleanEmail,
                 name: cleanName,
                 phone: cleanPhone,
+                deviceId: typeof getWebDeviceId === "function" ? getWebDeviceId() : "",
                 source: source
             })
         }).catch(() => {});
@@ -4050,7 +4126,7 @@ function sendAppInviteEmailAfterPurchase({ email = "", name = "", orderCode = ""
         fetch(url, {
             method: "POST",
             mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 action: "send_app_invite",
                 email: cleanEmail,
@@ -4133,6 +4209,12 @@ function renderSyncedCustomerEntitlements(cust) {
         html += `<div class="p-3 bg-blue-50 border border-blue-200 rounded-xl flex justify-between items-center">
             <div><strong class="text-[#0D1677]"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> ${d.title || d.name || d.sku}</strong><div class="text-[10px] text-slate-500">Mã đơn #${d.orderCode}</div></div>
             ${d.driveUrl ? `<a href="${d.driveUrl}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-bold text-[10px] rounded-lg">Mở Drive</a>` : `<span class="text-emerald-700 font-bold text-[10px]">PAID_SUCCESS</span>`}
+        </div>`;
+    });
+    btls.forEach(b => {
+        html += `<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl flex justify-between items-center gap-2">
+            <div><strong class="text-slate-900">🎓 BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
+            ${b.driveUrl ? `<a href="${b.driveUrl}" target="_blank" class="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-lg whitespace-nowrap">Mở BTL Drive</a>` : `<span class="text-amber-700 font-bold text-[10px] whitespace-nowrap">${b.status || "ĐANG LÀM"}</span>`}
         </div>`;
     });
     list.innerHTML = html;
@@ -4246,20 +4328,20 @@ async function verifyCourseBankPaymentNow() {
     const orderCode = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
     const email = document.getElementById("courseStudentEmail")?.value.trim() || getSyncedCustomerLocal()?.email || "";
     const statusText = document.getElementById("courseWaitingStatusText");
-    if (statusText) statusText.textContent = "Đang đối soát Email biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+    if (statusText) statusText.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa cho mã #" + orderCode + "...";
     if (!state.webhookUrl || !orderCode) return;
     try {
-        const verifyUrl = state.webhookUrl + "?action=verify&orderId=" + encodeURIComponent(orderCode);
-        const res = await fetch(verifyUrl, { method: "GET", mode: "cors" });
+        const verifyUrl = buildCourseVerifyUrl(orderCode, email);
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
-        if (data && data.verified === true) {
-            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email);
+        if (data && (data.verified === true || data.paid === true)) {
+            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email || data.email || "");
         } else if (statusText) {
-            statusText.textContent = "Chưa nhận được Email biến động số dư ngân hàng cho mã #" + orderCode + ". Vui lòng hoàn tất chuyển khoản!";
+            statusText.textContent = "⚠️ Chưa nhận được Email biến động số dư ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động mở khóa ngay khi tiền về!";
         }
     } catch (e) {
         if (statusText) {
-            statusText.textContent = "Chưa ghi nhận biến động số dư ngân hàng cho mã #" + orderCode + ". Hệ thống đang tiếp tục quét tự động...";
+            statusText.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
         }
     }
 }
@@ -4363,7 +4445,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
         fetch(warehouseWebhook, {
             method: "POST",
             mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 email: email,
                 name: custName,
@@ -4410,18 +4492,34 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
     }
 }
 
-// Upgrade openSuccessModal so BTL Service orders also show the 10% Deposit VietQR with customer name embedded in memo
+let servicePollingInterval = null;
+let currentServiceOrderData = null;
+let isServiceVerifyInFlight = false;
+
+function closeSuccessModal() {
+    if (servicePollingInterval) {
+        clearInterval(servicePollingInterval);
+        servicePollingInterval = null;
+    }
+    const modal = document.getElementById("successModal");
+    if (modal) modal.classList.add("hidden");
+}
+
 function openSuccessModal(type, orderData) {
     const modal = document.getElementById("successModal");
     if (!modal) return;
+    currentServiceOrderData = orderData || null;
 
     const title = document.getElementById("successModalTitle");
     const desc = document.getElementById("successModalDesc");
     const orderId = document.getElementById("successOrderId");
     const customerMail = document.getElementById("successCustomerEmail");
 
-    if (orderId) orderId.textContent = orderData.orderId || "";
-    if (customerMail) customerMail.textContent = orderData?.customer?.email || "";
+    const cleanOrderId = String(orderData?.orderId || "").trim().split(" ")[0];
+    const custEmail = String(orderData?.customer?.email || getSyncedCustomerLocal()?.email || "").trim().toLowerCase();
+
+    if (orderId) orderId.textContent = cleanOrderId;
+    if (customerMail) customerMail.textContent = custEmail;
 
     let qrBox = document.getElementById("serviceDepositQrBox");
     if (!qrBox && desc && desc.parentElement) {
@@ -4440,7 +4538,7 @@ function openSuccessModal(type, orderData) {
         const depAmount = Number(rawDep) || 50000;
         const custName = orderData?.customer?.name || getSyncedCustomerLocal()?.name || "";
         const cleanName = removeVietnameseTones(custName).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
-        const memo = orderData?.transferMemo || `${String(orderData?.orderId || "COCBTL").trim()} ${cleanName}`.trim();
+        const memo = orderData?.transferMemo || `${cleanOrderId || "COCBTL"} ${cleanName}`.trim();
         const qrSrc = `https://img.vietqr.io/image/ACB-27384751-compact2.png?amount=${depAmount}&addInfo=${encodeURIComponent(memo)}&accountName=NGO%20BAO%20THACH`;
         if (title) title.textContent = "Đã Ghi Nhận Đơn Đặt Làm Bài!";
         if (desc) desc.textContent = "Quét mã VietQR bên dưới để đặt cọc 10% khởi động bài viết (ACB · 27384751 · NGO BAO THACH):";
@@ -4450,11 +4548,143 @@ function openSuccessModal(type, orderData) {
                 <img id="serviceDepositQrImg" src="${qrSrc}" alt="VietQR Đặt Cọc 10% BTL" class="w-44 h-44 mx-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm mb-2 object-contain">
                 <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Số tiền cọc (10%): ${depAmount.toLocaleString("vi-VN")} VNĐ</div>
                 <div class="text-[11px] font-mono text-slate-600 dark:text-slate-300 mt-0.5">Nội dung CK: <strong>${memo}</strong></div>
+                <div id="serviceVerifyStatusText" class="text-[11px] text-amber-700 dark:text-amber-300 font-bold mt-2">⏳ Đang tự động quét biến động số dư ACB & đối soát hạn nộp (Deadline)...</div>
+                <button type="button" onclick="checkServicePaymentStatus('${cleanOrderId}', '${custEmail}', true)" class="mt-2.5 w-full py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow transition">
+                    🔄 Tôi Đã Chuyển Khoản Cọc — Kiểm Tra & Nhận Bản Check Ngay
+                </button>
             `;
         }
+        startServicePaymentPolling(cleanOrderId, custEmail);
     }
 
     modal.classList.remove("hidden");
+}
+
+function startServicePaymentPolling(orderCode, email) {
+    if (servicePollingInterval) clearInterval(servicePollingInterval);
+    if (!orderCode) return;
+    setTimeout(() => checkServicePaymentStatus(orderCode, email, false), 2000);
+    servicePollingInterval = setInterval(() => {
+        checkServicePaymentStatus(orderCode, email, false);
+    }, 5000);
+}
+
+async function checkServicePaymentStatus(orderCode, email, isManual = false) {
+    if (!state.webhookUrl || !orderCode) return;
+    if (!isManual && isServiceVerifyInFlight) return;
+    isServiceVerifyInFlight = true;
+    const stEl = document.getElementById("serviceVerifyStatusText");
+    if (isManual && stEl) {
+        stEl.textContent = "⏳ Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+    }
+    try {
+        const verifyUrl = `${state.webhookUrl}?action=verify&orderType=btl&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}`;
+        const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
+        const data = await res.json();
+        if (data && (data.verified === true || data.paid === true)) {
+            if (servicePollingInterval && data.btlDelivered === true) {
+                clearInterval(servicePollingInterval);
+                servicePollingInterval = null;
+            }
+            const title = document.getElementById("successModalTitle");
+            const desc = document.getElementById("successModalDesc");
+            const qrBox = document.getElementById("serviceDepositQrBox");
+            const previewUrl = data.previewDriveUrl || "https://drive.google.com/drive/folders/1TMds7tiynuR0UV9HUGhICJMHY37K99DK";
+            const fullUrl = data.fullDriveUrl || data.driveUrl || "";
+            const deadlineStr = data.deadline || currentServiceOrderData?.assignment?.deadline || "Theo đúng hạn nộp";
+
+            if (data.btlDelivered === true && fullUrl) {
+                if (title) title.textContent = "🎉 Đã Tự Động Bàn Giao Bài Tập Lớn (BTL)!";
+                if (desc) desc.textContent = "Bài Tập Lớn / Tiểu Luận của bạn đã hoàn tất và được cấp quyền Google Drive trực tiếp cho Email của bạn!";
+                if (qrBox) {
+                    qrBox.innerHTML = `
+                        <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ BÀN GIAO BTL ĐÚNG HẠN (${deadlineStr})</div>
+                            <div class="text-[11px] text-slate-600 dark:text-slate-300">Quyền truy cập Google Drive đã được mở tự động cho <strong>${email}</strong>.</div>
+                            <a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">
+                                🚀 MỞ FILE BÀI TẬP LỚN HOÀN CHỈNH (GOOGLE DRIVE)
+                            </a>
+                            <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 bg-slate-200 dark:bg-white/10 text-slate-800 dark:text-white font-bold text-[11px] rounded-xl text-center">
+                                📂 Mở Kho Bản Xem Trước / Đề Cương BTL
+                            </a>
+                        </div>
+                    `;
+                }
+            } else {
+                if (title) title.textContent = "✅ Đã Xác Nhận Đặt Cọc 10% BTL!";
+                if (desc) desc.textContent = "Hệ thống đã nhận cọc 10% qua ACB, gửi bản xem trước qua Email và hẹn giờ tự động bàn giao bản Full đúng Deadline!";
+                if (qrBox) {
+                    qrBox.innerHTML = `
+                        <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ XÁC NHẬN CỌC #${orderCode}</div>
+                            <div class="text-[11px] text-slate-700 dark:text-slate-200">📅 Hạn tự động bàn giao BTL hoàn chỉnh: <strong>${deadlineStr}</strong></div>
+                            <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl text-center shadow">
+                                📂 MỞ BẢN XEM TRƯỚC / ĐỀ CƯƠNG BTL (GOOGLE DRIVE)
+                            </a>
+                            ${fullUrl ? `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">🚀 MỞ FILE BTL HOÀN CHỈNH (GOOGLE DRIVE)</a>` : ""}
+                        </div>
+                    `;
+                }
+            }
+
+            // Lưu đơn BTL vào hồ sơ đồng bộ của khách hàng
+            const prev = getSyncedCustomerLocal() || {};
+            const prevBtls = Array.isArray(prev.btlOrders) ? prev.btlOrders : [];
+            const updatedCust = {
+                ...prev,
+                btlOrders: [
+                    {
+                        orderCode,
+                        topic: data.topic || currentServiceOrderData?.assignment?.topic || "Bài Tập Lớn",
+                        deadline: deadlineStr,
+                        status: data.status || (data.btlDelivered ? "ĐÃ GIAO BÀI" : "ĐÃ CỌC"),
+                        driveUrl: fullUrl || previewUrl
+                    },
+                    ...prevBtls.filter(x => x.orderCode !== orderCode)
+                ]
+            };
+            localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
+        } else if (isManual && stEl) {
+            stEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động cập nhật ngay khi tiền về!";
+        }
+    } catch (e) {
+        if (isManual && stEl) {
+            stEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ACB. Hệ thống vẫn đang quét tự động mỗi 5 giây...";
+        }
+    } finally {
+        isServiceVerifyInFlight = false;
+    }
+}
+
+// Tự động kiểm tra thanh toán ngay lập tức khi khách hàng chuyển từ App Ngân Hàng quay lại trình duyệt
+if (typeof window !== "undefined") {
+    const triggerActivePaymentChecksOnFocus = () => {
+        try {
+            const docStep2 = document.getElementById("docCheckoutStep2");
+            if (docStep2 && !docStep2.classList.contains("hidden")) {
+                const ord = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
+                const em = (document.getElementById("checkoutEmailInput")?.value || "").trim().toLowerCase();
+                if (ord) checkDocPaymentStatus(ord, em, false);
+            }
+            const courseStep2 = document.getElementById("courseCheckoutStep2");
+            if (courseStep2 && !courseStep2.classList.contains("hidden") && selectedCourseForCheckout) {
+                const noteEl = document.getElementById("courseTransferNote");
+                const ord = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
+                const em = (document.getElementById("courseStudentEmail")?.value || "").trim().toLowerCase();
+                if (ord) checkCoursePaymentStatus(ord, selectedCourseForCheckout.title, em, false);
+            }
+            const srvModal = document.getElementById("successModal");
+            if (srvModal && !srvModal.classList.contains("hidden") && servicePollingInterval) {
+                const ord = (document.getElementById("successOrderId")?.textContent || "").trim().split(" ")[0];
+                const em = (document.getElementById("successCustomerEmail")?.textContent || "").trim().toLowerCase();
+                if (ord) checkServicePaymentStatus(ord, em, false);
+            }
+        } catch (_) {}
+    };
+    window.addEventListener("focus", triggerActivePaymentChecksOnFocus);
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") triggerActivePaymentChecksOnFocus();
+    });
 }
 
 function startDirectFileDownload(hrefUrl, downloadFilename = "Cài Đặt App Điệp Viên Study (Windows).exe") {

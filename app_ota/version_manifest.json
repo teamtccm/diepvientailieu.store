@@ -1,0 +1,26 @@
+{
+  "version": "3.8.1794627870",
+  "releasedAt": "2026-11-14T03:44:30Z",
+  "notes": "OTA Auto-Update v3.8: Tích hợp đầy đủ ảnh bìa môn học Google Drive thật & giao diện khóa học 3 tầng chuẩn App",
+  "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
+  "files": [
+    {
+      "path": "web_dist/assets/index-SSdWYvRZ.js",
+      "sha256": "c92f8c196fbcc1cbac7b130bbef2092150adad531090318e12ca288d109fa877",
+      "size": 2664429,
+      "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
+    },
+    {
+      "path": "web_dist/assets/index-si95EOa3.css",
+      "sha256": "867bbc200c763281e8e6a9ce7bde374482e1a2310f7cd159e05cec119adc58eb",
+      "size": 317839,
+      "url": "https://diepvientailieu.store/index-si95EOa3.css"
+    },
+    {
+      "path": "DiepVienStudy.pyw",
+      "sha256": "d65611713447d5bf98c04634c0495387d29e7ec18c410308c998d98eb54032d7",
+      "size": 434203,
+      "url": "https://diepvientailieu.store/DiepVienStudy.pyw"
+    }
+  ]
+}

@@ -885,10 +885,8 @@ function executeDocSearch() {
 
 
 function removeVietnameseTones(str) {
-
-    if (!str) return '';
-
-    str = str.toLowerCase();
+    if (str === null || str === undefined) return '';
+    str = String(str).toLowerCase();
 
     str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
 
@@ -2912,26 +2910,379 @@ function openCourseCheckoutModalByTier(tier) {
 let activeWebCourseSubject = "ALL";
 let activeWebCourseProgram = "ALL";
 
-function handleWebSubjectFilterChange(val) {
-    activeWebCourseSubject = val || "ALL";
-    renderCourses();
+
+/* ==========================================================================
+   DVS SEARCHABLE CUSTOM COMBOBOX SYSTEM (100% IDENTICAL TO DESKTOP APP)
+   ========================================================================== */
+
+const DVS_WEB_SUBJECT_OPTIONS = [
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các môn học", iconKey: "all" },
+  { id: "TOAN", badge: "TOÁN HỌC", name: "Môn Toán (Toán 12 · 11 · XPS)", iconKey: "toan" },
+  { id: "VAN", badge: "NGỮ VĂN", name: "Môn Ngữ Văn (Đọc hiểu · Nghị luận)", iconKey: "van" },
+  { id: "ANH", badge: "TIẾNG ANH", name: "Môn Tiếng Anh (Pro3M · Pro3MPlus)", iconKey: "anh" },
+  { id: "LY", badge: "VẬT LÝ", name: "Môn Vật Lý (Vũ Ngọc Anh · Chu Văn Biên)", iconKey: "ly" },
+  { id: "HOA", badge: "HÓA HỌC", name: "Môn Hóa Học (Trọng · NAP · SangSang)", iconKey: "hoa" },
+  { id: "SINH", badge: "SINH HỌC", name: "Môn Sinh Học (Di truyền · Tế bào)", iconKey: "sinh" },
+  { id: "SU", badge: "LỊCH SỬ", name: "Môn Lịch Sử (Cô Sen · Cô Lan Hương)", iconKey: "su" },
+  { id: "DIA", badge: "ĐỊA LÝ", name: "Môn Địa Lý (Thầy Tùng · Thầy Tài)", iconKey: "dia" },
+  { id: "TRUNG", badge: "TIẾNG TRUNG", name: "Môn Tiếng Trung (HSK · D04)", iconKey: "trung" },
+  { id: "TIN_MOS", badge: "TIN HỌC", name: "Môn Tin Học (MOS · Word · Excel)", iconKey: "tin_mos" },
+  { id: "DAI_HOC", badge: "ĐẠI HỌC", name: "Kinh Tế Lượng · Triết Học · Master BTL", iconKey: "dai_hoc" },
+  { id: "NGHE_THUAT", badge: "NGHỆ THUẬT", name: "Âm Nhạc · Guitar · Piano · Thanh Nhạc", iconKey: "nghe_thuat" }
+];
+
+const DVS_WEB_PROGRAM_OPTIONS = [
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các khóa học & kỳ thi", iconKey: "all" },
+  { id: "PROG:lop12_2k9", badge: "THPTQG 2K9", name: "Khóa Luyện Thi THPTQG Lớp 12 (2K9)", iconKey: "dai_hoc" },
+  { id: "PROG:lop11_2k10", badge: "LỚP 11 · 2K10", name: "Khóa Xuất Phát Sớm Lớp 11 (2K10)", iconKey: "van" },
+  { id: "PROG:dgnl_hsa", badge: "ĐGNL HSA", name: "Khóa Luyện Thi ĐGNL HSA — ĐHQG Hà Nội", iconKey: "hsa_tsa" },
+  { id: "PROG:dgtd_tsa", badge: "ĐGTD TSA", name: "Khóa Luyện Thi ĐGTD TSA — ĐH Bách Khoa", iconKey: "hsa_tsa" },
+  { id: "PROG:vact", badge: "ĐGNL V-ACT", name: "Khóa Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM", iconKey: "vact_bca" },
+  { id: "PROG:bca", badge: "ĐGNL BCA", name: "Khóa Luyện Thi ĐGNL Bộ Công An (BCA)", iconKey: "vact_bca" },
+  { id: "PROG:qda", badge: "ĐGNL QDA", name: "Khóa Luyện Thi ĐGNL Quân Đội (QDA)", iconKey: "vact_bca" },
+  { id: "PROG:vsat", badge: "ĐGNL VSAT", name: "Khóa Luyện Thi ĐGNL VSAT Máy Tính", iconKey: "vact_bca" },
+  { id: "PROG:mos", badge: "CHỨNG CHỈ MOS", name: "Khóa Tin Học Văn Phòng & Chứng Chỉ MOS", iconKey: "tin_mos" },
+  { id: "PROG:daihoc", badge: "ĐẠI HỌC · BTL", name: "Khóa Đại Học · Kinh Tế Lượng · NCKH", iconKey: "dai_hoc" },
+  { id: "PROG:nghe_thuat", badge: "NGHỆ THUẬT", name: "Khóa Nghệ Thuật · Guitar · Piano", iconKey: "nghe_thuat" }
+];
+
+function getDvsIconThemeByKey(iconKey) {
+  switch (iconKey) {
+    case "toan": return { color: "#1D4ED8", bg: "#EFF6FF", border: "#BFDBFE", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    case "van": return { color: "#BE123C", bg: "#FFF1F2", border: "#FECDD3", pillBg: "#FFE4E6", pillColor: "#9F1239" };
+    case "anh": return { color: "#0284C7", bg: "#F0F9FF", border: "#BAE6FD", pillBg: "#E0F2FE", pillColor: "#075985" };
+    case "ly": return { color: "#D97706", bg: "#FFFBEB", border: "#FDE68A", pillBg: "#FEF3C7", pillColor: "#92400E" };
+    case "hoa": return { color: "#059669", bg: "#ECFDF5", border: "#A7F3D0", pillBg: "#D1FAE5", pillColor: "#065F46" };
+    case "sinh": return { color: "#16A34A", bg: "#F0FDF4", border: "#BBF7D0", pillBg: "#DCFCE7", pillColor: "#166534" };
+    case "su": return { color: "#B45309", bg: "#FFF7ED", border: "#FED7AA", pillBg: "#FFEDD5", pillColor: "#9A3412" };
+    case "dia": return { color: "#0891B2", bg: "#ECFEFF", border: "#A5F3FC", pillBg: "#CFFAFE", pillColor: "#155E75" };
+    case "trung": return { color: "#DC2626", bg: "#FEF2F2", border: "#FECACA", pillBg: "#FEE2E2", pillColor: "#991B1B" };
+    case "hsa_tsa": return { color: "#7C3AED", bg: "#F5F3FF", border: "#DDD6FE", pillBg: "#EDE9FE", pillColor: "#5B21B6" };
+    case "vact_bca": return { color: "#0F766E", bg: "#F0FDFA", border: "#99F6E4", pillBg: "#CCFBF1", pillColor: "#115E59" };
+    case "tin_mos": return { color: "#4338CA", bg: "#EEF2FF", border: "#C7D2FE", pillBg: "#E0E7FF", pillColor: "#3730A3" };
+    case "dai_hoc": return { color: "#0D1677", bg: "#EFF6FF", border: "#BFDBFE", pillBg: "#DBEAFE", pillColor: "#1E3A8A" };
+    case "nghe_thuat": return { color: "#DB2777", bg: "#FDF2F8", border: "#FBCFE8", pillBg: "#FCE7F3", pillColor: "#9D174D" };
+    default: return { color: "#0D1677", bg: "#F8FAFC", border: "#CBD5E1", pillBg: "#E2E8F0", pillColor: "#0F172A" };
+  }
 }
 
-function handleWebProgramFilterChange(val) {
-    activeWebCourseProgram = val || "ALL";
-    renderCourses();
+function renderDvsSubjectCourseSvgHtml(iconKey, size = 15) {
+  const p = `width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"`;
+  switch (iconKey) {
+    case "toan":
+      return `<svg ${p}><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="10" y2="11"/><line x1="14" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="10" y2="15"/><line x1="14" y1="15" x2="16" y2="15"/></svg>`;
+    case "van":
+      return `<svg ${p}><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>`;
+    case "anh":
+      return `<svg ${p}><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
+    case "ly":
+      return `<svg ${p}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`;
+    case "hoa":
+      return `<svg ${p}><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>`;
+    case "sinh":
+      return `<svg ${p}><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>`;
+    case "su":
+      return `<svg ${p}><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>`;
+    case "dia":
+      return `<svg ${p}><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>`;
+    case "trung":
+      return `<svg ${p}><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>`;
+    case "hsa_tsa":
+      return `<svg ${p}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`;
+    case "vact_bca":
+      return `<svg ${p}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>`;
+    case "tin_mos":
+      return `<svg ${p}><rect width="18" height="12" x="3" y="4" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>`;
+    case "dai_hoc":
+      return `<svg ${p}><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>`;
+    case "nghe_thuat":
+      return `<svg ${p}><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+    default:
+      return `<svg ${p}><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>`;
+  }
 }
 
-function quickFilterWebCourse(subj, prog, kw) {
-    activeWebCourseSubject = subj || "ALL";
-    activeWebCourseProgram = prog || "ALL";
-    const subjSel = document.getElementById("courseSubjectSelect");
-    if (subjSel) subjSel.value = activeWebCourseSubject;
-    const progSel = document.getElementById("courseProgramSelect");
-    if (progSel) progSel.value = activeWebCourseProgram;
-    const searchInput = document.getElementById("courseSearchInput");
-    if (searchInput) searchInput.value = kw || "";
-    renderCourses();
+let webSubjDropdownOpen = false;
+let webProgDropdownOpen = false;
+let webSubjSearchQuery = "";
+let webProgSearchQuery = "";
+
+function renderWebSubjTrigger() {
+  const left = document.getElementById("webSubjTriggerLeft");
+  const clearBtn = document.getElementById("webSubjClearBtn");
+  const chevron = document.getElementById("webSubjChevron");
+  if (!left) return;
+
+  const item = DVS_WEB_SUBJECT_OPTIONS.find(s => s.id === activeWebCourseSubject) || DVS_WEB_SUBJECT_OPTIONS[0];
+  const th = getDvsIconThemeByKey(item.iconKey);
+
+  left.innerHTML = `
+    <span class="dvs-uni-icon-box" style="color: ${th.color};">
+      ${renderDvsSubjectCourseSvgHtml(item.iconKey, 14)}
+    </span>
+    <span class="dvs-uni-code-pill" style="background: ${th.pillBg}; color: ${th.pillColor};">
+      ${item.badge}
+    </span>
+    <span class="dvs-uni-name-text">
+      ${item.name}
+    </span>
+  `;
+
+  if (clearBtn) {
+    if (activeWebCourseSubject !== "ALL") {
+      clearBtn.classList.remove("hidden");
+    } else {
+      clearBtn.classList.add("hidden");
+    }
+  }
+  if (chevron) {
+    chevron.textContent = webSubjDropdownOpen ? "▲" : "▼";
+  }
+}
+
+function renderWebSubjOptions(q = "") {
+  const list = document.getElementById("webSubjOptionsList");
+  if (!list) return;
+
+  const qNorm = (typeof removeVietnameseTones === "function" ? removeVietnameseTones(q) : q).toLowerCase().trim();
+  const filtered = DVS_WEB_SUBJECT_OPTIONS.filter(opt => {
+    if (!qNorm) return true;
+    const hay = `${opt.badge} ${opt.name} ${opt.id}`.toLowerCase();
+    const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
+    return hay.includes(qNorm) || hayNorm.includes(qNorm);
+  });
+
+  if (filtered.length === 0) {
+    list.innerHTML = `<div class="p-3 text-center text-xs text-slate-400 font-medium">Không tìm thấy môn học phù hợp</div>`;
+    return;
+  }
+
+  list.innerHTML = filtered.map(opt => {
+    const isSel = opt.id === activeWebCourseSubject;
+    const th = getDvsIconThemeByKey(opt.iconKey);
+    return `
+      <div class="dvs-uni-option-row ${isSel ? 'selected' : ''}" onclick="selectWebSubj('${opt.id}')">
+        <span class="dvs-uni-icon-box" style="color: ${th.color};">
+          ${renderDvsSubjectCourseSvgHtml(opt.iconKey, 14)}
+        </span>
+        <span class="dvs-uni-code-pill" style="background: ${th.pillBg}; color: ${th.pillColor};">
+          ${opt.badge}
+        </span>
+        <span class="dvs-uni-name-text">
+          ${opt.name}
+        </span>
+        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+      </div>
+    `;
+  }).join("");
+}
+
+function toggleWebSubjDropdown(e) {
+  if (e) e.stopPropagation();
+  webSubjDropdownOpen = !webSubjDropdownOpen;
+  webProgDropdownOpen = false;
+
+  const panel = document.getElementById("webSubjDropdownPanel");
+  const progPanel = document.getElementById("webProgDropdownPanel");
+  if (progPanel) progPanel.classList.add("hidden");
+
+  if (panel) {
+    if (webSubjDropdownOpen) {
+      panel.classList.remove("hidden");
+      renderWebSubjOptions(webSubjSearchQuery);
+      setTimeout(() => {
+        const inp = document.getElementById("webSubjFilterInput");
+        if (inp) inp.focus();
+      }, 50);
+    } else {
+      panel.classList.add("hidden");
+    }
+  }
+  renderWebSubjTrigger();
+  renderWebProgTrigger();
+}
+
+function handleWebSubjSearch(val) {
+  webSubjSearchQuery = val || "";
+  renderWebSubjOptions(webSubjSearchQuery);
+}
+
+function selectWebSubj(id) {
+  activeWebCourseSubject = id || "ALL";
+  webSubjDropdownOpen = false;
+  webSubjSearchQuery = "";
+  const panel = document.getElementById("webSubjDropdownPanel");
+  if (panel) panel.classList.add("hidden");
+  const inp = document.getElementById("webSubjFilterInput");
+  if (inp) inp.value = "";
+
+  renderWebSubjTrigger();
+  renderCourses();
+}
+
+function clearWebSubjFilter(e) {
+  if (e) e.stopPropagation();
+  selectWebSubj("ALL");
+}
+
+function renderWebProgTrigger() {
+  const left = document.getElementById("webProgTriggerLeft");
+  const clearBtn = document.getElementById("webProgClearBtn");
+  const chevron = document.getElementById("webProgChevron");
+  if (!left) return;
+
+  const item = DVS_WEB_PROGRAM_OPTIONS.find(p => p.id === activeWebCourseProgram) || DVS_WEB_PROGRAM_OPTIONS[0];
+  const th = getDvsIconThemeByKey(item.iconKey);
+
+  left.innerHTML = `
+    <span class="dvs-uni-icon-box" style="color: ${th.color};">
+      ${renderDvsSubjectCourseSvgHtml(item.iconKey, 14)}
+    </span>
+    <span class="dvs-uni-code-pill" style="background: ${th.pillBg}; color: ${th.pillColor};">
+      ${item.badge}
+    </span>
+    <span class="dvs-uni-name-text">
+      ${item.name}
+    </span>
+  `;
+
+  if (clearBtn) {
+    if (activeWebCourseProgram !== "ALL") {
+      clearBtn.classList.remove("hidden");
+    } else {
+      clearBtn.classList.add("hidden");
+    }
+  }
+  if (chevron) {
+    chevron.textContent = webProgDropdownOpen ? "▲" : "▼";
+  }
+}
+
+function renderWebProgOptions(q = "") {
+  const list = document.getElementById("webProgOptionsList");
+  if (!list) return;
+
+  const qNorm = (typeof removeVietnameseTones === "function" ? removeVietnameseTones(q) : q).toLowerCase().trim();
+  const filtered = DVS_WEB_PROGRAM_OPTIONS.filter(opt => {
+    if (!qNorm) return true;
+    const hay = `${opt.badge} ${opt.name} ${opt.id}`.toLowerCase();
+    const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
+    return hay.includes(qNorm) || hayNorm.includes(qNorm);
+  });
+
+  if (filtered.length === 0) {
+    list.innerHTML = `<div class="p-3 text-center text-xs text-slate-400 font-medium">Không tìm thấy khóa học phù hợp</div>`;
+    return;
+  }
+
+  list.innerHTML = filtered.map(opt => {
+    const isSel = opt.id === activeWebCourseProgram;
+    const th = getDvsIconThemeByKey(opt.iconKey);
+    return `
+      <div class="dvs-uni-option-row ${isSel ? 'selected' : ''}" onclick="selectWebProg('${opt.id}')">
+        <span class="dvs-uni-icon-box" style="color: ${th.color};">
+          ${renderDvsSubjectCourseSvgHtml(opt.iconKey, 14)}
+        </span>
+        <span class="dvs-uni-code-pill" style="background: ${th.pillBg}; color: ${th.pillColor};">
+          ${opt.badge}
+        </span>
+        <span class="dvs-uni-name-text">
+          ${opt.name}
+        </span>
+        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+      </div>
+    `;
+  }).join("");
+}
+
+function toggleWebProgDropdown(e) {
+  if (e) e.stopPropagation();
+  webProgDropdownOpen = !webProgDropdownOpen;
+  webSubjDropdownOpen = false;
+
+  const panel = document.getElementById("webProgDropdownPanel");
+  const subjPanel = document.getElementById("webSubjDropdownPanel");
+  if (subjPanel) subjPanel.classList.add("hidden");
+
+  if (panel) {
+    if (webProgDropdownOpen) {
+      panel.classList.remove("hidden");
+      renderWebProgOptions(webProgSearchQuery);
+      setTimeout(() => {
+        const inp = document.getElementById("webProgFilterInput");
+        if (inp) inp.focus();
+      }, 50);
+    } else {
+      panel.classList.add("hidden");
+    }
+  }
+  renderWebProgTrigger();
+  renderWebSubjTrigger();
+}
+
+function handleWebProgSearch(val) {
+  webProgSearchQuery = val || "";
+  renderWebProgOptions(webProgSearchQuery);
+}
+
+function selectWebProg(id) {
+  activeWebCourseProgram = id || "ALL";
+  webProgDropdownOpen = false;
+  webProgSearchQuery = "";
+  const panel = document.getElementById("webProgDropdownPanel");
+  if (panel) panel.classList.add("hidden");
+  const inp = document.getElementById("webProgFilterInput");
+  if (inp) inp.value = "";
+
+  renderWebProgTrigger();
+  renderCourses();
+}
+
+function clearWebProgFilter(e) {
+  if (e) e.stopPropagation();
+  selectWebProg("ALL");
+}
+
+function initWebCourseComboboxes() {
+  renderWebSubjTrigger();
+  renderWebProgTrigger();
+
+  // Close dropdowns on outside click
+  document.addEventListener("click", (e) => {
+    const subjWrap = document.getElementById("webSubjComboboxContainer");
+    const progWrap = document.getElementById("webProgComboboxContainer");
+
+    if (subjWrap && !subjWrap.contains(e.target) && webSubjDropdownOpen) {
+      webSubjDropdownOpen = false;
+      const panel = document.getElementById("webSubjDropdownPanel");
+      if (panel) panel.classList.add("hidden");
+      renderWebSubjTrigger();
+    }
+    if (progWrap && !progWrap.contains(e.target) && webProgDropdownOpen) {
+      webProgDropdownOpen = false;
+      const panel = document.getElementById("webProgDropdownPanel");
+      if (panel) panel.classList.add("hidden");
+      renderWebProgTrigger();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (webSubjDropdownOpen) {
+        webSubjDropdownOpen = false;
+        const panel = document.getElementById("webSubjDropdownPanel");
+        if (panel) panel.classList.add("hidden");
+        renderWebSubjTrigger();
+      }
+      if (webProgDropdownOpen) {
+        webProgDropdownOpen = false;
+        const panel = document.getElementById("webProgDropdownPanel");
+        if (panel) panel.classList.add("hidden");
+        renderWebProgTrigger();
+      }
+    }
+  });
 }
 
 function doesCourseMatchSubject(course, subj) {

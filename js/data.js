@@ -21927,7 +21927,7 @@ const COURSES_DATABASE = [
             "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/su_co_sen.jpg",
         "highlights": [
             "Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -21969,7 +21969,7 @@ const COURSES_DATABASE = [
             "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/dia_thay_tung.jpg",
         "highlights": [
             "Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -22053,7 +22053,7 @@ const COURSES_DATABASE = [
             "1CAshsjgTtSA-QicoM95Z1N-Ghw4vdwwE"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/ly_thay_ngoc_anh.jpg",
         "highlights": [
             "Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -22371,7 +22371,7 @@ const COURSES_DATABASE = [
         "driveFolderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
         "extraFolderIds": [],
         "driveUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/nen_tang_toan.jpg",
         "highlights": [
             "Mở khóa trọn bộ thư mục môn học: Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học)",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -22669,7 +22669,7 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-57",
         "code": "DVC57",
-        "title": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
+        "title": "Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen",
         "category": "ngoai_ngu_khxh",
         "subCategory": "lop12_2k9",
         "categories": [
@@ -22682,7 +22682,7 @@ const COURSES_DATABASE = [
         "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
         "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
         "parentSubjectId": "COURSE-SUBJ-SU12-2K9",
-        "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ",
+        "instructor": "CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ",
         "lessons": 50,
         "duration": "Full lộ trình 2027 · Video + PDF",
         "level": "Môn Lịch Sử 12 (2K9)",
@@ -22696,7 +22696,7 @@ const COURSES_DATABASE = [
             "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/su_co_sen.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -22711,7 +22711,7 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-58",
         "code": "DVC58",
-        "title": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
+        "title": "Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý",
         "category": "ngoai_ngu_khxh",
         "subCategory": "lop12_2k9",
         "categories": [
@@ -22724,7 +22724,7 @@ const COURSES_DATABASE = [
         "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
         "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
         "parentSubjectId": "COURSE-SUBJ-DIA12-2K9",
-        "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ",
+        "instructor": "THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ",
         "lessons": 50,
         "duration": "Full lộ trình 2027 · Video + PDF",
         "level": "Môn Địa Lý 12 (2K9)",
@@ -22738,7 +22738,7 @@ const COURSES_DATABASE = [
             "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/dia_thay_tung.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -22795,7 +22795,7 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-08",
         "code": "DVC08",
-        "title": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027",
+        "title": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh",
         "category": "lop12_2k9",
         "groupName": "Môn Vật Lý 12 (2K9)",
         "tier": "subject_69k",
@@ -22816,7 +22816,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/ly_thay_ngoc_anh.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY VŨ NGỌC ANH 2K9 - Trọn Bộ Lộ Trình IOME 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -23631,7 +23631,7 @@ const COURSES_DATABASE = [
             "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/14Vsk6-lsb-Nary5wbDpdWvyKc5pne3Ke",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/nen_tang_toan.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2027 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -23733,7 +23733,7 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-09",
         "code": "DVC09",
-        "title": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12",
+        "title": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng",
         "category": "lop12_2k9",
         "groupName": "Môn Vật Lý 12 (2K9)",
         "tier": "subject_69k",
@@ -23754,7 +23754,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/ly_thay_tien_thang.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY THẮNG, THẦY TIẾN IPCLASS 2K9 - XPS Chinh phục 9+ Vật lý 12",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -23774,7 +23774,7 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-10",
         "code": "DVC10",
-        "title": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027",
+        "title": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng",
         "category": "lop12_2k9",
         "groupName": "Môn Vật Lý 12 (2K9)",
         "tier": "subject_69k",
@@ -23795,7 +23795,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/ly_tung_ung.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY LÊ TÙNG ƯNG TENS 2K9 - Full lộ trình XPS Vật lý 12 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -23815,7 +23815,7 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-11",
         "code": "DVC11",
-        "title": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027",
+        "title": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh",
         "category": "lop12_2k9",
         "groupName": "Môn Vật Lý 12 (2K9)",
         "tier": "subject_69k",
@@ -23836,7 +23836,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/ly_thay_tuan_anh.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9 - XPS Vật lý 12 2027",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -23856,14 +23856,14 @@ const COURSES_DATABASE = [
     {
         "id": "COURSE-ITEM-12",
         "code": "DVC12",
-        "title": "Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới",
+        "title": "Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên",
         "category": "lop12_2k9",
         "groupName": "Môn Vật Lý 12 (2K9)",
         "tier": "subject_69k",
         "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
         "parentCourseId": "COURSE-K9-LOP12",
         "parentSubjectId": "COURSE-SUBJ-LY12-2K9",
-        "instructor": "HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG",
+        "instructor": "THẦY CHU VĂN BIÊN — VẬT LÝ 12",
         "lessons": 45,
         "duration": "Full lộ trình 2027 · Video + PDF",
         "level": "Môn Vật Lý 12 (2K9)",
@@ -23877,7 +23877,7 @@ const COURSES_DATABASE = [
             "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/ly_thay_bien.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: Z. NỀN TẢNG 12 MÔN VẬT LÝ 2027 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -24041,7 +24041,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1sKwBrvFNSAF95XUHmAIRuGUaFYb9fFSu",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/nen_tang_toan.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2027 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -24205,7 +24205,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1rvyHSojdbe__C26Jj4xB5toinNJRZTEc",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/nen_tang_ly.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN VẬT LÝ 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -24246,7 +24246,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1IgDvAyUK1UN6W5jqXWgPVML1cUS_vA0N",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/nen_tang_hoa.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN HÓA HỌC 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -24287,7 +24287,7 @@ const COURSES_DATABASE = [
             "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
         ],
         "driveUrl": "https://drive.google.com/drive/folders/1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
-        "defaultCover": "",
+        "defaultCover": "courses/covers/nen_tang_sinh.jpg",
         "highlights": [
             "Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN SINH HỌC 2026 HOCMAI",
             "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
@@ -25849,6 +25849,92 @@ const COURSES_DATABASE = [
         "isPackageOnly": false,
         "subTier": "teacher_69k",
         "tierShortBadge": "THEO MÔN 69K"
+    },
+    {
+        "id": "COURSE-ITEM-SU-LAN-HUONG",
+        "code": "DVSU12LANHUONG",
+        "title": "Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương",
+        "category": "ngoai_ngu_khxh",
+        "subCategory": "lop12_2k9",
+        "categories": [
+            "ngoai_ngu_khxh",
+            "lop12_2k9",
+            "dgnl_vact_bca"
+        ],
+        "groupName": "Môn Lịch Sử 12 (2K9)",
+        "tier": "subject_69k",
+        "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
+        "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
+        "parentSubjectId": "COURSE-SUBJ-SU12-2K9",
+        "instructor": "CÔ LAN HƯƠNG — LỊCH SỬ 12",
+        "lessons": 50,
+        "duration": "Full lộ trình 2027 · Video + PDF",
+        "level": "Môn Lịch Sử 12 (2K9)",
+        "rating": 5.0,
+        "students": "1.4k+",
+        "price": 69000,
+        "originalPrice": 250000,
+        "badge": "Môn Lịch Sử 12 · 69K",
+        "driveFolderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
+        "extraFolderIds": [
+            "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
+        ],
+        "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
+        "defaultCover": "courses/covers/su_co_lan_huong.jpg",
+        "highlights": [
+            "Mở khóa trực tiếp thư mục khóa học: Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
+            "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
+            "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"
+        ],
+        "description": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông do EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.",
+        "summary": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
+        "isPackageOnly": false,
+        "subTier": "teacher_69k",
+        "tierShortBadge": "THEO MÔN 69K",
+        "sku": "DVSU12LANHUONG"
+    },
+    {
+        "id": "COURSE-ITEM-DIA-TAI",
+        "code": "DVDIA12TAI",
+        "title": "Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài",
+        "category": "ngoai_ngu_khxh",
+        "subCategory": "lop12_2k9",
+        "categories": [
+            "ngoai_ngu_khxh",
+            "lop12_2k9",
+            "dgnl_vact_bca"
+        ],
+        "groupName": "Môn Địa Lý 12 (2K9)",
+        "tier": "subject_69k",
+        "tierLabel": "Gói Theo Môn / Lộ Trình (69k)",
+        "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
+        "parentSubjectId": "COURSE-SUBJ-DIA12-2K9",
+        "instructor": "THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12",
+        "lessons": 50,
+        "duration": "Full lộ trình 2027 · Video + PDF",
+        "level": "Môn Địa Lý 12 (2K9)",
+        "rating": 5.0,
+        "students": "1.4k+",
+        "price": 69000,
+        "originalPrice": 250000,
+        "badge": "Môn Địa Lý 12 · 69K",
+        "driveFolderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
+        "extraFolderIds": [
+            "1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
+        ],
+        "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
+        "defaultCover": "courses/covers/dia_thay_tai.jpg",
+        "highlights": [
+            "Mở khóa trực tiếp thư mục khóa học: Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
+            "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)",
+            "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"
+        ],
+        "description": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam do EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.",
+        "summary": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
+        "isPackageOnly": false,
+        "subTier": "teacher_69k",
+        "tierShortBadge": "THEO MÔN 69K",
+        "sku": "DVDIA12TAI"
     }
 ];
 

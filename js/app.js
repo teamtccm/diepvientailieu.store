@@ -2770,13 +2770,26 @@ function renderCourseCategoryTabs() {
 
 
 function filterCoursesByCategory(categoryId) {
-
     activeCourseCategory = categoryId;
-
+    if (categoryId === "all") {
+        activeWebCourseSubject = "ALL";
+        activeWebCourseProgram = "ALL";
+    } else {
+        activeWebCourseProgram = categoryId;
+    }
+    const subjSel = document.getElementById("courseSubjectSelect");
+    if (subjSel && categoryId === "all") subjSel.value = "ALL";
+    const progSel = document.getElementById("courseProgramSelect");
+    if (progSel) {
+        if (categoryId === "all") {
+            progSel.value = "ALL";
+        } else {
+            const opt = progSel.querySelector(`option[value*="${categoryId}"]`);
+            if (opt) progSel.value = opt.value;
+        }
+    }
     renderCourseCategoryTabs();
-
     renderCourses();
-
 }
 
 
@@ -2883,6 +2896,136 @@ function isWebCourseUnlocked(courseId) {
 
 
 
+function openCourseCheckoutModalByTier(tier) {
+    if (typeof COURSES_DATABASE === "undefined") return;
+    if (tier === "full_399k") {
+        openCourseCheckoutModal("ALL-COURSES-399K");
+    } else if (tier === "subject_69k") {
+        const firstSubj = COURSES_DATABASE.find(c => String(c.id).startsWith("COURSE-SUBJ-")) || COURSES_DATABASE[0];
+        openCourseCheckoutModal(firstSubj ? firstSubj.id : "COURSE-SUBJ-TOAN12-2K9");
+    } else {
+        const first199 = COURSES_DATABASE.find(c => !c.isPackageOnly && c.tierType === "course_199k") || COURSES_DATABASE[1] || COURSES_DATABASE[0];
+        openCourseCheckoutModal(first199 ? first199.id : "COURSE-ITEM-01");
+    }
+}
+
+let activeWebCourseSubject = "ALL";
+let activeWebCourseProgram = "ALL";
+
+function handleWebSubjectFilterChange(val) {
+    activeWebCourseSubject = val || "ALL";
+    renderCourses();
+}
+
+function handleWebProgramFilterChange(val) {
+    activeWebCourseProgram = val || "ALL";
+    renderCourses();
+}
+
+function quickFilterWebCourse(subj, prog, kw) {
+    activeWebCourseSubject = subj || "ALL";
+    activeWebCourseProgram = prog || "ALL";
+    const subjSel = document.getElementById("courseSubjectSelect");
+    if (subjSel) subjSel.value = activeWebCourseSubject;
+    const progSel = document.getElementById("courseProgramSelect");
+    if (progSel) progSel.value = activeWebCourseProgram;
+    const searchInput = document.getElementById("courseSearchInput");
+    if (searchInput) searchInput.value = kw || "";
+    renderCourses();
+}
+
+function doesCourseMatchSubject(course, subj) {
+    if (!subj || subj === "ALL") return true;
+    const t = `${course.id} ${course.title} ${course.instructor} ${course.groupName || ""}`.toLowerCase();
+    switch (subj) {
+        case "TOAN": return t.includes("toán") || t.includes("toan");
+        case "VAN": return t.includes("văn") || t.includes("van");
+        case "ANH": return t.includes("tiếng anh") || t.includes("anh12") || t.includes("pro3m");
+        case "LY": return t.includes("vật lý") || t.includes("ly12") || t.includes("vật lí");
+        case "HOA": return t.includes("hóa") || t.includes("hoa12");
+        case "SINH": return t.includes("sinh") || t.includes("sinh12");
+        case "SU": return t.includes("lịch sử") || t.includes("su12");
+        case "DIA": return t.includes("địa") || t.includes("dia12");
+        case "TRUNG": return t.includes("tiếng trung") || t.includes("hán ngữ") || t.includes("hsk") || t.includes("d04");
+        case "TIN_MOS": return t.includes("mos") || t.includes("excel") || t.includes("word") || t.includes("tin học");
+        case "DAI_HOC": return t.includes("kinh tế lượng") || t.includes("triết học") || t.includes("apa 7") || t.includes("đại học");
+        case "NGHE_THUAT": return t.includes("guitar") || t.includes("piano") || t.includes("thanh nhạc") || t.includes("nghệ thuật");
+        default: return true;
+    }
+}
+
+function doesCourseMatchProgram(course, prog) {
+    if (!prog || prog === "ALL") return true;
+    const p = prog.replace("PROG:", "");
+    if (course.category === p || course.subCategory === p) return true;
+    if (Array.isArray(course.categories) && course.categories.includes(p)) return true;
+    const t = `${course.id} ${course.title} ${course.instructor}`.toLowerCase();
+    if (p === "lop12_2k9") return t.includes("12") || t.includes("2k9");
+    if (p === "lop11_2k10") return t.includes("11") || t.includes("2k10");
+    if (p === "dgnl_hsa") return t.includes("hsa");
+    if (p === "dgtd_tsa") return t.includes("tsa");
+    if (p === "vact") return t.includes("v-act") || t.includes("vact");
+    if (p === "bca") return t.includes("bca");
+    if (p === "qda") return t.includes("qda") || t.includes("quân đội");
+    if (p === "vsat") return t.includes("vsat");
+    if (p === "mos") return t.includes("mos") || t.includes("tin học");
+    if (p === "daihoc") return t.includes("đại học") || t.includes("kinh tế lượng") || t.includes("triết");
+    if (p === "nghe_thuat") return t.includes("nghệ thuật") || t.includes("guitar") || t.includes("piano");
+    return true;
+}
+
+function getWebCourseVisualMeta(c) {
+    if (!c) return { badge: "KHÓA HỌC", iconKey: "all", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    const text = `${c.id || ""} ${c.title || ""} ${c.groupName || ""} ${c.instructor || ""} ${c.category || ""} ${c.subCategory || ""}`.toLowerCase();
+    
+    if (text.includes("tiếng trung") || text.includes("hán ngữ") || text.includes("hsk") || text.includes("yangdexin") || text.includes("d04")) {
+        return { badge: "TIẾNG TRUNG", iconKey: "trung", pillBg: "#FEE2E2", pillColor: "#991B1B" };
+    }
+    if (text.includes("lịch sử") || text.includes("lichsu") || text.includes("cô sen") || text.includes("lan hương")) {
+        return { badge: "LỊCH SỬ", iconKey: "su", pillBg: "#FFEDD5", pillColor: "#9A3412" };
+    }
+    if (text.includes("địa lý") || text.includes("địa lí") || text.includes("dialy") || text.includes("thầy tùng") || text.includes("thầy tài")) {
+        return { badge: "ĐỊA LÝ", iconKey: "dia", pillBg: "#CFFAFE", pillColor: "#155E75" };
+    }
+    if (text.includes("ngữ văn") || text.includes("nguvan") || text.includes("văn học")) {
+        return { badge: text.includes("11") ? "VĂN 11" : "NGỮ VĂN 12", iconKey: "van", pillBg: "#FFE4E6", pillColor: "#9F1239" };
+    }
+    if (text.includes("sinh học") || text.includes("sinh12") || text.includes("sinh 12")) {
+        return { badge: "SINH HỌC 12", iconKey: "sinh", pillBg: "#DCFCE7", pillColor: "#166534" };
+    }
+    if (text.includes("hóa học") || text.includes("hoa12") || text.includes("phạm văn trọng") || text.includes("nap")) {
+        return { badge: text.includes("11") ? "HÓA 11" : "HÓA HỌC 12", iconKey: "hoa", pillBg: "#D1FAE5", pillColor: "#065F46" };
+    }
+    if (text.includes("vật lý") || text.includes("ly12") || text.includes("vũ ngọc anh") || text.includes("chu văn biên") || text.includes("tùng ưng") || text.includes("tuấn anh")) {
+        return { badge: text.includes("11") ? "VẬT LÝ 11" : "VẬT LÝ 12", iconKey: "ly", pillBg: "#FEF3C7", pillColor: "#92400E" };
+    }
+    if (text.includes("toán 12") || text.includes("toan12") || text.includes("đỗ văn đức") || (text.includes("môn toán") && text.includes("12"))) {
+        return { badge: "TOÁN 12", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    }
+    if (text.includes("toán 11") || text.includes("toan11")) {
+        return { badge: "TOÁN 11", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    }
+    if (text.includes("tiếng anh") || text.includes("anh12") || text.includes("vũ mai phương") || text.includes("pro3m")) {
+        return { badge: "TIẾNG ANH 12", iconKey: "anh", pillBg: "#E0F2FE", pillColor: "#075985" };
+    }
+    if (text.includes("hsa") || text.includes("đgnl")) {
+        return { badge: "ĐGNL HSA", iconKey: "hsa_tsa", pillBg: "#EDE9FE", pillColor: "#5B21B6" };
+    }
+    if (text.includes("tsa") || text.includes("đgtd")) {
+        return { badge: "ĐGTD TSA", iconKey: "hsa_tsa", pillBg: "#EDE9FE", pillColor: "#5B21B6" };
+    }
+    if (text.includes("kinh tế lượng") || text.includes("triết học") || text.includes("tiểu luận") || text.includes("apa 7") || text.includes("đại học")) {
+        return { badge: "ĐẠI HỌC · BTL", iconKey: "dai_hoc", pillBg: "#EEF2FF", pillColor: "#4338CA" };
+    }
+    if (text.includes("mos") || text.includes("excel") || text.includes("word") || text.includes("access") || text.includes("văn phòng")) {
+        return { badge: "MOS · THVP", iconKey: "tin_mos", pillBg: "#E0E7FF", pillColor: "#3730A3" };
+    }
+    if (text.includes("guitar") || text.includes("piano") || text.includes("thanh nhạc") || text.includes("sáo") || text.includes("nghệ thuật")) {
+        return { badge: "NGHỆ THUẬT", iconKey: "nghe_thuat", pillBg: "#FCE7F3", pillColor: "#9D174D" };
+    }
+    return { badge: "KHÓA HỌC", iconKey: "all", pillBg: "#F1F5F9", pillColor: "#334155" };
+}
+
 function renderSingleCourseCardHtml(course) {
     const unlocked = isWebCourseUnlocked(course.id);
     const customCovers = getWebCourseCustomCovers();
@@ -2891,39 +3034,48 @@ function renderSingleCourseCardHtml(course) {
     const courseTitleText = course.title || "";
     const footerCategoryText = course.groupName || course.level || course.categoryName || "Khóa Học 2027";
     const durationText = (course.duration || "Full lộ trình 2027 · Video + PDF") + (unlocked ? " · Đã mở khóa" : "");
+    const meta = getWebCourseVisualMeta(course);
 
     return `
-        <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="rounded-[18px] overflow-hidden flex flex-col bg-white/95 dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70' : 'border-slate-200/90 dark:border-white/10 hover:border-blue-600/45 dark:hover:border-sky-400/50'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+        <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="group rounded-2xl overflow-hidden flex flex-col bg-white dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70 shadow-emerald-500/10' : 'border-slate-200/90 dark:border-white/10 hover:border-[#0D1677]/60 dark:hover:border-sky-400/60'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
             
             <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
             <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
                 ${coverUrl ? `
-                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block" loading="lazy">
+                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" class="w-full h-full object-cover block group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none\'><span class=\'text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25\'>KHUNG ẢNH 16:9</span></div>';">
                 ` : `
                     <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
                     </div>
                 `}
-                <button type="button" onclick="triggerWebCourseCoverUpload(event, '${course.id}')" class="absolute bottom-2.5 right-2.5 z-10 px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/75 hover:bg-blue-600 text-white border border-white/25 backdrop-blur-md transition">
+                <button type="button" onclick="triggerWebCourseCoverUpload(event, '${course.id}')" class="absolute bottom-2.5 right-2.5 z-10 px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/75 hover:bg-blue-600 text-white border border-white/25 backdrop-blur-md opacity-0 group-hover:opacity-100 transition">
                     ${coverUrl ? "Đổi ảnh" : "Chèn ảnh"}
                 </button>
             </div>
 
-            <!-- CARD BODY (TOP = TRUNG TÂM DẠY + TÊN THẦY CÔ NỔI BẬT, BELOW = TÊN KHÓA HỌC) -->
+            <!-- CARD BODY (TOP = BADGE & INSTRUCTOR, MIDDLE = COURSE TITLE, BOTTOM = STATS & ACTION) -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <h3 itemprop="provider" class="text-[15px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
+                <!-- Subject Badge & Code Pill -->
+                <div class="flex items-center gap-1.5 mb-0.5">
+                    <span class="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md" style="background: ${meta.pillBg}; color: ${meta.pillColor};">
+                        <svg class="w-3 h-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"></path><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"></path></svg>
+                        <span>${meta.badge}</span>
+                    </span>
+                </div>
+
+                <h3 itemprop="provider" class="text-[14.5px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
                     ${centerTeacherText}
                 </h3>
-                <h4 itemprop="name" class="text-[13.5px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0" title="${courseTitleText}">
+                <h4 itemprop="name" class="text-[13px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0 min-h-[36px]" title="${courseTitleText}">
                     ${courseTitleText}
                 </h4>
 
-                <div class="flex items-center justify-between gap-2.5 pt-2.5 mt-auto border-t border-slate-200/70 dark:border-white/10">
+                <div class="flex items-center justify-between gap-2.5 pt-3 mt-auto border-t border-slate-200/70 dark:border-white/10">
                     <div class="flex flex-col gap-0.5 min-w-0">
                         <strong itemprop="educationalLevel" class="text-[12px] font-bold text-slate-700 dark:text-slate-200 truncate">${footerCategoryText}</strong>
                         <small class="text-[11px] text-slate-500 dark:text-slate-400 truncate">${durationText}</small>
                     </div>
-                    <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">
+                    <button type="button" onclick="event.stopPropagation(); handleWebCourseCardClick('${course.id}')" class="h-8 px-3.5 rounded-full text-xs font-bold text-white shadow-sm flex items-center gap-1.5 flex-shrink-0 transition hover:opacity-95" style="background: ${unlocked ? 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' : 'linear-gradient(135deg, #0d1677 0%, #1e3a8a 100%)'};">
                         ${!unlocked ? '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>' : ''}
                         <span>Vào học</span>
                     </button>
@@ -2935,100 +3087,60 @@ function renderSingleCourseCardHtml(course) {
 }
 
 function renderCourses() {
-
     const grid = document.getElementById("coursesGrid");
-
     if (!grid || typeof COURSES_DATABASE === "undefined") return;
 
-
-
     const searchQ = (document.getElementById("courseSearchInput")?.value || "").trim().toLowerCase();
-
     const searchNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(searchQ) : searchQ;
-
-
 
     const visibleCatalogCourses = COURSES_DATABASE.filter(c => !c.isPackageOnly);
 
-
-
     let courses = visibleCatalogCourses.filter(c => {
-
-        if (activeCourseCategory !== "all") {
-
-            const matchCat = (c.category === activeCourseCategory) || (c.subCategory === activeCourseCategory) || (Array.isArray(c.categories) && c.categories.includes(activeCourseCategory));
-
-            if (!matchCat) return false;
-
+        // Filter by subject
+        if (activeWebCourseSubject && activeWebCourseSubject !== "ALL") {
+            if (!doesCourseMatchSubject(c, activeWebCourseSubject)) return false;
         }
 
+        // Filter by program
+        if (activeWebCourseProgram && activeWebCourseProgram !== "ALL") {
+            if (!doesCourseMatchProgram(c, activeWebCourseProgram)) return false;
+        }
+
+        // Filter by search text
         if (searchQ) {
-
             const hay = [c.title, c.instructor, c.level, c.code, c.groupName || "", c.categoryLabel || "", c.description || "", c.summary || ""].join(" ").toLowerCase();
-
             const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
-
             return hay.includes(searchQ) || hayNorm.includes(searchNorm);
-
         }
 
         return true;
-
     });
 
-
-
     const badge = document.getElementById("courseCountBadge");
-
     if (badge) {
-
-        badge.textContent = (activeCourseCategory === "all" && !searchQ)
-
-            ? `${visibleCatalogCourses.length} Khóa Học Bản Quyền`
-
+        badge.textContent = (activeWebCourseSubject === "ALL" && activeWebCourseProgram === "ALL" && !searchQ)
+            ? `${visibleCatalogCourses.length}+ Khóa Học Bản Quyền`
             : `${courses.length} Khóa Học Phù Hợp`;
-
     }
-
-
 
     if (courses.length === 0) {
-
         grid.innerHTML = `
-
             <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
-
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp từ khóa này</h3>
-
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy khóa học phù hợp với bộ lọc này</h3>
                 <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
-
-                    Bạn hãy thử chọn lại danh mục hoặc tìm từ khóa khác nhé!
-
+                    Bạn hãy thử bấm "Tất cả" hoặc tìm kiếm theo từ khóa môn học khác nhé!
                 </p>
-
-                <button onclick="filterCoursesByCategory('all');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
-
-                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg> Xem Toàn Bộ 82 Khóa Học Đa Môn</span>
-
+                <button onclick="quickFilterWebCourse('ALL', 'ALL', '');" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
+                    <span>Xem Toàn Bộ Khóa Học</span>
                 </button>
-
             </div>
-
         `;
-
         return;
-
     }
 
-
-
     grid.innerHTML = courses.map(renderSingleCourseCardHtml).join("");
-
 }
-
-
 
 function handleWebCourseCardClick(courseId) {
 

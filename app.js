@@ -98,29 +98,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initServiceCalculator();
 
-    renderDocuments();
-
-    syncLiveProductsFromMasterSheet();
+    hydrateCachedLiveProductsSync();
 
     renderRecentOrdersTicker();
 
     initLiveProofStream();
 
-    
-
-    // Check URL Hash
-
+    // Check URL Hash (Chỉ render Kho Đề Cương khi khách thực sự mở tab Đề Cương -> trang chủ lên hình tức thì < 50ms!)
     const hash = window.location.hash.replace("#", "");
-
     if (["home", "docs", "courses", "service", "pricing", "guarantee_feedback", "faq"].includes(hash)) {
-
         switchView(hash);
-
     } else {
-
         switchView("home");
-
     }
+
+    // Đồng bộ ngầm danh mục mới nhất sau khi giao diện đã hiển thị mượt mà
+    setTimeout(() => syncLiveProductsFromMasterSheet(), 350);
 
 });
 
@@ -1238,325 +1231,206 @@ function filterDocuments() {
 
 
 
-function renderDocuments() {
+const DOC_RENDER_BATCH_SIZE = 24;
+let currentDocRenderLimit = DOC_RENDER_BATCH_SIZE;
+let currentFilteredDocsCache = [];
+let docScrollObserver = null;
 
-    const container = document.getElementById("docGridContainer");
-
-    const countLabel = document.getElementById("docCountBadge");
-
-    if (!container) return;
-
-    
-
-    const docs = filterDocuments();
-
-    if (countLabel) {
-
-        if (!state.searchQuery && (!state.activeCategory || state.activeCategory === 'all') && !state.selectedUniversity) {
-
-            countLabel.textContent = "600+ Đề Cương";
-
-        } else {
-
-            countLabel.textContent = `${docs.length} Đề Cương`;
-
-        }
-
+function buildSingleDocumentCardHtml(doc, index, selectedUni) {
+    const docDisc = typeof getDocDiscipline === 'function' ? getDocDiscipline(doc) : "DAI_CUONG";
+    let docUniInfo = null;
+    if (selectedUni && typeof getUniAllowedDisciplines === 'function' && getUniAllowedDisciplines(selectedUni.id, selectedUni.name).has(docDisc)) {
+        docUniInfo = selectedUni;
+    } else if (doc.university) {
+        docUniInfo = UNIVERSITIES.find(u => u.id === doc.university) || UNIVERSITIES[0];
+    } else {
+        docUniInfo = UNIVERSITIES[index % UNIVERSITIES.length];
     }
 
-    
-
-    if (docs.length === 0) {
-
-        const fallbackBadge = UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code || "ĐẠI CƯƠNG TOÀN QUỐC";
-
-        container.innerHTML = `
-
-            <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
-
-                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy đề cương "${state.searchQuery || 'này'}"</h3>
-
-                <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
-
-                    Đừng lo! Điệp Viên Tài Liệu có kho tài liệu riêng đầy đủ mọi môn theo trường ${fallbackBadge}. Bạn hãy nhắn Zalo để nhân viên gửi link Google Drive cho bạn ngay nhé!
-
-                </p>
-
-                <button onclick="openChatModal()" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
-
-                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Nhắn Zalo Đặt Lấy Đề Cương Ngay</span>
-
-                </button>
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-    
-
-    const isDark = state.theme === "dark";
-
-    const selectedUni = state.selectedUniversity ? UNIVERSITIES.find(u => u.id === state.selectedUniversity) : null;
-
-
-
-    container.innerHTML = docs.map((doc, index) => {
-
-        // DYNAMIC UNIVERSITY & LOGO ADAPTATION:
-
-        // Adapt to selected school ONLY IF the school legitimately offers that discipline!
-
-        const docDisc = typeof getDocDiscipline === 'function' ? getDocDiscipline(doc) : "DAI_CUONG";
-
-        let docUniInfo = null;
-
-        if (selectedUni && typeof getUniAllowedDisciplines === 'function' && getUniAllowedDisciplines(selectedUni.id, selectedUni.name).has(docDisc)) {
-
-            docUniInfo = selectedUni;
-
-        } else if (doc.university) {
-
-            docUniInfo = UNIVERSITIES.find(u => u.id === doc.university) || UNIVERSITIES[0];
-
-        } else {
-
-            docUniInfo = UNIVERSITIES[index % UNIVERSITIES.length];
-
-        }
-
-        
-
-        const docUniBadge = docUniInfo ? docUniInfo.code : "TOÀN QUỐC";
-
-        const docUniColor = (docUniInfo && docUniInfo.color) ? docUniInfo.color : '#0D1677';
-
-        const docUniHasLogo = docUniInfo && UNIVERSITIES_WITH_LOGOS.has(docUniInfo.id);
-
-        const docUniLogo = docUniInfo ? `images/logos/${docUniInfo.id}.png` : 'images/favicon_badge.png';
-
-
-
-        const cleanDocBaseUpper = String(doc.baseName || "").replace(/^(bộ\s+)?đề\s+cương\s+/i, "").trim().toUpperCase();
-
-        const fullDocTitle = `ĐỀ CƯƠNG ${cleanDocBaseUpper} — ${docUniBadge}`;
-
-        const iconSymbol = getSemanticSvgIconJs(doc.icon);
-
-        const mascotBadge = "images/favicon_badge.png";
-
-        const discountPercent = (doc.originalPrice && doc.originalPrice > doc.price) 
-
-            ? Math.round((1 - (doc.price / doc.originalPrice)) * 100) 
-
-            : 50;
-
-        
-
-        return `
-
-            <div class="clean-card hover-lift overflow-hidden flex flex-col justify-between transition-all duration-300 border-2 border-slate-200 dark:border-white/10 shadow-sm hover:shadow-2xl rounded-[24px]">
-
-                
-
-                <!-- REDESIGNED HIGH-RESOLUTION PROFESSIONAL COVER BANNER -->
-
-                <div class="relative p-5 text-white flex flex-col justify-between min-h-[245px] select-none rounded-t-[22px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
-
-                    
-
-                    <!-- Top Bar: Crisp Rounded Squircle Brand Badge & School Pill -->
-
-                    <div class="flex justify-between items-center z-10">
-
-                        <div class="flex items-center gap-2 bg-black/60 px-2.5 py-1 rounded-xl border border-white/20 backdrop-blur-md shadow-sm">
-
-                            <img src="${mascotBadge}" alt="Logo" class="w-5 h-5 object-contain" loading="lazy">
-
-                            <span class="font-black text-[10px] tracking-wider uppercase text-amber-300">ĐIỆP VIÊN TÀI LIỆU</span>
-
-                        </div>
-
-                        <div class="flex items-center gap-1.5">
-
-                            <div class="w-7 h-7 rounded-md bg-white p-0.5 shadow-md border border-white/20 flex items-center justify-center overflow-hidden flex-shrink-0">
-
-                                ${docUniHasLogo ? `
-
-                                <img src="${docUniLogo}" 
-
-                                     alt="${docUniBadge}" 
-
-                                     class="w-full h-full object-contain"
-
-                                     loading="lazy"
-
-                                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-
-                                <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400 font-black text-xs" style="display:none">
-
-                                    ?
-
-                                </div>
-
-                                ` : `
-
-                                <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400 font-black text-xs">
-
-                                    ?
-
-                                </div>
-
-                                `}
-
-                            </div>
-
-                            <span class="px-2.5 py-1 bg-[#FFA000] text-slate-950 font-black text-[10px] rounded-lg shadow-md uppercase tracking-wider border border-amber-300">
-
-                                ${docUniBadge}
-
-                            </span>
-
-                        </div>
-
+    const docUniBadge = docUniInfo ? docUniInfo.code : "TOÀN QUỐC";
+    const docUniHasLogo = docUniInfo && UNIVERSITIES_WITH_LOGOS.has(docUniInfo.id);
+    const docUniLogo = docUniInfo ? `images/logos/${docUniInfo.id}.png` : 'images/favicon_badge.png';
+
+    const cleanDocBaseUpper = String(doc.baseName || "").replace(/^(bộ\s+)?đề\s+cương\s+/i, "").trim().toUpperCase();
+    const fullDocTitle = `ĐỀ CƯƠNG ${cleanDocBaseUpper} — ${docUniBadge}`;
+    const iconSymbol = getSemanticSvgIconJs(doc.icon);
+    const mascotBadge = "images/favicon_badge.png";
+    const discountPercent = (doc.originalPrice && doc.originalPrice > doc.price)
+        ? Math.round((1 - (doc.price / doc.originalPrice)) * 100)
+        : 50;
+
+    return `
+        <div class="clean-card hover-lift overflow-hidden flex flex-col justify-between transition-all duration-300 border-2 border-slate-200 dark:border-white/10 shadow-sm hover:shadow-2xl rounded-[24px]">
+            <div class="relative p-5 text-white flex flex-col justify-between min-h-[245px] select-none rounded-t-[22px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
+                <div class="flex justify-between items-center z-10">
+                    <div class="flex items-center gap-2 bg-black/60 px-2.5 py-1 rounded-xl border border-white/20 backdrop-blur-md shadow-sm">
+                        <img src="${mascotBadge}" alt="Logo" class="w-5 h-5 object-contain" loading="lazy" decoding="async">
+                        <span class="font-black text-[10px] tracking-wider uppercase text-amber-300">ĐIỆP VIÊN TÀI LIỆU</span>
                     </div>
-
-
-
-                    <!-- Center Title with High-Contrast Typography -->
-
-                    <div class="relative my-3 z-10">
-
-                        <div class="flex items-center gap-1.5 mb-1.5">
-
-                            <span class="text-base">${iconSymbol}</span>
-
-                            <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
-
-                            ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> CÓ SẴN FILE DRIVE</span>' : ''}
-
+                    <div class="flex items-center gap-1.5">
+                        <div class="w-7 h-7 rounded-md bg-white p-0.5 shadow-md border border-white/20 flex items-center justify-center overflow-hidden flex-shrink-0">
+                            ${docUniHasLogo ? `
+                            <img src="${docUniLogo}"
+                                 alt="${docUniBadge}"
+                                 class="w-full h-full object-contain"
+                                 loading="lazy"
+                                 decoding="async"
+                                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400 font-black text-xs" style="display:none">?</div>
+                            ` : `
+                            <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400 font-black text-xs">?</div>
+                            `}
                         </div>
-
-                        <h4 class="font-condensed font-black text-lg sm:text-xl text-white tracking-wide uppercase leading-tight line-clamp-2 drop-shadow-md">
-
-                            ${fullDocTitle}
-
-                        </h4>
-
-                        <div class="flex items-center gap-2.5 mt-2.5 text-[10px]">
-
-                            <span class="text-amber-300 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg> ${doc.pages} Trang A4</span>
-
-                            <span class="text-emerald-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-1px]" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${doc.rating} (${doc.reviewsCount})</span>
-
-                            <span class="text-sky-200 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Google Drive</span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Bottom Bar: Verified Badge + Website -->
-
-                    <div class="relative z-10 flex items-center justify-between pt-2.5 border-t border-white/20">
-
-                        <span class="text-[10px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
-
-                            <span>★</span> CHUẨN ĐỀ THI ${docUniBadge} 2026
-
+                        <span class="px-2.5 py-1 bg-[#FFA000] text-slate-950 font-black text-[10px] rounded-lg shadow-md uppercase tracking-wider border border-amber-300">
+                            ${docUniBadge}
                         </span>
-
-                        <span class="text-[10px] font-mono text-sky-200">
-
-                            diepvientailieu.store
-
-                        </span>
-
                     </div>
-
                 </div>
 
-
-
-                <!-- CARD BODY -->
-
-                <div class="p-5 flex-1 flex flex-col justify-between bg-white dark:bg-[#0A143D]">
-
-                    <div>
-
-                        <!-- Feature Chips -->
-
-                        <div class="flex flex-wrap gap-1.5 mb-4">
-
-                            ${doc.tags.map(t => `<span class="text-[10px] font-semibold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-md border border-slate-200 dark:border-white/10">${t}</span>`).join('')}
-
-                        </div>
-
+                <div class="relative my-3 z-10">
+                    <div class="flex items-center gap-1.5 mb-1.5">
+                        <span class="text-base">${iconSymbol}</span>
+                        <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
+                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> CÓ SẴN FILE DRIVE</span>' : ''}
                     </div>
-
-
-
-                    <!-- Price & Actions -->
-
-                    <div class="pt-3 border-t border-slate-100 dark:border-white/10">
-
-                        <div class="flex items-baseline justify-between mb-3">
-
-                            <div>
-
-                                <span class="text-2xl font-black text-[#0D1677] dark:text-amber-400 font-condensed tracking-wider">${doc.price.toLocaleString('vi-VN')}đ</span>
-
-                                <span class="text-xs text-slate-400 line-through ml-1.5">${doc.originalPrice.toLocaleString('vi-VN')}đ</span>
-
-                            </div>
-
-                            <span class="text-[10px] font-black text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800">
-
-                                TIẾT KIỆM ${discountPercent}%
-
-                            </span>
-
-                        </div>
-
-
-
-                        <div class="grid grid-cols-2 gap-2">
-
-                            <button onclick="window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2.5 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
-
-                                <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Hỏi Shop</span>
-
-                            </button>
-
-                            <button onclick="openDocCheckoutModal('${doc.id}', this.dataset.title)" data-title="${fullDocTitle.replace(/'/g, '&#39;').replace(/"/g, '&quot;')}" class="px-3 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
-
-                                <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg> Mua Ngay</span>
-
-                            </button>
-
-                        </div>
-
+                    <h4 class="font-condensed font-black text-lg sm:text-xl text-white tracking-wide uppercase leading-tight line-clamp-2 drop-shadow-md">
+                        ${fullDocTitle}
+                    </h4>
+                    <div class="flex items-center gap-2.5 mt-2.5 text-[10px]">
+                        <span class="text-amber-300 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg> ${doc.pages} Trang A4</span>
+                        <span class="text-emerald-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-1px]" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${doc.rating} (${doc.reviewsCount})</span>
+                        <span class="text-sky-200 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Giao Tự Động 3s</span>
                     </div>
-
                 </div>
 
-
-
+                <div class="relative z-10 flex items-center justify-between pt-2.5 border-t border-white/20">
+                    <span class="text-[10px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
+                        <span>★</span> CHUẨN ĐỀ THI ${docUniBadge} 2026
+                    </span>
+                    <span class="text-[10px] font-mono text-sky-200">
+                        diepvientailieu.store
+                    </span>
+                </div>
             </div>
 
-        `;
+            <div class="p-5 flex-1 flex flex-col justify-between bg-white dark:bg-[#0A143D]">
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        ${(doc.tags || []).map(t => `<span class="text-[10px] font-semibold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-md border border-slate-200 dark:border-white/10">${t}</span>`).join('')}
+                    </div>
+                </div>
 
-    }).join('');
+                <div class="pt-3 border-t border-slate-100 dark:border-white/10">
+                    <div class="flex items-baseline justify-between mb-3">
+                        <div>
+                            <span class="text-2xl font-black text-[#0D1677] dark:text-amber-400 font-condensed tracking-wider">${doc.price.toLocaleString('vi-VN')}đ</span>
+                            <span class="text-xs text-slate-400 line-through ml-1.5">${doc.originalPrice.toLocaleString('vi-VN')}đ</span>
+                        </div>
+                        <span class="text-[10px] font-black text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800">
+                            TIẾT KIỆM ${discountPercent}%
+                        </span>
+                    </div>
 
+                    <div class="grid grid-cols-2 gap-2">
+                        <button onclick="window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2.5 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
+                            <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Hỏi Shop</span>
+                        </button>
+                        <button onclick="openDocCheckoutModal('${doc.id}', this.dataset.title)" data-title="${fullDocTitle.replace(/'/g, '&#39;').replace(/"/g, '&quot;')}" class="px-3 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
+                            <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg> Mua Ngay</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
 }
 
+function loadMoreDocumentsBatch() {
+    const container = document.getElementById("docGridContainer");
+    if (!container || currentDocRenderLimit >= currentFilteredDocsCache.length) return;
 
+    const oldFooter = document.getElementById("docLoadMoreFooter");
+    if (oldFooter) oldFooter.remove();
+
+    const selectedUni = state.selectedUniversity ? UNIVERSITIES.find(u => u.id === state.selectedUniversity) : null;
+    const nextEnd = Math.min(currentDocRenderLimit + DOC_RENDER_BATCH_SIZE, currentFilteredDocsCache.length);
+    const slice = currentFilteredDocsCache.slice(currentDocRenderLimit, nextEnd);
+    const fragmentHtml = slice.map((doc, i) => buildSingleDocumentCardHtml(doc, currentDocRenderLimit + i, selectedUni)).join('');
+    currentDocRenderLimit = nextEnd;
+
+    container.insertAdjacentHTML("beforeend", fragmentHtml);
+    appendDocLoadMoreSentinelIfNeeded(container);
+}
+
+function appendDocLoadMoreSentinelIfNeeded(container) {
+    if (docScrollObserver) {
+        docScrollObserver.disconnect();
+        docScrollObserver = null;
+    }
+    const remaining = currentFilteredDocsCache.length - currentDocRenderLimit;
+    if (remaining <= 0) return;
+
+    const footerHtml = `
+        <div id="docLoadMoreFooter" class="col-span-full py-6 flex flex-col items-center justify-center">
+            <button type="button" onclick="loadMoreDocumentsBatch()" class="px-6 py-3 bg-white dark:bg-[#0A143D] hover:bg-[#0D1677] hover:text-white text-[#0D1677] dark:text-amber-300 font-extrabold text-xs sm:text-sm rounded-2xl border-2 border-[#0D1677]/20 shadow-sm transition-all">
+                Xem thêm đề cương (Còn ${remaining} tài liệu trong kho) ↓
+            </button>
+        </div>
+    `;
+    container.insertAdjacentHTML("beforeend", footerHtml);
+
+    const footerEl = document.getElementById("docLoadMoreFooter");
+    if (footerEl && typeof IntersectionObserver !== "undefined") {
+        docScrollObserver = new IntersectionObserver((entries) => {
+            if (entries.some(e => e.isIntersecting)) {
+                loadMoreDocumentsBatch();
+            }
+        }, { rootMargin: "320px" });
+        docScrollObserver.observe(footerEl);
+    }
+}
+
+function renderDocuments(preserveScrollLimit = false) {
+    const container = document.getElementById("docGridContainer");
+    const countLabel = document.getElementById("docCountBadge");
+    if (!container) return;
+
+    const docs = filterDocuments();
+    currentFilteredDocsCache = docs;
+    if (!preserveScrollLimit) {
+        currentDocRenderLimit = DOC_RENDER_BATCH_SIZE;
+    }
+
+    if (countLabel) {
+        if (!state.searchQuery && (!state.activeCategory || state.activeCategory === 'all') && !state.selectedUniversity) {
+            countLabel.textContent = `${Math.max(600, docs.length)}+ Đề Cương`;
+        } else {
+            countLabel.textContent = `${docs.length} Đề Cương`;
+        }
+    }
+
+    if (docs.length === 0) {
+        const fallbackBadge = UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code || "ĐẠI CƯƠNG TOÀN QUỐC";
+        container.innerHTML = `
+            <div class="col-span-full py-16 text-center bg-white dark:bg-[#0A143D] rounded-3xl border border-dashed border-slate-300 dark:border-white/10 p-8 shadow-sm">
+                <div class="w-16 h-16 mx-auto bg-blue-50 text-[#0D1677] rounded-full flex items-center justify-center text-3xl mb-4"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chưa tìm thấy đề cương "${state.searchQuery || 'này'}"</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
+                    Đừng lo! Điệp Viên Tài Liệu có kho tài liệu riêng đầy đủ mọi môn theo trường ${fallbackBadge}. Bạn hãy nhắn Zalo để nhân viên gửi link Google Drive cho bạn ngay nhé!
+                </p>
+                <button onclick="openChatModal()" class="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold rounded-xl shadow-lg transition">
+                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Nhắn Zalo Đặt Lấy Đề Cương Ngay</span>
+                </button>
+            </div>
+        `;
+        return;
+    }
+
+    const selectedUni = state.selectedUniversity ? UNIVERSITIES.find(u => u.id === state.selectedUniversity) : null;
+    const initialSlice = docs.slice(0, currentDocRenderLimit);
+    container.innerHTML = initialSlice.map((doc, index) => buildSingleDocumentCardHtml(doc, index, selectedUni)).join('');
+    appendDocLoadMoreSentinelIfNeeded(container);
+}
 
 function setDocCategory(cat) {
 
@@ -1759,27 +1633,71 @@ function openDocCheckoutModal(docId, customTitle = null) {
 
 let currentActiveAccount = null;
 
+function getInstantCachedBankAccount() {
+    if (currentActiveAccount && currentActiveAccount.accountNumber) return currentActiveAccount;
+    try {
+        const raw = localStorage.getItem("dvtl_active_bank_cache_v7");
+        if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && parsed.accountNumber && parsed.bankCode) {
+                currentActiveAccount = parsed;
+                return parsed;
+            }
+        }
+    } catch (_) {}
+    currentActiveAccount = {
+        bankName: (typeof PAYMENT_INFO !== "undefined" && PAYMENT_INFO.bankName) ? PAYMENT_INFO.bankName : "ACB",
+        bankCode: (typeof PAYMENT_INFO !== "undefined" && PAYMENT_INFO.bankCode) ? PAYMENT_INFO.bankCode : "ACB",
+        accountNumber: (typeof PAYMENT_INFO !== "undefined" && PAYMENT_INFO.accountNumber) ? PAYMENT_INFO.accountNumber : "27384751",
+        accountName: (typeof PAYMENT_INFO !== "undefined" && PAYMENT_INFO.accountName) ? PAYMENT_INFO.accountName : "NGO BAO THACH",
+        cachedAt: 0
+    };
+    return currentActiveAccount;
+}
+
+function applyBankInfoToDocQrDom(acc, amount, encodedMemo) {
+    const bankEl = document.getElementById("checkoutBankName");
+    const stkEl = document.getElementById("checkoutSTK");
+    const ctkEl = document.getElementById("checkoutCTK");
+    const qrImg = document.getElementById("docQrImage");
+    if (bankEl) bankEl.textContent = acc.bankName;
+    if (stkEl) stkEl.textContent = acc.accountNumber;
+    if (ctkEl) ctkEl.textContent = acc.accountName;
+    if (qrImg) {
+        const targetSrc = `https://img.vietqr.io/image/${acc.bankCode}-${acc.accountNumber}-compact2.png?amount=${amount}&addInfo=${encodedMemo}&accountName=${encodeURIComponent(acc.accountName)}`;
+        if (qrImg.src !== targetSrc) qrImg.src = targetSrc;
+    }
+}
+
 async function layTaiKhoanVaHienQR(amount, orderMemo) {
     const encodedMemo = encodeURIComponent(orderMemo || "");
+    // Hiển thị mã QR NGAY LẬP TỨC trong 0ms từ bộ nhớ đệm!
+    const instantAcc = getInstantCachedBankAccount();
+    applyBankInfoToDocQrDom(instantAcc, amount, encodedMemo);
+
+    // Chỉ kiểm tra cập nhật STK ngầm nếu cache đã quá 20 phút
+    if (instantAcc.cachedAt && (Date.now() - instantAcc.cachedAt < 20 * 60 * 1000)) {
+        return;
+    }
     try {
         const res = await fetch(state.webhookUrl + "?action=getActiveAccount", { method: "GET", mode: "cors" });
         const acc = await res.json();
-        if (acc && !acc.error) {
-            currentActiveAccount = acc;
-            const bankEl = document.getElementById("checkoutBankName");
-            const stkEl = document.getElementById("checkoutSTK");
-            const ctkEl = document.getElementById("checkoutCTK");
-            const qrImg = document.getElementById("docQrImage");
-            if (bankEl) bankEl.textContent = acc.bankName;
-            if (stkEl) stkEl.textContent = acc.accountNumber;
-            if (ctkEl) ctkEl.textContent = acc.accountName;
-            if (qrImg) qrImg.src = `https://img.vietqr.io/image/${acc.bankCode}-${acc.accountNumber}-compact2.png?amount=${amount}&addInfo=${encodedMemo}&accountName=${encodeURIComponent(acc.accountName)}`;
+        if (acc && acc.accountNumber && !acc.error) {
+            const freshAcc = {
+                bankName: acc.bankName || "ACB",
+                bankCode: acc.bankCode || "ACB",
+                accountNumber: acc.accountNumber || "27384751",
+                accountName: acc.accountName || "NGO BAO THACH",
+                cachedAt: Date.now()
+            };
+            const stkChanged = (freshAcc.accountNumber !== instantAcc.accountNumber || freshAcc.bankCode !== instantAcc.bankCode);
+            currentActiveAccount = freshAcc;
+            try { localStorage.setItem("dvtl_active_bank_cache_v7", JSON.stringify(freshAcc)); } catch (_) {}
+            if (stkChanged) {
+                applyBankInfoToDocQrDom(freshAcc, amount, encodedMemo);
+            }
         }
-    } catch(e) {
-        const qrImg = document.getElementById("docQrImage");
-        if (qrImg) qrImg.src = `${PAYMENT_INFO.qrBaseUrl}?amount=${amount}&addInfo=${encodedMemo}&accountName=${encodeURIComponent(PAYMENT_INFO.accountName)}`;
-        currentActiveAccount = { bankName: PAYMENT_INFO.bankName, bankCode: PAYMENT_INFO.bankCode, accountNumber: PAYMENT_INFO.accountNumber, accountName: PAYMENT_INFO.accountName };
-    }
+    } catch (e) {}
 }
 
 function closeDocCheckoutModal() {
@@ -1922,7 +1840,7 @@ async function confirmDocManualPayment() {
     }
     if (!state.webhookUrl || !orderCode) return;
     try {
-        const verifyUrl = buildDocVerifyUrl(orderCode, email);
+        const verifyUrl = buildDocVerifyUrl(orderCode, email) + '&manual=1';
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
@@ -4101,11 +4019,11 @@ async function checkCoursePaymentStatus(orderCode, courseTitle, email, isManual 
     if (!isManual && isCourseVerifyInFlight) return;
     isCourseVerifyInFlight = true;
     try {
-        const verifyUrl = buildCourseVerifyUrl(orderCode, email);
+        const verifyUrl = buildCourseVerifyUrl(orderCode, email) + '&manual=1';
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
-            onCoursePaymentConfirmed(orderCode, courseTitle, email || data.email || "");
+            onCoursePaymentConfirmed(orderCode, courseTitle, email || data.email || "", data.driveUrl || "");
         }
     } catch (e) {
     } finally {
@@ -4113,42 +4031,36 @@ async function checkCoursePaymentStatus(orderCode, courseTitle, email, isManual 
     }
 }
 
-function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
+function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl = "") {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
 
     const course = selectedCourseForCheckout || COURSES_DATABASE[0];
     const cust = getSyncedCustomerLocal() || {};
     const name = document.getElementById("courseStudentName")?.value.trim() || cust.name || "Học Viên Điệp Viên";
     const rawPhone = (document.getElementById("courseStudentPhone")?.value.trim() || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const resolvedDriveUrl = serverDriveUrl || (course && course.driveUrl) || "https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52";
 
+    // Gửi 1 yêu cầu đồng bộ duy nhất tới Kho Phát File (cấp quyền song song cả folder chính + extraFolderIds, chống trùng mail 100%)
     const warehouseWebhook = "https://script.google.com/macros/s/AKfycbyaKudQDpHOtFWrNV5dr39hoFCqFXl2MVJRKhWY93i1nV95WAvw4HdXxIW-UA-7XjEjvA/exec";
     if (course && email) {
-        const fIds = [course.driveFolderId, ...(course.extraFolderIds || [])].filter(Boolean);
-        fIds.forEach((fid) => {
-            fetch(warehouseWebhook, {
-                method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "text/plain;charset=utf-8" },
-                body: JSON.stringify({
-                    email: email,
-                    name: name,
-                    orderCode: orderCode,
-                    itemName: course.title + " (Tặng kèm App Điệp Viên Study — 1 Máy)",
-                    orderType: "Khóa Học Bản Quyền (Tặng App 1 Máy)",
-                    fileId: fid,
-                    fileLink: course.driveUrl
-                })
-            }).catch(() => {});
-        });
+        fetch(warehouseWebhook, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                secret: "DVTL_SECRET_2026_TCCM_TO_DIEPVIEN",
+                email: email,
+                name: name,
+                orderCode: orderCode,
+                itemName: course.title + " (Tặng kèm App Điệp Viên Study — 1 Máy)",
+                orderType: "Khóa Học Bản Quyền (Tặng App 1 Máy)",
+                isCourse: true,
+                fileId: course.driveFolderId || "",
+                extraFolderIds: course.extraFolderIds || [],
+                fileLink: resolvedDriveUrl
+            })
+        }).catch(() => {});
     }
-
-    // Gửi thêm 1 email mời khách dùng miễn phí các tính năng AI trên App Điệp Viên Study
-    sendAppInviteEmailAfterPurchase({
-        email: email,
-        name: name,
-        orderCode: orderCode,
-        itemName: course ? course.title : courseTitle
-    });
 
     const prev = getSyncedCustomerLocal() || {};
     const unlockedList = expandWebUnlockedCourses([...(prev.unlockedCourses || []), course ? course.id : ""]);
@@ -4162,7 +4074,7 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
     };
     localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
     saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_COURSE_PAID" });
-    renderCourses();
+    if (state.currentView === "courses") renderCourses();
 
     const topHdr = document.getElementById("courseCheckoutTopHeader");
     if (topHdr) topHdr.classList.add("hidden");
@@ -4175,8 +4087,8 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email) {
     const appEmailEl = document.getElementById("courseSuccessAppEmail");
     if (appEmailEl) appEmailEl.textContent = email;
     const driveLinkEl = document.getElementById("courseSuccessDriveLink");
-    if (driveLinkEl && course && course.driveUrl) {
-        driveLinkEl.href = course.driveUrl;
+    if (driveLinkEl) {
+        driveLinkEl.href = resolvedDriveUrl;
     }
 }
 
@@ -4216,161 +4128,118 @@ function mapDisciplineToCategoryAndIcon(rawName) {
 
 
 
-async function syncLiveProductsFromMasterSheet() {
-
-    if (!state.webhookUrl) return;
-
-    try {
-
-        const res = await fetch(state.webhookUrl + "?action=getProducts", { method: "GET", mode: "cors" });
-
-        const liveProducts = await res.json();
-
-        if (!Array.isArray(liveProducts)) return;
-
-        let changed = 0;
-
-
-
-        liveProducts.forEach((item, idx) => {
-
-            const sku = String(item.sku || "").trim();
-
-            const rawName = String(item.name || "").trim();
-
-            if (!sku || !rawName) return;
-
-            const skuUpper = sku.toUpperCase();
-
-            // Bỏ qua các dòng Khóa học hoặc file hệ thống
-
-            if (skuUpper.startsWith("COURSE-") || skuUpper === "ALL-COURSES-399K" || /^DC_\d{4}$/.test(skuUpper)) return;
-
-            if (/\.(txt|json)$/i.test(rawName) || rawName.includes("Danh Sách Đề Cương Kiểm Tra")) return;
-
-
-
-            const driveId = String(item.driveId || "").trim();
-
-            const driveType = item.driveType === "folder" ? "folder" : "file";
-
-            const normItem = removeVietnameseTones(rawName).replace(/\b(bo|de|cuong|mon|hoc|phan|on|tap|docx|pdf)\b/g, "").replace(/\s+/g, " ").trim();
-
-
-
-            const existing = (typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).find(d => {
-
-                if (driveId && d.driveId && String(d.driveId).trim() === driveId) return true;
-
-                if (String(d.code || "").trim().toUpperCase() === skuUpper) return true;
-
-                const normD = removeVietnameseTones(d.baseName || d.rawName || "").replace(/\b(bo|de|cuong|mon|hoc|phan|on|tap|docx|pdf)\b/g, "").replace(/\s+/g, " ").trim();
-
-                return normItem.length >= 4 && normD === normItem;
-
-            });
-
-
-
-            if (existing) {
-
-                if (item.price) existing.price = Number(item.price) || existing.price;
-
-                if (driveId && existing.driveId !== driveId) {
-
-                    existing.driveId = driveId;
-
-                    changed++;
-
-                }
-
-                existing.driveType = driveType;
-
-                existing.isReal = true;
-
-            } else if (typeof REAL_DOCUMENTS_DATABASE !== "undefined") {
-
-                let cleanBase = rawName.replace(/\.(docx?|pdf|xlsx?|pptx?|txt)$/i, "").trim();
-
-                if (!/^(bộ\s+)?đề\s+cương/i.test(cleanBase)) {
-
-                    cleanBase = "Đề Cương " + cleanBase;
-
-                }
-
-                const catInfo = mapDisciplineToCategoryAndIcon(cleanBase);
-
-                const newDoc = {
-
-                    id: "doc_live_" + sku.toLowerCase().replace(/[^a-z0-9]/g, "_"),
-
-                    code: sku,
-
-                    rawName: rawName,
-
-                    baseName: cleanBase,
-
-                    category: catInfo.category,
-
-                    icon: catInfo.icon,
-
-                    gradient: "from-blue-900 via-indigo-950 to-[#0A143D]",
-
-                    accentColor: "text-amber-300",
-
-                    pages: 42,
-
-                    price: Number(item.price) || 50000,
-
-                    originalPrice: 120000,
-
-                    rating: 5.0,
-
-                    reviewsCount: 128,
-
-                    downloads: "1.8k+",
-
-                    badge: "Mới Cập Nhật",
-
-                    tags: ["Trọng Tâm Ôn Thi", "Bài Tập & Lời Giải", "Chuẩn Bản Quyền"],
-
-                    description: "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-
-                    isReal: true,
-
-                    driveId: driveId,
-
-                    driveType: driveType,
-
-                    university: "neu"
-
-                };
-
-                REAL_DOCUMENTS_DATABASE.unshift(newDoc);
-
-                if (typeof DOCUMENTS_DATABASE !== "undefined") {
-
-                    DOCUMENTS_DATABASE.unshift(newDoc);
-
-                }
-
-                changed++;
-
-            }
-
+function mergeLiveProductsArrayIntoCatalog(liveProducts) {
+    if (!Array.isArray(liveProducts)) return 0;
+    let changed = 0;
+
+    liveProducts.forEach((item) => {
+        const sku = String(item.sku || "").trim();
+        const rawName = String(item.name || "").trim();
+        if (!sku || !rawName) return;
+        const skuUpper = sku.toUpperCase();
+        if (skuUpper.startsWith("COURSE-") || skuUpper.startsWith("SUBJ-") || skuUpper === "ALL-COURSES-399K" || /^DC_\d{4}$/.test(skuUpper)) return;
+        if (/\.(txt|json)$/i.test(rawName) || rawName.includes("Danh Sách Đề Cương Kiểm Tra")) return;
+
+        const driveId = String(item.driveId || "").trim();
+        const driveType = item.driveType === "folder" ? "folder" : "file";
+        const normItem = removeVietnameseTones(rawName).replace(/\b(bo|de|cuong|mon|hoc|phan|on|tap|docx|pdf)\b/g, "").replace(/\s+/g, " ").trim();
+
+        const existing = (typeof REAL_DOCUMENTS_DATABASE !== "undefined" ? REAL_DOCUMENTS_DATABASE : []).find(d => {
+            if (driveId && d.driveId && String(d.driveId).trim() === driveId) return true;
+            if (String(d.code || "").trim().toUpperCase() === skuUpper) return true;
+            const normD = removeVietnameseTones(d.baseName || d.rawName || "").replace(/\b(bo|de|cuong|mon|hoc|phan|on|tap|docx|pdf)\b/g, "").replace(/\s+/g, " ").trim();
+            return normItem.length >= 4 && normD === normItem;
         });
 
+        if (existing) {
+            if (item.price && Number(item.price) !== existing.price) {
+                existing.price = Number(item.price) || existing.price;
+                changed++;
+            }
+            if (driveId && existing.driveId !== driveId) {
+                existing.driveId = driveId;
+                changed++;
+            }
+            existing.driveType = driveType;
+            existing.isReal = true;
+        } else if (typeof REAL_DOCUMENTS_DATABASE !== "undefined") {
+            let cleanBase = rawName.replace(/\.(docx?|pdf|xlsx?|pptx?|txt)$/i, "").trim();
+            if (!/^(bộ\s+)?đề\s+cương/i.test(cleanBase)) {
+                cleanBase = "Đề Cương " + cleanBase;
+            }
+            const catInfo = mapDisciplineToCategoryAndIcon(cleanBase);
+            const newDoc = {
+                id: "doc_live_" + sku.toLowerCase().replace(/[^a-z0-9]/g, "_"),
+                code: sku,
+                rawName: rawName,
+                baseName: cleanBase,
+                category: catInfo.category,
+                icon: catInfo.icon,
+                gradient: "from-blue-900 via-indigo-950 to-[#0A143D]",
+                accentColor: "text-amber-300",
+                pages: 42,
+                price: Number(item.price) || 50000,
+                originalPrice: 120000,
+                rating: 5.0,
+                reviewsCount: 128,
+                downloads: "1.8k+",
+                badge: "Mới Cập Nhật",
+                tags: ["Trọng Tâm Ôn Thi", "Bài Tập & Lời Giải", "Chuẩn Bản Quyền"],
+                description: "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
+                isReal: true,
+                driveId: driveId,
+                driveType: driveType,
+                university: "neu"
+            };
+            REAL_DOCUMENTS_DATABASE.unshift(newDoc);
+            if (typeof DOCUMENTS_DATABASE !== "undefined") {
+                DOCUMENTS_DATABASE.unshift(newDoc);
+            }
+            changed++;
+        }
+    });
 
-
-        renderDocuments();
-
-    } catch (e) {}
-
+    return changed;
 }
 
+function hydrateCachedLiveProductsSync() {
+    try {
+        const raw = localStorage.getItem("dvtl_live_products_cache_v7");
+        if (!raw) return;
+        const parsed = JSON.parse(raw);
+        if (parsed && Array.isArray(parsed.items)) {
+            mergeLiveProductsArrayIntoCatalog(parsed.items);
+        }
+    } catch (_) {}
+}
 
+async function syncLiveProductsFromMasterSheet() {
+    if (!state.webhookUrl) return;
+    try {
+        const rawCache = localStorage.getItem("dvtl_live_products_cache_v7");
+        if (rawCache) {
+            const parsedCache = JSON.parse(rawCache);
+            // Nếu vừa đồng bộ trong 5 phút gần nhất thì không cần gọi lại API
+            if (parsedCache && parsedCache.ts && (Date.now() - parsedCache.ts < 5 * 60 * 1000)) {
+                return;
+            }
+        }
+    } catch (_) {}
 
+    try {
+        const res = await fetch(state.webhookUrl + "?action=getProducts", { method: "GET", mode: "cors" });
+        const liveProducts = await res.json();
+        if (!Array.isArray(liveProducts)) return;
+        try {
+            localStorage.setItem("dvtl_live_products_cache_v7", JSON.stringify({ ts: Date.now(), items: liveProducts }));
+        } catch (_) {}
 
+        const changed = mergeLiveProductsArrayIntoCatalog(liveProducts);
+        if (changed > 0 && state.currentView === "docs") {
+            renderDocuments(true);
+        }
+    } catch (e) {}
+}
 
 /* ==========================================================================
 
@@ -4682,11 +4551,11 @@ async function verifyCourseBankPaymentNow() {
     if (statusText) statusText.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa cho mã #" + orderCode + "...";
     if (!state.webhookUrl || !orderCode) return;
     try {
-        const verifyUrl = buildCourseVerifyUrl(orderCode, email);
+        const verifyUrl = buildCourseVerifyUrl(orderCode, email) + '&manual=1';
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
-            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email || data.email || "");
+            onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email || data.email || "", data.driveUrl || "");
         } else if (statusText) {
             statusText.textContent = "⚠️ Chưa nhận được Email biến động số dư ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động mở khóa ngay khi tiền về!";
         }
@@ -4809,13 +4678,7 @@ function onDocPaymentConfirmed(orderCode, email, driveUrl = "") {
         }).catch(() => {});
     }
 
-    // Gửi thêm 1 email mời khách dùng miễn phí các tính năng AI trên App Điệp Viên Study
-    sendAppInviteEmailAfterPurchase({
-        email: email,
-        name: custName,
-        orderCode: orderCode,
-        itemName: doc.name || doc.baseName || "Đề Cương Ôn Thi 50K"
-    });
+    // Kho Phát File đã tự động gửi Email bàn giao + Email mời dùng App trong 1 luồng duy nhất (chống trùng mail)
 
     const prev = getSyncedCustomerLocal() || {};
     const prevDocs = Array.isArray(prev.purchasedDocs) ? prev.purchasedDocs : [];
@@ -4929,7 +4792,7 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
         stEl.textContent = "⏳ Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
     }
     try {
-        const verifyUrl = `${state.webhookUrl}?action=verify&orderType=btl&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}`;
+        const verifyUrl = `${state.webhookUrl}?action=verify&orderType=btl&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}${isManual ? "&manual=1" : ""}`;
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {

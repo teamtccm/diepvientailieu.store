@@ -1,26 +1,27 @@
 {
-  "version": "4.0.1794636401",
-  "releasedAt": "2026-11-14T06:06:41Z",
-  "notes": "OTA Auto-Update v4.0: Bổ sung trọn bộ ảnh bìa sắc nét chuẩn thầy cô Toán, Văn, Anh, Hóa, Sinh, Sử, Địa, ĐGNL HSA, ĐGTD TSA, Tiếng Trung, Tin học MOS & Đại học",
+  "version": "4.1.1794987200",
+  "releasedAt": "2026-11-18T07:30:00Z",
+  "notes": "OTA v4.1 Turbo: Tăng tốc toàn diện Web & App (<1.4s API, 0ms VietQR, RAM Gzip <1ms), giao file Google Drive song song siêu tốc, lưu khách hàng 3 bảng ngầm & báo Telegram 4 tầng chuẩn HTML",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "1792535de27fe159d9c76bbffada2c4eaae6f625f21ee148e1289e73422854ed",
-      "size": 2589254,
+      "sha256": "e3ef895365fee33a9fc2d44b25578f4ffb64c3265e2ef62adaff62a24e8b66aa",
+      "size": 2652409,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
       "path": "web_dist/assets/index-si95EOa3.css",
-      "sha256": "867bbc200c763281e8e6a9ce7bde374482e1a2310f7cd159e05cec119adc58eb",
-      "size": 317839,
+      "sha256": "07707a67519879aadb0c19e462def949d927da651d6c37bbb67901ec7d6a92af",
+      "size": 348550,
       "url": "https://diepvientailieu.store/index-si95EOa3.css"
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "d65611713447d5bf98c04634c0495387d29e7ec18c410308c998d98eb54032d7",
-      "size": 434203,
-      "url": "https://diepvientailieu.store/DiepVienStudy.pyw"
+      "otaFile": "DiepVienStudy_runtime.css",
+      "sha256": "156ae4bf3f9db227e478d20e1bebc6847c5733598c3a85d2875b5f2942ad46aa",
+      "size": 437206,
+      "url": "https://diepvientailieu.store/DiepVienStudy_runtime.css"
     }
   ]
 }

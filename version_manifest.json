@@ -1,7 +1,7 @@
 {
-  "version": "4.0.1794636401",
-  "releasedAt": "2026-11-14T06:06:41Z",
-  "notes": "OTA Auto-Update v4.0: Bổ sung trọn bộ ảnh bìa sắc nét chuẩn thầy cô Toán, Văn, Anh, Hóa, Sinh, Sử, Địa, ĐGNL HSA, ĐGTD TSA, Tiếng Trung, Tin học MOS & Đại học",
+  "version": "3.8.1794985238",
+  "releasedAt": "2026-11-18T07:00:38Z",
+  "notes": "OTA v3.8 Turbo: Tăng tốc toàn diện Web & App (<0.3s), mở VietQR 0ms, giao file Google Drive song song siêu tốc, lưu khách hàng 3 bảng ngầm & báo Telegram 4 tầng (Đơn mới + BTL + Biến động ACB + Giao thành công)",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "d65611713447d5bf98c04634c0495387d29e7ec18c410308c998d98eb54032d7",
-      "size": 434203,
+      "sha256": "156ae4bf3f9db227e478d20e1bebc6847c5733598c3a85d2875b5f2942ad46aa",
+      "size": 437206,
       "url": "https://diepvientailieu.store/DiepVienStudy.pyw"
     }
   ]

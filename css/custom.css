@@ -15,7 +15,7 @@
   align-items: center;
   width: max-content;
   will-change: transform;
-  animation: dvtlMarqueeScroll 46s linear infinite;
+  animation: dvtlMarqueeScroll 110s linear infinite;
 }
 .marquee-wrapper:hover .marquee-content {
   animation-play-state: paused;

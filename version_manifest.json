@@ -1,13 +1,20 @@
 {
-  "version": "2026.11.23.3",
-  "releasedAt": "2026-11-23T17:00:00Z",
-  "notes": "v10.3: Khôi phục tab Khóa học trên App, 37 khóa Banner thật, tách 4 Combo Ban + 3 Khóa ĐGNL/ĐGTD 199K, Website chuẩn giao diện App, bỏ khóa cứng API key",
+  "version": "2026.11.24.4",
+  "releasedAt": "2026-11-23T17:25:00Z",
+  "notes": "v10.4: Đăng nhập 1 chạm bằng Tài khoản Google (Web + App), khôi phục tab Khóa học & xóa cache WebView2",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
+      "path": "web_dist/index.html",
+      "otaFile": "index_app.html",
+      "sha256": "d65c2f057a20386c55f48a8a18d47f3ea69bb8a719b72eb8461454f3c88ab403",
+      "size": 949,
+      "url": "https://diepvientailieu.store/app_ota/index_app.html"
+    },
+    {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "ccda454b9f2d52e75107b85db9c837bb5501e15541bc757770ecdcca6a920482",
-      "size": 2203328,
+      "sha256": "f438594e4c7eae84cb5cbe6ddcbca005a0761b9bbca72c8b25b3d7f51e5ac43d",
+      "size": 2207681,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
@@ -19,8 +26,8 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "DiepVienStudy_runtime.txt",
-      "sha256": "45c3fc3a9ec4c68191223d169ac42aac3912a1e7a897d6596adc66aaee22253a",
-      "size": 384939,
+      "sha256": "48f841a0912ecbe66304465bf6f365ad0781fe654c0c231150514ef08128055f",
+      "size": 392256,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ]

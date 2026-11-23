@@ -36,7 +36,7 @@
         }
     </script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css?v=10.3">
+    <link rel="stylesheet" href="css/custom.css?v=10.4">
     <!-- Critical Inline Fallback CSS (chống cache cũ: luôn chạy vòng marquee + luôn bật toast nổi ngoài khung hình) -->
     <style>
       .marquee-wrapper { overflow: hidden !important; position: relative !important; width: 100% !important; mask-image: linear-gradient(to right, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%); }
@@ -48,6 +48,7 @@
     </style>
     <!-- Favicon (Rounded Mascot Badge) -->
     <link rel="icon" type="image/png" href="images/favicon_badge.png">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-[#03081E] dark:text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-[#FFA000] selection:text-slate-950 transition-colors duration-300">
     <!-- ==========================================
@@ -511,7 +512,7 @@
         <div id="viewHome">
             <!-- HERO BANNER -->
             <section class="py-12 bg-slate-100/70 dark:bg-[#03081E] border-b border-slate-200 dark:border-white/10 transition-colors">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-[1440px] mx-auto px-3 sm:px-5 lg:px-6">
                     <div class="relative bg-gradient-to-r from-[#040A26] via-[#081347] to-[#0D1C68] rounded-3xl p-6 sm:p-12 shadow-2xl border border-blue-900/40 overflow-hidden">
                         <!-- Top Bar: Clean Mascot Icon in Pill -->
                         <div class="flex items-center justify-between mb-8">
@@ -2070,8 +2071,8 @@ function doPost(e) {
         </div>
     </footer>
     <!-- Scripts with cache busting query string -->
-    <script src="js/data.js?v=10.3"></script>
-    <script src="js/app.js?v=10.3"></script>
+    <script src="js/data.js?v=10.4"></script>
+    <script src="js/app.js?v=10.4"></script>
     <script>
         function openTrackingModal() {
             document.getElementById('trackingModal').classList.remove('hidden');
@@ -2119,10 +2120,32 @@ function doPost(e) {
                     <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1 font-condensed uppercase tracking-wide">Đăng Nhập / Đăng Ký Tài Khoản</h3>
                 </div>
             </div>
-            <p class="text-xs text-slate-500 dark:text-slate-300 mb-4 leading-relaxed">
-                Tài khoản đăng nhập dùng chung Web &amp; App: <strong>Email</strong> là tên đăng nhập, <strong>Số điện thoại</strong> là mật khẩu mặc định. Hệ thống tự động ghi nhớ Email &amp; SĐT cho các lần mua sau!
-            </p>
-            <div class="space-y-3 text-xs">
+            <div id="dvtlGoogleSignInSection" class="mb-4 p-4 rounded-2xl bg-gradient-to-br from-blue-50/90 to-indigo-50/70 dark:from-white/5 dark:to-blue-950/40 border border-blue-200/80 dark:border-white/10">
+                <div class="flex items-center gap-2 text-xs font-extrabold text-[#0D1677] dark:text-sky-300 mb-2">
+                    <span>🔐 ĐĂNG NHẬP 1 CHẠM BẰNG TÀI KHOẢN GOOGLE</span>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-black">KHUYÊN DÙNG</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 dark:text-slate-300 mb-3 leading-relaxed">
+                    Xác thực trực tiếp bằng chính Gmail của bạn — <strong>không cần nhớ mật khẩu</strong>, tự động mở khóa Google Drive, Đề Cương &amp; đồng bộ App Điệp Viên Study.
+                </p>
+                <div id="dvtlGoogleBtnWrap" class="flex justify-center min-h-[44px]"></div>
+                <div id="dvtlGoogleSignedBadge" class="hidden mt-2 p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 flex items-center gap-3">
+                    <img id="dvtlGoogleAvatar" src="" alt="" class="w-9 h-9 rounded-full border border-emerald-300 object-cover hidden">
+                    <div class="min-w-0 flex-1">
+                        <div id="dvtlGoogleName" class="text-xs font-black text-emerald-900 dark:text-emerald-200 truncate"></div>
+                        <div id="dvtlGoogleEmail" class="text-[11px] text-emerald-700 dark:text-emerald-300 truncate"></div>
+                    </div>
+                    <span class="px-2 py-0.5 bg-emerald-600 text-white text-[10px] font-black rounded-lg shrink-0">✓ GOOGLE</span>
+                </div>
+                <div id="dvtlGoogleStatusMsg" class="hidden mt-2 text-[11px] font-bold text-center"></div>
+            </div>
+            <details class="group mb-3">
+                <summary class="cursor-pointer select-none text-[11.5px] font-bold text-slate-500 dark:text-slate-400 hover:text-[#0D1677] dark:hover:text-sky-300 flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-slate-50 dark:hover:bg-white/5">
+                    <span>Hoặc cập nhật SĐT Zalo / đồng bộ thủ công</span>
+                    <span class="text-[10px]">▼</span>
+                </summary>
+                <div class="mt-2 pt-2 border-t border-slate-200/70 dark:border-white/10">
+<div class="space-y-3 text-xs">
                 <div>
                     <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Tên đăng nhập / Họ và tên <span class="text-red-500">*</span></label>
                     <input id="syncCustNameInput" type="text" placeholder="Nhập tên đăng nhập của bạn (VD: nguyenvana)" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
@@ -2151,7 +2174,8 @@ function doPost(e) {
                     </button>
                 </div>
                 <div id="syncCustomerStatusMsg" class="text-[11px] font-bold text-emerald-700 dark:text-emerald-300 text-center hidden"></div>
-                <div id="syncCustomerEntitlementsBox" class="hidden pt-4 border-t border-slate-200 dark:border-white/10 space-y-3">
+                </div></details>
+            <div id="syncCustomerEntitlementsBox" class="hidden pt-4 border-t border-slate-200 dark:border-white/10 space-y-3">
                     <div class="font-black text-slate-900 dark:text-white uppercase text-xs">Đề Cương & Tài Liệu Đã Xác Thực Thanh Toán:</div>
                     <div id="syncCustomerItemsList" class="space-y-2 max-h-48 overflow-y-auto"></div>
                 </div>
@@ -2336,5 +2360,19 @@ function doPost(e) {
             </div>
         </div>
     </div>
+
+    <div id="dvtlAppGoogleBridgeOverlay" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4 bg-[#071033]/95 backdrop-blur-md">
+        <div class="bg-white rounded-3xl max-w-md w-full p-7 shadow-2xl border border-slate-200 text-center">
+            <img src="images/favicon_badge.png" alt="Điệp Viên Study" class="w-16 h-16 mx-auto rounded-2xl border border-amber-400/60 shadow-md mb-4">
+            <span class="px-3 py-1 rounded-full bg-blue-50 text-[#0D1677] text-[10px] font-black uppercase border border-blue-200">XÁC THỰC BẢO MẬT GOOGLE</span>
+            <h2 class="text-xl font-black text-slate-900 mt-3 mb-2">Đăng nhập App Điệp Viên Study</h2>
+            <p class="text-xs text-slate-600 leading-relaxed mb-5">
+                Chọn đúng tài khoản <strong>Gmail đã mua khóa học / đề cương</strong> bên dưới. Hệ thống sẽ tự động xác thực và mở khóa ngay trong App trên máy tính của bạn!
+            </p>
+            <div id="dvtlAppBridgeGoogleBtn" class="flex justify-center min-h-[48px] mb-4"></div>
+            <div id="dvtlAppBridgeStatus" class="text-xs font-bold text-slate-500">Đang tải nút đăng nhập Google...</div>
+        </div>
+    </div>
+
 </body>
 </html>

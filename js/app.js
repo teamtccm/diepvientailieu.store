@@ -4983,3 +4983,171 @@ document.addEventListener("DOMContentLoaded", () => {
         updateVerifiedAppDownloadUI();
     }, 200);
 });
+
+
+
+// ============================================================================
+// === V10.4: ĐĂNG NHẬP 1 CHẠM BẰNG TÀI KHOẢN GOOGLE (WEB + BRIDGE CHO APP) ===
+// ============================================================================
+const DVTL_GOOGLE_CLIENT_ID = "963881331331-d22ei0lqfvvqfa4hqjafftcrfhaghs0l.apps.googleusercontent.com";
+let _dvtlGoogleGsiInited = false;
+let _dvtlAppBridgeCallbackUrl = "";
+
+function dvtlDecodeJwtPayload(jwt) {
+    try {
+        const part = String(jwt || "").split(".")[1] || "";
+        const b64 = part.replace(/-/g, "+").replace(/_/g, "/");
+        const jsonStr = decodeURIComponent(atob(b64).split("").map(c => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2)).join(""));
+        return JSON.parse(jsonStr);
+    } catch (_) { return null; }
+}
+
+function dvtlRenderGoogleSignedBadge(cust) {
+    const badge = document.getElementById("dvtlGoogleSignedBadge");
+    if (!badge) return;
+    if (cust && cust.email) {
+        badge.classList.remove("hidden");
+        const av = document.getElementById("dvtlGoogleAvatar");
+        const nm = document.getElementById("dvtlGoogleName");
+        const em = document.getElementById("dvtlGoogleEmail");
+        if (nm) nm.textContent = cust.name || cust.email.split("@")[0];
+        if (em) em.textContent = cust.email;
+        if (av && cust.picture) { av.src = cust.picture; av.classList.remove("hidden"); }
+    } else {
+        badge.classList.add("hidden");
+    }
+}
+
+async function handleDvtlGoogleCredential(response) {
+    const idToken = response && response.credential;
+    if (!idToken) return;
+
+    // 1) Nếu đang ở chế độ Bridge đăng nhập cho App Desktop -> chuyển thẳng id_token về 127.0.0.1!
+    if (_dvtlAppBridgeCallbackUrl && /^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(_dvtlAppBridgeCallbackUrl)) {
+        const st = document.getElementById("dvtlAppBridgeStatus");
+        if (st) st.textContent = "✓ Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
+        window.location.href = _dvtlAppBridgeCallbackUrl + "?id_token=" + encodeURIComponent(idToken);
+        return;
+    }
+
+    // 2) Đăng nhập trực tiếp trên Website -> Xác thực với GAS + Lưu session + Mở khóa!
+    const msgEl = document.getElementById("dvtlGoogleStatusMsg");
+    if (msgEl) {
+        msgEl.className = "mt-2 text-[11px] font-bold text-center text-blue-600";
+        msgEl.textContent = "Đang xác thực tài khoản Google với hệ thống...";
+        msgEl.classList.remove("hidden");
+    }
+
+    const decoded = dvtlDecodeJwtPayload(idToken) || {};
+    let verifiedCust = {
+        email: String(decoded.email || "").trim().toLowerCase(),
+        name: String(decoded.name || (decoded.email || "").split("@")[0]).trim(),
+        picture: String(decoded.picture || "").trim(),
+        phone: (getSyncedCustomerLocal() && getSyncedCustomerLocal().phone) || "",
+        verifiedByGoogle: true,
+        isAdmin: ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(String(decoded.email || "").trim().toLowerCase()),
+        unlockedCourses: [],
+        purchasedDocs: [],
+        btlOrders: []
+    };
+
+    try {
+        const apiUrl = (typeof GAS_WEBAPP_URL !== "undefined" ? GAS_WEBAPP_URL : (window.APPS_SCRIPT_URL || ""));
+        if (apiUrl) {
+            const r = await fetch(apiUrl + "?action=verifyGoogleLogin&idToken=" + encodeURIComponent(idToken));
+            const data = await r.json();
+            if (data && data.ok && data.customer) {
+                verifiedCust = Object.assign(verifiedCust, data.customer);
+            }
+        }
+    } catch (e) { console.warn("GAS verifyGoogleLogin fallback:", e); }
+
+    if (typeof saveCustomerProfileEverywhere === "function") {
+        saveCustomerProfileEverywhere(verifiedCust);
+    } else {
+        try { localStorage.setItem("dvtl_synced_customer", JSON.stringify(verifiedCust)); } catch (_) {}
+    }
+    if (typeof applySyncedCustomerToForms === "function") applySyncedCustomerToForms(verifiedCust);
+    if (typeof renderSyncedCustomerEntitlements === "function") renderSyncedCustomerEntitlements(verifiedCust);
+    dvtlRenderGoogleSignedBadge(verifiedCust);
+
+    const lbl = document.getElementById("headerAccountSyncLabel");
+    if (lbl && verifiedCust.email) lbl.textContent = verifiedCust.name || verifiedCust.email.split("@")[0];
+
+    if (msgEl) {
+        msgEl.className = "mt-2 text-[11px] font-bold text-center text-emerald-600";
+        msgEl.textContent = "✓ Đăng nhập Google thành công (" + verifiedCust.email + ")!";
+    }
+}
+
+function initDvtlGoogleSignIn(retryCount) {
+    const tries = retryCount || 0;
+    if (!(window.google && window.google.accounts && window.google.accounts.id)) {
+        if (tries < 25) setTimeout(() => initDvtlGoogleSignIn(tries + 1), 350);
+        return;
+    }
+    if (!_dvtlGoogleGsiInited) {
+        window.google.accounts.id.initialize({
+            client_id: DVTL_GOOGLE_CLIENT_ID,
+            callback: handleDvtlGoogleCredential,
+            auto_select: false,
+            ux_mode: "popup"
+        });
+        _dvtlGoogleGsiInited = true;
+    }
+    const webWrap = document.getElementById("dvtlGoogleBtnWrap");
+    if (webWrap && !webWrap.dataset.rendered) {
+        webWrap.innerHTML = "";
+        window.google.accounts.id.renderButton(webWrap, {
+            theme: "outline",
+            size: "large",
+            text: "continue_with",
+            shape: "pill",
+            logo_alignment: "left",
+            width: 310,
+            locale: "vi"
+        });
+        webWrap.dataset.rendered = "1";
+    }
+    // Check if opened from Desktop App for Google Sign-In bridge
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("app_google_auth") === "1") {
+        const cb = params.get("cb") || "";
+        if (/^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(cb)) {
+            _dvtlAppBridgeCallbackUrl = cb;
+            const ov = document.getElementById("dvtlAppGoogleBridgeOverlay");
+            if (ov) ov.classList.remove("hidden");
+            const bridgeWrap = document.getElementById("dvtlAppBridgeGoogleBtn");
+            if (bridgeWrap && !bridgeWrap.dataset.rendered) {
+                bridgeWrap.innerHTML = "";
+                window.google.accounts.id.renderButton(bridgeWrap, {
+                    theme: "filled_blue",
+                    size: "large",
+                    text: "continue_with",
+                    shape: "pill",
+                    width: 310,
+                    locale: "vi"
+                });
+                bridgeWrap.dataset.rendered = "1";
+            }
+            const st = document.getElementById("dvtlAppBridgeStatus");
+            if (st) st.textContent = "Bấm nút Google phía trên để xác thực 1 chạm cho App.";
+            try { window.google.accounts.id.prompt(); } catch (_) {}
+        }
+    }
+    const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+    if (cur) dvtlRenderGoogleSignedBadge(cur);
+}
+
+// Hook into openCustomerSyncModal so Google button is always rendered cleanly
+if (typeof openCustomerSyncModal === "function") {
+    const _origOpenSyncModal = openCustomerSyncModal;
+    window.openCustomerSyncModal = function() {
+        _origOpenSyncModal.apply(this, arguments);
+        initDvtlGoogleSignIn(0);
+        const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+        dvtlRenderGoogleSignedBadge(cur);
+    };
+    openCustomerSyncModal = window.openCustomerSyncModal;
+}
+document.addEventListener("DOMContentLoaded", () => initDvtlGoogleSignIn(0));

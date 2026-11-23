@@ -1,20 +1,20 @@
 {
-  "version": "2026.11.24.4",
-  "releasedAt": "2026-11-23T17:25:00Z",
-  "notes": "v10.4: Đăng nhập 1 chạm bằng Tài khoản Google (Web + App), khôi phục tab Khóa học & xóa cache WebView2",
+  "version": "2026.11.24.5",
+  "releasedAt": "2026-11-23T18:10:00Z",
+  "notes": "v10.5: Xóa nút Đổi ảnh trên Web/App, bấm Đăng nhập/Đăng ký mở thẳng Google & hiện Avatar + Tên Google ngay trên nút",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
       "path": "web_dist/index.html",
       "otaFile": "index_app.html",
-      "sha256": "d65c2f057a20386c55f48a8a18d47f3ea69bb8a719b72eb8461454f3c88ab403",
+      "sha256": "6412273b693159269e77f15da138370f2f5dfd4206a868537fd9aa0a2bfe33ff",
       "size": 949,
       "url": "https://diepvientailieu.store/app_ota/index_app.html"
     },
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "f438594e4c7eae84cb5cbe6ddcbca005a0761b9bbca72c8b25b3d7f51e5ac43d",
-      "size": 2207681,
+      "sha256": "022bb39a9731bea179a4261377b2a01af97acffa0b3189bd110ad1487c9ad72c",
+      "size": 2207373,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
@@ -26,8 +26,8 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "DiepVienStudy_runtime.txt",
-      "sha256": "48f841a0912ecbe66304465bf6f365ad0781fe654c0c231150514ef08128055f",
-      "size": 392256,
+      "sha256": "a7de2d4baefef289bb6f86cb249996f8bbd76ea8f8d0aed3d26666404fd71736",
+      "size": 394067,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ]

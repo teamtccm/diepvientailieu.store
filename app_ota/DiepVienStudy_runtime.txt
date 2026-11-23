@@ -5920,7 +5920,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.24.4", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.24.5", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":
@@ -6650,7 +6650,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.24.4", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.24.5", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -6667,7 +6667,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.24.4"
+                    local_ver = "2026.11.24.5"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     # CHỐNG HẠ CẤP OTA (Anti-Downgrade): Chỉ tải đè khi bản trên Cloud MỚI HƠN bản đang cài!
                     if remote_ver <= local_ver:
@@ -6860,7 +6860,30 @@ def make_http_handler(controller: BackendController, hub: EventHub):
             if route == "/api/auth/google/callback":
                 qs = urllib.parse.parse_qs(parsed.query)
                 id_tok = (qs.get("id_token") or [""])[0]
-                user, err = _dvs_verify_google_id_token(id_tok)
+                acc_tok = (qs.get("access_token") or [""])[0]
+                if id_tok:
+                    user, err = _dvs_verify_google_id_token(id_tok)
+                elif acc_tok:
+                    try:
+                        ur = requests.get("https://www.googleapis.com/oauth2/v3/userinfo", headers={"Authorization": f"Bearer {acc_tok}"}, timeout=10)
+                        ui = ur.json() if ur.status_code == 200 else {}
+                        em = str(ui.get("email") or "").strip().lower()
+                        if em:
+                            user = {"email": em, "name": str(ui.get("name") or em.split("@")[0]).strip(), "picture": str(ui.get("picture") or "").strip(), "verifiedByGoogle": True, "isAdmin": em in ("diepvientailieu@gmail.com", "admin@diepvientailieu.store"), "unlockedCourses": [], "phone": ""}
+                            try:
+                                gr = requests.get("https://script.google.com/macros/s/AKfycbxMOdsNkhY8-5xQtZ_86STf781VdFJbRsLkK6n8qRF4ENqreMsl4CdELYn-85wHcqvx/exec", params={"action": "verifyGoogleLogin", "accessToken": acc_tok, "deviceName": "DiepVienStudy Desktop"}, timeout=12)
+                                if gr.status_code == 200 and gr.json().get("ok") and isinstance(gr.json().get("customer"), dict):
+                                    user.update(gr.json()["customer"])
+                            except Exception:
+                                pass
+                            _dvs_save_google_user(user)
+                            err = None
+                        else:
+                            user, err = None, "Không lấy được thông tin Gmail từ Google."
+                    except Exception as ex_acc:
+                        user, err = None, str(ex_acc)
+                else:
+                    user, err = None, "Thiếu mã xác thực Google"
                 if user:
                     controller._google_user = user
                     html = f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Đăng nhập thành công</title>

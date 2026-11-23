@@ -5920,7 +5920,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.23.3", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.24.4", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":
@@ -6650,7 +6650,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.23.3", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.24.4", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -6667,7 +6667,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.23.3"
+                    local_ver = "2026.11.24.4"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     # CHỐNG HẠ CẤP OTA (Anti-Downgrade): Chỉ tải đè khi bản trên Cloud MỚI HƠN bản đang cài!
                     if remote_ver <= local_ver:
@@ -6735,6 +6735,69 @@ NỘI DUNG BÀI GIẢNG & NOTE:
 
         threading.Thread(target=_ota_worker, daemon=True).start()
 
+
+DVTL_GOOGLE_CLIENT_ID = "963881331331-d22ei0lqfvvqfa4hqjafftcrfhaghs0l.apps.googleusercontent.com"
+DVTL_GOOGLE_AUTH_CACHE_PATH = Path.home() / ".diepvien_study_google_auth.json"
+
+def _dvs_load_saved_google_user():
+    try:
+        if DVTL_GOOGLE_AUTH_CACHE_PATH.exists():
+            d = json.loads(DVTL_GOOGLE_AUTH_CACHE_PATH.read_text(encoding="utf-8"))
+            if isinstance(d, dict) and d.get("email"):
+                return d
+    except Exception:
+        pass
+    return None
+
+def _dvs_save_google_user(u):
+    try:
+        if u and isinstance(u, dict) and u.get("email"):
+            DVTL_GOOGLE_AUTH_CACHE_PATH.write_text(json.dumps(u, ensure_ascii=False, indent=2), encoding="utf-8")
+        elif DVTL_GOOGLE_AUTH_CACHE_PATH.exists():
+            DVTL_GOOGLE_AUTH_CACHE_PATH.unlink()
+    except Exception:
+        pass
+
+def _dvs_verify_google_id_token(id_token):
+    if not id_token:
+        return None, "Thiếu id_token"
+    try:
+        r = requests.get("https://oauth2.googleapis.com/tokeninfo", params={"id_token": id_token}, timeout=10)
+        if r.status_code != 200:
+            return None, "Mã xác thực Google không hợp lệ hoặc đã hết hạn."
+        info = r.json()
+        if str(info.get("aud") or "") != DVTL_GOOGLE_CLIENT_ID:
+            return None, "Sai Google Client ID."
+        if str(info.get("email_verified") or "").lower() != "true":
+            return None, "Gmail chưa được xác minh."
+        email = str(info.get("email") or "").strip().lower()
+        user = {
+            "email": email,
+            "name": str(info.get("name") or email.split("@")[0]).strip(),
+            "picture": str(info.get("picture") or "").strip(),
+            "verifiedByGoogle": True,
+            "isAdmin": email in ("diepvientailieu@gmail.com", "admin@diepvientailieu.store"),
+            "unlockedCourses": [],
+            "phone": "",
+        }
+        # Sync entitlements from GAS live
+        try:
+            gr = requests.get(
+                "https://script.google.com/macros/s/AKfycbxMOdsNkhY8-5xQtZ_86STf781VdFJbRsLkK6n8qRF4ENqreMsl4CdELYn-85wHcqvx/exec",
+                params={"action": "verifyGoogleLogin", "idToken": id_token, "deviceName": "DiepVienStudy Desktop"},
+                timeout=12,
+            )
+            if gr.status_code == 200:
+                gd = gr.json()
+                if gd.get("ok") and isinstance(gd.get("customer"), dict):
+                    user.update(gd["customer"])
+        except Exception:
+            pass
+        _dvs_save_google_user(user)
+        return user, None
+    except Exception as ex:
+        return None, str(ex)
+
 def make_http_handler(controller: BackendController, hub: EventHub):
     MIME_MAP = {
         ".html": "text/html; charset=utf-8",
@@ -6761,6 +6824,63 @@ def make_http_handler(controller: BackendController, hub: EventHub):
         def do_GET(self):
             parsed = urllib.parse.urlparse(self.path)
             route = parsed.path
+
+            # 0. Google 1-Click OAuth Routes (App <-> diepvientailieu.store)
+            if route == "/api/auth/google/status":
+                u = getattr(controller, "_google_user", None) or _dvs_load_saved_google_user()
+                if u:
+                    controller._google_user = u
+                payload = json.dumps({"ok": True, "user": u}, ensure_ascii=False).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Cache-Control", "no-store")
+                self.send_header("Content-Length", str(len(payload)))
+                self.end_headers()
+                self.wfile.write(payload)
+                return
+
+            if route == "/api/auth/google/start":
+                port = getattr(controller, "server_port", 0) or self.server.server_address[1]
+                cb = f"http://127.0.0.1:{port}/api/auth/google/callback"
+                auth_url = f"https://diepvientailieu.store/?app_google_auth=1&cb={urllib.parse.quote(cb, safe='')}"
+                try:
+                    import webbrowser
+                    webbrowser.open(auth_url)
+                except Exception:
+                    pass
+                payload = json.dumps({"ok": True, "authUrl": auth_url}, ensure_ascii=False).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Cache-Control", "no-store")
+                self.send_header("Content-Length", str(len(payload)))
+                self.end_headers()
+                self.wfile.write(payload)
+                return
+
+            if route == "/api/auth/google/callback":
+                qs = urllib.parse.parse_qs(parsed.query)
+                id_tok = (qs.get("id_token") or [""])[0]
+                user, err = _dvs_verify_google_id_token(id_tok)
+                if user:
+                    controller._google_user = user
+                    html = f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Đăng nhập thành công</title>
+                    <style>body{{font-family:system-ui,sans-serif;background:#071033;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}}
+                    .box{{background:#fff;color:#0F172A;padding:34px 38px;border-radius:24px;text-align:center;max-width:420px;box-shadow:0 24px 60px rgba(0,0,0,.4)}}
+                    .ok{{width:56px;height:56px;border-radius:50%;background:#10B981;color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}}</style></head>
+                    <body><div class="box"><div class="ok">✓</div><h2>Đăng nhập Google thành công!</h2>
+                    <p style="font-size:14px;color:#334155">Xin chào <b>{user.get('name','')}</b> ({user.get('email','')})</p>
+                    <p style="font-size:13px;color:#64748B">App <b>Điệp Viên Study</b> đã nhận phiên đăng nhập và tự động mở khóa dữ liệu của bạn. Bạn có thể đóng tab này!</p>
+                    <script>setTimeout(()=>window.close(),2200);</script></div></body></html>""".encode("utf-8")
+                else:
+                    html = f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Lỗi đăng nhập</title></head>
+                    <body style="font-family:system-ui;padding:40px;text-align:center"><h2>Không thể xác thực Google</h2><p>{err or 'Vui lòng thử lại từ App.'}</p></body></html>""".encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Cache-Control", "no-store")
+                self.send_header("Content-Length", str(len(html)))
+                self.end_headers()
+                self.wfile.write(html)
+                return
 
             # 1. SSE Event Stream
             if route == "/__tauri_events__":
@@ -6889,13 +7009,25 @@ def make_http_handler(controller: BackendController, hub: EventHub):
                 self.send_header("Content-Encoding", "gzip")
             self.send_header("Content-Length", str(len(body_out)))
             self.send_header("ETag", etag)
-            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
+            self.send_header("Pragma", "no-cache")
             self.end_headers()
             self.wfile.write(body_out)
 
         def do_POST(self):
             parsed = urllib.parse.urlparse(self.path)
             route = parsed.path
+
+            if route == "/api/auth/google/logout":
+                controller._google_user = None
+                _dvs_save_google_user(None)
+                payload = json.dumps({"ok": True}).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(payload)))
+                self.end_headers()
+                self.wfile.write(payload)
+                return
 
             # 1. Tauri Invoke RPC
             if route == "/__tauri_invoke__":

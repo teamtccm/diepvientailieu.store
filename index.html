@@ -36,7 +36,16 @@
         }
     </script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css?v=9.0">
+    <link rel="stylesheet" href="css/custom.css?v=10.3">
+    <!-- Critical Inline Fallback CSS (chống cache cũ: luôn chạy vòng marquee + luôn bật toast nổi ngoài khung hình) -->
+    <style>
+      .marquee-wrapper { overflow: hidden !important; position: relative !important; width: 100% !important; mask-image: linear-gradient(to right, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%); }
+      .marquee-content { display: flex !important; align-items: center !important; width: max-content !important; will-change: transform; animation: dvtlMarqueeLoop 42s linear infinite !important; }
+      .marquee-wrapper:hover .marquee-content { animation-play-state: paused !important; }
+      @keyframes dvtlMarqueeLoop { 0% { transform: translate3d(0,0,0); } 100% { transform: translate3d(-50%,0,0); } }
+      #liveProofToast { position: fixed !important; bottom: 24px !important; left: 24px !important; z-index: 70 !important; max-width: 320px; opacity: 0; visibility: hidden; pointer-events: none; transform: translate3d(-130%, 16px, 0) scale(0.95); transition: transform 0.48s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease; }
+      #liveProofToast.toast-visible { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; transform: translate3d(0, 0, 0) scale(1) !important; }
+    </style>
     <!-- Favicon (Rounded Mascot Badge) -->
     <link rel="icon" type="image/png" href="images/favicon_badge.png">
 </head>
@@ -45,45 +54,45 @@
          2. MAIN NAVIGATION HEADER (EXPANDED LOGO & MENU)
          ========================================== -->
     <header class="sticky top-0 z-50 bg-[#081347]/95 backdrop-blur-md border-b border-white/10 shadow-lg transition-colors duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div class="max-w-[1420px] mx-auto px-3 sm:px-5 lg:px-6 h-20 flex items-center justify-between gap-2">
             <!-- Brand Logo & Single-Line Typography with Generous Spacing -->
-            <a href="javascript:void(0)" onclick="switchView('home')" class="flex items-center gap-3.5 group select-none mr-2 lg:mr-3 flex-shrink-0">
-                <div class="w-12 h-12 rounded-2xl p-0.5 shadow-md group-hover:scale-105 transition-all flex items-center justify-center flex-shrink-0 overflow-hidden">
+            <a href="javascript:void(0)" onclick="switchView('home')" class="flex items-center gap-2.5 group select-none flex-shrink-0">
+                <div class="w-11 h-11 rounded-2xl p-0.5 shadow-md group-hover:scale-105 transition-all flex items-center justify-center flex-shrink-0 overflow-hidden">
                     <img id="headerLogoImg" src="images/favicon_badge.png" alt="Điệp Viên Tài Liệu" class="w-full h-full object-contain">
                 </div>
                 <div class="flex flex-col justify-center">
-                    <div class="flex items-center gap-2 flex-nowrap">
-                        <span class="font-black text-lg sm:text-xl tracking-tight text-white leading-none whitespace-nowrap">
+                    <div class="flex items-center gap-1.5 flex-nowrap">
+                        <span class="font-black text-base xl:text-lg tracking-tight text-white leading-none whitespace-nowrap">
                             ĐIỆP VIÊN TÀI LIỆU
                         </span>
                         <span class="text-[9px] font-black px-1.5 py-0.5 bg-[#FFA000] text-slate-950 rounded tracking-wider uppercase whitespace-nowrap shadow-sm">
                             STORE
                         </span>
                     </div>
-                    <span class="text-[11px] text-sky-200 font-medium tracking-wide whitespace-nowrap mt-1">
+                    <span class="text-[10.5px] text-sky-200 font-medium tracking-wide whitespace-nowrap mt-1">
                         Bản Quyền Đề Cương & Dịch Vụ Học Thuật
                     </span>
                 </div>
             </a>
             <!-- Desktop Menu: Clean Tab Navigation with Rounded Pill Border Container -->
-            <nav class="hidden lg:flex items-center gap-0.5 text-[12px] bg-white/[0.08] dark:bg-black/30 border border-white/25 dark:border-white/20 p-1 rounded-full backdrop-blur-md shadow-lg">
-                <button onclick="switchView('home')" data-view="home" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1v-9.5z"/></svg> Trang Chủ</button>
-                <button onclick="switchView('docs')" data-view="docs" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> Đề Cương</button>
-                <button onclick="switchView('service')" data-view="service" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Hỗ Trợ Học Thuật</button>
-                <button onclick="switchView('courses')" data-view="courses" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg> Khóa Học</button>
-                <button onclick="switchView('pricing')" data-view="pricing" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg> Bảng Giá</button>
-                <button onclick="switchView('guarantee_feedback')" data-view="guarantee_feedback" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Cam Kết</button>
-                <button onclick="switchView('faq')" data-view="faq" class="nav-tab-btn px-2.5 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg> Hỏi Đáp</button>
+            <nav class="hidden lg:flex items-center gap-0.5 text-[11.5px] bg-white/[0.08] dark:bg-black/30 border border-white/25 dark:border-white/20 p-1 rounded-full backdrop-blur-md shadow-lg">
+                <button onclick="switchView('home')" data-view="home" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1v-9.5z"/></svg> Trang Chủ</button>
+                <button onclick="switchView('docs')" data-view="docs" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg> Đề Cương</button>
+                <button onclick="switchView('service')" data-view="service" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Hỗ Trợ Học Thuật</button>
+                <button onclick="switchView('courses')" data-view="courses" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg> Khóa Học</button>
+                <button onclick="switchView('pricing')" data-view="pricing" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg> Bảng Giá</button>
+                <button onclick="switchView('guarantee_feedback')" data-view="guarantee_feedback" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Cam Kết</button>
+                <button onclick="switchView('faq')" data-view="faq" class="nav-tab-btn px-2 py-1.5 rounded-full font-bold transition-all duration-200 whitespace-nowrap"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg> Hỏi Đáp</button>
             </nav>
             <!-- Unified Account & App Download / Sync Buttons -->
-            <div class="flex items-center gap-1.5 ml-2 flex-shrink-0">
-                <button id="headerDownloadAppBtn" onclick="openAppDownloadModal()" class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/10 hover:bg-white/20 border border-amber-400/70 text-white font-black text-[11.5px] rounded-full shadow-md transition whitespace-nowrap">
-                    <img src="images/favicon_badge.png" alt="APP Diep Vien study" class="w-5 h-5 rounded-md object-contain flex-shrink-0">
-                    <span id="headerDownloadAppLabel" class="tracking-tight">APP Diep Vien study</span>
+            <div class="flex items-center gap-1.5 flex-shrink-0">
+                <button id="headerDownloadAppBtn" onclick="openAppDownloadModal()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-white/10 hover:bg-white/20 border border-amber-400/70 text-white font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap">
+                    <img src="images/favicon_badge.png" alt="APP Diep Vien study" class="w-4 h-4 rounded-md object-contain flex-shrink-0">
+                    <span id="headerDownloadAppLabel" class="tracking-tight">APP Study</span>
                 </button>
-                <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-1.5 px-3 py-2 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap">
-                    <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
-                    <span id="headerAccountSyncLabel">Đăng Nhập</span>
+                <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap">
+                    <span><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                    <span id="headerAccountSyncLabel">Đăng nhập / Đăng ký</span>
                 </button>
             </div>
         </div>
@@ -548,7 +557,7 @@
                         <!-- Bottom Banner Bar: Partner & Official Social Links (Facebook & TikTok) -->
                         <div class="mt-10 pt-4 border-t border-white/15 flex flex-wrap items-center justify-between gap-4 bg-[#060F38]/90 -mx-6 sm:-mx-12 -mb-6 sm:-mb-12 px-6 sm:px-12 py-3.5">
                             <span class="px-3.5 py-1.5 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-black text-xs rounded-lg uppercase tracking-wide shadow flex items-center gap-1.5">
-                                <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span> ĐỐI TÁC KHÓA HỌC ÔN TẬP HSA & TSA
+                                <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span> HỆ THỐNG ĐỀ CƯƠNG BẢN QUYỀN & DỊCH VỤ HỌC THUẬT UY TÍN
                             </span>
                             <!-- Social Links with Icons -->
                             <div class="flex flex-wrap items-center gap-3 text-xs font-bold">
@@ -572,7 +581,7 @@
             </section>
             <!-- BẢNG MENU NHANH TRUNG TÂM HỌC THUẬT (4 DỊCH VỤ CHÍNH) -->
             <section class="py-14 bg-slate-100/70 border-b border-slate-200">
-                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
                     <div class="text-center mb-10">
                         <span class="px-3.5 py-1 bg-blue-100 text-[#0B1958] font-extrabold text-xs rounded-full uppercase tracking-wider border border-blue-200 shadow-sm">
                             <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> BẢNG MENU DỊCH VỤ NHANH
@@ -584,7 +593,7 @@
                             Lựa chọn nhanh danh mục học thuật chuẩn format để đạt kết quả cao nhất
                         </p>
                     </div>
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
                         <!-- Menu 1: Kho Đề Cương -->
                         <div onclick="switchView('docs')" class="group clean-card hover-lift cursor-pointer p-6 border-2 border-sky-200 hover:border-[#0D1677] flex flex-col justify-between transition-all bg-white shadow-sm hover:shadow-xl rounded-2xl">
                             <div>
@@ -619,16 +628,16 @@
                                 <span>➔</span>
                             </div>
                         </div>
-                                                                                                                                                                                                                                                <!-- Menu 3: Khóa Học Bản Quyền -->
+                        <!-- Menu 3: Khóa Học Bản Quyền -->
                         <div onclick="switchView('courses')" class="group clean-card hover-lift cursor-pointer p-6 border-2 border-indigo-200 hover:border-[#0D1677] flex flex-col justify-between transition-all bg-white shadow-sm hover:shadow-xl rounded-2xl">
                             <div>
                                 <div class="w-12 h-12 rounded-2xl bg-[#0D1677] text-white flex items-center justify-center text-2xl shadow-md mb-4 group-hover:scale-110 transition-transform">
                                     <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>
                                 </div>
-                                <span class="px-2.5 py-0.5 bg-amber-100 text-amber-900 font-bold text-[10px] rounded-full uppercase tracking-wider">50 KHÓA HỌC · TẶNG APP</span>
+                                <span class="px-2.5 py-0.5 bg-amber-100 text-amber-900 font-bold text-[10px] rounded-full uppercase tracking-wider">69K · 199K · FULL 399K</span>
                                 <h3 class="text-lg font-black text-slate-900 mt-2.5 mb-1.5 font-condensed tracking-wide uppercase">Khóa Học Bản Quyền</h3>
                                 <p class="text-xs text-slate-600 leading-relaxed line-clamp-3">
-                                    Hệ thống 50 khóa học 2K9, 2K10, ĐGNL HSA, TSA, V-ACT, BCA, QDA, VSAT. Mua khóa mở khóa học đó, trọn bộ mở khóa Full cả App.
+                                    Khóa lẻ 69K từng thầy cô, Combo 199K (HSA, TSA, V-ACT & Tổ hợp A00, A01, D01, B00, C00...), Trọn bộ 399K + Tặng App Điệp Viên Study.
                                 </p>
                             </div>
                             <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between font-black text-xs text-[#0D1677] group-hover:text-blue-600 transition">
@@ -708,26 +717,26 @@
                                 </span>
                                 <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">450.000đ</span>
                             </div>
-                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Gói Môn Học Lẻ</h3>
+                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Gói Khóa Lẻ 1 Thầy Cô</h3>
                             <div class="mt-1 flex items-baseline gap-1.5">
                                 <span class="text-2xl sm:text-3xl font-black text-amber-600 dark:text-amber-400">69.000đ</span>
-                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ môn học</span>
+                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ 1 khóa lẻ</span>
                             </div>
                             <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                                Đăng ký theo từng môn học độc lập (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa, Tiếng Trung, Tin học...).
+                                Mở đúng 01 thư mục khóa học của 01 thầy/cô hoặc đơn vị (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa, HSA/TSA/V-ACT lẻ).
                             </p>
                             <ul class="mt-3.5 space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Full Video bài giảng & PDF đề thi của môn</li>
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cập nhật chuyên đề mới liên tục 2027</li>
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cấp link Drive mở học ngay lập tức</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa đúng 01 thư mục thầy cô đã chọn</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Cấp quyền Drive theo đúng Email + Tặng App Study</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-amber-500 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Đăng nhập App: Email + Mật khẩu là SĐT</li>
                             </ul>
                         </div>
                         <button onclick="openCourseCheckoutModalByTier('subject_69k')" class="mt-4 w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-amber-900 dark:text-amber-200 bg-amber-400 hover:bg-amber-300 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 border border-amber-300 dark:border-amber-500/40 shadow-sm transition flex items-center justify-center gap-1.5">
-                            <span>Đăng Ký Môn Lẻ 69K</span>
+                            <span>Đăng Ký Khóa Lẻ 69K</span>
                             <span class="text-xs">➔</span>
                         </button>
                     </div>
-                    <!-- Card 2: Trọn Bộ Khối / Kỳ Thi 199K -->
+                    <!-- Card 2: Combo Tổ Hợp & ĐGNL 199K -->
                     <div class="rounded-2xl p-4 sm:p-5 bg-white/95 dark:bg-[#0A143D] border-2 border-[#0D1677] dark:border-sky-400 shadow-md hover:shadow-xl hover:-translate-y-0.5 transition flex flex-col justify-between relative overflow-hidden">
                         <div class="absolute -right-8 -top-8 w-24 h-24 bg-blue-600/10 rounded-full blur-xl pointer-events-none"></div>
                         <div>
@@ -735,48 +744,48 @@
                                 <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-100 text-[#0D1677] dark:bg-sky-950 dark:text-sky-300 border border-blue-200 dark:border-sky-800">
                                     PHỔ BIẾN NHẤT · TIẾT KIỆM 75%
                                 </span>
-                                <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">1.200.000đ</span>
+                                <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">690.000đ</span>
                             </div>
-                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Trọn Bộ Theo Khối / Kỳ Thi</h3>
+                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Combo Tổ Hợp &amp; ĐGNL / ĐGTD</h3>
                             <div class="mt-1 flex items-baseline gap-1.5">
                                 <span class="text-2xl sm:text-3xl font-black text-[#0D1677] dark:text-sky-400">199.000đ</span>
-                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ trọn gói</span>
+                                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ combo</span>
                             </div>
                             <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                                Trọn bộ toàn bộ các môn theo khối THPT 12 (2K9), Lớp 11 (2K10), HSA, TSA, V-ACT, BCA.
+                                Gồm 4 Combo Chia Theo Ban (KHTN 1·2, KHXH 1·2) và 3 Khóa ĐGNL/ĐGTD (HSA, TSA, V-ACT).
                             </p>
                             <ul class="mt-3.5 space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa TOÀN BỘ môn thi trong gói đã chọn</li>
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Kèm kho đề thi thử có lời giải chi tiết</li>
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Phù hợp xuất phát sớm & bứt phá điểm 9+</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa chính xác các thư mục trong gói đã mua</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Tặng kèm App Điệp Viên Study (Email + SĐT)</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-600 dark:text-sky-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Bảo mật 100% chỉ đúng Email đã mua mới xem được</li>
                             </ul>
                         </div>
                         <button onclick="openCourseCheckoutModalByTier('course_199k')" class="mt-4 w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-[#0D1677] hover:bg-[#1E40AF] dark:bg-sky-500 dark:hover:bg-sky-400 shadow-md transition flex items-center justify-center gap-1.5">
-                            <span>Đăng Ký Gói 199K</span>
+                            <span>Đăng Ký Combo 199K</span>
                             <span class="text-xs">➔</span>
                         </button>
                     </div>
-                    <!-- Card 3: VIP Full 90+ Khóa Học 399K -->
+                    <!-- Card 3: VIP Full Trọn Bộ 399K -->
                     <div class="rounded-2xl p-4 sm:p-5 bg-gradient-to-br from-purple-50/90 via-white to-amber-50/50 dark:from-[#130d3a] dark:via-[#0A143D] dark:to-[#1a1236] border-2 border-purple-500 dark:border-purple-400 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition flex flex-col justify-between relative overflow-hidden">
                         <div class="absolute -right-8 -top-8 w-28 h-28 bg-purple-500/15 rounded-full blur-xl pointer-events-none"></div>
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-2">
                                 <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-purple-100 text-purple-900 dark:bg-purple-950 dark:text-purple-300 border border-purple-300 dark:border-purple-700 animate-pulse">
-                                    VIP TOÀN HỆ THỐNG · TẶNG APP PRO
+                                    VIP TOÀN HỆ THỐNG · UPDATE VĨNH VIỄN
                                 </span>
                                 <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 line-through">2.500.000đ</span>
                             </div>
-                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Full 90+ Khóa Học Đa Môn</h3>
+                            <h3 class="text-lg font-black text-slate-900 dark:text-white uppercase tracking-tight">Full Trọn Bộ + Cập Nhật Mới</h3>
                             <div class="mt-1 flex items-baseline gap-1.5">
                                 <span class="text-2xl sm:text-3xl font-black text-purple-700 dark:text-purple-300">399.000đ</span>
                                 <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ trọn đời</span>
                             </div>
                             <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                                Mở khóa TOÀN BỘ 90+ khóa học tất cả các môn: Toán, Văn, Anh, Trung, Lý, Hóa, Sinh, Sử, Địa, Tin MOS, Đại Học...
+                                Mở khóa TOÀN BỘ 100% kho 69K + Combo 199K (Toán, Lý, Hóa, Văn, Anh, Sinh, Sử, Địa, HSA, TSA, V-ACT) &amp; mọi cập nhật về sau.
                             </p>
                             <ul class="mt-3.5 space-y-1.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
-                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa TOÀN BỘ 90+ khóa học mọi môn, mọi thầy cô</li>
-                                <li class="flex items-center gap-2 font-bold text-purple-900 dark:text-purple-200"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> TẶNG App Điệp Viên Study Pro (Khóa 1 máy cố định)</li>
+                                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mở khóa toàn bộ mọi khóa học &amp; mọi cập nhật tương lai</li>
+                                <li class="flex items-center gap-2 font-bold text-purple-900 dark:text-purple-200"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> TẶNG App Điệp Viên Study Pro (Email + SĐT)</li>
                                 <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Trợ lý AI tóm tắt bài học & cấp quyền Drive vĩnh viễn</li>
                             </ul>
                         </div>
@@ -923,8 +932,8 @@
                         </div>
                         <div class="bg-gradient-to-br from-[#0B1958] to-[#0D1677] rounded-2xl p-3.5 text-white text-xs space-y-1">
                             <div class="flex justify-between"><span class="text-slate-300">Ngân hàng:</span><strong id="courseBankName">ACB</strong></div>
-                            <div class="flex justify-between"><span class="text-slate-300">Số TK:</span><strong id="courseSTK" class="text-amber-300 tracking-wider">27384751</strong></div>
-                            <div class="flex justify-between"><span class="text-slate-300">Chủ TK:</span><strong id="courseCTK">NGO BAO THACH</strong></div>
+                            <div class="flex justify-between"><span class="text-slate-300">Số TK:</span><strong id="courseSTK" class="text-amber-300 tracking-wider">27820961</strong></div>
+                            <div class="flex justify-between"><span class="text-slate-300">Chủ TK:</span><strong id="courseCTK">TRINH DUC THINH</strong></div>
                             <div class="flex justify-between"><span class="text-slate-300">Số tiền:</span><strong id="coursePayAmount" class="text-emerald-300">199.000 VNĐ</strong></div>
                             <div class="pt-1.5 border-t border-white/20 flex justify-between items-center">
                                 <span class="text-slate-300">Nội dung CK:</span>
@@ -966,7 +975,7 @@
                         <div class="flex justify-between"><span class="text-slate-500 dark:text-slate-400">Tài Khoản Email (1 Máy):</span><strong id="courseSuccessEmail" class="text-emerald-700 dark:text-emerald-400 font-bold"></strong></div>
                     </div>
                     <div class="space-y-2 mb-4 text-left">
-                        <a id="courseSuccessDriveLink" href="https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow flex items-center justify-center gap-2 transition uppercase">
+                        <a id="courseSuccessDriveLink" href="https://drive.google.com/drive/folders/1_1RwRFjIYJO0BmmJEEqVV-4-GNOkLcNQ" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl shadow flex items-center justify-center gap-2 transition uppercase">
                             <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                             <span>Mở Ngay Thư Mục Khóa Học Trên Google Drive</span>
                         </a>
@@ -1134,21 +1143,18 @@
                         </p>
                     </div>
                 </div>
-                <!-- NOTIFICATION BANNER: NHẬN BÀI QUA EMAIL DẠNG FILE GOOGLE DOCS -->
-                <div class="p-4 bg-blue-50 dark:bg-[#081544] border-2 border-blue-400 dark:border-blue-700 rounded-2xl mb-8 flex items-center gap-3.5 shadow-sm">
-                    <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl flex-shrink-0 shadow">
-                        <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    </div>
-                    <div class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-semibold">
-                        <strong class="text-[#0D1677] dark:text-amber-400">Hình thức nhận bài:</strong> Kết quả bài viết sẽ được gửi tới bạn thông qua <strong>Email dưới dạng file Google Docs</strong>.
+                <!-- NOTIFICATION BANNER: GỌN NHẸ 1 DÒNG GIỐNG HỆT APP -->
+                <div class="px-5 py-3 bg-white/95 dark:bg-[#081544] border border-slate-200/90 dark:border-blue-700 rounded-2xl mb-6 flex items-center gap-3 shadow-sm">
+                    <div class="text-xs sm:text-[13px] text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
+                        <strong class="text-[#0D1677] dark:text-amber-400 font-extrabold">Hình thức nhận bài:</strong> Kết quả bài viết sẽ được gửi tới bạn thông qua <strong class="text-slate-900 dark:text-white">Email dưới dạng file Google Docs</strong>.
                     </div>
                 </div>
                 <!-- Main Form Container -->
                 <div class="grid lg:grid-cols-12 gap-8">
                     <!-- Left: Form Inputs (7 Cols) -->
                     <div class="lg:col-span-7 clean-card p-6 sm:p-8">
-                        <h3 class="text-lg font-black text-slate-900 dark:text-white mb-6 pb-3 border-b border-slate-100 dark:border-white/10 flex items-center gap-2 font-condensed uppercase tracking-wider">
-                            <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> 1. Thông Tin Sinh Viên & Yêu Cầu Đề Bài</span>
+                        <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-5 pb-3 border-b border-slate-100 dark:border-white/10 flex items-center gap-2">
+                            <span>1. Thông Tin Sinh Viên &amp; Yêu Cầu Đề Bài</span>
                         </h3>
                         <form id="serviceOrderForm" onsubmit="submitServiceOrder(event)" class="space-y-4">
                             <!-- Họ tên & SĐT -->
@@ -1246,7 +1252,7 @@
                                 <p class="text-[10px] text-slate-400 mt-1">Đề bài, rubric, file mẫu, yêu cầu GV... (PDF, Word, Excel, ảnh — tối đa 10MB). File sẽ được tải lên hệ thống bảo mật.</p>
                             </div>
                             <!-- CAM KẾT BẢO MẬT THÔNG TIN (Bắt buộc tích trước khi gửi) -->
-                            <div class="p-4 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl">
+                            <div class="p-3.5 bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-700 rounded-2xl">
                                 <label class="flex items-start gap-3 cursor-pointer group">
                                     <input type="checkbox" id="srvPrivacyCheckbox" class="w-5 h-5 mt-0.5 rounded border-2 border-amber-400 text-[#0D1677] focus:ring-2 focus:ring-amber-300 flex-shrink-0 cursor-pointer accent-[#0D1677]">
                                     <div>
@@ -1303,7 +1309,7 @@
                                 <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> HỆ THỐNG HỌC THUẬT BẢN QUYỀN</span>
                             </div>
                             <!-- Official Diep Vien Tai Lieu Logo -->
-                            <div class="w-44 mx-auto mb-4 transition-transform hover:scale-105 duration-300">
+                            <div class="w-24 mx-auto mb-3 transition-transform hover:scale-105 duration-300">
                                 <img src="images/logo_diep_vien.png" alt="Logo Điệp Viên Tài Liệu" class="w-full h-auto object-contain rounded-2xl shadow-2xl">
                             </div>
                             <!-- Tagline -->
@@ -1329,6 +1335,9 @@
                                     <span>Bảo hành sửa bài <strong class="text-amber-300 font-bold">miễn phí trong 4 ngày</strong></span>
                                 </div>
                             </div>
+                            <a href="https://drive.google.com/drive/folders/13wHeLedN8McA8AycvznNoj4CXzDQg98j" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2.5 px-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition">
+                                <span>Xem Kho Mẫu BTL Trên Google Drive</span>
+                            </a>
                             <span id="srvDepositCode" class="hidden">COC_BTL_1234</span>
                         </div>
                     </div>
@@ -1754,17 +1763,13 @@
                 </div>
                 <form onsubmit="goToDocPaymentStep(event)" class="space-y-3 text-xs">
                     <div>
-                        <label class="block font-bold text-slate-700 mb-1">Họ và Tên: <span class="text-red-500">*</span></label>
-                        <input type="text" id="checkoutNameInput" required placeholder="Nguyễn Văn A" class="w-full bg-slate-50 border border-slate-300 focus:border-[#0D1677] rounded-xl px-3.5 py-2.5 text-xs text-slate-800 outline-none">
-                    </div>
-                    <div>
                         <label class="block font-bold text-slate-700 mb-1">Số Điện Thoại / Zalo: <span class="text-red-500">*</span></label>
                         <input type="tel" id="checkoutPhoneInput" required placeholder="0987654321" class="w-full bg-slate-50 border border-slate-300 focus:border-[#0D1677] rounded-xl px-3.5 py-2.5 text-xs text-slate-800 outline-none">
                     </div>
                     <div>
                         <label class="block font-bold text-slate-700 mb-1">Email (Gmail nhận link Google Drive): <span class="text-red-500">*</span></label>
                         <input type="email" id="checkoutEmailInput" required placeholder="sinhvien@gmail.com" class="w-full bg-slate-50 border border-slate-300 focus:border-[#0D1677] rounded-xl px-3.5 py-2.5 text-xs text-slate-800 outline-none">
-                        <span class="text-[10px] text-amber-700 font-semibold block mt-0.5"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> Vui lòng điền đúng Gmail để nhận link tài liệu tự động</span>
+                        <span class="text-[10px] text-amber-700 font-semibold block mt-1"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> Điền đúng Gmail để nhận file tự động · Họ tên tự ghi nhận từ chuyển khoản & tự lưu SĐT/Email cho lần sau.</span>
                     </div>
                     <div class="hidden" id="checkoutOrderCode">DVTL_ORDER</div>
                     <button type="submit" class="w-full mt-4 py-4 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs sm:text-sm rounded-xl shadow-lg transition font-condensed tracking-wider uppercase">
@@ -1801,8 +1806,8 @@
                     </div>
                     <div class="bg-white/10 rounded-lg p-2.5 text-left text-xs space-y-1 font-mono">
                         <div class="flex justify-between"><span class="text-slate-400">Ngân hàng:</span><span id="checkoutBankName" class="font-bold text-blue-400">ACB</span></div>
-                        <div class="flex justify-between"><span class="text-slate-400">Số TK:</span><span id="checkoutSTK" class="font-bold text-white">27384751</span></div>
-                        <div class="flex justify-between"><span class="text-slate-400">Chủ TK:</span><span id="checkoutCTK" class="font-bold text-white">NGO BAO THACH</span></div>
+                        <div class="flex justify-between"><span class="text-slate-400">Số TK:</span><span id="checkoutSTK" class="font-bold text-white">27820961</span></div>
+                        <div class="flex justify-between"><span class="text-slate-400">Chủ TK:</span><span id="checkoutCTK" class="font-bold text-white">TRINH DUC THINH</span></div>
                         <div class="flex justify-between"><span class="text-slate-400">Số tiền:</span><span id="checkoutPayAmount" class="font-bold text-emerald-400">50,000 VNĐ</span></div>
                         <div class="flex justify-between items-center">
                             <span class="text-slate-400">Nội dung CK:</span>
@@ -1956,7 +1961,7 @@ function doPost(e) {
     <!-- ================================================================
          LIVE SOCIAL PROOF STREAM TOAST
          ================================================================ -->
-    <div id="liveProofToast" class="bg-white dark:bg-[#0A143D] text-slate-800 dark:text-white p-3 rounded-2xl shadow-2xl border border-slate-200/80 dark:border-white/10 max-w-xs flex items-center gap-3 cursor-pointer">
+    <div id="liveProofToast" class="fixed bottom-6 left-6 z-[70] bg-white dark:bg-[#0A143D] text-slate-800 dark:text-white p-3 rounded-2xl shadow-2xl border border-slate-200/80 dark:border-white/10 max-w-xs flex items-center gap-3 cursor-pointer">
         <div class="w-10 h-10 rounded-full bg-amber-500/10 dark:bg-amber-400/20 border border-amber-400/40 p-1.5 flex items-center justify-center shadow-sm flex-shrink-0">
             <img src="images/mascot_icon.png" alt="Điệp Viên Tài Liệu" class="w-full h-full object-contain">
         </div>
@@ -2065,8 +2070,8 @@ function doPost(e) {
         </div>
     </footer>
     <!-- Scripts with cache busting query string -->
-    <script src="js/data.js?v=1794984982"></script>
-    <script src="js/app.js?v=1794984982"></script>
+    <script src="js/data.js?v=10.3"></script>
+    <script src="js/app.js?v=10.3"></script>
     <script>
         function openTrackingModal() {
             document.getElementById('trackingModal').classList.remove('hidden');
@@ -2110,12 +2115,12 @@ function doPost(e) {
             <div class="flex items-center gap-3 mb-4">
                 <img src="images/favicon_badge.png" alt="Điệp Viên Study" class="w-11 h-11 rounded-2xl border border-amber-400/50 object-contain shadow-sm">
                 <div>
-                    <span class="px-2.5 py-0.5 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[10px] rounded-full uppercase border border-blue-200 dark:border-blue-800">ĐỒNG BỘ WEB & APP ĐIỆP VIÊN STUDY</span>
-                    <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1 font-condensed uppercase tracking-wide">Đăng Nhập & Tải App Điệp Viên Study</h3>
+                    <span class="px-2.5 py-0.5 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[10px] rounded-full uppercase border border-blue-200 dark:border-blue-800">ĐỒNG BỘ WEB · APP ĐIỆP VIÊN STUDY · DRIVE</span>
+                    <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1 font-condensed uppercase tracking-wide">Đăng Nhập / Đăng Ký Tài Khoản</h3>
                 </div>
             </div>
             <p class="text-xs text-slate-500 dark:text-slate-300 mb-4 leading-relaxed">
-                Điền <strong>Tên đăng nhập</strong> và <strong>Email</strong> của bạn để đồng bộ toàn bộ Khóa Học & Đề Cương đã mở khóa, đồng thời hệ thống sẽ <strong>tự động tải APP Diep Vien study</strong> về máy cho bạn.
+                Tài khoản đăng nhập dùng chung Web &amp; App: <strong>Email</strong> là tên đăng nhập, <strong>Số điện thoại</strong> là mật khẩu mặc định. Hệ thống tự động ghi nhớ Email &amp; SĐT cho các lần mua sau!
             </p>
             <div class="space-y-3 text-xs">
                 <div>
@@ -2123,7 +2128,7 @@ function doPost(e) {
                     <input id="syncCustNameInput" type="text" placeholder="Nhập tên đăng nhập của bạn (VD: nguyenvana)" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
                 </div>
                 <div>
-                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Email Google (Đồng bộ Khóa học, Drive & App) <span class="text-red-500">*</span></label>
+                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Email Google (Nhận Đề Cương, Drive & Đồng Bộ App) <span class="text-red-500">*</span></label>
                     <input id="syncCustEmailInput" type="email" placeholder="sinhvien@gmail.com" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
                 </div>
                 <div class="grid grid-cols-2 gap-3">
@@ -2147,7 +2152,7 @@ function doPost(e) {
                 </div>
                 <div id="syncCustomerStatusMsg" class="text-[11px] font-bold text-emerald-700 dark:text-emerald-300 text-center hidden"></div>
                 <div id="syncCustomerEntitlementsBox" class="hidden pt-4 border-t border-slate-200 dark:border-white/10 space-y-3">
-                    <div class="font-black text-slate-900 dark:text-white uppercase text-xs">Khóa Học & Tài Liệu Đã Xác Thực Thanh Toán:</div>
+                    <div class="font-black text-slate-900 dark:text-white uppercase text-xs">Đề Cương & Tài Liệu Đã Xác Thực Thanh Toán:</div>
                     <div id="syncCustomerItemsList" class="space-y-2 max-h-48 overflow-y-auto"></div>
                 </div>
             </div>
@@ -2172,13 +2177,13 @@ function doPost(e) {
                         </span>
                     </div>
                     <p itemprop="description" class="text-[11px] text-slate-500 dark:text-slate-300 mt-0.5">
-                        Đồng bộ Khóa Học · Đề Cương · Ghi Âm AI · Dịch PDF Sang Word
+                        Đồng bộ Đề Cương · Dịch Vụ Học Thuật · Ghi Âm AI · Dịch PDF Sang Word
                     </p>
                 </div>
             </div>
             <!-- 4 Visual Feature Showcase Cards (Minimalist, Airy & Easy to Understand in 1 Second) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-                <!-- Card 1: 50+ Khóa Học Ôn Thi -->
+                <!-- Card 1: 167+ Đề Cương Chuẩn -->
                 <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-white/15 bg-white dark:bg-[#060E2C] shadow-sm flex flex-col">
                     <div class="px-4 py-3 bg-gradient-to-br from-[#F0F7FF] to-[#E2EEFF] dark:from-[#0D1677] dark:to-[#060E2C] border-b border-slate-200/70 dark:border-white/10 flex items-center justify-center gap-3 h-[88px]">
                         <!-- Clean Mini Video Player Icon Graphic -->
@@ -2197,7 +2202,7 @@ function doPost(e) {
                     </div>
                     <div class="px-3.5 py-2.5 flex items-center justify-between gap-2 bg-white dark:bg-[#0A143D]">
                         <div class="min-w-0">
-                            <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">50+ Khóa Học Ôn Thi</div>
+                            <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">167+ Đề Cương Chuẩn</div>
                             <div class="text-[10.5px] text-slate-500 dark:text-slate-300 truncate">2K9 · 2K10 · HSA · TSA · V-ACT</div>
                         </div>
                         <span class="text-[9.5px] font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full shrink-0">Full 2027</span>

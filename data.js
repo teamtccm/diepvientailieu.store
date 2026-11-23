@@ -1591,7 +1591,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1VVoxbJb10Q7nN56hGrHn8JhKWBfkHyo-",
+"driveId": "1dHGlZZ1jesJPbjOa3rBrGVp8ccfOZp8X",
 "isReal": true,
 "university": "ueb",
 "driveType": "file"
@@ -1618,7 +1618,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1mP93QcDEF_UMnQPIt1xamsJ2dJe-DmCC",
+"driveId": "19posAEi4qrVT1UyRoH_9yR6y7kF6MIdb",
 "isReal": true,
 "university": "dav",
 "driveType": "file"
@@ -1645,7 +1645,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1vgXjQyFA33kFTFhTqSyHPqPLioJTZVBC",
+"driveId": "1OARZPJsgHadFojlmw8e-RuQoXHLI-1Pj",
 "isReal": true,
 "university": "ussh",
 "driveType": "file"
@@ -1672,7 +1672,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1LZTzKzwXIQ5RL5p8yf6nUbXqS-BCNVd9OvncudDW15U",
+"driveId": "1usfA8IZvGJCs8RTbkhCkRELBoyAho3RQtKwuHfDQQgU",
 "isReal": true,
 "university": "ulis",
 "driveType": "file"
@@ -1699,7 +1699,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "11Igl74fSTCtgvXlz55oJyil7fMbSeyaf",
+"driveId": "1im7zbw5-l88tJRmaUclKNTWd2JWMToib",
 "isReal": true,
 "university": "ulis",
 "driveType": "file"
@@ -1726,7 +1726,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1uYOG--aNQ_sB8E-AOX_Ippo5-4l0VwNG",
+"driveId": "1rQ9Bl7i6a7FaftyjS4O4jFetVBLE_NmF",
 "isReal": true,
 "university": "uet",
 "driveType": "file"
@@ -1753,7 +1753,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1GmcJwFxdoxMeQ6cZukGairpPpdboVK6f63B95lXSpaQ",
+"driveId": "1thaj0dm0iKvlJGC8xA2hAtsK9dIeMwH8Q7323XlvPW4",
 "isReal": true,
 "university": "uet",
 "driveType": "file"
@@ -1780,7 +1780,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Mosqqe1FamteGhHdIiHkISOUK5jCubqi",
+"driveId": "1Gcr3tt4p43x61kabwqJctaAp9mBCrofC",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -1807,7 +1807,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1EGZD1RaNRHnmEST3Gn4V2ZhwmMxtBDsf",
+"driveId": "1bF4eofCqWCb5M5jaTJVqA8U5-NUOiBEJ",
 "isReal": true,
 "university": "tcnh_hn",
 "driveType": "file"
@@ -1834,7 +1834,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1sblmGWvZ-Yb_xH4_cPU0AiIlDNbhQzVv",
+"driveId": "1Utu_KAygyrSu09pbKtLyhggtSdo6JJ_i",
 "isReal": true,
 "university": "ulis",
 "driveType": "file"
@@ -1861,7 +1861,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1r2mpHD25vTR-FjamQAoqoQzL6o1uXKMj",
+"driveId": "1kq0fnha1OxYjJkvY0i44vuCI1NsHz5Y0",
 "isReal": true,
 "university": "vanlang",
 "driveType": "file"
@@ -1888,7 +1888,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1qzOMRPRBnZbOPfNqF62vTDaP_PFFocj3Kupmg5eNXmA",
+"driveId": "1U677ypyCALOEwFMhYP0AFGPADLucgZ2quKU01Q89QjY",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -1915,7 +1915,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1mCRw9fpnI9o7BCwLdwyYtTng4cI4yE_5",
+"driveId": "1ldTmDrCv_Hr65zGIiDkxDI3LU_cSor4k",
 "isReal": true,
 "university": "ueh",
 "driveType": "folder"
@@ -1942,7 +1942,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1fzfIfpR9Bt3TPBbSbJQSd-5Fci2P2gFks70A2ykKHbw",
+"driveId": "1nzsjg2FB8z7RIaUqftf0pyuIklHVnL9h7jmRwfXhq4U",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -1969,7 +1969,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "124Zy8xWKp4LEA7uSgNpw5-Og3oW26hIk1PMaBKlCsR8",
+"driveId": "1MJlOlYUW8CUvEOBjrJ8eWqvNaEOOLGo1_0AupjNR8Ms",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -1996,7 +1996,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1hp6XONj2DhVkDp1aVwLy1JcXDztUnjq3",
+"driveId": "1A5iYx9C4u4fKwRXRMBF3GB3uOcdETZ6b",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -2023,7 +2023,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1-XYFxIpUfHljXL68wHvcOKe8etP_f4th",
+"driveId": "1f0dtM5XLrXQr-V5aeBFGPWcJAGrAN6ED",
 "isReal": true,
 "university": "ufm",
 "driveType": "file"
@@ -2050,7 +2050,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1-gcIeAD5yO0s0vNi8nT8kududUoCo6oW",
+"driveId": "1Bv-lVYqizOH2kUzV1qJJSRnuQBaLoUlb",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -2077,7 +2077,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1c8t5jWMBohC8pirrWfI2_DYY9qPLHVyv",
+"driveId": "1MpwXeU5Y-BDOdlZNihXabbqmnqpOzGjT",
 "isReal": true,
 "university": "hvtc",
 "driveType": "file"
@@ -2104,7 +2104,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1sHKq2mAlcJCoeld9ZTSG_3s3m7ZQtP_2",
+"driveId": "1uem4jmzTcFDpPRVzswN7nIbLA4_K6EhX",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -2131,7 +2131,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1FkEfRUP2NN2CLwK6ZovWLqQDl77rvrcp",
+"driveId": "1ankCEa0Sc99p1X5CMh_xuBbcTMdfNnev",
 "isReal": true,
 "university": "ajc",
 "driveType": "file"
@@ -2158,7 +2158,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1_EVfm67vtmVJEhIQh4sXvEJK2WzMm7Oq",
+"driveId": "1XdImBHdXt5-1dEo2UcZVADN3qQlEEuLS",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -2185,7 +2185,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1BjmBQM3SsOqKAfvgV1lxSwjbR3C8XApR",
+"driveId": "1NwVyXGtsNHgD_JTPSaFl-sRlK9sHItxA",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -2212,7 +2212,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1IsZSuUBZ61hyhi8Ju_qJ0JzbLImHF9LX",
+"driveId": "1sd-Ub_cp0zrKwNWXM5E_zVqtTUWZ_gpS",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -2239,7 +2239,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1iMudRU2O2Lsu1sP4_N4atDqFFX9Vc0rZ",
+"driveId": "1xzez826oeUPFSh7KaEE2hJVYVw1p3mt_",
 "isReal": true,
 "university": "hvtc",
 "driveType": "file"
@@ -2266,7 +2266,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1UCYaqRkReqsHTqxcOe262mMhmT-SWo6d",
+"driveId": "1Aksy3nV47lftpkDhLJ4I_TtKcR7azkq-",
 "isReal": true,
 "university": "hce",
 "driveType": "file"
@@ -2293,7 +2293,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1YvvRQC8UsaTh6nzU3tp2Kuqt8kaLNJYq",
+"driveId": "1DYsWGO9Vp90U2ONqyCL6G-9fNZzY9c0p",
 "isReal": true,
 "university": "vanlang",
 "driveType": "file"
@@ -2320,7 +2320,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Nt4i18RxYoMDzLWCK1d0afXYmHRNBY0y",
+"driveId": "1qAdvYojVqlX0KrbSU20vswwRIJICCxt8",
 "isReal": true,
 "university": "thanglong",
 "driveType": "folder"
@@ -2347,7 +2347,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1tCGTRA_XdOtDw9GCFF33f1XFfSEpbFS3",
+"driveId": "11mh5d1VNDEU7cBh_3BzXhaHGNxHvxFd7",
 "isReal": true,
 "university": "dnu",
 "driveType": "folder"
@@ -2374,7 +2374,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1kE5NoS5GGz7hmDn8YTFuwa8CVYpIkWSYlGFS2vBoNLY",
+"driveId": "1FqstJRdW-g5gPGo_xgukgVc9CuX78jWFLuqTZ2_8xqU",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -2401,7 +2401,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "15ojnhy4ofjn8WSFOgYXM0vev4RRIP2gkExQa7_baAng",
+"driveId": "1OjPNJPc4aBf10z4IPueM9uH9_9lLBwnH4lsDLc58TZk",
 "isReal": true,
 "university": "ueb",
 "driveType": "file"
@@ -2428,7 +2428,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1I-ISdXgxMTjH-aNlul3ffOLxZNd9jBC5",
+"driveId": "1y75IzFC83ri8vb6Lkz7r_L8YSnpGX8-P",
 "isReal": true,
 "university": "ufm",
 "driveType": "file"
@@ -2455,7 +2455,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1UDejXvcrSqHiHfMeLfAMOuBGRR3RBrVK",
+"driveId": "1mu9LiYyxqXvk9tNkT1wj15a-r31qH4kg",
 "driveType": "file",
 "isReal": true,
 "university": "hvtc"
@@ -2482,7 +2482,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1chVNFA_siSAr6ExS9kZ1Jr16kvodXShT",
+"driveId": "1MXU8-FkU8acqGw6t4_bEz8xtWyF_nPZQ",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -2509,7 +2509,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1UYMnmYLIDg7oAKOygPeVUVUZDahD7pTt",
+"driveId": "1uRS7pIABsKWJ4VWzXKKoDxmoVmvSXaJ8",
 "isReal": true,
 "university": "hce",
 "driveType": "file"
@@ -2536,7 +2536,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1tSy4Oyvhomhf5aYFhewIcx6NbH2g-KbI",
+"driveId": "1GPb4aLgVQ0znH67hmwnUlT-zuh08nfwh",
 "isReal": true,
 "university": "hub",
 "driveType": "file"
@@ -2563,7 +2563,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1D3_xVY5sYTFIqgN-M7AM614DceozCH8u",
+"driveId": "1Bs1Y-dwspvAROjqFGFNcaQrIEfOLqqUA",
 "isReal": true,
 "university": "ba",
 "driveType": "file"
@@ -2590,7 +2590,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1oUkQCHIe_WQmYaKxab0g7iuy3FDYuYLU",
+"driveId": "1qkAHTn3JD0XNRifTRNt02IqLx15zGbYd",
 "isReal": true,
 "university": "tcnh_hn",
 "driveType": "file"
@@ -2617,7 +2617,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1f3bZLjaYqEEM_3YSwlIiFMfn-77TTv5l",
+"driveId": "149zvlaOPc9nOEMS5xc5peSAXUoG_bouw",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -2644,7 +2644,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1SuWDeeVCC-9Djd5OZD4oXwxaCSI9PpBP",
+"driveId": "1T008y7zSaSRHZKTd2FO240vzX9WNTH0F",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -2671,7 +2671,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1SDVQ_ivB4I9gIAnDamRBO0IzWldyD-2v",
+"driveId": "11IgQTnm46d2z34WoRM-Y0lg9cjaAbQji",
 "isReal": true,
 "university": "ufm",
 "driveType": "file"
@@ -2698,7 +2698,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "12waHZmCQPNoRxrCboYrIrME9pgEJDNxb",
+"driveId": "1yht5YP3FtrQz0Ovs6mTjTiIgsEZDYGqr",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -2725,7 +2725,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1HtFXaK-s68QPeoElZAtcV5PsGBlhU473",
+"driveId": "1R7avrYc_b7Z9N0_Nx_wYtyhba-tzz9Xx",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -2752,7 +2752,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1jKj1FMI-3RdPNNjdTSn9NpxapaaaQxSO",
+"driveId": "1ppz4GF0qHpKDK7oEXgMHu_0QoKwijRvP",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -2779,7 +2779,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "18ZJXmEuQr853bfp17o4Ng44uU5xsK3IxHKjbJqkBwNM",
+"driveId": "1Ww6GjL676jLJicLjIA5vLL-N_GDrWeceIiCBodmASu4",
 "isReal": true,
 "university": "ba",
 "driveType": "file"
@@ -2806,7 +2806,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1U3mVBP5rJ5EZjr91x7f5xj6FIpCATAkF1gl4n3NQEcs",
+"driveId": "1QYtPDJ5klhDkU2ZUpWrQkLoY4AOTaG-NQPzkB7YMnMg",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -2833,7 +2833,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1vchM_QnSwIoD3pVkLNeasxaLZIlMI74W",
+"driveId": "1ghiSo2OFFe3v6aIIEVLaboEZnc52gQg-",
 "isReal": true,
 "university": "ba",
 "driveType": "file"
@@ -2860,7 +2860,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1P5Z61C6joHtfnusH-n-Geyo9cy-hyD0WjUkOmJa5188",
+"driveId": "1to8EKZQ2j3mkDbEoUWRwUGPbGnaIII_R59WYIDAbYKI",
 "isReal": true,
 "university": "apd",
 "driveType": "file"
@@ -2887,7 +2887,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1q29WU4ycr1aH2itTIpx6ybaujJgYZqOB",
+"driveId": "1nAcukDd5MzK2dupEXktcVxW55XVegvdU",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -2914,7 +2914,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1-qLNDbwYAqxs69Pa6wV_zewh7F5W_iKTmolBr65Cous",
+"driveId": "1HjwG2fjppWYBMcvTqHSzP_X1nIbvVBYOUr_w8soq9Qk",
 "isReal": true,
 "university": "ueb",
 "driveType": "file"
@@ -2941,7 +2941,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1hWM0rE_23RyurzwP_EP-eBxnJ8Xx_Ock",
+"driveId": "1KhlI_9lOhEln1ALO7BP7NgaoZBOPFMAq",
 "isReal": true,
 "university": "due",
 "driveType": "file"
@@ -2968,7 +2968,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1hz7jUn09glsNeQSMk8lAsXVPcmx6VD83",
+"driveId": "1hBQabN0TiDyRJxa09NG8LtNAUIykRdFA",
 "isReal": true,
 "university": "apd",
 "driveType": "file"
@@ -2995,7 +2995,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1MhAmR7rdEaJchnQ5ru_5EOgJzdd3Sqpv",
+"driveId": "1kj43bpfzTnRTk9VywbKxl_xG_aN0nFoV",
 "isReal": true,
 "university": "tcnh_hn",
 "driveType": "file"
@@ -3022,7 +3022,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1L9D4eyN3sNTHtj_VzjR7XTqrEukHBz5H",
+"driveId": "1Ui2Y0argiYn5MFGfYRONaxoSn7E1M1Nq",
 "isReal": true,
 "university": "ueb",
 "driveType": "file"
@@ -3049,7 +3049,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Ec0CehYScGt0IiGlv0GJHtTvAgi4fkLssJ5OtZr_wXI",
+"driveId": "1EgsXiixXKUKO4jHVPv_C4TEEkGcbr6mVt3CMGa7R6xo",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -3076,7 +3076,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1N59RnPiuLniUBSeL6LGsAHzB6DpSsbvf",
+"driveId": "1vfH6FydZn-ag0ychSsCC3mHH0lpfxPwa",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -3103,7 +3103,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1sNUAfv5YMnIXtmCC3I7o_t9TaqYdRmN-ZObHatS-ya4",
+"driveId": "1kcXpQIJCGp0KOfMuzvGhwkxfo-qX5Zsb-L6x9Nr0tyY",
 "isReal": true,
 "university": "hvtc",
 "driveType": "file"
@@ -3130,7 +3130,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1JAjl6DLTMufxN060eccaG-hGD52_Lg2RfZBULIKxd_0",
+"driveId": "1nQv0aa-gekpSeqlBLUCfJyogU2hCyFzpo2M_TwK7kBw",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -3157,7 +3157,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Q3hy93-ee_Xl0U8-ps9DM5j0rXzhWFnoS_sVeEgtlK8",
+"driveId": "1tA35g-RvJdg18haZQg37IY9F7_zLBsTuQylB0NYn1eo",
 "isReal": true,
 "university": "ntu",
 "driveType": "file"
@@ -3184,7 +3184,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1S9gZTTJkTqFlkk3OB4yPoj6X67c7IDljGSiv71Az1wY",
+"driveId": "1uyCzZf64Re7fsUzBGVuredaHdjgzfQqkCyc7Bn0-eC4",
 "isReal": true,
 "university": "due",
 "driveType": "file"
@@ -3211,7 +3211,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1pnkhUYm3MZFtb0M9IfAYysi8833THEtmNJHdNPgHe3M",
+"driveId": "1iNCxp9MUQlZcsGCWPshA94PcwG8FhD7aciIBQDQIpJ0",
 "isReal": true,
 "university": "ufm",
 "driveType": "file"
@@ -3238,7 +3238,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1dADgZNq2hs34ATO6moaGuWVt_WsUAnuy",
+"driveId": "1-rF7ilboMmXnOvNihtyaNBzJjBUTfPLO",
 "isReal": true,
 "university": "hou",
 "driveType": "file"
@@ -3265,7 +3265,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1ECK_ze3uLnTpdNEqDWcuGOobzawt4M5EZyxOs8xEgec",
+"driveId": "1f4PfXfQtmxVTq_8WOHGXz0K9-HhApXQgO-Uuz9FxSZY",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -3292,7 +3292,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1lu0J87ztvAlNxIWBtSXVsPGcKujI329T",
+"driveId": "1KUUNY5zWfRYxyxEroyUdBYULgRhCTT9s",
 "driveType": "file",
 "isReal": true,
 "university": "ueh"
@@ -3319,7 +3319,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1UbLWRu0NrZNqs1djVyR5eEd5JIZKjB9fmE1dzYnqk6k",
+"driveId": "1-K0m6xZoSRVM1iBV1OfuZquEnqJXr87h5wQE7G_n_VQ",
 "isReal": true,
 "university": "hvtc",
 "driveType": "file"
@@ -3346,7 +3346,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1gFof2WP_q3dZ5HRsuM2uoretLbWNiAgo",
+"driveId": "1OEN8c0jDKgpW2UVyJsB8M6cI7XSwjjYm",
 "driveType": "file",
 "isReal": true,
 "university": "uet"
@@ -3373,7 +3373,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1R0hOSnXLTCzWzuYjGrqPstG7K0L_ni1MxrJC30Ln8Hw",
+"driveId": "1pSeXEHd5xmNNSjF78VAdY2hmwsd3yT7_rkzRDH73Qy4",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -3400,7 +3400,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1-X20DpiYh1uPmS0yObQUq1TXCJhJLubmCfqwG7uq49E",
+"driveId": "1DzLQgrl8n6HPHXJc6HDsGDNRjUcYzzvOcMGjCRXW45g",
 "isReal": true,
 "university": "hub",
 "driveType": "file"
@@ -3427,7 +3427,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1IBuN6WLJang1GmzmQ66Ib1qpRVkVvCwJ",
+"driveId": "1vxbGSGCNk8C17HCAXGz-FlGgIjCS8Xce",
 "isReal": true,
 "university": "hutech",
 "driveType": "file"
@@ -3454,7 +3454,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1JvopD9Da6Cr8mpeV5Tqe92A9pr1PMILReZCslxjE7a4",
+"driveId": "1uEGYhDVHFHiVbXc_LyAZGCZW8Q7W9BRsUy5y3IUSOb0",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -3481,7 +3481,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1KxqXMqe5piAkxNQi2hCJveyyrBeFWum52q6N7KWAsrU",
+"driveId": "1tvIIqSCV0xIzStP1WweKr7MIs3_oaPt7hTCczMv8Uu4",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -3508,7 +3508,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Ya9U4g8Q6lIJMBdt2aRvlkoBgkAsDtXqRHBlA4a4Stg",
+"driveId": "16_BWj5m3zBmvCiU9OLteBA6hhbzfW9trqE2qFMF3GpI",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -3535,7 +3535,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1yF5H4040G83iaMM6F9FrTjKVdXRqKztRpe2KTODuTT4",
+"driveId": "1hm3FWA7tlwMywjTMjrHArNHOEYhiP39b13exAV60Ugs",
 "isReal": true,
 "university": "ufm",
 "driveType": "file"
@@ -3562,7 +3562,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1TrXrxtYuQiQqnWcsYYCyXl5z6fLQq6fYbDVpDvpvn98",
+"driveId": "1MPh6mw--vZQTNTwqgBO7mpbVRbe_RDc84GNaYk82pAQ",
 "isReal": true,
 "university": "hoasen",
 "driveType": "file"
@@ -3589,7 +3589,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1AZRdPvsNbQxHBG_JrZRgyHNyeXLo3nQ9aqeuev7y7Ng",
+"driveId": "1F4n4gEItTUEbuXQGvoSb7bBbH0m1C8e_E8K7osD2OsE",
 "isReal": true,
 "university": "ptit",
 "driveType": "file"
@@ -3616,7 +3616,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1NICD2daWl95W4DWk-pxCSPil40NhcEZ3",
+"driveId": "1Ek9DGyWwOxMJu2ngVypQv2CPdL1_qkZ1",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -3643,7 +3643,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1HAiQE-_Z7doeDuz2hhX3chtF-V3nN0YvaOwzojolhng",
+"driveId": "1ZOxIbjFHUAh75l8rOoYXr7srR5SFmyzO52CnhOVxQpQ",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -3670,7 +3670,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1tH1ES4p880G2xVIgjea4_1tYfmZsWu7B",
+"driveId": "1axlmD5s_wB5VzRPmpnQfYdtH7dKTVKkQ",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -3697,7 +3697,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1APygT-uGirjJe1gEfshv14jqv-iimCw5",
+"driveId": "1bt-EbzFE6dMjXgcRczt3YJXMR8Gb_kXy",
 "isReal": true,
 "university": "hvtc",
 "driveType": "file"
@@ -3724,7 +3724,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1yVLlMP_ATSr2-s5kEofSQEI6DHRJojof8BQBf3TvQs0",
+"driveId": "1lMYKSoqU2qp9Oihditr2kTS9YQMGrrFqUwKSxFZGMJk",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -3751,7 +3751,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1mJOdcpoLNa9BvaMWU_Kqw4pdiRzohsUu5s6Awia8XTA",
+"driveId": "1mxGRwF3rB5K3zGCapizzkyuCih6at-CoxoD2Vl3wbtU",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -3778,7 +3778,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1KgqfoN_x2Xi2VsNDcLJResJyEbWk6BZP",
+"driveId": "1_MmX_rfnBl9-tN0PB5ITHW-LVrexbnMe",
 "isReal": true,
 "university": "ajc",
 "driveType": "file"
@@ -3805,7 +3805,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1htDrc_j5hqPEgfT331kGqxEOJu8cJCwZtHrOHIk2hHQ",
+"driveId": "1GG_-nwq9YxhpDpdtK9nPQUNEruVsXMrQE4xNwZGIMq8",
 "isReal": true,
 "university": "ajc",
 "driveType": "file"
@@ -3832,7 +3832,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1sbun9QcYdmejeNcHPfnd0zyveBW1Uy34FCKT11ybfTM",
+"driveId": "1sOVzn90Mtl3nuGYgpNo4jxbqjn_Pqe4gX9dzTVFCEao",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -3859,7 +3859,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1ac_roGLzqQ1j4N48DdBVrtVZHwuwPa6W6JI-K22U-8U",
+"driveId": "1oD8b_E816i1ncdk4EoV49lc_WWHUDzVMvCKzTiRne8A",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -3886,7 +3886,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1cqdQtcYvflngeztMypPdoRZcmL_OoJCZ",
+"driveId": "13JASULA2HQB4L6nZms_12nn0CUPg5H1G",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -3913,7 +3913,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1CgCgMpEfQLBdHFlS2nztn1a2Ql49KqOX_3P3NPXa3ZE",
+"driveId": "1YPmsqEfJGa7tubOQ-mFDaQE5djJ4bG5yvZroEBpRMCo",
 "isReal": true,
 "university": "ajc",
 "driveType": "file"
@@ -3940,7 +3940,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "19OWk923BOSgQuehLHirk8XG90D4TcD9uWme9fif_TmA",
+"driveId": "1Jb-X6UczP0YR46D7cAlfvMXtbB6fFYz1wc2cCVp-PGY",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -3967,7 +3967,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1UodPiqx5G7yY7Y1l9T_dsijPPvewCka4",
+"driveId": "183uGkSc4t2NGSG2SGFR1MbC0i5HXF5gv",
 "isReal": true,
 "university": "dpu",
 "driveType": "file"
@@ -3994,7 +3994,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1_8nCuK91NNeVa4wKVdET4cJ8AnmxnuTWOIYUZX4HL6Q",
+"driveId": "19FCKJmn8m6hqdQkEWH1N-Y3MSGqTIETyeFGGGiK15Yk",
 "isReal": true,
 "university": "hutech",
 "driveType": "file"
@@ -4021,7 +4021,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1EKjOqZbVK9hOf-7m6Umi-LGPDl2XIdlw",
+"driveId": "1cjJ-_pHgUsJOZuSpLkqSQ9KRikojJYWC",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -4048,7 +4048,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1jOmwc7Q1VgNGiQIkRa9RLJmPVJcdjitK",
+"driveId": "1SgHTMjTJfXHA6LHepO1vbHm3g6yP9_JS",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -4075,7 +4075,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1SgGW6ZWZFlkDeROamaCDTT-uGCcFwRE7oMeMcchoi5I",
+"driveId": "1a1UM4Og4mOh4dp6k-am4wklpn9xYGlgL_ZWo-DiLVZ4",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -4102,7 +4102,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "108PzYyA7aN4aq42k888qpsSOF2sEb52FHzfLsxgDqpY",
+"driveId": "14ziJ94P4rkGZX6MHczCktngXYPOGY4tjsvFC7gkrv2E",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -4129,7 +4129,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1NejAZEpR5GaE2BeII6GvXxYeem4hMcf2qz3EnwYCfZg",
+"driveId": "1BEQBtWUXCiCeeRTc48oXfkjnqCrqQ-TBQUNIEizJ2og",
 "isReal": true,
 "university": "ajc",
 "driveType": "file"
@@ -4156,7 +4156,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "17i5Vb2wmcsTQiacjw77MoSgXj9tc8tGX_sep1tUv_yY",
+"driveId": "1_OTRuha1RmCs-puAYHYIc-PGvSaEkIIaemvmKmowfa8",
 "isReal": true,
 "university": "hou",
 "driveType": "file"
@@ -4183,7 +4183,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1v3paa0pv4D2xgBU6EKH04ARyWZT9NdL4W6qxx9FN5cc",
+"driveId": "1gHoNIOBCUpf6P3tD4PRVdBgptK9ppy7F4Zcy2Tp1MDo",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -4210,7 +4210,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "14gxIhTVQu96ahjxK6xjgwJ0aLY1fTqLlePpo1twVznM",
+"driveId": "1Xa8pFaq13APJnlbkLJEKEUTr-T6ccyXGLIs68WEzR1s",
 "isReal": true,
 "university": "uet",
 "driveType": "file"
@@ -4237,7 +4237,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1lSBiJxcjVDg71qvb0HRHC7warA8RcA4X-q5ZBQjDGa4",
+"driveId": "1g6zzfudEl2nXBKO7S4DCIEfPkVeRBaccIkBSEbvbgHI",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -4264,7 +4264,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1MuYCqVnOW8rclhmYGRi5CT-juZKufEob",
+"driveId": "1x7HHKNNHQuGDPPa-7Y2d7w3h-_HiNQGH",
 "isReal": true,
 "university": "hutech",
 "driveType": "file"
@@ -4291,7 +4291,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "11lZFlndYyMiqnELIm86490sxRgXiBQtamXuFUPL5lgk",
+"driveId": "1iHI0AgIbn-N02RJ1k79b54YubpLLc0pMOflc30FZ_HA",
 "isReal": true,
 "university": "dhhp",
 "driveType": "file"
@@ -4318,7 +4318,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1o9lFpg1kKdLABC6NWFA3VKlZz-Xjp0kfnlIEM5ZdsCA",
+"driveId": "1Ud-bmG5sqxGcj45ILtjRwYF4_7paFnxIAVHoPAxDtAU",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -4345,7 +4345,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "160oP1DemOUnpRCM3lCvOiylXMoO5A1rtWH0YsUoBfVo",
+"driveId": "1JtcX5zLe6-LJkYUXecFOvoGgUrdYOIK_dbLqril5jYo",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -4372,7 +4372,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1WG3cLV9b6rQz1mlvRjwG-V8GZOJdTjRD",
+"driveId": "1rfEYMbmWsHSk4JnEbkOsKuEs0EfdgXAh",
 "isReal": true,
 "university": "hutech",
 "driveType": "file"
@@ -4399,7 +4399,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1hgXLK_i1ICkDfy0u2-qRH7qhN9nBmBBIXAowP1TrNzY",
+"driveId": "1ePaCy5xsFd1ewbEpbO3yxNkbWjL9gPqMl_jLUS5LWmg",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -4426,7 +4426,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1XNUZOeLxGGowviiXn9W2ik-oxDCH4WFpjdYmDuNUggM",
+"driveId": "1nG5LoNfte8VqK0YnzaaH2xk1X_DxDgqi5z70IwXdOO0",
 "isReal": true,
 "university": "ueb",
 "driveType": "file"
@@ -4453,7 +4453,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1aiZmw-nwI761oJ-4PYma9EB_VIzBpF8ScfRMK8DB_zY",
+"driveId": "1KYNVBUO9zvzBaxW60o8HPLBHFRErpaIf2fnaImqQZqo",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -4480,7 +4480,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "17NehGa-nQS6KeBAoFZCJQxJoacg4Hn1Y",
+"driveId": "1Jdli-zsTHK58NTYtOkqVcLlj0BHWWFMS",
 "isReal": true,
 "university": "hou",
 "driveType": "file"
@@ -4507,7 +4507,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1WnmVRejfg-nzkOUVq0g93wv5w-G8w_AU",
+"driveId": "1cvveq59EP6vHy-98KqlWdRrBGZGMgTJ3",
 "isReal": true,
 "university": "vanlang",
 "driveType": "file"
@@ -4534,7 +4534,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "10l8OQU4mi896g4KRuewgwmYFqKNV6T8CvoTEWkbd8w0",
+"driveId": "1sxp6GMor8S5I0eqHp7kLHeKlzjfVIhtSufSSLlUD3O4",
 "isReal": true,
 "university": "duytan",
 "driveType": "file"
@@ -4561,7 +4561,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1MUY__awERzlneH8FkD6uM3cAmmpeoqhc",
+"driveId": "11C_lGEaDOo1jGWEkUZGoLeDiknMbOwy1",
 "isReal": true,
 "university": "ptit",
 "driveType": "file"
@@ -4588,7 +4588,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1a70zYj4R5STACuZxA0FuiovZaE7coM4G",
+"driveId": "11VeXlicW4chJtiCbxoytnux7IPvdjBcg",
 "isReal": true,
 "university": "eaut",
 "driveType": "file"
@@ -4615,7 +4615,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1e8PzaRzszkqfbaQ7U8p6cIO1KGb7BQml",
+"driveId": "1G0M_LN-xPFY8rnd_UuQg58-WbObF_icA",
 "isReal": true,
 "university": "eaut",
 "driveType": "folder"
@@ -4642,7 +4642,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Kz6STknoOlArS58WPIjj0tWNFDjhZXIRFQwZ-PngBTE",
+"driveId": "14mLx7U0Gl4eAJ9eY2MfhtaKl3x_fqchK9baXSf2WWCI",
 "isReal": true,
 "university": "tcnh_hn",
 "driveType": "file"
@@ -4669,7 +4669,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "15LNfKZZBD-y3U-AZcJN1P4XYWtRZA5me8-lXMQrDkts",
+"driveId": "1xNi8qceYj0yA8ZSVAFfOjv4vxpOY75P_T45wtPnO45U",
 "isReal": true,
 "university": "hongduc",
 "driveType": "file"
@@ -4696,7 +4696,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1BAVK1KG3zbbyF2Qc9GvLjjMG8OuudFBp",
+"driveId": "1hu4YMzx4DJZHTsKSSMNr7Po3dOcz7B-S",
 "isReal": true,
 "university": "hutech",
 "driveType": "file"
@@ -4723,7 +4723,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1EOfuGdYKd2Iqfu0PL548Zm7EnxyaG4Gx",
+"driveId": "1eqHzihTBbdJ2HIW5Ji23KBxY2b3rplgo",
 "isReal": true,
 "university": "haui",
 "driveType": "file"
@@ -4750,7 +4750,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "196pZGRLR0Au6-HFZnvFWTBnOTfcRRy-H",
+"driveId": "1ZyJHIY6G6-FyveY8KWGS2iO-GUT48fLW",
 "isReal": true,
 "university": "dut",
 "driveType": "file"
@@ -4777,7 +4777,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "11fml_QysKNtn1z6IEz48-jAu9ZsUgAaF",
+"driveId": "1Iu9HM7KigysLp8CgxNB2wWufDwetY3Fq",
 "isReal": true,
 "university": "dnu",
 "driveType": "file"
@@ -4804,7 +4804,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Skewbvod8vZvb92K1e6IZ5Yeklr0GZ0r",
+"driveId": "1mssHktpiIeS3LH5dP75HC__SCuYK-Ij9",
 "isReal": true,
 "university": "hou",
 "driveType": "file"
@@ -4831,7 +4831,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1mhnVhgwfVynDwdb93JJgNOIxvX5aXSp9LDlEkmHDhWI",
+"driveId": "16Kng0FJmbmLpcMtvXbiafQf_kBK1aF3Cpgf93wVciTw",
 "isReal": true,
 "university": "thanglong",
 "driveType": "file"
@@ -4858,7 +4858,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1kFOey5txfVbPguhkvUQYKQDFBMo2ioqq",
+"driveId": "1yPf1czEyaZM4YkTI-JFJHGRpWIZ8yxwJ",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -4885,7 +4885,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1iqJX9GKSG6mZtC54RmD1eHB4r_adMhni",
+"driveId": "1qXIuHQ3Y0-mX_5uhepud0udywq6rVdr9",
 "isReal": true,
 "university": "uet",
 "driveType": "file"
@@ -4912,7 +4912,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1TYKSUyPM1heBY7SE8x94hLFfh1H9cx3StkuVKI1buOo",
+"driveId": "1sS0EHCiT7Sp6tF0QX56432eHP0iWZE4kbyIPIk_suW0",
 "driveType": "file",
 "isReal": true,
 "university": "ueh"
@@ -4939,7 +4939,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "16WcEG26SgDPgydYnS9UM4Pa-iWlfb4IuNR-sc6LoEQU",
+"driveId": "1bysFMCLrH_LIW1cInuEw-nlNjjj_lgivP1GG2KsQQ_Q",
 "isReal": true,
 "university": "hongduc",
 "driveType": "file"
@@ -4966,7 +4966,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1UKTSahq-QzW0XDVgkZF4rfjyWJd3R4BF",
+"driveId": "1Ccrwlb_0J8pn9roSwRrF1_WrLhb0Hl3J",
 "isReal": true,
 "university": "ueb",
 "driveType": "file"
@@ -4993,7 +4993,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1RxBs0diZ6QC87FAQHBSqYd7H5ds_eNWuiRqUcjjvC5U",
+"driveId": "1wCtxaAvNw0pPLWTFcsYnRptGlUOQ80YFgW4JuQ5uJPQ",
 "isReal": true,
 "university": "ussh",
 "driveType": "file"
@@ -5020,7 +5020,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "12RpY4tT8Gk1R_HRAleScmzdchcOWGsrbTsZRDntiAAM",
+"driveId": "124GOB_Fp_FKnhwerGKvgLsR-EICXhdExV4nAgN0WhLI",
 "isReal": true,
 "university": "vanlang",
 "driveType": "file"
@@ -5047,7 +5047,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1h5AYxPQTfKxV-fiL7mWvvfvBl1AWmUGlMdybHpTgyvY",
+"driveId": "1WNa-wHOMifX6b-sEnToyW4gXoGakYs_-ZzjCX-j55FQ",
 "driveType": "file",
 "isReal": true,
 "university": "apd"
@@ -5074,7 +5074,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1DUPK6tFHbQFkimEMFkYmbGAdy4fYpQyN",
+"driveId": "1xRC3DC028BIA2aBTazBiXNGIp_HPZR2y",
 "driveType": "file",
 "isReal": true,
 "university": "ulsa"
@@ -5101,7 +5101,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1mspH30vrH5KZ7EnUHZI8Tn99RZN6KFU3",
+"driveId": "1cBpH2LKeKNk5tN96mW3eL0p1fxZzXw-s",
 "driveType": "file",
 "isReal": true,
 "university": "apd"
@@ -5128,7 +5128,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1Y7eAa5UE6V_HdE4qqkBzZhJLKvbc7Pof",
+"driveId": "1kq_hHmahEcDYMqKTC22aSzSOnMlry3zo",
 "isReal": true,
 "university": "ussh",
 "driveType": "file"
@@ -5155,7 +5155,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "11ocKhs37Zr1vz6_4Trd3kD0qCejLIXnY7Y6aKelAiGY",
+"driveId": "1U5b7Dsnhf1ds7LI84Lp4ckxa-CV5kBgt-F5hCwf7bPE",
 "isReal": true,
 "university": "ptit",
 "driveType": "file"
@@ -5182,7 +5182,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1E1sehR0z_UbuZh4f3Z36xYszMv3R19wKC_-APYOQoRc",
+"driveId": "1eI3zXoaehEbkaOUu9q37p4SY0RHmUiKoZE_MAiENQ9Y",
 "isReal": true,
 "university": "hoasen",
 "driveType": "file"
@@ -5209,7 +5209,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1gZYsfcpgu0bQL01fEFn5zNtlihSRA8S2Roq-B87I4FQ",
+"driveId": "11N01Z5JJ_4jqJFj1ThG1l8abHH93uuXKVVjf6NciutM",
 "isReal": true,
 "university": "ueh",
 "driveType": "file"
@@ -5236,7 +5236,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1zd1TtetnL8qGrqGZeFAfCA0NX0BVJko5",
+"driveId": "1dBULuWZfvCdd2wh11TlX-HBrYvqrYdPE",
 "isReal": true,
 "university": "ntu",
 "driveType": "file"
@@ -5263,7 +5263,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1lnZ7guJIkGBPzpzpMvNn8xJuREvcj8qahfs5jLOxI44",
+"driveId": "1fm1qH8oepRUrgkpGn_5Z_COwwdEVczsagFFZgsTXhq8",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -5290,7 +5290,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1NliuFYynPHqhCYF2x2iaTeHU6Ak4qtMYUhum-nyb_10",
+"driveId": "1HLQksWFSOqRX4W3QsvuUJoKRma4HmaWrG062FqZBFeA",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -5317,7 +5317,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1PZuU5vOQ9xbJg6-46DRvbkPb_6U0zyHjNa9g6L2aQq8",
+"driveId": "1baWJbTskyf7JEdl30YsBv4yEWN4sP7YoRoWDctv46II",
 "isReal": true,
 "university": "hul",
 "driveType": "file"
@@ -5344,7 +5344,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1lwKYcHhC2siEnkWqtY3RS1UT7aos4iP1",
+"driveId": "1rce4lciH2dtRJ5e7eeMfpSVPmdKb0azO",
 "isReal": true,
 "university": "bkhn",
 "driveType": "file"
@@ -5371,7 +5371,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "18FerNLmxMS2iZWCp7O4s5lNg3p331Dbx",
+"driveId": "1HmpOek9ju5qDjcS6OjGgNxXFsrPu45HS",
 "isReal": true,
 "university": "hcmuc",
 "driveType": "file"
@@ -5398,7 +5398,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1o4yJ__BzZh1iGNUeNH1wJRx89RLwbsZd",
+"driveId": "1ljtv1KZ3SD0AZ37GW4jc4dbJrkObQpm8",
 "isReal": true,
 "university": "dhhp",
 "driveType": "file"
@@ -5425,7 +5425,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1XUpB3uKjiU0016r5LFgSly0TKqHea8P4rk7IGGvYs7c",
+"driveId": "1P6bmocSyyv3_OMcjJ1tXvkOfouKCfyRATaSNrbmD29U",
 "isReal": true,
 "university": "hutech",
 "driveType": "file"
@@ -5452,7 +5452,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1JM0sn_T96aGYtW1JAKIJJihU_EYyJS7gB1caWB3hibs",
+"driveId": "1ztDUFVSfCG4whBU4YJjemnXBBU38gygrr1uZVW40nTE",
 "isReal": true,
 "university": "duytan",
 "driveType": "file"
@@ -5479,7 +5479,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1oDpHgJdQyEW7Yz7X80Cz4e-5MPJN2CT1AHw-ugp8-w4",
+"driveId": "16kJ1kuOLL_Z1SGe6RXNvT_7NLaSG2ranIQhPWBCZgZs",
 "isReal": true,
 "university": "hlu",
 "driveType": "file"
@@ -5506,7 +5506,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1aXxh31MDmYT5Gq_WsfkBRFvYoa77XUTa6CjtAMya4LI",
+"driveId": "1TUoKo1xdHG156NMiVjszH8Y7S4OuNddPBcRRzCNWZAs",
 "isReal": true,
 "university": "duytan",
 "driveType": "file"
@@ -5533,7 +5533,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1em2P10gFn99axG2RDXSd4sRnatOnLPGa",
+"driveId": "1UJo1m5AVOQkP82V0YMujIEYi-yfAnfxH",
 "isReal": true,
 "university": "ba",
 "driveType": "file"
@@ -5560,7 +5560,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1yojSdTxQz06XxI7lJluLMTL89TQVDYpxBiuorLL4bXU",
+"driveId": "17eyOTFi_IY2UNtJOQPmnIy_yQG77NIx0Io6MXQcpdx8",
 "isReal": true,
 "university": "dhhp",
 "driveType": "file"
@@ -5587,7 +5587,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1drKzmzXIl4wysNxlcSmDvzK0YqYk21q-GdL_q7DU30c",
+"driveId": "1QvNnowFAiFr-c7hw_M0Vs0iyYRtMUXVggNAhYjaWZxo",
 "isReal": true,
 "university": "ajc",
 "driveType": "file"
@@ -5614,7 +5614,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "138r7XgH_1O4LckOc0PSU8UR_NXR9E0JIcXDWtdL8EJc",
+"driveId": "1Il7_rt7HIRmpEuIbGILhlAVVn6LOtvNfN-J_CQNmnDY",
 "isReal": true,
 "university": "ba",
 "driveType": "file"
@@ -5641,7 +5641,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1yVvph1QLjtqlJqdfRvJzFM_QJZLlmWbvFd-bWSfXTVU",
+"driveId": "1daOlqUkkmrjE9hxko9e6y4iBZUjl5fsFEDUVsbXxa8Y",
 "isReal": true,
 "university": "hlu",
 "driveType": "file"
@@ -5668,7 +5668,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1bhnlMYQYwmXC6ULxMgUlcZKGATj1z8QQA_HDcwT6jV8",
+"driveId": "1Z_PnPdJiiwbOe-MCLGbtJCAqxe9ou29EEzS54htZMkc",
 "isReal": true,
 "university": "dav",
 "driveType": "file"
@@ -5695,7 +5695,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1txXoPiSBS_KEtOd7ee3-ExwLnMkVWV5q",
+"driveId": "1hwQ42AdrCfe8CC0S12YhWwEFK3oUpcYH",
 "driveType": "file",
 "isReal": true,
 "university": "ftu"
@@ -5722,7 +5722,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "10DB3xofjaREmD8d6FoHL0W0Zp0xO_jKC",
+"driveId": "1CZXCz9nOd0WuaP3n8wZ-UOs1WK4WAkaC",
 "isReal": true,
 "university": "huc",
 "driveType": "file"
@@ -5749,7 +5749,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1aCw4gz7zWEvMnupNzmlL4KlrvYHXu9eR",
+"driveId": "1Uw2XSd4XqI10B349BL_KYjO7b7OmImTC",
 "isReal": true,
 "university": "dav",
 "driveType": "file"
@@ -5776,7 +5776,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1VtGfxHQ4AZNPPg0y1jCfMgKGZzKDrCBR",
+"driveId": "1ysxRZe05fqjXv-pHRHJAb1egXdV-k90W",
 "isReal": true,
 "university": "ftu",
 "driveType": "file"
@@ -5803,7 +5803,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "178iP_w6WjIJEgymiHNBk9u9NEGeue3chcn9T5qcbyLI",
+"driveId": "1nFjIXg2DCeewkeXkUzrSTBg0VkSHy1hJFy-YAmxFpyc",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -5830,7 +5830,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1M5lAfOBhWWu2RLdnNOMyM4w5A369Dd9-XDONl1KkpRI",
+"driveId": "1TFUfoKief1JNNVRfDOtMZWrHJrPO3ay4sd7m9Xk2Tww",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -5857,7 +5857,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1wCxpDxThg2er-SF9iS4N-a1QfEdrImnB",
+"driveId": "1enKNptkBXaUHvOQBNGXtKtFSMl1U7tOE",
 "isReal": true,
 "university": "tmu",
 "driveType": "file"
@@ -5884,7 +5884,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1meSF-lSFYXnLIjxM7HsxLHwlo1wvNgbu",
+"driveId": "17B7iC4LEegLSuM3Dsw_03uKljIrJNDcI",
 "driveType": "file",
 "isReal": true,
 "university": "neu"
@@ -5911,7 +5911,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "17EEP23smOowL9UK65hhY5LyjKTkkBbZ2",
+"driveId": "17tOE7ub_97PDMjX3U42fH8LqLeH3qQA-",
 "isReal": true,
 "university": "neu",
 "driveType": "file"
@@ -5938,7 +5938,7 @@ const REAL_DOCUMENTS_DATABASE = [
 "Chuẩn Bản Quyền"
 ],
 "description": "Đầy đủ kiến thức trọng tâm, sơ đồ tóm tắt, dạng bài tập điển hình và hướng dẫn giải bám sát ngân hàng đề thi.",
-"driveId": "1G8f-OozyDFB6sp7fhqG0yCJCtj57fwVTg8jr_ETEcBo",
+"driveId": "1nFJwmjm0Tup_6v-yVvOpw0-mDZ7ZCAf3niUj31wwFUQ",
 "isReal": true,
 "university": "ussh",
 "driveType": "file"
@@ -10597,1346 +10597,449 @@ const COURSE_CATEGORIES = [
 "label": "V-ACT · BCA · QDA · VSAT"
 }
 ];
-const COURSES_DATABASE = [{"id": "ALL-COURSES-399K", "code": "DVFULL399", "instructor": "TẤT CẢ TRUNG TÂM & THẦY CÔ (EMPIRE · MAPSTUDY · HOCMAI · TENS · YANGDEXIN · GITIHO)", "title": "Trọn Bộ Full 90+ Khóa Học Đa Môn (Toán · Văn · Anh · Trung · Lý · Hóa · Sinh · Sử · Địa · Tin MOS · Đại Học · Nghệ Thuật · ĐGNL)", "category": "all", "subCategory": "lop12_2k9", "categories": ["all", "ngoai_ngu_khxh", "khtn_toan_ly_hoa_sinh", "tinhoc_daihoc", "nghe_thuat", "lop12_2k9", "lop11_2k10", "dgnl_hsa", "dgtd_tsa", "dgnl_vact_bca"], "groupName": "Toàn bộ hệ thống 90+ khóa học", "tier": "full_399k", "tierLabel": "Gói Full Toàn Hệ Thống (399k)", "parentCourseId": "ALL-COURSES-399K", "parentSubjectId": "ALL-COURSES-399K", "lessons": 1850, "duration": "Trọn bộ 90+ khóa học · Video + PDF", "level": "Toàn bộ hệ thống 90+ khóa học", "rating": 5.0, "students": "4.8k+", "price": 399000, "originalPrice": 2500000, "badge": "VIP Full 399K · Tặng App", "driveFolderId": "1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52", "extraFolderIds": ["1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"], "driveUrl": "https://drive.google.com/drive/folders/1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52", "defaultCover": "", "highlights": ["Mở khóa TOÀN BỘ 90+ khóa học tất cả các môn: Toán, Văn, Anh, Tiếng Trung, Lý, Hóa, Sinh, Sử, Địa, Tin MOS, Đại Học, Nghệ Thuật, HSA, TSA, V-ACT, BCA, QDA, VSAT", "Tặng kèm App Điệp Viên Study Pro tích hợp AI trợ giảng, kích hoạt sẵn bằng chính Email đăng ký (Khóa bảo mật cố định 1 thiết bị)", "Cấp quyền truy cập trực tiếp vào Kho Tổng Google Drive & tự động cập nhật bài giảng mới nhất"], "isPackageOnly": true, "subTier": "full_399k", "tierShortBadge": "TRỌN BỘ FULL APP 399K", "summary": "Trọn Bộ Full 90+ Khóa Học Đa Môn (Toán · Văn · Anh · Trung · Lý · Hóa · Sinh · Sử · Địa · Tin MOS · Đại Học · Nghệ Thuật · ĐGNL)", "description": "Trọn Bộ Full 90+ Khóa Học Đa Môn (Toán · Văn · Anh · Trung · Lý · Hóa · Sinh · Sử · Địa · Tin MOS · Đại Học · Nghệ Thuật · ĐGNL) do TẤT CẢ TRUNG TÂM & THẦY CÔ (EMPIRE · MAPSTUDY · HOCMAI · TENS · YANGDEXIN · GITIHO) giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/sinh_thay_phan_khac_nghe.jpg"}, {"id": "COURSE-K9-LOP12", "code": "DVK9L12", "instructor": "TENSCHOOL · MAPSTUDY · HOCMAI · CÔ MAI PHƯƠNG · YANGDEXIN · EMPIRE", "title": "Combo Khóa Học THPT Lớp 12 Cho 2K9 (Toán · Văn · Anh · Tiếng Trung · Lý · Hóa · Sinh · Sử · Địa · TopUni 12)", "category": "lop12_2k9", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["lop12_2k9", "khtn_toan_ly_hoa_sinh", "ngoai_ngu_khxh"], "groupName": "Khối Lớp 12 (2K9)", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "lessons": 680, "duration": "Trọn bộ các môn Lớp 12 · Video + PDF", "level": "Khối Lớp 12 (2K9)", "rating": 5.0, "students": "3.2k+", "price": 199000, "originalPrice": 990000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1Hx3C11lkdM5SKsavO2pqBdH0rEnk2wZo", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ", "1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc"], "driveUrl": "https://drive.google.com/drive/folders/1Hx3C11lkdM5SKsavO2pqBdH0rEnk2wZo", "defaultCover": "", "highlights": ["Trọn bộ các môn Lớp 12 (2K9): Toán, Ngữ Văn, Tiếng Anh, Tiếng Trung, Vật Lý, Hóa Học, Sinh Học, Lịch Sử, Địa Lý & TopUni 12", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Sử dụng cố định trên 1 thiết bị)", "Đầy đủ video bài giảng, tài liệu PDF, đề thi thử và lời giải chi tiết lộ trình 2027"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Khóa Học THPT Lớp 12 Cho 2K9 (Toán · Văn · Anh · Tiếng Trung · Lý · Hóa · Sinh · Sử · Địa · TopUni 12)", "description": "Combo Khóa Học THPT Lớp 12 Cho 2K9 (Toán · Văn · Anh · Tiếng Trung · Lý · Hóa · Sinh · Sử · Địa · TopUni 12) do TENSCHOOL · MAPSTUDY · HOCMAI · CÔ MAI PHƯƠNG · YANGDEXIN · EMPIRE giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-NGOAINGU-TRUNG-ANH", "code": "DVNN199", "instructor": "YANGDEXIN · HANKA · CÔ VŨ MAI PHƯƠNG · HOCMAI · EMPIRE", "title": "Combo Ngoại Ngữ & Xã Hội: Tiếng Trung (Hán Ngữ 1–6 · HSK · Khối D04) · Tiếng Anh · Ngữ Văn · Lịch Sử · Địa Lý", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "groupName": "Khối Ngoại Ngữ & KHXH", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9", "lessons": 420, "duration": "Trọn bộ Anh · Trung · Văn · Sử · Địa", "level": "Khối Ngoại Ngữ & KHXH", "rating": 5.0, "students": "2.4k+", "price": 199000, "originalPrice": 890000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6", "extraFolderIds": ["1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR", "1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe", "1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3", "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm"], "driveUrl": "https://drive.google.com/drive/folders/1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6", "defaultCover": "", "highlights": ["Trọn bộ Tiếng Trung Yangdexin (6 Quyển Hán Ngữ, Bộ đề HSK, Ôn thi ĐH Khối D04), Tiếng Anh Cô Mai Phương, Ngữ Văn, Lịch Sử & Địa Lý", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Sử dụng cố định trên 1 thiết bị)", "Cấp quyền Google Drive trực tiếp đầy đủ slide, video bài giảng, giáo trình và bộ đề luyện thi"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Ngoại Ngữ & Xã Hội: Tiếng Trung (Hán Ngữ 1–6 · HSK · Khối D04) · Tiếng Anh · Ngữ Văn · Lịch Sử · Địa Lý", "description": "Combo Ngoại Ngữ & Xã Hội: Tiếng Trung (Hán Ngữ 1–6 · HSK · Khối D04) · Tiếng Anh · Ngữ Văn · Lịch Sử · Địa Lý do YANGDEXIN · HANKA · CÔ VŨ MAI PHƯƠNG · HOCMAI · EMPIRE giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-THVP-MOS-199K", "code": "DVMOS199", "instructor": "GITIHO · NIMBUS · LAKITA · HỌC VIỆN TIN HỌC", "title": "Combo 30 Khóa Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (Word · Excel · PowerPoint · Access · VBA · Google Tools)", "category": "tinhoc_daihoc", "subCategory": "lop11_2k10", "categories": ["tinhoc_daihoc", "lop11_2k10"], "groupName": "Tin Học Văn Phòng & MOS", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "lessons": 350, "duration": "Trọn bộ 30 khóa Tin Văn Phòng & MOS", "level": "Sinh viên & Người đi làm · Chứng chỉ MOS", "rating": 5.0, "students": "2.7k+", "price": 199000, "originalPrice": 890000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm", "extraFolderIds": ["1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq", "1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK"], "driveUrl": "https://drive.google.com/drive/folders/1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm", "defaultCover": "", "highlights": ["Mở khóa toàn bộ 30 khóa Tin Học Văn Phòng: MOS Word 2016/2019, MOS Excel, Tuyệt Đỉnh Excel, VBA, PowerPoint, Access & Google Workspace", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Kèm bộ file thực hành, Mock Test thi thử MOS và giáo trình PDF từ cơ bản đến nâng cao"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo 30 Khóa Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (Word · Excel · PowerPoint · Access · VBA · Google Tools)", "description": "Combo 30 Khóa Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (Word · Excel · PowerPoint · Access · VBA · Google Tools) do GITIHO · NIMBUS · LAKITA · HỌC VIỆN TIN HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-DAIHOC-HOC-THUAT", "code": "DVDH199", "instructor": "ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN ĐẠI HỌC & NCKH", "title": "Combo Đại Học Điểm A+: Kinh Tế Lượng (EViews, Stata, SPSS) · Triết Học Mác-Lênin · Master BTL & NCKH APA 7 · SQL & Excel", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Khối Đại Học & Nghiên Cứu Khoa Học", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL", "lessons": 180, "duration": "Trọn bộ Đại học & NCKH · Video + File mẫu", "level": "Sinh viên Đại học toàn quốc", "rating": 5.0, "students": "2.2k+", "price": 199000, "originalPrice": 790000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N", "extraFolderIds": ["1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok", "1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u", "1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx", "1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK"], "driveUrl": "https://drive.google.com/drive/folders/1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N", "defaultCover": "", "highlights": ["Trọn bộ các môn đại cương & chuyên ngành Đại học: Kinh Tế Lượng (EViews/Stata/SPSS), Triết Học Mác-Lênin, Viết BTL & NCKH APA 7, SQL & Excel", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Cung cấp bộ giáo trình thực hành, sơ đồ tư duy và khung dàn ý chuẩn học thuật"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Đại Học Điểm A+: Kinh Tế Lượng (EViews, Stata, SPSS) · Triết Học Mác-Lênin · Master BTL & NCKH APA 7 · SQL & Excel", "description": "Combo Đại Học Điểm A+: Kinh Tế Lượng (EViews, Stata, SPSS) · Triết Học Mác-Lênin · Master BTL & NCKH APA 7 · SQL & Excel do ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN ĐẠI HỌC & NCKH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/tin_hoc_mos_office.jpg"}, {"id": "COURSE-NGHETHUAT-199K", "code": "DVART199", "instructor": "HAKETU · THIỆN ORGAN · HIỂN RÂU · PRODUCER & DJ STUDIO", "title": "Combo 31 Khóa Nghệ Thuật, Âm Nhạc & Vũ Đạo (Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo Trúc · DJ · Shuffle Dance)", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Khối Nghệ Thuật & Âm Nhạc (31 Khóa)", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "lessons": 460, "duration": "Trọn bộ 31 khóa Nghệ Thuật · Video HD", "level": "Mọi lứa tuổi · Cơ bản đến Nâng cao", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 890000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B", "defaultCover": "", "highlights": ["Mở khóa toàn bộ 31 khóa học Nghệ Thuật & Âm Nhạc: Guitar Haketu, Fingerstyle, Piano, Organ, Thanh Nhạc, Ukulele, Sáo Trúc, Harmonica, DJ, Beatbox, Cubase & Shuffle Dance", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Bài giảng video thực hành từng bước kèm tab nhạc, sheet nhạc và beat luyện tập"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo 31 Khóa Nghệ Thuật, Âm Nhạc & Vũ Đạo (Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo Trúc · DJ · Shuffle Dance)", "description": "Combo 31 Khóa Nghệ Thuật, Âm Nhạc & Vũ Đạo (Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo Trúc · DJ · Shuffle Dance) do HAKETU · THIỆN ORGAN · HIỂN RÂU · PRODUCER & DJ STUDIO giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/sinh_thay_phan_khac_nghe.jpg"}, {"id": "COURSE-K10-LOP11", "code": "DVK10L11", "instructor": "TENSCHOOL · TUYENSINH247 · HOCMAI", "title": "Combo Khóa Học THPT Lớp 11 Cho 2K10 (Toán · Lý · Hóa · Tin Học KHMT & Ứng Dụng)", "category": "lop11_2k10", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["lop11_2k10", "khtn_toan_ly_hoa_sinh", "tinhoc_daihoc"], "groupName": "Khối Lớp 11 (2K10)", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10", "lessons": 240, "duration": "10 Khóa Học Lớp 11 · Video + PDF", "level": "Khối Lớp 11 (2K10)", "rating": 4.9, "students": "1.9k+", "price": 199000, "originalPrice": 790000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1DQH48jr8YozUnJ3STTlyV-qFzLCAi4G5", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1DQH48jr8YozUnJ3STTlyV-qFzLCAi4G5", "defaultCover": "", "highlights": ["Trọn bộ 10 khóa học Lớp 11 (2K10): Toán 11, Vật Lý 11, Hóa Học 11, Tin Học 11 (Ứng dụng, KHMT & Tin văn phòng)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Bám sát chương trình GDPT mới, định hướng sớm ĐGNL & ĐGTD 2027"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Khóa Học THPT Lớp 11 Cho 2K10 (Toán · Lý · Hóa · Tin Học KHMT & Ứng Dụng)", "description": "Combo Khóa Học THPT Lớp 11 Cho 2K10 (Toán · Lý · Hóa · Tin Học KHMT & Ứng Dụng) do TENSCHOOL · TUYENSINH247 · HOCMAI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-DGNL-HSA", "code": "DVHSA199", "instructor": "EMPIRE TEAM · MAPSTUDY · HOCMAI · HSA EDU · TOPUNI", "title": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội 2027 (Định Lượng · Định Tính Ngữ Văn · Khoa Học · Tiếng Anh)", "category": "dgnl_hsa", "subCategory": "lop12_2k9", "categories": ["dgnl_hsa", "lop12_2k9"], "groupName": "Kỳ thi ĐGNL HSA", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-ITEM-35", "lessons": 210, "duration": "5 Lộ Trình HSA Toàn Diện · Video + PDF", "level": "Kỳ thi ĐGNL HSA", "rating": 5.0, "students": "2.9k+", "price": 199000, "originalPrice": 890000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1_tPOqo2Nve07up5SgHpIyhjo6lwoVa9Y", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ", "1JFOWG4aMVK7913LKsin2FzGwy0WVZcj2"], "driveUrl": "https://drive.google.com/drive/folders/1_tPOqo2Nve07up5SgHpIyhjo6lwoVa9Y", "defaultCover": "", "highlights": ["Bao gồm toàn bộ 5 lộ trình HSA đỉnh nhất: HSA Empire XPS, HSA Mapstudy, HSA Hocmai Giải pháp toàn diện, HSA Edu Tinh Hoa TH01 & TopUni", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Đầy đủ 3 phần: Tư duy Định lượng (Toán), Tư duy Định tính (Ngữ Văn) & Khoa học (Lý, Hóa, Sinh, Sử, Địa) / Tiếng Anh"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội 2027 (Định Lượng · Định Tính Ngữ Văn · Khoa Học · Tiếng Anh)", "description": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội 2027 (Định Lượng · Định Tính Ngữ Văn · Khoa Học · Tiếng Anh) do EMPIRE TEAM · MAPSTUDY · HOCMAI · HSA EDU · TOPUNI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-DGTD-TSA", "code": "DVTSA199", "instructor": "EMPIRE TEAM · TSA BMC · HOCMAI · TUYENSINH247 · TDMU", "title": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027 (Tư Duy Toán · Đọc Hiểu · Khoa Học)", "category": "dgtd_tsa", "subCategory": "lop12_2k9", "categories": ["dgtd_tsa", "lop12_2k9"], "groupName": "Kỳ thi ĐGTD TSA", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-DGTD-TSA", "parentSubjectId": "COURSE-ITEM-40", "lessons": 195, "duration": "5 Lộ Trình TSA Bách Khoa · Video + PDF", "level": "Kỳ thi ĐGTD TSA", "rating": 5.0, "students": "2.4k+", "price": 199000, "originalPrice": 890000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4", "extraFolderIds": ["1KoWxcHRb-OdLFrqwt8jbfD_z2Fx1VlnF"], "driveUrl": "https://drive.google.com/drive/folders/1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4", "defaultCover": "", "highlights": ["Bao gồm toàn bộ 5 lộ trình ĐGTD TSA ĐH Bách Khoa Hà Nội: Empire 2K9, BMC 2K9, Hocmai TSA, Tuyensinh247 Full SUN & Bổ trợ TDMU", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Làm chủ Tư duy Toán học, Tư duy Đọc hiểu và Tư duy Khoa học / Giải quyết vấn đề"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027 (Tư Duy Toán · Đọc Hiểu · Khoa Học)", "description": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027 (Tư Duy Toán · Đọc Hiểu · Khoa Học) do EMPIRE TEAM · TSA BMC · HOCMAI · TUYENSINH247 · TDMU giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-DGNL-VACT", "code": "DVVACT199", "instructor": "EMPIRE TEAM · MAPSTUDY · HOCMAI", "title": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM 2027 (Ngôn Ngữ · Toán Học · Tư Duy Khoa Học)", "category": "dgnl_vact_bca", "subCategory": "lop12_2k9", "categories": ["dgnl_vact_bca", "lop12_2k9"], "groupName": "Kỳ thi ĐGNL V-ACT", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-DGNL-VACT", "parentSubjectId": "COURSE-ITEM-45", "lessons": 160, "duration": "Trọn bộ V-ACT & ĐGNL · Video + PDF", "level": "Kỳ thi ĐGNL V-ACT", "rating": 4.9, "students": "2.1k+", "price": 199000, "originalPrice": 790000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA", "extraFolderIds": ["1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2", "12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6", "1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM"], "driveUrl": "https://drive.google.com/drive/folders/1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA", "defaultCover": "", "highlights": ["Trọn bộ 3 lộ trình luyện thi ĐGNL ĐHQG TP.HCM (V-ACT 2027): Empire Team XPS, Mapstudy XPS & Hocmai Giải pháp toàn diện", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Cấp quyền trực tiếp kho đề thi thử & bài giảng V-ACT cập nhật mới nhất"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM 2027 (Ngôn Ngữ · Toán Học · Tư Duy Khoa Học)", "description": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM 2027 (Ngôn Ngữ · Toán Học · Tư Duy Khoa Học) do EMPIRE TEAM · MAPSTUDY · HOCMAI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-BCA-QDA-VSAT", "code": "DVBCA199", "instructor": "EMPIRE TEAM — KHỐI CÔNG AN · QUÂN ĐỘI · VSAT 8 MÔN", "title": "Combo Luyện Thi ĐGNL Bộ Công An (BCA) · Quân Đội (QDA) · VSAT 8 Môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa)", "category": "dgnl_vact_bca", "subCategory": "lop12_2k9", "categories": ["dgnl_vact_bca", "ngoai_ngu_khxh", "khtn_toan_ly_hoa_sinh"], "groupName": "Kỳ thi BCA · QDA · VSAT", "tier": "course_199k", "tierLabel": "Gói Theo Khóa (199k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-ITEM-48", "lessons": 220, "duration": "Trọn bộ BCA · QDA · VSAT 8 Môn", "level": "Kỳ thi BCA · QDA · VSAT", "rating": 5.0, "students": "1.8k+", "price": 199000, "originalPrice": 790000, "badge": "Trọn Khóa 199K · Tặng App", "driveFolderId": "1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA", "extraFolderIds": ["1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK", "1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI", "1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc"], "driveUrl": "https://drive.google.com/drive/folders/1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA", "defaultCover": "", "highlights": ["Trọn bộ 3 kỳ thi chuyên biệt: ĐGNL Bộ Công An (BCA), ĐGNL Quân Đội (QDA Empire) và kỳ thi VSAT đủ 8 môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản đăng nhập bằng Email (Khóa bảo mật 1 thiết bị)", "Hệ thống chuyên đề tự luận + trắc nghiệm sát cấu trúc đề thi tuyển sinh riêng"], "isPackageOnly": true, "subTier": "course_199k", "tierShortBadge": "MỞ KHÓA KHÓA HỌC 199K", "summary": "Combo Luyện Thi ĐGNL Bộ Công An (BCA) · Quân Đội (QDA) · VSAT 8 Môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa)", "description": "Combo Luyện Thi ĐGNL Bộ Công An (BCA) · Quân Đội (QDA) · VSAT 8 Môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa) do EMPIRE TEAM — KHỐI CÔNG AN · QUÂN ĐỘI · VSAT 8 MÔN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-SUBJ-TOAN12-2K9", "code": "DVT12", "instructor": "TENS · MAPSTUDY · PHAN TIẾN · ANH SHIPPER · HOCMAI", "title": "Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "lop12_2k9", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "lessons": 180, "duration": "Trọn bộ 7 khóa Toán 12 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "2.6k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w", "extraFolderIds": ["1VbW3pT-HmLO6HgpXV_1iih6y7JrFe5Cj"], "driveUrl": "https://drive.google.com/drive/folders/1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027", "description": "Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027 do TENS · MAPSTUDY · PHAN TIẾN · ANH SHIPPER · HOCMAI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_toan.jpg"}, {"id": "COURSE-SUBJ-VAN12-2K9", "code": "DVVAN12", "instructor": "HOCMAI TOPUNI · EMPIRE TEAM — BAN GIẢNG HUẤN NGỮ VĂN", "title": "Trọn Bộ Môn Ngữ Văn 12 (2K9) — Đọc Hiểu Văn Bản, Tiếng Việt & Nghị Luận Văn Học / Xã Hội", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_hsa", "dgnl_vact_bca"], "groupName": "Môn Ngữ Văn 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-VAN12-2K9", "lessons": 95, "duration": "Trọn bộ Ngữ Văn 12 · THPTQG & ĐGNL", "level": "Môn Ngữ Văn 12 (2K9)", "rating": 5.0, "students": "2.2k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3", "extraFolderIds": ["1t_QJSwaoUKPU5CtVX5yp040SxDCQf7wQ", "1Y76w1GLT9CSNGX5q0ER-uLua9eylB-Lz"], "driveUrl": "https://drive.google.com/drive/folders/1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Ngữ Văn 12 (2K9) — Đọc Hiểu Văn Bản, Tiếng Việt & Nghị Luận Văn Học / Xã Hội", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Ngữ Văn 12 (2K9) — Đọc Hiểu Văn Bản, Tiếng Việt & Nghị Luận Văn Học / Xã Hội", "description": "Trọn Bộ Môn Ngữ Văn 12 (2K9) — Đọc Hiểu Văn Bản, Tiếng Việt & Nghị Luận Văn Học / Xã Hội do HOCMAI TOPUNI · EMPIRE TEAM — BAN GIẢNG HUẤN NGỮ VĂN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-SUBJ-ANH12-2K9", "code": "DVA12", "instructor": "NGOAINGU24H — CÔ VŨ MAI PHƯƠNG · HOCMAI · EMPIRE", "title": "Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "groupName": "Môn Tiếng Anh 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-ANH12-2K9", "lessons": 140, "duration": "Full Pro3M + Pro3MPlus + VIP90", "level": "Môn Tiếng Anh 12 (2K9)", "rating": 5.0, "students": "3.0k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe", "extraFolderIds": ["1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL", "1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE", "1si7gRcqURbnbJMMiGiNwih-OzQhkQJJT"], "driveUrl": "https://drive.google.com/drive/folders/1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh", "description": "Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh do NGOAINGU24H — CÔ VŨ MAI PHƯƠNG · HOCMAI · EMPIRE giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-SUBJ-TRUNG12-2K9", "code": "DVTRUNG12", "instructor": "YANGDEXIN · HANKA — HỆ THỐNG ĐÀO TẠO TIẾNG TRUNG", "title": "Trọn Bộ Môn Tiếng Trung (Hán Ngữ 6 Quyển · Bộ Đề HSK · Tiếng Trung Chuyên Ngành & Ôn Thi ĐH Khối D04)", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "groupName": "Môn Tiếng Trung (HSK & Khối D04)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9", "lessons": 160, "duration": "Full 6 Quyển Hán Ngữ + HSK + D04", "level": "Môn Tiếng Trung (HSK & Khối D04)", "rating": 5.0, "students": "1.9k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6", "extraFolderIds": ["1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR"], "driveUrl": "https://drive.google.com/drive/folders/1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Tiếng Trung (Hán Ngữ 6 Quyển · Bộ Đề HSK · Tiếng Trung Chuyên Ngành & Ôn Thi ĐH Khối D04)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Tiếng Trung (Hán Ngữ 6 Quyển · Bộ Đề HSK · Tiếng Trung Chuyên Ngành & Ôn Thi ĐH Khối D04)", "description": "Trọn Bộ Môn Tiếng Trung (Hán Ngữ 6 Quyển · Bộ Đề HSK · Tiếng Trung Chuyên Ngành & Ôn Thi ĐH Khối D04) do YANGDEXIN · HANKA — HỆ THỐNG ĐÀO TẠO TIẾNG TRUNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/tieng_trung_hsk.jpg"}, {"id": "COURSE-SUBJ-SU12-2K9", "code": "DVSU12", "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ THPT & ĐGNL", "title": "Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Lịch Sử 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-SU12-2K9", "lessons": 90, "duration": "Full 22 chuyên đề Lịch Sử 12", "level": "Môn Lịch Sử 12 (2K9)", "rating": 5.0, "students": "1.8k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "extraFolderIds": ["1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"], "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "defaultCover": "courses/covers/su_co_sen.jpg", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "description": "Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông do EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ THPT & ĐGNL giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/su_co_sen.jpg"}, {"id": "COURSE-SUBJ-DIA12-2K9", "code": "DVDIA12", "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ THPT & ĐGNL", "title": "Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Địa Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-DIA12-2K9", "lessons": 85, "duration": "Full chuyên đề Địa Lý 12", "level": "Môn Địa Lý 12 (2K9)", "rating": 5.0, "students": "1.7k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm", "extraFolderIds": ["1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"], "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm", "defaultCover": "courses/covers/dia_thay_tung.jpg", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam", "description": "Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam do EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ THPT & ĐGNL giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/dia_thay_tung.jpg"}, {"id": "COURSE-SUBJ-SINH12-2K9", "code": "DVSINH12", "instructor": "HOCMAI TOPUNI · EMPIRE TEAM — BAN GIẢNG HUẤN SINH HỌC", "title": "Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "lop12_2k9", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Sinh Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-SINH12-2K9", "lessons": 110, "duration": "Full chuyên đề Sinh Học 12", "level": "Môn Sinh Học 12 (2K9)", "rating": 5.0, "students": "2.0k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi", "extraFolderIds": ["1ryKQMaBjhkBx9W0qQaELK6_vmVw4fucr", "1CTrlYhRiXh7phi2qPwE3l_c2sOCsxS92"], "driveUrl": "https://drive.google.com/drive/folders/1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học", "description": "Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học do HOCMAI TOPUNI · EMPIRE TEAM — BAN GIẢNG HUẤN SINH HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/sinh_thay_phan_khac_nghe.jpg"}, {"id": "COURSE-SUBJ-LY12-2K9", "code": "DVL12", "instructor": "MAPSTUDY · IPCLASS · TENS · SANGSANG · HOCMAI", "title": "Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "lop12_2k9", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "lessons": 140, "duration": "Trọn bộ 5 khóa Lý 12 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "2.3k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI", "extraFolderIds": ["1CAshsjgTtSA-QicoM95Z1N-Ghw4vdwwE"], "driveUrl": "https://drive.google.com/drive/folders/1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI", "defaultCover": "courses/covers/ly_thay_ngoc_anh.jpg", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027", "description": "Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027 do MAPSTUDY · IPCLASS · TENS · SANGSANG · HOCMAI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/ly_thay_ngoc_anh.jpg"}, {"id": "COURSE-SUBJ-HOA12-2K9", "code": "DVH12", "instructor": "TENS · NAP · SANGSANG · THẦY PHẠM THANH TÙNG", "title": "Trọn Bộ Môn Hóa Học 12 (2K9) — 4 Khóa Luyện Thi THPTQG 2027", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "lop12_2k9", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "groupName": "Môn Hóa Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "lessons": 130, "duration": "Trọn bộ 4 khóa Hóa 12 · Video + PDF", "level": "Môn Hóa Học 12 (2K9)", "rating": 5.0, "students": "2.1k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc", "extraFolderIds": ["1AQ0g_Yght0umoIcBJl826mVIqmZ9uBjA"], "driveUrl": "https://drive.google.com/drive/folders/1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Hóa Học 12 (2K9) — 4 Khóa Luyện Thi THPTQG 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Hóa Học 12 (2K9) — 4 Khóa Luyện Thi THPTQG 2027", "description": "Trọn Bộ Môn Hóa Học 12 (2K9) — 4 Khóa Luyện Thi THPTQG 2027 do TENS · NAP · SANGSANG · THẦY PHẠM THANH TÙNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/hoa_thay_nguyen_anh_phong.jpg"}, {"id": "COURSE-SUBJ-MOS-THVP", "code": "DVMOS69", "instructor": "GITIHO · NIMBUS · LAKITA · HỌC VIỆN TIN HỌC", "title": "Trọn Bộ Môn Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (30 Khóa Word · Excel · PowerPoint · Access · Google Tools)", "category": "tinhoc_daihoc", "subCategory": "lop11_2k10", "categories": ["tinhoc_daihoc", "lop11_2k10"], "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "lessons": 280, "duration": "Full 30 khóa Tin Văn Phòng & MOS", "level": "Môn Tin Học Văn Phòng & MOS", "rating": 5.0, "students": "2.5k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm", "extraFolderIds": ["1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK"], "driveUrl": "https://drive.google.com/drive/folders/1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (30 Khóa Word · Excel · PowerPoint · Access · Google Tools)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (30 Khóa Word · Excel · PowerPoint · Access · Google Tools)", "description": "Trọn Bộ Môn Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (30 Khóa Word · Excel · PowerPoint · Access · Google Tools) do GITIHO · NIMBUS · LAKITA · HỌC VIỆN TIN HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-SUBJ-TIN11-2K10", "code": "DVTIN11", "instructor": "TUYENSINH247 — THẦY PHƯƠNG & CÔ DUNG", "title": "Trọn Bộ Môn Tin Học 11 (2K10) — Tin Học Ứng Dụng · Khoa Học Máy Tính · Thuật Toán & CSDL", "category": "tinhoc_daihoc", "subCategory": "lop11_2k10", "categories": ["tinhoc_daihoc", "lop11_2k10"], "groupName": "Môn Tin Học 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TIN11-2K10", "lessons": 65, "duration": "Trọn bộ 3 khóa Tin 11", "level": "Môn Tin Học 11 (2K10)", "rating": 4.9, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq", "extraFolderIds": ["1MFbfgkctCYu736a4vMTzgvd4gvwmx8YT"], "driveUrl": "https://drive.google.com/drive/folders/1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Tin Học 11 (2K10) — Tin Học Ứng Dụng · Khoa Học Máy Tính · Thuật Toán & CSDL", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Tin Học 11 (2K10) — Tin Học Ứng Dụng · Khoa Học Máy Tính · Thuật Toán & CSDL", "description": "Trọn Bộ Môn Tin Học 11 (2K10) — Tin Học Ứng Dụng · Khoa Học Máy Tính · Thuật Toán & CSDL do TUYENSINH247 — THẦY PHƯƠNG & CÔ DUNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-SUBJ-DAIHOC-KTL", "code": "DVKTL69", "instructor": "ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN KINH TẾ LƯỢNG", "title": "Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS)", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Kinh Tế Lượng Đại Học", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL", "lessons": 45, "duration": "Full thực hành EViews · Stata · SPSS", "level": "Môn Kinh Tế Lượng Đại Học", "rating": 5.0, "students": "1.9k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok", "extraFolderIds": ["1QJxChXQQ9WMZQTInw_3Tged3PfHHRZHS"], "driveUrl": "https://drive.google.com/drive/folders/1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS)", "description": "Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS) do ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN KINH TẾ LƯỢNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-SUBJ-TRIETHOC", "code": "DVTRIET69", "instructor": "ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN LÝ LUẬN CHÍNH TRỊ", "title": "Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm)", "category": "tinhoc_daihoc", "subCategory": "ngoai_ngu_khxh", "categories": ["tinhoc_daihoc", "ngoai_ngu_khxh"], "groupName": "Môn Triết Học Mác - Lênin", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-TRIETHOC", "lessons": 40, "duration": "Full Sơ đồ tư duy & Đề cương A+", "level": "Môn Triết Học Mác - Lênin", "rating": 5.0, "students": "2.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm)", "description": "Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm) do ĐIỆP VIÊN ACADEMY — BAN GIẢNG HUẤN LÝ LUẬN CHÍNH TRỊ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-SUBJ-NCKH-APA7", "code": "DVNCKH69", "instructor": "ĐIỆP VIÊN ACADEMY — BAN HƯỚNG DẪN HỌC THUẬT & NCKH", "title": "Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Viết BTL & NCKH APA 7", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-NCKH-APA7", "lessons": 40, "duration": "Full Khung dàn ý & Chuẩn trích dẫn APA 7", "level": "Môn Viết BTL & NCKH APA 7", "rating": 5.0, "students": "1.8k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7", "description": "Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7 do ĐIỆP VIÊN ACADEMY — BAN HƯỚNG DẪN HỌC THUẬT & NCKH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-SUBJ-NGHETHUAT", "code": "DVART69", "instructor": "HAKETU · THIỆN ORGAN · HIỂN RÂU · PRODUCER STUDIO", "title": "Môn Nghệ Thuật, Âm Nhạc & Vũ Đạo (31 Khóa Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo · DJ · Shuffle Dance)", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "lessons": 310, "duration": "Trọn bộ 31 khóa Nghệ Thuật", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.9k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Môn Nghệ Thuật, Âm Nhạc & Vũ Đạo (31 Khóa Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo · DJ · Shuffle Dance)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Môn Nghệ Thuật, Âm Nhạc & Vũ Đạo (31 Khóa Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo · DJ · Shuffle Dance)", "description": "Môn Nghệ Thuật, Âm Nhạc & Vũ Đạo (31 Khóa Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo · DJ · Shuffle Dance) do HAKETU · THIỆN ORGAN · HIỂN RÂU · PRODUCER STUDIO giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/sinh_thay_phan_khac_nghe.jpg"}, {"id": "COURSE-SUBJ-TOPUNI12-2K9", "code": "DVTOP12", "instructor": "HOCMAI — HỆ THỐNG TOPUNI NỀN TẢNG 12", "title": "Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học)", "category": "lop12_2k9", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["lop12_2k9", "khtn_toan_ly_hoa_sinh", "ngoai_ngu_khxh"], "groupName": "TopUni Lớp 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOPUNI12-2K9", "lessons": 160, "duration": "Trọn bộ 7 môn Nền Tảng 12", "level": "TopUni Lớp 12 (2K9)", "rating": 4.9, "students": "1.9k+", "price": 69000, "originalPrice": 299000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ", "defaultCover": "courses/covers/nen_tang_toan.jpg", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học)", "description": "Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học) do HOCMAI — HỆ THỐNG TOPUNI NỀN TẢNG 12 giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_toan.jpg"}, {"id": "COURSE-SUBJ-TOAN11-2K10", "code": "DVT11", "instructor": "TENSCHOOL · TUYENSINH247 — THẦY ĐỨC & THẦY QUÂN", "title": "Trọn Bộ Môn Toán 11 (2K10) — Lộ Trình Cơ Bản & Nâng Cao 2027", "category": "lop11_2k10", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["lop11_2k10", "khtn_toan_ly_hoa_sinh"], "groupName": "Môn Toán 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10", "lessons": 85, "duration": "Trọn bộ Toán 11 2K10", "level": "Môn Toán 11 (2K10)", "rating": 5.0, "students": "1.5k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Toán 11 (2K10) — Lộ Trình Cơ Bản & Nâng Cao 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Toán 11 (2K10) — Lộ Trình Cơ Bản & Nâng Cao 2027", "description": "Trọn Bộ Môn Toán 11 (2K10) — Lộ Trình Cơ Bản & Nâng Cao 2027 do TENSCHOOL · TUYENSINH247 — THẦY ĐỨC & THẦY QUÂN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/toan_thay_duc.jpg"}, {"id": "COURSE-SUBJ-LY11-2K10", "code": "DVL11", "instructor": "TUYENSINH247 — THẦY VŨ HOÀNG QUÂN & THẦY LONG", "title": "Trọn Bộ Môn Vật Lý 11 (2K10) — Chuyên Đề & Luyện Đề Học Kỳ", "category": "lop11_2k10", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["lop11_2k10", "khtn_toan_ly_hoa_sinh"], "groupName": "Môn Vật Lý 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-LY11-2K10", "lessons": 80, "duration": "Trọn bộ 3 khóa Lý 11", "level": "Môn Vật Lý 11 (2K10)", "rating": 4.9, "students": "1.3k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Vật Lý 11 (2K10) — Chuyên Đề & Luyện Đề Học Kỳ", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Vật Lý 11 (2K10) — Chuyên Đề & Luyện Đề Học Kỳ", "description": "Trọn Bộ Môn Vật Lý 11 (2K10) — Chuyên Đề & Luyện Đề Học Kỳ do TUYENSINH247 — THẦY VŨ HOÀNG QUÂN & THẦY LONG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_ly.jpg"}, {"id": "COURSE-SUBJ-HOA11-2K10", "code": "DVH11", "instructor": "HOCMAI · TUYENSINH247 — CÔ DƯƠNG, CÔ HUỆ & THẦY TÙNG", "title": "Trọn Bộ Môn Hóa Học 11 (2K10) — Lớp Tương Tác & Nâng Cao", "category": "lop11_2k10", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["lop11_2k10", "khtn_toan_ly_hoa_sinh"], "groupName": "Môn Hóa Học 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-HOA11-2K10", "lessons": 75, "duration": "Trọn bộ 2 khóa Hóa 11", "level": "Môn Hóa Học 11 (2K10)", "rating": 4.9, "students": "1.2k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Môn 69K · Tặng App", "driveFolderId": "1CL2S35nzQS7qkXKck9c_efHX-aS87v-a", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1CL2S35nzQS7qkXKck9c_efHX-aS87v-a", "defaultCover": "", "highlights": ["Mở khóa trọn bộ thư mục môn học: Trọn Bộ Môn Hóa Học 11 (2K10) — Lớp Tương Tác & Nâng Cao", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng, tài liệu PDF và đề thi thử"], "isPackageOnly": true, "subTier": "bundle_69k", "tierShortBadge": "THEO MÔN 69K", "summary": "Trọn Bộ Môn Hóa Học 11 (2K10) — Lớp Tương Tác & Nâng Cao", "description": "Trọn Bộ Môn Hóa Học 11 (2K10) — Lớp Tương Tác & Nâng Cao do HOCMAI · TUYENSINH247 — CÔ DƯƠNG, CÔ HUỆ & THẦY TÙNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-01", "code": "DVC01", "title": "Khóa Toán 12 (2K9) — Lộ Trình Chinh Phục THPTQG 2027 (Khóa T · E · Đom Đóm)", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "TENSCHOOL — THẦY ĐỖ VĂN ĐỨC", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1S4DkHAPvliK9ea222q9x3sDbVM2TX3bm", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/1S4DkHAPvliK9ea222q9x3sDbVM2TX3bm", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOÁN THẦY ĐỖ VĂN ĐỨC TENS 2K9", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán 12 (2K9) — Lộ Trình Chinh Phục THPTQG 2027 (Khóa T · E · Đom Đóm) do TENSCHOOL — THẦY ĐỖ VĂN ĐỨC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Toán 12 (2K9) — Lộ Trình Chinh Phục THPTQG 2027 (Khóa T · E · Đom Đóm)", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/toan_thay_duc.jpg"}, {"id": "COURSE-ITEM-55", "code": "DVC55", "title": "Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu Thơ, Truyện, Ký, Văn Bản Thông Tin & Nghị Luận Văn Học", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Ngữ Văn 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-VAN12-2K9", "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN NGỮ VĂN", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Ngữ Văn 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1t_QJSwaoUKPU5CtVX5yp040SxDCQf7wQ", "extraFolderIds": ["1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3"], "driveUrl": "https://drive.google.com/drive/folders/1t_QJSwaoUKPU5CtVX5yp040SxDCQf7wQ", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu Thơ, Truyện, Ký, Văn Bản Thông Tin & Nghị Luận Văn Học", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu Thơ, Truyện, Ký, Văn Bản Thông Tin & Nghị Luận Văn Học do EMPIRE TEAM — BAN GIẢNG HUẤN NGỮ VĂN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu Thơ, Truyện, Ký, Văn Bản Thông Tin & Nghị Luận Văn Học", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-17", "code": "DVC17", "title": "Khóa Tiếng Anh 12 (2K9) — Trọn Bộ Lộ Trình Pro3M · Pro3MPlus · VIP90 2027", "category": "lop12_2k9", "groupName": "Môn Tiếng Anh 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-ANH12-2K9", "instructor": "NGOAINGU24H — CÔ VŨ MAI PHƯƠNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tiếng Anh 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL", "extraFolderIds": ["1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe"], "driveUrl": "https://drive.google.com/drive/folders/1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TIẾNG ANH CÔ MAI PHƯƠNG 2K9 - Trọn Bộ Lộ Trình Pro3m, Pro3mplus, Vip90 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tiếng Anh 12 (2K9) — Trọn Bộ Lộ Trình Pro3M · Pro3MPlus · VIP90 2027 do NGOAINGU24H — CÔ VŨ MAI PHƯƠNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Tiếng Anh 12 (2K9) — Trọn Bộ Lộ Trình Pro3M · Pro3MPlus · VIP90 2027", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-51", "code": "DVC51", "title": "Khóa Tiếng Trung Toàn Diện — Giáo Trình Hán Ngữ 6 Quyển (Quyển 1–6) & Luyện Viết Chữ Hán", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "groupName": "Môn Tiếng Trung (HSK & Khối D04)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9", "instructor": "YANGDEXIN — HỆ THỐNG ĐÀO TẠO TIẾNG TRUNG", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tiếng Trung (HSK & Khối D04)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR", "extraFolderIds": ["1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6", "11rrA9I_UcBwvUwgbe4USj2IKsx12sW6w"], "driveUrl": "https://drive.google.com/drive/folders/1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tiếng Trung Toàn Diện — Giáo Trình Hán Ngữ 6 Quyển (Quyển 1–6) & Luyện Viết Chữ Hán", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tiếng Trung Toàn Diện — Giáo Trình Hán Ngữ 6 Quyển (Quyển 1–6) & Luyện Viết Chữ Hán do YANGDEXIN — HỆ THỐNG ĐÀO TẠO TIẾNG TRUNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tiếng Trung Toàn Diện — Giáo Trình Hán Ngữ 6 Quyển (Quyển 1–6) & Luyện Viết Chữ Hán", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/anh_co_mai_phuong.jpg"}, {"id": "COURSE-ITEM-57", "code": "DVC57", "title": "Khóa Lịch Sử 12 (2K9) — Chinh Phục Điểm 9+ Lịch Sử Cùng Cô Sen", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Lịch Sử 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-SU12-2K9", "instructor": "CÔ SEN LỊCH SỬ — BAN GIẢNG HUẤN LỊCH SỬ", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Lịch Sử 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "extraFolderIds": ["1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"], "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "defaultCover": "courses/covers/su_co_sen.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông do EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/su_co_sen.jpg"}, {"id": "COURSE-ITEM-58", "code": "DVC58", "title": "Khóa Địa Lý 12 (2K9) — Lộ Trình Chuyên Sâu Cùng Thầy Tùng Địa Lý", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Địa Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-DIA12-2K9", "instructor": "THẦY TÙNG ĐỊA LÝ — BAN GIẢNG HUẤN ĐỊA LÝ", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Địa Lý 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm", "extraFolderIds": ["1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"], "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm", "defaultCover": "courses/covers/dia_thay_tung.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam do EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/dia_thay_tung.jpg"}, {"id": "COURSE-ITEM-59", "code": "DVC59", "title": "Khóa Sinh Học 12 (2K9) — 10 Chuyên Đề Sinh Học Tế Bào, Di Truyền, Tiến Hóa & Sinh Thái Học", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "lop12_2k9", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Sinh Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-SINH12-2K9", "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN SINH HỌC", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Sinh Học 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1ryKQMaBjhkBx9W0qQaELK6_vmVw4fucr", "extraFolderIds": ["1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi"], "driveUrl": "https://drive.google.com/drive/folders/1ryKQMaBjhkBx9W0qQaELK6_vmVw4fucr", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Sinh Học 12 (2K9) — 10 Chuyên Đề Sinh Học Tế Bào, Di Truyền, Tiến Hóa & Sinh Thái Học", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Sinh Học 12 (2K9) — 10 Chuyên Đề Sinh Học Tế Bào, Di Truyền, Tiến Hóa & Sinh Thái Học do EMPIRE TEAM — BAN GIẢNG HUẤN SINH HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Sinh Học 12 (2K9) — 10 Chuyên Đề Sinh Học Tế Bào, Di Truyền, Tiến Hóa & Sinh Thái Học", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/sinh_thay_phan_khac_nghe.jpg"}, {"id": "COURSE-ITEM-08", "code": "DVC08", "title": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ Cùng Thầy Vũ Ngọc Anh", "category": "lop12_2k9", "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "MAPSTUDY — THẦY VŨ NGỌC ANH", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE", "extraFolderIds": ["1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"], "driveUrl": "https://drive.google.com/drive/folders/1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE", "defaultCover": "courses/covers/ly_thay_ngoc_anh.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: LÝ THẦY VŨ NGỌC ANH 2K9 - Trọn Bộ Lộ Trình IOME 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027 do MAPSTUDY — THẦY VŨ NGỌC ANH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/ly_thay_ngoc_anh.jpg"}, {"id": "COURSE-ITEM-13", "code": "DVC13", "title": "Khóa Hóa Học 12 (2K9) — Lộ Trình Toàn Diện Luyện Thi THPTQG 2027", "category": "lop12_2k9", "groupName": "Môn Hóa Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "instructor": "TENSCHOOL — THẦY PHẠM VĂN TRỌNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1JkWVgk6FWNROK433fzc2Bbs8DXB5X5OM", "extraFolderIds": ["1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"], "driveUrl": "https://drive.google.com/drive/folders/1JkWVgk6FWNROK433fzc2Bbs8DXB5X5OM", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HÓA THẦY PHẠM VĂN TRỌNG 2K9 THPTQG 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 12 (2K9) — Lộ Trình Toàn Diện Luyện Thi THPTQG 2027 do TENSCHOOL — THẦY PHẠM VĂN TRỌNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Hóa Học 12 (2K9) — Lộ Trình Toàn Diện Luyện Thi THPTQG 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/hoa_thay_pham_van_trong.jpg"}, {"id": "COURSE-ITEM-65", "code": "DVC65", "title": "Khóa Luyện Thi Chứng Chỉ Quốc Tế MOS Word & MOS Excel (2016 · 2019 · 365) Kèm Đề Mock Test", "category": "tinhoc_daihoc", "subCategory": "lop11_2k10", "categories": ["tinhoc_daihoc", "lop11_2k10"], "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "NIMBUS & HỌC VIỆN MOS — CHỨNG CHỈ QUỐC TẾ", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học Văn Phòng & MOS", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1sB5iPqIkaLJHhLNmPDxOLpA-AZ9KgRHg", "extraFolderIds": ["1HzXJFbiK77HhjEPxdmeTp9J9NkBbSnxQ", "1uQIG5U2FSMiRgvrNDJOPhuca3cty0OVc", "1jHc3rPDIe9qqhfRzXNjscKFrZUqdj5y5", "1O2qI08NlviBnIoVM44WICYH54ZO2B3a5"], "driveUrl": "https://drive.google.com/drive/folders/1sB5iPqIkaLJHhLNmPDxOLpA-AZ9KgRHg", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Luyện Thi Chứng Chỉ Quốc Tế MOS Word & MOS Excel (2016 · 2019 · 365) Kèm Đề Mock Test", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Thi Chứng Chỉ Quốc Tế MOS Word & MOS Excel (2016 · 2019 · 365) Kèm Đề Mock Test do NIMBUS & HỌC VIỆN MOS — CHỨNG CHỈ QUỐC TẾ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Luyện Thi Chứng Chỉ Quốc Tế MOS Word & MOS Excel (2016 · 2019 · 365) Kèm Đề Mock Test", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/tin_hoc_mos_office.jpg"}, {"id": "COURSE-ITEM-33", "code": "DVC33", "title": "Khóa Tin Học 11 (2K10) — Định Hướng Khoa Học Máy Tính & Thuật Toán", "category": "lop11_2k10", "groupName": "Môn Tin Học 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TIN11-2K10", "instructor": "TUYENSINH247 [S1] — THẦY PHƯƠNG & CÔ DUNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1niGfuKDA1xbAGI2lQpfDxic4s2H8fFip", "extraFolderIds": ["1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"], "driveUrl": "https://drive.google.com/drive/folders/1niGfuKDA1xbAGI2lQpfDxic4s2H8fFip", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: [S1] Thầy Phương, cô Dung - Tin 11 - Khoa học máy tính - 2027 Tuyensinh247", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tin Học 11 (2K10) — Định Hướng Khoa Học Máy Tính & Thuật Toán do TUYENSINH247 [S1] — THẦY PHƯƠNG & CÔ DUNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Tin Học 11 (2K10) — Định Hướng Khoa Học Máy Tính & Thuật Toán", "categories": ["tinhoc_daihoc", "lop11_2k10"], "subCategory": "tinhoc_daihoc", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-71", "code": "DVC71", "title": "Khóa Cày Điểm A+ Kinh Tế Lượng — Thực Hành Hồi Quy OLS Trên EViews, Stata & SPSS", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Kinh Tế Lượng Đại Học", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL", "instructor": "ĐIỆP VIÊN ACADEMY — KINH TẾ LƯỢNG ĐẠI HỌC", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Kinh Tế Lượng Đại Học", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok", "extraFolderIds": ["1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"], "driveUrl": "https://drive.google.com/drive/folders/1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Cày Điểm A+ Kinh Tế Lượng — Thực Hành Hồi Quy OLS Trên EViews, Stata & SPSS", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Cày Điểm A+ Kinh Tế Lượng — Thực Hành Hồi Quy OLS Trên EViews, Stata & SPSS do ĐIỆP VIÊN ACADEMY — KINH TẾ LƯỢNG ĐẠI HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Cày Điểm A+ Kinh Tế Lượng — Thực Hành Hồi Quy OLS Trên EViews, Stata & SPSS", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-ITEM-72", "code": "DVC72", "title": "Khóa Đạt A+ Triết Học Mác - Lênin — Hệ Thống Sơ Đồ Tư Duy & Đề Cương Tự Luận Trọng Tâm", "category": "tinhoc_daihoc", "subCategory": "ngoai_ngu_khxh", "categories": ["tinhoc_daihoc", "ngoai_ngu_khxh"], "groupName": "Môn Triết Học Mác - Lênin", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-TRIETHOC", "instructor": "ĐIỆP VIÊN ACADEMY — LÝ LUẬN CHÍNH TRỊ ĐẠI HỌC", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Triết Học Mác - Lênin", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u", "extraFolderIds": ["1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"], "driveUrl": "https://drive.google.com/drive/folders/1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Đạt A+ Triết Học Mác - Lênin — Hệ Thống Sơ Đồ Tư Duy & Đề Cương Tự Luận Trọng Tâm", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Đạt A+ Triết Học Mác - Lênin — Hệ Thống Sơ Đồ Tư Duy & Đề Cương Tự Luận Trọng Tâm do ĐIỆP VIÊN ACADEMY — LÝ LUẬN CHÍNH TRỊ ĐẠI HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Đạt A+ Triết Học Mác - Lênin — Hệ Thống Sơ Đồ Tư Duy & Đề Cương Tự Luận Trọng Tâm", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-ITEM-73", "code": "DVC73", "title": "Khóa Master Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn Trích Dẫn APA 7", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Viết BTL & NCKH APA 7", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-NCKH-APA7", "instructor": "ĐIỆP VIÊN ACADEMY — HỌC THUẬT & NCKH", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Viết BTL & NCKH APA 7", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx", "extraFolderIds": ["1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"], "driveUrl": "https://drive.google.com/drive/folders/1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Master Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn Trích Dẫn APA 7", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Master Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn Trích Dẫn APA 7 do ĐIỆP VIÊN ACADEMY — HỌC THUẬT & NCKH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Master Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn Trích Dẫn APA 7", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-ITEM-75", "code": "DVC75", "title": "Khóa Học Đệm Hát Guitar Cơ Bản, Nâng Cao & Fingerstyle Guitar Cùng Haketu", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "HAKETU GUITAR — HỌC ĐỆM HÁT & FINGERSTYLE", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1AoRvrctJEQm-yj70kSM3La4HBt_35vxD", "extraFolderIds": ["1GvjM6qVVIt1w4lALVVI2dc9lbBuTLYGp", "1xm4in14mBPrAd8UgOHwC7yvkNEGxrb-7", "1nv7AkmBfLlJE85fvpqGuSknI2x_k9Qsz", "1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B"], "driveUrl": "https://drive.google.com/drive/folders/1AoRvrctJEQm-yj70kSM3La4HBt_35vxD", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Học Đệm Hát Guitar Cơ Bản, Nâng Cao & Fingerstyle Guitar Cùng Haketu", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Học Đệm Hát Guitar Cơ Bản, Nâng Cao & Fingerstyle Guitar Cùng Haketu do HAKETU GUITAR — HỌC ĐỆM HÁT & FINGERSTYLE giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Học Đệm Hát Guitar Cơ Bản, Nâng Cao & Fingerstyle Guitar Cùng Haketu", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-77", "code": "DVC77", "title": "Khóa Đệm Hát Piano Trong 30 Ngày, Piano Quốc Tế Elementary 1 & Đệm Organ Cấp Tốc", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "THIỆN ORGAN & PIANO QUỐC TẾ — ĐỆM HÁT PIANO", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1xnMNTVEIDuKlDV-8a6AhCkt6W9dD8Niw", "extraFolderIds": ["1fVzNfcQ2j9XUN5SX2OWXnIl1Zv-H0_4M", "1LNpJbhB3fRlPgx7mX5eOwdMGwtUOFU8P", "1DOHPFPQZgO5DT3pdeKOvEKHnSa8YRPIw", "1xi3N8UeflrYX99c5Wz_6xcZKMt0xAGPo"], "driveUrl": "https://drive.google.com/drive/folders/1xnMNTVEIDuKlDV-8a6AhCkt6W9dD8Niw", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Đệm Hát Piano Trong 30 Ngày, Piano Quốc Tế Elementary 1 & Đệm Organ Cấp Tốc", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Đệm Hát Piano Trong 30 Ngày, Piano Quốc Tế Elementary 1 & Đệm Organ Cấp Tốc do THIỆN ORGAN & PIANO QUỐC TẾ — ĐỆM HÁT PIANO giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Đệm Hát Piano Trong 30 Ngày, Piano Quốc Tế Elementary 1 & Đệm Organ Cấp Tốc", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-78", "code": "DVC78", "title": "Khóa Học Thanh Nhạc Cơ Bản, Kỹ Thuật Mở Khẩu Hình Phát Triển Giọng Hát & Hát Karaoke", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "HỌC VIỆN THANH NHẠC — LUYỆN GIỌNG & CA HÁT", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1jf4qgjDAKaKlHJaFBr8GTEe1Kr4aKFk1", "extraFolderIds": ["1bCkT2REDxhU9hbC5BLyWGa6U8RH8CZ7m", "1nOdncN1gRJxqEligvNt2BQsqb1YCvmf1", "1jNY7a1pB08bVvM0_fpHuM9j_Sk8sFBdX"], "driveUrl": "https://drive.google.com/drive/folders/1jf4qgjDAKaKlHJaFBr8GTEe1Kr4aKFk1", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Học Thanh Nhạc Cơ Bản, Kỹ Thuật Mở Khẩu Hình Phát Triển Giọng Hát & Hát Karaoke", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Học Thanh Nhạc Cơ Bản, Kỹ Thuật Mở Khẩu Hình Phát Triển Giọng Hát & Hát Karaoke do HỌC VIỆN THANH NHẠC — LUYỆN GIỌNG & CA HÁT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Học Thanh Nhạc Cơ Bản, Kỹ Thuật Mở Khẩu Hình Phát Triển Giọng Hát & Hát Karaoke", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/anh_co_mai_phuong.jpg"}, {"id": "COURSE-ITEM-35", "code": "DVC35", "title": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG Hà Nội", "category": "dgnl_hsa", "groupName": "ĐGNL HSA (ĐHQG Hà Nội)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-ITEM-35", "instructor": "EMPIRE TEAM — LUYỆN THI ĐGNL HÀ NỘI", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1oRf9iIynqglvPJhq0Jyf3ILL2lUVKEQy", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1oRf9iIynqglvPJhq0Jyf3ILL2lUVKEQy", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HSA EMPIRE 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027 - Khoá XPS", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG Hà Nội do EMPIRE TEAM — LUYỆN THI ĐGNL HÀ NỘI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG Hà Nội", "categories": ["dgnl_hsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dgnl_hsa_dhqg.jpg"}, {"id": "COURSE-ITEM-40", "code": "DVC40", "title": "Khóa ĐGTD TSA 2027 (2K9) — Luyện Thi Đánh Giá Tư Duy ĐH Bách Khoa HN", "category": "dgtd_tsa", "groupName": "ĐGTD TSA (ĐH Bách Khoa)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGTD-TSA", "parentSubjectId": "COURSE-ITEM-40", "instructor": "EMPIRE TEAM — LUYỆN THI ĐGTD BÁCH KHOA", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGTD TSA (ĐH Bách Khoa)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1RPRK-NLUAudeC-65FF_nXbaOKG2aP_CJ", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1RPRK-NLUAudeC-65FF_nXbaOKG2aP_CJ", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TSA - LUYỆN THI ĐÁNH GIÁ TƯ DUY ĐH BÁCH KHOA HN EMPIRE 2K9 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGTD TSA 2027 (2K9) — Luyện Thi Đánh Giá Tư Duy ĐH Bách Khoa HN do EMPIRE TEAM — LUYỆN THI ĐGTD BÁCH KHOA giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGTD TSA 2027 (2K9) — Luyện Thi Đánh Giá Tư Duy ĐH Bách Khoa HN", "categories": ["dgtd_tsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dgtd_tsa_bachkhoa.jpg"}, {"id": "COURSE-ITEM-45", "code": "DVC45", "title": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG TP.HCM", "category": "dgnl_vact_bca", "groupName": "ĐGNL V-ACT (ĐHQG TP.HCM)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-VACT", "parentSubjectId": "COURSE-ITEM-45", "instructor": "EMPIRE TEAM — LUYỆN THI ĐGNL TP.HCM", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL V-ACT (ĐHQG TP.HCM)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: V-ACT 2K9 EMPIRE TEAM LUYỆN THI ĐGNL TP.HCM 2027 - XPS 2K9 V-ACT 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG TP.HCM do EMPIRE TEAM — LUYỆN THI ĐGNL TP.HCM giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG TP.HCM", "categories": ["dgnl_vact_bca", "lop12_2k9"], "subCategory": "lop12_2k9"}, {"id": "COURSE-ITEM-48", "code": "DVC48", "title": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Công An (BCA 2027) — Tự Luận & Trắc Nghiệm", "category": "dgnl_vact_bca", "groupName": "Kỳ thi ĐGNL Bộ Công An", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-ITEM-48", "instructor": "EMPIRE TEAM — CHUYÊN LUYỆN THI KHỐI CÔNG AN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Kỳ thi ĐGNL Bộ Công An", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: BCA - LUYỆN THI ĐÁNH GIÁ NĂNG LỰC BỘ CÔNG AN", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Công An (BCA 2027) — Tự Luận & Trắc Nghiệm do EMPIRE TEAM — CHUYÊN LUYỆN THI KHỐI CÔNG AN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Công An (BCA 2027) — Tự Luận & Trắc Nghiệm", "categories": ["dgnl_vact_bca", "lop12_2k9"], "subCategory": "lop12_2k9"}, {"id": "COURSE-ITEM-49", "code": "DVC49", "title": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Quốc Phòng / Quân Đội (QDA 2027)", "category": "dgnl_vact_bca", "groupName": "Kỳ thi ĐGNL Quân Đội", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-ITEM-49", "instructor": "EMPIRE TEAM — CHUYÊN LUYỆN THI KHỐI QUÂN ĐỘI", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Kỳ thi ĐGNL Quân Đội", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: QDA - LUYỆN THI ĐÁNH GIÁ NĂNG LỰC EMPIRE (QUÂN ĐỘI)", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Quốc Phòng / Quân Đội (QDA 2027) do EMPIRE TEAM — CHUYÊN LUYỆN THI KHỐI QUÂN ĐỘI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Quốc Phòng / Quân Đội (QDA 2027)", "categories": ["dgnl_vact_bca", "lop12_2k9"], "subCategory": "lop12_2k9"}, {"id": "COURSE-ITEM-50", "code": "DVC50", "title": "Khóa Luyện Thi Đánh Giá Đầu Vào Đại Học Trên Máy Tính (VSAT 2027)", "category": "dgnl_vact_bca", "groupName": "Kỳ thi ĐGNL VSAT", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-ITEM-50", "instructor": "EMPIRE TEAM — CHUYÊN LUYỆN THI ĐẠI HỌC VSAT", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Kỳ thi ĐGNL VSAT", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: VSAT - LUYỆN THI ĐÁNH GIÁ NĂNG LỰC EMPIRE", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Thi Đánh Giá Đầu Vào Đại Học Trên Máy Tính (VSAT 2027) do EMPIRE TEAM — CHUYÊN LUYỆN THI ĐẠI HỌC VSAT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Luyện Thi Đánh Giá Đầu Vào Đại Học Trên Máy Tính (VSAT 2027)", "categories": ["dgnl_vact_bca", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-ITEM-52", "code": "DVC52", "title": "Khóa Luyện Thi THPTQG & Đại Học Môn Tiếng Trung Khối D04 — Trọng Tâm Ngữ Pháp & Luyện Đề", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "groupName": "Môn Tiếng Trung (HSK & Khối D04)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9", "instructor": "YANGDEXIN — LUYỆN THI ĐẠI HỌC KHỐI D04", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tiếng Trung (HSK & Khối D04)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1gPRIl66qnS55v7bIaE_VL-tGAyO6-7sf", "extraFolderIds": ["1HWMDgt6YFp_NfQ-y3GdsiATUC1magU6u", "1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6"], "driveUrl": "https://drive.google.com/drive/folders/1gPRIl66qnS55v7bIaE_VL-tGAyO6-7sf", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Luyện Thi THPTQG & Đại Học Môn Tiếng Trung Khối D04 — Trọng Tâm Ngữ Pháp & Luyện Đề", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Thi THPTQG & Đại Học Môn Tiếng Trung Khối D04 — Trọng Tâm Ngữ Pháp & Luyện Đề do YANGDEXIN — LUYỆN THI ĐẠI HỌC KHỐI D04 giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Luyện Thi THPTQG & Đại Học Môn Tiếng Trung Khối D04 — Trọng Tâm Ngữ Pháp & Luyện Đề", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/anh_co_mai_phuong.jpg"}, {"id": "COURSE-ITEM-02", "code": "DVC02", "title": "Khóa Toán 12 (2K9) — Lộ Trình Toàn Diện THPTQG 2027 (Khóa I & M)", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "MAPSTUDY — TỔ TOÁN THPTQG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1a78wwvHogORJpW2qKWsveK4yMeorJEDg", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/1a78wwvHogORJpW2qKWsveK4yMeorJEDg", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOÁN TỔ TOÁN MAPSTUDY 2K9 THPTQG 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán 12 (2K9) — Lộ Trình Toàn Diện THPTQG 2027 (Khóa I & M) do MAPSTUDY — TỔ TOÁN THPTQG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Toán 12 (2K9) — Lộ Trình Toàn Diện THPTQG 2027 (Khóa I & M)", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/toan_thay_chi.jpg"}, {"id": "COURSE-ITEM-03", "code": "DVC03", "title": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Toán 12 SMART 2027", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "THẦY NGUYỄN PHAN TIẾN — KHOÁ SMART", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "13NIwvnmeb37PpkHI7dmxdZh3of9ewPuF", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/13NIwvnmeb37PpkHI7dmxdZh3of9ewPuF", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOÁN THẦY NGUYỄN PHAN TIẾN 2K9 - XPS Toán 12 Khoá SMART 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Toán 12 SMART 2027 do THẦY NGUYỄN PHAN TIẾN — KHOÁ SMART giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Toán 12 SMART 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/toan_thay_duc.jpg"}, {"id": "COURSE-ITEM-04", "code": "DVC04", "title": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Toán 2027", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "ANH SHIPPER TOÁN — KHOÁ TRÙM 12A3", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1DkG2NQLQ5egWATE7s_HxWheA7twDMCzE", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/1DkG2NQLQ5egWATE7s_HxWheA7twDMCzE", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOÁN ANH SHIPPER TOÁN 2K9 - XPS Khoá Trùm 12A3 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Toán 2027 do ANH SHIPPER TOÁN — KHOÁ TRÙM 12A3 giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Toán 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_toan.jpg"}, {"id": "COURSE-ITEM-05", "code": "DVC05", "title": "Khóa Nền Tảng 12 Môn Toán 2027 — Bám Sát Chương Trình Mới", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "14Vsk6-lsb-Nary5wbDpdWvyKc5pne3Ke", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/14Vsk6-lsb-Nary5wbDpdWvyKc5pne3Ke", "defaultCover": "courses/covers/nen_tang_toan.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2027 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Nền Tảng 12 Môn Toán 2027 — Bám Sát Chương Trình Mới do HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Nền Tảng 12 Môn Toán 2027 — Bám Sát Chương Trình Mới", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/toan_thay_thuan.jpg"}, {"id": "COURSE-ITEM-06", "code": "DVC06", "title": "Khóa Chuyên Đề Toán 12 & Luyện Tư Duy Vận Dụng Cao (TMT)", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "TMT EDUCATION — THẦY HUY HƯỚNG NỘI", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "104Fz0TA9cLZJy4NAAxPwGCP29IKTlR0g", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/104Fz0TA9cLZJy4NAAxPwGCP29IKTlR0g", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: GIÁO VIÊN HUY HƯỚNG NỘI - 2K8 - TMT2026 - KHÓA CHUYÊN ĐỀ", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Chuyên Đề Toán 12 & Luyện Tư Duy Vận Dụng Cao (TMT) do TMT EDUCATION — THẦY HUY HƯỚNG NỘI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Chuyên Đề Toán 12 & Luyện Tư Duy Vận Dụng Cao (TMT)", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh"}, {"id": "COURSE-ITEM-07", "code": "DVC07", "title": "Khóa Chuyên Đề Các Bài Toán Thực Tế & Mô Hình Hóa Toán 12", "category": "lop12_2k9", "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "TOÁN THỰC TẾ LXO — BAN GIẢNG HUẤN LXO", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "14Ab28ONGVYGeJuoT5Ga5Q-R5LyiSCsyB", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/14Ab28ONGVYGeJuoT5Ga5Q-R5LyiSCsyB", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOÁN LXO - 2K8 - CÁC BUỔI HỌC VỀ TOÁN THỰC TẾ", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Chuyên Đề Các Bài Toán Thực Tế & Mô Hình Hóa Toán 12 do TOÁN THỰC TẾ LXO — BAN GIẢNG HUẤN LXO giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Chuyên Đề Các Bài Toán Thực Tế & Mô Hình Hóa Toán 12", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh"}, {"id": "COURSE-ITEM-09", "code": "DVC09", "title": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Cùng Thầy Tiến & Thầy Thắng", "category": "lop12_2k9", "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "IPCLASS — THẦY THẮNG & THẦY TIẾN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ", "extraFolderIds": ["1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"], "driveUrl": "https://drive.google.com/drive/folders/1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ", "defaultCover": "courses/covers/ly_thay_tien_thang.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: LÝ THẦY THẮNG, THẦY TIẾN IPCLASS 2K9 - XPS Chinh phục 9+ Vật lý 12", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12 do IPCLASS — THẦY THẮNG & THẦY TIẾN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/ly_thay_tien_thang.jpg"}, {"id": "COURSE-ITEM-10", "code": "DVC10", "title": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Tùng Ưng", "category": "lop12_2k9", "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "TENSCHOOL — THẦY LÊ TÙNG ƯNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq", "extraFolderIds": ["1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"], "driveUrl": "https://drive.google.com/drive/folders/1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq", "defaultCover": "courses/covers/ly_tung_ung.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: LÝ THẦY LÊ TÙNG ƯNG TENS 2K9 - Full lộ trình XPS Vật lý 12 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027 do TENSCHOOL — THẦY LÊ TÙNG ƯNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/ly_tung_ung.jpg"}, {"id": "COURSE-ITEM-11", "code": "DVC11", "title": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Cùng Thầy Vũ Tuấn Anh", "category": "lop12_2k9", "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "SANGSANG EDU — THẦY VŨ TUẤN ANH", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg", "extraFolderIds": ["1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"], "driveUrl": "https://drive.google.com/drive/folders/1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg", "defaultCover": "courses/covers/ly_thay_tuan_anh.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: LÝ THẦY VŨ TUẤN ANH SANGSANG 2K9 - XPS Vật lý 12 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027 do SANGSANG EDU — THẦY VŨ TUẤN ANH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/ly_thay_tuan_anh.jpg"}, {"id": "COURSE-ITEM-12", "code": "DVC12", "title": "Khóa Vật Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Cùng Thầy Chu Văn Biên", "category": "lop12_2k9", "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "THẦY CHU VĂN BIÊN — VẬT LÝ 12", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc", "extraFolderIds": ["1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"], "driveUrl": "https://drive.google.com/drive/folders/1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc", "defaultCover": "courses/covers/ly_thay_bien.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Z. NỀN TẢNG 12 MÔN VẬT LÝ 2027 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới do HOCMAI — HỆ THỐNG GIÁO DỤC NỀN TẢNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/ly_thay_bien.jpg"}, {"id": "COURSE-ITEM-14", "code": "DVC14", "title": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình IOME Hóa Học 2027", "category": "lop12_2k9", "groupName": "Môn Hóa Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "instructor": "NAP EDUCATION — THẦY NGUYỄN ANH PHONG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "17YG-JmPDC6B_0xJtkDNiRiYPZh7oxdNu", "extraFolderIds": ["1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"], "driveUrl": "https://drive.google.com/drive/folders/17YG-JmPDC6B_0xJtkDNiRiYPZh7oxdNu", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HÓA THẦY NGUYỄN ANH PHONG 2K9 - Trọn Bộ Lộ Trình IOME 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình IOME Hóa Học 2027 do NAP EDUCATION — THẦY NGUYỄN ANH PHONG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình IOME Hóa Học 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/hoa_thay_nguyen_anh_phong.jpg"}, {"id": "COURSE-ITEM-15", "code": "DVC15", "title": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình CTG Chinh Phục Hóa 12", "category": "lop12_2k9", "groupName": "Môn Hóa Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "instructor": "SANGSANG EDU — THẦY PHẠM VĂN THUẬN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1nT5OCuM2fsZ99XVkLzEuRoonpPrBxUU1", "extraFolderIds": ["1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"], "driveUrl": "https://drive.google.com/drive/folders/1nT5OCuM2fsZ99XVkLzEuRoonpPrBxUU1", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HOÁ THẦY PHẠM VĂN THUẬN SANGSANG - Trọn Bộ Lộ Trình CTG 2K9", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình CTG Chinh Phục Hóa 12 do SANGSANG EDU — THẦY PHẠM VĂN THUẬN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình CTG Chinh Phục Hóa 12", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_hoa.jpg"}, {"id": "COURSE-ITEM-16", "code": "DVC16", "title": "Khóa Hóa Học 12 — Chuyên Đề Trọng Tâm & Luyện Đề Thực Chiến", "category": "lop12_2k9", "groupName": "Môn Hóa Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "instructor": "TYHH — THẦY PHẠM THANH TÙNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1rvjxRmI_pSmvflpJfl3lUMS_QeOaTFfV", "extraFolderIds": ["1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"], "driveUrl": "https://drive.google.com/drive/folders/1rvjxRmI_pSmvflpJfl3lUMS_QeOaTFfV", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HÓA THẦY PHẠM THANH TÙNG 2K8", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 12 — Chuyên Đề Trọng Tâm & Luyện Đề Thực Chiến do TYHH — THẦY PHẠM THANH TÙNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Hóa Học 12 — Chuyên Đề Trọng Tâm & Luyện Đề Thực Chiến", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_hoa.jpg"}, {"id": "COURSE-ITEM-18", "code": "DVC18", "title": "Khóa TopUni Nền Tảng 12 — Môn Toán Lộ Trình 2027", "category": "lop12_2k9", "groupName": "TopUni Lớp 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN TOÁN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1sKwBrvFNSAF95XUHmAIRuGUaFYb9fFSu", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1sKwBrvFNSAF95XUHmAIRuGUaFYb9fFSu", "defaultCover": "courses/covers/nen_tang_toan.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2027 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Toán Lộ Trình 2027 do HOCMAI TOPUNI — BAN GIẢNG HUẤN TOÁN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Toán Lộ Trình 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_toan.jpg"}, {"id": "COURSE-ITEM-19", "code": "DVC19", "title": "Khóa TopUni Nền Tảng 12 — Môn Toán (Bản Đầy Đủ Chuyên Đề)", "category": "lop12_2k9", "groupName": "TopUni Lớp 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN TOÁN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TOÁN 2026 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Toán (Bản Đầy Đủ Chuyên Đề) do HOCMAI TOPUNI — BAN GIẢNG HUẤN TOÁN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Toán (Bản Đầy Đủ Chuyên Đề)", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_toan.jpg"}, {"id": "COURSE-ITEM-20", "code": "DVC20", "title": "Khóa TopUni Nền Tảng 12 — Môn Ngữ Văn Đọc Hiểu & Nghị Luận", "category": "lop12_2k9", "groupName": "Môn Ngữ Văn 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-VAN12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN NGỮ VĂN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN NGỮ VĂN HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Ngữ Văn Đọc Hiểu & Nghị Luận do HOCMAI TOPUNI — BAN GIẢNG HUẤN NGỮ VĂN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Ngữ Văn Đọc Hiểu & Nghị Luận", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-21", "code": "DVC21", "title": "Khóa TopUni Nền Tảng 12 — Môn Tiếng Anh Ngữ Pháp & Từ Vựng", "category": "lop12_2k9", "groupName": "Môn Tiếng Anh 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-ANH12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN TIẾNG ANH", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN TIẾNG ANH 2026 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Tiếng Anh Ngữ Pháp & Từ Vựng do HOCMAI TOPUNI — BAN GIẢNG HUẤN TIẾNG ANH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Tiếng Anh Ngữ Pháp & Từ Vựng", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-22", "code": "DVC22", "title": "Khóa TopUni Nền Tảng 12 — Môn Vật Lý Chuyên Đề Trọng Tâm", "category": "lop12_2k9", "groupName": "TopUni Lớp 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN VẬT LÝ", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1rvyHSojdbe__C26Jj4xB5toinNJRZTEc", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1rvyHSojdbe__C26Jj4xB5toinNJRZTEc", "defaultCover": "courses/covers/nen_tang_ly.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN VẬT LÝ 2026 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Vật Lý Chuyên Đề Trọng Tâm do HOCMAI TOPUNI — BAN GIẢNG HUẤN VẬT LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Vật Lý Chuyên Đề Trọng Tâm", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_ly.jpg"}, {"id": "COURSE-ITEM-23", "code": "DVC23", "title": "Khóa TopUni Nền Tảng 12 — Môn Hóa Học Lý Thuyết & Bài Tập", "category": "lop12_2k9", "groupName": "TopUni Lớp 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN HÓA HỌC", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1IgDvAyUK1UN6W5jqXWgPVML1cUS_vA0N", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1IgDvAyUK1UN6W5jqXWgPVML1cUS_vA0N", "defaultCover": "courses/covers/nen_tang_hoa.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN HÓA HỌC 2026 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Hóa Học Lý Thuyết & Bài Tập do HOCMAI TOPUNI — BAN GIẢNG HUẤN HÓA HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Hóa Học Lý Thuyết & Bài Tập", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_hoa.jpg"}, {"id": "COURSE-ITEM-24", "code": "DVC24", "title": "Khóa TopUni Nền Tảng 12 — Môn Sinh Học Di Truyền & Sinh Thái", "category": "lop12_2k9", "groupName": "Môn Sinh Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K9-LOP12", "parentSubjectId": "COURSE-SUBJ-SINH12-2K9", "instructor": "HOCMAI TOPUNI — BAN GIẢNG HUẤN SINH HỌC", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "TopUni Lớp 12 (2K9)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi", "extraFolderIds": ["1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"], "driveUrl": "https://drive.google.com/drive/folders/1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi", "defaultCover": "courses/covers/nen_tang_sinh.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: NỀN TẢNG 12 MÔN SINH HỌC 2026 HOCMAI", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng 12 — Môn Sinh Học Di Truyền & Sinh Thái do HOCMAI TOPUNI — BAN GIẢNG HUẤN SINH HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng 12 — Môn Sinh Học Di Truyền & Sinh Thái", "categories": ["khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-25", "code": "DVC25", "title": "Khóa Toán 11 (2K10) — Xuất Phát Sớm & Làm Chủ Toán 11 Lộ Trình 2027", "category": "lop11_2k10", "groupName": "Môn Toán 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10", "instructor": "TENSCHOOL — THẦY ĐỖ VĂN ĐỨC", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1LkFNHipHxp2R3aUVVoC4uGMFxGsBXh1u", "extraFolderIds": ["1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP"], "driveUrl": "https://drive.google.com/drive/folders/1LkFNHipHxp2R3aUVVoC4uGMFxGsBXh1u", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOÁN 11 2027 THẦY ĐỖ VĂN ĐỨC TENSCHOOL 2K10", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán 11 (2K10) — Xuất Phát Sớm & Làm Chủ Toán 11 Lộ Trình 2027 do TENSCHOOL — THẦY ĐỖ VĂN ĐỨC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Toán 11 (2K10) — Xuất Phát Sớm & Làm Chủ Toán 11 Lộ Trình 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/toan_thay_duc.jpg"}, {"id": "COURSE-ITEM-26", "code": "DVC26", "title": "Khóa Toán 11 (2K10) — Định Hướng Ôn Thi TN THPT, ĐGNL & ĐGTD 2027", "category": "lop11_2k10", "groupName": "Môn Toán 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TOAN11-2K10", "instructor": "TUYENSINH247 [S1+] — THẦY QUÂN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1a1MHroAuK48kOyp_jhfqHc_yJc8pcFdU", "extraFolderIds": ["1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP"], "driveUrl": "https://drive.google.com/drive/folders/1a1MHroAuK48kOyp_jhfqHc_yJc8pcFdU", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: [S1+] Thầy Quân - Định hướng ôn thi TN THPT, ĐGNL, ĐGTD môn Toán cho học sinh lớp 11 - 2027 Tuyensinh247", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán 11 (2K10) — Định Hướng Ôn Thi TN THPT, ĐGNL & ĐGTD 2027 do TUYENSINH247 [S1+] — THẦY QUÂN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Toán 11 (2K10) — Định Hướng Ôn Thi TN THPT, ĐGNL & ĐGTD 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-27", "code": "DVC27", "title": "Khóa Vật Lý 11 (2K10) — Lộ Trình Chuyên Sâu Vật Lý 11 Năm 2027", "category": "lop11_2k10", "groupName": "Môn Vật Lý 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-LY11-2K10", "instructor": "THẦY VŨ HOÀNG QUÂN — VẬT LÝ 2K10", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1fYdD_xs_0PF63h0KBo384V0iqQ9cCs00", "extraFolderIds": ["134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"], "driveUrl": "https://drive.google.com/drive/folders/1fYdD_xs_0PF63h0KBo384V0iqQ9cCs00", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: LÝ 11 2027 THẦY VŨ HOÀNG QUÂN 2K10", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 11 (2K10) — Lộ Trình Chuyên Sâu Vật Lý 11 Năm 2027 do THẦY VŨ HOÀNG QUÂN — VẬT LÝ 2K10 giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Vật Lý 11 (2K10) — Lộ Trình Chuyên Sâu Vật Lý 11 Năm 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_ly.jpg"}, {"id": "COURSE-ITEM-28", "code": "DVC28", "title": "Khóa Vật Lý 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027", "category": "lop11_2k10", "groupName": "Môn Vật Lý 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-LY11-2K10", "instructor": "TUYENSINH247 — THẦY LONG VẬT LÝ", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1pMs32OQ3J9N7R9MJ-cT9fI_CNwu2crzC", "extraFolderIds": ["134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"], "driveUrl": "https://drive.google.com/drive/folders/1pMs32OQ3J9N7R9MJ-cT9fI_CNwu2crzC", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Thầy Long - Cơ bản & Nâng cao Vật Lí 11 - 2027 Tuyensinh247", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027 do TUYENSINH247 — THẦY LONG VẬT LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Vật Lý 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_ly.jpg"}, {"id": "COURSE-ITEM-29", "code": "DVC29", "title": "Khóa Luyện Đề Thi Học Kỳ Vật Lý 11 (Có Video & Lời Giải Chi Tiết)", "category": "lop11_2k10", "groupName": "Môn Vật Lý 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-LY11-2K10", "instructor": "TUYENSINH247 [S+] — BAN GIẢNG HUẤN VẬT LÝ", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1Xqa29h4pGAHp4RNs_i-YpRT_NkEuYzyO", "extraFolderIds": ["134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"], "driveUrl": "https://drive.google.com/drive/folders/1Xqa29h4pGAHp4RNs_i-YpRT_NkEuYzyO", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: [S+] Đề thi học kì Vật Lí 11 (Có lời giải chi tiết) - 2027 Tuyensinh247", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Đề Thi Học Kỳ Vật Lý 11 (Có Video & Lời Giải Chi Tiết) do TUYENSINH247 [S+] — BAN GIẢNG HUẤN VẬT LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Luyện Đề Thi Học Kỳ Vật Lý 11 (Có Video & Lời Giải Chi Tiết)", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_ly.jpg"}, {"id": "COURSE-ITEM-30", "code": "DVC30", "title": "Khóa Hóa Học 11 (2K10) — Lớp Tương Tác Trực Tuyến Bứt Phá Điểm 9+", "category": "lop11_2k10", "groupName": "Môn Hóa Học 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-HOA11-2K10", "instructor": "HOCMAI — CÔ DƯƠNG & CÔ HUỆ", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1IMhlEE-CyVyEd9nAn9bgkJMJpih1GZR3", "extraFolderIds": ["1CL2S35nzQS7qkXKck9c_efHX-aS87v-a"], "driveUrl": "https://drive.google.com/drive/folders/1IMhlEE-CyVyEd9nAn9bgkJMJpih1GZR3", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HOÁ 11 2027 LỚP TƯƠNG TÁC CÔ DƯƠNG, CÔ HUỆ HOCMAI 2K10", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 11 (2K10) — Lớp Tương Tác Trực Tuyến Bứt Phá Điểm 9+ do HOCMAI — CÔ DƯƠNG & CÔ HUỆ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Hóa Học 11 (2K10) — Lớp Tương Tác Trực Tuyến Bứt Phá Điểm 9+", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-31", "code": "DVC31", "title": "Khóa Hóa Học 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027", "category": "lop11_2k10", "groupName": "Môn Hóa Học 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-HOA11-2K10", "instructor": "TUYENSINH247 — THẦY TÙNG HÓA HỌC", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1yqY8yEuScOXifRPqjuTvAC8yfvPa1XTP", "extraFolderIds": ["1CL2S35nzQS7qkXKck9c_efHX-aS87v-a"], "driveUrl": "https://drive.google.com/drive/folders/1yqY8yEuScOXifRPqjuTvAC8yfvPa1XTP", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Thầy Tùng - Hóa 11 - Cơ bản và nâng cao - 2027 Tuyensinh247", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027 do TUYENSINH247 — THẦY TÙNG HÓA HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Hóa Học 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027", "categories": ["khtn_toan_ly_hoa_sinh", "lop11_2k10"], "subCategory": "khtn_toan_ly_hoa_sinh", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-32", "code": "DVC32", "title": "Khóa Tin Học 11 (2K10) — Định Hướng Tin Học Ứng Dụng 2027", "category": "lop11_2k10", "groupName": "Môn Tin Học 11 (2K10)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-K10-LOP11", "parentSubjectId": "COURSE-SUBJ-TIN11-2K10", "instructor": "TUYENSINH247 [S1] — THẦY PHƯƠNG & CÔ DUNG", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1dddCKyGFIG3o6NQokc8wMgS8fXArvvrt", "extraFolderIds": ["1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"], "driveUrl": "https://drive.google.com/drive/folders/1dddCKyGFIG3o6NQokc8wMgS8fXArvvrt", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: [S1] Thầy Phương, Cô Dung - Tin 11 - Tin học ứng dụng - 2027 Tuyensinh247", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tin Học 11 (2K10) — Định Hướng Tin Học Ứng Dụng 2027 do TUYENSINH247 [S1] — THẦY PHƯƠNG & CÔ DUNG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Tin Học 11 (2K10) — Định Hướng Tin Học Ứng Dụng 2027", "categories": ["tinhoc_daihoc", "lop11_2k10"], "subCategory": "tinhoc_daihoc", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-34", "code": "DVC34", "title": "Khóa Kỹ Năng Tin Học Văn Phòng Thực Chiến (Word · Excel · PowerPoint)", "category": "lop11_2k10", "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "HỌC VIỆN TIN HỌC — BAN GIẢNG HUẤN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học 11 (2K10)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm", "extraFolderIds": ["1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"], "driveUrl": "https://drive.google.com/drive/folders/1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TIN HỌC VĂN PHÒNG", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Kỹ Năng Tin Học Văn Phòng Thực Chiến (Word · Excel · PowerPoint) do HỌC VIỆN TIN HỌC — BAN GIẢNG HUẤN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Kỹ Năng Tin Học Văn Phòng Thực Chiến (Word · Excel · PowerPoint)", "categories": ["tinhoc_daihoc", "lop11_2k10"], "subCategory": "tinhoc_daihoc", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-36", "code": "DVC36", "title": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐGNL ĐHQG Hà Nội", "category": "dgnl_hsa", "groupName": "ĐGNL HSA (ĐHQG Hà Nội)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-ITEM-36", "instructor": "MAPSTUDY — TỔ CHUYÊN MÔN HSA", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1kNFMqYTAjNJNW3wl654OGvBdPzmgI_4R", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1kNFMqYTAjNJNW3wl654OGvBdPzmgI_4R", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HSA MAPSTUDY 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027 - XPS 2K9 HSA 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐGNL ĐHQG Hà Nội do MAPSTUDY — TỔ CHUYÊN MÔN HSA giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐGNL ĐHQG Hà Nội", "categories": ["dgnl_hsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dgnl_hsa_dhqg.jpg"}, {"id": "COURSE-ITEM-37", "code": "DVC37", "title": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề HSA", "category": "dgnl_hsa", "groupName": "ĐGNL HSA (ĐHQG Hà Nội)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-ITEM-37", "instructor": "HOCMAI — GIẢI PHÁP TOÀN DIỆN HSA", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1OSx2MVNua6QDZhJpV4XXyOhdgdYU4hjY", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1OSx2MVNua6QDZhJpV4XXyOhdgdYU4hjY", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HSA HOCMAI 2K9 LUYỆN THI ĐGNL HÀ NỘI 2027 - Giải pháp toàn diện HSA, Phòng luyện 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề HSA do HOCMAI — GIẢI PHÁP TOÀN DIỆN HSA giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề HSA", "categories": ["dgnl_hsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-38", "code": "DVC38", "title": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Tinh Hoa HSA TH01 ĐHQG Hà Nội", "category": "dgnl_hsa", "groupName": "ĐGNL HSA (ĐHQG Hà Nội)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-ITEM-38", "instructor": "HSA EDUCATION — TRUNG TÂM LUYỆN THI HSA", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1iHYQQznkt6nt0IvvANe_tMzHUQ5pX9y-", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1iHYQQznkt6nt0IvvANe_tMzHUQ5pX9y-", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: HSA 2K9 HSA EDU 2027 - Khoá Tinh hoa HSA TH01", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Tinh Hoa HSA TH01 ĐHQG Hà Nội do HSA EDUCATION — TRUNG TÂM LUYỆN THI HSA giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Tinh Hoa HSA TH01 ĐHQG Hà Nội", "categories": ["dgnl_hsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dgnl_hsa_dhqg.jpg"}, {"id": "COURSE-ITEM-39", "code": "DVC39", "title": "Khóa TopUni Nền Tảng Toàn Diện Các Môn Bổ Trợ Kỳ Thi ĐGNL HSA", "category": "dgnl_hsa", "groupName": "ĐGNL HSA (ĐHQG Hà Nội)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-ITEM-39", "instructor": "HOCMAI TOPUNI — HỆ THỐNG BỔ TRỢ ĐGNL", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TOPUNI NỀN TẢNG HOCMAI CÁC MÔN", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa TopUni Nền Tảng Toàn Diện Các Môn Bổ Trợ Kỳ Thi ĐGNL HSA do HOCMAI TOPUNI — HỆ THỐNG BỔ TRỢ ĐGNL giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa TopUni Nền Tảng Toàn Diện Các Môn Bổ Trợ Kỳ Thi ĐGNL HSA", "categories": ["dgnl_hsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-41", "code": "DVC41", "title": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) TSA Bách Khoa", "category": "dgtd_tsa", "groupName": "ĐGTD TSA (ĐH Bách Khoa)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGTD-TSA", "parentSubjectId": "COURSE-ITEM-41", "instructor": "TSA BMC — TRUNG TÂM LUYỆN THI ĐHBK HÀ NỘI", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGTD TSA (ĐH Bách Khoa)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1H7u21HeGVXEajKcPM6jr1IHPtNYBIudN", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1H7u21HeGVXEajKcPM6jr1IHPtNYBIudN", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TSA BMC 2K9 LUYỆN THI ĐÁNH GIÁ TƯ DUY ĐHBK HÀ NỘI 2027 - XPS 2K9 TSA 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) TSA Bách Khoa do TSA BMC — TRUNG TÂM LUYỆN THI ĐHBK HÀ NỘI giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) TSA Bách Khoa", "categories": ["dgtd_tsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dgtd_tsa_bachkhoa.jpg"}, {"id": "COURSE-ITEM-42", "code": "DVC42", "title": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề Bách Khoa", "category": "dgtd_tsa", "groupName": "ĐGTD TSA (ĐH Bách Khoa)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGTD-TSA", "parentSubjectId": "COURSE-ITEM-42", "instructor": "HOCMAI — GIẢI PHÁP TOÀN DIỆN TSA", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGTD TSA (ĐH Bách Khoa)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1OURnZBMt6QGB4AXIaXu23QGQPrqb_5F3", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1OURnZBMt6QGB4AXIaXu23QGQPrqb_5F3", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TSA HOCMAI 2K9 LUYỆN THI ĐÁNH GIÁ TƯ DUY ĐHBK HÀ NỘI 2027 - Giải pháp toàn diện TSA, Phòng luyện 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề Bách Khoa do HOCMAI — GIẢI PHÁP TOÀN DIỆN TSA giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề Bách Khoa", "categories": ["dgtd_tsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-43", "code": "DVC43", "title": "Khóa ĐGTD TSA 2027 — Full Lộ Trình SUN Chinh Phục ĐH Bách Khoa Hà Nội", "category": "dgtd_tsa", "groupName": "ĐGTD TSA (ĐH Bách Khoa)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGTD-TSA", "parentSubjectId": "COURSE-ITEM-43", "instructor": "TUYENSINH247 — HỆ THỐNG LỘ TRÌNH SUN", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGTD TSA (ĐH Bách Khoa)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1i9cK48wmHQFTPrLjnFheoHZ2Nto3tV2d", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1i9cK48wmHQFTPrLjnFheoHZ2Nto3tV2d", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TSA TUYENSINH247 2027 FULL LỘ TRÌNH SUN", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGTD TSA 2027 — Full Lộ Trình SUN Chinh Phục ĐH Bách Khoa Hà Nội do TUYENSINH247 — HỆ THỐNG LỘ TRÌNH SUN giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGTD TSA 2027 — Full Lộ Trình SUN Chinh Phục ĐH Bách Khoa Hà Nội", "categories": ["dgtd_tsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-44", "code": "DVC44", "title": "Khóa Bổ Trợ Tư Duy Toàn Diện Cho Kỳ Thi TSA · HSA · V-ACT 2027", "category": "dgtd_tsa", "groupName": "ĐGTD TSA (ĐH Bách Khoa)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGTD-TSA", "parentSubjectId": "COURSE-ITEM-44", "instructor": "TDMU EDUCATION — BAN GIẢNG HUẤN TƯ DUY", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGTD TSA (ĐH Bách Khoa)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "10n24IGM9Xylx3TvSJycc9X1ax5BVx-KX", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/10n24IGM9Xylx3TvSJycc9X1ax5BVx-KX", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: TSA BỔ TRỢ TSA - HSA - VACT TDMU 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Bổ Trợ Tư Duy Toàn Diện Cho Kỳ Thi TSA · HSA · V-ACT 2027 do TDMU EDUCATION — BAN GIẢNG HUẤN TƯ DUY giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa Bổ Trợ Tư Duy Toàn Diện Cho Kỳ Thi TSA · HSA · V-ACT 2027", "categories": ["dgtd_tsa", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/dgnl_hsa_dhqg.jpg"}, {"id": "COURSE-ITEM-46", "code": "DVC46", "title": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐHQG TP.HCM", "category": "dgnl_vact_bca", "groupName": "ĐGNL V-ACT (ĐHQG TP.HCM)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-VACT", "parentSubjectId": "COURSE-ITEM-46", "instructor": "MAPSTUDY — TỔ CHUYÊN MÔN V-ACT", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL V-ACT (ĐHQG TP.HCM)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: V-ACT MAPSTUDY 2K9 LUYỆN THI ĐÁNH GIÁ NĂNG LỰC TP.HCM 2027 - XPS 2K9 V-ACT 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐHQG TP.HCM do MAPSTUDY — TỔ CHUYÊN MÔN V-ACT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐHQG TP.HCM", "categories": ["dgnl_vact_bca", "lop12_2k9"], "subCategory": "lop12_2k9"}, {"id": "COURSE-ITEM-47", "code": "DVC47", "title": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện ĐHQG TP.HCM", "category": "dgnl_vact_bca", "groupName": "ĐGNL V-ACT (ĐHQG TP.HCM)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-VACT", "parentSubjectId": "COURSE-ITEM-47", "instructor": "HOCMAI — GIẢI PHÁP TOÀN DIỆN V-ACT", "lessons": 45, "duration": "Full lộ trình 2027 · Video + PDF", "level": "ĐGNL V-ACT (ĐHQG TP.HCM)", "rating": 5.0, "students": "1.1k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM", "extraFolderIds": [], "driveUrl": "https://drive.google.com/drive/folders/1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: V-ACT HOCMAI 2K9 LUYỆN THI ĐGNL TP.HCM 2027 - Giải pháp toàn diện V-ACT, Phòng luyện", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện ĐHQG TP.HCM do HOCMAI — GIẢI PHÁP TOÀN DIỆN V-ACT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "isPackageOnly": false, "summary": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện ĐHQG TP.HCM", "categories": ["dgnl_vact_bca", "lop12_2k9"], "subCategory": "lop12_2k9", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-53", "code": "DVC53", "title": "Khóa Luyện Đề Thi Chứng Chỉ Quốc Tế HSK (HSK 1–6) & Ngữ Pháp Tiếng Trung Thực Chiến", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9"], "groupName": "Môn Tiếng Trung (HSK & Khối D04)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9", "instructor": "YANGDEXIN — BỘ ĐỀ CHỨNG CHỈ QUỐC TẾ HSK", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tiếng Trung (HSK & Khối D04)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1YexRng8F1Cie0XvQ7EE_XfnCnnobQDle", "extraFolderIds": ["1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR"], "driveUrl": "https://drive.google.com/drive/folders/1YexRng8F1Cie0XvQ7EE_XfnCnnobQDle", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Luyện Đề Thi Chứng Chỉ Quốc Tế HSK (HSK 1–6) & Ngữ Pháp Tiếng Trung Thực Chiến", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Luyện Đề Thi Chứng Chỉ Quốc Tế HSK (HSK 1–6) & Ngữ Pháp Tiếng Trung Thực Chiến do YANGDEXIN — BỘ ĐỀ CHỨNG CHỈ QUỐC TẾ HSK giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Luyện Đề Thi Chứng Chỉ Quốc Tế HSK (HSK 1–6) & Ngữ Pháp Tiếng Trung Thực Chiến", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/tieng_trung_hsk.jpg"}, {"id": "COURSE-ITEM-54", "code": "DVC54", "title": "Khóa Tiếng Trung Chuyên Ngành Thương Mại, Giao Tiếp & Giáo Trình Hán Ngữ Bản Mới", "category": "ngoai_ngu_khxh", "subCategory": "tinhoc_daihoc", "categories": ["ngoai_ngu_khxh", "tinhoc_daihoc"], "groupName": "Môn Tiếng Trung (HSK & Khối D04)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9", "instructor": "HANKA EDU & YANGDEXIN — TIẾNG TRUNG CHUYÊN NGÀNH", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tiếng Trung (HSK & Khối D04)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1KsS8slf4Y3J-dLOpHwPoaBEYMA_Xh7B8", "extraFolderIds": ["1Ow9j1hCrMG2TlVuNFgbDi3zarhr-zeQR", "1YpRMjWVBVZug4uryTq6FTMma0TZu0rFq"], "driveUrl": "https://drive.google.com/drive/folders/1KsS8slf4Y3J-dLOpHwPoaBEYMA_Xh7B8", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tiếng Trung Chuyên Ngành Thương Mại, Giao Tiếp & Giáo Trình Hán Ngữ Bản Mới", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tiếng Trung Chuyên Ngành Thương Mại, Giao Tiếp & Giáo Trình Hán Ngữ Bản Mới do HANKA EDU & YANGDEXIN — TIẾNG TRUNG CHUYÊN NGÀNH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tiếng Trung Chuyên Ngành Thương Mại, Giao Tiếp & Giáo Trình Hán Ngữ Bản Mới", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/tieng_trung_hsk.jpg"}, {"id": "COURSE-ITEM-56", "code": "DVC56", "title": "Khóa Tổng Ôn Ngữ Văn & Tư Duy Định Tính Ngôn Ngữ Luyện Thi HSA · QDA · THPTQG 2027", "category": "ngoai_ngu_khxh", "subCategory": "dgnl_hsa", "categories": ["ngoai_ngu_khxh", "dgnl_hsa", "lop12_2k9"], "groupName": "Môn Ngữ Văn 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-SUBJ-VAN12-2K9", "instructor": "HOCMAI — BAN GIẢNG HUẤN NGÔN NGỮ & VĂN HỌC", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Ngữ Văn 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1Y76w1GLT9CSNGX5q0ER-uLua9eylB-Lz", "extraFolderIds": ["1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3"], "driveUrl": "https://drive.google.com/drive/folders/1Y76w1GLT9CSNGX5q0ER-uLua9eylB-Lz", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tổng Ôn Ngữ Văn & Tư Duy Định Tính Ngôn Ngữ Luyện Thi HSA · QDA · THPTQG 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tổng Ôn Ngữ Văn & Tư Duy Định Tính Ngôn Ngữ Luyện Thi HSA · QDA · THPTQG 2027 do HOCMAI — BAN GIẢNG HUẤN NGÔN NGỮ & VĂN HỌC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tổng Ôn Ngữ Văn & Tư Duy Định Tính Ngôn Ngữ Luyện Thi HSA · QDA · THPTQG 2027", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-60", "code": "DVC60", "title": "Khóa Tổng Ôn Môn Sinh Học Luyện Thi ĐGNL HSA · QDA & Tốt Nghiệp THPT 2027", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "dgnl_hsa", "categories": ["khtn_toan_ly_hoa_sinh", "dgnl_hsa", "lop12_2k9"], "groupName": "Môn Sinh Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DGNL-HSA", "parentSubjectId": "COURSE-SUBJ-SINH12-2K9", "instructor": "HOCMAI — TỔ SINH HỌC ĐGNL & THPTQG", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Sinh Học 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1CTrlYhRiXh7phi2qPwE3l_c2sOCsxS92", "extraFolderIds": ["1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi"], "driveUrl": "https://drive.google.com/drive/folders/1CTrlYhRiXh7phi2qPwE3l_c2sOCsxS92", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tổng Ôn Môn Sinh Học Luyện Thi ĐGNL HSA · QDA & Tốt Nghiệp THPT 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tổng Ôn Môn Sinh Học Luyện Thi ĐGNL HSA · QDA & Tốt Nghiệp THPT 2027 do HOCMAI — TỔ SINH HỌC ĐGNL & THPTQG giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tổng Ôn Môn Sinh Học Luyện Thi ĐGNL HSA · QDA & Tốt Nghiệp THPT 2027", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/nen_tang_sinh.jpg"}, {"id": "COURSE-ITEM-61", "code": "DVC61", "title": "Khóa Tiếng Anh 12 (2K9) — Chinh Phục Dạng Bài True/False, Nối Câu & Đọc Điền Từ Chuẩn Form 2027", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Tiếng Anh 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-ANH12-2K9", "instructor": "EMPIRE TEAM — BAN GIẢNG HUẤN TIẾNG ANH", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tiếng Anh 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1si7gRcqURbnbJMMiGiNwih-OzQhkQJJT", "extraFolderIds": ["1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe"], "driveUrl": "https://drive.google.com/drive/folders/1si7gRcqURbnbJMMiGiNwih-OzQhkQJJT", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tiếng Anh 12 (2K9) — Chinh Phục Dạng Bài True/False, Nối Câu & Đọc Điền Từ Chuẩn Form 2027", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tiếng Anh 12 (2K9) — Chinh Phục Dạng Bài True/False, Nối Câu & Đọc Điền Từ Chuẩn Form 2027 do EMPIRE TEAM — BAN GIẢNG HUẤN TIẾNG ANH giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tiếng Anh 12 (2K9) — Chinh Phục Dạng Bài True/False, Nối Câu & Đọc Điền Từ Chuẩn Form 2027", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/anh_co_mai_phuong.jpg"}, {"id": "COURSE-ITEM-62", "code": "DVC62", "title": "Khóa Toán Học 12 — Chuyên Đề Hàm Số, Nguyên Hàm Tích Phân & Luyện Thi Đại Học VSAT", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "dgnl_vact_bca", "categories": ["khtn_toan_ly_hoa_sinh", "dgnl_vact_bca", "lop12_2k9"], "groupName": "Môn Toán 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-SUBJ-TOAN12-2K9", "instructor": "EMPIRE TEAM — TỔ TOÁN HỌC VSAT", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Toán 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1VbW3pT-HmLO6HgpXV_1iih6y7JrFe5Cj", "extraFolderIds": ["1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"], "driveUrl": "https://drive.google.com/drive/folders/1VbW3pT-HmLO6HgpXV_1iih6y7JrFe5Cj", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Toán Học 12 — Chuyên Đề Hàm Số, Nguyên Hàm Tích Phân & Luyện Thi Đại Học VSAT", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Toán Học 12 — Chuyên Đề Hàm Số, Nguyên Hàm Tích Phân & Luyện Thi Đại Học VSAT do EMPIRE TEAM — TỔ TOÁN HỌC VSAT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Toán Học 12 — Chuyên Đề Hàm Số, Nguyên Hàm Tích Phân & Luyện Thi Đại Học VSAT", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-ITEM-63", "code": "DVC63", "title": "Khóa Vật Lý 12 — Chuyên Đề Cấu Trúc Vật Chất, Nhiệt Động Lực Học & Luyện Thi VSAT", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "dgnl_vact_bca", "categories": ["khtn_toan_ly_hoa_sinh", "dgnl_vact_bca", "lop12_2k9"], "groupName": "Môn Vật Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-SUBJ-LY12-2K9", "instructor": "EMPIRE TEAM — TỔ VẬT LÝ VSAT", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Vật Lý 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1CAshsjgTtSA-QicoM95Z1N-Ghw4vdwwE", "extraFolderIds": ["1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"], "driveUrl": "https://drive.google.com/drive/folders/1CAshsjgTtSA-QicoM95Z1N-Ghw4vdwwE", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Vật Lý 12 — Chuyên Đề Cấu Trúc Vật Chất, Nhiệt Động Lực Học & Luyện Thi VSAT", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Vật Lý 12 — Chuyên Đề Cấu Trúc Vật Chất, Nhiệt Động Lực Học & Luyện Thi VSAT do EMPIRE TEAM — TỔ VẬT LÝ VSAT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Vật Lý 12 — Chuyên Đề Cấu Trúc Vật Chất, Nhiệt Động Lực Học & Luyện Thi VSAT", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-64", "code": "DVC64", "title": "Khóa Hóa Học 12 — Chuyên Đề Ester, Carbohydrate, Pin Điện Phân & Luyện Thi VSAT", "category": "khtn_toan_ly_hoa_sinh", "subCategory": "dgnl_vact_bca", "categories": ["khtn_toan_ly_hoa_sinh", "dgnl_vact_bca", "lop12_2k9"], "groupName": "Môn Hóa Học 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-BCA-QDA-VSAT", "parentSubjectId": "COURSE-SUBJ-HOA12-2K9", "instructor": "EMPIRE TEAM — TỔ HÓA HỌC VSAT", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Hóa Học 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1AQ0g_Yght0umoIcBJl826mVIqmZ9uBjA", "extraFolderIds": ["1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"], "driveUrl": "https://drive.google.com/drive/folders/1AQ0g_Yght0umoIcBJl826mVIqmZ9uBjA", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Hóa Học 12 — Chuyên Đề Ester, Carbohydrate, Pin Điện Phân & Luyện Thi VSAT", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Hóa Học 12 — Chuyên Đề Ester, Carbohydrate, Pin Điện Phân & Luyện Thi VSAT do EMPIRE TEAM — TỔ HÓA HỌC VSAT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Hóa Học 12 — Chuyên Đề Ester, Carbohydrate, Pin Điện Phân & Luyện Thi VSAT", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-66", "code": "DVC66", "title": "Khóa Tuyệt Đỉnh Excel Từ Cơ Bản Đến Nâng Cao, Excel Pivot, Lập Báo Cáo Tài Chính & VBA", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "GITIHO & LAKITA — TUYỆT ĐỈNH EXCEL", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học Văn Phòng & MOS", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1AIoZiaHVooBk7eq2BTjpVmJkPACMfpi4", "extraFolderIds": ["1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm"], "driveUrl": "https://drive.google.com/drive/folders/1AIoZiaHVooBk7eq2BTjpVmJkPACMfpi4", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tuyệt Đỉnh Excel Từ Cơ Bản Đến Nâng Cao, Excel Pivot, Lập Báo Cáo Tài Chính & VBA", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tuyệt Đỉnh Excel Từ Cơ Bản Đến Nâng Cao, Excel Pivot, Lập Báo Cáo Tài Chính & VBA do GITIHO & LAKITA — TUYỆT ĐỈNH EXCEL giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tuyệt Đỉnh Excel Từ Cơ Bản Đến Nâng Cao, Excel Pivot, Lập Báo Cáo Tài Chính & VBA", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/tin_hoc_mos_office.jpg"}, {"id": "COURSE-ITEM-67", "code": "DVC67", "title": "Khóa Tuyệt Đỉnh PowerPoint 2024 Chinh Phục Mọi Ánh Nhìn & Soạn Thảo Văn Bản Word 365 A-Z", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "GITIHO — THIẾT KẾ POWERPOINT & WORD 365", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học Văn Phòng & MOS", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1N8TzciVJHxfG8Sa3qBqOSJraLKXTFDDc", "extraFolderIds": ["1pijb80HkEwE-APTf5ePbXim4xd2JfPNu", "1OZx0HEFLqENfm6qlUbNCgE5sP4-ql_MD", "1BcWAeM0zlnWpaZm4NIAWQ_7O8LWRaT6Q"], "driveUrl": "https://drive.google.com/drive/folders/1N8TzciVJHxfG8Sa3qBqOSJraLKXTFDDc", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tuyệt Đỉnh PowerPoint 2024 Chinh Phục Mọi Ánh Nhìn & Soạn Thảo Văn Bản Word 365 A-Z", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tuyệt Đỉnh PowerPoint 2024 Chinh Phục Mọi Ánh Nhìn & Soạn Thảo Văn Bản Word 365 A-Z do GITIHO — THIẾT KẾ POWERPOINT & WORD 365 giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tuyệt Đỉnh PowerPoint 2024 Chinh Phục Mọi Ánh Nhìn & Soạn Thảo Văn Bản Word 365 A-Z", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-68", "code": "DVC68", "title": "Khóa Làm Chủ Cơ Sở Dữ Liệu Microsoft Access Từ A-Z & Quản Lý Tiến Độ Dự Án MS Project", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "HỌC VIỆN DỮ LIỆU — MICROSOFT ACCESS & MS PROJECT", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học Văn Phòng & MOS", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "18DklFNnU58J8amuZHsE_7fFIUUTcZVsL", "extraFolderIds": ["1Pz2ulBxVS93g_8hiDshiunitZLPWI4HA"], "driveUrl": "https://drive.google.com/drive/folders/18DklFNnU58J8amuZHsE_7fFIUUTcZVsL", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Làm Chủ Cơ Sở Dữ Liệu Microsoft Access Từ A-Z & Quản Lý Tiến Độ Dự Án MS Project", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Làm Chủ Cơ Sở Dữ Liệu Microsoft Access Từ A-Z & Quản Lý Tiến Độ Dự Án MS Project do HỌC VIỆN DỮ LIỆU — MICROSOFT ACCESS & MS PROJECT giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Làm Chủ Cơ Sở Dữ Liệu Microsoft Access Từ A-Z & Quản Lý Tiến Độ Dự Án MS Project", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/tin_hoc_mos_office.jpg"}, {"id": "COURSE-ITEM-69", "code": "DVC69", "title": "Khóa Làm Chủ Google Spreadsheets, Google Workspace & Tự Động Hóa Gửi Email Apps Script", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Môn Tin Học Văn Phòng & MOS", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-THVP-MOS-199K", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "GOOGLE WORKSPACE & APPS SCRIPT ACADEMY", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Tin Học Văn Phòng & MOS", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1Aj6if850TExQl59BX726KwSkBrKTMFvA", "extraFolderIds": ["1dy5b31eEjENI_v4zzCSO28FfNfPxjVt_"], "driveUrl": "https://drive.google.com/drive/folders/1Aj6if850TExQl59BX726KwSkBrKTMFvA", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Làm Chủ Google Spreadsheets, Google Workspace & Tự Động Hóa Gửi Email Apps Script", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Làm Chủ Google Spreadsheets, Google Workspace & Tự Động Hóa Gửi Email Apps Script do GOOGLE WORKSPACE & APPS SCRIPT ACADEMY giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Làm Chủ Google Spreadsheets, Google Workspace & Tự Động Hóa Gửi Email Apps Script", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/van_co_suong_mai.jpg"}, {"id": "COURSE-ITEM-70", "code": "DVC70", "title": "Khóa Combo Kỹ Năng Số: Thực Hành Truy Vấn SQL, Hàm Mảng Excel & Phân Tích Dữ Liệu", "category": "tinhoc_daihoc", "subCategory": "all", "categories": ["tinhoc_daihoc"], "groupName": "Khối Đại Học & Kỹ Năng Số", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-MOS-THVP", "instructor": "ĐIỆP VIÊN ACADEMY — KỸ NĂNG SỐ & DATA", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Khối Đại Học & Kỹ Năng Số", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK", "extraFolderIds": ["1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm"], "driveUrl": "https://drive.google.com/drive/folders/1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Combo Kỹ Năng Số: Thực Hành Truy Vấn SQL, Hàm Mảng Excel & Phân Tích Dữ Liệu", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Combo Kỹ Năng Số: Thực Hành Truy Vấn SQL, Hàm Mảng Excel & Phân Tích Dữ Liệu do ĐIỆP VIÊN ACADEMY — KỸ NĂNG SỐ & DATA giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Combo Kỹ Năng Số: Thực Hành Truy Vấn SQL, Hàm Mảng Excel & Phân Tích Dữ Liệu", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/tin_hoc_mos_office.jpg"}, {"id": "COURSE-ITEM-74", "code": "DVC74", "title": "Khóa Lý Thuyết Xác Suất Thống Kê Đại Học & Bí Quyết Viết CV Chinh Phục Nhà Tuyển Dụng", "category": "tinhoc_daihoc", "subCategory": "khtn_toan_ly_hoa_sinh", "categories": ["tinhoc_daihoc", "khtn_toan_ly_hoa_sinh"], "groupName": "Môn Xác Suất Thống Kê Đại Học", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-DAIHOC-HOC-THUAT", "parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL", "instructor": "ĐIỆP VIÊN ACADEMY — TOÁN ĐẠI HỌC & HƯỚNG NGHIỆP", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Xác Suất Thống Kê Đại Học", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1QJxChXQQ9WMZQTInw_3Tged3PfHHRZHS", "extraFolderIds": ["1DCDFsT5EXtDKj7m_y-w6qR7c_rXgP7NW", "16mmqHcys3VeIGmPeD-Hw2lL5koWbPis_"], "driveUrl": "https://drive.google.com/drive/folders/1QJxChXQQ9WMZQTInw_3Tged3PfHHRZHS", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Lý Thuyết Xác Suất Thống Kê Đại Học & Bí Quyết Viết CV Chinh Phục Nhà Tuyển Dụng", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Lý Thuyết Xác Suất Thống Kê Đại Học & Bí Quyết Viết CV Chinh Phục Nhà Tuyển Dụng do ĐIỆP VIÊN ACADEMY — TOÁN ĐẠI HỌC & HƯỚNG NGHIỆP giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Lý Thuyết Xác Suất Thống Kê Đại Học & Bí Quyết Viết CV Chinh Phục Nhà Tuyển Dụng", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "cover": "courses/covers/dai_hoc_diem_a_plus.jpg"}, {"id": "COURSE-ITEM-76", "code": "DVC76", "title": "Khóa Guitar Đệm Hát Trong 30 Ngày Từ A-Z & Đệm Hát Dòng Nhạc Bolero Nâng Cao", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "HỌC VIỆN GUITAR — ĐỆM HÁT 30 NGÀY & BOLERO", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1fbnrLKiCLnLX7eVPvrqg_kK56i3Fa3jS", "extraFolderIds": ["1ImYNmkGbp92_dXSAYq5lZiSVCJdwcFv1", "1euJQ8HZbo9rxOd2GrO1q2kIVwNgF6-CQ", "1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B"], "driveUrl": "https://drive.google.com/drive/folders/1fbnrLKiCLnLX7eVPvrqg_kK56i3Fa3jS", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Guitar Đệm Hát Trong 30 Ngày Từ A-Z & Đệm Hát Dòng Nhạc Bolero Nâng Cao", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Guitar Đệm Hát Trong 30 Ngày Từ A-Z & Đệm Hát Dòng Nhạc Bolero Nâng Cao do HỌC VIỆN GUITAR — ĐỆM HÁT 30 NGÀY & BOLERO giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Guitar Đệm Hát Trong 30 Ngày Từ A-Z & Đệm Hát Dòng Nhạc Bolero Nâng Cao", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-79", "code": "DVC79", "title": "Khóa Chinh Phục Đàn Ukulele Trong 7 Ngày Cùng Hiển Râu & Giáo Trình Ukulele All-In-One", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "HIỂN RÂU — GIÁO TRÌNH UKULELE TOÀN TẬP", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1CdKjrgfN8h0fSpadjVBS2uhJe8_4OBnZ", "extraFolderIds": ["1oXAEpmI_zNgLDAv6tUMDgnQWe7SAPdbp", "1R3EJy4TNB_IWQJHIwl1pQuIhZmz5bF3i"], "driveUrl": "https://drive.google.com/drive/folders/1CdKjrgfN8h0fSpadjVBS2uhJe8_4OBnZ", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Chinh Phục Đàn Ukulele Trong 7 Ngày Cùng Hiển Râu & Giáo Trình Ukulele All-In-One", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Chinh Phục Đàn Ukulele Trong 7 Ngày Cùng Hiển Râu & Giáo Trình Ukulele All-In-One do HIỂN RÂU — GIÁO TRÌNH UKULELE TOÀN TẬP giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Chinh Phục Đàn Ukulele Trong 7 Ngày Cùng Hiển Râu & Giáo Trình Ukulele All-In-One", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-80", "code": "DVC80", "title": "Khóa Tự Học Thổi Sáo Trúc Trong 21 Ngày & Tự Học Kèn Harmonica Trong 15 Buổi", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "NHẠC CỤ DÂN TỘC & HARMONICA — SÁO TRÚC VIỆT NAM", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1MvkbnuiufNJT1_Wkl3bqIvKULjOki9Zc", "extraFolderIds": ["1xaVYzBaILI-mJHqHMLCVUF3ctfM3qz51", "1XoEXCi6BmSlMq62RVRfNtPFTdti_DzM1"], "driveUrl": "https://drive.google.com/drive/folders/1MvkbnuiufNJT1_Wkl3bqIvKULjOki9Zc", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Tự Học Thổi Sáo Trúc Trong 21 Ngày & Tự Học Kèn Harmonica Trong 15 Buổi", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Tự Học Thổi Sáo Trúc Trong 21 Ngày & Tự Học Kèn Harmonica Trong 15 Buổi do NHẠC CỤ DÂN TỘC & HARMONICA — SÁO TRÚC VIỆT NAM giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Tự Học Thổi Sáo Trúc Trong 21 Ngày & Tự Học Kèn Harmonica Trong 15 Buổi", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-81", "code": "DVC81", "title": "Khóa Học DJ Online (Serato), Beatbox Biểu Diễn & Thu Âm Mix Vocal Trên Cubase / Nuendo", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "PRODUCER & DJ STUDIO — CUBASE, SERATO & BEATBOX", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1IQqV3bkc5zPShTuwqpX6ufP3mmOyzw2G", "extraFolderIds": ["18KWHTVMR5G9djqEerfwAmel3tdN-U5sP", "1sIURai13bq6OKagRRWZNTdh-VEDYYQEv", "15FflBoasTT6otpURG3wbrf2fNygw1_t1", "1UmxVqK3Om8HtZDC8EQ_NZ3sw-8wNgV44"], "driveUrl": "https://drive.google.com/drive/folders/1IQqV3bkc5zPShTuwqpX6ufP3mmOyzw2G", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Học DJ Online (Serato), Beatbox Biểu Diễn & Thu Âm Mix Vocal Trên Cubase / Nuendo", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Học DJ Online (Serato), Beatbox Biểu Diễn & Thu Âm Mix Vocal Trên Cubase / Nuendo do PRODUCER & DJ STUDIO — CUBASE, SERATO & BEATBOX giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Học DJ Online (Serato), Beatbox Biểu Diễn & Thu Âm Mix Vocal Trên Cubase / Nuendo", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-82", "code": "DVC82", "title": "Khóa Học Nhảy Shuffle Dance Cơ Bản Cho Người Mới & Viết Giai Điệu Bài Hát Bằng Nhạc Beat", "category": "nghe_thuat", "subCategory": "all", "categories": ["nghe_thuat"], "groupName": "Môn Nghệ Thuật & Âm Nhạc", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGHETHUAT-199K", "parentSubjectId": "COURSE-SUBJ-NGHETHUAT", "instructor": "VŨ ĐẠO & SÁNG TÁC — SHUFFLE DANCE & VIẾT NHẠC", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Nghệ Thuật & Âm Nhạc", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Gói Lẻ 69K · Tặng App", "driveFolderId": "1gpSBFQSFIFIHbDzmQd_UrAACh7kgaTBM", "extraFolderIds": ["1n0BbtwuAy9CLZO7JILRlrZ2pstWKOc3N", "1aZMc6Ea-IPT79GkXksxjobZK3191vsYY"], "driveUrl": "https://drive.google.com/drive/folders/1gpSBFQSFIFIHbDzmQd_UrAACh7kgaTBM", "defaultCover": "", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Học Nhảy Shuffle Dance Cơ Bản Cho Người Mới & Viết Giai Điệu Bài Hát Bằng Nhạc Beat", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Học Nhảy Shuffle Dance Cơ Bản Cho Người Mới & Viết Giai Điệu Bài Hát Bằng Nhạc Beat do VŨ ĐẠO & SÁNG TÁC — SHUFFLE DANCE & VIẾT NHẠC giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Học Nhảy Shuffle Dance Cơ Bản Cho Người Mới & Viết Giai Điệu Bài Hát Bằng Nhạc Beat", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K"}, {"id": "COURSE-ITEM-SU-LAN-HUONG", "code": "DVSU12LANHUONG", "title": "Khóa Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam & Thế Giới Cùng Cô Lan Hương", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Lịch Sử 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-SU12-2K9", "instructor": "CÔ LAN HƯƠNG — LỊCH SỬ 12", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Lịch Sử 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Môn Lịch Sử 12 · 69K", "driveFolderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "extraFolderIds": ["1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"], "driveUrl": "https://drive.google.com/drive/folders/1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe", "defaultCover": "courses/covers/su_co_lan_huong.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông do EMPIRE TEAM — BAN GIẢNG HUẤN LỊCH SỬ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "sku": "DVSU12LANHUONG", "cover": "courses/covers/su_co_lan_huong.jpg"}, {"id": "COURSE-ITEM-DIA-TAI", "code": "DVDIA12TAI", "title": "Khóa Địa Lý 12 (2K9) — Bí Quyết Chinh Phục Điểm 9+ Địa Lý Cùng Thầy Tài", "category": "ngoai_ngu_khxh", "subCategory": "lop12_2k9", "categories": ["ngoai_ngu_khxh", "lop12_2k9", "dgnl_vact_bca"], "groupName": "Môn Địa Lý 12 (2K9)", "tier": "subject_69k", "tierLabel": "Gói Theo Môn / Lộ Trình (69k)", "parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH", "parentSubjectId": "COURSE-SUBJ-DIA12-2K9", "instructor": "THẦY TÀI ĐỊA LÝ — ĐỊA LÝ 12", "lessons": 50, "duration": "Full lộ trình 2027 · Video + PDF", "level": "Môn Địa Lý 12 (2K9)", "rating": 5.0, "students": "1.4k+", "price": 69000, "originalPrice": 250000, "badge": "Môn Địa Lý 12 · 69K", "driveFolderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm", "extraFolderIds": ["1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"], "driveUrl": "https://drive.google.com/drive/folders/1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm", "defaultCover": "courses/covers/dia_thay_tai.jpg", "highlights": ["Mở khóa trực tiếp thư mục khóa học: Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam", "Tặng kèm App Điệp Viên Study có sẵn tài khoản là Email đăng ký (Khóa cố định 1 thiết bị)", "Học trực tiếp trên App & Google Drive với đầy đủ video bài giảng và tài liệu PDF"], "description": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam do EMPIRE TEAM — BAN GIẢNG HUẤN ĐỊA LÝ giảng dạy. Đầy đủ video bài giảng, tài liệu PDF và đề luyện tập chuẩn cấu trúc 2027.", "summary": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam", "isPackageOnly": false, "subTier": "teacher_69k", "tierShortBadge": "THEO MÔN 69K", "sku": "DVDIA12TAI", "cover": "courses/covers/dia_thay_tai.jpg"}];
+const COURSES_DATABASE = [{"id": "ALL-COURSES-399K", "sku": "DVFULL399", "code": "DVFULL399", "category": "all", "categories": ["all", "khtn_toan_ly_hoa_sinh", "ngoai_ngu_khxh", "lop12_2k9", "dgnl_hsa", "dgtd_tsa", "dgnl_vact_bca"], "subCategory": "lop12_2k9", "categoryLabel": "VIP Full Trọn Bộ 399K", "title": "Gói VIP Full Trọn Bộ 399K (Mở 100% Khóa 69K + 199K + Update Vĩnh Viễn)", "instructor": "TOÀN BỘ HỆ THỐNG KHÓA HỌC ĐIỆP VIÊN STUDY", "duration": "Mở khóa 100% + tự động hưởng mọi cập nhật về sau", "lessons": 1500, "level": "Full Toàn Hệ Thống 2027", "groupName": "VIP Full 399K · Mở Khóa Tất Cả", "rating": 5.0, "students": "4.9k+", "price": 399000, "originalPrice": 2500000, "singlePrice": 69000, "coursePrice": 399000, "tier": "full_399k", "tierType": "full_399k", "subTier": "full_399k", "isPackageOnly": true, "tierShortBadge": "FULL TRỌN BỘ 399K", "tierLabel": "Full Trọn Bộ + Update (399K)", "badge": "VIP Full 399K", "parentCourseId": "ALL-COURSES-399K", "parentSubjectId": "ALL-COURSES-399K", "childCourseIds": ["C199-KHTN1", "C199-KHTN2", "C199-KHXH1", "C199-KHXH2", "C199-HSA", "C199-TSA", "C199-VACT", "K69-TOAN-DUC", "K69-TOAN-TIEN", "K69-TOAN-SHIPPER", "K69-TOAN-MAP", "K69-TOAN-NT", "K69-LY-BIEN", "K69-LY-TIEN", "K69-LY-UNG", "K69-HOA-TRONG", "K69-HOA-NGOC", "K69-VAN-SM", "K69-VAN-NT", "K69-ANH-MP", "K69-ANH-LIEU", "K69-ANH-NT", "K69-SINH-NGHE", "K69-SINH-DUONG", "K69-SU-HUONG", "K69-SU-SEN", "K69-DIA-TUNG", "K69-DIA-TAI", "K69-HSA-HOCMAI", "K69-HSA-MAP", "K69-HSA-EMPIRE", "K69-HSA-EDU", "K69-TSA-BMC", "K69-TSA-HOCMAI", "K69-VACT-HOCMAI", "K69-VACT-EMPIRE", "K69-VACT-MAP"], "extraFolderIds": ["1ZlYt4iot-K6d0fZTb7hGwwnRgUV6Pdwh"], "bannerId": "", "defaultCover": "", "cover": "", "fallbackCover": "", "driveFolderId": "1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a", "driveFolderName": "Full Kho 69K + Kho 199K (Tự Động Update)", "driveFolderUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a", "driveUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa toàn bộ 100% khóa học lẻ 69K, 7 Combo 199K (KHTN 1, KHTN 2, KHXH 1, KHXH 2, HSA, TSA, V-ACT) + tự động cập nhật về sau.", "description": "Mở khóa toàn bộ 2 kho gốc + mọi cập nhật mới về sau + Tặng kèm App Điệp Viên Study (Email + SĐT).", "highlights": ["Mở khóa 100% toàn bộ khóa 69K & Combo 199K", "Tự động nhận toàn bộ cập nhật mới về sau", "Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Full Hệ Thống", "lessons": [{"id": "ALL-COURSES-399K-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Full Hệ Thống", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: Điệp Viên Study", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Full Trọn Bộ 399K."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "ALL-COURSES-399K-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHTN1", "sku": "DV199KHTN1", "code": "DV199KHTN1", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Ban KHTN 1 (Toán · Vật Lý · Sinh)", "title": "Combo Ban KHTN 1 — Toán, Vật Lý, Sinh", "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHTN 1 — Toán, Vật Lý, Sinh", "groupName": "COMBO BAN 199K · Combo Ban KHTN 1 — Toán, Vật Lý, Sinh", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHTN 1 (Toán · Vật Lý · Sinh)", "parentCourseId": "C199-KHTN1", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": ["K69-TOAN-DUC", "K69-LY-BIEN", "K69-SINH-NGHE"], "extraFolderIds": ["1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "1m__F2exCz50iNJXhf0JR4TramO29K244"], "bannerId": "1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW", "defaultCover": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960", "cover": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960", "fallbackCover": "", "driveFolderId": "1wH_RQNefQrFk0dTnVQroFsLCzTFZi4J7", "driveFolderName": "Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/1wH_RQNefQrFk0dTnVQroFsLCzTFZi4J7", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Tự Nhiên 1 gồm đúng 3 thư mục thầy cô chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý Thầy Chu Văn Biên + Sinh Học Thầy Phan Khắc Nghệ.", "description": "Combo Ban Khoa Học Tự Nhiên 1 gồm đúng 3 thư mục thầy cô chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý Thầy Chu Văn Biên + Sinh Học Thầy Phan Khắc Nghệ.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHTN 1 (Toán · Vật Lý · Sinh)", "lessons": [{"id": "C199-KHTN1-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHTN 1 (Toán · Vật Lý · Sinh)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHTN1-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHTN2", "sku": "DV199KHTN2", "code": "DV199KHTN2", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Ban KHTN 2 (Toán · Vật Lý · Anh)", "title": "Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh", "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh", "groupName": "COMBO BAN 199K · Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHTN 2 (Toán · Vật Lý · Anh)", "parentCourseId": "C199-KHTN2", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": ["K69-TOAN-DUC", "K69-LY-TIEN", "K69-ANH-MP"], "extraFolderIds": ["1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"], "bannerId": "1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw", "defaultCover": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960", "cover": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960", "fallbackCover": "", "driveFolderId": "13E4qvYJg_AnJsmqDRceRvxqT7MdPPCe9", "driveFolderName": "Combo 199K: KHTN 2 — Toán, Vật Lý, Anh", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/13E4qvYJg_AnJsmqDRceRvxqT7MdPPCe9", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Tự Nhiên 2 (Khối A01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý IPClass + Tiếng Anh Cô Vũ Mai Phương.", "description": "Combo Ban Khoa Học Tự Nhiên 2 (Khối A01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý IPClass + Tiếng Anh Cô Vũ Mai Phương.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHTN 2 (Toán · Vật Lý · Anh)", "lessons": [{"id": "C199-KHTN2-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHTN 2 (Toán · Vật Lý · Anh)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHTN 2 — Toán, Vật Lý, Anh."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHTN2-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHXH1", "sku": "DV199KHXH1", "code": "DV199KHXH1", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "title": "Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "instructor": "CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "groupName": "COMBO BAN 199K · Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "parentCourseId": "C199-KHXH1", "parentSubjectId": "K69-VAN-SM", "childCourseIds": ["K69-VAN-SM", "K69-SU-HUONG", "K69-DIA-TUNG"], "extraFolderIds": ["1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm"], "bannerId": "1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe", "defaultCover": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960", "cover": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960", "fallbackCover": "", "driveFolderId": "1POi_V92dNB9IjyVa15Q7TTe5EgtNf85k", "driveFolderName": "Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "driveFolderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveUrl": "https://drive.google.com/drive/folders/1POi_V92dNB9IjyVa15Q7TTe5EgtNf85k", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Xã Hội 1 (Khối C00) gồm đúng 3 thư mục chọn lọc: Ngữ Văn Cô Sương Mai + Lịch Sử Cô Lan Hương + Địa Lý Thầy Đàm Thanh Tùng.", "description": "Combo Ban Khoa Học Xã Hội 1 (Khối C00) gồm đúng 3 thư mục chọn lọc: Ngữ Văn Cô Sương Mai + Lịch Sử Cô Lan Hương + Địa Lý Thầy Đàm Thanh Tùng.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "lessons": [{"id": "C199-KHXH1-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHXH1-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHXH2", "sku": "DV199KHXH2", "code": "DV199KHXH2", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Ban KHXH 2 (Toán · Văn · Anh)", "title": "Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh", "instructor": "THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh", "groupName": "COMBO BAN 199K · Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHXH 2 (Toán · Văn · Anh)", "parentCourseId": "C199-KHXH2", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": ["K69-TOAN-DUC", "K69-VAN-SM", "K69-ANH-MP"], "extraFolderIds": ["1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"], "bannerId": "13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR", "defaultCover": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960", "cover": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960", "fallbackCover": "", "driveFolderId": "1USiYayriUVvjhV9uNUsb9KwkUBmvY9Qr", "driveFolderName": "Combo 199K: KHXH 2 — Toán, Văn, Anh", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/1USiYayriUVvjhV9uNUsb9KwkUBmvY9Qr", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Xã Hội 2 (Khối D01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Ngữ Văn Cô Sương Mai + Tiếng Anh Cô Vũ Mai Phương.", "description": "Combo Ban Khoa Học Xã Hội 2 (Khối D01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Ngữ Văn Cô Sương Mai + Tiếng Anh Cô Vũ Mai Phương.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHXH 2 (Toán · Văn · Anh)", "lessons": [{"id": "C199-KHXH2-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHXH 2 (Toán · Văn · Anh)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHXH 2 — Toán, Văn, Anh."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHXH2-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-HSA", "sku": "DV199HSA", "code": "DV199HSA", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "ĐGNL HSA ĐHQG Hà Nội", "title": "Khóa ĐGNL HSA (ĐHQG Hà Nội)", "instructor": "HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU", "duration": "Combo 4 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 480, "level": "KHÓA ĐGNL 199K · Khóa ĐGNL HSA (ĐHQG Hà Nội)", "groupName": "KHÓA ĐGNL 199K · Khóa ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "KHÓA ĐGNL 199K", "badge": "199K · ĐGNL HSA ĐHQG Hà Nội", "parentCourseId": "C199-HSA", "parentSubjectId": "K69-HSA-HOCMAI", "childCourseIds": ["K69-HSA-HOCMAI", "K69-HSA-MAP", "K69-HSA-EMPIRE", "K69-HSA-EDU"], "extraFolderIds": ["11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg"], "bannerId": "1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C", "defaultCover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960", "cover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960", "fallbackCover": "", "driveFolderId": "1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD", "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)", "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveUrl": "https://drive.google.com/drive/folders/1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Trọn bộ 4 đơn vị luyện thi ĐGNL HSA ĐHQG Hà Nội 2027 (HocMai · MapStudy · Empire Team · HSA Edu) + Tặng App Điệp Viên Study.", "description": "Trọn bộ 4 đơn vị luyện thi ĐGNL HSA ĐHQG Hà Nội 2027 (HocMai · MapStudy · Empire Team · HSA Edu) + Tặng App Điệp Viên Study.", "highlights": ["Gồm đúng 4 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGNL HSA ĐHQG Hà Nội", "lessons": [{"id": "C199-HSA-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGNL HSA ĐHQG Hà Nội", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-HSA-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-TSA", "sku": "DV199TSA", "code": "DV199TSA", "category": "dgtd_tsa", "categories": ["all", "dgtd_tsa", "lop12_2k9"], "subCategory": "dgtd_tsa", "categoryLabel": "ĐGTD TSA ĐH Bách Khoa HN", "title": "Khóa ĐGTD TSA (ĐH Bách Khoa HN)", "instructor": "BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC", "duration": "Combo 2 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 240, "level": "KHÓA ĐGTD 199K · Khóa ĐGTD TSA (ĐH Bách Khoa HN)", "groupName": "KHÓA ĐGTD 199K · Khóa ĐGTD TSA (ĐH Bách Khoa HN)", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "KHÓA ĐGTD 199K", "badge": "199K · ĐGTD TSA ĐH Bách Khoa HN", "parentCourseId": "C199-TSA", "parentSubjectId": "K69-TSA-BMC", "childCourseIds": ["K69-TSA-BMC", "K69-TSA-HOCMAI"], "extraFolderIds": ["1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu"], "bannerId": "1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03", "defaultCover": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960", "cover": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960", "fallbackCover": "", "driveFolderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFolderName": "Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)", "driveFolderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Trọn bộ 2 đơn vị luyện thi ĐGTD TSA ĐH Bách Khoa Hà Nội 2027 (BMC · HocMai) + Tặng App Điệp Viên Study.", "description": "Trọn bộ 2 đơn vị luyện thi ĐGTD TSA ĐH Bách Khoa Hà Nội 2027 (BMC · HocMai) + Tặng App Điệp Viên Study.", "highlights": ["Gồm đúng 2 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGTD TSA ĐH Bách Khoa HN", "lessons": [{"id": "C199-TSA-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGTD TSA ĐH Bách Khoa HN", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-TSA-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-VACT", "sku": "DV199VACT", "code": "DV199VACT", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "ĐGNL V-ACT ĐHQG TP.HCM", "title": "Khóa ĐGNL V-ACT (ĐHQG TP.HCM)", "instructor": "HOCMAI · EMPIRE TEAM · MAPSTUDY", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "KHÓA ĐGNL 199K · Khóa ĐGNL V-ACT (ĐHQG TP.HCM)", "groupName": "KHÓA ĐGNL 199K · Khóa ĐGNL V-ACT (ĐHQG TP.HCM)", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "KHÓA ĐGNL 199K", "badge": "199K · ĐGNL V-ACT ĐHQG TP.HCM", "parentCourseId": "C199-VACT", "parentSubjectId": "K69-VACT-HOCMAI", "childCourseIds": ["K69-VACT-HOCMAI", "K69-VACT-EMPIRE", "K69-VACT-MAP"], "extraFolderIds": ["1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB"], "bannerId": "15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10", "defaultCover": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960", "cover": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960", "fallbackCover": "", "driveFolderId": "1bPhV9fqeesm4SISXeIjL9ZgVWwnHxW6o", "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)", "driveFolderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveUrl": "https://drive.google.com/drive/folders/1bPhV9fqeesm4SISXeIjL9ZgVWwnHxW6o", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Trọn bộ 3 đơn vị luyện thi ĐGNL V-ACT ĐHQG TP.HCM 2027 (HocMai · Empire Team · MapStudy) + Tặng App Điệp Viên Study.", "description": "Trọn bộ 3 đơn vị luyện thi ĐGNL V-ACT ĐHQG TP.HCM 2027 (HocMai · Empire Team · MapStudy) + Tặng App Điệp Viên Study.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng + Tặng App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGNL V-ACT ĐHQG TP.HCM", "lessons": [{"id": "C199-VACT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGNL V-ACT ĐHQG TP.HCM", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI · EMPIRE TEAM · MAPSTUDY", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-VACT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-DUC", "sku": "DV69TOANDUC", "code": "DV69TOANDUC", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)", "instructor": "THẦY ĐỖ VĂN ĐỨC — TENSCHOOL", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-DUC", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": [], "extraFolderIds": [], "bannerId": "19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u", "defaultCover": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960", "cover": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960", "fallbackCover": "", "driveFolderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveFolderName": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Thầy Đỗ Văn Đức (TenSchool 2K9) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-DUC-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC — TENSCHOOL", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán Thầy Đỗ Văn Đức (TenSchool 2K9)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-DUC-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-TIEN", "sku": "DV69TOANTIEN", "code": "DV69TOANTIEN", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán Thầy Nguyễn Phan Tiến 2K9", "instructor": "THẦY NGUYỄN PHAN TIẾN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-TIEN", "parentSubjectId": "K69-TOAN-TIEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1T9k1aHqUdKGfzzCeePudB3408I2f86Ek", "defaultCover": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960", "cover": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960", "fallbackCover": "", "driveFolderId": "1b73Z89zxCGINyuOVm4pImxwkj2UTidC1", "driveFolderName": "Toán Thầy Nguyễn Phan Tiến 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1", "driveUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Thầy Nguyễn Phan Tiến 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Toán Thầy Nguyễn Phan Tiến 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-TIEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY NGUYỄN PHAN TIẾN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán Thầy Nguyễn Phan Tiến 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-TIEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-SHIPPER", "sku": "DV69TOANSHIP", "code": "DV69TOANSHIP", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán Anh Shiper 2K9", "instructor": "ANH SHIPER TOÁN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-SHIPPER", "parentSubjectId": "K69-TOAN-SHIPPER", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l", "defaultCover": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960", "cover": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960", "fallbackCover": "", "driveFolderId": "1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n", "driveFolderName": "Toán Anh Shiper 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n", "driveUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Anh Shiper 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Toán Anh Shiper 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-SHIPPER-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: ANH SHIPER TOÁN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán Anh Shiper 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-SHIPPER-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-MAP", "sku": "DV69TOANMAP", "code": "DV69TOANMAP", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán — Tổ Toán Học MapStudy 2K9", "instructor": "TỔ TOÁN HỌC MAPSTUDY", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-MAP", "parentSubjectId": "K69-TOAN-MAP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd", "defaultCover": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960", "cover": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960", "fallbackCover": "", "driveFolderId": "1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA", "driveFolderName": "Toán — Tổ Toán Học MapStudy 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA", "driveUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán — Tổ Toán Học MapStudy 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Toán — Tổ Toán Học MapStudy 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-MAP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: TỔ TOÁN HỌC MAPSTUDY", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán — Tổ Toán Học MapStudy 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-MAP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-NT", "sku": "DV69TOANNT", "code": "DV69TOANNT", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Nền Tảng Toán Thầy Lưu Huy Thưởng", "instructor": "THẦY LƯU HUY THƯỞNG — HOCMAI", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-NT", "parentSubjectId": "K69-TOAN-NT", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV", "defaultCover": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960", "cover": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960", "fallbackCover": "", "driveFolderId": "1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A", "driveFolderName": "Nền Tảng Toán Thầy Lưu Huy Thưởng", "driveFolderUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A", "driveUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Toán Thầy Lưu Huy Thưởng + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng Toán Thầy Lưu Huy Thưởng (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-NT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY LƯU HUY THƯỞNG — HOCMAI", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng Toán Thầy Lưu Huy Thưởng."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-NT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-LY-BIEN", "sku": "DV69LYBIEN", "code": "DV69LYBIEN", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Vật Lý", "title": "Vật Lý Thầy Chu Văn Biên 2K9", "instructor": "THẦY CHU VĂN BIÊN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Vật Lý", "groupName": "Khóa Lẻ 69K · Môn Vật Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Vật Lý", "parentCourseId": "K69-LY-BIEN", "parentSubjectId": "K69-LY-BIEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1Qk1eh8MSussintaXSMK2G1iy9zCKehkw", "defaultCover": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960", "cover": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960", "fallbackCover": "", "driveFolderId": "1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "driveFolderName": "Vật Lý Thầy Chu Văn Biên 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "driveUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Chu Văn Biên 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Vật Lý Thầy Chu Văn Biên 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý", "lessons": [{"id": "K69-LY-BIEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY CHU VĂN BIÊN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Vật Lý Thầy Chu Văn Biên 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-LY-BIEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-LY-TIEN", "sku": "DV69LYTIEN", "code": "DV69LYTIEN", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Vật Lý", "title": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9", "instructor": "THẦY THẮNG & THẦY TIẾN — IPCLASS", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Vật Lý", "groupName": "Khóa Lẻ 69K · Môn Vật Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Vật Lý", "parentCourseId": "K69-LY-TIEN", "parentSubjectId": "K69-LY-TIEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih", "defaultCover": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960", "cover": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960", "fallbackCover": "", "driveFolderId": "1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "driveFolderName": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "driveUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý", "lessons": [{"id": "K69-LY-TIEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY THẮNG & THẦY TIẾN — IPCLASS", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-LY-TIEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-LY-UNG", "sku": "DV69LYUNG", "code": "DV69LYUNG", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Vật Lý", "title": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)", "instructor": "THẦY LÊ TÙNG ƯNG — TENSCHOOL", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Vật Lý", "groupName": "Khóa Lẻ 69K · Môn Vật Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Vật Lý", "parentCourseId": "K69-LY-UNG", "parentSubjectId": "K69-LY-UNG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw", "defaultCover": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960", "cover": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960", "fallbackCover": "", "driveFolderId": "11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU", "driveFolderName": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)", "driveFolderUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU", "driveUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý", "lessons": [{"id": "K69-LY-UNG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY LÊ TÙNG ƯNG — TENSCHOOL", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-LY-UNG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HOA-TRONG", "sku": "DV69HOATRONG", "code": "DV69HOATRONG", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Hóa Học", "title": "Hóa Học Thầy Phạm Văn Trọng 2K9", "instructor": "THẦY PHẠM VĂN TRỌNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Hóa Học", "groupName": "Khóa Lẻ 69K · Môn Hóa Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Hóa Học", "parentCourseId": "K69-HOA-TRONG", "parentSubjectId": "K69-HOA-TRONG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1", "defaultCover": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960", "cover": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960", "fallbackCover": "", "driveFolderId": "1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk", "driveFolderName": "Hóa Học Thầy Phạm Văn Trọng 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk", "driveUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Hóa Học Thầy Phạm Văn Trọng 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Hóa Học Thầy Phạm Văn Trọng 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Hóa Học", "lessons": [{"id": "K69-HOA-TRONG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Hóa Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY PHẠM VĂN TRỌNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Hóa Học Thầy Phạm Văn Trọng 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HOA-TRONG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HOA-NGOC", "sku": "DV69HOANGOC", "code": "DV69HOANGOC", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Hóa Học", "title": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son", "instructor": "THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Hóa Học", "groupName": "Khóa Lẻ 69K · Môn Hóa Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Hóa Học", "parentCourseId": "K69-HOA-NGOC", "parentSubjectId": "K69-HOA-NGOC", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq", "defaultCover": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960", "cover": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960", "fallbackCover": "", "driveFolderId": "1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe", "driveFolderName": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son", "driveFolderUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe", "driveUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Hóa Học", "lessons": [{"id": "K69-HOA-NGOC-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Hóa Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HOA-NGOC-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VAN-SM", "sku": "DV69VANSM", "code": "DV69VANSM", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Ngữ Văn", "title": "Học Văn Cô Sương Mai 2K9", "instructor": "CÔ SƯƠNG MAI", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Ngữ Văn", "groupName": "Khóa Lẻ 69K · Môn Ngữ Văn", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Ngữ Văn", "parentCourseId": "K69-VAN-SM", "parentSubjectId": "K69-VAN-SM", "childCourseIds": [], "extraFolderIds": [], "bannerId": "168PvC5P4T3pnHuCQteIB6MwyAseMHgCP", "defaultCover": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960", "cover": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960", "fallbackCover": "", "driveFolderId": "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveFolderName": "Học Văn Cô Sương Mai 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Học Văn Cô Sương Mai 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Học Văn Cô Sương Mai 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ngữ Văn", "lessons": [{"id": "K69-VAN-SM-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ngữ Văn", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ SƯƠNG MAI", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Học Văn Cô Sương Mai 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VAN-SM-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VAN-NT", "sku": "DV69VANNT", "code": "DV69VANNT", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Ngữ Văn", "title": "Nền Tảng 12 Môn Ngữ Văn (HocMai)", "instructor": "HOCMAI — NỀN TẢNG NGỮ VĂN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Ngữ Văn", "groupName": "Khóa Lẻ 69K · Môn Ngữ Văn", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Ngữ Văn", "parentCourseId": "K69-VAN-NT", "parentSubjectId": "K69-VAN-NT", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1k6hnaIY3HWrymuoZclECCa6lGgtbjyND", "defaultCover": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960", "cover": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960", "fallbackCover": "", "driveFolderId": "1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF", "driveFolderName": "Nền Tảng 12 Môn Ngữ Văn (HocMai)", "driveFolderUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF", "driveUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng 12 Môn Ngữ Văn (HocMai) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng 12 Môn Ngữ Văn (HocMai) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ngữ Văn", "lessons": [{"id": "K69-VAN-NT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ngữ Văn", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — NỀN TẢNG NGỮ VĂN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng 12 Môn Ngữ Văn (HocMai)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VAN-NT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-ANH-MP", "sku": "DV69ANHMP", "code": "DV69ANHMP", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Tiếng Anh", "title": "Tiếng Anh Cô Vũ Mai Phương 2K9", "instructor": "CÔ VŨ MAI PHƯƠNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Tiếng Anh", "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Tiếng Anh", "parentCourseId": "K69-ANH-MP", "parentSubjectId": "K69-ANH-MP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5", "defaultCover": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960", "cover": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960", "fallbackCover": "", "driveFolderId": "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1", "driveFolderName": "Tiếng Anh Cô Vũ Mai Phương 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1", "driveUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Tiếng Anh Cô Vũ Mai Phương 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Tiếng Anh Cô Vũ Mai Phương 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh", "lessons": [{"id": "K69-ANH-MP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ VŨ MAI PHƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Tiếng Anh Cô Vũ Mai Phương 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-ANH-MP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-ANH-LIEU", "sku": "DV69ANHLIEU", "code": "DV69ANHLIEU", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Tiếng Anh", "title": "Tiếng Anh Cô Phạm Liễu 2K9", "instructor": "CÔ PHẠM LIỄU", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Tiếng Anh", "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Tiếng Anh", "parentCourseId": "K69-ANH-LIEU", "parentSubjectId": "K69-ANH-LIEU", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa", "defaultCover": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960", "cover": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960", "fallbackCover": "", "driveFolderId": "1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw", "driveFolderName": "Tiếng Anh Cô Phạm Liễu 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw", "driveUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Tiếng Anh Cô Phạm Liễu 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Tiếng Anh Cô Phạm Liễu 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh", "lessons": [{"id": "K69-ANH-LIEU-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ PHẠM LIỄU", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Tiếng Anh Cô Phạm Liễu 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-ANH-LIEU-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-ANH-NT", "sku": "DV69ANHNT", "code": "DV69ANHNT", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Tiếng Anh", "title": "Nền Tảng 12 Môn Tiếng Anh (HocMai)", "instructor": "HOCMAI — NỀN TẢNG TIẾNG ANH", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Tiếng Anh", "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Tiếng Anh", "parentCourseId": "K69-ANH-NT", "parentSubjectId": "K69-ANH-NT", "childCourseIds": [], "extraFolderIds": [], "bannerId": "19jS05grnW40e4meXVPn7a7RvtUEAl19x", "defaultCover": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960", "cover": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960", "fallbackCover": "", "driveFolderId": "1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM", "driveFolderName": "Nền Tảng 12 Môn Tiếng Anh (HocMai)", "driveFolderUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM", "driveUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng 12 Môn Tiếng Anh (HocMai) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng 12 Môn Tiếng Anh (HocMai) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh", "lessons": [{"id": "K69-ANH-NT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — NỀN TẢNG TIẾNG ANH", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng 12 Môn Tiếng Anh (HocMai)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-ANH-NT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SINH-NGHE", "sku": "DV69SINHNGHE", "code": "DV69SINHNGHE", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Sinh Học", "title": "Sinh Học Thầy Phan Khắc Nghệ 2K9", "instructor": "THẦY PHAN KHẮC NGHỆ", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Sinh Học", "groupName": "Khóa Lẻ 69K · Môn Sinh Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Sinh Học", "parentCourseId": "K69-SINH-NGHE", "parentSubjectId": "K69-SINH-NGHE", "childCourseIds": [], "extraFolderIds": [], "bannerId": "12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn", "defaultCover": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960", "cover": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960", "fallbackCover": "", "driveFolderId": "1m__F2exCz50iNJXhf0JR4TramO29K244", "driveFolderName": "Sinh Học Thầy Phan Khắc Nghệ 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244", "driveUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Sinh Học Thầy Phan Khắc Nghệ 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Sinh Học Thầy Phan Khắc Nghệ 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Sinh Học", "lessons": [{"id": "K69-SINH-NGHE-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Sinh Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY PHAN KHẮC NGHỆ", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Sinh Học Thầy Phan Khắc Nghệ 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SINH-NGHE-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SINH-DUONG", "sku": "DV69SINHDUONG", "code": "DV69SINHDUONG", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Sinh Học", "title": "Nền Tảng Sinh Học Cô Ánh Dương", "instructor": "CÔ ÁNH DƯƠNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Sinh Học", "groupName": "Khóa Lẻ 69K · Môn Sinh Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Sinh Học", "parentCourseId": "K69-SINH-DUONG", "parentSubjectId": "K69-SINH-DUONG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1HfwO2IBd44nJtu3b1rfETYWnpY_jR786", "defaultCover": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960", "cover": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960", "fallbackCover": "", "driveFolderId": "13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio", "driveFolderName": "Nền Tảng Sinh Học Cô Ánh Dương", "driveFolderUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio", "driveUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Sinh Học Cô Ánh Dương + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng Sinh Học Cô Ánh Dương (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Sinh Học", "lessons": [{"id": "K69-SINH-DUONG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Sinh Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ ÁNH DƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng Sinh Học Cô Ánh Dương."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SINH-DUONG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SU-HUONG", "sku": "DV69SUHUONG", "code": "DV69SUHUONG", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Lịch Sử", "title": "Lịch Sử Cô Ngô Thị Lan Hương 2K9", "instructor": "CÔ NGÔ THỊ LAN HƯƠNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Lịch Sử", "groupName": "Khóa Lẻ 69K · Môn Lịch Sử", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Lịch Sử", "parentCourseId": "K69-SU-HUONG", "parentSubjectId": "K69-SU-HUONG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK", "defaultCover": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960", "cover": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960", "fallbackCover": "", "driveFolderId": "1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "driveFolderName": "Lịch Sử Cô Ngô Thị Lan Hương 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "driveUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Lịch Sử Cô Ngô Thị Lan Hương 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Lịch Sử Cô Ngô Thị Lan Hương 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Lịch Sử", "lessons": [{"id": "K69-SU-HUONG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Lịch Sử", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ NGÔ THỊ LAN HƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Lịch Sử Cô Ngô Thị Lan Hương 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SU-HUONG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SU-SEN", "sku": "DV69SUSEN", "code": "DV69SUSEN", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Lịch Sử", "title": "Lịch Sử Cô Nguyễn Hương Sen 2K9", "instructor": "CÔ NGUYỄN HƯƠNG SEN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Lịch Sử", "groupName": "Khóa Lẻ 69K · Môn Lịch Sử", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Lịch Sử", "parentCourseId": "K69-SU-SEN", "parentSubjectId": "K69-SU-SEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e", "defaultCover": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960", "cover": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960", "fallbackCover": "", "driveFolderId": "1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t", "driveFolderName": "Lịch Sử Cô Nguyễn Hương Sen 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t", "driveUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Lịch Sử Cô Nguyễn Hương Sen 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Lịch Sử Cô Nguyễn Hương Sen 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Lịch Sử", "lessons": [{"id": "K69-SU-SEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Lịch Sử", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ NGUYỄN HƯƠNG SEN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Lịch Sử Cô Nguyễn Hương Sen 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SU-SEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-DIA-TUNG", "sku": "DV69DIATUNG", "code": "DV69DIATUNG", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Địa Lý", "title": "Địa Lý Thầy Đàm Thanh Tùng 2K9", "instructor": "THẦY ĐÀM THANH TÙNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Địa Lý", "groupName": "Khóa Lẻ 69K · Môn Địa Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Địa Lý", "parentCourseId": "K69-DIA-TUNG", "parentSubjectId": "K69-DIA-TUNG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo", "defaultCover": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960", "cover": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960", "fallbackCover": "", "driveFolderId": "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm", "driveFolderName": "Địa Lý Thầy Đàm Thanh Tùng 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm", "driveUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Địa Lý Thầy Đàm Thanh Tùng 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Địa Lý Thầy Đàm Thanh Tùng 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Địa Lý", "lessons": [{"id": "K69-DIA-TUNG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Địa Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐÀM THANH TÙNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Địa Lý Thầy Đàm Thanh Tùng 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-DIA-TUNG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-DIA-TAI", "sku": "DV69DIATAI", "code": "DV69DIATAI", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Địa Lý", "title": "Địa Lý Thầy Tài 2K9", "instructor": "THẦY TÀI ĐỊA LÝ", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Địa Lý", "groupName": "Khóa Lẻ 69K · Môn Địa Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Địa Lý", "parentCourseId": "K69-DIA-TAI", "parentSubjectId": "K69-DIA-TAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq", "defaultCover": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960", "cover": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960", "fallbackCover": "", "driveFolderId": "1DasmiM670vDu3CekdeXCoQeQoeLvKYyq", "driveFolderName": "Địa Lý Thầy Tài 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq", "driveUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Địa Lý Thầy Tài 2K9 + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục Địa Lý Thầy Tài 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Địa Lý", "lessons": [{"id": "K69-DIA-TAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Địa Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY TÀI ĐỊA LÝ", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Địa Lý Thầy Tài 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-DIA-TAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-HOCMAI", "sku": "DV69HSAHM", "code": "DV69HSAHM", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HOCMAI — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-HOCMAI", "parentSubjectId": "K69-HSA-HOCMAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveFolderName": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-HOCMAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-HOCMAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-MAP", "sku": "DV69HSAMAP", "code": "DV69HSAMAP", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "MAPSTUDY — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-MAP", "parentSubjectId": "K69-HSA-MAP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "driveFolderName": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "driveUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (MAPSTUDY — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-MAP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: MAPSTUDY — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-MAP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-EMPIRE", "sku": "DV69HSAEMP", "code": "DV69HSAEMP", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "EMPIRE TEAM — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-EMPIRE", "parentSubjectId": "K69-HSA-EMPIRE", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "driveFolderName": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "driveUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (EMPIRE TEAM — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-EMPIRE-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: EMPIRE TEAM — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-EMPIRE-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-EDU", "sku": "DV69HSAEDU", "code": "DV69HSAEDU", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HSA EDU — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-EDU", "parentSubjectId": "K69-HSA-EDU", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg", "driveFolderName": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg", "driveUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) (HSA EDU — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-EDU-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HSA EDU — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-EDU-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TSA-BMC", "sku": "DV69TSABMC", "code": "DV69TSABMC", "category": "dgtd_tsa", "categories": ["all", "dgtd_tsa", "lop12_2k9"], "subCategory": "dgtd_tsa", "categoryLabel": "Môn TSA", "title": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "instructor": "BMC — ĐGTD TSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · TSA", "groupName": "Khóa Lẻ 69K · Môn TSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · TSA", "parentCourseId": "K69-TSA-BMC", "parentSubjectId": "K69-TSA-BMC", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS", "defaultCover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "cover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "fallbackCover": "", "driveFolderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFolderName": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (BMC — ĐGTD TSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — TSA", "lessons": [{"id": "K69-TSA-BMC-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi TSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: BMC — ĐGTD TSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TSA-BMC-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TSA-HOCMAI", "sku": "DV69TSAHM", "code": "DV69TSAHM", "category": "dgtd_tsa", "categories": ["all", "dgtd_tsa", "lop12_2k9"], "subCategory": "dgtd_tsa", "categoryLabel": "Môn TSA", "title": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HOCMAI — ĐGTD TSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · TSA", "groupName": "Khóa Lẻ 69K · Môn TSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · TSA", "parentCourseId": "K69-TSA-HOCMAI", "parentSubjectId": "K69-TSA-HOCMAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS", "defaultCover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "cover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "fallbackCover": "", "driveFolderId": "1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu", "driveFolderName": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu", "driveUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGTD TSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — TSA", "lessons": [{"id": "K69-TSA-HOCMAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi TSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — ĐGTD TSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TSA-HOCMAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VACT-HOCMAI", "sku": "DV69VACTHM", "code": "DV69VACTHM", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "Môn V-ACT", "title": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HOCMAI — ĐGNL V-ACT", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · V-ACT", "groupName": "Khóa Lẻ 69K · Môn V-ACT", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · V-ACT", "parentCourseId": "K69-VACT-HOCMAI", "parentSubjectId": "K69-VACT-HOCMAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV", "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "fallbackCover": "", "driveFolderId": "1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveFolderName": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT", "lessons": [{"id": "K69-VACT-HOCMAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — ĐGNL V-ACT", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VACT-HOCMAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VACT-EMPIRE", "sku": "DV69VACTEMP", "code": "DV69VACTEMP", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "Môn V-ACT", "title": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "EMPIRE TEAM — ĐGNL V-ACT", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · V-ACT", "groupName": "Khóa Lẻ 69K · Môn V-ACT", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · V-ACT", "parentCourseId": "K69-VACT-EMPIRE", "parentSubjectId": "K69-VACT-EMPIRE", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV", "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "fallbackCover": "", "driveFolderId": "1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "driveFolderName": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "driveUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (EMPIRE TEAM — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT", "lessons": [{"id": "K69-VACT-EMPIRE-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: EMPIRE TEAM — ĐGNL V-ACT", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VACT-EMPIRE-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VACT-MAP", "sku": "DV69VACTMAP", "code": "DV69VACTMAP", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "Môn V-ACT", "title": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "MAPSTUDY — ĐGNL V-ACT", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · V-ACT", "groupName": "Khóa Lẻ 69K · Môn V-ACT", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · V-ACT", "parentCourseId": "K69-VACT-MAP", "parentSubjectId": "K69-VACT-MAP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV", "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "fallbackCover": "", "driveFolderId": "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB", "driveFolderName": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB", "driveUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (MAPSTUDY — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) + Tặng App Điệp Viên Study (Email + SĐT).", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT", "lessons": [{"id": "K69-VACT-MAP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: MAPSTUDY — ĐGNL V-ACT", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VACT-MAP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}];
 const COURSE_DRIVE_MAP = {
-"ALL-COURSES-399K": {
-"name": "Trọn Bộ Full 90+ Khóa Học Đa Môn (Toán · Văn · Anh · Trung · Lý · Hóa · Sinh · Sử · Địa · Tin MOS · Đại Học · Nghệ Thuật · ĐGNL)",
-"folderId": "1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52",
-"extraFolderIds": [
-"1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
-],
-"price": 399000,
-"tier": "full_399k",
-"parentCourseId": "ALL-COURSES-399K",
-"parentSubjectId": "ALL-COURSES-399K"
-},
-"COURSE-K9-LOP12": {
-"name": "Combo Khóa Học THPT Lớp 12 Cho 2K9 (Toán · Văn · Anh · Tiếng Trung · Lý · Hóa · Sinh · Sử · Địa · TopUni 12)",
-"folderId": "1Hx3C11lkdM5SKsavO2pqBdH0rEnk2wZo",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-"1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-NGOAINGU-TRUNG-ANH": {
-"name": "Combo Ngoại Ngữ & Xã Hội: Tiếng Trung (Hán Ngữ 1–6 · HSK · Khối D04) · Tiếng Anh · Ngữ Văn · Lịch Sử · Địa Lý",
-"folderId": "1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6",
-"extraFolderIds": [
-"1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR",
-"1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe",
-"1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3",
-"1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-"1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9"
-},
-"COURSE-THVP-MOS-199K": {
-"name": "Combo 30 Khóa Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (Word · Excel · PowerPoint · Access · VBA · Google Tools)",
-"folderId": "1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm",
-"extraFolderIds": [
-"1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq",
-"1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-DAIHOC-HOC-THUAT": {
-"name": "Combo Đại Học Điểm A+: Kinh Tế Lượng (EViews, Stata, SPSS) · Triết Học Mác-Lênin · Master BTL & NCKH APA 7 · SQL & Excel",
-"folderId": "1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N",
-"extraFolderIds": [
-"1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok",
-"1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u",
-"1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx",
-"1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL"
-},
-"COURSE-NGHETHUAT-199K": {
-"name": "Combo 31 Khóa Nghệ Thuật, Âm Nhạc & Vũ Đạo (Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo Trúc · DJ · Shuffle Dance)",
-"folderId": "1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B",
-"extraFolderIds": [],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-K10-LOP11": {
-"name": "Combo Khóa Học THPT Lớp 11 Cho 2K10 (Toán · Lý · Hóa · Tin Học KHMT & Ứng Dụng)",
-"folderId": "1DQH48jr8YozUnJ3STTlyV-qFzLCAi4G5",
-"extraFolderIds": [],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TOAN11-2K10"
-},
-"COURSE-DGNL-HSA": {
-"name": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội 2027 (Định Lượng · Định Tính Ngữ Văn · Khoa Học · Tiếng Anh)",
-"folderId": "1_tPOqo2Nve07up5SgHpIyhjo6lwoVa9Y",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-"1JFOWG4aMVK7913LKsin2FzGwy0WVZcj2"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-35"
-},
-"COURSE-DGTD-TSA": {
-"name": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027 (Tư Duy Toán · Đọc Hiểu · Khoa Học)",
-"folderId": "1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4",
-"extraFolderIds": [
-"1KoWxcHRb-OdLFrqwt8jbfD_z2Fx1VlnF"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-40"
-},
-"COURSE-DGNL-VACT": {
-"name": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM 2027 (Ngôn Ngữ · Toán Học · Tư Duy Khoa Học)",
-"folderId": "1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
-"extraFolderIds": [
-"1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2",
-"12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6",
-"1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DGNL-VACT",
-"parentSubjectId": "COURSE-ITEM-45"
-},
-"COURSE-BCA-QDA-VSAT": {
-"name": "Combo Luyện Thi ĐGNL Bộ Công An (BCA) · Quân Đội (QDA) · VSAT 8 Môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa)",
-"folderId": "1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
-"extraFolderIds": [
-"1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK",
-"1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI",
-"1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-ITEM-48"
-},
-"COURSE-SUBJ-TOAN12-2K9": {
-"name": "Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027",
-"folderId": "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w",
-"extraFolderIds": [
-"1VbW3pT-HmLO6HgpXV_1iih6y7JrFe5Cj"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-SUBJ-VAN12-2K9": {
-"name": "Trọn Bộ Môn Ngữ Văn 12 (2K9) — Đọc Hiểu Văn Bản, Tiếng Việt & Nghị Luận Văn Học / Xã Hội",
-"folderId": "1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3",
-"extraFolderIds": [
-"1t_QJSwaoUKPU5CtVX5yp040SxDCQf7wQ",
-"1Y76w1GLT9CSNGX5q0ER-uLua9eylB-Lz"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-VAN12-2K9"
-},
-"COURSE-SUBJ-ANH12-2K9": {
-"name": "Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh",
-"folderId": "1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe",
-"extraFolderIds": [
-"1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL",
-"1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE",
-"1si7gRcqURbnbJMMiGiNwih-OzQhkQJJT"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-ANH12-2K9"
-},
-"COURSE-SUBJ-TRUNG12-2K9": {
-"name": "Trọn Bộ Môn Tiếng Trung (Hán Ngữ 6 Quyển · Bộ Đề HSK · Tiếng Trung Chuyên Ngành & Ôn Thi ĐH Khối D04)",
-"folderId": "1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6",
-"extraFolderIds": [
-"1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9"
-},
-"COURSE-SUBJ-SU12-2K9": {
-"name": "Trọn Bộ Môn Lịch Sử 12 (2K9) — 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
-"folderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-"extraFolderIds": [
-"1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-SU12-2K9"
-},
-"COURSE-SUBJ-DIA12-2K9": {
-"name": "Trọn Bộ Môn Địa Lý 12 (2K9) — Địa Lý Tự Nhiên, Dân Cư, Ngành Kinh Tế & Các Vùng Kinh Tế Việt Nam",
-"folderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-"extraFolderIds": [
-"1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-DIA12-2K9"
-},
-"COURSE-SUBJ-SINH12-2K9": {
-"name": "Trọn Bộ Môn Sinh Học 12 (2K9) — Di Truyền Phân Tử, Nhiễm Sắc Thể, Tiến Hóa & Sinh Thái Học",
-"folderId": "1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
-"extraFolderIds": [
-"1ryKQMaBjhkBx9W0qQaELK6_vmVw4fucr",
-"1CTrlYhRiXh7phi2qPwE3l_c2sOCsxS92"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-SINH12-2K9"
-},
-"COURSE-SUBJ-LY12-2K9": {
-"name": "Trọn Bộ Môn Vật Lý 12 (2K9) — 5 Khóa Luyện Thi THPTQG 2027",
-"folderId": "1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI",
-"extraFolderIds": [
-"1CAshsjgTtSA-QicoM95Z1N-Ghw4vdwwE"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-SUBJ-HOA12-2K9": {
-"name": "Trọn Bộ Môn Hóa Học 12 (2K9) — 4 Khóa Luyện Thi THPTQG 2027",
-"folderId": "1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc",
-"extraFolderIds": [
-"1AQ0g_Yght0umoIcBJl826mVIqmZ9uBjA"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-SUBJ-MOS-THVP": {
-"name": "Trọn Bộ Môn Tin Học Văn Phòng & Chứng Chỉ Quốc Tế MOS (30 Khóa Word · Excel · PowerPoint · Access · Google Tools)",
-"folderId": "1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm",
-"extraFolderIds": [
-"1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-SUBJ-TIN11-2K10": {
-"name": "Trọn Bộ Môn Tin Học 11 (2K10) — Tin Học Ứng Dụng · Khoa Học Máy Tính · Thuật Toán & CSDL",
-"folderId": "1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq",
-"extraFolderIds": [
-"1MFbfgkctCYu736a4vMTzgvd4gvwmx8YT"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TIN11-2K10"
-},
-"COURSE-SUBJ-DAIHOC-KTL": {
-"name": "Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS)",
-"folderId": "1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok",
-"extraFolderIds": [
-"1QJxChXQQ9WMZQTInw_3Tged3PfHHRZHS"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL"
-},
-"COURSE-SUBJ-TRIETHOC": {
-"name": "Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm)",
-"folderId": "1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-TRIETHOC"
-},
-"COURSE-SUBJ-NCKH-APA7": {
-"name": "Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7",
-"folderId": "1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-NCKH-APA7"
-},
-"COURSE-SUBJ-NGHETHUAT": {
-"name": "Môn Nghệ Thuật, Âm Nhạc & Vũ Đạo (31 Khóa Guitar · Piano · Organ · Thanh Nhạc · Ukulele · Sáo · DJ · Shuffle Dance)",
-"folderId": "1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-SUBJ-TOPUNI12-2K9": {
-"name": "Trọn Bộ 7 Khóa Nền Tảng 12 Đa Môn (Toán · Ngữ Văn · Tiếng Anh · Vật Lý · Hóa Học · Sinh Học)",
-"folderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOPUNI12-2K9"
-},
-"COURSE-SUBJ-TOAN11-2K10": {
-"name": "Trọn Bộ Môn Toán 11 (2K10) — Lộ Trình Cơ Bản & Nâng Cao 2027",
-"folderId": "1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TOAN11-2K10"
-},
-"COURSE-SUBJ-LY11-2K10": {
-"name": "Trọn Bộ Môn Vật Lý 11 (2K10) — Chuyên Đề & Luyện Đề Học Kỳ",
-"folderId": "134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-LY11-2K10"
-},
-"COURSE-SUBJ-HOA11-2K10": {
-"name": "Trọn Bộ Môn Hóa Học 11 (2K10) — Lớp Tương Tác & Nâng Cao",
-"folderId": "1CL2S35nzQS7qkXKck9c_efHX-aS87v-a",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-HOA11-2K10"
-},
-"COURSE-ITEM-01": {
-"name": "Khóa Toán 12 (2K9) — Lộ Trình Chinh Phục THPTQG 2027 (Khóa T · E · Đom Đóm)",
-"folderId": "1S4DkHAPvliK9ea222q9x3sDbVM2TX3bm",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-55": {
-"name": "Khóa Ngữ Văn 12 (2K9) — Đọc Hiểu Thơ, Truyện, Ký, Văn Bản Thông Tin & Nghị Luận Văn Học",
-"folderId": "1t_QJSwaoUKPU5CtVX5yp040SxDCQf7wQ",
-"extraFolderIds": [
-"1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-VAN12-2K9"
-},
-"COURSE-ITEM-17": {
-"name": "Khóa Tiếng Anh 12 (2K9) — Trọn Bộ Lộ Trình Pro3M · Pro3MPlus · VIP90 2027",
-"folderId": "1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL",
-"extraFolderIds": [
-"1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-ANH12-2K9"
-},
-"COURSE-ITEM-51": {
-"name": "Khóa Tiếng Trung Toàn Diện — Giáo Trình Hán Ngữ 6 Quyển (Quyển 1–6) & Luyện Viết Chữ Hán",
-"folderId": "1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR",
-"extraFolderIds": [
-"1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6",
-"11rrA9I_UcBwvUwgbe4USj2IKsx12sW6w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9"
-},
-"COURSE-ITEM-57": {
-"name": "Khóa Lịch Sử 12 (2K9) — Trọn Bộ 22 Chuyên Đề Lịch Sử Việt Nam, Thế Giới & Chủ Quyền Biển Đông",
-"folderId": "1Elh6X9_ISZATrvMTdRpGY7spYib-iZqe",
-"extraFolderIds": [
-"1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-SU12-2K9"
-},
-"COURSE-ITEM-58": {
-"name": "Khóa Địa Lý 12 (2K9) — Địa Lý Tự Nhiên Đại Cương, Dân Cư & Các Vùng Kinh Tế Việt Nam",
-"folderId": "1zxzzbWG1Q97O9D5qAHmLNuUQIMPDiBwm",
-"extraFolderIds": [
-"1KW3u0aftTGOJdY7zNDJCot7IR4WJUnSF"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-DIA12-2K9"
-},
-"COURSE-ITEM-59": {
-"name": "Khóa Sinh Học 12 (2K9) — 10 Chuyên Đề Sinh Học Tế Bào, Di Truyền, Tiến Hóa & Sinh Thái Học",
-"folderId": "1ryKQMaBjhkBx9W0qQaELK6_vmVw4fucr",
-"extraFolderIds": [
-"1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-SINH12-2K9"
-},
-"COURSE-ITEM-08": {
-"name": "Khóa Vật Lý 12 (2K9) — Trọn Bộ Lộ Trình IOME Chinh Phục 9+ 2027",
-"folderId": "1hXQ_ro2zg7CwHF3Qi3d9KBkoaHn6XxoE",
-"extraFolderIds": [
-"1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-13": {
-"name": "Khóa Hóa Học 12 (2K9) — Lộ Trình Toàn Diện Luyện Thi THPTQG 2027",
-"folderId": "1JkWVgk6FWNROK433fzc2Bbs8DXB5X5OM",
-"extraFolderIds": [
-"1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-ITEM-65": {
-"name": "Khóa Luyện Thi Chứng Chỉ Quốc Tế MOS Word & MOS Excel (2016 · 2019 · 365) Kèm Đề Mock Test",
-"folderId": "1sB5iPqIkaLJHhLNmPDxOLpA-AZ9KgRHg",
-"extraFolderIds": [
-"1HzXJFbiK77HhjEPxdmeTp9J9NkBbSnxQ",
-"1uQIG5U2FSMiRgvrNDJOPhuca3cty0OVc",
-"1jHc3rPDIe9qqhfRzXNjscKFrZUqdj5y5",
-"1O2qI08NlviBnIoVM44WICYH54ZO2B3a5"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-33": {
-"name": "Khóa Tin Học 11 (2K10) — Định Hướng Khoa Học Máy Tính & Thuật Toán",
-"folderId": "1niGfuKDA1xbAGI2lQpfDxic4s2H8fFip",
-"extraFolderIds": [
-"1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TIN11-2K10"
-},
-"COURSE-ITEM-71": {
-"name": "Khóa Cày Điểm A+ Kinh Tế Lượng — Thực Hành Hồi Quy OLS Trên EViews, Stata & SPSS",
-"folderId": "1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok",
-"extraFolderIds": [
-"1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL"
-},
-"COURSE-ITEM-72": {
-"name": "Khóa Đạt A+ Triết Học Mác - Lênin — Hệ Thống Sơ Đồ Tư Duy & Đề Cương Tự Luận Trọng Tâm",
-"folderId": "1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u",
-"extraFolderIds": [
-"1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-TRIETHOC"
-},
-"COURSE-ITEM-73": {
-"name": "Khóa Master Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn Trích Dẫn APA 7",
-"folderId": "1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx",
-"extraFolderIds": [
-"1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-NCKH-APA7"
-},
-"COURSE-ITEM-75": {
-"name": "Khóa Học Đệm Hát Guitar Cơ Bản, Nâng Cao & Fingerstyle Guitar Cùng Haketu",
-"folderId": "1AoRvrctJEQm-yj70kSM3La4HBt_35vxD",
-"extraFolderIds": [
-"1GvjM6qVVIt1w4lALVVI2dc9lbBuTLYGp",
-"1xm4in14mBPrAd8UgOHwC7yvkNEGxrb-7",
-"1nv7AkmBfLlJE85fvpqGuSknI2x_k9Qsz",
-"1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-77": {
-"name": "Khóa Đệm Hát Piano Trong 30 Ngày, Piano Quốc Tế Elementary 1 & Đệm Organ Cấp Tốc",
-"folderId": "1xnMNTVEIDuKlDV-8a6AhCkt6W9dD8Niw",
-"extraFolderIds": [
-"1fVzNfcQ2j9XUN5SX2OWXnIl1Zv-H0_4M",
-"1LNpJbhB3fRlPgx7mX5eOwdMGwtUOFU8P",
-"1DOHPFPQZgO5DT3pdeKOvEKHnSa8YRPIw",
-"1xi3N8UeflrYX99c5Wz_6xcZKMt0xAGPo"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-78": {
-"name": "Khóa Học Thanh Nhạc Cơ Bản, Kỹ Thuật Mở Khẩu Hình Phát Triển Giọng Hát & Hát Karaoke",
-"folderId": "1jf4qgjDAKaKlHJaFBr8GTEe1Kr4aKFk1",
-"extraFolderIds": [
-"1bCkT2REDxhU9hbC5BLyWGa6U8RH8CZ7m",
-"1nOdncN1gRJxqEligvNt2BQsqb1YCvmf1",
-"1jNY7a1pB08bVvM0_fpHuM9j_Sk8sFBdX"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-35": {
-"name": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG Hà Nội",
-"folderId": "1oRf9iIynqglvPJhq0Jyf3ILL2lUVKEQy",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-35"
-},
-"COURSE-ITEM-40": {
-"name": "Khóa ĐGTD TSA 2027 (2K9) — Luyện Thi Đánh Giá Tư Duy ĐH Bách Khoa HN",
-"folderId": "1RPRK-NLUAudeC-65FF_nXbaOKG2aP_CJ",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-40"
-},
-"COURSE-ITEM-45": {
-"name": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) ĐHQG TP.HCM",
-"folderId": "1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-VACT",
-"parentSubjectId": "COURSE-ITEM-45"
-},
-"COURSE-ITEM-48": {
-"name": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Công An (BCA 2027) — Tự Luận & Trắc Nghiệm",
-"folderId": "1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-ITEM-48"
-},
-"COURSE-ITEM-49": {
-"name": "Khóa Luyện Thi Đánh Giá Năng Lực Bộ Quốc Phòng / Quân Đội (QDA 2027)",
-"folderId": "1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-ITEM-49"
-},
-"COURSE-ITEM-50": {
-"name": "Khóa Luyện Thi Đánh Giá Đầu Vào Đại Học Trên Máy Tính (VSAT 2027)",
-"folderId": "1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-ITEM-50"
-},
-"COURSE-ITEM-52": {
-"name": "Khóa Luyện Thi THPTQG & Đại Học Môn Tiếng Trung Khối D04 — Trọng Tâm Ngữ Pháp & Luyện Đề",
-"folderId": "1gPRIl66qnS55v7bIaE_VL-tGAyO6-7sf",
-"extraFolderIds": [
-"1HWMDgt6YFp_NfQ-y3GdsiATUC1magU6u",
-"1AvLbPix9Ahk4EMiqMYKJ9pZzxDugD6l6"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9"
-},
-"COURSE-ITEM-02": {
-"name": "Khóa Toán 12 (2K9) — Lộ Trình Toàn Diện THPTQG 2027 (Khóa I & M)",
-"folderId": "1a78wwvHogORJpW2qKWsveK4yMeorJEDg",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-03": {
-"name": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Toán 12 SMART 2027",
-"folderId": "13NIwvnmeb37PpkHI7dmxdZh3of9ewPuF",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-04": {
-"name": "Khóa Toán 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Toán 2027",
-"folderId": "1DkG2NQLQ5egWATE7s_HxWheA7twDMCzE",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-05": {
-"name": "Khóa Nền Tảng 12 Môn Toán 2027 — Bám Sát Chương Trình Mới",
-"folderId": "14Vsk6-lsb-Nary5wbDpdWvyKc5pne3Ke",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-06": {
-"name": "Khóa Chuyên Đề Toán 12 & Luyện Tư Duy Vận Dụng Cao (TMT)",
-"folderId": "104Fz0TA9cLZJy4NAAxPwGCP29IKTlR0g",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-07": {
-"name": "Khóa Chuyên Đề Các Bài Toán Thực Tế & Mô Hình Hóa Toán 12",
-"folderId": "14Ab28ONGVYGeJuoT5Ga5Q-R5LyiSCsyB",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-09": {
-"name": "Khóa Vật Lý 12 (2K9) — Xuất Phát Sớm (XPS) Chinh Phục 9+ Vật Lý 12",
-"folderId": "1AT0VRyByh3si-wZPqPbpToyn4I21FOzJ",
-"extraFolderIds": [
-"1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-10": {
-"name": "Khóa Vật Lý 12 (2K9) — Full Lộ Trình Xuất Phát Sớm (XPS) 2027",
-"folderId": "1oVB8UTCvVOTGrMFKp4HdIt1k8MwolyTq",
-"extraFolderIds": [
-"1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-11": {
-"name": "Khóa Vật Lý 12 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) Vật Lý 2027",
-"folderId": "1ckMsAluzK_gHMHb-z6VjYZS22MEmKFwg",
-"extraFolderIds": [
-"1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-12": {
-"name": "Khóa Nền Tảng 12 Môn Vật Lý 2027 — Toàn Diện Kiến Thức SGK Mới",
-"folderId": "1pXv3a7zgk2H-Jrm1HtgzRKTF1F8Pl_yc",
-"extraFolderIds": [
-"1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-14": {
-"name": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình IOME Hóa Học 2027",
-"folderId": "17YG-JmPDC6B_0xJtkDNiRiYPZh7oxdNu",
-"extraFolderIds": [
-"1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-ITEM-15": {
-"name": "Khóa Hóa Học 12 (2K9) — Trọn Bộ Lộ Trình CTG Chinh Phục Hóa 12",
-"folderId": "1nT5OCuM2fsZ99XVkLzEuRoonpPrBxUU1",
-"extraFolderIds": [
-"1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-ITEM-16": {
-"name": "Khóa Hóa Học 12 — Chuyên Đề Trọng Tâm & Luyện Đề Thực Chiến",
-"folderId": "1rvjxRmI_pSmvflpJfl3lUMS_QeOaTFfV",
-"extraFolderIds": [
-"1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-ITEM-18": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Toán Lộ Trình 2027",
-"folderId": "1sKwBrvFNSAF95XUHmAIRuGUaFYb9fFSu",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-19": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Toán (Bản Đầy Đủ Chuyên Đề)",
-"folderId": "1SQ-uZI5-tEh6vAzbcECq3lMBnv-WHoIj",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-20": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Ngữ Văn Đọc Hiểu & Nghị Luận",
-"folderId": "1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-VAN12-2K9"
-},
-"COURSE-ITEM-21": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Tiếng Anh Ngữ Pháp & Từ Vựng",
-"folderId": "1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-ANH12-2K9"
-},
-"COURSE-ITEM-22": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Vật Lý Chuyên Đề Trọng Tâm",
-"folderId": "1rvyHSojdbe__C26Jj4xB5toinNJRZTEc",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-23": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Hóa Học Lý Thuyết & Bài Tập",
-"folderId": "1IgDvAyUK1UN6W5jqXWgPVML1cUS_vA0N",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-ITEM-24": {
-"name": "Khóa TopUni Nền Tảng 12 — Môn Sinh Học Di Truyền & Sinh Thái",
-"folderId": "1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-SINH12-2K9"
-},
-"COURSE-ITEM-25": {
-"name": "Khóa Toán 11 (2K10) — Xuất Phát Sớm & Làm Chủ Toán 11 Lộ Trình 2027",
-"folderId": "1LkFNHipHxp2R3aUVVoC4uGMFxGsBXh1u",
-"extraFolderIds": [
-"1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TOAN11-2K10"
-},
-"COURSE-ITEM-26": {
-"name": "Khóa Toán 11 (2K10) — Định Hướng Ôn Thi TN THPT, ĐGNL & ĐGTD 2027",
-"folderId": "1a1MHroAuK48kOyp_jhfqHc_yJc8pcFdU",
-"extraFolderIds": [
-"1CbMUKPhYMX12UmVAfsQAkpe8KnciWSlP"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TOAN11-2K10"
-},
-"COURSE-ITEM-27": {
-"name": "Khóa Vật Lý 11 (2K10) — Lộ Trình Chuyên Sâu Vật Lý 11 Năm 2027",
-"folderId": "1fYdD_xs_0PF63h0KBo384V0iqQ9cCs00",
-"extraFolderIds": [
-"134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-LY11-2K10"
-},
-"COURSE-ITEM-28": {
-"name": "Khóa Vật Lý 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027",
-"folderId": "1pMs32OQ3J9N7R9MJ-cT9fI_CNwu2crzC",
-"extraFolderIds": [
-"134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-LY11-2K10"
-},
-"COURSE-ITEM-29": {
-"name": "Khóa Luyện Đề Thi Học Kỳ Vật Lý 11 (Có Video & Lời Giải Chi Tiết)",
-"folderId": "1Xqa29h4pGAHp4RNs_i-YpRT_NkEuYzyO",
-"extraFolderIds": [
-"134iDRuiFnuSlRFGC07o0qI8YC-1gMrIL"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-LY11-2K10"
-},
-"COURSE-ITEM-30": {
-"name": "Khóa Hóa Học 11 (2K10) — Lớp Tương Tác Trực Tuyến Bứt Phá Điểm 9+",
-"folderId": "1IMhlEE-CyVyEd9nAn9bgkJMJpih1GZR3",
-"extraFolderIds": [
-"1CL2S35nzQS7qkXKck9c_efHX-aS87v-a"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-HOA11-2K10"
-},
-"COURSE-ITEM-31": {
-"name": "Khóa Hóa Học 11 (2K10) — Chương Trình Cơ Bản & Nâng Cao 2027",
-"folderId": "1yqY8yEuScOXifRPqjuTvAC8yfvPa1XTP",
-"extraFolderIds": [
-"1CL2S35nzQS7qkXKck9c_efHX-aS87v-a"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-HOA11-2K10"
-},
-"COURSE-ITEM-32": {
-"name": "Khóa Tin Học 11 (2K10) — Định Hướng Tin Học Ứng Dụng 2027",
-"folderId": "1dddCKyGFIG3o6NQokc8wMgS8fXArvvrt",
-"extraFolderIds": [
-"1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K10-LOP11",
-"parentSubjectId": "COURSE-SUBJ-TIN11-2K10"
-},
-"COURSE-ITEM-34": {
-"name": "Khóa Kỹ Năng Tin Học Văn Phòng Thực Chiến (Word · Excel · PowerPoint)",
-"folderId": "1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm",
-"extraFolderIds": [
-"1aIVpZ5G5VFo1f6hahC-7HPIn4_cKLtdq"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-36": {
-"name": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐGNL ĐHQG Hà Nội",
-"folderId": "1kNFMqYTAjNJNW3wl654OGvBdPzmgI_4R",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-36"
-},
-"COURSE-ITEM-37": {
-"name": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề HSA",
-"folderId": "1OSx2MVNua6QDZhJpV4XXyOhdgdYU4hjY",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-37"
-},
-"COURSE-ITEM-38": {
-"name": "Khóa ĐGNL HSA 2027 (2K9) — Lộ Trình Tinh Hoa HSA TH01 ĐHQG Hà Nội",
-"folderId": "1iHYQQznkt6nt0IvvANe_tMzHUQ5pX9y-",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-38"
-},
-"COURSE-ITEM-39": {
-"name": "Khóa TopUni Nền Tảng Toàn Diện Các Môn Bổ Trợ Kỳ Thi ĐGNL HSA",
-"folderId": "1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-39"
-},
-"COURSE-ITEM-41": {
-"name": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Xuất Phát Sớm (XPS) TSA Bách Khoa",
-"folderId": "1H7u21HeGVXEajKcPM6jr1IHPtNYBIudN",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-41"
-},
-"COURSE-ITEM-42": {
-"name": "Khóa ĐGTD TSA 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện Đề Bách Khoa",
-"folderId": "1OURnZBMt6QGB4AXIaXu23QGQPrqb_5F3",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-42"
-},
-"COURSE-ITEM-43": {
-"name": "Khóa ĐGTD TSA 2027 — Full Lộ Trình SUN Chinh Phục ĐH Bách Khoa Hà Nội",
-"folderId": "1i9cK48wmHQFTPrLjnFheoHZ2Nto3tV2d",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-43"
-},
-"COURSE-ITEM-44": {
-"name": "Khóa Bổ Trợ Tư Duy Toàn Diện Cho Kỳ Thi TSA · HSA · V-ACT 2027",
-"folderId": "10n24IGM9Xylx3TvSJycc9X1ax5BVx-KX",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-44"
-},
-"COURSE-ITEM-46": {
-"name": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình XPS Chinh Phục ĐHQG TP.HCM",
-"folderId": "12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-VACT",
-"parentSubjectId": "COURSE-ITEM-46"
-},
-"COURSE-ITEM-47": {
-"name": "Khóa ĐGNL V-ACT 2027 (2K9) — Lộ Trình Toàn Diện & Phòng Luyện ĐHQG TP.HCM",
-"folderId": "1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-VACT",
-"parentSubjectId": "COURSE-ITEM-47"
-},
-"COURSE-ITEM-53": {
-"name": "Khóa Luyện Đề Thi Chứng Chỉ Quốc Tế HSK (HSK 1–6) & Ngữ Pháp Tiếng Trung Thực Chiến",
-"folderId": "1YexRng8F1Cie0XvQ7EE_XfnCnnobQDle",
-"extraFolderIds": [
-"1NmkphCDWyXoVudrQqC_IIh5D1cUg6asR"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9"
-},
-"COURSE-ITEM-54": {
-"name": "Khóa Tiếng Trung Chuyên Ngành Thương Mại, Giao Tiếp & Giáo Trình Hán Ngữ Bản Mới",
-"folderId": "1KsS8slf4Y3J-dLOpHwPoaBEYMA_Xh7B8",
-"extraFolderIds": [
-"1Ow9j1hCrMG2TlVuNFgbDi3zarhr-zeQR",
-"1YpRMjWVBVZug4uryTq6FTMma0TZu0rFq"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-TRUNG12-2K9"
-},
-"COURSE-ITEM-56": {
-"name": "Khóa Tổng Ôn Ngữ Văn & Tư Duy Định Tính Ngôn Ngữ Luyện Thi HSA · QDA · THPTQG 2027",
-"folderId": "1Y76w1GLT9CSNGX5q0ER-uLua9eylB-Lz",
-"extraFolderIds": [
-"1DnhTPq6VL79T2nDyqtL13G5dyi_K0Yx3"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-SUBJ-VAN12-2K9"
-},
-"COURSE-ITEM-60": {
-"name": "Khóa Tổng Ôn Môn Sinh Học Luyện Thi ĐGNL HSA · QDA & Tốt Nghiệp THPT 2027",
-"folderId": "1CTrlYhRiXh7phi2qPwE3l_c2sOCsxS92",
-"extraFolderIds": [
-"1OOZzym1p9C-MrlY43ugcWxoMu2ej1sOi"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-SUBJ-SINH12-2K9"
-},
-"COURSE-ITEM-61": {
-"name": "Khóa Tiếng Anh 12 (2K9) — Chinh Phục Dạng Bài True/False, Nối Câu & Đọc Điền Từ Chuẩn Form 2027",
-"folderId": "1si7gRcqURbnbJMMiGiNwih-OzQhkQJJT",
-"extraFolderIds": [
-"1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-ANH12-2K9"
-},
-"COURSE-ITEM-62": {
-"name": "Khóa Toán Học 12 — Chuyên Đề Hàm Số, Nguyên Hàm Tích Phân & Luyện Thi Đại Học VSAT",
-"folderId": "1VbW3pT-HmLO6HgpXV_1iih6y7JrFe5Cj",
-"extraFolderIds": [
-"1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"COURSE-ITEM-63": {
-"name": "Khóa Vật Lý 12 — Chuyên Đề Cấu Trúc Vật Chất, Nhiệt Động Lực Học & Luyện Thi VSAT",
-"folderId": "1CAshsjgTtSA-QicoM95Z1N-Ghw4vdwwE",
-"extraFolderIds": [
-"1tUoB5r_JPu6z4Q1p3Ry4kmZ7Ab25Y-sI"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-SUBJ-LY12-2K9"
-},
-"COURSE-ITEM-64": {
-"name": "Khóa Hóa Học 12 — Chuyên Đề Ester, Carbohydrate, Pin Điện Phân & Luyện Thi VSAT",
-"folderId": "1AQ0g_Yght0umoIcBJl826mVIqmZ9uBjA",
-"extraFolderIds": [
-"1BCfXNH3to1DOwlSZgKPU593dP9UaLRxc"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-SUBJ-HOA12-2K9"
-},
-"COURSE-ITEM-66": {
-"name": "Khóa Tuyệt Đỉnh Excel Từ Cơ Bản Đến Nâng Cao, Excel Pivot, Lập Báo Cáo Tài Chính & VBA",
-"folderId": "1AIoZiaHVooBk7eq2BTjpVmJkPACMfpi4",
-"extraFolderIds": [
-"1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-67": {
-"name": "Khóa Tuyệt Đỉnh PowerPoint 2024 Chinh Phục Mọi Ánh Nhìn & Soạn Thảo Văn Bản Word 365 A-Z",
-"folderId": "1N8TzciVJHxfG8Sa3qBqOSJraLKXTFDDc",
-"extraFolderIds": [
-"1pijb80HkEwE-APTf5ePbXim4xd2JfPNu",
-"1OZx0HEFLqENfm6qlUbNCgE5sP4-ql_MD",
-"1BcWAeM0zlnWpaZm4NIAWQ_7O8LWRaT6Q"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-68": {
-"name": "Khóa Làm Chủ Cơ Sở Dữ Liệu Microsoft Access Từ A-Z & Quản Lý Tiến Độ Dự Án MS Project",
-"folderId": "18DklFNnU58J8amuZHsE_7fFIUUTcZVsL",
-"extraFolderIds": [
-"1Pz2ulBxVS93g_8hiDshiunitZLPWI4HA"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-69": {
-"name": "Khóa Làm Chủ Google Spreadsheets, Google Workspace & Tự Động Hóa Gửi Email Apps Script",
-"folderId": "1Aj6if850TExQl59BX726KwSkBrKTMFvA",
-"extraFolderIds": [
-"1dy5b31eEjENI_v4zzCSO28FfNfPxjVt_"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-THVP-MOS-199K",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-70": {
-"name": "Khóa Combo Kỹ Năng Số: Thực Hành Truy Vấn SQL, Hàm Mảng Excel & Phân Tích Dữ Liệu",
-"folderId": "1nC7Q2UXt01SgnkeD518XnlyDQTPXS1ZK",
-"extraFolderIds": [
-"1JWPce0xhjx_dAe5O0pdz_Hma4H8BH3mm"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-MOS-THVP"
-},
-"COURSE-ITEM-74": {
-"name": "Khóa Lý Thuyết Xác Suất Thống Kê Đại Học & Bí Quyết Viết CV Chinh Phục Nhà Tuyển Dụng",
-"folderId": "1QJxChXQQ9WMZQTInw_3Tged3PfHHRZHS",
-"extraFolderIds": [
-"1DCDFsT5EXtDKj7m_y-w6qR7c_rXgP7NW",
-"16mmqHcys3VeIGmPeD-Hw2lL5koWbPis_"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL"
-},
-"COURSE-ITEM-76": {
-"name": "Khóa Guitar Đệm Hát Trong 30 Ngày Từ A-Z & Đệm Hát Dòng Nhạc Bolero Nâng Cao",
-"folderId": "1fbnrLKiCLnLX7eVPvrqg_kK56i3Fa3jS",
-"extraFolderIds": [
-"1ImYNmkGbp92_dXSAYq5lZiSVCJdwcFv1",
-"1euJQ8HZbo9rxOd2GrO1q2kIVwNgF6-CQ",
-"1ZfQkutEeGbU5H0XAlK0Vm6xCaDWT-g_B"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-79": {
-"name": "Khóa Chinh Phục Đàn Ukulele Trong 7 Ngày Cùng Hiển Râu & Giáo Trình Ukulele All-In-One",
-"folderId": "1CdKjrgfN8h0fSpadjVBS2uhJe8_4OBnZ",
-"extraFolderIds": [
-"1oXAEpmI_zNgLDAv6tUMDgnQWe7SAPdbp",
-"1R3EJy4TNB_IWQJHIwl1pQuIhZmz5bF3i"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-80": {
-"name": "Khóa Tự Học Thổi Sáo Trúc Trong 21 Ngày & Tự Học Kèn Harmonica Trong 15 Buổi",
-"folderId": "1MvkbnuiufNJT1_Wkl3bqIvKULjOki9Zc",
-"extraFolderIds": [
-"1xaVYzBaILI-mJHqHMLCVUF3ctfM3qz51",
-"1XoEXCi6BmSlMq62RVRfNtPFTdti_DzM1"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-81": {
-"name": "Khóa Học DJ Online (Serato), Beatbox Biểu Diễn & Thu Âm Mix Vocal Trên Cubase / Nuendo",
-"folderId": "1IQqV3bkc5zPShTuwqpX6ufP3mmOyzw2G",
-"extraFolderIds": [
-"18KWHTVMR5G9djqEerfwAmel3tdN-U5sP",
-"1sIURai13bq6OKagRRWZNTdh-VEDYYQEv",
-"15FflBoasTT6otpURG3wbrf2fNygw1_t1",
-"1UmxVqK3Om8HtZDC8EQ_NZ3sw-8wNgV44"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"COURSE-ITEM-82": {
-"name": "Khóa Học Nhảy Shuffle Dance Cơ Bản Cho Người Mới & Viết Giai Điệu Bài Hát Bằng Nhạc Beat",
-"folderId": "1gpSBFQSFIFIHbDzmQd_UrAACh7kgaTBM",
-"extraFolderIds": [
-"1n0BbtwuAy9CLZO7JILRlrZ2pstWKOc3N",
-"1aZMc6Ea-IPT79GkXksxjobZK3191vsYY"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGHETHUAT-199K",
-"parentSubjectId": "COURSE-SUBJ-NGHETHUAT"
-},
-"FULL-COMBO-399K": {
-"name": "Trọn Bộ Full 90+ Khóa Học Đa Môn (Toán · Văn · Anh · Trung · Lý · Hóa · Sinh · Sử · Địa · Tin MOS · Đại Học · Nghệ Thuật · ĐGNL)",
-"folderId": "1FaI2FGNRB4ERyEoYsPUQbJP80JcVpU52",
-"extraFolderIds": [
-"1ZmaGDNTMCJqEhWC2oB5vs21WDM__FV7N"
-],
-"price": 399000,
-"tier": "full_399k",
-"parentCourseId": "ALL-COURSES-399K",
-"parentSubjectId": "ALL-COURSES-399K"
-},
-"HSA-01": {
-"name": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội 2027 (Định Lượng · Định Tính Ngữ Văn · Khoa Học · Tiếng Anh)",
-"folderId": "1_tPOqo2Nve07up5SgHpIyhjo6lwoVa9Y",
-"extraFolderIds": [
-"1nd2gPR_MAkYl2e3ffZ7oSDpUs42iSrFJ",
-"1JFOWG4aMVK7913LKsin2FzGwy0WVZcj2"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DGNL-HSA",
-"parentSubjectId": "COURSE-ITEM-35"
-},
-"TSA-01": {
-"name": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội 2027 (Tư Duy Toán · Đọc Hiểu · Khoa Học)",
-"folderId": "1_sW0V8Q1bKgI0taDc-0hXgAimrmPV_Q4",
-"extraFolderIds": [
-"1KoWxcHRb-OdLFrqwt8jbfD_z2Fx1VlnF"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DGTD-TSA",
-"parentSubjectId": "COURSE-ITEM-40"
-},
-"VACT-01": {
-"name": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM 2027 (Ngôn Ngữ · Toán Học · Tư Duy Khoa Học)",
-"folderId": "1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
-"extraFolderIds": [
-"1bz7JkVDWOOk5bKKrRFwyZvwUH2Mb9zj2",
-"12c6aQKTlU3hiJcQD2ThFKbgWIkCzpqv6",
-"1UQFg7cF1zuru0VMWqk4bn8XYd7gQnfIM"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-DGNL-VACT",
-"parentSubjectId": "COURSE-ITEM-45"
-},
-"MAC-01": {
-"name": "Môn Triết Học Mác - Lênin Đại Học Điểm A+ (Sơ Đồ Tư Duy & Đề Cương Trọng Tâm)",
-"folderId": "1hJ1J8sadOa5-3FlOHx6GtM8yeIu-62-u",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-TRIETHOC"
-},
-"KT-01": {
-"name": "Môn Kinh Tế Lượng Đại Học Điểm A+ (Thực Hành Hồi Quy OLS Trên EViews · Stata · SPSS)",
-"folderId": "1xDhl87qUsflx4nQCbLdLs8RDaDQc2Dok",
-"extraFolderIds": [
-"1QJxChXQQ9WMZQTInw_3Tged3PfHHRZHS"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-DAIHOC-KTL"
-},
-"TCC-01": {
-"name": "Trọn Bộ Môn Toán 12 (2K9) — 7 Khóa Luyện Thi THPTQG 2027",
-"folderId": "1Q_ToxSfCoPcDDooe8WUx0h1nJS1gf06w",
-"extraFolderIds": [
-"1VbW3pT-HmLO6HgpXV_1iih6y7JrFe5Cj"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-K9-LOP12",
-"parentSubjectId": "COURSE-SUBJ-TOAN12-2K9"
-},
-"LAW-01": {
-"name": "Combo Luyện Thi ĐGNL Bộ Công An (BCA) · Quân Đội (QDA) · VSAT 8 Môn (Toán, Văn, Anh, Lý, Hóa, Sinh, Sử, Địa)",
-"folderId": "1xaRruY0asdqqw-fp4c9fy7n5nfxxGqSA",
-"extraFolderIds": [
-"1AhTkg3k1908Md2VmTeIWsrg2dZSJeLAK",
-"1jNymOlAbD1sdzjKk6ijFzW6ZkB-IgvhI",
-"1KhQ_bJA5IEjeWjS5fjrn8ZlA7u1p-xbc"
-],
-"price": 199000,
-"tier": "course_199k",
-"parentCourseId": "COURSE-BCA-QDA-VSAT",
-"parentSubjectId": "COURSE-ITEM-48"
-},
-"RES-01": {
-"name": "Môn Phương Pháp Viết Bài Tập Lớn, Tiểu Luận & Nghiên Cứu Khoa Học Chuẩn APA 7",
-"folderId": "1C08q3lzaWAI6MjGigtAc0H2K0HNGmxQx",
-"extraFolderIds": [],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-DAIHOC-HOC-THUAT",
-"parentSubjectId": "COURSE-SUBJ-NCKH-APA7"
-},
-"ENG-01": {
-"name": "Trọn Bộ Môn Tiếng Anh 12 (2K9) — Lộ Trình Pro3M · Pro3MPlus · VIP90 & Nền Tảng Tiếng Anh",
-"folderId": "1WlZvKRBm4CYRH7yohELZf0G1vcvSOwqe",
-"extraFolderIds": [
-"1W80wIVEKFn8KMxTzTkfWf-IktCwAtjfL",
-"1N9Ge80PeZiLBts5Udb8h0g0X8-Rtx9mE",
-"1si7gRcqURbnbJMMiGiNwih-OzQhkQJJT"
-],
-"price": 69000,
-"tier": "subject_69k",
-"parentCourseId": "COURSE-NGOAINGU-TRUNG-ANH",
-"parentSubjectId": "COURSE-SUBJ-ANH12-2K9"
-}
+  "ALL-COURSES-399K": {
+    "name": "Gói VIP Full Trọn Bộ 399K (Mở 100% Khóa 69K + 199K + Update Vĩnh Viễn)",
+    "sku": "DVFULL399",
+    "tier": "full_399k",
+    "price": 399000,
+    "folderId": "1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a",
+    "extraFolderIds": [
+      "1ZlYt4iot-K6d0fZTb7hGwwnRgUV6Pdwh"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a",
+    "bannerId": "",
+    "bannerUrl": ""
+  },
+  "C199-KHTN1": {
+    "name": "Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh",
+    "sku": "DV199KHTN1",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "extraFolderIds": [
+      "1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+      "1m__F2exCz50iNJXhf0JR4TramO29K244"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "bannerId": "1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960"
+  },
+  "C199-KHTN2": {
+    "name": "Combo 199K: KHTN 2 — Toán, Vật Lý, Anh",
+    "sku": "DV199KHTN2",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "extraFolderIds": [
+      "1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+      "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "bannerId": "1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960"
+  },
+  "C199-KHXH1": {
+    "name": "Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
+    "sku": "DV199KHXH1",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "extraFolderIds": [
+      "1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+      "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "bannerId": "1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960"
+  },
+  "C199-KHXH2": {
+    "name": "Combo 199K: KHXH 2 — Toán, Văn, Anh",
+    "sku": "DV199KHXH2",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "extraFolderIds": [
+      "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+      "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "bannerId": "13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960"
+  },
+  "C199-HSA": {
+    "name": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)",
+    "sku": "DV199HSA",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "extraFolderIds": [
+      "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+      "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+      "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "bannerId": "1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960"
+  },
+  "C199-TSA": {
+    "name": "Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)",
+    "sku": "DV199TSA",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "extraFolderIds": [
+      "1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "bannerId": "1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960"
+  },
+  "C199-VACT": {
+    "name": "Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)",
+    "sku": "DV199VACT",
+    "tier": "course_199k",
+    "price": 199000,
+    "folderId": "1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "extraFolderIds": [
+      "1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+      "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB"
+    ],
+    "folderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "bannerId": "15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960"
+  },
+  "K69-TOAN-DUC": {
+    "name": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)",
+    "sku": "DV69TOANDUC",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "bannerId": "19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960"
+  },
+  "K69-TOAN-TIEN": {
+    "name": "Toán Thầy Nguyễn Phan Tiến 2K9",
+    "sku": "DV69TOANTIEN",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1b73Z89zxCGINyuOVm4pImxwkj2UTidC1",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1",
+    "bannerId": "1T9k1aHqUdKGfzzCeePudB3408I2f86Ek",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960"
+  },
+  "K69-TOAN-SHIPPER": {
+    "name": "Toán Anh Shiper 2K9",
+    "sku": "DV69TOANSHIP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n",
+    "bannerId": "1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960"
+  },
+  "K69-TOAN-MAP": {
+    "name": "Toán — Tổ Toán Học MapStudy 2K9",
+    "sku": "DV69TOANMAP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA",
+    "bannerId": "1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960"
+  },
+  "K69-TOAN-NT": {
+    "name": "Nền Tảng Toán Thầy Lưu Huy Thưởng",
+    "sku": "DV69TOANNT",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A",
+    "bannerId": "1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960"
+  },
+  "K69-LY-BIEN": {
+    "name": "Vật Lý Thầy Chu Văn Biên 2K9",
+    "sku": "DV69LYBIEN",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+    "bannerId": "1Qk1eh8MSussintaXSMK2G1iy9zCKehkw",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960"
+  },
+  "K69-LY-TIEN": {
+    "name": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9",
+    "sku": "DV69LYTIEN",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+    "bannerId": "1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960"
+  },
+  "K69-LY-UNG": {
+    "name": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)",
+    "sku": "DV69LYUNG",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU",
+    "bannerId": "1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960"
+  },
+  "K69-HOA-TRONG": {
+    "name": "Hóa Học Thầy Phạm Văn Trọng 2K9",
+    "sku": "DV69HOATRONG",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk",
+    "bannerId": "1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960"
+  },
+  "K69-HOA-NGOC": {
+    "name": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son",
+    "sku": "DV69HOANGOC",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe",
+    "bannerId": "1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960"
+  },
+  "K69-VAN-SM": {
+    "name": "Học Văn Cô Sương Mai 2K9",
+    "sku": "DV69VANSM",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "bannerId": "168PvC5P4T3pnHuCQteIB6MwyAseMHgCP",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960"
+  },
+  "K69-VAN-NT": {
+    "name": "Nền Tảng 12 Môn Ngữ Văn (HocMai)",
+    "sku": "DV69VANNT",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF",
+    "bannerId": "1k6hnaIY3HWrymuoZclECCa6lGgtbjyND",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960"
+  },
+  "K69-ANH-MP": {
+    "name": "Tiếng Anh Cô Vũ Mai Phương 2K9",
+    "sku": "DV69ANHMP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1",
+    "bannerId": "1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960"
+  },
+  "K69-ANH-LIEU": {
+    "name": "Tiếng Anh Cô Phạm Liễu 2K9",
+    "sku": "DV69ANHLIEU",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw",
+    "bannerId": "1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960"
+  },
+  "K69-ANH-NT": {
+    "name": "Nền Tảng 12 Môn Tiếng Anh (HocMai)",
+    "sku": "DV69ANHNT",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM",
+    "bannerId": "19jS05grnW40e4meXVPn7a7RvtUEAl19x",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960"
+  },
+  "K69-SINH-NGHE": {
+    "name": "Sinh Học Thầy Phan Khắc Nghệ 2K9",
+    "sku": "DV69SINHNGHE",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1m__F2exCz50iNJXhf0JR4TramO29K244",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244",
+    "bannerId": "12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960"
+  },
+  "K69-SINH-DUONG": {
+    "name": "Nền Tảng Sinh Học Cô Ánh Dương",
+    "sku": "DV69SINHDUONG",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio",
+    "bannerId": "1HfwO2IBd44nJtu3b1rfETYWnpY_jR786",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960"
+  },
+  "K69-SU-HUONG": {
+    "name": "Lịch Sử Cô Ngô Thị Lan Hương 2K9",
+    "sku": "DV69SUHUONG",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+    "bannerId": "1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960"
+  },
+  "K69-SU-SEN": {
+    "name": "Lịch Sử Cô Nguyễn Hương Sen 2K9",
+    "sku": "DV69SUSEN",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t",
+    "bannerId": "1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960"
+  },
+  "K69-DIA-TUNG": {
+    "name": "Địa Lý Thầy Đàm Thanh Tùng 2K9",
+    "sku": "DV69DIATUNG",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm",
+    "bannerId": "1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960"
+  },
+  "K69-DIA-TAI": {
+    "name": "Địa Lý Thầy Tài 2K9",
+    "sku": "DV69DIATAI",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1DasmiM670vDu3CekdeXCoQeQoeLvKYyq",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq",
+    "bannerId": "1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960"
+  },
+  "K69-HSA-HOCMAI": {
+    "name": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69HSAHM",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+  },
+  "K69-HSA-MAP": {
+    "name": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69HSAMAP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+  },
+  "K69-HSA-EMPIRE": {
+    "name": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69HSAEMP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+  },
+  "K69-HSA-EDU": {
+    "name": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69HSAEDU",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
+    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+  },
+  "K69-TSA-BMC": {
+    "name": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69TSABMC",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960"
+  },
+  "K69-TSA-HOCMAI": {
+    "name": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69TSAHM",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu",
+    "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960"
+  },
+  "K69-VACT-HOCMAI": {
+    "name": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69VACTHM",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
+  },
+  "K69-VACT-EMPIRE": {
+    "name": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69VACTEMP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+    "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
+  },
+  "K69-VACT-MAP": {
+    "name": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "sku": "DV69VACTMAP",
+    "tier": "subject_69k",
+    "price": 69000,
+    "folderId": "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB",
+    "extraFolderIds": [],
+    "folderUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB",
+    "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
+  }
 };
 const APP_DOWNLOAD_LINKS = {
 "windows_zip_drive_id": "1hh3zp7-X3leDex77Rf76W9BeiJzEUZkf",
@@ -11955,10 +11058,10 @@ const APP_DOWNLOAD_LINKS = {
 const PAYMENT_INFO = {
 bankName: "ACB",
 bankCode: "ACB",
-accountName: "NGO BAO THACH",
-accountNumber: "27384751",
+accountName: "TRINH DUC THINH",
+accountNumber: "27820961",
 provider: "Ngân hàng ACB - Chuyển khoản 24/7",
-qrBaseUrl: "https://img.vietqr.io/image/ACB-27384751-compact2.png"
+qrBaseUrl: "https://img.vietqr.io/image/ACB-27820961-compact2.png"
 };
 const RECENT_PURCHASES_STREAM = [
 { name: "Nguyễn Minh H***", school: "NEU", item: "Mở Khóa Trọn Bộ Full Cả App Điệp Viên Study (399K)", time: "Vừa xong" },
@@ -11984,5 +11087,5 @@ slogan: "Bản Quyền Đề Cương & Dịch Vụ Học Thuật Số 1 Sinh Vi�
 zaloUrl: "https://zalo.me/0792453169",
 phone: "0792 453 169",
 emailSupport: "support@diepvientailieu.vn",
-defaultWebhookUrl: "https://script.google.com/macros/s/AKfycbzdPmHlspKtFugSDT53B0Vfmz-kw_6KslTh1FZbCG-RAk9Bm5dg5w2tfepCKGg-FWciVg/exec"
+defaultWebhookUrl: "https://script.google.com/macros/s/AKfycbxMOdsNkhY8-5xQtZ_86STf781VdFJbRsLkK6n8qRF4ENqreMsl4CdELYn-85wHcqvx/exec"
 };

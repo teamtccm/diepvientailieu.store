@@ -1,13 +1,13 @@
 {
-  "version": "4.1.1794987000",
-  "releasedAt": "2026-11-18T07:30:00Z",
-  "notes": "OTA v4.1 Turbo: Tăng tốc toàn diện Web & App (<1.4s API, 0ms VietQR, RAM Gzip <1ms), giao file Google Drive song song siêu tốc, lưu khách hàng 3 bảng ngầm & báo Telegram 4 tầng chuẩn HTML",
+  "version": "2026.11.23.3",
+  "releasedAt": "2026-11-23T16:50:00Z",
+  "notes": "v10.3: Khôi phục tab Khóa học trên App, 37 khóa Banner thật, tách 4 Combo Ban + 3 Khóa ĐGNL/ĐGTD 199K, Website chuẩn giao diện App",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "e3ef895365fee33a9fc2d44b25578f4ffb64c3265e2ef62adaff62a24e8b66aa",
-      "size": 2652409,
+      "sha256": "ccda454b9f2d52e75107b85db9c837bb5501e15541bc757770ecdcca6a920482",
+      "size": 2203328,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
@@ -19,8 +19,8 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "DiepVienStudy_runtime.txt",
-      "sha256": "156ae4bf3f9db227e478d20e1bebc6847c5733598c3a85d2875b5f2942ad46aa",
-      "size": 437206,
+      "sha256": "83e692358ca91a71a4d769da9c8a95322537c0363ea5d7b0c2e3163501f55f7d",
+      "size": 384963,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ]

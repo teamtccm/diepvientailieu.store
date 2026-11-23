@@ -3323,9 +3323,7 @@ function renderSingleCourseCardHtml(course) {
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
                     </div>
                 `}
-                <button type="button" onclick="triggerWebCourseCoverUpload(event, '${course.id}')" class="absolute bottom-2.5 right-2.5 z-10 px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-900/75 hover:bg-blue-600 text-white border border-white/25 backdrop-blur-md opacity-0 group-hover:opacity-100 transition">
-                    ${coverUrl ? "Đổi ảnh" : "Chèn ảnh"}
-                </button>
+                
             </div>
 
             <!-- CARD BODY (TOP = BADGE & INSTRUCTOR, MIDDLE = COURSE TITLE, BOTTOM = STATS & ACTION) -->
@@ -5151,3 +5149,178 @@ if (typeof openCustomerSyncModal === "function") {
     openCustomerSyncModal = window.openCustomerSyncModal;
 }
 document.addEventListener("DOMContentLoaded", () => initDvtlGoogleSignIn(0));
+
+
+
+// ============================================================================
+// === V10.5: BẤM ĐĂNG NHẬP/ĐĂNG KÝ -> GOOGLE NGAY + HIỆN LOGO & TÊN GOOGLE ===
+// ============================================================================
+const DVTL_GOOGLE_G_ICON_HTML = `<svg class="w-4 h-4 shrink-0" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
+let _dvtlGoogleTokenClient = null;
+
+function dvtlRefreshHeaderGoogleBtn(cust) {
+    const iconWrap = document.getElementById("headerAccountSyncIcon");
+    const lbl = document.getElementById("headerAccountSyncLabel");
+    const btn = document.getElementById("headerAccountSyncBtn");
+    const logoutBtn = document.getElementById("dvtlGoogleLogoutBtn");
+    if (cust && cust.email) {
+        const displayName = (cust.name && cust.name.trim()) ? cust.name.trim() : cust.email.split("@")[0];
+        if (lbl) lbl.textContent = displayName;
+        if (iconWrap) {
+            if (cust.picture) {
+                iconWrap.innerHTML = `<span class="relative inline-flex items-center justify-center"><img src="${cust.picture}" alt="" referrerpolicy="no-referrer" class="w-5 h-5 rounded-full object-cover border border-white/90 shadow-sm"><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-white flex items-center justify-center shadow">${DVTL_GOOGLE_G_ICON_HTML.replace('w-4 h-4', 'w-2.5 h-2.5')}</span></span>`;
+            } else {
+                iconWrap.innerHTML = `<span class="w-5 h-5 rounded-full bg-white flex items-center justify-center shadow-sm">${DVTL_GOOGLE_G_ICON_HTML.replace('w-4 h-4', 'w-3.5 h-3.5')}</span>`;
+            }
+        }
+        if (btn) {
+            btn.className = "inline-flex items-center gap-1.5 px-2.5 py-1 bg-white hover:bg-slate-50 text-slate-900 font-extrabold text-[11px] rounded-full shadow-md border border-white/80 transition whitespace-nowrap max-w-[185px]";
+            btn.title = displayName + " (" + cust.email + ")";
+        }
+        if (logoutBtn) logoutBtn.classList.remove("hidden");
+    } else {
+        if (lbl) lbl.textContent = "Đăng nhập / Đăng ký";
+        if (iconWrap) {
+            iconWrap.innerHTML = `<span class="w-5 h-5 rounded-full bg-white flex items-center justify-center shadow-sm">${DVTL_GOOGLE_G_ICON_HTML.replace('w-4 h-4', 'w-3.5 h-3.5')}</span>`;
+        }
+        if (btn) {
+            btn.className = "inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap";
+            btn.title = "Đăng nhập nhanh bằng tài khoản Google";
+        }
+        if (logoutBtn) logoutBtn.classList.add("hidden");
+    }
+}
+
+async function dvtlCompleteGoogleLogin(profileObj, serverQuery) {
+    let verifiedCust = Object.assign({
+        email: "",
+        name: "",
+        picture: "",
+        phone: (getSyncedCustomerLocal() && getSyncedCustomerLocal().phone) || "",
+        verifiedByGoogle: true,
+        isAdmin: false,
+        unlockedCourses: [],
+        purchasedDocs: [],
+        btlOrders: []
+    }, profileObj || {});
+
+    verifiedCust.email = String(verifiedCust.email || "").trim().toLowerCase();
+    verifiedCust.isAdmin = ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(verifiedCust.email);
+
+    try {
+        const apiUrl = (typeof GAS_WEBAPP_URL !== "undefined" ? GAS_WEBAPP_URL : (window.APPS_SCRIPT_URL || ""));
+        if (apiUrl && serverQuery) {
+            const r = await fetch(apiUrl + "?action=verifyGoogleLogin&" + serverQuery);
+            const data = await r.json();
+            if (data && data.ok && data.customer) {
+                verifiedCust = Object.assign(verifiedCust, data.customer);
+            }
+        }
+    } catch (e) { console.warn("GAS verifyGoogleLogin note:", e); }
+
+    if (typeof saveCustomerProfileEverywhere === "function") {
+        saveCustomerProfileEverywhere(verifiedCust);
+    } else {
+        try { localStorage.setItem("dvtl_synced_customer", JSON.stringify(verifiedCust)); } catch (_) {}
+    }
+    if (typeof applySyncedCustomerToForms === "function") applySyncedCustomerToForms(verifiedCust);
+    if (typeof renderSyncedCustomerEntitlements === "function") renderSyncedCustomerEntitlements(verifiedCust);
+    if (typeof dvtlRenderGoogleSignedBadge === "function") dvtlRenderGoogleSignedBadge(verifiedCust);
+    dvtlRefreshHeaderGoogleBtn(verifiedCust);
+
+    const msgEl = document.getElementById("dvtlGoogleStatusMsg");
+    if (msgEl) {
+        msgEl.className = "mt-2 text-[11px] font-bold text-center text-emerald-600";
+        msgEl.textContent = "✓ Đã đăng nhập Google: " + (verifiedCust.name || verifiedCust.email);
+        msgEl.classList.remove("hidden");
+    }
+}
+
+async function handleDvtlGoogleAccessToken(tokenResp) {
+    if (!tokenResp || !tokenResp.access_token) return;
+    const accessToken = tokenResp.access_token;
+
+    // App bridge support if opened with ?app_google_auth=1
+    if (_dvtlAppBridgeCallbackUrl && /^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(_dvtlAppBridgeCallbackUrl)) {
+        const st = document.getElementById("dvtlAppBridgeStatus");
+        if (st) st.textContent = "✓ Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
+        window.location.href = _dvtlAppBridgeCallbackUrl + "?access_token=" + encodeURIComponent(accessToken);
+        return;
+    }
+
+    try {
+        const uRes = await fetch("https://www.googleapis.com/oauth2/v3/userinfo", {
+            headers: { "Authorization": "Bearer " + accessToken }
+        });
+        const uInfo = await uRes.json();
+        if (uInfo && uInfo.email) {
+            await dvtlCompleteGoogleLogin({
+                email: uInfo.email,
+                name: uInfo.name || uInfo.given_name || uInfo.email.split("@")[0],
+                picture: uInfo.picture || ""
+            }, "accessToken=" + encodeURIComponent(accessToken));
+        }
+    } catch (err) {
+        console.error("Google userinfo error:", err);
+    }
+}
+
+function triggerDirectGoogleLoginPopup() {
+    if (window.google && window.google.accounts && window.google.accounts.oauth2) {
+        try {
+            if (!_dvtlGoogleTokenClient) {
+                _dvtlGoogleTokenClient = window.google.accounts.oauth2.initTokenClient({
+                    client_id: DVTL_GOOGLE_CLIENT_ID,
+                    scope: "openid email profile",
+                    callback: handleDvtlGoogleAccessToken
+                });
+            }
+            _dvtlGoogleTokenClient.requestAccessToken({ prompt: "select_account" });
+            return true;
+        } catch (e) {
+            console.warn("OAuth2 token client fallback:", e);
+        }
+    }
+    return false;
+}
+
+window.handleHeaderAuthClick = function() {
+    const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+    if (cur && cur.email) {
+        // Đã đăng nhập -> mở thẻ thông tin tài khoản Google + khóa học đã mua + nút Đăng xuất
+        if (typeof openCustomerSyncModal === "function") openCustomerSyncModal();
+        dvtlRefreshHeaderGoogleBtn(cur);
+        return;
+    }
+    // Chưa đăng nhập -> Mở thẳng cửa sổ chọn tài khoản Google luôn!
+    const opened = triggerDirectGoogleLoginPopup();
+    if (!opened && typeof openCustomerSyncModal === "function") {
+        openCustomerSyncModal();
+    }
+};
+
+window.dvtlLogoutGoogleWeb = function() {
+    try {
+        if (typeof logoutCustomerSyncWeb === "function") logoutCustomerSyncWeb();
+        localStorage.removeItem("dvtl_synced_customer");
+        localStorage.removeItem("dvtl_cust_profile");
+        localStorage.removeItem("dvs_cust_email");
+        localStorage.removeItem("dvs_google_user");
+    } catch (_) {}
+    dvtlRefreshHeaderGoogleBtn(null);
+    if (typeof dvtlRenderGoogleSignedBadge === "function") dvtlRenderGoogleSignedBadge(null);
+    if (typeof closeCustomerSyncModal === "function") closeCustomerSyncModal();
+};
+
+// Override handleDvtlGoogleCredential so GIS button also updates header avatar/name cleanly
+const _prevHandleCredV104 = (typeof handleDvtlGoogleCredential === "function") ? handleDvtlGoogleCredential : null;
+handleDvtlGoogleCredential = async function(response) {
+    if (_prevHandleCredV104) await _prevHandleCredV104(response);
+    const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+    dvtlRefreshHeaderGoogleBtn(cur);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+    dvtlRefreshHeaderGoogleBtn(cur);
+});

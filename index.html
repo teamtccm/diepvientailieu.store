@@ -36,7 +36,7 @@
         }
     </script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css?v=10.4">
+    <link rel="stylesheet" href="css/custom.css?v=10.5">
     <!-- Critical Inline Fallback CSS (chống cache cũ: luôn chạy vòng marquee + luôn bật toast nổi ngoài khung hình) -->
     <style>
       .marquee-wrapper { overflow: hidden !important; position: relative !important; width: 100% !important; mask-image: linear-gradient(to right, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 3.5%, #000 96.5%, transparent 100%); }
@@ -91,9 +91,9 @@
                     <img src="images/favicon_badge.png" alt="APP Diep Vien study" class="w-4 h-4 rounded-md object-contain flex-shrink-0">
                     <span id="headerDownloadAppLabel" class="tracking-tight">APP Study</span>
                 </button>
-                <button id="headerAccountSyncBtn" onclick="openCustomerSyncModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap">
-                    <span><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
-                    <span id="headerAccountSyncLabel">Đăng nhập / Đăng ký</span>
+                <button id="headerAccountSyncBtn" onclick="handleHeaderAuthClick()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-[#FFA000] hover:bg-amber-400 text-slate-950 font-black text-[11px] rounded-full shadow-md transition whitespace-nowrap" title="Đăng nhập nhanh bằng tài khoản Google">
+                    <span id="headerAccountSyncIcon" class="inline-flex items-center justify-center"><span class="w-5 h-5 rounded-full bg-white flex items-center justify-center shadow-sm"><svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span></span>
+                    <span id="headerAccountSyncLabel" class="truncate max-w-[130px]">Đăng nhập / Đăng ký</span>
                 </button>
             </div>
         </div>
@@ -2071,8 +2071,8 @@ function doPost(e) {
         </div>
     </footer>
     <!-- Scripts with cache busting query string -->
-    <script src="js/data.js?v=10.4"></script>
-    <script src="js/app.js?v=10.4"></script>
+    <script src="js/data.js?v=10.5"></script>
+    <script src="js/app.js?v=10.5"></script>
     <script>
         function openTrackingModal() {
             document.getElementById('trackingModal').classList.remove('hidden');
@@ -2139,42 +2139,9 @@ function doPost(e) {
                 </div>
                 <div id="dvtlGoogleStatusMsg" class="hidden mt-2 text-[11px] font-bold text-center"></div>
             </div>
-            <details class="group mb-3">
-                <summary class="cursor-pointer select-none text-[11.5px] font-bold text-slate-500 dark:text-slate-400 hover:text-[#0D1677] dark:hover:text-sky-300 flex items-center justify-between py-1.5 px-2 rounded-lg hover:bg-slate-50 dark:hover:bg-white/5">
-                    <span>Hoặc cập nhật SĐT Zalo / đồng bộ thủ công</span>
-                    <span class="text-[10px]">▼</span>
-                </summary>
-                <div class="mt-2 pt-2 border-t border-slate-200/70 dark:border-white/10">
-<div class="space-y-3 text-xs">
-                <div>
-                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Tên đăng nhập / Họ và tên <span class="text-red-500">*</span></label>
-                    <input id="syncCustNameInput" type="text" placeholder="Nhập tên đăng nhập của bạn (VD: nguyenvana)" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
-                </div>
-                <div>
-                    <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Email Google (Nhận Đề Cương, Drive & Đồng Bộ App) <span class="text-red-500">*</span></label>
-                    <input id="syncCustEmailInput" type="email" placeholder="sinhvien@gmail.com" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Số điện thoại Zalo</label>
-                        <input id="syncCustPhoneInput" type="tel" placeholder="0987654321" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
-                    </div>
-                    <div>
-                        <label class="block font-bold text-slate-700 dark:text-slate-200 mb-1">Mật khẩu đồng bộ (Tùy chọn)</label>
-                        <input id="syncCustPassInput" type="password" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/15 rounded-xl text-slate-900 dark:text-white outline-none focus:border-[#0D1677]">
-                    </div>
-                </div>
-                <div class="flex gap-2 pt-1">
-                    <button type="button" id="btnSubmitCustomerSync" onclick="submitCustomerSyncWeb()" class="flex-1 py-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black rounded-xl shadow transition flex items-center justify-center gap-2">
-                        <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg>
-                        <span>Đăng Nhập & Tự Động Tải App</span>
-                    </button>
-                    <button type="button" onclick="logoutCustomerSyncWeb()" class="px-4 py-3 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 text-slate-600 dark:text-slate-200 font-bold rounded-xl transition">
-                        Đăng xuất
-                    </button>
-                </div>
-                <div id="syncCustomerStatusMsg" class="text-[11px] font-bold text-emerald-700 dark:text-emerald-300 text-center hidden"></div>
-                </div></details>
+            <div class="flex justify-center mb-3">
+                <button id="dvtlGoogleLogoutBtn" type="button" onclick="dvtlLogoutGoogleWeb()" class="hidden px-4 py-2 rounded-xl bg-slate-100 hover:bg-red-50 text-slate-700 hover:text-red-600 font-bold text-xs border border-slate-200 transition">Đăng xuất tài khoản Google</button>
+            </div>
             <div id="syncCustomerEntitlementsBox" class="hidden pt-4 border-t border-slate-200 dark:border-white/10 space-y-3">
                     <div class="font-black text-slate-900 dark:text-white uppercase text-xs">Đề Cương & Tài Liệu Đã Xác Thực Thanh Toán:</div>
                     <div id="syncCustomerItemsList" class="space-y-2 max-h-48 overflow-y-auto"></div>

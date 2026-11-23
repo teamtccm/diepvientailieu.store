@@ -605,14 +605,14 @@ Error generating stack: `+p.message+`
     g.jsxs("button", {
       type: "button",
       className: "account-card",
-      onClick: () => setOpen(true),
+      onClick: () => { if (gUser && gUser.email) { setOpen(true); } else { startGoogleSignIn(); } },
       title: gUser ? gUser.email : "Đăng nhập bằng tài khoản Google",
       children: [
         g.jsxs("div", { style: { display: "flex", alignItems: "center", gap: 8 }, children: [
           gUser && gUser.picture
             ? g.jsx("img", { src: gUser.picture, alt: "", style: { width: 22, height: 22, borderRadius: "50%", objectFit: "cover" } })
             : googleG,
-          g.jsx("strong", { style: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }, children: gUser ? (gUser.name || gUser.email.split("@")[0]) : "Đăng nhập Google" })
+          g.jsx("strong", { style: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }, children: gUser ? (gUser.name || gUser.email.split("@")[0]) : (busy ? "Đang mở Google..." : "Đăng nhập / Đăng ký") })
         ]}),
         g.jsxs("small", { children: [
           g.jsx("span", { className: `status-dot ${gUser ? "ready" : ""}` }),
@@ -7630,14 +7630,7 @@ function fue({model:t, setPage:e}) {
                         : g.jsx("div", {
                             className: "dvs-course-cover-placeholder",
                             children: g.jsx("span", { className: "dvs-cover-ratio-tag", children: "KHUNG ẢNH 16:9" })
-                          }),
-                      g.jsx("button", {
-                        type: "button",
-                        className: "dvs-course-cover-upload-btn",
-                        title: "Chèn hoặc đổi ảnh bìa khóa học",
-                        onClick: ev => handlePickCoverImage(ev, course.id),
-                        children: hasValidCover ? "Đổi ảnh" : "Chèn ảnh"
-                      })
+                          })
                     ]
                   }),
 

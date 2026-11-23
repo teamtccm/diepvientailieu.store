@@ -1,7 +1,7 @@
 {
   "version": "2026.11.23.3",
-  "releasedAt": "2026-11-23T16:50:00Z",
-  "notes": "v10.3: Khôi phục tab Khóa học trên App, 37 khóa Banner thật, tách 4 Combo Ban + 3 Khóa ĐGNL/ĐGTD 199K, Website chuẩn giao diện App",
+  "releasedAt": "2026-11-23T17:00:00Z",
+  "notes": "v10.3: Khôi phục tab Khóa học trên App, 37 khóa Banner thật, tách 4 Combo Ban + 3 Khóa ĐGNL/ĐGTD 199K, Website chuẩn giao diện App, bỏ khóa cứng API key",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
@@ -19,8 +19,8 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "DiepVienStudy_runtime.txt",
-      "sha256": "83e692358ca91a71a4d769da9c8a95322537c0363ea5d7b0c2e3163501f55f7d",
-      "size": 384963,
+      "sha256": "45c3fc3a9ec4c68191223d169ac42aac3912a1e7a897d6596adc66aaee22253a",
+      "size": 384939,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ]

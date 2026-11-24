@@ -74,7 +74,7 @@
 
     <!-- Custom CSS -->
 
-    <link rel="stylesheet" href="css/custom.css?v=13.0">
+    <link rel="stylesheet" href="css/custom.css?v=14.0">
 
     <!-- Critical Inline Fallback CSS (chống cache cũ: luôn chạy vòng marquee + luôn bật toast nổi ngoài khung hình) -->
 
@@ -1737,7 +1737,7 @@
                             <!-- ALWAYS REQUIRED: Phone / Zalo -->
                             <div>
                                 <label class="block text-[11.5px] font-bold text-slate-700 dark:text-slate-200 mb-1">Số điện thoại Zalo để nhận hỗ trợ: <span class="text-red-500">*</span></label>
-                                <input id="courseStudentPhone" type="tel" oninput="onCourseCheckoutContactInput()" placeholder="Nhập số điện thoại Zalo để nhận hỗ trợ" class="w-full px-3 py-2 bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 rounded-xl text-xs text-slate-900 dark:text-white focus:border-[#0D1677] outline-none transition">
+                                <input id="courseStudentPhone" type="tel" oninput="onCourseCheckoutContactInput()" placeholder="Nhập số điện thoại Zalo (chỉ nhập chữ số)" class="w-full px-3 py-2 bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 rounded-xl text-xs text-slate-900 dark:text-white focus:border-[#0D1677] outline-none transition" inputmode="numeric" pattern="[0-9]*" maxlength="11">
                             </div>
                         </div>
 
@@ -2128,7 +2128,7 @@
 
                                     <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">Số điện thoại Zalo để nhận hỗ trợ: <span class="text-red-500">*</span></label>
 
-                                    <input type="tel" id="srvPhoneInput" required placeholder="Nhập số điện thoại Zalo để nhận hỗ trợ" class="w-full bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/10 focus:border-[#0D1677] rounded-xl px-4 py-2.5 text-xs text-slate-800 dark:text-slate-100 outline-none transition">
+                                    <input type="tel" id="srvPhoneInput" required placeholder="Nhập số điện thoại Zalo (chỉ nhập chữ số)" class="w-full bg-slate-50 dark:bg-[#060E2C] border border-slate-300 dark:border-white/10 focus:border-[#0D1677] rounded-xl px-4 py-2.5 text-xs text-slate-800 dark:text-slate-100 outline-none transition" inputmode="numeric" pattern="[0-9]*" maxlength="11">
 
                                 </div>
 
@@ -3350,7 +3350,7 @@
                     <!-- ALWAYS REQUIRED: Phone / Zalo -->
                     <div>
                         <label class="block font-bold text-slate-700 dark:text-slate-200 text-[11.5px] mb-1">Số điện thoại Zalo để nhận hỗ trợ: <span class="text-red-500">*</span></label>
-                        <input type="tel" id="checkoutPhoneInput" oninput="onDocCheckoutContactInput()" placeholder="Nhập số điện thoại Zalo để nhận hỗ trợ" class="w-full bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 focus:border-[#0D1677] rounded-xl px-3 py-2 text-xs text-slate-900 dark:text-white outline-none">
+                        <input type="tel" id="checkoutPhoneInput" oninput="onDocCheckoutContactInput()" placeholder="Nhập số điện thoại Zalo (chỉ nhập chữ số)" class="w-full bg-white dark:bg-[#0A143D] border border-slate-300 dark:border-white/20 focus:border-[#0D1677] rounded-xl px-3 py-2 text-xs text-slate-900 dark:text-white outline-none" inputmode="numeric" pattern="[0-9]*" maxlength="11">
                     </div>
                 </div>
 
@@ -3795,9 +3795,9 @@ function doPost(e) {
 
     <!-- Scripts with cache busting query string -->
 
-    <script src="js/data.js?v=13.0"></script>
+    <script src="js/data.js?v=14.0"></script>
 
-    <script src="js/app.js?v=13.0"></script>
+    <script src="js/app.js?v=14.0"></script>
 
     <script>
 

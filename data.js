@@ -1639,12 +1639,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "lop12_2k9",
     "categoryLabel": "VIP Full Trọn Bộ 399K",
-    "title": "Gói VIP Full Trọn Bộ 37 Khóa Học & Luyện Đề 2027 (69K + 199K)",
+    "title": "Full Tất Cả Khóa Học & Luyện Đề THPTQG · HSA · TSA · V-ACT",
     "instructor": "TOÀN BỘ HỆ THỐNG KHÓA HỌC ĐIỆP VIÊN STUDY",
-    "duration": "Mở khóa 100% + tự động hưởng mọi cập nhật về sau",
+    "duration": "Toàn bộ các môn · Video HD & Đề PDF",
     "lessons": 1500,
-    "level": "Full Toàn Hệ Thống 2027",
-    "groupName": "VIP Full 399K · Mở Khóa Tất Cả",
+    "level": "Full Khóa Học & Cập Nhật Mới",
+    "groupName": "Trọn Bộ Toàn Hệ Thống",
     "rating": 5.0,
     "students": "4.9k+",
     "price": 399000,
@@ -1713,12 +1713,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa toàn bộ 100% khóa học lẻ 69K, 7 Combo 199K (KHTN 1, KHTN 2, KHXH 1, KHXH 2, HSA, TSA, V-ACT) + tự động cập nhật về sau.",
-    "description": "Mở khóa toàn bộ 2 kho gốc + mọi cập nhật mới về sau + Đồng bộ học tập trên Web, App & Google Drive.",
+    "summary": "Sở hữu toàn bộ kho bài giảng THPT Quốc gia các môn Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa cùng trọn bộ các khóa luyện thi HSA, TSA, V-ACT và đề thi cập nhật mới.",
+    "description": "Sở hữu toàn bộ kho bài giảng THPT Quốc gia các môn Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa cùng trọn bộ các khóa luyện thi HSA, TSA, V-ACT và đề thi cập nhật mới.",
     "highlights": [
-      "Mở khóa 100% toàn bộ khóa 69K & Combo 199K",
-      "Tự động nhận toàn bộ cập nhật mới về sau",
-      "Đồng bộ học trực tiếp trên Web, App & Google Drive"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -1777,12 +1777,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Ban KHTN 1 (Toán · Vật Lý · Sinh)",
-    "title": "Combo Ban KHTN 1 — Toán, Vật Lý, Sinh",
+    "title": "Combo Khối KHTN 1 — Toán, Vật Lý, Sinh Học",
     "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ",
-    "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
     "lessons": 360,
-    "level": "Combo 199K · Ban KHTN 1",
-    "groupName": "Khóa Học Tổ Hợp KHTN 1",
+    "level": "Combo Tổ Hợp · Toán, Lý, Sinh",
+    "groupName": "Tổ Hợp KHTN (A00 · B00)",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -1818,11 +1818,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Combo Ban Khoa Học Tự Nhiên 1 gồm đúng 3 thư mục thầy cô chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý Thầy Chu Văn Biên + Sinh Học Thầy Phan Khắc Nghệ.",
-    "description": "Combo Ban Khoa Học Tự Nhiên 1 gồm đúng 3 thư mục thầy cô chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý Thầy Chu Văn Biên + Sinh Học Thầy Phan Khắc Nghệ.",
+    "summary": "Lộ trình ôn thi toàn diện Toán Thầy Đỗ Văn Đức, Vật Lý Thầy Chu Văn Biên và Sinh Học Thầy Phan Khắc Nghệ: từ nền tảng, vận dụng cao đến luyện đề chuẩn cấu trúc mới.",
+    "description": "Lộ trình ôn thi toàn diện Toán Thầy Đỗ Văn Đức, Vật Lý Thầy Chu Văn Biên và Sinh Học Thầy Phan Khắc Nghệ: từ nền tảng, vận dụng cao đến luyện đề chuẩn cấu trúc mới.",
     "highlights": [
-      "Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -1881,12 +1882,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "khtn_toan_ly_hoa_sinh",
     "categoryLabel": "Ban KHTN 2 (Toán · Vật Lý · Anh)",
-    "title": "Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh",
+    "title": "Combo Khối KHTN 2 — Toán, Vật Lý, Tiếng Anh",
     "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG",
-    "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
     "lessons": 360,
-    "level": "Combo 199K · Ban KHTN 2",
-    "groupName": "Khóa Học Tổ Hợp KHTN 2",
+    "level": "Combo Tổ Hợp · Toán, Lý, Anh",
+    "groupName": "Tổ Hợp Khối A01",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -1922,11 +1923,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Combo Ban Khoa Học Tự Nhiên 2 (Khối A01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý IPClass + Tiếng Anh Cô Vũ Mai Phương.",
-    "description": "Combo Ban Khoa Học Tự Nhiên 2 (Khối A01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý IPClass + Tiếng Anh Cô Vũ Mai Phương.",
+    "summary": "Lộ trình ôn thi khối A01 chuyên sâu gồm Toán Thầy Đỗ Văn Đức, Vật Lý IPClass và Tiếng Anh Cô Vũ Mai Phương kèm kho đề thực chiến giải chi tiết.",
+    "description": "Lộ trình ôn thi khối A01 chuyên sâu gồm Toán Thầy Đỗ Văn Đức, Vật Lý IPClass và Tiếng Anh Cô Vũ Mai Phương kèm kho đề thực chiến giải chi tiết.",
     "highlights": [
-      "Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -1985,12 +1987,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "ngoai_ngu_khxh",
     "categoryLabel": "Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)",
-    "title": "Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
+    "title": "Combo Khối KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
     "instructor": "CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG",
-    "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
     "lessons": 360,
-    "level": "Combo 199K · Ban KHXH 1",
-    "groupName": "Khóa Học Tổ Hợp KHXH 1",
+    "level": "Combo Tổ Hợp · Văn, Sử, Địa",
+    "groupName": "Tổ Hợp Khối C00",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -2026,11 +2028,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Combo Ban Khoa Học Xã Hội 1 (Khối C00) gồm đúng 3 thư mục chọn lọc: Ngữ Văn Cô Sương Mai + Lịch Sử Cô Lan Hương + Địa Lý Thầy Đàm Thanh Tùng.",
-    "description": "Combo Ban Khoa Học Xã Hội 1 (Khối C00) gồm đúng 3 thư mục chọn lọc: Ngữ Văn Cô Sương Mai + Lịch Sử Cô Lan Hương + Địa Lý Thầy Đàm Thanh Tùng.",
+    "summary": "Lộ trình ôn thi khối C00 bài bản gồm Ngữ Văn Cô Sương Mai, Lịch Sử Cô Ngô Thị Lan Hương và Địa Lý Thầy Đàm Thanh Tùng bám sát đề minh họa mới nhất.",
+    "description": "Lộ trình ôn thi khối C00 bài bản gồm Ngữ Văn Cô Sương Mai, Lịch Sử Cô Ngô Thị Lan Hương và Địa Lý Thầy Đàm Thanh Tùng bám sát đề minh họa mới nhất.",
     "highlights": [
-      "Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2089,12 +2092,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "ngoai_ngu_khxh",
     "categoryLabel": "Ban KHXH 2 (Toán · Văn · Anh)",
-    "title": "Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh",
+    "title": "Combo Khối KHXH 2 — Toán, Ngữ Văn, Tiếng Anh",
     "instructor": "THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG",
-    "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
     "lessons": 360,
-    "level": "Combo 199K · Ban KHXH 2",
-    "groupName": "Khóa Học Tổ Hợp KHXH 2",
+    "level": "Combo Tổ Hợp · Toán, Văn, Anh",
+    "groupName": "Tổ Hợp Khối D01",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -2130,11 +2133,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Combo Ban Khoa Học Xã Hội 2 (Khối D01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Ngữ Văn Cô Sương Mai + Tiếng Anh Cô Vũ Mai Phương.",
-    "description": "Combo Ban Khoa Học Xã Hội 2 (Khối D01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Ngữ Văn Cô Sương Mai + Tiếng Anh Cô Vũ Mai Phương.",
+    "summary": "Lộ trình ôn thi khối D01 toàn diện gồm Toán Thầy Đỗ Văn Đức, Ngữ Văn Cô Sương Mai và Tiếng Anh Cô Vũ Mai Phương từ cơ bản đến vận dụng cao.",
+    "description": "Lộ trình ôn thi khối D01 toàn diện gồm Toán Thầy Đỗ Văn Đức, Ngữ Văn Cô Sương Mai và Tiếng Anh Cô Vũ Mai Phương từ cơ bản đến vận dụng cao.",
     "highlights": [
-      "Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2193,12 +2197,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_hsa",
     "categoryLabel": "ĐGNL HSA ĐHQG Hà Nội",
-    "title": "Khóa ĐGNL HSA (ĐHQG Hà Nội)",
+    "title": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội",
     "instructor": "HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU",
-    "duration": "Combo 4 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "4 Đơn Vị Tuyển Chọn · Video HD & Đề PDF",
     "lessons": 480,
-    "level": "Khóa ĐGNL 199K · HSA ĐHQG Hà Nội",
-    "groupName": "Luyện Thi ĐGNL HSA 2027",
+    "level": "Combo ĐGNL · ĐHQG Hà Nội",
+    "groupName": "Đánh Giá Năng Lực HSA",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -2225,10 +2229,10 @@ const COURSES_DATABASE = [
       "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
       "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg"
     ],
-    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
-    "defaultCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "cover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "fallbackCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "bannerId": "1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960",
     "driveFolderId": "1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD",
     "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
@@ -2236,11 +2240,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Trọn bộ 4 đơn vị luyện thi ĐGNL HSA ĐHQG Hà Nội 2027 (HocMai · MapStudy · Empire Team · HSA Edu) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
-    "description": "Trọn bộ 4 đơn vị luyện thi ĐGNL HSA ĐHQG Hà Nội 2027 (HocMai · MapStudy · Empire Team · HSA Edu) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Trọn bộ lộ trình luyện thi Đánh giá năng lực HSA ĐHQG Hà Nội từ HocMai, MapStudy, Empire Team và HSA Edu: Định lượng, Định tính, Khoa học và Tiếng Anh.",
+    "description": "Trọn bộ lộ trình luyện thi Đánh giá năng lực HSA ĐHQG Hà Nội từ HocMai, MapStudy, Empire Team và HSA Edu: Định lượng, Định tính, Khoa học và Tiếng Anh.",
     "highlights": [
-      "Gồm đúng 4 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2299,12 +2304,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgtd_tsa",
     "categoryLabel": "ĐGTD TSA ĐH Bách Khoa HN",
-    "title": "Khóa ĐGTD TSA (ĐH Bách Khoa HN)",
+    "title": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa HN",
     "instructor": "BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC",
-    "duration": "Combo 2 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "2 Đơn Vị Tuyển Chọn · Video HD & Đề PDF",
     "lessons": 240,
-    "level": "Khóa ĐGTD 199K · TSA ĐH Bách Khoa HN",
-    "groupName": "Luyện Thi ĐGTD TSA 2027",
+    "level": "Combo ĐGTD · ĐH Bách Khoa HN",
+    "groupName": "Đánh Giá Tư Duy TSA",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -2338,11 +2343,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Trọn bộ 2 đơn vị luyện thi ĐGTD TSA ĐH Bách Khoa Hà Nội 2027 (BMC · HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
-    "description": "Trọn bộ 2 đơn vị luyện thi ĐGTD TSA ĐH Bách Khoa Hà Nội 2027 (BMC · HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Lộ trình luyện thi chuyên sâu Tư duy Toán học, Đọc hiểu và Tư duy Khoa học kỳ thi TSA ĐH Bách Khoa Hà Nội từ BMC và HocMai.",
+    "description": "Lộ trình luyện thi chuyên sâu Tư duy Toán học, Đọc hiểu và Tư duy Khoa học kỳ thi TSA ĐH Bách Khoa Hà Nội từ BMC và HocMai.",
     "highlights": [
-      "Gồm đúng 2 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2401,12 +2407,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_vact_bca",
     "categoryLabel": "ĐGNL V-ACT ĐHQG TP.HCM",
-    "title": "Khóa ĐGNL V-ACT (ĐHQG TP.HCM)",
+    "title": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM",
     "instructor": "HOCMAI · EMPIRE TEAM · MAPSTUDY",
-    "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF",
+    "duration": "3 Đơn Vị Tuyển Chọn · Video HD & Đề PDF",
     "lessons": 360,
-    "level": "Khóa ĐGNL 199K · V-ACT ĐHQG TP.HCM",
-    "groupName": "Luyện Thi ĐGNL V-ACT 2027",
+    "level": "Combo ĐGNL · ĐHQG TP.HCM",
+    "groupName": "Đánh Giá Năng Lực V-ACT",
     "rating": 5.0,
     "students": "1.9k+",
     "price": 199000,
@@ -2442,11 +2448,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Trọn bộ 3 đơn vị luyện thi ĐGNL V-ACT ĐHQG TP.HCM 2027 (HocMai · Empire Team · MapStudy) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
-    "description": "Trọn bộ 3 đơn vị luyện thi ĐGNL V-ACT ĐHQG TP.HCM 2027 (HocMai · Empire Team · MapStudy) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Trọn bộ bài giảng và ngân hàng đề thi thực chiến kỳ thi Đánh giá năng lực V-ACT ĐHQG TP.HCM từ HocMai, Empire Team và MapStudy.",
+    "description": "Trọn bộ bài giảng và ngân hàng đề thi thực chiến kỳ thi Đánh giá năng lực V-ACT ĐHQG TP.HCM từ HocMai, Empire Team và MapStudy.",
     "highlights": [
-      "Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)",
-      "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2507,10 +2514,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Toán",
     "title": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)",
     "instructor": "THẦY ĐỖ VĂN ĐỨC — TENSCHOOL",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Toán",
-    "groupName": "Khóa Lẻ 69K · Môn Toán",
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -2539,11 +2546,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Thầy Đỗ Văn Đức (TenSchool 2K9) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2604,10 +2612,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Toán",
     "title": "Toán Thầy Nguyễn Phan Tiến 2K9",
     "instructor": "THẦY NGUYỄN PHAN TIẾN",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Toán",
-    "groupName": "Khóa Lẻ 69K · Môn Toán",
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -2636,11 +2644,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Thầy Nguyễn Phan Tiến 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Toán Thầy Nguyễn Phan Tiến 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2701,10 +2710,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Toán",
     "title": "Toán Anh Shiper 2K9",
     "instructor": "ANH SHIPER TOÁN",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Toán",
-    "groupName": "Khóa Lẻ 69K · Môn Toán",
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -2733,11 +2742,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Anh Shiper 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Toán Anh Shiper 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2798,10 +2808,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Toán",
     "title": "Toán — Tổ Toán Học MapStudy 2K9",
     "instructor": "TỔ TOÁN HỌC MAPSTUDY",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Toán",
-    "groupName": "Khóa Lẻ 69K · Môn Toán",
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -2830,11 +2840,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán — Tổ Toán Học MapStudy 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Toán — Tổ Toán Học MapStudy 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2895,10 +2906,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Toán",
     "title": "Nền Tảng Toán Thầy Lưu Huy Thưởng",
     "instructor": "THẦY LƯU HUY THƯỞNG — HOCMAI",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Toán",
-    "groupName": "Khóa Lẻ 69K · Môn Toán",
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -2927,11 +2938,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Toán Thầy Lưu Huy Thưởng · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Nền Tảng Toán Thầy Lưu Huy Thưởng (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -2992,10 +3004,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Vật Lý",
     "title": "Vật Lý Thầy Chu Văn Biên 2K9",
     "instructor": "THẦY CHU VĂN BIÊN",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Vật Lý",
-    "groupName": "Khóa Lẻ 69K · Môn Vật Lý",
+    "level": "Khóa Lẻ 69K · Môn Vật Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Vật Lý",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3024,11 +3036,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Chu Văn Biên 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Vật Lý Thầy Chu Văn Biên 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3089,10 +3102,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Vật Lý",
     "title": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9",
     "instructor": "THẦY THẮNG & THẦY TIẾN — IPCLASS",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Vật Lý",
-    "groupName": "Khóa Lẻ 69K · Môn Vật Lý",
+    "level": "Khóa Lẻ 69K · Môn Vật Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Vật Lý",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3121,11 +3134,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3186,10 +3200,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Vật Lý",
     "title": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)",
     "instructor": "THẦY LÊ TÙNG ƯNG — TENSCHOOL",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Vật Lý",
-    "groupName": "Khóa Lẻ 69K · Môn Vật Lý",
+    "level": "Khóa Lẻ 69K · Môn Vật Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Vật Lý",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3218,11 +3232,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3283,10 +3298,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Hóa Học",
     "title": "Hóa Học Thầy Phạm Văn Trọng 2K9",
     "instructor": "THẦY PHẠM VĂN TRỌNG",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Hóa Học",
-    "groupName": "Khóa Lẻ 69K · Môn Hóa Học",
+    "level": "Khóa Lẻ 69K · Môn Hóa Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Hóa Học",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3315,11 +3330,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Hóa Học Thầy Phạm Văn Trọng 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Hóa Học Thầy Phạm Văn Trọng 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3380,10 +3396,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Hóa Học",
     "title": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son",
     "instructor": "THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Hóa Học",
-    "groupName": "Khóa Lẻ 69K · Môn Hóa Học",
+    "level": "Khóa Lẻ 69K · Môn Hóa Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Hóa Học",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3412,11 +3428,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3477,10 +3494,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Ngữ Văn",
     "title": "Học Văn Cô Sương Mai 2K9",
     "instructor": "CÔ SƯƠNG MAI",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Ngữ Văn",
-    "groupName": "Khóa Lẻ 69K · Môn Ngữ Văn",
+    "level": "Khóa Lẻ 69K · Môn Ngữ Văn",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Ngữ Văn",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3509,11 +3526,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Học Văn Cô Sương Mai 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Học Văn Cô Sương Mai 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3574,10 +3592,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Ngữ Văn",
     "title": "Nền Tảng 12 Môn Ngữ Văn (HocMai)",
     "instructor": "HOCMAI — NỀN TẢNG NGỮ VĂN",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Ngữ Văn",
-    "groupName": "Khóa Lẻ 69K · Môn Ngữ Văn",
+    "level": "Khóa Lẻ 69K · Môn Ngữ Văn",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Ngữ Văn",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3606,11 +3624,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng 12 Môn Ngữ Văn (HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Nền Tảng 12 Môn Ngữ Văn (HocMai) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3671,10 +3690,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Tiếng Anh",
     "title": "Tiếng Anh Cô Vũ Mai Phương 2K9",
     "instructor": "CÔ VŨ MAI PHƯƠNG",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Tiếng Anh",
-    "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "level": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Tiếng Anh",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3703,11 +3722,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Tiếng Anh Cô Vũ Mai Phương 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Tiếng Anh Cô Vũ Mai Phương 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3768,10 +3788,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Tiếng Anh",
     "title": "Tiếng Anh Cô Phạm Liễu 2K9",
     "instructor": "CÔ PHẠM LIỄU",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Tiếng Anh",
-    "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "level": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Tiếng Anh",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3800,11 +3820,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Tiếng Anh Cô Phạm Liễu 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Tiếng Anh Cô Phạm Liễu 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3865,10 +3886,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Tiếng Anh",
     "title": "Nền Tảng 12 Môn Tiếng Anh (HocMai)",
     "instructor": "HOCMAI — NỀN TẢNG TIẾNG ANH",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Tiếng Anh",
-    "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "level": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Tiếng Anh",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3897,11 +3918,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng 12 Môn Tiếng Anh (HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Nền Tảng 12 Môn Tiếng Anh (HocMai) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -3962,10 +3984,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Sinh Học",
     "title": "Sinh Học Thầy Phan Khắc Nghệ 2K9",
     "instructor": "THẦY PHAN KHẮC NGHỆ",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Sinh Học",
-    "groupName": "Khóa Lẻ 69K · Môn Sinh Học",
+    "level": "Khóa Lẻ 69K · Môn Sinh Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Sinh Học",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -3994,11 +4016,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Sinh Học Thầy Phan Khắc Nghệ 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Sinh Học Thầy Phan Khắc Nghệ 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4059,10 +4082,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Sinh Học",
     "title": "Nền Tảng Sinh Học Cô Ánh Dương",
     "instructor": "CÔ ÁNH DƯƠNG",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Sinh Học",
-    "groupName": "Khóa Lẻ 69K · Môn Sinh Học",
+    "level": "Khóa Lẻ 69K · Môn Sinh Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Sinh Học",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4091,11 +4114,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Sinh Học Cô Ánh Dương · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Nền Tảng Sinh Học Cô Ánh Dương (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4156,10 +4180,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Lịch Sử",
     "title": "Lịch Sử Cô Ngô Thị Lan Hương 2K9",
     "instructor": "CÔ NGÔ THỊ LAN HƯƠNG",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Lịch Sử",
-    "groupName": "Khóa Lẻ 69K · Môn Lịch Sử",
+    "level": "Khóa Lẻ 69K · Môn Lịch Sử",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Lịch Sử",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4188,11 +4212,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Lịch Sử Cô Ngô Thị Lan Hương 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Lịch Sử Cô Ngô Thị Lan Hương 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4253,10 +4278,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Lịch Sử",
     "title": "Lịch Sử Cô Nguyễn Hương Sen 2K9",
     "instructor": "CÔ NGUYỄN HƯƠNG SEN",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Lịch Sử",
-    "groupName": "Khóa Lẻ 69K · Môn Lịch Sử",
+    "level": "Khóa Lẻ 69K · Môn Lịch Sử",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Lịch Sử",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4285,11 +4310,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Lịch Sử Cô Nguyễn Hương Sen 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Lịch Sử Cô Nguyễn Hương Sen 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4350,10 +4376,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Địa Lý",
     "title": "Địa Lý Thầy Đàm Thanh Tùng 2K9",
     "instructor": "THẦY ĐÀM THANH TÙNG",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Địa Lý",
-    "groupName": "Khóa Lẻ 69K · Môn Địa Lý",
+    "level": "Khóa Lẻ 69K · Môn Địa Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Địa Lý",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4382,11 +4408,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Địa Lý Thầy Đàm Thanh Tùng 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Địa Lý Thầy Đàm Thanh Tùng 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4447,10 +4474,10 @@ const COURSES_DATABASE = [
     "categoryLabel": "Môn Địa Lý",
     "title": "Địa Lý Thầy Tài 2K9",
     "instructor": "THẦY TÀI ĐỊA LÝ",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · Địa Lý",
-    "groupName": "Khóa Lẻ 69K · Môn Địa Lý",
+    "level": "Khóa Lẻ 69K · Môn Địa Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Địa Lý",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4479,11 +4506,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Địa Lý Thầy Tài 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục Địa Lý Thầy Tài 2K9 (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4542,12 +4570,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_hsa",
     "categoryLabel": "Môn HSA",
-    "title": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL HSA — HocMai 2K9",
     "instructor": "HOCMAI — ĐGNL HSA",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · HSA",
-    "groupName": "Khóa Lẻ 69K · Môn HSA",
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4566,9 +4594,9 @@ const COURSES_DATABASE = [
     "childCourseIds": [],
     "extraFolderIds": [],
     "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
-    "defaultCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "cover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "fallbackCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
     "driveFolderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
     "driveFolderName": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
@@ -4576,11 +4604,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — HocMai 2K9 (HOCMAI — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — HocMai 2K9 (HOCMAI — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4639,12 +4668,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_hsa",
     "categoryLabel": "Môn HSA",
-    "title": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL HSA — MapStudy 2K9",
     "instructor": "MAPSTUDY — ĐGNL HSA",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · HSA",
-    "groupName": "Khóa Lẻ 69K · Môn HSA",
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4663,9 +4692,9 @@ const COURSES_DATABASE = [
     "childCourseIds": [],
     "extraFolderIds": [],
     "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
-    "defaultCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "cover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "fallbackCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
     "driveFolderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
     "driveFolderName": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
     "driveFolderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
@@ -4673,11 +4702,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (MAPSTUDY — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — MapStudy 2K9 (MAPSTUDY — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — MapStudy 2K9 (MAPSTUDY — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4736,12 +4766,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_hsa",
     "categoryLabel": "Môn HSA",
-    "title": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL HSA — Empire Team 2K9",
     "instructor": "EMPIRE TEAM — ĐGNL HSA",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · HSA",
-    "groupName": "Khóa Lẻ 69K · Môn HSA",
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4760,9 +4790,9 @@ const COURSES_DATABASE = [
     "childCourseIds": [],
     "extraFolderIds": [],
     "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
-    "defaultCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "cover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "fallbackCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
     "driveFolderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
     "driveFolderName": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
@@ -4770,11 +4800,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (EMPIRE TEAM — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — Empire Team 2K9 (EMPIRE TEAM — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — Empire Team 2K9 (EMPIRE TEAM — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4833,12 +4864,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_hsa",
     "categoryLabel": "Môn HSA",
-    "title": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL HSA — HSA Edu 2K9",
     "instructor": "HSA EDU — ĐGNL HSA",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · HSA",
-    "groupName": "Khóa Lẻ 69K · Môn HSA",
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4857,9 +4888,9 @@ const COURSES_DATABASE = [
     "childCourseIds": [],
     "extraFolderIds": [],
     "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
-    "defaultCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "cover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
-    "fallbackCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
     "driveFolderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
     "driveFolderName": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)",
     "driveFolderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
@@ -4867,11 +4898,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) (HSA EDU — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — HSA Edu 2K9 (HSA EDU — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — HSA Edu 2K9 (HSA EDU — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -4930,12 +4962,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgtd_tsa",
     "categoryLabel": "Môn TSA",
-    "title": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGTD TSA Bách Khoa — BMC",
     "instructor": "BMC — ĐGTD TSA",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · TSA",
-    "groupName": "Khóa Lẻ 69K · Môn TSA",
+    "level": "Khóa Lẻ 69K · Môn TSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn TSA",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -4964,11 +4996,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (BMC — ĐGTD TSA) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — BMC (BMC — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — BMC (BMC — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -5027,12 +5060,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgtd_tsa",
     "categoryLabel": "Môn TSA",
-    "title": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGTD TSA Bách Khoa — HocMai",
     "instructor": "HOCMAI — ĐGTD TSA",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · TSA",
-    "groupName": "Khóa Lẻ 69K · Môn TSA",
+    "level": "Khóa Lẻ 69K · Môn TSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn TSA",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -5061,11 +5094,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGTD TSA) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — HocMai (HOCMAI — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — HocMai (HOCMAI — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -5124,12 +5158,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_vact_bca",
     "categoryLabel": "Môn V-ACT",
-    "title": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL V-ACT — HocMai 2K9",
     "instructor": "HOCMAI — ĐGNL V-ACT",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · V-ACT",
-    "groupName": "Khóa Lẻ 69K · Môn V-ACT",
+    "level": "Khóa Lẻ 69K · Môn V-ACT",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn V-ACT",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -5158,11 +5192,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL V-ACT — HocMai 2K9 (HOCMAI — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL V-ACT — HocMai 2K9 (HOCMAI — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -5221,12 +5256,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_vact_bca",
     "categoryLabel": "Môn V-ACT",
-    "title": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL V-ACT — Empire Team 2K9",
     "instructor": "EMPIRE TEAM — ĐGNL V-ACT",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · V-ACT",
-    "groupName": "Khóa Lẻ 69K · Môn V-ACT",
+    "level": "Khóa Lẻ 69K · Môn V-ACT",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn V-ACT",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -5255,11 +5290,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (EMPIRE TEAM — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL V-ACT — Empire Team 2K9 (EMPIRE TEAM — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL V-ACT — Empire Team 2K9 (EMPIRE TEAM — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -5318,12 +5354,12 @@ const COURSES_DATABASE = [
     ],
     "subCategory": "dgnl_vact_bca",
     "categoryLabel": "Môn V-ACT",
-    "title": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "title": "Luyện Thi ĐGNL V-ACT — MapStudy 2K9",
     "instructor": "MAPSTUDY — ĐGNL V-ACT",
-    "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
     "lessons": 95,
-    "level": "Khóa Lẻ 69K · V-ACT",
-    "groupName": "Khóa Lẻ 69K · Môn V-ACT",
+    "level": "Khóa Lẻ 69K · Môn V-ACT",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn V-ACT",
     "rating": 5.0,
     "students": "1.2k+",
     "price": 69000,
@@ -5352,11 +5388,12 @@ const COURSES_DATABASE = [
     "driveFileId": "",
     "driveFileName": "",
     "driveFileUrl": "",
-    "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (MAPSTUDY — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.",
-    "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.",
+    "summary": "Khóa học Luyện Thi ĐGNL V-ACT — MapStudy 2K9 (MAPSTUDY — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL V-ACT — MapStudy 2K9 (MAPSTUDY — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
     "highlights": [
-      "Chỉ mở đúng 01 thư mục ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)",
-      "Đồng bộ học tập trên Web, App & Google Drive"
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
     ],
     "modules": [
       {
@@ -5406,7 +5443,7 @@ const COURSES_DATABASE = [
 ];
 const COURSE_DRIVE_MAP = {
   "ALL-COURSES-399K": {
-    "name": "Gói VIP Full Trọn Bộ 37 Khóa Học & Luyện Đề 2027 (69K + 199K)",
+    "name": "Full Tất Cả Khóa Học & Luyện Đề THPTQG · HSA · TSA · V-ACT",
     "sku": "DVFULL399",
     "tier": "full_399k",
     "price": 399000,
@@ -5419,7 +5456,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": ""
   },
   "C199-KHTN1": {
-    "name": "Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh",
+    "name": "Combo Khối KHTN 1 — Toán, Vật Lý, Sinh Học",
     "sku": "DV199KHTN1",
     "tier": "course_199k",
     "price": 199000,
@@ -5433,7 +5470,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960"
   },
   "C199-KHTN2": {
-    "name": "Combo 199K: KHTN 2 — Toán, Vật Lý, Anh",
+    "name": "Combo Khối KHTN 2 — Toán, Vật Lý, Tiếng Anh",
     "sku": "DV199KHTN2",
     "tier": "course_199k",
     "price": 199000,
@@ -5447,7 +5484,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960"
   },
   "C199-KHXH1": {
-    "name": "Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
+    "name": "Combo Khối KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
     "sku": "DV199KHXH1",
     "tier": "course_199k",
     "price": 199000,
@@ -5461,7 +5498,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960"
   },
   "C199-KHXH2": {
-    "name": "Combo 199K: KHXH 2 — Toán, Văn, Anh",
+    "name": "Combo Khối KHXH 2 — Toán, Ngữ Văn, Tiếng Anh",
     "sku": "DV199KHXH2",
     "tier": "course_199k",
     "price": 199000,
@@ -5475,7 +5512,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960"
   },
   "C199-HSA": {
-    "name": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)",
+    "name": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội",
     "sku": "DV199HSA",
     "tier": "course_199k",
     "price": 199000,
@@ -5490,7 +5527,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960"
   },
   "C199-TSA": {
-    "name": "Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)",
+    "name": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa HN",
     "sku": "DV199TSA",
     "tier": "course_199k",
     "price": 199000,
@@ -5503,7 +5540,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960"
   },
   "C199-VACT": {
-    "name": "Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)",
+    "name": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM",
     "sku": "DV199VACT",
     "tier": "course_199k",
     "price": 199000,
@@ -5748,51 +5785,51 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960"
   },
   "K69-HSA-HOCMAI": {
-    "name": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — HocMai 2K9",
     "sku": "DV69HSAHM",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-HSA-MAP": {
-    "name": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — MapStudy 2K9",
     "sku": "DV69HSAMAP",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-HSA-EMPIRE": {
-    "name": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — Empire Team 2K9",
     "sku": "DV69HSAEMP",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-HSA-EDU": {
-    "name": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — HSA Edu 2K9",
     "sku": "DV69HSAEDU",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-TSA-BMC": {
-    "name": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGTD TSA Bách Khoa — BMC",
     "sku": "DV69TSABMC",
     "tier": "subject_69k",
     "price": 69000,
@@ -5803,7 +5840,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960"
   },
   "K69-TSA-HOCMAI": {
-    "name": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGTD TSA Bách Khoa — HocMai",
     "sku": "DV69TSAHM",
     "tier": "subject_69k",
     "price": 69000,
@@ -5814,7 +5851,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960"
   },
   "K69-VACT-HOCMAI": {
-    "name": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL V-ACT — HocMai 2K9",
     "sku": "DV69VACTHM",
     "tier": "subject_69k",
     "price": 69000,
@@ -5825,7 +5862,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
   },
   "K69-VACT-EMPIRE": {
-    "name": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL V-ACT — Empire Team 2K9",
     "sku": "DV69VACTEMP",
     "tier": "subject_69k",
     "price": 69000,
@@ -5836,7 +5873,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
   },
   "K69-VACT-MAP": {
-    "name": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL V-ACT — MapStudy 2K9",
     "sku": "DV69VACTMAP",
     "tier": "subject_69k",
     "price": 69000,

@@ -5535,22 +5535,25 @@ function DvsDiepVienCheckoutModal({
 
   const verifyInFlightRef = E.useRef(false);
 
-  /* Đồng bộ đơn hàng lên Master Sheet ngay khi mở bảng QR hoặc cập nhật thông tin */
+  /* Lưu hồ sơ khách hàng & giao dịch ngầm (KHÔNG bắn thông báo sớm) chỉ khi đã điền Email + SĐT hợp lệ */
   E.useEffect(() => {
     if (!open) return;
-    const cleanEmail = (custEmail || "").trim().toLowerCase();
+    const cleanEmail = (isGoogleLoggedIn ? googleEmail : (custEmail || "")).trim().toLowerCase();
+    const digitsPhone = String(custPhone || "").replace(/\D+/g, "");
+    if (!cleanEmail.includes("@") || digitsPhone.length < 10) return;
     const timer = setTimeout(() => {
       oe("dvtl_create_order", {
         orderType: mode,
         orderCode,
+        silent: true,
         sku: itemInfo.sku,
         itemId: itemInfo.sku,
         itemName: itemInfo.title,
         packageName: mode === "course" ? selectedPlan.name : (mode === "btl" ? (targetBtl?.typeLabel || "Bài Tập Lớn") : "Đề Cương 50K"),
         amount: itemInfo.amount,
         totalPrice: mode === "btl" ? (Number(String(targetBtl?.totalEst || "").replace(/\D/g, "")) || itemInfo.amount * 10) : itemInfo.amount,
-        customerName: custName.trim() || "Khách hàng",
-        customerPhone: custPhone.trim(),
+        customerName: custName.trim() || cleanEmail.split("@")[0] || "Khách hàng",
+        customerPhone: digitsPhone,
         customerEmail: cleanEmail,
         school: itemInfo.school,
         driveId: itemInfo.driveId,
@@ -5559,9 +5562,9 @@ function DvsDiepVienCheckoutModal({
         pages: mode === "btl" ? (targetBtl?.pages || 15) : 0,
         assignment: mode === "btl" ? targetBtl : undefined
       }).catch(() => {});
-    }, 350);
+    }, 700);
     return () => clearTimeout(timer);
-  }, [open, orderCode, itemInfo.sku, itemInfo.amount, custName, custPhone, custEmail]);
+  }, [open, orderCode, itemInfo.sku, itemInfo.amount, custName, custPhone, custEmail, isGoogleLoggedIn, googleEmail]);
 
   /* Tự động kiểm tra biến động số dư mỗi 4 giây (có chống chồng chéo request & tự động check ngay khi focus lại cửa sổ) */
   E.useEffect(() => {
@@ -5640,14 +5643,13 @@ function DvsDiepVienCheckoutModal({
 
   const handleConfirmPaid = async () => {
     const cleanEmail = (isGoogleLoggedIn ? googleEmail : custEmail).trim().toLowerCase();
-    const cleanPhone = custPhone.replace(/\[.*\]/g, "").trim();
-    const phoneDigits = cleanPhone.replace(/\D/g, "");
+    const phoneDigits = String(custPhone || "").replace(/\D+/g, "").slice(0, 11);
     if (!cleanEmail || !cleanEmail.includes("@")) {
       setPayNotice("Vui lòng nhập Email Gmail để hệ thống tự động phân phát tài liệu Google Drive.");
       return;
     }
-    if (phoneDigits.length < 9) {
-      setPayNotice("Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!");
+    if (!/^0\d{9,10}$/.test(phoneDigits)) {
+      setPayNotice("Bắt buộc nhập đúng số điện thoại Zalo (10 chữ số bắt đầu bằng số 0) để hoàn thành giao dịch!");
       return;
     }
     try {
@@ -5908,10 +5910,13 @@ function DvsDiepVienCheckoutModal({
                     }),
                     g.jsx("input", {
                       type: "tel",
+                      inputMode: "numeric",
+                      pattern: "[0-9]*",
+                      maxLength: 11,
                       required: true,
-                      value: custPhone,
-                      onChange: ev => setCustPhone(ev.target.value),
-                      placeholder: "Nhập số điện thoại Zalo để nhận hỗ trợ"
+                      value: String(custPhone || "").replace(/\D+/g, "").slice(0, 11),
+                      onChange: ev => setCustPhone(ev.target.value.replace(/\D+/g, "").slice(0, 11)),
+                      placeholder: "Nhập số điện thoại Zalo (chỉ nhập chữ số)"
                     })
                   ]
                 })
@@ -5940,10 +5945,13 @@ function DvsDiepVienCheckoutModal({
                     g.jsx("span", { children: "Số điện thoại Zalo để nhận hỗ trợ *" }),
                     g.jsx("input", {
                       type: "tel",
+                      inputMode: "numeric",
+                      pattern: "[0-9]*",
+                      maxLength: 11,
                       required: true,
-                      value: custPhone,
-                      onChange: ev => setCustPhone(ev.target.value),
-                      placeholder: "Nhập số điện thoại Zalo để nhận hỗ trợ"
+                      value: String(custPhone || "").replace(/\D+/g, "").slice(0, 11),
+                      onChange: ev => setCustPhone(ev.target.value.replace(/\D+/g, "").slice(0, 11)),
+                      placeholder: "Nhập số điện thoại Zalo (chỉ nhập chữ số)"
                     })
                   ]
                 })
@@ -6349,8 +6357,11 @@ function fue({model:t, setPage:e}) {
   const [activeDriveFile, setActiveDriveFile] = E.useState(null);
   const [loadingUnitDrive, setLoadingUnitDrive] = E.useState(false);
   const [isGeneratingSummary, setIsGeneratingSummary] = E.useState(false);
+  const [videoFallbackIframe, setVideoFallbackIframe] = E.useState(false);
   const videoRef = E.useRef(null);
   const playerCardRef = E.useRef(null);
+  const manualRecPausedRef = E.useRef(false);
+  const activeSessionRef = E.useRef(null);
   const coverInputRef = E.useRef(null);
   const pendingCoverCourseRef = E.useRef(null);
 
@@ -6621,29 +6632,173 @@ function fue({model:t, setPage:e}) {
     return structuredSubUnits.find(u => u.id === selectedSubUnitId) || structuredSubUnits[0];
   }, [structuredSubUnits, selectedSubUnitId, activeCourse]);
 
-  const isDriveItemFolder = E.useCallback((it) => {
-    if (!it) return false;
-    return Boolean(
-      it.isFolder === true ||
-      it.mimeType === "application/vnd.google-apps.folder" ||
-      String(it.id || "").startsWith("fd-")
-    );
+  const getDriveItemKind = E.useCallback((it) => {
+    if (!it) return "document";
+    if (it.itemKind === "folder" || it.itemKind === "video" || it.itemKind === "document") {
+      return it.itemKind;
+    }
+    const mLow = String(it.mimeType || "").toLowerCase();
+    const nLow = String(it.name || it.title || "").toLowerCase();
+    if (it.isFolder === true || mLow === "application/vnd.google-apps.folder" || String(it.id || "").startsWith("fd-")) {
+      return "folder";
+    }
+    if (mLow.startsWith("video/") || /\.(mp4|mkv|mov|webm|m4v|avi|ts|flv)$/i.test(nLow)) {
+      return "video";
+    }
+    return "document";
   }, []);
+
+  const isDriveItemFolder = E.useCallback((it) => getDriveItemKind(it) === "folder", [getDriveItemKind]);
 
   const filterCleanDriveItems = E.useCallback((arr) => {
     const collator = new Intl.Collator("vi", { numeric: true, sensitivity: "base" });
+    const rankMap = { folder: 0, video: 1, document: 2 };
     const filtered = (Array.isArray(arr) ? arr : []).filter(f => {
       const nm = String(f.name || f.title || "").trim();
       if (!nm) return false;
       return !/033800642|0333800642|tài liệu ôn thi|giới thiệu về nhóm|lợi ích tham gia nhóm/i.test(nm);
     });
     return filtered.sort((a, b) => {
-      const fa = isDriveItemFolder(a) ? 0 : 1;
-      const fb = isDriveItemFolder(b) ? 0 : 1;
-      if (fa !== fb) return fa - fb;
-      return collator.compare(String(a.name || a.title || ""), String(b.name || b.title || ""));
+      const ka = rankMap[getDriveItemKind(a)] ?? 2;
+      const kb = rankMap[getDriveItemKind(b)] ?? 2;
+      if (ka !== kb) return ka - kb;
+      const na = String(a.name || a.title || "").trim();
+      const nb = String(b.name || b.title || "").trim();
+      const ba = na.startsWith("[") ? 1 : 0;
+      const bb = nb.startsWith("[") ? 1 : 0;
+      if (ba !== bb) return ba - bb;
+      return collator.compare(na, nb);
     });
-  }, [isDriveItemFolder]);
+  }, [getDriveItemKind]);
+
+  const formatViDateTimeNow = () => {
+    const now = new Date();
+    const dStr = now.toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" });
+    const tStr = now.toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+    return `${dStr} ${tStr}`;
+  };
+
+  /* Lưu tự động phiên ghi âm & ghi chú bài học sang mục Ghi chú chung khi đổi video hoặc thoát */
+  const flushAndSaveActiveVideoSession = E.useCallback((reason = "switch") => {
+    const sess = activeSessionRef.current;
+    const wasRunning = Boolean(t.meetingActive || courseRecActive);
+    setCourseRecActive(false);
+    manualRecPausedRef.current = false;
+
+    if (!sess || !sess.driveFile) {
+      if (t.meetingActive && t.stop) {
+        try { t.stop({ title: `[${formatViDateTimeNow()}] Bản ghi bài giảng`, groupID: null }); } catch {}
+      }
+      return;
+    }
+
+    const noteVal = String(sess.userNoteText || "").trim();
+    const liveTranscript = (t.entries && t.entries.length > 0)
+      ? t.entries.map(eItem => eItem.sourceText || eItem.text).join("\n")
+      : "";
+    const hadMeaningfulWork = Boolean(noteVal || liveTranscript || (sess.recSec >= 3));
+    const stamp = formatViDateTimeNow();
+    const cleanLes = String(sess.driveFile.name || "Bài giảng").trim();
+    const saveTitle = `[${stamp}] ${cleanLes}`;
+
+    if (t.meetingActive && t.stop) {
+      try {
+        t.stop({ title: saveTitle, groupID: null });
+      } catch {}
+    } else if (hadMeaningfulWork) {
+      const headerBlock =
+        `**Thời gian lưu:** ${stamp}  \n` +
+        `**Khóa học:** ${sess.courseTitle || ""} (${sess.instructor || ""})  \n` +
+        (sess.folderPath ? `**Thư mục:** ${sess.folderPath}  \n` : "") +
+        `**Bài giảng:** ${cleanLes}\n\n---\n\n`;
+      const bodyMd =
+        (noteVal ? `## Ghi chú bài học\n\n${noteVal}\n\n` : "") +
+        (liveTranscript ? `## Nội dung ghi nhận\n\n${liveTranscript}` : (!noteVal ? `Đã học bài giảng **${cleanLes}** (${formatTimer(sess.recSec || 0)}).` : ""));
+      const fullContent = headerBlock + bodyMd;
+      const payload = {
+        id: `lesson-auto-${sess.courseId}-${sess.driveFile.id}`,
+        title: saveTitle,
+        groupID: null,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        duration: sess.recSec || 0,
+        source: "meeting",
+        summary: fullContent,
+        summaryMarkdown: fullContent,
+        transcript: liveTranscript || noteVal || fullContent
+      };
+      try {
+        if (t.saveWatchNote) t.saveWatchNote(payload);
+        else if (t.addNote) t.addNote(payload);
+      } catch {}
+    }
+
+    activeSessionRef.current = null;
+    if (hadMeaningfulWork && reason !== "unmount") {
+      showBanner(`Đã tự động dừng và lưu nội dung bài học vào Ghi chú: ${saveTitle}`);
+    }
+  }, [courseRecActive, t]);
+
+  /* Đồng bộ dữ liệu phiên hiện tại vào ref để tự động lưu chính xác khi chuyển bài / thoát */
+  E.useEffect(() => {
+    if (viewMode !== "player" || !activeCourse || !activeDriveFile || getDriveItemKind(activeDriveFile) !== "video") {
+      return;
+    }
+    const nKey = `${activeCourse.id}::${activeDriveFile.id}`;
+    activeSessionRef.current = {
+      courseId: activeCourse.id,
+      courseTitle: activeCourse.title,
+      instructor: activeCourse.instructor,
+      folderPath: driveFolderStack.map(x => x.name).join(" / "),
+      driveFile: activeDriveFile,
+      userNoteText: lessonNotesMap[nKey] || "",
+      recSec: recSeconds
+    };
+  }, [viewMode, activeCourse, activeDriveFile, driveFolderStack, lessonNotesMap, recSeconds, getDriveItemKind]);
+
+  /* Tự động dừng và lưu vào Ghi chú khi thoát khỏi trang Khóa học (unmount) */
+  E.useEffect(() => {
+    return () => {
+      try { flushAndSaveActiveVideoSession("unmount"); } catch {}
+    };
+  }, []);
+
+  const startAutoRecordingForVideo = E.useCallback(() => {
+    if (manualRecPausedRef.current) return;
+    setCourseRecActive(true);
+    try {
+      if (t.canStartMeeting && t.startMeeting && !t.meetingActive) {
+        t.startMeeting();
+      }
+    } catch {}
+  }, [t]);
+
+  const handleToggleSingleCaptureBtn = () => {
+    if (isRecRunning) {
+      manualRecPausedRef.current = true;
+      setCourseRecActive(false);
+      try {
+        if (videoRef.current && !videoRef.current.paused) {
+          videoRef.current.pause();
+        }
+      } catch {}
+      showBanner("Đã tạm dừng ghi nội dung bài giảng.");
+    } else {
+      manualRecPausedRef.current = false;
+      setCourseRecActive(true);
+      try {
+        if (t.canStartMeeting && t.startMeeting && !t.meetingActive) {
+          t.startMeeting();
+        }
+      } catch {}
+      try {
+        if (videoRef.current && videoRef.current.paused) {
+          videoRef.current.play().catch(() => {});
+        }
+      } catch {}
+      showBanner("Đang ghi nội dung và đồng bộ ghi chú bài giảng.");
+    }
+  };
 
   const loadDriveFolderLevel = E.useCallback((courseId, folderId, emailStr, stackNext) => {
     setLoadingUnitDrive(true);
@@ -6652,12 +6807,11 @@ function fue({model:t, setPage:e}) {
         const cleaned = filterCleanDriveItems(res && Array.isArray(res.files) ? res.files : []);
         setLiveUnitDriveFiles(cleaned);
         if (stackNext) setDriveFolderStack(stackNext);
-        const firstPlayable = cleaned.find(it => !isDriveItemFolder(it) && (String(it.mimeType || "").startsWith("video/") || /\.(mp4|mkv|webm|mov|m4v|avi)$/i.test(it.name || "")));
-        if (firstPlayable) {
-          setActiveDriveFile(firstPlayable);
-        } else {
-          const firstDoc = cleaned.find(it => !isDriveItemFolder(it) && /\.pdf$/i.test(it.name || ""));
-          setActiveDriveFile(firstDoc || null);
+        const firstVideo = cleaned.find(it => getDriveItemKind(it) === "video");
+        if (firstVideo) {
+          setVideoFallbackIframe(false);
+          manualRecPausedRef.current = false;
+          setActiveDriveFile(firstVideo);
         }
         setLoadingUnitDrive(false);
       })
@@ -6665,7 +6819,7 @@ function fue({model:t, setPage:e}) {
         setLiveUnitDriveFiles([]);
         setLoadingUnitDrive(false);
       });
-  }, [filterCleanDriveItems, isDriveItemFolder]);
+  }, [filterCleanDriveItems, getDriveItemKind]);
 
   E.useEffect(() => {
     if (viewMode !== "player" || !activeSubUnit) return;
@@ -6682,150 +6836,23 @@ function fue({model:t, setPage:e}) {
       return;
     }
     if (!isCourseUnlocked(course.id)) {
-      if (DVS_TEMP_AUTO_UNLOCK_ON_BUY) {
-        setUnlockedMap(prev => {
-          const next = expandUnlockedCourseMapJs({ ...prev, [course.id]: true });
-          try { localStorage.setItem("dvs_unlocked_courses_v21", JSON.stringify(next)); } catch {}
-          return next;
-        });
-        try { oe("dvtl_temp_unlock_course", { courseId: course.id, email: _em || "diepvientailieu@gmail.com" }); } catch {}
-        setActiveCourseId(course.id);
-        const firstLessonT = course.modules?.[0]?.lessons?.[0];
-        setActiveLessonId(firstLessonT ? firstLessonT.id : null);
-        setViewMode("player");
-        showBanner(`[CHẾ ĐỘ TEST] Đã mở khóa ngay không cần xác thực: ${course.title}`);
-        return;
-      }
       setCheckoutTargetCourse(course);
       return;
     }
     setActiveCourseId(course.id);
+    setSelectedSubUnitId("");
+    setActiveDriveFile(null);
+    setVideoFallbackIframe(false);
     const firstLesson = course.modules?.[0]?.lessons?.[0];
     setActiveLessonId(firstLesson ? firstLesson.id : null);
     setViewMode("player");
   };
 
-  const handleStartCourseRecording = () => {
-    setCourseRecActive(true);
-    try {
-      if (t.canStartMeeting && t.startMeeting) {
-        t.startMeeting();
-      }
-    } catch {}
-    try {
-      if (videoRef.current && videoRef.current.paused) {
-        videoRef.current.play().catch(() => {});
-      }
-    } catch {}
-    showBanner("Đang thu âm bài giảng. Bấm Dừng & Lưu khi muốn tạo bản tóm tắt.");
-  };
-
-  const formatViDateTimeNow = () => {
-    const now = new Date();
-    const dStr = now.toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" });
-    const tStr = now.toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
-    return `${dStr} ${tStr}`;
-  };
-
-  const syncLessonDraftToGlobalNotes = E.useCallback(({ kindPrefix, lessonName, summaryMd, transcriptTxt, durationSec = 0, fixedId = "" }) => {
-    const stamp = formatViDateTimeNow();
-    const cleanLes = String(lessonName || "Bài giảng").trim();
-    const folderPathStr = driveFolderStack.map(x => x.name).join(" / ");
-    const saveTitle = `[${stamp}] ${kindPrefix}: ${cleanLes}`;
-    const headerBlock = `**Thời gian lưu:** ${stamp}  \n**Khóa học:** ${activeCourse?.title || ""} (${activeCourse?.instructor || ""})  \n` +
-      (folderPathStr ? `**Chuyên đề / Thư mục:** ${folderPathStr}  \n` : "") +
-      `**Bài giảng:** ${cleanLes}\n\n---\n\n`;
-    const fullSummary = headerBlock + (summaryMd || "");
-    const payload = {
-      id: fixedId || `course-draft-${Date.now()}`,
-      title: saveTitle,
-      groupID: null,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-      duration: durationSec,
-      source: "meeting",
-      summary: fullSummary,
-      summaryMarkdown: fullSummary,
-      transcript: transcriptTxt || fullSummary
-    };
-    if (t.addNote) {
-      t.addNote(payload);
-    } else if (t.saveWatchNote) {
-      t.saveWatchNote(payload);
-    }
-    return saveTitle;
-  }, [activeCourse, driveFolderStack, t]);
-
-  const handleGenerateAiLessonSummary = async () => {
-    if (!activeCourse || !activeLesson || isGeneratingSummary) return;
-    setIsGeneratingSummary(true);
-    setRightTab("summary");
-    const lesName = activeDriveFile ? activeDriveFile.name : activeLesson.title;
-    const noteIdKey = `course-note-${activeDriveFile ? activeDriveFile.id : activeLesson.id}`;
-    const noteMapKey = `${activeCourse.id}::${activeDriveFile ? activeDriveFile.id : activeLesson.id}`;
-    const userNoteVal = (lessonNotesMap[noteMapKey] || "").trim();
-    const recTranscript = (t.entries && t.entries.length > 0)
-      ? t.entries.map(eItem => eItem.sourceText || eItem.text).join("\n")
-      : "";
-    const folderPathStr = driveFolderStack.map(x => x.name).join(" / ");
-    try {
-      const aiRes = await oe("dvtl_ask_lesson_ai", {
-        question: `Hãy lập bản tóm tắt hệ thống, súc tích các kiến thức cốt lõi, công thức quan trọng và lưu ý giải bài tập cho bài giảng "${lesName}" thuộc chuyên đề "${folderPathStr || activeCourse.title}".`,
-        courseTitle: activeCourse.title,
-        instructor: activeCourse.instructor,
-        lessonTitle: `${folderPathStr ? folderPathStr + " - " : ""}${lesName}`,
-        driveFileName: lesName,
-        notes: userNoteVal,
-        summary: "",
-        transcript: recTranscript || activeCourse.summary || "",
-        history: []
-      });
-      const mdOut = (aiRes && aiRes.answer)
-        ? aiRes.answer
-        : `## Tóm tắt trọng tâm: ${lesName}\n\n` + (activeCourse.highlights || []).map(h => `- ${h}`).join("\n");
-      setCustomSummaries(prev => ({ ...prev, [noteIdKey]: mdOut }));
-      setRecordedLessons(prev => ({ ...prev, [activeLesson.id]: true }));
-      const savedTitle = syncLessonDraftToGlobalNotes({
-        kindPrefix: "Tóm tắt bài giảng",
-        lessonName: lesName,
-        summaryMd: mdOut + (userNoteVal ? `\n\n## Ghi chú cá nhân\n\n${userNoteVal}` : ""),
-        transcriptTxt: recTranscript || userNoteVal || mdOut,
-        durationSec: recSeconds || 0
-      });
-      showBanner(`Đã tạo tóm tắt AI và đồng bộ vào Ghi chú: ${savedTitle}`);
-    } catch {
-      showBanner("Không thể tạo tóm tắt lúc này, vui lòng thử lại.");
-    } finally {
-      setIsGeneratingSummary(false);
-    }
-  };
-
-  const handleStopAndSaveNativeRecording = async () => {
-    setCourseRecActive(false);
-    if (activeLesson) {
-      setRecordedLessons(prev => ({ ...prev, [activeLesson.id]: true }));
-    }
-    setRightTab("summary");
-    try {
-      const stamp = formatViDateTimeNow();
-      const lesName = activeDriveFile ? activeDriveFile.name : (activeLesson ? activeLesson.title : "Bài giảng");
-      const saveTitle = `[${stamp}] Bản ghi & Tóm tắt: ${lesName}`;
-      if (t.meetingActive && t.stop) {
-        t.stop({ title: saveTitle, groupID: null });
-        showBanner(`Đã dừng thu âm, tạo tóm tắt và lưu vào Ghi chú: ${saveTitle}`);
-      } else {
-        await handleGenerateAiLessonSummary();
-      }
-    } catch {}
-  };
-
-  const handleCopyFolderLink = (simUrl) => {
-    try {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(simUrl);
-      }
-    } catch {}
-    showBanner(`Đã sao chép đường dẫn Google Drive: ${simUrl}`);
+  const openDriveDocumentExternally = (docItem, emailStr) => {
+    const rawUrl = docItem.url || `https://drive.google.com/file/d/${docItem.id}/view`;
+    const authUrl = folderUrlWithAuth(rawUrl, emailStr);
+    oe("open_link", { url: authUrl }).catch(() => window.open(authUrl, "_blank"));
+    showBanner(`Đang mở tài liệu "${docItem.name}" trực tiếp trên Google Drive...`);
   };
 
   if (viewMode === "external" || t.watch?.phase === "ready" || t.watch?.phase === "loading") {
@@ -6839,48 +6866,43 @@ function fue({model:t, setPage:e}) {
     });
   }
 
-  const userEmail = deviceInfo.boundEmail || accountEmailInput || t.account?.email || "";
+  const userEmail = deviceInfo.boundEmail || accountEmailInput || verifiedGoogleAccount?.email || t.account?.email || "";
 
-  /* PHÒNG HỌC TRỰC TIẾP */
+  /* PHÒNG HỌC TRỰC TIẾP CHUẨN GOOGLE DRIVE + AI */
   if (viewMode === "player" && activeCourse && activeLesson) {
-    const folderUrl = activeCourse.driveFolderUrl || DVS_DRIVE_ROOT_URL;
+    const folderUrl = activeSubUnit?.driveFolderUrl || activeCourse.driveFolderUrl || DVS_DRIVE_ROOT_URL;
     const noteId = `course-note-${activeDriveFile ? activeDriveFile.id : activeLesson.id}`;
     const generatedSummaryMd =
-      `## Tóm tắt trọng tâm\n\n` +
-      (activeLesson.keyFormulas || []).map(f => `- ${f}`).join("\n") +
-      `\n\n## Nội dung bài giảng\n\n` +
-      (activeLesson.lectureScript || []).map(s => `- **${s.time}**: ${s.text}`).join("\n");
+      `## Trọng tâm bài học\n\n` +
+      (activeCourse.highlights || activeLesson.keyFormulas || []).map(f => `- ${f}`).join("\n");
 
     const currentSummaryMd = hasRecordedCurrentLesson
       ? (customSummaries[noteId] ?? (t.overallSummary || generatedSummaryMd))
       : (customSummaries[noteId] ?? "");
 
-    const transcriptSegments = hasRecordedCurrentLesson
-      ? (activeLesson.lectureScript || []).map((s, idx) => ({
-          id: `seg-${activeLesson.id}-${idx}`,
-          timestamp: new Date(Date.now() - (3 - idx) * 60000).toISOString(),
-          timeLabel: s.time,
-          audioSource: "system",
-          speaker: activeCourse.instructor,
-          cleanText: s.text,
-          rawText: s.text
+    const transcriptSegments = (t.entries && t.entries.length > 0)
+      ? t.entries.map((eItem, idx) => ({
+          id: eItem.id || `seg-${idx}`,
+          timestamp: eItem.timestamp || new Date().toISOString(),
+          timeLabel: $i(eItem.timestamp, false),
+          audioSource: eItem.audioSource || "system",
+          speaker: eItem.speaker || activeCourse.instructor,
+          cleanText: eItem.sourceText || eItem.text,
+          rawText: eItem.sourceText || eItem.text
         }))
       : [];
 
-    const fullTranscriptText = hasRecordedCurrentLesson
-      ? (activeLesson.lectureScript || [])
-          .map(s => `${s.time} · ${activeCourse.instructor}: ${s.text}`)
-          .join("\n\n")
-      : "";
+    const fullTranscriptText = transcriptSegments.map(s => `${s.timeLabel} · ${s.speaker}: ${s.cleanText}`).join("\n\n");
 
+    const currentLessonDisplayTitle = activeDriveFile ? activeDriveFile.name : activeLesson.title;
     const defaultWelcomeChat = [
       {
-        id: `welcome-${activeLesson.id}`,
+        id: `welcome-${noteId}`,
         role: "assistant",
-        content: `Xin chào! Tôi là trợ lý Học Cùng AI cho bài giảng **${activeLesson.title}** (${activeCourse.instructor}). Bạn cần giải thích công thức hay mở kho tài liệu Google Drive của khóa học?`,
+        content: `Xin chào! Tôi là trợ lý Học Cùng AI cho bài giảng **${currentLessonDisplayTitle}** (${activeCourse.instructor}). Bạn cần giải thích công thức, tóm tắt ý chính hay giải đáp bài tập nào?`,
         followUps: [
-          "Tóm tắt các trọng tâm cốt lõi của khóa này",
-          "Giải thích chi tiết phương pháp làm bài",
+          "Tóm tắt các công thức trọng tâm của bài giảng này",
+          "Giải thích phương pháp giải nhanh các dạng bài",
           "Tạo 3 câu hỏi trắc nghiệm ôn tập nhanh"
         ]
       }
@@ -6891,17 +6913,17 @@ function fue({model:t, setPage:e}) {
 
     const lessonNoteObj = {
       id: noteId,
-      title: activeDriveFile ? activeDriveFile.name.replace(/^[\u{1F300}-\u{1FAFF}\s]+/u, "") : activeLesson.title,
+      title: currentLessonDisplayTitle,
       groupID: null,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
-      duration: hasRecordedCurrentLesson ? 2520 : 0,
+      duration: recSeconds || 0,
       saving: false,
       isDemo: false,
       source: "meeting",
-      summary: currentSummaryMd || currentUserNoteText || `Bài giảng ${activeCourse.title} - ${activeCourse.instructor}`,
+      summary: currentSummaryMd || currentUserNoteText || `Bài giảng ${activeCourse.title}`,
       summaryMarkdown: currentSummaryMd,
-      transcript: fullTranscriptText || (activeLesson.lectureScript || []).map(s => s.text).join("\n") || activeCourse.title,
+      transcript: fullTranscriptText || currentUserNoteText || activeCourse.title,
       transcriptSegments,
       chatMessages: lessonChats[noteId] || defaultWelcomeChat
     };
@@ -6912,106 +6934,70 @@ function fue({model:t, setPage:e}) {
         const cleanQ = String(question || "").trim();
         if (!cleanQ) return;
         const prevHistory = lessonChats[id] || defaultWelcomeChat;
-        const userMsg = {
-          id: `u-${Date.now()}`,
-          role: "user",
-          content: cleanQ,
-          images
-        };
-        setLessonChats(prev => ({
-          ...prev,
-          [id]: [...(prev[id] || defaultWelcomeChat), userMsg]
-        }));
-        setLessonChatStatuses(prev => ({
-          ...prev,
-          [id]: { pending: true, request: { question: cleanQ } }
-        }));
+        const userMsg = { id: `u-${Date.now()}`, role: "user", content: cleanQ, images };
+        setLessonChats(prev => ({ ...prev, [id]: [...(prev[id] || defaultWelcomeChat), userMsg] }));
+        setLessonChatStatuses(prev => ({ ...prev, [id]: { pending: true, request: { question: cleanQ } } }));
         try {
           const aiRes = await oe("dvtl_ask_lesson_ai", {
             question: cleanQ,
             courseTitle: activeCourse.title,
             instructor: activeCourse.instructor,
-            lessonTitle: activeLesson.title,
-            driveFileName: activeDriveFile ? activeDriveFile.name.replace(/^[\u{1F300}-\u{1FAFF}\s]+/u, "") : "",
+            lessonTitle: driveFolderStack.map(x => x.name).join(" / ") || activeLesson.title,
+            driveFileName: currentLessonDisplayTitle,
             notes: currentUserNoteText,
             summary: currentSummaryMd || generatedSummaryMd,
-            transcript: fullTranscriptText || (activeLesson.lectureScript || []).map(s => s.text).join("\n"),
+            transcript: fullTranscriptText,
             history: prevHistory.slice(-6)
           });
-          const ansText = (aiRes && aiRes.answer)
-            ? aiRes.answer
-            : `**Giải đáp bài giảng ${activeDriveFile ? activeDriveFile.name : activeLesson.title}:**\n\n` +
-              (activeLesson.keyFormulas || []).map((f, i) => `${i + 1}. **${f}**`).join("\n");
+          const ansText = (aiRes && aiRes.answer) ? aiRes.answer : generatedSummaryMd;
           const replyMsg = {
             id: `a-${Date.now()}`,
             role: "assistant",
             content: ansText,
             followUps: (aiRes && Array.isArray(aiRes.followUps) && aiRes.followUps.length > 0)
               ? aiRes.followUps
-              : [
-                  "Tóm tắt các công thức cốt lõi cần nhớ",
-                  "Cho ví dụ minh họa cụ thể",
-                  "Tạo 3 câu hỏi trắc nghiệm ôn tập"
-                ]
+              : ["Tóm tắt công thức cốt lõi cần nhớ", "Cho ví dụ minh họa cụ thể", "Tạo 3 câu hỏi trắc nghiệm ôn tập"]
           };
-          setLessonChats(prev => ({
-            ...prev,
-            [id]: [...(prev[id] || defaultWelcomeChat), replyMsg]
-          }));
+          setLessonChats(prev => ({ ...prev, [id]: [...(prev[id] || defaultWelcomeChat), replyMsg] }));
         } catch {
-          const formulas = (activeLesson.keyFormulas || []).map((f, i) => `${i + 1}. **${f}**`).join("\n");
           const replyMsg = {
             id: `a-${Date.now()}`,
             role: "assistant",
-            content: `**Trọng tâm bài giảng ${activeDriveFile ? activeDriveFile.name : activeLesson.title} (${activeCourse.instructor}):**\n\n${formulas || generatedSummaryMd}`,
-            followUps: [
-              "Giải thích chi tiết phương pháp làm bài",
-              "Các lỗi sai thường gặp ở chuyên đề này"
-            ]
+            content: generatedSummaryMd,
+            followUps: ["Giải thích phương pháp làm bài", "Các lỗi sai thường gặp"]
           };
-          setLessonChats(prev => ({
-            ...prev,
-            [id]: [...(prev[id] || defaultWelcomeChat), replyMsg]
-          }));
+          setLessonChats(prev => ({ ...prev, [id]: [...(prev[id] || defaultWelcomeChat), replyMsg] }));
         } finally {
-          setLessonChatStatuses(prev => ({
-            ...prev,
-            [id]: { pending: false }
-          }));
+          setLessonChatStatuses(prev => ({ ...prev, [id]: { pending: false } }));
         }
       },
       clear: (id) => {
-        setLessonChats(prev => ({
-          ...prev,
-          [id]: defaultWelcomeChat
-        }));
+        setLessonChats(prev => ({ ...prev, [id]: defaultWelcomeChat }));
       }
     };
 
-    const liveEntriesToRender =
-      isRecRunning || hasRecordedCurrentLesson
-        ? (t.entries && t.entries.length > 0
-            ? t.entries.map(eItem => ({
-                id: eItem.id,
-                time: $i(eItem.timestamp, false),
-                source: eItem.audioSource === "microphone" ? "Mic" : "Hệ thống",
-                speaker: eItem.speaker || activeCourse.instructor,
-                text: eItem.sourceText || eItem.text
-              }))
-            : (activeLesson.lectureScript || []).map((s, idx) => ({
-                id: `les-entry-${idx}`,
-                time: s.time,
-                source: "Hệ thống",
-                speaker: activeCourse.instructor,
-                text: s.text
-              })))
-        : [];
+    const liveEntriesToRender = transcriptSegments.map(s => ({
+      id: s.id,
+      time: s.timeLabel,
+      source: s.audioSource === "microphone" ? "Mic" : "Hệ thống",
+      speaker: s.speaker,
+      text: s.cleanText
+    }));
+
+    const streamVideoUrl = activeDriveFile
+      ? `/api/drive/stream/${encodeURIComponent(activeDriveFile.id)}?email=${encodeURIComponent(userEmail)}&courseId=${encodeURIComponent(activeCourse.id)}`
+      : "";
+
+    const folderCount = liveUnitDriveFiles.filter(x => getDriveItemKind(x) === "folder").length;
+    const videoCount = liveUnitDriveFiles.filter(x => getDriveItemKind(x) === "video").length;
+    const docCount = liveUnitDriveFiles.filter(x => getDriveItemKind(x) === "document").length;
 
     return g.jsx("main", {
       className: "page-scroll dvs-classroom-scroll-host",
       children: g.jsxs("div", {
         className: "page-wrap dvs-course-player-wrap animate-in",
         children: [
+          /* HEADER TINH GỌN: CHỈ QUAY LẠI & MỞ DRIVE */
           g.jsxs("div", {
             className: "dvs-student-topbar",
             children: [
@@ -7021,7 +7007,10 @@ function fue({model:t, setPage:e}) {
                   g.jsx("button", {
                     type: "button",
                     className: "pill-btn",
-                    onClick: () => setViewMode("catalog"),
+                    onClick: () => {
+                      flushAndSaveActiveVideoSession("exit");
+                      setViewMode("catalog");
+                    },
                     children: "Quay lại"
                   }),
                   g.jsx("strong", { className: "dvs-student-course-heading", children: activeCourse.title })
@@ -7030,17 +7019,17 @@ function fue({model:t, setPage:e}) {
               g.jsxs("div", {
                 className: "dvs-student-topbar-right",
                 children: [
-                  
                   g.jsx("button", {
                     type: "button",
                     className: "pill-btn primary",
                     onClick: () => {
-                      const _u = folderUrlWithAuth(folderUrl, userEmail); oe("open_link", { url: _u }).catch(() => window.open(_u, "_blank"));
+                      const curFid = driveFolderStack.length > 0 ? driveFolderStack[driveFolderStack.length - 1].id : "";
+                      const rawTarget = curFid ? `https://drive.google.com/drive/folders/${curFid}` : folderUrl;
+                      const _u = folderUrlWithAuth(rawTarget, userEmail);
+                      oe("open_link", { url: _u }).catch(() => window.open(_u, "_blank"));
                     },
                     children: "Mở Drive"
-                  }),
-                  
-                  
+                  })
                 ]
               })
             ]
@@ -7059,7 +7048,7 @@ function fue({model:t, setPage:e}) {
               g.jsxs("div", {
                 className: "dvs-classroom-left-col",
                 children: [
-                  /* 1. THẺ HỌC TRỰC TIẾP NHÚNG GOOGLE DRIVE NGAY TRONG APP */
+                  /* 1. TRÌNH PHÁT VIDEO KẾT NỐI TRỰC TIẾP GOOGLE DRIVE CẤP QUYỀN */
                   g.jsxs("section", {
                     ref: playerCardRef,
                     className: "glass-card strong dvs-clean-video-card",
@@ -7074,254 +7063,430 @@ function fue({model:t, setPage:e}) {
                               g.jsx("strong", {
                                 style: { fontSize: "14.5px", fontWeight: 800, color: "#0F172A", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" },
                                 children: activeDriveFile
-                                  ? activeDriveFile.name.replace(/^[\u{1F300}-\u{1FAFF}\s]+/u, "")
+                                  ? activeDriveFile.name
                                   : (driveFolderStack.length > 0 ? driveFolderStack[driveFolderStack.length - 1].name : activeCourse.title)
                               }),
                               g.jsx("small", {
                                 style: { fontSize: "11.5px", color: "#64748B", fontWeight: 600 },
-                                children: `${activeCourse.instructor} · ${activeCourse.categoryLabel || "Khóa Học"}`
+                                children: driveFolderStack.length > 0
+                                  ? driveFolderStack.map(x => x.name).join("  ›  ")
+                                  : `${activeCourse.instructor} · ${activeCourse.categoryLabel || "Khóa Học"}`
                               })
                             ]
                           }),
                           g.jsx("span", {
                             className: "dvs-uni-code-pill",
-                            style: { background: "#DBEAFE", color: "#1E40AF", flexShrink: 0 },
-                            children: activeDriveFile
-                              ? (/\.pdf$/i.test(activeDriveFile.name || "") ? "Tài liệu PDF" : "Bài giảng")
-                              : "Thư mục Drive"
+                            style: {
+                              background: activeDriveFile ? "#DCFCE7" : "#DBEAFE",
+                              color: activeDriveFile ? "#166534" : "#1E40AF",
+                              flexShrink: 0
+                            },
+                            children: activeDriveFile ? "Đang phát từ Drive" : "Chọn bài giảng bên dưới"
                           })
                         ]
                       }),
 
                       g.jsx("div", {
                         className: "dvs-direct-video-frame",
-                        style: { width: "100%", height: "430px", borderRadius: "12px", overflow: "hidden", background: "#0B1958", position: "relative" },
-                        children: activeDriveFile && !String(activeDriveFile.id).startsWith("les-")
-                          ? g.jsx("iframe", {
-                              key: activeDriveFile.id,
-                              src: `https://drive.google.com/file/d/${activeDriveFile.id}/preview`,
-                              title: activeDriveFile.name || "Bài giảng Google Drive",
-                              style: { width: "100%", height: "100%", border: "none", background: "#0F172A" },
-                              allow: "autoplay; fullscreen"
-                            })
-                          : (() => {
-                              return g.jsxs("div", {
-                                style: {
-                                  width: "100%",
-                                  height: "100%",
-                                  display: "flex",
-                                  flexDirection: "column",
-                                  alignItems: "center",
-                                  justifyContent: "center",
-                                  background: "linear-gradient(135deg, #070E28 0%, #0F172A 100%)",
-                                  color: "#FFFFFF",
-                                  padding: "24px",
-                                  textAlign: "center"
-                                },
-                                children: [
-                                  g.jsx("div", {
-                                    style: {
-                                      width: "64px",
-                                      height: "64px",
-                                      borderRadius: "50%",
-                                      background: "rgba(255,255,255,0.08)",
-                                      border: "1.5px solid rgba(255,255,255,0.2)",
-                                      display: "flex",
-                                      alignItems: "center",
-                                      justifyContent: "center",
-                                      marginBottom: "14px",
-                                      boxShadow: "0 8px 24px rgba(0,0,0,0.3)"
-                                    },
-                                    children: g.jsx("svg", {
-                                      width: "30",
-                                      height: "30",
-                                      viewBox: "0 0 24 24",
-                                      fill: "#60A5FA",
-                                      children: g.jsx("path", { d: "M8 5v14l11-7z" })
-                                    })
-                                  }),
-                                  g.jsx("div", {
-                                    style: { fontSize: "15.5px", fontWeight: 800, color: "#F8FAFC", marginBottom: "6px" },
-                                    children: "Chọn video bài giảng trong danh mục bên dưới để phát trực tiếp"
-                                  }),
-                                  g.jsx("div", {
-                                    style: { fontSize: "12px", color: "#94A3B8", maxWidth: "440px", lineHeight: "1.5" },
-                                    children: "Hệ thống tự động phát bài giảng Full HD, đồng bộ ghi âm, tóm tắt và hỏi đáp AI theo thời gian thực."
+                        style: {
+                          width: "100%",
+                          aspectRatio: "16 / 9",
+                          maxHeight: "440px",
+                          borderRadius: "12px",
+                          overflow: "hidden",
+                          background: "#070E28",
+                          position: "relative"
+                        },
+                        children: activeDriveFile && getDriveItemKind(activeDriveFile) === "video"
+                          ? (!videoFallbackIframe
+                              ? g.jsx("video", {
+                                  key: activeDriveFile.id,
+                                  ref: videoRef,
+                                  src: streamVideoUrl,
+                                  controls: true,
+                                  autoPlay: true,
+                                  playsInline: true,
+                                  preload: "metadata",
+                                  onPlay: () => startAutoRecordingForVideo(),
+                                  onEnded: () => flushAndSaveActiveVideoSession("ended"),
+                                  onError: () => setVideoFallbackIframe(true),
+                                  style: { width: "100%", height: "100%", objectFit: "contain", background: "#000000", display: "block" }
+                                })
+                              : g.jsx("iframe", {
+                                  key: `${activeDriveFile.id}-fb`,
+                                  src: folderUrlWithAuth(`https://drive.google.com/file/d/${activeDriveFile.id}/preview`, userEmail),
+                                  title: activeDriveFile.name || "Bài giảng Google Drive",
+                                  onLoad: () => startAutoRecordingForVideo(),
+                                  style: { width: "100%", height: "100%", border: "none", background: "#000000" },
+                                  allow: "autoplay; fullscreen"
+                                }))
+                          : g.jsxs("div", {
+                              style: {
+                                width: "100%",
+                                height: "100%",
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                background: "linear-gradient(135deg, #070E28 0%, #0F172A 100%)",
+                                color: "#FFFFFF",
+                                padding: "24px",
+                                textAlign: "center"
+                              },
+                              children: [
+                                g.jsx("div", {
+                                  style: {
+                                    width: "60px",
+                                    height: "60px",
+                                    borderRadius: "50%",
+                                    background: "rgba(96,165,250,0.14)",
+                                    border: "1.5px solid rgba(96,165,250,0.35)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    marginBottom: "12px"
+                                  },
+                                  children: g.jsx("svg", {
+                                    width: "28",
+                                    height: "28",
+                                    viewBox: "0 0 24 24",
+                                    fill: "#60A5FA",
+                                    children: g.jsx("path", { d: "M8 5v14l11-7z" })
                                   })
-                                ]
-                              });
-                              return g.jsx("video", {
-                                ref: videoRef,
-                                controls: true,
-                                style: { width: "100%", height: "100%", objectFit: "contain" },
-                                src: activeLesson?.videoUrl || ""
-                              });
-                            })()
+                                }),
+                                g.jsx("div", {
+                                  style: { fontSize: "15px", fontWeight: 800, color: "#F8FAFC", marginBottom: "6px" },
+                                  children: "Mở thư mục chương học bên dưới và chọn video để phát ngay trên App"
+                                }),
+                                g.jsx("div", {
+                                  style: { fontSize: "12px", color: "#94A3B8", maxWidth: "460px", lineHeight: "1.55" },
+                                  children: "Bấm vào Video để phát trực tiếp kèm tự động ghi âm & lưu ghi chú; bấm vào Tài liệu PDF / Đề thi để mở trực tiếp trên Google Drive."
+                                })
+                              ]
+                            })
                       })
                     ]
                   }),
 
-                  /* 2. DANH SÁCH THƯ MỤC & BÀI GIẢNG GOOGLE DRIVE */
+                  /* 2. CÂY THƯ MỤC BÀI GIẢNG & TÀI LIỆU THIẾT KẾ CHUẨN GOOGLE DRIVE */
                   g.jsxs("section", {
                     className: "glass-card strong dvs-clean-lessons-list-card",
-                    style: { padding: "14px 16px", display: "flex", flexDirection: "column", gap: "10px" },
+                    style: { padding: "16px", display: "flex", flexDirection: "column", gap: "12px", minHeight: "360px" },
                     children: [
+                      /* Thanh tiêu đề + Chuyển học phần (cho gói Combo 199K / Full 399K) */
                       g.jsxs("div", {
-                        className: "dvs-clean-lessons-head",
-                        style: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px", flexWrap: "wrap" },
+                        style: { display: "flex", flexDirection: "column", gap: "10px" },
                         children: [
                           g.jsxs("div", {
+                            style: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px", flexWrap: "wrap" },
                             children: [
-                              g.jsx("strong", {
-                                style: { fontSize: "14px", fontWeight: 800, color: "#0F172A", display: "block" },
-                                children: "Danh mục bài giảng & Tài liệu"
+                              g.jsxs("div", {
+                                style: { display: "flex", alignItems: "center", gap: "8px" },
+                                children: [
+                                  g.jsx("svg", {
+                                    width: 18,
+                                    height: 18,
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    stroke: "#0D1677",
+                                    strokeWidth: 2.2,
+                                    children: g.jsx("path", { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" })
+                                  }),
+                                  g.jsx("strong", {
+                                    style: { fontSize: "14.5px", fontWeight: 800, color: "#0F172A" },
+                                    children: "Danh mục bài giảng & Tài liệu khóa học"
+                                  })
+                                ]
                               }),
                               g.jsx("small", {
-                                style: { fontSize: "11.5px", color: "#64748B" },
+                                style: { fontSize: "11.5px", fontWeight: 600, color: "#475569" },
                                 children: loadingUnitDrive
-                                  ? "Đang tải danh sách từ Google Drive..."
-                                  : `${liveUnitDriveFiles.length} mục trong thư mục hiện tại`
+                                  ? "Đang tải dữ liệu từ Google Drive..."
+                                  : `${folderCount} thư mục · ${videoCount} video · ${docCount} tài liệu`
                               })
                             ]
                           }),
+
                           structuredSubUnits.length > 1 && g.jsx("div", {
-                            style: { display: "flex", gap: "6px", flexWrap: "wrap" },
+                            style: {
+                              display: "flex",
+                              gap: "6px",
+                              flexWrap: "wrap",
+                              paddingBottom: "4px",
+                              borderBottom: "1px solid rgba(15, 23, 42, 0.08)"
+                            },
                             children: structuredSubUnits.map(unit => {
                               const isSel = activeSubUnit && activeSubUnit.id === unit.id;
-                              return g.jsx("button", {
+                              const shortUnitTitle = unit.title.replace(/^Luyện Thi\s+/i, "").trim();
+                              return g.jsxs("button", {
                                 type: "button",
                                 className: `pill-btn ${isSel ? "primary" : ""}`,
-                                style: { height: "28px", fontSize: "11px", padding: "0 10px" },
-                                onClick: () => {
-                                  setSelectedSubUnitId(unit.id);
-                                  setActiveDriveFile(null);
+                                style: {
+                                  height: "32px",
+                                  fontSize: "12px",
+                                  fontWeight: isSel ? 800 : 600,
+                                  padding: "0 12px",
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  gap: "6px"
                                 },
-                                children: unit.title.split("-")[0].trim()
+                                onClick: () => {
+                                  if (!isSel) {
+                                    flushAndSaveActiveVideoSession("switch-unit");
+                                    setSelectedSubUnitId(unit.id);
+                                    setActiveDriveFile(null);
+                                    setVideoFallbackIframe(false);
+                                  }
+                                },
+                                children: [
+                                  g.jsx("svg", {
+                                    width: 13,
+                                    height: 13,
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    strokeWidth: 2.2,
+                                    children: g.jsx("path", { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" })
+                                  }),
+                                  g.jsx("span", { children: shortUnitTitle })
+                                ]
                               }, unit.id);
                             })
                           })
                         ]
                       }),
 
-                      driveFolderStack.length > 1 && g.jsx("div", {
+                      /* Thanh đường dẫn Breadcrumb kiểu Google Drive */
+                      g.jsxs("div", {
                         className: "dvs-drive-breadcrumbs",
-                        style: { display: "flex", alignItems: "center", gap: "5px", flexWrap: "wrap", padding: "6px 10px", borderRadius: "8px", background: "rgba(15, 23, 42, 0.04)", fontSize: "11.5px" },
-                        children: driveFolderStack.map((crumb, cIdx) => {
-                          const isLast = cIdx === driveFolderStack.length - 1;
-                          return g.jsxs(E.Fragment, {
-                            children: [
-                              cIdx > 0 && g.jsx("span", { style: { color: "#94A3B8" }, children: "/" }),
-                              g.jsx("button", {
-                                type: "button",
-                                disabled: isLast,
-                                onClick: () => {
-                                  const nextStack = driveFolderStack.slice(0, cIdx + 1);
-                                  loadDriveFolderLevel(activeSubUnit?.id || activeCourse.id, crumb.id, userEmail, nextStack);
-                                },
-                                style: {
-                                  background: "none",
-                                  border: "none",
-                                  padding: "2px 4px",
-                                  cursor: isLast ? "default" : "pointer",
-                                  fontWeight: isLast ? 800 : 600,
-                                  color: isLast ? "#0D1677" : "#475569"
-                                },
-                                children: crumb.name
-                              })
-                            ]
-                          }, `${crumb.id}-${cIdx}`);
-                        })
-                      }),
-
-                      g.jsx("div", {
-                        className: "dvs-clean-lessons-scroll",
-                        style: { display: "flex", flexDirection: "column", gap: "6px", maxHeight: "340px", overflowY: "auto" },
-                        children: liveUnitDriveFiles.length > 0
-                          ? liveUnitDriveFiles.map((item, idx) => {
-                              const isSelected = Boolean(activeDriveFile && activeDriveFile.id === item.id);
-                              const cleanName = String(item.name || item.title || "").trim();
-                              const isFolder = isDriveItemFolder(item);
-                              return g.jsxs("div", {
-                                className: `dvs-clean-lesson-row ${isSelected ? "selected" : ""}`,
-                                style: {
-                                  display: "flex",
-                                  alignItems: "center",
-                                  justifyContent: "space-between",
-                                  gap: "10px",
-                                  padding: "9px 12px",
-                                  borderRadius: "10px",
-                                  cursor: "pointer",
-                                  background: isSelected ? "rgba(13, 22, 119, 0.08)" : "rgba(255, 255, 255, 0.65)",
-                                  border: isSelected ? "1.5px solid #0D1677" : "1px solid rgba(15, 23, 42, 0.08)"
-                                },
-                                onClick: () => {
-                                  if (isFolder) {
-                                    const nextStack = [...driveFolderStack, { id: item.id, name: cleanName }];
-                                    loadDriveFolderLevel(activeSubUnit?.id || activeCourse.id, item.id, userEmail, nextStack);
-                                  } else {
-                                    setActiveDriveFile(item);
-                                    try { playerCardRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch {}
-                                  }
-                                },
+                        style: {
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                          gap: "8px",
+                          flexWrap: "wrap",
+                          padding: "8px 12px",
+                          borderRadius: "10px",
+                          background: "#F1F5F9",
+                          border: "1px solid #E2E8F0",
+                          fontSize: "12px"
+                        },
+                        children: [
+                          g.jsx("div", {
+                            style: { display: "flex", alignItems: "center", gap: "4px", flexWrap: "wrap", minWidth: 0, flex: 1 },
+                            children: driveFolderStack.map((crumb, cIdx) => {
+                              const isLast = cIdx === driveFolderStack.length - 1;
+                              return g.jsxs(E.Fragment, {
                                 children: [
-                                  g.jsxs("div", {
-                                    style: { display: "flex", alignItems: "center", gap: "10px", minWidth: 0, flex: 1 },
-                                    children: [
-                                      g.jsx("span", {
-                                        className: "dvs-clean-lesson-idx",
-                                        style: {
-                                          width: "24px",
-                                          height: "24px",
-                                          borderRadius: "6px",
-                                          background: isSelected ? "#0D1677" : (isFolder ? "#EFF6FF" : "#E2E8F0"),
-                                          color: isSelected ? "#FFF" : (isFolder ? "#1D4ED8" : "#475569"),
-                                          display: "flex",
-                                          alignItems: "center",
-                                          justifyContent: "center",
-                                          fontSize: "11px",
-                                          fontWeight: 700,
-                                          flexShrink: 0
-                                        },
-                                        children: isFolder
-                                          ? g.jsx("svg", { width: 13, height: 13, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2.2, children: g.jsx("path", { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }) })
-                                          : idx + 1
-                                      }),
-                                      g.jsx("span", {
-                                        style: {
-                                          fontSize: "13px",
-                                          fontWeight: isSelected ? 800 : 600,
-                                          color: isSelected ? "#0D1677" : "#0F172A",
-                                          whiteSpace: "nowrap",
-                                          overflow: "hidden",
-                                          textOverflow: "ellipsis"
-                                        },
-                                        children: cleanName
-                                      })
-                                    ]
-                                  }),
-                                  g.jsx("span", {
-                                    style: {
-                                      fontSize: "11px",
-                                      fontWeight: 700,
-                                      color: isSelected ? "#0D1677" : "#64748B",
-                                      flexShrink: 0
+                                  cIdx > 0 && g.jsx("span", { style: { color: "#94A3B8", fontWeight: 700, padding: "0 2px" }, children: "›" }),
+                                  g.jsx("button", {
+                                    type: "button",
+                                    disabled: isLast,
+                                    onClick: () => {
+                                      const nextStack = driveFolderStack.slice(0, cIdx + 1);
+                                      loadDriveFolderLevel(activeSubUnit?.id || activeCourse.id, crumb.id, userEmail, nextStack);
                                     },
-                                    children: isFolder ? "Mở thư mục" : (/\.pdf$/i.test(cleanName) ? "PDF" : "Xem bài")
+                                    style: {
+                                      background: isLast ? "#FFFFFF" : "transparent",
+                                      border: isLast ? "1px solid #CBD5E1" : "none",
+                                      borderRadius: "6px",
+                                      padding: "3px 8px",
+                                      cursor: isLast ? "default" : "pointer",
+                                      fontWeight: isLast ? 800 : 600,
+                                      color: isLast ? "#0D1677" : "#334155",
+                                      fontSize: "12px"
+                                    },
+                                    children: crumb.name
                                   })
                                 ]
-                              }, item.id || idx);
+                              }, `${crumb.id}-${cIdx}`);
                             })
-                          : g.jsx("div", {
-                              style: { padding: "14px", fontSize: "12.5px", color: "#64748B", textAlign: "center" },
-                              children: loadingUnitDrive
-                                ? "Đang đồng bộ mục lục khóa học từ Google Drive..."
-                                : "Thư mục này hiện chưa có video. Hãy chọn sang mục khác hoặc bấm Mở Drive."
-                            })
+                          }),
+                          driveFolderStack.length > 1 && g.jsx("button", {
+                            type: "button",
+                            className: "pill-btn",
+                            style: { height: "26px", fontSize: "11.5px", padding: "0 10px", flexShrink: 0 },
+                            onClick: () => {
+                              const prevStack = driveFolderStack.slice(0, driveFolderStack.length - 1);
+                              const parentCrumb = prevStack[prevStack.length - 1];
+                              loadDriveFolderLevel(activeSubUnit?.id || activeCourse.id, parentCrumb.id, userEmail, prevStack);
+                            },
+                            children: "Lên thư mục trước"
+                          })
+                        ]
+                      }),
+
+                      /* Bảng danh sách Thư mục / Video / Tài liệu kiểu Google Drive */
+                      g.jsxs("div", {
+                        style: {
+                          border: "1px solid #E2E8F0",
+                          borderRadius: "12px",
+                          overflow: "hidden",
+                          background: "#FFFFFF"
+                        },
+                        children: [
+                          g.jsxs("div", {
+                            style: {
+                              display: "grid",
+                              gridTemplateColumns: "minmax(0, 1fr) 115px 125px",
+                              gap: "8px",
+                              padding: "8px 14px",
+                              background: "#F8FAFC",
+                              borderBottom: "1px solid #E2E8F0",
+                              fontSize: "11px",
+                              fontWeight: 800,
+                              color: "#64748B",
+                              textTransform: "uppercase",
+                              letterSpacing: "0.03em"
+                            },
+                            children: [
+                              g.jsx("span", { children: "Tên thư mục / bài giảng" }),
+                              g.jsx("span", { children: "Phân loại" }),
+                              g.jsx("span", { style: { textAlign: "right" }, children: "Thao tác" })
+                            ]
+                          }),
+
+                          g.jsx("div", {
+                            className: "dvs-clean-lessons-scroll",
+                            style: { display: "flex", flexDirection: "column", maxHeight: "520px", minHeight: "260px", overflowY: "auto" },
+                            children: loadingUnitDrive
+                              ? g.jsx("div", {
+                                  style: { padding: "36px 16px", fontSize: "13px", fontWeight: 600, color: "#475569", textAlign: "center" },
+                                  children: "Đang tải cấu trúc thư mục bài giảng từ Google Drive..."
+                                })
+                              : liveUnitDriveFiles.length > 0
+                                ? liveUnitDriveFiles.map((item, idx) => {
+                                    const kind = getDriveItemKind(item);
+                                    const isSelected = Boolean(kind === "video" && activeDriveFile && activeDriveFile.id === item.id);
+                                    const cleanName = String(item.name || item.title || "").trim();
+
+                                    const iconBg = isSelected
+                                      ? "#0D1677"
+                                      : kind === "folder"
+                                        ? "#FEF3C7"
+                                        : kind === "video"
+                                          ? "#DBEAFE"
+                                          : "#ECFDF5";
+                                    const iconColor = isSelected
+                                      ? "#FFFFFF"
+                                      : kind === "folder"
+                                        ? "#B45309"
+                                        : kind === "video"
+                                          ? "#1D4ED8"
+                                          : "#047857";
+
+                                    const kindLabel = kind === "folder"
+                                      ? "Thư mục"
+                                      : kind === "video"
+                                        ? "Video bài giảng"
+                                        : "Tài liệu Drive";
+
+                                    const actionLabel = kind === "folder"
+                                      ? "Mở thư mục"
+                                      : kind === "video"
+                                        ? (isSelected ? "Đang phát" : "Phát trên App")
+                                        : "Mở trên Drive";
+
+                                    return g.jsxs("div", {
+                                      className: `dvs-clean-lesson-row ${isSelected ? "selected" : ""}`,
+                                      style: {
+                                        display: "grid",
+                                        gridTemplateColumns: "minmax(0, 1fr) 115px 125px",
+                                        alignItems: "center",
+                                        gap: "8px",
+                                        padding: "10px 14px",
+                                        cursor: "pointer",
+                                        background: isSelected ? "#EFF6FF" : (idx % 2 === 0 ? "#FFFFFF" : "#FCFDFE"),
+                                        borderBottom: "1px solid #F1F5F9",
+                                        transition: "background 0.12s ease"
+                                      },
+                                      onClick: () => {
+                                        if (kind === "folder") {
+                                          const nextStack = [...driveFolderStack, { id: item.id, name: cleanName }];
+                                          loadDriveFolderLevel(activeSubUnit?.id || activeCourse.id, item.id, userEmail, nextStack);
+                                        } else if (kind === "video") {
+                                          if (!activeDriveFile || activeDriveFile.id !== item.id) {
+                                            flushAndSaveActiveVideoSession("switch-video");
+                                            setVideoFallbackIframe(false);
+                                            manualRecPausedRef.current = false;
+                                            setActiveDriveFile(item);
+                                            startAutoRecordingForVideo();
+                                          }
+                                          try { playerCardRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch {}
+                                        } else {
+                                          openDriveDocumentExternally(item, userEmail);
+                                        }
+                                      },
+                                      children: [
+                                        g.jsxs("div", {
+                                          style: { display: "flex", alignItems: "center", gap: "10px", minWidth: 0 },
+                                          children: [
+                                            g.jsx("span", {
+                                              style: {
+                                                width: "30px",
+                                                height: "30px",
+                                                borderRadius: "8px",
+                                                background: iconBg,
+                                                color: iconColor,
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                flexShrink: 0
+                                              },
+                                              children: kind === "folder"
+                                                ? g.jsx("svg", { width: 15, height: 15, viewBox: "0 0 24 24", fill: "currentColor", children: g.jsx("path", { d: "M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" }) })
+                                                : kind === "video"
+                                                  ? g.jsx("svg", { width: 15, height: 15, viewBox: "0 0 24 24", fill: "currentColor", children: g.jsx("path", { d: "M8 5v14l11-7z" }) })
+                                                  : g.jsx("svg", { width: 15, height: 15, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2.2, children: [g.jsx("path", { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z", key: "d1" }), g.jsx("polyline", { points: "14 2 14 8 20 8", key: "d2" })] })
+                                            }),
+                                            g.jsx("span", {
+                                              style: {
+                                                fontSize: "13px",
+                                                fontWeight: isSelected ? 800 : 600,
+                                                color: isSelected ? "#0D1677" : "#0F172A",
+                                                whiteSpace: "nowrap",
+                                                overflow: "hidden",
+                                                textOverflow: "ellipsis"
+                                              },
+                                              title: cleanName,
+                                              children: cleanName
+                                            })
+                                          ]
+                                        }),
+                                        g.jsx("span", {
+                                          style: { fontSize: "11.5px", fontWeight: 600, color: "#64748B" },
+                                          children: kindLabel
+                                        }),
+                                        g.jsx("div", {
+                                          style: { display: "flex", justifyContent: "flex-end" },
+                                          children: g.jsx("span", {
+                                            style: {
+                                              fontSize: "11px",
+                                              fontWeight: 800,
+                                              padding: "4px 10px",
+                                              borderRadius: "99px",
+                                              background: isSelected ? "#0D1677" : (kind === "video" ? "#EFF6FF" : kind === "document" ? "#ECFDF5" : "#F1F5F9"),
+                                              color: isSelected ? "#FFFFFF" : (kind === "video" ? "#1D4ED8" : kind === "document" ? "#047857" : "#334155")
+                                            },
+                                            children: actionLabel
+                                          })
+                                        })
+                                      ]
+                                    }, item.id || idx);
+                                  })
+                                : g.jsx("div", {
+                                    style: { padding: "32px 16px", fontSize: "13px", color: "#64748B", textAlign: "center" },
+                                    children: "Thư mục này chưa có nội dung. Hãy bấm Lên thư mục trước hoặc chọn sang học phần khác."
+                                  })
+                          })
+                        ]
                       })
                     ]
-                  })]
+                  })
+                ]
               }),
 
+              /* 3. CỘT PHẢI: TỰ ĐỘNG GHI ÂM + GHI CHÚ + HỎI ĐÁP AI (DUY NHẤT 1 NÚT TẠM DỪNG / KHỞI ĐỘNG) */
               g.jsxs("section", {
                 className: "glass-card strong note-editor dvs-classroom-note-editor",
                 children: [
@@ -7338,10 +7503,8 @@ function fue({model:t, setPage:e}) {
                               g.jsx("small", {
                                 className: "note-date",
                                 children: isRecRunning
-                                  ? `Đang thu âm (${formatTimer(recSeconds)}) · Bấm Dừng & Lưu`
-                                  : hasRecordedCurrentLesson
-                                  ? "Đã hoàn tất ghi âm & tóm tắt"
-                                  : "Thu âm & tóm tắt nội dung bài giảng"
+                                  ? `Đang ghi tự động (${formatTimer(recSeconds)}) · Tự động lưu vào Ghi chú khi chuyển bài`
+                                  : "Tự động bật khi phát video và lưu vào Ghi chú khi chuyển bài / thoát"
                               })
                             ]
                           }),
@@ -7349,19 +7512,14 @@ function fue({model:t, setPage:e}) {
                             className: "dvs-note-rec-controls",
                             children: [
                               isRecRunning && g.jsx(Wl, { active: true }),
-                              isRecRunning
-                                ? g.jsxs("button", {
-                                    type: "button",
-                                    className: "pill-btn primary",
-                                    onClick: handleStopAndSaveNativeRecording,
-                                    children: [g.jsx(V1, { size: 13, fill: "currentColor" }), `Dừng & Lưu (${formatTimer(recSeconds)})`]
-                                  })
-                                : g.jsxs("button", {
-                                    type: "button",
-                                    className: "pill-btn primary",
-                                    onClick: handleStartCourseRecording,
-                                    children: [g.jsx(Px, { size: 15 }), "Bật ghi nội dung"]
-                                  })
+                              g.jsxs("button", {
+                                type: "button",
+                                className: "pill-btn primary",
+                                onClick: handleToggleSingleCaptureBtn,
+                                children: isRecRunning
+                                  ? [g.jsx(V1, { size: 13, fill: "currentColor", key: "ic-p" }), `Tạm dừng (${formatTimer(recSeconds)})`]
+                                  : [g.jsx(Px, { size: 15, key: "ic-s" }), recSeconds > 0 ? "Tiếp tục" : "Khởi động"]
+                              })
                             ]
                           })
                         ]
@@ -7369,77 +7527,38 @@ function fue({model:t, setPage:e}) {
 
                       g.jsx("div", { className: "divider" }),
 
-                      g.jsxs("div", {
+                      g.jsx("div", {
                         className: "note-content-heading",
-                        children: [
-                          g.jsxs("div", {
-                            className: "segmented note-view-tabs",
-                            role: "tablist",
-                            children: [
-                              g.jsx("button", {
-                                type: "button",
-                                role: "tab",
-                                "aria-selected": rightTab === "notes",
-                                className: rightTab === "notes" ? "selected" : "",
-                                onClick: () => setRightTab("notes"),
-                                children: "Ghi chú"
-                              }),
-                              g.jsx("button", {
-                                type: "button",
-                                role: "tab",
-                                "aria-selected": rightTab === "summary",
-                                className: rightTab === "summary" ? "selected" : "",
-                                onClick: () => setRightTab("summary"),
-                                children: "Tóm tắt"
-                              }),
-                              g.jsx("button", {
-                                type: "button",
-                                role: "tab",
-                                "aria-selected": rightTab === "transcript",
-                                className: rightTab === "transcript" ? "selected" : "",
-                                onClick: () => setRightTab("transcript"),
-                                children: "Bản ghi"
-                              })
-                            ]
-                          }),
-                          g.jsxs("div", {
-                            style: { display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap" },
-                            children: [
-                              rightTab === "notes" && g.jsx("button", {
-                                type: "button",
-                                className: "pill-btn",
-                                style: { height: "28px", fontSize: "11.5px", padding: "0 10px" },
-                                onClick: () => {
-                                  const txt = (lessonNotesMap[currentLessonNoteKey] || "").trim();
-                                  if (!txt) {
-                                    showBanner("Hãy nhập nội dung ghi chú bài học trước khi lưu.");
-                                    return;
-                                  }
-                                  const lessonName = activeDriveFile ? activeDriveFile.name : activeLesson.title;
-                                  const savedTitle = syncLessonDraftToGlobalNotes({
-                                    kindPrefix: "Ghi chú",
-                                    lessonName,
-                                    summaryMd: txt,
-                                    transcriptTxt: txt,
-                                    durationSec: 0
-                                  });
-                                  setSavedNoteToast(true);
-                                  showBanner(`Đã đồng bộ bản nháp sang mục Ghi chú: ${savedTitle}`);
-                                  setTimeout(() => setSavedNoteToast(false), 2200);
-                                },
-                                children: savedNoteToast ? "Đã lưu vào Ghi chú" : "Lưu vào Ghi chú"
-                              }),
-                              g.jsx("button", {
-                                type: "button",
-                                className: "pill-btn primary",
-                                disabled: isGeneratingSummary,
-                                style: { height: "28px", fontSize: "11.5px", padding: "0 10px" },
-                                onClick: handleGenerateAiLessonSummary,
-                                children: isGeneratingSummary ? "AI đang tóm tắt..." : "Tóm tắt AI & Lưu nháp"
-                              })
-                            ]
-                          })
-                        ]
+                        children: g.jsxs("div", {
+                          className: "segmented note-view-tabs",
+                          role: "tablist",
+                          children: [
+                            g.jsx("button", {
+                              type: "button",
+                              role: "tab",
+                              "aria-selected": rightTab === "notes",
+                              className: rightTab === "notes" ? "selected" : "",
+                              onClick: () => setRightTab("notes"),
+                              children: "Ghi chú"
+                            }),
+                            g.jsx("button", {
+                              type: "button",
+                              role: "tab",
+                              "aria-selected": rightTab === "summary",
+                              className: rightTab === "summary" ? "selected" : "",
+                              onClick: () => setRightTab("summary"),
+                              children: "Tóm tắt"
+                            }),
+                            g.jsx("button", {
+                              type: "button",
+                              role: "tab",
+                              "aria-selected": rightTab === "transcript",
+                              className: rightTab === "transcript" ? "selected" : "",
+                              onClick: () => setRightTab("transcript"),
+                              children: "Bản ghi"
+                            })
+                          ]
+                        })
                       }),
 
                       rightTab === "notes"
@@ -7458,7 +7577,7 @@ function fue({model:t, setPage:e}) {
                                     return next;
                                   });
                                 },
-                                placeholder: "Ghi chép công thức, ý chính, mốc thời gian quan trọng trong lúc xem bài giảng (tự động lưu tại chỗ)...",
+                                placeholder: "Ghi chép công thức, ý chính trong lúc xem video. Khi chuyển bài hoặc thoát ra, nội dung sẽ tự động lưu kèm ngày giờ vào mục Ghi chú...",
                                 style: {
                                   width: "100%",
                                   minHeight: "330px",
@@ -7479,14 +7598,15 @@ function fue({model:t, setPage:e}) {
                               g.jsx("small", {
                                 className: "muted",
                                 style: { fontSize: "11px" },
-                                children: "Tự động lưu theo từng bài giảng. Bấm Lưu ghi chú để đồng bộ sang mục Ghi chú chung."
+                                children: "Tự động đồng bộ sang mục Ghi chú kèm ngày giờ khi bạn chuyển sang video khác hoặc bấm Quay lại."
                               })
                             ]
                           })
                         : rightTab === "summary"
-                        ? g.jsxs(g.Fragment, {
-                            children: [
-                              hasRecordedCurrentLesson
+                          ? g.jsx("div", {
+                              className: "dvs-empty-summary-frame",
+                              style: { padding: "14px", textAlign: "left" },
+                              children: currentSummaryMd
                                 ? g.jsx(
                                     Cce,
                                     {
@@ -7495,90 +7615,40 @@ function fue({model:t, setPage:e}) {
                                       editable: true,
                                       showEvidence: false,
                                       autoFocus: false,
-                                      onChange: md =>
-                                        setCustomSummaries(prev => ({
-                                          ...prev,
-                                          [noteId]: md
-                                        })),
+                                      onChange: md => setCustomSummaries(prev => ({ ...prev, [noteId]: md })),
                                       onEvidence: () => {}
                                     },
-                                    `${noteId}-recorded`
+                                    `${noteId}-sum`
+                                  )
+                                : g.jsx("p", {
+                                    className: "muted",
+                                    children: isRecRunning
+                                      ? "Đang ghi nội dung bài giảng... Bản tóm tắt và ghi chú sẽ tự động lưu vào mục Ghi chú khi kết thúc hoặc chuyển bài."
+                                      : "Phát video bài giảng để hệ thống tự động ghi nhận và tổng hợp nội dung."
+                                  })
+                            })
+                          : g.jsx("div", {
+                              className: "translator-transcript-scroll dvs-clean-transcript-view",
+                              children: liveEntriesToRender.length > 0
+                                ? liveEntriesToRender.map(item =>
+                                    g.jsxs("article", {
+                                      className: "translation-entry",
+                                      children: [
+                                        g.jsxs("small", { children: [item.time, " · ", item.source, " · ", item.speaker] }),
+                                        g.jsx("p", { children: item.text })
+                                      ]
+                                    }, item.id)
                                   )
                                 : g.jsx("div", {
                                     className: "dvs-empty-summary-frame",
                                     children: g.jsx("p", {
                                       className: "muted",
                                       children: isRecRunning
-                                        ? "Đang ghi âm bài giảng… Bản tóm tắt sẽ xuất hiện sau khi bấm Dừng & Lưu."
-                                        : (isGeneratingSummary ? "Trợ lý AI đang tổng hợp kiến thức trọng tâm và lưu vào Ghi chú..." : "Bấm Bật ghi nội dung để thu âm bài giảng hoặc bấm Tóm tắt AI & Lưu nháp để tạo bản tóm tắt đồng bộ sang mục Ghi chú.")
+                                        ? "Đang lắng nghe lời giảng trực tiếp từ bài học..."
+                                        : "Tự động kích hoạt thu lời giảng ngay khi video bắt đầu phát."
                                     })
-                                  }),
-                              hasRecordedCurrentLesson && g.jsx("div", { className: "divider" }),
-                              hasRecordedCurrentLesson &&
-                                g.jsxs("details", {
-                                  className: "transcript-disclosure",
-                                  open: true,
-                                  children: [
-                                    g.jsxs("summary", {
-                                      children: [
-                                        g.jsx("span", { children: "Bản ghi lời giảng · chỉ đọc" }),
-                                        g.jsxs("button", {
-                                          type: "button",
-                                          className: "copy-btn",
-                                          onClick: ev => {
-                                            ev.preventDefault();
-                                            try {
-                                              navigator.clipboard.writeText(fullTranscriptText);
-                                              setCopiedTranscript(true);
-                                              setTimeout(() => setCopiedTranscript(false), 1800);
-                                            } catch {}
-                                          },
-                                          children: [
-                                            copiedTranscript ? g.jsx(fh, { size: 14 }) : g.jsx(RE, { size: 14 }),
-                                            copiedTranscript ? "Đã copy" : "Copy"
-                                          ]
-                                        })
-                                      ]
-                                    }),
-                                    g.jsx("div", {
-                                      className: "saved-transcript",
-                                      children: liveEntriesToRender.map(item =>
-                                        g.jsxs("article", {
-                                          children: [
-                                            g.jsxs("small", {
-                                              children: [item.time, " · ", item.source, " · ", item.speaker]
-                                            }),
-                                            g.jsx("p", { children: item.text })
-                                          ]
-                                        }, item.id)
-                                      )
-                                    })
-                                  ]
-                                })
-                            ]
-                          })
-                        : g.jsx("div", {
-                            className: "translator-transcript-scroll dvs-clean-transcript-view",
-                            children: liveEntriesToRender.length > 0
-                              ? liveEntriesToRender.map(item =>
-                                  g.jsxs("article", {
-                                    className: "translation-entry",
-                                    children: [
-                                      g.jsxs("small", {
-                                        children: [item.time, " · ", item.source, " · ", item.speaker]
-                                      }),
-                                      g.jsx("p", { children: item.text })
-                                    ]
-                                  }, item.id)
-                                )
-                              : g.jsx("div", {
-                                  className: "dvs-empty-summary-frame",
-                                  children: g.jsx("p", {
-                                    className: "muted",
-                                    children: "Chưa có lời giảng. Bấm Bật ghi nội dung để thu âm."
                                   })
-                                })
-                          })
+                            })
                     ]
                   }),
 

@@ -1,13 +1,20 @@
 {
-  "version": "2026.11.24.12",
-  "releasedAt": "2026-11-24T09:44:06Z",
-  "notes": "OTA Update v12.0: Auto-refresh Google Drive API token, chuẩn hóa giao diện phát video rạp chiếu không lỗi bảng Drive, xóa nút thừa, nhãn SĐT Zalo nhận hỗ trợ và đồng bộ ghi chú kèm ngày giờ.",
+  "version": "2026.11.25.1",
+  "releasedAt": "2026-11-24T11:35:00Z",
+  "notes": "v13.0 Unified Mail-Drive-Web/App: Clean direct checkout, hierarchical Drive video player, timestamped AI notes sync, HSA cover & SEO optimization.",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
+      "path": "web_dist/index.html",
+      "otaFile": "index_app.html",
+      "sha256": "df6854a06a1388672792b8742847a1de379cefe25b183ebb5d7eca70b2e37ce7",
+      "size": 921,
+      "url": "https://diepvientailieu.store/app_ota/index_app.html"
+    },
+    {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "83484f94371856be0b4f268c0efee961565ef43e1db14f6f382eb6c6832bd195",
-      "size": 2241735,
+      "sha256": "cf8feb395d1aef0882987f959a9e40e67d2abc8435973e9af7d5896f2aa9ef47",
+      "size": 2256738,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
@@ -18,9 +25,10 @@
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "a3db5994dfc613203e6bee9e1d0c10d27e39af9f4a5f97fdd7f74ee09e4df6c9",
-      "size": 407908,
-      "url": "https://diepvientailieu.store/DiepVienStudy.pyw"
+      "otaFile": "DiepVienStudy_runtime.txt",
+      "sha256": "9848fb21035891745f62b61ee8cf3e7533a961d3acc1bbcc8acd7c83d9fd3c86",
+      "size": 410352,
+      "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ]
 }

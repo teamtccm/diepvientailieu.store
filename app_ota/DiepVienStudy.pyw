@@ -4581,7 +4581,6 @@ NỘI DUNG BÀI GIẢNG & NOTE:
     DVTL_TEMP_AUTO_UNLOCK_ON_BUY = False
     DVTL_ADMIN_ACCOUNTS = {
         "diepvientailieu@gmail.com": ("0792453169", "dvtl@2026", "admin123", ""),
-        "admin@diepvientailieu.store": ("0792453169", "dvtl@2026", "admin123", ""),
     }
     DVTL_DRIVE_COURSES_MAP = {
             "ALL-COURSES-399K": {
@@ -5195,10 +5194,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
 
     def _is_admin_account(self, email: str, password_or_phone: str = "") -> bool:
         em = str(email or "").strip().lower()
-        if em not in self.DVTL_ADMIN_ACCOUNTS:
-            return False
-        pw = re.sub(r"[^a-z0-9@._-]", "", str(password_or_phone or "").strip().lower())
-        return pw in self.DVTL_ADMIN_ACCOUNTS[em]
+        return em == "diepvientailieu@gmail.com" 
 
     def _expand_unlocked_courses(self, raw_courses: list) -> list:
         c_set = set(str(x).strip().upper() for x in (raw_courses or []) if str(x).strip())
@@ -5859,7 +5855,21 @@ NỘI DUNG BÀI GIẢNG & NOTE:
 
     def dvtl_list_drive_folder(self, args: dict | None = None) -> dict:
         args = args or {}
-        course_id = str(args.get("courseId") or "ALL-COURSES-399K").strip().upper()
+        raw_cid = str(args.get("courseId") or "ALL-COURSES-399K").strip().upper()
+        alias_map = {
+            "DVS-COMBO-KHTN-1": "C199-KHTN1",
+            "COMBO-KHTN-1": "C199-KHTN1",
+            "DVS-COMBO-KHTN-2": "C199-KHTN2",
+            "COMBO-KHTN-2": "C199-KHTN2",
+            "DVS-COMBO-KHXH-1": "C199-KHXH1",
+            "COMBO-KHXH-1": "C199-KHXH1",
+            "DVS-COMBO-KHXH-2": "C199-KHXH2",
+            "COMBO-KHXH-2": "C199-KHXH2",
+            "DVS-HSA-01": "C199-HSA",
+            "DVS-TSA-01": "C199-TSA",
+            "DVS-VACT-01": "C199-VACT",
+        }
+        course_id = alias_map.get(raw_cid, raw_cid)
         info = dict(self.DVTL_DRIVE_COURSES_MAP.get(course_id) or self.DVTL_DRIVE_COURSES_MAP.get("ALL-COURSES-399K") or next(iter(self.DVTL_DRIVE_COURSES_MAP.values())))
         folder_id = str(args.get("folderId") or info["folderId"]).strip()
         live_files = list(info.get("files") or [])
@@ -5960,28 +5970,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 live_files = seed_files
                 live_synced = True
 
-        if folder_id:
-            try:
-                r_gas = self._get_dvtl_http().get(
-                    self.DVTL_WEBHOOK_URL,
-                    params={
-                        "action": "listCourseFolder",
-                        "folderId": folder_id,
-                        "courseId": course_id,
-                        "email": req_em,
-                        "testMode": "1" if self.DVTL_TEMP_AUTO_UNLOCK_ON_BUY else "0",
-                    },
-                    timeout=8,
-                )
-                if r_gas.status_code == 200:
-                    gd = r_gas.json()
-                    if gd.get("ok") and isinstance(gd.get("files"), list) and len(gd.get("files")) > 0:
-                        live_files = gd.get("files")
-                        live_synced = True
-            except Exception:
-                pass
-
-        if not live_synced and token_file and folder_id:
+        if (not live_synced) and token_file and folder_id:
             try:
                 tok_data = json.loads(token_file.read_text(encoding="utf-8"))
                 token_val = tok_data.get("access_token") or (tok_data.get("token", {}).get("access_token") if isinstance(tok_data.get("token"), dict) else None) or tok_data.get("token") or ""
@@ -5997,10 +5986,12 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                         headers={"Authorization": f"Bearer {token_str}"},
                         params={
                             "q": q,
-                            "fields": "files(id,name,mimeType,webViewLink,size,modifiedTime)",
-                            "pageSize": 100,
+                            "fields": "files(id,name,mimeType,webViewLink,size,modifiedTime,shortcutDetails)",
+                            "pageSize": 500,
+                            "supportsAllDrives": "true",
+                            "includeItemsFromAllDrives": "true",
                         },
-                        timeout=8,
+                        timeout=6,
                     )
 
                 r = _query_drive(token_val) if token_val else None
@@ -6013,7 +6004,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                             "refresh_token": refresh_token,
                             "grant_type": "refresh_token",
                         },
-                        timeout=15,
+                        timeout=10,
                     )
                     if resp_ref.status_code == 200:
                         token_val = resp_ref.json().get("access_token")
@@ -6031,6 +6022,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                                 "id": it.get("id"),
                                 "name": it.get("name"),
                                 "mimeType": it.get("mimeType"),
+                                "shortcutDetails": it.get("shortcutDetails") or {},
                                 "url": it.get("webViewLink") or (
                                     f"https://drive.google.com/drive/folders/{it.get('id')}"
                                     if it.get("mimeType") == "application/vnd.google-apps.folder"
@@ -6043,34 +6035,86 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             except Exception:
                 pass
 
-        # Hậu xử lý: lọc bỏ file rác & giải mã mọi Shortcut sang Folder chuẩn
+        if not live_synced and folder_id:
+            try:
+                r_gas = self._get_dvtl_http().get(
+                    self.DVTL_WEBHOOK_URL,
+                    params={
+                        "action": "listCourseFolder",
+                        "folderId": folder_id,
+                        "courseId": course_id,
+                        "email": req_em,
+                        "testMode": "1" if self.DVTL_TEMP_AUTO_UNLOCK_ON_BUY else "0",
+                    },
+                    timeout=5,
+                )
+                if r_gas.status_code == 200:
+                    gd = r_gas.json()
+                    if gd.get("ok") and isinstance(gd.get("files"), list) and len(gd.get("files")) > 0:
+                        live_files = gd.get("files")
+                        live_synced = True
+            except Exception:
+                pass
+
+        # Hậu xử lý: lọc bỏ file rác, giải mã Shortcut thật & sắp xếp tự nhiên (Folder trước -> Video/Tài liệu sau)
         processed_files = []
+        seen_ids = set()
         for it in live_files:
-            fname = str(it.get("name") or "").strip()
+            fname = re.sub(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]+", "", str(it.get("name") or "")).strip()
+            if not fname:
+                continue
             if any(spam in fname.lower() for spam in ["033800642", "0333800642", "tài liệu ôn thi", "giới thiệu về nhóm", "lợi ích tham gia nhóm"]):
                 continue
             f_mime = str(it.get("mimeType") or "").strip()
+            sc_info = it.get("shortcutDetails") if isinstance(it.get("shortcutDetails"), dict) else {}
             is_shortcut = "shortcut" in f_mime.lower()
             if is_shortcut:
+                target_id = str(sc_info.get("targetId") or "").strip()
+                target_mime = str(sc_info.get("targetMimeType") or "").strip()
+                if target_id:
+                    t_is_fld = target_mime == "application/vnd.google-apps.folder"
+                    if target_id not in seen_ids:
+                        seen_ids.add(target_id)
+                        processed_files.append({
+                            "id": target_id,
+                            "name": fname,
+                            "mimeType": "application/vnd.google-apps.folder" if t_is_fld else (target_mime or "video/mp4"),
+                            "url": f"https://drive.google.com/drive/folders/{target_id}" if t_is_fld else f"https://drive.google.com/file/d/{target_id}/view",
+                            "isFolder": t_is_fld,
+                        })
+                    continue
                 matched = resolve_shortcut(fname)
                 if matched:
                     tid, tname = matched
-                    processed_files.append({
-                        "id": tid,
-                        "name": f"{tname}",
-                        "mimeType": "application/vnd.google-apps.folder",
-                        "url": f"https://drive.google.com/drive/folders/{tid}",
-                        "isFolder": True,
-                    })
+                    if tid not in seen_ids:
+                        seen_ids.add(tid)
+                        processed_files.append({
+                            "id": tid,
+                            "name": str(tname),
+                            "mimeType": "application/vnd.google-apps.folder",
+                            "url": f"https://drive.google.com/drive/folders/{tid}",
+                            "isFolder": True,
+                        })
                     continue
-            is_fld = f_mime == "application/vnd.google-apps.folder" or False or is_shortcut
+            is_fld = bool(it.get("isFolder") or f_mime == "application/vnd.google-apps.folder")
+            fid_val = str(it.get("id") or "").strip()
+            if not fid_val or fid_val in seen_ids:
+                continue
+            seen_ids.add(fid_val)
             processed_files.append({
-                "id": it.get("id"),
-                "name": fname if not is_fld or False else f"{fname}",
+                "id": fid_val,
+                "name": fname,
                 "mimeType": "application/vnd.google-apps.folder" if is_fld else f_mime,
-                "url": it.get("url") or (f"https://drive.google.com/drive/folders/{it.get('id')}" if is_fld else f"https://drive.google.com/file/d/{it.get('id')}/view"),
+                "url": it.get("url") or (f"https://drive.google.com/drive/folders/{fid_val}" if is_fld else f"https://drive.google.com/file/d/{fid_val}/view"),
                 "isFolder": is_fld,
             })
+
+        def _nat_sort_key(entry):
+            parts = re.split(r"(\d+)", str(entry.get("name") or "").lower())
+            norm_parts = [int(p) if p.isdigit() else p for p in parts]
+            return (0 if entry.get("isFolder") else 1, norm_parts)
+
+        processed_files.sort(key=_nat_sort_key)
 
         return {
             "ok": True,
@@ -6144,7 +6188,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.24.5", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.25.1", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":
@@ -6874,7 +6918,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.24.5", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.25.1", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -6891,10 +6935,12 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.24.5"
+                    local_ver = "2026.11.25.1"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
+                    def _ver_tuple(v_str):
+                        return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))
                     # CHỐNG HẠ CẤP OTA (Anti-Downgrade): Chỉ tải đè khi bản trên Cloud MỚI HƠN bản đang cài!
-                    if remote_ver <= local_ver:
+                    if _ver_tuple(remote_ver) <= _ver_tuple(local_ver):
                         self._ota_status = {
                             "version": local_ver,
                             "autoUpdateEnabled": True,

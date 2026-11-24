@@ -1324,7 +1324,7 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
                     </h4>
                     <div class="flex items-center gap-2.5 mt-2 text-[10px]">
                         <span class="text-amber-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg> ${nat.pages} Trang A4</span>
-                        <span class="text-emerald-300 font-bold"> ${nat.rating} (${nat.reviewsCount})</span>
+                        <span class="text-emerald-300 font-bold inline-flex items-center gap-1"><svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>${nat.rating} (${nat.reviewsCount})</span>
                         <span class="text-sky-200 font-bold">Google Drive</span>
                     </div>
                 </div>
@@ -1521,11 +1521,13 @@ function syncDocCheckoutGoogleUi() {
 function onDocCheckoutContactInput() {
     const emailVal = (document.getElementById("checkoutEmailInput")?.value || "").trim().toLowerCase();
     const phoneVal = (document.getElementById("checkoutPhoneInput")?.value || "").replace(/\[.*\]/g, "").trim();
+    try {
+        if (phoneVal) localStorage.setItem("dvs_cust_phone", phoneVal);
+        if (emailVal && emailVal.includes("@")) localStorage.setItem("dvtl_guest_checkout_email", emailVal);
+    } catch (_) {}
     const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
-    const finalEmail = emailVal || (cust.email || "").trim().toLowerCase();
-    const finalName = (cust.name || "").trim() || (finalEmail.includes("@") ? finalEmail.split("@")[0] : "Khách Hàng");
-    if (finalEmail.includes("@") || phoneVal.length >= 9) {
-        saveCustomerProfileEverywhere({ name: finalName, phone: phoneVal, email: finalEmail, source: "WEB_DOC_QR_INPUT" });
+    if (isCustomerGoogleLoggedIn(cust) && phoneVal.length >= 9) {
+        saveCustomerProfileEverywhere({ name: cust.name, phone: phoneVal, email: cust.email, verifiedByGoogle: true, source: "WEB_DOC_QR_INPUT" });
     }
 }
 
@@ -1697,6 +1699,7 @@ async function layTaiKhoanVaHienQR(amount, orderMemo) {
 
 function closeDocCheckoutModal() {
     if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
+    if (window._docTimerInterval) { clearInterval(window._docTimerInterval); window._docTimerInterval = null; }
     const modal = document.getElementById("docCheckoutModal");
     if (modal) modal.classList.add("hidden");
     document.body.style.overflow = "auto";
@@ -1911,6 +1914,7 @@ async function confirmDocManualPayment() {
 function backToDocStep1() {
 
     if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
+    if (window._docTimerInterval) { clearInterval(window._docTimerInterval); window._docTimerInterval = null; }
 
     document.getElementById("docCheckoutStep2").classList.add("hidden");
 
@@ -3910,11 +3914,13 @@ function syncCourseCheckoutGoogleUi() {
 function onCourseCheckoutContactInput() {
     const emailVal = (document.getElementById("courseStudentEmail")?.value || "").trim().toLowerCase();
     const phoneVal = (document.getElementById("courseStudentPhone")?.value || "").replace(/\[.*\]/g, "").trim();
+    try {
+        if (phoneVal) localStorage.setItem("dvs_cust_phone", phoneVal);
+        if (emailVal && emailVal.includes("@")) localStorage.setItem("dvtl_guest_checkout_email", emailVal);
+    } catch (_) {}
     const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
-    const finalEmail = emailVal || (cust.email || "").trim().toLowerCase();
-    const finalName = (cust.name || "").trim() || (finalEmail.includes("@") ? finalEmail.split("@")[0] : "Học Viên");
-    if (finalEmail.includes("@") || phoneVal.length >= 9) {
-        saveCustomerProfileEverywhere({ name: finalName, phone: phoneVal, email: finalEmail, source: "WEB_COURSE_QR_INPUT" });
+    if (isCustomerGoogleLoggedIn(cust) && phoneVal.length >= 9) {
+        saveCustomerProfileEverywhere({ name: cust.name, phone: phoneVal, email: cust.email, verifiedByGoogle: true, source: "WEB_COURSE_QR_INPUT" });
     }
 }
 
@@ -3953,6 +3959,7 @@ function openCourseCheckoutModal(courseId) {
 
 function closeCourseCheckoutModal() {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
+    if (window._courseTimerInterval) { clearInterval(window._courseTimerInterval); window._courseTimerInterval = null; }
     const modal = document.getElementById("courseCheckoutModal");
     modal.classList.add("hidden");
     modal.classList.remove("flex");
@@ -4086,6 +4093,7 @@ async function checkCoursePaymentStatus(orderCode, courseTitle, email, isManual 
 
 function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl = "") {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
+    if (window._courseTimerInterval) { clearInterval(window._courseTimerInterval); window._courseTimerInterval = null; }
 
     const course = selectedCourseForCheckout || COURSES_DATABASE[0];
     const cust = getSyncedCustomerLocal() || {};
@@ -4147,6 +4155,7 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl 
 
 function backToCourseStep1() {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
+    if (window._courseTimerInterval) { clearInterval(window._courseTimerInterval); window._courseTimerInterval = null; }
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
 }
@@ -4329,7 +4338,24 @@ function getSyncedCustomerLocal() {
     }
 }
 
-function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", source = "WEB_AUTO_SYNC" } = {}) {
+function isCustomerGoogleLoggedIn(custObj) {
+    const c = custObj || (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
+    return Boolean(c && c.verifiedByGoogle === true && c.email && String(c.email).includes("@"));
+}
+
+function saveCustomerProfileEverywhere(payload = {}) {
+    const {
+        name = "",
+        phone = "",
+        email = "",
+        picture,
+        verifiedByGoogle,
+        isAdmin,
+        unlockedCourses,
+        purchasedDocs,
+        btlOrders,
+        source = "WEB_AUTO_SYNC"
+    } = payload;
     const prev = getSyncedCustomerLocal() || {};
     const cleanName = (name || prev.name || "").trim();
     const cleanEmail = (email || prev.email || "").trim().toLowerCase();
@@ -4337,14 +4363,20 @@ function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", sour
 
     if (!cleanName && !cleanEmail) return prev;
 
+    const sameEmailAsPrev = Boolean(prev.email && cleanEmail && prev.email.toLowerCase() === cleanEmail);
+    const nextVerifiedByGoogle = verifiedByGoogle === true || (sameEmailAsPrev && prev.verifiedByGoogle === true);
+
     const updated = {
         ...prev,
         name: cleanName,
         email: cleanEmail,
         phone: cleanPhone,
-        unlockedCourses: prev.unlockedCourses || [],
-        purchasedDocs: prev.purchasedDocs || [],
-        btlOrders: prev.btlOrders || []
+        picture: picture !== undefined ? picture : (sameEmailAsPrev ? (prev.picture || "") : ""),
+        verifiedByGoogle: nextVerifiedByGoogle,
+        isAdmin: isAdmin !== undefined ? Boolean(isAdmin) : Boolean(nextVerifiedByGoogle && ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(cleanEmail)),
+        unlockedCourses: Array.isArray(unlockedCourses) ? unlockedCourses : (sameEmailAsPrev ? (prev.unlockedCourses || []) : []),
+        purchasedDocs: Array.isArray(purchasedDocs) ? purchasedDocs : (sameEmailAsPrev ? (prev.purchasedDocs || []) : []),
+        btlOrders: Array.isArray(btlOrders) ? btlOrders : (sameEmailAsPrev ? (prev.btlOrders || []) : [])
     };
 
     try {
@@ -5497,7 +5529,7 @@ window.openWebCourseStudyHubModal = function(courseId) {
                 </div>
                 <div class="flex items-center gap-2 pt-2 border-t border-slate-200/70 dark:border-white/10">
                     <a href="${uUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-[11px] rounded-xl text-center shadow-sm transition">
-                         Mở Thư Mục Học Phần Này ↗
+                         Mở Thư Mục Học Phần
                     </a>
                 </div>
             </div>
@@ -5506,7 +5538,7 @@ window.openWebCourseStudyHubModal = function(courseId) {
 
     modal.innerHTML = `
         <div class="bg-white dark:bg-[#0A143D] rounded-3xl shadow-2xl border border-slate-200 dark:border-white/15 w-full max-w-2xl max-h-[92vh] overflow-y-auto p-5 sm:p-6 relative" onclick="event.stopPropagation()">
-            <button onclick="closeWebCourseStudyHubModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition"></button>
+            <button onclick="closeWebCourseStudyHubModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition">&times;</button>
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-4 border-b border-slate-200 dark:border-white/10 pr-8">
                 <img src="${course.coverImage || course.defaultCover || 'images/banners/combo_khtn.png'}" alt="${course.title}" class="w-full sm:w-36 aspect-video object-cover rounded-xl border border-slate-200 shrink-0">
                 <div class="space-y-1">
@@ -5524,7 +5556,7 @@ window.openWebCourseStudyHubModal = function(courseId) {
                          Cấu Trúc Các Môn & Chuyên Đề Trong Khóa Của Bạn (${units.length} thư mục)
                     </h4>
                     <a href="${mainDriveUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-white font-black text-[11px] shadow-sm transition">
-                         Mở Folder Tổng ↗
+                         Mở Drive Khóa Học
                     </a>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-3 max-h-[52vh] overflow-y-auto pr-1">
@@ -5570,77 +5602,121 @@ dvtlRefreshHeaderGoogleBtn = function(cust) {
 };
 
 
-// [v10.7 FORM VALIDATION OVERRIDE]
+
+// [v10.8 STRICT AUTH, CHECKOUT VALIDATION & DUAL-END DRIVE ACCESS]
 (function() {
-    window.adjustCheckoutFormForAuthState = function(modalType) {
+    window.isWebCourseUnlocked = function(courseId) {
+        const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
+        if (!cust || !isCustomerGoogleLoggedIn(cust)) return false;
+        const em = String(cust.email || "").trim().toLowerCase();
+        if (cust.isAdmin || em === "diepvientailieu@gmail.com" || em === "admin@diepvientailieu.store") return true;
+        if (!Array.isArray(cust.unlockedCourses) || cust.unlockedCourses.length === 0) return false;
+        const expanded = expandWebUnlockedCourses(cust.unlockedCourses);
+        const target = String(courseId || "").toUpperCase();
+        return expanded.includes("ALL-COURSES-399K") || expanded.includes("__ALL_COURSES_399K__") || expanded.includes(target);
+    };
+
+    window.syncDocCheckoutGoogleUi = function() {
         const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
-        const cleanEmail = String(cust.email || "").trim().toLowerCase();
-        const isLoggedIn = Boolean(cleanEmail && cleanEmail.includes("@"));
+        const loggedIn = isCustomerGoogleLoggedIn(cust);
+        const savedEmail = loggedIn ? String(cust.email || "").trim().toLowerCase() : "";
+        const savedName = loggedIn ? String(cust.name || "").trim() : "";
+        const savedPhone = String(cust.phone || localStorage.getItem("dvs_cust_phone") || "").replace(/\[.*\]/g, "").trim();
 
-        if (modalType === "doc" || !modalType) {
-            const emailInput = document.getElementById("checkoutEmailInput");
-            const emailContainer = emailInput ? emailInput.closest("div") : null;
-            const banner = document.getElementById("docGoogleLoggedBanner");
-            const savedText = document.getElementById("docSavedAccountText");
-            if (isLoggedIn) {
-                if (emailInput) emailInput.value = cleanEmail;
-                if (emailContainer) emailContainer.classList.add("hidden");
-                if (banner) {
-                    banner.classList.remove("hidden");
-                    if (savedText) savedText.textContent = cleanEmail;
-                }
-            } else {
-                if (emailContainer) emailContainer.classList.remove("hidden");
-                if (banner) banner.classList.add("hidden");
-            }
-        }
+        const bannerEl = document.getElementById("docGoogleLoggedBanner");
+        const emailWrapEl = document.getElementById("docEmailInputWrap");
+        const savedTxtEl = document.getElementById("docSavedAccountText");
+        const emailInputEl = document.getElementById("checkoutEmailInput");
+        const phoneInputEl = document.getElementById("checkoutPhoneInput");
 
-        if (modalType === "course" || !modalType) {
-            const courseEmailInput = document.getElementById("courseStudentEmail");
-            const courseEmailContainer = courseEmailInput ? courseEmailInput.closest("div") : null;
-            const courseBanner = document.getElementById("courseGoogleLoggedBanner");
-            const courseSavedText = document.getElementById("courseSavedAccountText");
-            if (isLoggedIn) {
-                if (courseEmailInput) courseEmailInput.value = cleanEmail;
-                if (courseEmailContainer) courseEmailContainer.classList.add("hidden");
-                if (courseBanner) {
-                    courseBanner.classList.remove("hidden");
-                    if (courseSavedText) courseSavedText.textContent = cleanEmail;
-                }
-            } else {
-                if (courseEmailContainer) courseEmailContainer.classList.remove("hidden");
-                if (courseBanner) courseBanner.classList.add("hidden");
-            }
-        }
+        if (phoneInputEl && savedPhone && !phoneInputEl.value) phoneInputEl.value = savedPhone;
 
-        if (modalType === "course" || !modalType) {
-            const courseEmailInput = document.getElementById("courseStudentEmail");
-            const courseEmailContainer = courseEmailInput ? courseEmailInput.closest("div") : null;
-            if (courseEmailInput && isLoggedIn) {
-                courseEmailInput.value = cleanEmail;
-                if (courseEmailContainer) {
-                    courseEmailContainer.classList.add("hidden");
-                }
-            } else if (courseEmailContainer) {
-                courseEmailContainer.classList.remove("hidden");
+        if (loggedIn && savedEmail) {
+            if (bannerEl) bannerEl.classList.remove("hidden");
+            if (emailWrapEl) emailWrapEl.classList.add("hidden");
+            if (savedTxtEl) savedTxtEl.textContent = savedName ? `${savedName} (${savedEmail})` : savedEmail;
+            if (emailInputEl) emailInputEl.value = savedEmail;
+        } else {
+            if (bannerEl) bannerEl.classList.add("hidden");
+            if (emailWrapEl) emailWrapEl.classList.remove("hidden");
+            if (emailInputEl && emailInputEl.value === String(cust.email || "").trim().toLowerCase() && !loggedIn) {
+                emailInputEl.value = "";
             }
         }
     };
 
-    const origOpenDoc = window.openCheckoutModal;
+    window.syncCourseCheckoutGoogleUi = function() {
+        const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+        const loggedIn = isCustomerGoogleLoggedIn(cust);
+        const savedEmail = loggedIn ? String(cust.email || "").trim().toLowerCase() : "";
+        const savedName = loggedIn ? String(cust.name || "").trim() : "";
+        const savedPhone = String(cust.phone || localStorage.getItem("dvs_cust_phone") || "").replace(/\[.*\]/g, "").trim();
+
+        const bannerEl = document.getElementById("courseSavedAccountBanner");
+        const emailWrapEl = document.getElementById("courseEmailInputWrap");
+        const savedTxtEl = document.getElementById("courseSavedAccountText");
+        const emailInputEl = document.getElementById("courseStudentEmail");
+        const phoneInputEl = document.getElementById("courseStudentPhone");
+        const nameInputEl = document.getElementById("courseStudentName");
+
+        if (nameInputEl && savedName) nameInputEl.value = savedName;
+        if (phoneInputEl && savedPhone && !phoneInputEl.value) phoneInputEl.value = savedPhone;
+
+        if (loggedIn && savedEmail) {
+            if (bannerEl) bannerEl.classList.remove("hidden");
+            if (emailWrapEl) emailWrapEl.classList.add("hidden");
+            if (savedTxtEl) savedTxtEl.textContent = savedName ? `${savedName} (${savedEmail})` : savedEmail;
+            if (emailInputEl) emailInputEl.value = savedEmail;
+        } else {
+            if (bannerEl) bannerEl.classList.add("hidden");
+            if (emailWrapEl) emailWrapEl.classList.remove("hidden");
+            if (emailInputEl && emailInputEl.value === String(cust.email || "").trim().toLowerCase() && !loggedIn) {
+                emailInputEl.value = "";
+            }
+        }
+    };
+
+    window.adjustCheckoutFormForAuthState = function(modalType) {
+        if (modalType === "doc" || !modalType) window.syncDocCheckoutGoogleUi();
+        if (modalType === "course" || !modalType) window.syncCourseCheckoutGoogleUi();
+    };
+
+    const _origHeaderAuth = window.handleHeaderAuthClick;
+    window.handleHeaderAuthClick = function() {
+        const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+        if (isCustomerGoogleLoggedIn(cur)) {
+            if (typeof openCustomerSyncModal === "function") openCustomerSyncModal();
+            if (typeof dvtlRefreshHeaderGoogleBtn === "function") dvtlRefreshHeaderGoogleBtn(cur);
+            return;
+        }
+        const opened = typeof triggerDirectGoogleLoginPopup === "function" ? triggerDirectGoogleLoginPopup() : false;
+        if (!opened && typeof openCustomerSyncModal === "function") {
+            openCustomerSyncModal();
+        }
+    };
+
+    const _origRefreshBtn = window.dvtlRefreshHeaderGoogleBtn;
+    if (typeof _origRefreshBtn === "function") {
+        window.dvtlRefreshHeaderGoogleBtn = function(custArg) {
+            const c = custArg || (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
+            return _origRefreshBtn(isCustomerGoogleLoggedIn(c) ? c : null);
+        };
+    }
+
+    const origOpenDoc = window.openDocCheckoutModal;
     if (typeof origOpenDoc === "function") {
-        window.openCheckoutModal = function(docId) {
+        window.openDocCheckoutModal = function() {
             const res = origOpenDoc.apply(this, arguments);
-            setTimeout(() => { if (window.adjustCheckoutFormForAuthState) window.adjustCheckoutFormForAuthState("doc"); }, 50);
+            window.syncDocCheckoutGoogleUi();
             return res;
         };
     }
 
     const origOpenCourse = window.openCourseCheckoutModal;
     if (typeof origOpenCourse === "function") {
-        window.openCourseCheckoutModal = function(courseId) {
+        window.openCourseCheckoutModal = function() {
             const res = origOpenCourse.apply(this, arguments);
-            setTimeout(() => { if (window.adjustCheckoutFormForAuthState) window.adjustCheckoutFormForAuthState("course"); }, 50);
+            window.syncCourseCheckoutGoogleUi();
             return res;
         };
     }

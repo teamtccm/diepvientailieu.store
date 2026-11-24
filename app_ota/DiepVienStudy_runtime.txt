@@ -98,7 +98,7 @@ HALLUCINATION_PATTERNS = re.compile(
     r"thank you\.?|thanks for watching\.?|subtitles by .*|amara\.org.*|"
     r"hãy đăng ký kênh.*|cảm ơn các bạn đã theo dõi.*|đừng quên nhấn like.*|"
     r"subscribe to .*|please subscribe.*|bell icon.*|mbc.*|kbs.*|sbs.*|"
-    r"字幕.*|感谢观看.*|謝謝觀看.*|请订阅.*|[\s.,!?;:\-…]+|"
+    r".*|.*|.*|.*|[\s.,!?;:\-…]+|"
     r"you|oh|uh|um|hmm|ah"
     r")$",
     re.IGNORECASE,
@@ -2757,7 +2757,7 @@ NỘI DUNG BẢN GHI NGUỒN:
 
         pieces = []
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-        noise_re = re.compile(r"^(\[.*\]|\(.*\)|♪.*|[-\s♪]+)$", re.IGNORECASE)
+        noise_re = re.compile(r"^(\[.*\]|\(.*\)|.*|[-\s]+)$", re.IGNORECASE)
         skip_meta_re = re.compile(
             r"(transcriber:|reviewer:|brought to you by stanford|visit us at stanford\.edu|captions by)",
             re.IGNORECASE,
@@ -2906,7 +2906,7 @@ NỘI DUNG BẢN GHI NGUỒN:
             return []
         merged = []
         cur = None
-        end_punct = re.compile(r"[.?!…。？！]['”’\)\]]*$")
+        end_punct = re.compile(r"[.?!…]['”’\)\]]*$")
 
         for p in pieces:
             txt = self._clean_caption_line(str(p.get("text") or ""), lang)
@@ -3091,7 +3091,7 @@ NỘI DUNG BẢN GHI NGUỒN:
         import difflib
         if lang == "zh":
             target_tokens = [c for c in target_text if not re.match(r"\s", c)]
-            spoken_clean = [c for c in re.sub(r"[\s.,!?;:…。？！、'”’（）()\[\]]+", "", recognized_text)]
+            spoken_clean = [c for c in re.sub(r"[\s.,!?;:…'”’()\[\]]+", "", recognized_text)]
         else:
             target_tokens = [
                 w.strip() for w in re.sub(r"\s*--+\s*", " ", target_text).replace('"', "").split()
@@ -3101,7 +3101,7 @@ NỘI DUNG BẢN GHI NGUỒN:
 
         def _norm_w(w: str) -> str:
             if lang == "zh":
-                return re.sub(r"[\s.,!?;:…。？！、'”’（）()\[\]]+", "", w)
+                return re.sub(r"[\s.,!?;:…'”’()\[\]]+", "", w)
             return re.sub(r"[^a-z0-9']+", "", w.lower()).strip("'")
 
         target_clean_list = [_norm_w(w) for w in target_tokens]
@@ -4296,7 +4296,7 @@ NỘI DUNG BÀI GIẢNG:
                     "id": f"fc-{i+1}",
                     "front": f"Điểm kiến thức #{i+1} trong buổi học",
                     "back": re.sub(r"^\[[^\]]+\]\s*", "", l),
-                    "tag": "⭐ Kiến thức cốt lõi",
+                    "tag": " Kiến thức cốt lõi",
                     "segmentId": first_sid,
                 })
             return {"mode": "flashcards", "cards": cards_fb}
@@ -4575,7 +4575,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
     DVTL_DRIVE_COURSES_199K_ROOT = "1ZlYt4iot-K6d0fZTb7hGwwnRgUV6Pdwh"
     # CHẾ ĐỘ KIỂM TRA TẠM THỜI: Khi True, ấn Mua trên App sẽ mở khóa ngay không cần xác thực thanh toán.
     # Đổi thành False để khóa lại: bắt buộc mua khóa nào mở khóa đó theo đúng Email + SĐT.
-    DVTL_TEMP_AUTO_UNLOCK_ON_BUY = True
+    DVTL_TEMP_AUTO_UNLOCK_ON_BUY = False
     DVTL_ADMIN_ACCOUNTS = {
         "diepvientailieu@gmail.com": ("0792453169", "dvtl@2026", "admin123", ""),
         "admin@diepvientailieu.store": ("0792453169", "dvtl@2026", "admin123", ""),
@@ -5234,7 +5234,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     "deviceId": hw_id,
                     "email": "",
                     "unlockedCourses": [],
-                    "message": "⛔ Phát hiện sao chép dữ liệu sang máy tính thứ 2! Tài khoản đã bị khóa bảo mật phần cứng."
+                    "message": " Phát hiện sao chép dữ liệu sang máy tính thứ 2! Tài khoản đã bị khóa bảo mật phần cứng."
                 }
             return {
                 "ok": True,
@@ -5298,7 +5298,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 "phone": req_phone or "0792453169",
                 "unlockedCourses": all_ids,
                 "tempAutoUnlock": bool(self.DVTL_TEMP_AUTO_UNLOCK_ON_BUY),
-                "message": f"✓ Đăng nhập tài khoản ADMIN [{req_email}] thành công — Đã mở khóa 100% toàn bộ khóa học!"
+                "message": f"Đăng nhập tài khoản ADMIN [{req_email}] thành công — Đã mở khóa 100% toàn bộ khóa học!"
             }
 
         # Chống dùng máy này để đăng nhập sang tài khoản thứ 2 nếu máy đã khóa cứng với tài khoản 1
@@ -5309,7 +5309,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 "deviceId": hw_id,
                 "email": local_lic.get("email"),
                 "unlockedCourses": local_lic.get("unlockedCourses") or [],
-                "message": f"⛔ BẢO MẬT 1 MÁY - 1 TÀI KHOẢN: Máy tính này ({hw_id}) đã được kích hoạt cố định với tài khoản Email [{local_lic.get('email')}]. Không thể đăng nhập hoặc chia sẻ sang tài khoản thứ 2!"
+                "message": f" BẢO MẬT 1 MÁY - 1 TÀI KHOẢN: Máy tính này ({hw_id}) đã được kích hoạt cố định với tài khoản Email [{local_lic.get('email')}]. Không thể đăng nhập hoặc chia sẻ sang tài khoản thứ 2!"
             }
 
         try:
@@ -5323,7 +5323,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                         "deviceLocked": True,
                         "deviceId": hw_id,
                         "unlockedCourses": [],
-                        "message": str(d.get("message") or "⛔ Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị khác!")
+                        "message": str(d.get("message") or " Tài khoản Email này đã được kích hoạt cố định trên 1 thiết bị khác!")
                     }
                 cust = d.get("customer") or {}
                 raw_srv_phone = str(cust.get("phone") or "")
@@ -5337,7 +5337,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                         "deviceId": hw_id,
                         "boundDeviceId": bound_other,
                         "unlockedCourses": [],
-                        "message": f"⛔ CẢNH BÁO BẢO MẬT: Tài khoản Email [{req_email}] đã được kích hoạt cố định trên 01 máy tính duy nhất ({bound_other}). Hệ thống nghiêm cấm đăng nhập hoặc chia sẻ sang máy thứ 2!"
+                        "message": f" CẢNH BÁO BẢO MẬT: Tài khoản Email [{req_email}] đã được kích hoạt cố định trên 01 máy tính duy nhất ({bound_other}). Hệ thống nghiêm cấm đăng nhập hoặc chia sẻ sang máy thứ 2!"
                     }
 
                 srv_courses = list(cust.get("unlockedCourses") or [])
@@ -5390,7 +5390,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     "name": final_name,
                     "phone": clean_phone,
                     "unlockedCourses": expanded,
-                    "message": f"✓ Đã xác thực & khóa bảo mật tài khoản [{req_email}] cố định trên thiết bị {hw_id} ({len(expanded)} khóa học đã mở)!"
+                    "message": f" Đã xác thực & khóa bảo mật tài khoản [{req_email}] cố định trên thiết bị {hw_id} ({len(expanded)} khóa học đã mở)!"
                 }
         except Exception as e:
             if local_lic.get("bound") and local_lic.get("email") == req_email:
@@ -5402,7 +5402,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     "name": local_lic.get("name", ""),
                     "phone": local_lic.get("phone", ""),
                     "unlockedCourses": local_lic.get("unlockedCourses", []),
-                    "message": f"✓ Đã khôi phục phiên bản quyền cố định trên máy {hw_id}."
+                    "message": f" Đã khôi phục phiên bản quyền cố định trên máy {hw_id}."
                 }
             return {
                 "ok": False,
@@ -5777,6 +5777,83 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             pass
         return {"ok": True, "verified": False, "paid": False, "status": "PENDING"}
 
+    def dvtl_ask_lesson_ai(self, args: dict | None = None) -> dict:
+        args = args or {}
+        question = str(args.get("question") or "").strip()
+        if not question:
+            return {"ok": False, "answer": "Vui lòng nhập câu hỏi về bài giảng.", "followUps": []}
+        course_title = str(args.get("courseTitle") or "Khóa học").strip()
+        instructor = str(args.get("instructor") or "Giảng viên").strip()
+        lesson_title = str(args.get("lessonTitle") or "").strip()
+        drive_file = str(args.get("driveFileName") or "").strip()
+        notes = str(args.get("notes") or "").strip()
+        summary = str(args.get("summary") or "").strip()
+        transcript = str(args.get("transcript") or "").strip()
+        history = args.get("history") or []
+
+        hist_lines = []
+        for h in history[-6:]:
+            if isinstance(h, dict):
+                role = "Học viên" if h.get("role") == "user" else "Trợ lý AI"
+                txt = str(h.get("content") or "").strip()
+                if txt:
+                    hist_lines.append(f"- {role}: {txt[:350]}")
+        hist_block = "\n".join(hist_lines)
+
+        sys_prompt = (
+            "Bạn là Trợ lý Học tập AI chuyên sâu của Điệp Viên Study. "
+            "Nhiệm vụ của bạn là giải đáp rõ ràng, chính xác, dễ hiểu câu hỏi của học viên về bài giảng hiện tại. "
+            "TUYỆT ĐỐI KHÔNG sử dụng bất kỳ biểu tượng cảm xúc (emoji) nào trong câu trả lời. "
+            "Trình bày khoa học bằng tiếng Việt chuẩn Markdown (in đậm khái niệm quan trọng, gạch đầu dòng các bước giải). "
+            "Trả về DUY NHẤT một JSON object hợp lệ theo cấu trúc: "
+            "{\"answer\": \"Nội dung trả lời chi tiết bằng Markdown...\", \"followUps\": [\"Câu hỏi gợi ý 1\", \"Câu hỏi gợi ý 2\", \"Câu hỏi gợi ý 3\"]}"
+        )
+        prompt = (
+            f"Khóa học: {course_title} ({instructor})\n"
+            f"Bài học / Tài liệu đang mở: {drive_file or lesson_title}\n"
+            f"Ghi chú của học viên:\n{notes[:2500]}\n\n"
+            f"Tóm tắt bài giảng:\n{summary[:3000]}\n\n"
+            f"Bản ghi lời giảng:\n{transcript[:8000]}\n\n"
+            f"Lịch sử trao đổi gần đây:\n{hist_block}\n\n"
+            f"CÂU HỎI CỦA HỌC VIÊN:\n{question}"
+        )
+
+        ans = ""
+        follow_ups = []
+        try:
+            raw_resp = self.engine.call_llm(
+                prompt=prompt,
+                system_prompt=sys_prompt,
+                json_mode=True,
+                temperature=0.25,
+                max_tokens=1600,
+                prefer_fast=False,
+            )
+            if raw_resp:
+                try:
+                    parsed = json.loads(raw_resp)
+                    ans = str(parsed.get("answer") or "").strip()
+                    follow_ups = [str(x).strip() for x in (parsed.get("followUps") or []) if str(x).strip()][:3]
+                except Exception:
+                    ans = strip_think_and_fences(raw_resp).strip()
+        except Exception:
+            pass
+
+        if not ans:
+            ctx_preview = summary or notes or transcript[:600]
+            ans = (
+                f"**Giải đáp cho bài học {drive_file or lesson_title} ({course_title}):**\n\n"
+                + (f"Dựa trên nội dung trọng tâm của bài giảng:\n{ctx_preview}\n\n" if ctx_preview else "")
+                + f"Đối với câu hỏi **\"{question}\"**, bạn hãy nắm vững định nghĩa cốt lõi, điều kiện áp dụng công thức và đối chiếu từng bước biến đổi trong tài liệu bài giảng."
+            )
+        if not follow_ups:
+            follow_ups = [
+                "Tóm tắt các công thức trọng tâm của bài này",
+                "Cho ví dụ minh họa từng bước giải",
+                "Tạo 3 câu hỏi trắc nghiệm tự luyện"
+            ]
+        return {"ok": True, "answer": ans, "followUps": follow_ups}
+
     def dvtl_list_drive_folder(self, args: dict | None = None) -> dict:
         args = args or {}
         course_id = str(args.get("courseId") or "ALL-COURSES-399K").strip().upper()
@@ -5874,6 +5951,8 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             return self.dvtl_check_payment(args or {})
         if cmd == "dvtl_list_drive_folder":
             return self.dvtl_list_drive_folder(args or {})
+        if cmd == "dvtl_ask_lesson_ai":
+            return self.dvtl_ask_lesson_ai(args or {})
         if cmd == "dvtl_verify_account_device":
             return self.dvtl_verify_account_device(args or {})
         if cmd == "dvtl_get_device_license":
@@ -6005,7 +6084,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             return {
                 "configured": True,
                 "signedIn": True,
-                "email": lic.get("email") or "Chưa kích hoạt Email (Khóa 1 máy)",
+                "email": lic.get("email") or "",
                 "name": lic.get("name") or "",
                 "phone": lic.get("phone") or "",
                 "deviceId": self.get_hardware_device_id(),
@@ -6890,7 +6969,7 @@ def make_http_handler(controller: BackendController, hub: EventHub):
                     <style>body{{font-family:system-ui,sans-serif;background:#071033;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}}
                     .box{{background:#fff;color:#0F172A;padding:34px 38px;border-radius:24px;text-align:center;max-width:420px;box-shadow:0 24px 60px rgba(0,0,0,.4)}}
                     .ok{{width:56px;height:56px;border-radius:50%;background:#10B981;color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}}</style></head>
-                    <body><div class="box"><div class="ok">✓</div><h2>Đăng nhập Google thành công!</h2>
+                    <body><div class="box"><div class="ok"></div><h2>Đăng nhập Google thành công!</h2>
                     <p style="font-size:14px;color:#334155">Xin chào <b>{user.get('name','')}</b> ({user.get('email','')})</p>
                     <p style="font-size:13px;color:#64748B">App <b>Điệp Viên Study</b> đã nhận phiên đăng nhập và tự động mở khóa dữ liệu của bạn. Bạn có thể đóng tab này!</p>
                     <script>setTimeout(()=>window.close(),2200);</script></div></body></html>""".encode("utf-8")

@@ -1,20 +1,13 @@
 {
-  "version": "2026.11.24.8",
-  "releasedAt": "2026-11-24T06:45:00Z",
-  "notes": "v10.8: Tinh gọn thanh toán VietQR (đồng hồ mượt theo giây, bắt buộc Email+SĐT hoặc chỉ SĐT khi đã đăng nhập Google), nhúng trực tiếp Google Drive bài giảng & thư mục trong App, Ghi chú + Thu âm + Hỏi AI bài giảng trực tiếp, hiển thị đầy đủ logo trường & sao tự nhiên, xóa toàn bộ emoji và nút thừa.",
+  "version": "2026.11.24.12",
+  "releasedAt": "2026-11-24T09:44:06Z",
+  "notes": "OTA Update v12.0: Auto-refresh Google Drive API token, chuẩn hóa giao diện phát video rạp chiếu không lỗi bảng Drive, xóa nút thừa, nhãn SĐT Zalo nhận hỗ trợ và đồng bộ ghi chú kèm ngày giờ.",
   "guidePdfUrl": "https://diepvientailieu.store/Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf",
   "files": [
     {
-      "path": "web_dist/index.html",
-      "otaFile": "index_app.html",
-      "sha256": "b42ad6c95f829f2b3c7466acfae081aea18759e6a4e218976532991b7b45e928",
-      "size": 921,
-      "url": "https://diepvientailieu.store/app_ota/index_app.html"
-    },
-    {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "e4e486879a192effedba26816d48cb543f1652f9dfd2bfbb5ae6c03b52d80154",
-      "size": 2240397,
+      "sha256": "83484f94371856be0b4f268c0efee961565ef43e1db14f6f382eb6c6832bd195",
+      "size": 2241735,
       "url": "https://diepvientailieu.store/index-SSdWYvRZ.js"
     },
     {
@@ -25,10 +18,9 @@
     },
     {
       "path": "DiepVienStudy.pyw",
-      "otaFile": "DiepVienStudy_runtime.txt",
-      "sha256": "0e4ae2f2310e98327372e4bf5e1d47d16cd8c8d059eec3a9d255b368fb2a12a5",
-      "size": 398216,
-      "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
+      "sha256": "a3db5994dfc613203e6bee9e1d0c10d27e39af9f4a5f97fdd7f74ee09e4df6c9",
+      "size": 407908,
+      "url": "https://diepvientailieu.store/DiepVienStudy.pyw"
     }
   ]
 }

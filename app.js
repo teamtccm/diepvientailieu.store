@@ -3,29 +3,29 @@ try { if (localStorage.getItem("dvtl_web_banners_v10_purged") !== "1") { localSt
 function getSemanticSvgIconJs(iconKey) {
     const k = String(iconKey || "").trim();
     const map = {
-        "🧠": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
         "brain": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
-        "💰": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
         "coin": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
-        "📊": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
-        "📈": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
         "chart": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
-        "💻": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
         "laptop": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
-        "⚖️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
-        "⚖": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
         "scale": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
-        "🎓": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
         "grad": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
-        "🏛️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
-        "🏛": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
         "uni": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
-        "⚡": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
         "bolt": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
-        "🎯": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
         "target": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
-        "✍️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
-        "📝": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
         "pen": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`
     };
     return map[k] || `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg>`;
@@ -619,7 +619,7 @@ function renderUniOptions(list) {
 
                 <span class="truncate text-xs flex-1">${u.name}</span>
 
-                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold">✓</span>' : ''}
+                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold"></span>' : ''}
 
             </div>
 
@@ -655,7 +655,7 @@ function toggleUniDropdown(e) {
 
         menu.classList.remove("hidden");
 
-        if (chevron) chevron.textContent = "▲";
+        if (chevron) chevron.textContent = "";
 
         const filterInput = document.getElementById("uniFilterInput");
 
@@ -687,7 +687,7 @@ function closeUniDropdown() {
 
     if (menu) menu.classList.add("hidden");
 
-    if (chevron) chevron.textContent = "▼";
+    if (chevron) chevron.textContent = "";
 
 }
 
@@ -1236,6 +1236,34 @@ let currentDocRenderLimit = DOC_RENDER_BATCH_SIZE;
 let currentFilteredDocsCache = [];
 let docScrollObserver = null;
 
+function getNaturalWebDocStats(doc, index = 0) {
+    const seedStr = `${doc.id || ""}|${doc.code || ""}|${doc.baseName || ""}|${index}`;
+    let h = 2166136261 >>> 0;
+    for (let i = 0; i < seedStr.length; i++) {
+        h ^= seedStr.charCodeAt(i);
+        h = Math.imul(h, 16777619) >>> 0;
+    }
+    const pagesPool = [20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 44, 46, 48, 52];
+    const ratingsPool = ["4.7", "4.8", "4.9", "4.6", "4.8", "4.9", "4.7", "4.8", "4.6", "4.9", "4.7", "5.0"];
+    const origPool = [95000, 100000, 110000, 115000, 120000, 125000, 130000, 135000, 140000, 150000];
+    const tagPairsPool = [
+        ["Tóm Tắt Trọng Tâm", "Câu Hỏi & Đáp Án"],
+        ["Trắc Nghiệm Có Giải Thích", "Đề Thi Các Năm"],
+        ["Lý Thuyết Cốt Lõi", "Bài Tập & Lời Giải"],
+        ["Tự Luận & Vấn Đáp", "Bám Sát Đề Cuối Kỳ"],
+        ["Công Thức & Dạng Bài", "Hướng Dẫn Giải Nhanh"],
+        ["Ngân Hàng Câu Hỏi", "Chuẩn Giáo Trình Mới"]
+    ];
+    const pages = (doc.pages && doc.pages !== 42 && doc.pages >= 16) ? doc.pages : pagesPool[h % pagesPool.length];
+    const rating = (doc.rating && String(doc.rating) !== "5" && String(doc.rating) !== "5.0") ? String(doc.rating) : ratingsPool[(h >>> 4) % ratingsPool.length];
+    const reviewsCount = (doc.reviewsCount && doc.reviewsCount !== 128 && doc.reviewsCount <= 220) ? doc.reviewsCount : (34 + ((h >>> 8) % 155));
+    const originalPrice = (doc.originalPrice && doc.originalPrice !== 120000 && doc.originalPrice !== 160000) ? doc.originalPrice : origPool[(h >>> 13) % origPool.length];
+    const tags = tagPairsPool[(h >>> 17) % tagPairsPool.length];
+    const price = doc.price || 50000;
+    const discountPercent = Math.round((1 - (price / originalPrice)) * 100);
+    return { pages, rating, reviewsCount, originalPrice, price, discountPercent, tags };
+}
+
 function buildSingleDocumentCardHtml(doc, index, selectedUni) {
     const docDisc = typeof getDocDiscipline === 'function' ? getDocDiscipline(doc) : "DAI_CUONG";
     let docUniInfo = null;
@@ -1255,17 +1283,15 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
     const fullDocTitle = `ĐỀ CƯƠNG ${cleanDocBaseUpper} — ${docUniBadge}`;
     const iconSymbol = getSemanticSvgIconJs(doc.icon);
     const mascotBadge = "images/favicon_badge.png";
-    const discountPercent = (doc.originalPrice && doc.originalPrice > doc.price)
-        ? Math.round((1 - (doc.price / doc.originalPrice)) * 100)
-        : 50;
+    const nat = getNaturalWebDocStats(doc, index);
 
     return `
-        <div class="clean-card hover-lift overflow-hidden flex flex-col justify-between transition-all duration-300 border-2 border-slate-200 dark:border-white/10 shadow-sm hover:shadow-2xl rounded-[24px]">
-            <div class="relative p-5 text-white flex flex-col justify-between min-h-[245px] select-none rounded-t-[22px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
+        <div class="clean-card hover-lift overflow-hidden flex flex-col justify-between transition-all duration-300 border-2 border-slate-200 dark:border-white/10 shadow-sm hover:shadow-2xl rounded-[22px]">
+            <div class="relative p-4 text-white flex flex-col justify-between min-h-[205px] select-none rounded-t-[20px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
                 <div class="flex justify-between items-center z-10">
-                    <div class="flex items-center gap-2 bg-black/60 px-2.5 py-1 rounded-xl border border-white/20 backdrop-blur-md shadow-sm">
-                        <img src="${mascotBadge}" alt="Logo" class="w-5 h-5 object-contain" loading="lazy" decoding="async">
-                        <span class="font-black text-[10px] tracking-wider uppercase text-amber-300">ĐIỆP VIÊN TÀI LIỆU</span>
+                    <div class="flex items-center gap-1.5 bg-black/60 px-2.5 py-1 rounded-xl border border-white/20 backdrop-blur-md shadow-sm">
+                        <img src="${mascotBadge}" alt="Logo" class="w-4 h-4 object-contain" loading="lazy" decoding="async">
+                        <span class="font-black text-[9.5px] tracking-wider uppercase text-amber-300">ĐIỆP VIÊN TÀI LIỆU</span>
                     </div>
                     <div class="flex items-center gap-1.5">
                         <div class="w-7 h-7 rounded-md bg-white p-0.5 shadow-md border border-white/20 flex items-center justify-center overflow-hidden flex-shrink-0">
@@ -1276,9 +1302,9 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
                                  loading="lazy"
                                  decoding="async"
                                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                            <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400 font-black text-xs" style="display:none">?</div>
+                            <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 font-black text-xs" style="display:none">${docUniBadge.slice(0,2)}</div>
                             ` : `
-                            <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400 font-black text-xs">?</div>
+                            <div class="w-full h-full rounded flex items-center justify-center bg-amber-50 text-amber-600 font-black text-xs">${docUniBadge.slice(0,2)}</div>
                             `}
                         </div>
                         <span class="px-2.5 py-1 bg-[#FFA000] text-slate-950 font-black text-[10px] rounded-lg shadow-md uppercase tracking-wider border border-amber-300">
@@ -1287,56 +1313,54 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
                     </div>
                 </div>
 
-                <div class="relative my-3 z-10">
+                <div class="relative my-2.5 z-10">
                     <div class="flex items-center gap-1.5 mb-1.5">
                         <span class="text-base">${iconSymbol}</span>
                         <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
-                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> CÓ SẴN FILE DRIVE</span>' : ''}
+                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"> CÓ SẴN FILE DRIVE</span>' : ''}
                     </div>
-                    <h4 class="font-condensed font-black text-lg sm:text-xl text-white tracking-wide uppercase leading-tight line-clamp-2 drop-shadow-md">
+                    <h4 class="font-condensed font-black text-base sm:text-lg text-white tracking-wide uppercase leading-snug line-clamp-2 drop-shadow-md">
                         ${fullDocTitle}
                     </h4>
-                    <div class="flex items-center gap-2.5 mt-2.5 text-[10px]">
-                        <span class="text-amber-300 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg> ${doc.pages} Trang A4</span>
-                        <span class="text-emerald-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-1px]" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${doc.rating} (${doc.reviewsCount})</span>
-                        <span class="text-sky-200 font-bold"><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Giao Tự Động 3s</span>
+                    <div class="flex items-center gap-2.5 mt-2 text-[10px]">
+                        <span class="text-amber-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg> ${nat.pages} Trang A4</span>
+                        <span class="text-emerald-300 font-bold inline-flex items-center gap-1"><svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>${nat.rating} (${nat.reviewsCount})</span>
+                        <span class="text-sky-200 font-bold">Google Drive</span>
                     </div>
                 </div>
 
-                <div class="relative z-10 flex items-center justify-between pt-2.5 border-t border-white/20">
-                    <span class="text-[10px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
-                        <span>★</span> CHUẨN ĐỀ THI ${docUniBadge} 2026
+                <div class="relative z-10 flex items-center justify-between pt-2 border-t border-white/20">
+                    <span class="text-[9.5px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
+                        <span></span> CHUẨN ĐỀ THI ${docUniBadge} 2026
                     </span>
-                    <span class="text-[10px] font-mono text-sky-200">
+                    <span class="text-[9.5px] font-mono text-sky-200">
                         diepvientailieu.store
                     </span>
                 </div>
             </div>
 
-            <div class="p-5 flex-1 flex flex-col justify-between bg-white dark:bg-[#0A143D]">
-                <div>
-                    <div class="flex flex-wrap gap-1.5 mb-4">
-                        ${(doc.tags || []).map(t => `<span class="text-[10px] font-semibold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-md border border-slate-200 dark:border-white/10">${t}</span>`).join('')}
-                    </div>
+            <div class="p-3.5 bg-white dark:bg-[#0A143D] flex flex-col gap-2.5">
+                <div class="flex items-center gap-1.5 flex-wrap">
+                    ${nat.tags.map(t => `<span class="text-[10px] font-bold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-md border border-slate-200 dark:border-white/10">${t}</span>`).join('')}
                 </div>
 
-                <div class="pt-3 border-t border-slate-100 dark:border-white/10">
-                    <div class="flex items-baseline justify-between mb-3">
+                <div class="pt-2 border-t border-slate-100 dark:border-white/10">
+                    <div class="flex items-baseline justify-between mb-2.5">
                         <div>
-                            <span class="text-2xl font-black text-[#0D1677] dark:text-amber-400 font-condensed tracking-wider">${doc.price.toLocaleString('vi-VN')}đ</span>
-                            <span class="text-xs text-slate-400 line-through ml-1.5">${doc.originalPrice.toLocaleString('vi-VN')}đ</span>
+                            <span class="text-xl font-black text-[#0D1677] dark:text-amber-400 font-condensed tracking-wider">${nat.price.toLocaleString('vi-VN')}đ</span>
+                            <span class="text-xs text-slate-400 line-through ml-1.5">${nat.originalPrice.toLocaleString('vi-VN')}đ</span>
                         </div>
-                        <span class="text-[10px] font-black text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800">
-                            TIẾT KIỆM ${discountPercent}%
+                        <span class="text-[9.5px] font-black text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800">
+                            TIẾT KIỆM ${nat.discountPercent}%
                         </span>
                     </div>
 
                     <div class="grid grid-cols-2 gap-2">
-                        <button onclick="window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2.5 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
-                            <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Hỏi Shop</span>
+                        <button onclick="window.open('https://m.me/diepvientailieu','_blank')" class="px-3 py-2 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-700 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition">
+                            <span>Hỏi Shop</span>
                         </button>
-                        <button onclick="openDocCheckoutModal('${doc.id}', this.dataset.title)" data-title="${fullDocTitle.replace(/'/g, '&#39;').replace(/"/g, '&quot;')}" class="px-3 py-2.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
-                            <span><svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg> Mua Ngay</span>
+                        <button onclick="openDocCheckoutModal('${doc.id}', this.dataset.title)" data-title="${fullDocTitle.replace(/'/g, '&#39;').replace(/"/g, '&quot;')}" class="px-3 py-2 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center gap-1 transition">
+                            <span>Mua Ngay</span>
                         </button>
                     </div>
                 </div>
@@ -1468,170 +1492,140 @@ function setDocCategory(cat) {
 
 
 
+function syncDocCheckoutGoogleUi() {
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+    const savedEmail = (cust.email || "").trim().toLowerCase();
+    const savedName = (cust.name || "").trim();
+    const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
+
+    const bannerEl = document.getElementById("docGoogleLoggedBanner");
+    const emailWrapEl = document.getElementById("docEmailInputWrap");
+    const savedTxtEl = document.getElementById("docSavedAccountText");
+    const emailInputEl = document.getElementById("checkoutEmailInput");
+    const phoneInputEl = document.getElementById("checkoutPhoneInput");
+
+    if (emailInputEl && savedEmail && !emailInputEl.value) emailInputEl.value = savedEmail;
+    if (phoneInputEl && savedPhone && !phoneInputEl.value) phoneInputEl.value = savedPhone;
+
+    if (savedEmail && savedEmail.includes("@")) {
+        if (bannerEl) bannerEl.classList.remove("hidden");
+        if (emailWrapEl) emailWrapEl.classList.add("hidden");
+        if (savedTxtEl) savedTxtEl.textContent = savedName ? `${savedName} (${savedEmail})` : savedEmail;
+        if (emailInputEl) emailInputEl.value = savedEmail;
+    } else {
+        if (bannerEl) bannerEl.classList.add("hidden");
+        if (emailWrapEl) emailWrapEl.classList.remove("hidden");
+    }
+}
+
+function onDocCheckoutContactInput() {
+    const emailVal = (document.getElementById("checkoutEmailInput")?.value || "").trim().toLowerCase();
+    const phoneVal = (document.getElementById("checkoutPhoneInput")?.value || "").replace(/\[.*\]/g, "").trim();
+    try {
+        if (phoneVal) localStorage.setItem("dvs_cust_phone", phoneVal);
+        if (emailVal && emailVal.includes("@")) localStorage.setItem("dvtl_guest_checkout_email", emailVal);
+    } catch (_) {}
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+    if (isCustomerGoogleLoggedIn(cust) && phoneVal.length >= 9) {
+        saveCustomerProfileEverywhere({ name: cust.name, phone: phoneVal, email: cust.email, verifiedByGoogle: true, source: "WEB_DOC_QR_INPUT" });
+    }
+}
+
 function openDocCheckoutModal(docId, customTitle = null) {
-
     let doc = (typeof REAL_DOCUMENTS_DATABASE !== 'undefined' ? REAL_DOCUMENTS_DATABASE.find(d => d.id === docId) : null)
-
            || DOCUMENTS_DATABASE.find(d => d.id === docId);
-
     if (!doc) return;
 
-
-
     if (!doc.driveId && typeof REAL_DOCUMENTS_DATABASE !== 'undefined') {
-
         const codeU = String(doc.code || "").trim().toUpperCase();
-
         const strippedCode = codeU.replace(/\d+$/, "");
-
         const normBase = removeVietnameseTones(doc.baseName || "").replace(/\b(de|cuong|mon|hoc|phan|on|tap|ung|dung|full)\b/g, "").replace(/\s+/g, " ").trim();
-
         const matchedReal = REAL_DOCUMENTS_DATABASE.find(r => {
-
             const rCode = String(r.code || "").trim().toUpperCase();
-
             const rNorm = removeVietnameseTones(r.baseName || "").replace(/\b(de|cuong|mon|hoc|phan|on|tap)\b/g, "").replace(/\s+/g, " ").trim();
-
             return rCode === codeU || (strippedCode.length >= 2 && rCode === strippedCode) || (normBase.length >= 4 && (rNorm.includes(normBase) || normBase.includes(rNorm)));
-
         });
-
         if (matchedReal) {
-
-            doc = {
-
-                ...doc,
-
-                code: matchedReal.code,
-
-                driveId: matchedReal.driveId,
-
-                driveType: matchedReal.driveType || "file",
-
-                isReal: true
-
-            };
-
+            doc = { ...doc, code: matchedReal.code, driveId: matchedReal.driveId, driveType: matchedReal.driveType || "file", isReal: true };
         }
-
     }
-
-    
 
     let uniInfo = null;
-
     const docDisc = typeof getDocDiscipline === 'function' ? getDocDiscipline(doc) : "DAI_CUONG";
-
     if (state.selectedUniversity) {
-
         const u = UNIVERSITIES.find(item => item.id === state.selectedUniversity);
-
         if (u && typeof getUniAllowedDisciplines === 'function' && getUniAllowedDisciplines(u.id, u.name).has(docDisc)) {
-
             uniInfo = u;
-
         }
-
     }
-
     if (!uniInfo && doc.university) {
-
         uniInfo = UNIVERSITIES.find(u => u.id === doc.university);
-
     }
-
     if (!uniInfo) uniInfo = UNIVERSITIES[0];
 
-    
-
+    const nat = typeof getNaturalWebDocStats === "function" ? getNaturalWebDocStats(doc, 0) : { pages: doc.pages || 28, price: doc.price || 50000 };
     const docDisplayName = customTitle || `Đề Cương ${doc.baseName} (${uniInfo.code})`;
 
-    
-
     state.selectedDoc = {
-
         ...doc,
-
+        pages: nat.pages,
         name: docDisplayName,
-
         school: uniInfo.code
-
     };
 
-    
-
     const modal = document.getElementById("docCheckoutModal");
-
     if (!modal) return;
 
-    
-
     document.getElementById("checkoutDocName").textContent = docDisplayName;
-    document.getElementById("checkoutDocCode").textContent = `#${doc.code} · ${doc.pages} Trang A4`;
-    document.getElementById("checkoutDocPrice").textContent = `${doc.price.toLocaleString('vi-VN')} VNĐ`;
+    document.getElementById("checkoutDocCode").textContent = `#${doc.code} · ${nat.pages} Trang A4`;
+    document.getElementById("checkoutDocPrice").textContent = `${(doc.price || 50000).toLocaleString('vi-VN')} VNĐ`;
 
     const cleanDocCode = String(doc.code || "TL").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
     const orderCode = `DC${cleanDocCode}${Math.floor(100 + Math.random() * 900)}`;
     document.getElementById("checkoutOrderCode").textContent = orderCode;
+    document.getElementById("checkoutMemoCode").textContent = orderCode;
 
     const payAmountEl = document.getElementById("checkoutPayAmount");
-    if (payAmountEl) payAmountEl.textContent = `${doc.price.toLocaleString('vi-VN')} VNĐ`;
+    if (payAmountEl) payAmountEl.textContent = `${(doc.price || 50000).toLocaleString('vi-VN')} VNĐ`;
+
+    syncDocCheckoutGoogleUi();
+    layTaiKhoanVaHienQR(doc.price || 50000, orderCode);
 
     const cust = getSyncedCustomerLocal() || {};
-    const savedName = (cust.name || "").trim();
     const savedEmail = (cust.email || "").trim().toLowerCase();
     const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const savedName = (cust.name || "").trim() || (savedEmail ? savedEmail.split("@")[0] : "Khách Hàng");
 
-    const nameInputEl = document.getElementById("checkoutNameInput");
-    if (nameInputEl) nameInputEl.value = savedName;
-    const phoneInputEl = document.getElementById("checkoutPhoneInput");
-    if (phoneInputEl) phoneInputEl.value = savedPhone;
-    const emailInputEl = document.getElementById("checkoutEmailInput");
-    if (emailInputEl) emailInputEl.value = savedEmail;
-
-    modal.classList.remove("hidden");
-    document.body.style.overflow = "hidden";
-
-    // Nếu khách đã lưu Email & SĐT trước đó -> nhảy thẳng tới màn quét VietQR (không bắt điền lại!)
-    if (savedEmail.includes("@") && savedPhone.length >= 8) {
-        const displayName = savedName || savedEmail.split("@")[0];
-        const fullMemo = orderCode;
-        document.getElementById("checkoutMemoCode").textContent = fullMemo;
-        const savedTxt = document.getElementById("docSavedAccountText");
-        if (savedTxt) savedTxt.textContent = `${savedPhone} · ${savedEmail}`;
-        layTaiKhoanVaHienQR(doc.price, fullMemo);
-
+    if (savedEmail.includes("@")) {
         const payload = {
             action: "createOrder",
             orderCode: orderCode,
-            transferMemo: fullMemo,
-            name: displayName,
+            transferMemo: orderCode,
+            name: savedName,
             email: savedEmail,
             phone: savedPhone,
             deviceId: getWebDeviceId(),
             sku: doc.code || "",
-            itemName: doc.name || "",
-            price: doc.price || 0,
+            itemName: docDisplayName,
+            price: doc.price || 50000,
             bank: currentActiveAccount ? currentActiveAccount.bankName : "ACB",
             orderType: "Mua File",
-            school: doc.school || (state.selectedUniversity ? (UNIVERSITIES.find(u => u.id === state.selectedUniversity)?.code) : "Toàn quốc"),
+            school: uniInfo.code,
             stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "27820961",
             driveId: doc.driveId || ""
         };
         saveOrderToLocal(payload);
         try { sendWebhookData(payload); } catch(e) {}
-
-        document.getElementById("docCheckoutStep1").classList.add("hidden");
-        document.getElementById("docCheckoutStep2").classList.remove("hidden");
-        document.getElementById("docCheckoutStep3").classList.add("hidden");
-        startDocPaymentPolling(orderCode, savedEmail);
-    } else {
-        document.getElementById("checkoutMemoCode").textContent = orderCode;
-        layTaiKhoanVaHienQR(doc.price, orderCode);
-        document.getElementById("docCheckoutStep1").classList.remove("hidden");
-        document.getElementById("docCheckoutStep2").classList.add("hidden");
-        document.getElementById("docCheckoutStep3").classList.add("hidden");
     }
+
+    const step1El = document.getElementById("docCheckoutStep1");
+    if (step1El) step1El.classList.add("hidden");
+    document.getElementById("docCheckoutStep2").classList.remove("hidden");
+    document.getElementById("docCheckoutStep3").classList.add("hidden");
+
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    startDocPaymentPolling(orderCode, savedEmail);
 }
 
 let currentActiveAccount = null;
@@ -1705,6 +1699,7 @@ async function layTaiKhoanVaHienQR(amount, orderMemo) {
 
 function closeDocCheckoutModal() {
     if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
+    if (window._docTimerInterval) { clearInterval(window._docTimerInterval); window._docTimerInterval = null; }
     const modal = document.getElementById("docCheckoutModal");
     if (modal) modal.classList.add("hidden");
     document.body.style.overflow = "auto";
@@ -1804,11 +1799,16 @@ function startDocPaymentPolling(orderCode, email) {
 
     setTimeout(() => checkDocPaymentStatus(orderCode, email, false), 1500);
 
+    const timerStart = Date.now();
+    if (window._docTimerInterval) clearInterval(window._docTimerInterval);
+    window._docTimerInterval = setInterval(() => {
+        const totalSec = Math.floor((Date.now() - timerStart) / 1000);
+        const mins = Math.floor(totalSec / 60);
+        const secs = totalSec % 60;
+        if (timerEl) timerEl.textContent = `Đã chờ: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }, 250);
+
     docPollingInterval = setInterval(() => {
-        elapsed += 4;
-        const mins = Math.floor(elapsed / 60);
-        const secs = elapsed % 60;
-        if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
         checkDocPaymentStatus(orderCode, email, false);
     }, 4000);
 }
@@ -1835,12 +1835,64 @@ async function checkDocPaymentStatus(orderCode, email, isManual = false) {
 }
 
 async function confirmDocManualPayment() {
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
     const orderCode = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
-    const email = (document.getElementById("checkoutEmailInput")?.value || getSyncedCustomerLocal()?.email || "").trim().toLowerCase();
+    const emailInputEl = document.getElementById("checkoutEmailInput");
+    const phoneInputEl = document.getElementById("checkoutPhoneInput");
+    const email = (emailInputEl?.value || cust.email || "").trim().toLowerCase();
+    const rawPhone = (phoneInputEl?.value || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const digitsPhone = rawPhone.replace(/\D/g, "");
     const fbEl = document.getElementById("docVerifyFeedbackMsg");
+
+    const hasGoogleLogged = Boolean(cust.email && cust.email.includes("@"));
+    const finalEmail = (hasGoogleLogged ? cust.email : email).trim().toLowerCase();
+
+    if (!finalEmail || !finalEmail.includes("@")) {
+        if (fbEl) {
+            fbEl.classList.remove("hidden");
+            fbEl.textContent = "Vui lòng nhập Email Gmail để hệ thống phân phát tài liệu Google Drive!";
+        }
+        if (emailInputEl) emailInputEl.focus();
+        alert("Vui lòng nhập Email Gmail để hệ thống phân phát tài liệu Google Drive!");
+        return;
+    }
+
+    if (digitsPhone.length < 9) {
+        if (fbEl) {
+            fbEl.classList.remove("hidden");
+            fbEl.textContent = "Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!";
+        }
+        if (phoneInputEl) phoneInputEl.focus();
+        alert("Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!");
+        return;
+    }
+
+    const name = (cust.name || "").trim() || email.split("@")[0];
+    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_DOC_CONFIRM" });
+
+    const payload = {
+        action: "createOrder",
+        orderCode: orderCode,
+        transferMemo: orderCode,
+        name: name,
+        email: email,
+        phone: rawPhone,
+        sku: state.selectedDoc?.code || "",
+        itemName: state.selectedDoc?.name || "",
+        price: state.selectedDoc?.price || 50000,
+        bank: currentActiveAccount ? currentActiveAccount.bankName : "ACB",
+        orderType: "Mua File",
+        school: state.selectedDoc?.school || "Toàn quốc",
+        stkNhan: currentActiveAccount ? currentActiveAccount.accountNumber : "27820961",
+        driveId: state.selectedDoc?.driveId || "",
+        deviceId: getWebDeviceId()
+    };
+    saveOrderToLocal(payload);
+    try { sendWebhookData(payload); } catch(e) {}
+
     if (fbEl) {
         fbEl.classList.remove("hidden");
-        fbEl.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa Google Drive cho mã đơn #" + orderCode + "...";
+        fbEl.textContent = " Đang đối soát giao dịch ngân hàng ACB & mở khóa Google Drive cho mã đơn #" + orderCode + "...";
     }
     if (!state.webhookUrl || !orderCode) return;
     try {
@@ -1850,20 +1902,19 @@ async function confirmDocManualPayment() {
         if (data && (data.verified === true || data.paid === true)) {
             onDocPaymentConfirmed(orderCode, email || data.email || "", data.driveUrl || "");
         } else if (fbEl) {
-            fbEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống tự động bàn giao ngay khi ngân hàng báo tiền về!";
+            fbEl.textContent = " Hệ thống đang chờ xác nhận chuyển khoản từ ngân hàng ACB cho mã #" + orderCode + " (" + email + " · " + rawPhone + "). Ngay khi tiền về sẽ tự động mở file Google Drive!";
         }
     } catch (e) {
         if (fbEl) {
-            fbEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
+            fbEl.textContent = " Đang kết nối máy chủ đối soát ACB cho mã #" + orderCode + ". Vui lòng đợi vài giây...";
         }
     }
 }
 
-
-
 function backToDocStep1() {
 
     if (docPollingInterval) { clearInterval(docPollingInterval); docPollingInterval = null; }
+    if (window._docTimerInterval) { clearInterval(window._docTimerInterval); window._docTimerInterval = null; }
 
     document.getElementById("docCheckoutStep2").classList.add("hidden");
 
@@ -2821,13 +2872,13 @@ function isWebCourseUnlocked(courseId) {
 function openCourseCheckoutModalByTier(tier) {
     if (typeof COURSES_DATABASE === "undefined") return;
     if (tier === "full_399k") {
-        openCourseCheckoutModal("ALL-COURSES-399K");
+        openCourseCheckoutModal("ALL-COURSES-399K", false);
     } else if (tier === "subject_69k") {
-        const firstSubj = COURSES_DATABASE.find(c => String(c.id).startsWith("COURSE-SUBJ-")) || COURSES_DATABASE[0];
-        openCourseCheckoutModal(firstSubj ? firstSubj.id : "COURSE-SUBJ-TOAN12-2K9");
+        const firstSubj = COURSES_DATABASE.find(c => c.tier === "subject_69k" || String(c.id).startsWith("K69-")) || COURSES_DATABASE[0];
+        openCourseCheckoutModal(firstSubj ? firstSubj.id : "K69-TOAN-DUC", "subject_69k");
     } else {
-        const first199 = COURSES_DATABASE.find(c => !c.isPackageOnly && c.tierType === "course_199k") || COURSES_DATABASE[1] || COURSES_DATABASE[0];
-        openCourseCheckoutModal(first199 ? first199.id : "COURSE-ITEM-01");
+        const first199 = COURSES_DATABASE.find(c => !c.isPackageOnly && (c.tier === "course_199k" || String(c.id).startsWith("C199-"))) || COURSES_DATABASE[1] || COURSES_DATABASE[0];
+        openCourseCheckoutModal(first199 ? first199.id : "C199-KHTN1", "course_199k");
     }
 }
 
@@ -2960,7 +3011,7 @@ function renderWebSubjTrigger() {
     }
   }
   if (chevron) {
-    chevron.textContent = webSubjDropdownOpen ? "▲" : "▼";
+    chevron.textContent = webSubjDropdownOpen ? "" : "";
   }
 }
 
@@ -2995,7 +3046,7 @@ function renderWebSubjOptions(q = "") {
         <span class="dvs-uni-name-text">
           ${opt.name}
         </span>
-        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+        ${isSel ? '<span class="dvs-uni-check"></span>' : ''}
       </div>
     `;
   }).join("");
@@ -3078,7 +3129,7 @@ function renderWebProgTrigger() {
     }
   }
   if (chevron) {
-    chevron.textContent = webProgDropdownOpen ? "▲" : "▼";
+    chevron.textContent = webProgDropdownOpen ? "" : "";
   }
 }
 
@@ -3113,7 +3164,7 @@ function renderWebProgOptions(q = "") {
         <span class="dvs-uni-name-text">
           ${opt.name}
         </span>
-        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+        ${isSel ? '<span class="dvs-uni-check"></span>' : ''}
       </div>
     `;
   }).join("");
@@ -3317,7 +3368,7 @@ function renderSingleCourseCardHtml(course) {
             <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
             <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
                 ${coverUrl ? `
-                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" referrerpolicy="no-referrer" class="w-full h-full object-cover block group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" onerror="if(this.dataset.fb && this.src!==this.dataset.fb){this.src=this.dataset.fb;return;} this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none\'><span class=\'text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25\'>KHUNG ẢNH 16:9</span></div>';" data-fb="${course.fallbackCover || ''}">
+                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" referrerpolicy="no-referrer" data-fb="${course.fallbackCover || 'courses/covers/dgnl_hsa_dhqg.jpg'}" class="w-full h-full object-cover block group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" onerror="if(this.dataset.fb && this.src!==this.dataset.fb){this.src=this.dataset.fb;return;} this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none\'><span class=\'text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25\'>KHUNG ẢNH 16:9</span></div>';" data-fb="${course.fallbackCover || ''}">
                 ` : `
                     <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
@@ -3619,7 +3670,7 @@ function renderCourseTargetOptionsHtml(list, chosenId) {
                     ${meta.badge}
                 </span>
                 <span class="truncate text-xs flex-1">${meta.cleanTitle}</span>
-                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold">✓</span>' : ''}
+                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold"></span>' : ''}
             </div>
         `;
     }).join("");
@@ -3634,7 +3685,7 @@ function toggleCourseTargetDropdown(e) {
     if (isHidden) {
         courseTargetDropdownOpen = true;
         menu.classList.remove("hidden");
-        if (chevron) chevron.textContent = "▲";
+        if (chevron) chevron.textContent = "";
         const inp = document.getElementById("courseTargetFilterInput");
         if (inp) {
             inp.value = "";
@@ -3651,7 +3702,7 @@ function closeCourseTargetDropdown() {
     const menu = document.getElementById("courseTargetDropdownMenu");
     const chevron = document.getElementById("courseTargetDropdownChevron");
     if (menu) menu.classList.add("hidden");
-    if (chevron) chevron.textContent = "▼";
+    if (chevron) chevron.textContent = "";
 }
 
 function filterCourseTargetList(query) {
@@ -3726,7 +3777,7 @@ function selectCourseCheckoutTier(tierKey) {
             ...fullCourse,
             id: "ALL-COURSES-399K",
             code: "FULL399K",
-            title: "Mở Khóa Trọn Bộ Full Cả App Điệp Viên Study (Tất Cả 50 Khóa Học)",
+            title: "Gói VIP Full Trọn Bộ 37 Khóa Học & Luyện Đề 2027 (69K + 199K)",
             price: 399000,
             originalPrice: 2500000,
             discountPercent: "84%",
@@ -3755,19 +3806,7 @@ function selectCourseCheckoutTier(tierKey) {
 
     const listEl = document.getElementById("courseTierOptionsList");
     if (listEl) {
-        const tabs = [
-            { key: "subject_69k", label: "Theo môn · 69.000đ" },
-            { key: "course_199k", label: "Mua khóa · 199.000đ" },
-            { key: "full_399k", label: "Trọn bộ Full App · 399.000đ" }
-        ];
-        const tabsHtml = `
-            <div class="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-[#060E2C] border border-slate-200 dark:border-white/10">
-                ${tabs.map(t => {
-                    const active = activeCourseCheckoutTierKey === t.key;
-                    return `<button type="button" onclick="selectCourseCheckoutTier('${t.key}')" class="py-2 px-2 rounded-lg text-[11px] sm:text-xs font-black transition text-center ${active ? 'bg-[#0D1677] text-white shadow-sm' : 'text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-white/10'}">${t.label}</button>`;
-                }).join("")}
-            </div>
-        `;
+        const tabsHtml = "";
 
         let pickerHtml = "";
         if (activeCourseCheckoutTierKey === "subject_69k" || activeCourseCheckoutTierKey === "course_199k") {
@@ -3799,7 +3838,7 @@ function selectCourseCheckoutTier(tierKey) {
                         </div>
                         <div class="flex items-center gap-1.5 flex-shrink-0 text-slate-400">
                             <span class="text-[10px] font-bold text-[#0D1677] dark:text-amber-300 bg-blue-50 dark:bg-white/10 px-1.5 py-0.5 rounded border border-blue-200 dark:border-white/15">Đổi</span>
-                            <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform">▼</span>
+                            <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform"></span>
                         </div>
                     </div>
 
@@ -3817,7 +3856,7 @@ function selectCourseCheckoutTier(tierKey) {
         } else {
             pickerHtml = `
                 <div class="mt-2 p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 text-[11px] font-bold text-emerald-900 dark:text-emerald-200">
-                    Đã chọn <strong>Mở Khóa Trọn Bộ Full Cả App (399.000đ)</strong>: Mở khóa toàn bộ 50 Khóa học (2K9, 2K10, HSA, TSA, V-ACT, BCA, QDA, VSAT) trên App & Google Drive + Tặng App (1 máy).
+                    Đã chọn <strong>Gói VIP Full Trọn Bộ 37 Khóa Học (399.000đ)</strong>: Mở khóa toàn bộ 37 Khóa học & Combo Luyện Thi 2027 (THPTQG, HSA, TSA, V-ACT) trên Google Drive & Hệ thống học tập.
                 </div>
             `;
         }
@@ -3832,7 +3871,48 @@ function selectCourseCheckoutTier(tierKey) {
     }
 }
 
-function openCourseCheckoutModal(courseId) {
+function syncCourseCheckoutGoogleUi() {
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+    const savedEmail = (cust.email || "").trim().toLowerCase();
+    const savedName = (cust.name || "").trim();
+    const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
+
+    const bannerEl = document.getElementById("courseSavedAccountBanner");
+    const emailWrapEl = document.getElementById("courseEmailInputWrap");
+    const savedTxtEl = document.getElementById("courseSavedAccountText");
+    const emailInputEl = document.getElementById("courseStudentEmail");
+    const phoneInputEl = document.getElementById("courseStudentPhone");
+    const nameInputEl = document.getElementById("courseStudentName");
+
+    if (nameInputEl && savedName) nameInputEl.value = savedName;
+    if (emailInputEl && savedEmail && !emailInputEl.value) emailInputEl.value = savedEmail;
+    if (phoneInputEl && savedPhone && !phoneInputEl.value) phoneInputEl.value = savedPhone;
+
+    if (savedEmail && savedEmail.includes("@")) {
+        if (bannerEl) bannerEl.classList.remove("hidden");
+        if (emailWrapEl) emailWrapEl.classList.add("hidden");
+        if (savedTxtEl) savedTxtEl.textContent = savedName ? `${savedName} (${savedEmail})` : savedEmail;
+        if (emailInputEl) emailInputEl.value = savedEmail;
+    } else {
+        if (bannerEl) bannerEl.classList.add("hidden");
+        if (emailWrapEl) emailWrapEl.classList.remove("hidden");
+    }
+}
+
+function onCourseCheckoutContactInput() {
+    const emailVal = (document.getElementById("courseStudentEmail")?.value || "").trim().toLowerCase();
+    const phoneVal = (document.getElementById("courseStudentPhone")?.value || "").replace(/\[.*\]/g, "").trim();
+    try {
+        if (phoneVal) localStorage.setItem("dvs_cust_phone", phoneVal);
+        if (emailVal && emailVal.includes("@")) localStorage.setItem("dvtl_guest_checkout_email", emailVal);
+    } catch (_) {}
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+    if (isCustomerGoogleLoggedIn(cust) && phoneVal.length >= 9) {
+        saveCustomerProfileEverywhere({ name: cust.name, phone: phoneVal, email: cust.email, verifiedByGoogle: true, source: "WEB_COURSE_QR_INPUT" });
+    }
+}
+
+function openCourseCheckoutModal(courseId, isFromHeaderTier = false) {
     if (typeof COURSES_DATABASE === "undefined") return;
     const course = COURSES_DATABASE.find(c => c.id === courseId) || COURSES_DATABASE.find(c => !c.isPackageOnly) || COURSES_DATABASE[0];
     if (!course) return;
@@ -3843,40 +3923,50 @@ function openCourseCheckoutModal(courseId) {
 
     const topHdr = document.getElementById("courseCheckoutTopHeader");
     if (topHdr) topHdr.classList.remove("hidden");
-    document.getElementById("courseCheckoutStep2").classList.add("hidden");
+    const step1El = document.getElementById("courseCheckoutStep1");
+    if (step1El) step1El.classList.add("hidden");
+    document.getElementById("courseCheckoutStep2").classList.remove("hidden");
     document.getElementById("courseCheckoutStep3").classList.add("hidden");
 
-    if (course.id === "ALL-COURSES-399K" || course.tier === "full_399k") {
-        selectCourseCheckoutTier("full_399k");
-    } else if (course.tier === "subject_69k" || String(course.id).startsWith("K69-")) {
-        selectCourseCheckoutTier("subject_69k");
+    syncCourseCheckoutGoogleUi();
+
+    const isDirect = !isFromHeaderTier && course.id !== "ALL-COURSES-399K";
+
+    if (isDirect) {
+        selectedCourseForCheckout = course;
+        const titleEl = document.getElementById("courseCheckoutTitle");
+        const priceEl = document.getElementById("courseCheckoutPrice");
+        const origEl = document.getElementById("courseCheckoutOriginalPrice");
+        const discEl = document.getElementById("courseCheckoutDiscount");
+        if (titleEl) titleEl.textContent = course.title;
+        if (priceEl) priceEl.textContent = (course.price || 199000).toLocaleString("vi-VN") + " VNĐ";
+        if (origEl) origEl.textContent = (course.originalPrice || (course.price * 2)).toLocaleString("vi-VN") + " VNĐ";
+        if (discEl) discEl.textContent = "TIẾT KIỆM " + (course.discountPercent || "67%");
+        const boxEl = document.getElementById("courseTierSelectorBox");
+        if (boxEl) boxEl.classList.add("hidden");
     } else {
-        selectCourseCheckoutTier("course_199k");
+        const boxEl = document.getElementById("courseTierSelectorBox");
+        if (boxEl) boxEl.classList.remove("hidden");
+        if (course.id === "ALL-COURSES-399K" || course.tier === "full_399k") {
+            if (boxEl) boxEl.classList.add("hidden");
+            selectCourseCheckoutTier("full_399k");
+        } else if (isFromHeaderTier === "subject_69k" || course.tier === "subject_69k" || String(course.id).startsWith("K69-")) {
+            selectCourseCheckoutTier("subject_69k");
+        } else {
+            selectCourseCheckoutTier("course_199k");
+        }
     }
-
-    const cust = getSyncedCustomerLocal() || {};
-    const savedName = (cust.name || "").trim();
-    const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
-    const savedEmail = (cust.email || "").trim().toLowerCase();
-
-    document.getElementById("courseStudentName").value = savedName;
-    document.getElementById("courseStudentPhone").value = savedPhone;
-    document.getElementById("courseStudentEmail").value = savedEmail;
 
     const modal = document.getElementById("courseCheckoutModal");
     modal.classList.remove("hidden");
     modal.classList.add("flex");
 
-    // Nếu khách đã đăng nhập từ trước -> Tự động gắn Tên & Email vào mã giao dịch và hiện ngay màn VietQR (không bắt điền lần 2!)
-    if (savedName.length >= 2 && savedEmail.includes("@")) {
-        goToCoursePaymentStep(true);
-    } else {
-        document.getElementById("courseCheckoutStep1").classList.remove("hidden");
-    }
+    goToCoursePaymentStep(true);
 }
 
 function closeCourseCheckoutModal() {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
+    if (window._courseTimerInterval) { clearInterval(window._courseTimerInterval); window._courseTimerInterval = null; }
     const modal = document.getElementById("courseCheckoutModal");
     modal.classList.add("hidden");
     modal.classList.remove("flex");
@@ -3884,42 +3974,18 @@ function closeCourseCheckoutModal() {
 }
 
 function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
+    if (!selectedCourseForCheckout) return;
+    syncCourseCheckoutGoogleUi();
+
     const cust = getSyncedCustomerLocal() || {};
-    const name = (document.getElementById("courseStudentName").value.trim()) || cust.name || "";
-    const rawPhoneInput = (document.getElementById("courseStudentPhone").value.trim()) || (cust.phone || "").replace(/\[.*\]/g, "").trim();
-    const rawPhone = rawPhoneInput.replace(/\[.*\]/g, "").trim();
-    const email = ((document.getElementById("courseStudentEmail").value.trim()) || cust.email || "").toLowerCase();
-
-    if (!name || !email) {
-        if (!isAutoFromSavedProfile) {
-            alert("Vui lòng điền đầy đủ Họ tên và Email nhận khóa học!");
-        }
-        return;
-    }
-
-    if (!email.includes("@")) {
-        if (!isAutoFromSavedProfile) {
-            alert("Vui lòng nhập địa chỉ Email chính xác!");
-        }
-        return;
-    }
-
-    if (!selectedCourseForCheckout) {
-        return;
-    }
-
-    // Lưu thông tin khách hàng ngay trên hệ thống để các lần sau thanh toán tự động
-    if (!isAutoFromSavedProfile) {
-        saveCustomerProfileEverywhere({ name, phone: rawPhoneInput, email, source: "WEB_COURSE_CHECKOUT" });
-    }
-
-    const savedTxt = document.getElementById("courseSavedAccountText");
-    if (savedTxt) savedTxt.textContent = `${name} · ${email}`;
+    const email = ((document.getElementById("courseStudentEmail")?.value || "").trim() || cust.email || "").toLowerCase();
+    const rawPhone = ((document.getElementById("courseStudentPhone")?.value || "").trim() || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const name = (cust.name || "").trim() || (email.includes("@") ? email.split("@")[0] : "HOC VIEN");
 
     const course = selectedCourseForCheckout;
     const cleanCode = String(course.code || "KHOAHOC").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
     const orderCode = `DV${cleanCode}${Math.floor(100 + Math.random() * 900)}`;
-    const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
+    const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 16);
     const transferMemo = `${orderCode} ${cleanName}`.trim();
 
     const noteEl = document.getElementById("courseTransferNote");
@@ -3934,35 +4000,34 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
         qrImg.src = `https://img.vietqr.io/image/ACB-27820961-compact2.png?amount=${course.price}&addInfo=${encodeURIComponent(transferMemo)}&accountName=TRINH%20DUC%20THINH`;
     }
 
-    const webDevId = getWebDeviceId();
-    const phoneWithDeviceLock = rawPhone;
+    if (email.includes("@")) {
+        const payload = {
+            action: "createOrder",
+            type: "COURSE_REGISTRATION",
+            orderType: "Khóa Học",
+            status: "PENDING",
+            orderCode: orderCode,
+            transferMemo: transferMemo,
+            sku: course.id,
+            itemName: course.title,
+            price: course.price,
+            amount: course.price,
+            driveId: course.driveFolderId || "",
+            name: name,
+            phone: rawPhone,
+            email: email,
+            deviceId: getWebDeviceId(),
+            bank: "ACB",
+            stkNhan: "27820961",
+            timestamp: new Date().toISOString()
+        };
+        try { sendWebhookData(payload); } catch (e) {}
+        state.orderHistory.unshift(payload);
+        localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
+    }
 
-    const payload = {
-        action: "createOrder",
-        type: "COURSE_REGISTRATION",
-        orderType: "Khóa Học",
-        status: "PENDING",
-        orderCode: orderCode,
-        transferMemo: transferMemo,
-        sku: course.id,
-        itemName: course.title,
-        price: course.price,
-        amount: course.price,
-        driveId: course.driveFolderId || "",
-        name: name,
-        phone: phoneWithDeviceLock,
-        email: email,
-        deviceId: webDevId,
-        bank: "ACB",
-        stkNhan: "27820961",
-        timestamp: new Date().toISOString()
-    };
-
-    try { sendWebhookData(payload); } catch (e) {}
-    state.orderHistory.unshift(payload);
-    localStorage.setItem("dvtl_orders", JSON.stringify(state.orderHistory.slice(0, 50)));
-
-    document.getElementById("courseCheckoutStep1").classList.add("hidden");
+    const step1El = document.getElementById("courseCheckoutStep1");
+    if (step1El) step1El.classList.add("hidden");
     document.getElementById("courseCheckoutStep2").classList.remove("hidden");
 
     startCoursePaymentPolling(orderCode, course.title, email);
@@ -4002,12 +4067,22 @@ function startCoursePaymentPolling(orderCode, courseTitle, email) {
 
     setTimeout(() => checkCoursePaymentStatus(orderCode, courseTitle, email, false), 1500);
 
-    coursePollingInterval = setInterval(() => {
-        elapsed += 4;
-        const mins = Math.floor(elapsed / 60);
-        const secs = elapsed % 60;
-        if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
+    const timerStart = Date.now();
+    if (window._courseTimerInterval) clearInterval(window._courseTimerInterval);
+    let lastSec = -1;
+    const updateTimer = () => {
+        const totalSec = Math.floor((Date.now() - timerStart) / 1000);
+        if (totalSec !== lastSec) {
+            lastSec = totalSec;
+            const mins = Math.floor(totalSec / 60);
+            const secs = totalSec % 60;
+            if (timerEl) timerEl.textContent = `Đã chờ: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+    };
+    updateTimer();
+    window._courseTimerInterval = setInterval(updateTimer, 500);
 
+    coursePollingInterval = setInterval(() => {
         checkCoursePaymentStatus(orderCode, courseTitle, email, false);
     }, 4000);
 }
@@ -4031,6 +4106,7 @@ async function checkCoursePaymentStatus(orderCode, courseTitle, email, isManual 
 
 function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl = "") {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
+    if (window._courseTimerInterval) { clearInterval(window._courseTimerInterval); window._courseTimerInterval = null; }
 
     const course = selectedCourseForCheckout || COURSES_DATABASE[0];
     const cust = getSyncedCustomerLocal() || {};
@@ -4050,8 +4126,8 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl 
                 email: email,
                 name: name,
                 orderCode: orderCode,
-                itemName: course.title + " (Tặng kèm App Điệp Viên Study — 1 Máy)",
-                orderType: "Khóa Học Bản Quyền (Tặng App 1 Máy)",
+                itemName: course.title,
+                orderType: "Khóa Học Ôn Thi Bản Quyền",
                 isCourse: true,
                 fileId: course.driveFolderId || "",
                 extraFolderIds: course.extraFolderIds || [],
@@ -4092,6 +4168,7 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl 
 
 function backToCourseStep1() {
     if (coursePollingInterval) { clearInterval(coursePollingInterval); coursePollingInterval = null; }
+    if (window._courseTimerInterval) { clearInterval(window._courseTimerInterval); window._courseTimerInterval = null; }
     document.getElementById("courseCheckoutStep2").classList.add("hidden");
     document.getElementById("courseCheckoutStep1").classList.remove("hidden");
 }
@@ -4274,7 +4351,24 @@ function getSyncedCustomerLocal() {
     }
 }
 
-function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", source = "WEB_AUTO_SYNC" } = {}) {
+function isCustomerGoogleLoggedIn(custObj) {
+    const c = custObj || (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
+    return Boolean(c && c.verifiedByGoogle === true && c.email && String(c.email).includes("@"));
+}
+
+function saveCustomerProfileEverywhere(payload = {}) {
+    const {
+        name = "",
+        phone = "",
+        email = "",
+        picture,
+        verifiedByGoogle,
+        isAdmin,
+        unlockedCourses,
+        purchasedDocs,
+        btlOrders,
+        source = "WEB_AUTO_SYNC"
+    } = payload;
     const prev = getSyncedCustomerLocal() || {};
     const cleanName = (name || prev.name || "").trim();
     const cleanEmail = (email || prev.email || "").trim().toLowerCase();
@@ -4282,14 +4376,20 @@ function saveCustomerProfileEverywhere({ name = "", phone = "", email = "", sour
 
     if (!cleanName && !cleanEmail) return prev;
 
+    const sameEmailAsPrev = Boolean(prev.email && cleanEmail && prev.email.toLowerCase() === cleanEmail);
+    const nextVerifiedByGoogle = verifiedByGoogle === true || (sameEmailAsPrev && prev.verifiedByGoogle === true);
+
     const updated = {
         ...prev,
         name: cleanName,
         email: cleanEmail,
         phone: cleanPhone,
-        unlockedCourses: prev.unlockedCourses || [],
-        purchasedDocs: prev.purchasedDocs || [],
-        btlOrders: prev.btlOrders || []
+        picture: picture !== undefined ? picture : (sameEmailAsPrev ? (prev.picture || "") : ""),
+        verifiedByGoogle: nextVerifiedByGoogle,
+        isAdmin: isAdmin !== undefined ? Boolean(isAdmin) : Boolean(nextVerifiedByGoogle && ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(cleanEmail)),
+        unlockedCourses: Array.isArray(unlockedCourses) ? unlockedCourses : (sameEmailAsPrev ? (prev.unlockedCourses || []) : []),
+        purchasedDocs: Array.isArray(purchasedDocs) ? purchasedDocs : (sameEmailAsPrev ? (prev.purchasedDocs || []) : []),
+        btlOrders: Array.isArray(btlOrders) ? btlOrders : (sameEmailAsPrev ? (prev.btlOrders || []) : [])
     };
 
     try {
@@ -4431,7 +4531,7 @@ function renderSyncedCustomerEntitlements(cust) {
     });
     btls.forEach(b => {
         html += `<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl flex justify-between items-center gap-2">
-            <div><strong class="text-slate-900">🎓 BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
+            <div><strong class="text-slate-900"> BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
             ${b.driveUrl ? `<a href="${b.driveUrl}" target="_blank" class="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-lg whitespace-nowrap">Mở BTL Drive</a>` : `<span class="text-amber-700 font-bold text-[10px] whitespace-nowrap">${b.status || "ĐANG LÀM"}</span>`}
         </div>`;
     });
@@ -4552,11 +4652,60 @@ function logoutCustomerSyncWeb() {
 
 async function verifyCourseBankPaymentNow() {
     if (!selectedCourseForCheckout) return;
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
     const noteEl = document.getElementById("courseTransferNote");
     const orderCode = (noteEl?.dataset?.orderCode || noteEl?.textContent || "").split(" ")[0].trim();
-    const email = document.getElementById("courseStudentEmail")?.value.trim() || getSyncedCustomerLocal()?.email || "";
+    const emailInputEl = document.getElementById("courseStudentEmail");
+    const phoneInputEl = document.getElementById("courseStudentPhone");
+    const email = (emailInputEl?.value || cust.email || "").trim().toLowerCase();
+    const rawPhone = (phoneInputEl?.value || cust.phone || "").replace(/\[.*\]/g, "").trim();
+    const digitsPhone = rawPhone.replace(/\D/g, "");
     const statusText = document.getElementById("courseWaitingStatusText");
-    if (statusText) statusText.textContent = "⏳ Đang đối soát Email biến động số dư ngân hàng ACB & mở khóa cho mã #" + orderCode + "...";
+
+    const hasGoogleLogged = Boolean(cust.email && cust.email.includes("@"));
+    const finalEmail = (hasGoogleLogged ? cust.email : email).trim().toLowerCase();
+
+    if (!finalEmail || !finalEmail.includes("@")) {
+        if (statusText) statusText.textContent = "Vui lòng nhập Email Gmail để hệ thống phân phát quyền truy cập khóa học Google Drive!";
+        if (emailInputEl) emailInputEl.focus();
+        alert("Vui lòng nhập Email Gmail để hệ thống phân phát quyền truy cập khóa học Google Drive!");
+        return;
+    }
+
+    if (digitsPhone.length < 9) {
+        if (statusText) statusText.textContent = "Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!";
+        if (phoneInputEl) phoneInputEl.focus();
+        alert("Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!");
+        return;
+    }
+
+    const name = (cust.name || "").trim() || email.split("@")[0];
+    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_COURSE_CONFIRM" });
+
+    const course = selectedCourseForCheckout;
+    const payload = {
+        action: "createOrder",
+        type: "COURSE_REGISTRATION",
+        orderType: "Khóa Học",
+        status: "PENDING",
+        orderCode: orderCode,
+        transferMemo: noteEl?.textContent || orderCode,
+        sku: course.id,
+        itemName: course.title,
+        price: course.price,
+        amount: course.price,
+        driveId: course.driveFolderId || "",
+        name: name,
+        phone: rawPhone,
+        email: email,
+        deviceId: getWebDeviceId(),
+        bank: "ACB",
+        stkNhan: "27820961",
+        timestamp: new Date().toISOString()
+    };
+    try { sendWebhookData(payload); } catch (e) {}
+
+    if (statusText) statusText.textContent = " Đang đối soát giao dịch ngân hàng ACB & kích hoạt khóa học cho mã #" + orderCode + "...";
     if (!state.webhookUrl || !orderCode) return;
     try {
         const verifyUrl = buildCourseVerifyUrl(orderCode, email) + '&manual=1';
@@ -4565,11 +4714,11 @@ async function verifyCourseBankPaymentNow() {
         if (data && (data.verified === true || data.paid === true)) {
             onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email || data.email || "", data.driveUrl || "");
         } else if (statusText) {
-            statusText.textContent = "⚠️ Chưa nhận được Email biến động số dư ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động mở khóa ngay khi tiền về!";
+            statusText.textContent = " Hệ thống đang chờ xác nhận chuyển khoản ACB cho mã #" + orderCode + " (" + email + " · " + rawPhone + "). Ngay khi tiền về sẽ tự động mở khóa!";
         }
     } catch (e) {
         if (statusText) {
-            statusText.textContent = "⚠️ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
+            statusText.textContent = " Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
         }
     }
 }
@@ -4770,9 +4919,9 @@ function openSuccessModal(type, orderData) {
                 <img id="serviceDepositQrImg" src="${qrSrc}" alt="VietQR Đặt Cọc 10% BTL" class="w-44 h-44 mx-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm mb-2 object-contain">
                 <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Số tiền cọc (10%): ${depAmount.toLocaleString("vi-VN")} VNĐ</div>
                 <div class="text-[11px] font-mono text-slate-600 dark:text-slate-300 mt-0.5">Nội dung CK: <strong>${memo}</strong></div>
-                <div id="serviceVerifyStatusText" class="text-[11px] text-amber-700 dark:text-amber-300 font-bold mt-2">⏳ Đang tự động quét biến động số dư ACB & đối soát hạn nộp (Deadline)...</div>
+                <div id="serviceVerifyStatusText" class="text-[11px] text-amber-700 dark:text-amber-300 font-bold mt-2"> Đang tự động quét biến động số dư ACB & đối soát hạn nộp (Deadline)...</div>
                 <button type="button" onclick="checkServicePaymentStatus('${cleanOrderId}', '${custEmail}', true)" class="mt-2.5 w-full py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow transition">
-                    🔄 Tôi Đã Chuyển Khoản Cọc — Kiểm Tra & Nhận Bản Check Ngay
+                     Tôi Đã Chuyển Khoản Cọc — Kiểm Tra & Nhận Bản Check Ngay
                 </button>
             `;
         }
@@ -4797,7 +4946,7 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
     isServiceVerifyInFlight = true;
     const stEl = document.getElementById("serviceVerifyStatusText");
     if (isManual && stEl) {
-        stEl.textContent = "⏳ Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+        stEl.textContent = " Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
     }
     try {
         const verifyUrl = `${state.webhookUrl}?action=verify&orderType=btl&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}${isManual ? "&manual=1" : ""}`;
@@ -4816,34 +4965,34 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
             const deadlineStr = data.deadline || currentServiceOrderData?.assignment?.deadline || "Theo đúng hạn nộp";
 
             if (data.btlDelivered === true && fullUrl) {
-                if (title) title.textContent = "🎉 Đã Tự Động Bàn Giao Bài Tập Lớn (BTL)!";
+                if (title) title.textContent = " Đã Tự Động Bàn Giao Bài Tập Lớn (BTL)!";
                 if (desc) desc.textContent = "Bài Tập Lớn / Tiểu Luận của bạn đã hoàn tất và được cấp quyền Google Drive trực tiếp cho Email của bạn!";
                 if (qrBox) {
                     qrBox.innerHTML = `
                         <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
-                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ BÀN GIAO BTL ĐÚNG HẠN (${deadlineStr})</div>
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300"> ĐÃ BÀN GIAO BTL ĐÚNG HẠN (${deadlineStr})</div>
                             <div class="text-[11px] text-slate-600 dark:text-slate-300">Quyền truy cập Google Drive đã được mở tự động cho <strong>${email}</strong>.</div>
                             <a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">
-                                🚀 MỞ FILE BÀI TẬP LỚN HOÀN CHỈNH (GOOGLE DRIVE)
+                                 MỞ FILE BÀI TẬP LỚN HOÀN CHỈNH (GOOGLE DRIVE)
                             </a>
                             <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 bg-slate-200 dark:bg-white/10 text-slate-800 dark:text-white font-bold text-[11px] rounded-xl text-center">
-                                📂 Mở Kho Bản Xem Trước / Đề Cương BTL
+                                 Mở Kho Bản Xem Trước / Đề Cương BTL
                             </a>
                         </div>
                     `;
                 }
             } else {
-                if (title) title.textContent = "✅ Đã Xác Nhận Đặt Cọc 10% BTL!";
+                if (title) title.textContent = " Đã Xác Nhận Đặt Cọc 10% BTL!";
                 if (desc) desc.textContent = "Hệ thống đã nhận cọc 10% qua ACB, gửi bản xem trước qua Email và hẹn giờ tự động bàn giao bản Full đúng Deadline!";
                 if (qrBox) {
                     qrBox.innerHTML = `
                         <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
-                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ XÁC NHẬN CỌC #${orderCode}</div>
-                            <div class="text-[11px] text-slate-700 dark:text-slate-200">📅 Hạn tự động bàn giao BTL hoàn chỉnh: <strong>${deadlineStr}</strong></div>
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300"> ĐÃ XÁC NHẬN CỌC #${orderCode}</div>
+                            <div class="text-[11px] text-slate-700 dark:text-slate-200"> Hạn tự động bàn giao BTL hoàn chỉnh: <strong>${deadlineStr}</strong></div>
                             <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl text-center shadow">
-                                📂 MỞ BẢN XEM TRƯỚC / ĐỀ CƯƠNG BTL (GOOGLE DRIVE)
+                                 MỞ BẢN XEM TRƯỚC / ĐỀ CƯƠNG BTL (GOOGLE DRIVE)
                             </a>
-                            ${fullUrl ? `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">🚀 MỞ FILE BTL HOÀN CHỈNH (GOOGLE DRIVE)</a>` : ""}
+                            ${fullUrl ? `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow"> MỞ FILE BTL HOÀN CHỈNH (GOOGLE DRIVE)</a>` : ""}
                         </div>
                     `;
                 }
@@ -4867,11 +5016,11 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
             };
             localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
         } else if (isManual && stEl) {
-            stEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động cập nhật ngay khi tiền về!";
+            stEl.textContent = " Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động cập nhật ngay khi tiền về!";
         }
     } catch (e) {
         if (isManual && stEl) {
-            stEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ACB. Hệ thống vẫn đang quét tự động mỗi 5 giây...";
+            stEl.textContent = " Đang kết nối máy chủ đối soát ACB. Hệ thống vẫn đang quét tự động mỗi 5 giây...";
         }
     } finally {
         isServiceVerifyInFlight = false;
@@ -5023,7 +5172,7 @@ async function handleDvtlGoogleCredential(response) {
     // 1) Nếu đang ở chế độ Bridge đăng nhập cho App Desktop -> chuyển thẳng id_token về 127.0.0.1!
     if (_dvtlAppBridgeCallbackUrl && /^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(_dvtlAppBridgeCallbackUrl)) {
         const st = document.getElementById("dvtlAppBridgeStatus");
-        if (st) st.textContent = "✓ Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
+        if (st) st.textContent = " Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
         window.location.href = _dvtlAppBridgeCallbackUrl + "?id_token=" + encodeURIComponent(idToken);
         return;
     }
@@ -5074,7 +5223,7 @@ async function handleDvtlGoogleCredential(response) {
 
     if (msgEl) {
         msgEl.className = "mt-2 text-[11px] font-bold text-center text-emerald-600";
-        msgEl.textContent = "✓ Đăng nhập Google thành công (" + verifiedCust.email + ")!";
+        msgEl.textContent = " Đăng nhập Google thành công (" + verifiedCust.email + ")!";
     }
 }
 
@@ -5231,7 +5380,7 @@ async function dvtlCompleteGoogleLogin(profileObj, serverQuery) {
     const msgEl = document.getElementById("dvtlGoogleStatusMsg");
     if (msgEl) {
         msgEl.className = "mt-2 text-[11px] font-bold text-center text-emerald-600";
-        msgEl.textContent = "✓ Đã đăng nhập Google: " + (verifiedCust.name || verifiedCust.email);
+        msgEl.textContent = " Đã đăng nhập Google: " + (verifiedCust.name || verifiedCust.email);
         msgEl.classList.remove("hidden");
     }
 }
@@ -5243,7 +5392,7 @@ async function handleDvtlGoogleAccessToken(tokenResp) {
     // App bridge support if opened with ?app_google_auth=1
     if (_dvtlAppBridgeCallbackUrl && /^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(_dvtlAppBridgeCallbackUrl)) {
         const st = document.getElementById("dvtlAppBridgeStatus");
-        if (st) st.textContent = "✓ Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
+        if (st) st.textContent = " Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
         window.location.href = _dvtlAppBridgeCallbackUrl + "?access_token=" + encodeURIComponent(accessToken);
         return;
     }
@@ -5324,3 +5473,264 @@ document.addEventListener("DOMContentLoaded", () => {
     const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
     dvtlRefreshHeaderGoogleBtn(cur);
 });
+
+
+/* ============================================================================
+   v10.6: STRUCTURED COURSE STUDY HUB & GOOGLE CHECKOUT SYNC
+   ============================================================================ */
+window.triggerGoogleSignInForCheckout = function(mode) {
+    const opened = typeof triggerDirectGoogleLoginPopup === "function" ? triggerDirectGoogleLoginPopup() : false;
+    if (!opened && typeof openCustomerSyncModal === "function") {
+        openCustomerSyncModal();
+    }
+};
+
+function getWebCourseStructuredUnits(course) {
+    if (!course || typeof COURSES_DATABASE === "undefined") return [];
+    const findC = (id) => COURSES_DATABASE.find(x => x.id === id);
+    const mapIds = {
+        "C199-KHTN1": ["K69-TOAN-DUC", "K69-LY-BIEN", "K69-SINH-NGHE"],
+        "C199-KHTN2": ["K69-TOAN-TIEN", "K69-LY-TIEN", "K69-ANH-MP"],
+        "C199-KHXH1": ["K69-VAN-SM", "K69-SU-HUONG", "K69-DIA-TUNG"],
+        "C199-KHXH2": ["K69-TOAN-SHIPPER", "K69-VAN-SM", "K69-ANH-MP"],
+        "C199-HSA": ["K69-HSA-HOCMAI", "K69-HSA-MAP", "K69-HSA-EMPIRE", "K69-HSA-EDU"],
+        "C199-TSA": ["K69-TSA-BMC", "K69-TSA-HOCMAI"],
+        "C199-VACT": ["K69-VACT-HOCMAI", "K69-VACT-EMPIRE", "K69-VACT-MAP"]
+    };
+    if (course.id === "ALL-COURSES-399K") {
+        return COURSES_DATABASE.filter(c => c.id !== "ALL-COURSES-399K" && !c.isPackageOnly);
+    }
+    const subIds = mapIds[course.id];
+    if (subIds && subIds.length) {
+        return subIds.map(findC).filter(Boolean);
+    }
+    return [course];
+}
+
+window.openWebCourseStudyHubModal = function(courseId) {
+    if (typeof COURSES_DATABASE === "undefined") return;
+    const course = COURSES_DATABASE.find(c => c.id === courseId) || COURSES_DATABASE[0];
+    if (!course) return;
+    const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+    const authQ = cust.email ? `?authuser=${encodeURIComponent(cust.email)}` : "";
+    const units = getWebCourseStructuredUnits(course);
+    const mainDriveUrl = (course.driveUrl || `https://drive.google.com/drive/folders/${course.driveFolderId}`) + authQ;
+
+    let modal = document.getElementById("webCourseStudyHubModal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "webCourseStudyHubModal";
+        modal.className = "fixed inset-0 z-[110] hidden items-center justify-center bg-slate-950/80 backdrop-blur-sm p-3 sm:p-5 overflow-y-auto";
+        modal.onclick = function(ev) { if (ev.target === modal) closeWebCourseStudyHubModal(); };
+        document.body.appendChild(modal);
+    }
+
+    const unitsHtml = units.map((u, idx) => {
+        const meta = typeof getCourseVisualMeta === "function" ? getCourseVisualMeta(u) : { badge: "MÔN HỌC", colorClass: "text-[#0D1677] bg-blue-50" };
+        const uUrl = (u.driveUrl || `https://drive.google.com/drive/folders/${u.driveFolderId}`) + authQ;
+        return `
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#060E2C] border border-slate-200 dark:border-white/15 flex flex-col justify-between gap-2.5 hover:border-[#0D1677] transition">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-1">
+                        <span class="px-2 py-0.5 rounded-md text-[10px] font-black uppercase bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-amber-300">
+                            Học phần ${idx + 1} · ${meta.badge}
+                        </span>
+                        <span class="text-[10px] font-bold text-emerald-600 dark:text-emerald-400"> Đã mở khóa</span>
+                    </div>
+                    <h4 class="text-xs sm:text-sm font-black text-slate-900 dark:text-white leading-snug">${u.title}</h4>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-semibold">${u.instructor || ""}</p>
+                </div>
+                <div class="flex items-center gap-2 pt-2 border-t border-slate-200/70 dark:border-white/10">
+                    <a href="${uUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-[11px] rounded-xl text-center shadow-sm transition">
+                         Mở Thư Mục Học Phần
+                    </a>
+                </div>
+            </div>
+        `;
+    }).join("");
+
+    modal.innerHTML = `
+        <div class="bg-white dark:bg-[#0A143D] rounded-3xl shadow-2xl border border-slate-200 dark:border-white/15 w-full max-w-2xl max-h-[92vh] overflow-y-auto p-5 sm:p-6 relative" onclick="event.stopPropagation()">
+            <button onclick="closeWebCourseStudyHubModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition">&times;</button>
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-4 border-b border-slate-200 dark:border-white/10 pr-8">
+                <img src="${course.coverImage || course.defaultCover || 'images/banners/combo_khtn.png'}" alt="${course.title}" class="w-full sm:w-36 aspect-video object-cover rounded-xl border border-slate-200 shrink-0">
+                <div class="space-y-1">
+                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[10px] font-black uppercase">
+                         Đã kích hoạt quyền truy cập khóa học
+                    </div>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-white font-condensed uppercase leading-snug">${course.title}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-300 font-semibold">${course.instructor || ""}</p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="flex items-center justify-between gap-2 mb-2.5">
+                    <h4 class="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-wide">
+                         Cấu Trúc Các Môn & Chuyên Đề Trong Khóa Của Bạn (${units.length} thư mục)
+                    </h4>
+                    <a href="${mainDriveUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-white font-black text-[11px] shadow-sm transition">
+                         Mở Drive Khóa Học
+                    </a>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-3 max-h-[52vh] overflow-y-auto pr-1">
+                    ${unitsHtml}
+                </div>
+            </div>
+        </div>
+    `;
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+};
+
+window.closeWebCourseStudyHubModal = function() {
+    const modal = document.getElementById("webCourseStudyHubModal");
+    if (modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }
+};
+
+window.openWebCourseStudyHubFromSuccess = function() {
+    const cid = selectedCourseForCheckout ? selectedCourseForCheckout.id : "C199-HSA";
+    closeCourseCheckoutModal();
+    openWebCourseStudyHubModal(cid);
+};
+
+// Override handleWebCourseCardClick so unlocked courses open the structured Study Hub modal!
+handleWebCourseCardClick = function(courseId) {
+    const cust = getSyncedCustomerLocal() || {};
+    if (isWebAdminEmail(cust.email) || isWebCourseUnlocked(courseId)) {
+        openWebCourseStudyHubModal(courseId);
+        return;
+    }
+    openCourseCheckoutModal(courseId);
+};
+
+// Hook into dvtlRefreshHeaderGoogleBtn so whenever Google login finishes, open checkout modals sync immediately
+const _origRefreshHdrV106 = typeof dvtlRefreshHeaderGoogleBtn === "function" ? dvtlRefreshHeaderGoogleBtn : null;
+dvtlRefreshHeaderGoogleBtn = function(cust) {
+    if (_origRefreshHdrV106) _origRefreshHdrV106(cust);
+    try { syncDocCheckoutGoogleUi(); } catch (_) {}
+    try { syncCourseCheckoutGoogleUi(); } catch (_) {}
+};
+
+
+
+// [v10.8 STRICT AUTH, CHECKOUT VALIDATION & DUAL-END DRIVE ACCESS]
+(function() {
+    window.isWebCourseUnlocked = function(courseId) {
+        const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
+        if (!cust || !isCustomerGoogleLoggedIn(cust)) return false;
+        const em = String(cust.email || "").trim().toLowerCase();
+        if (cust.isAdmin || em === "diepvientailieu@gmail.com" || em === "admin@diepvientailieu.store") return true;
+        if (!Array.isArray(cust.unlockedCourses) || cust.unlockedCourses.length === 0) return false;
+        const expanded = expandWebUnlockedCourses(cust.unlockedCourses);
+        const target = String(courseId || "").toUpperCase();
+        return expanded.includes("ALL-COURSES-399K") || expanded.includes("__ALL_COURSES_399K__") || expanded.includes(target);
+    };
+
+    window.syncDocCheckoutGoogleUi = function() {
+        const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+        const loggedIn = isCustomerGoogleLoggedIn(cust);
+        const savedEmail = loggedIn ? String(cust.email || "").trim().toLowerCase() : "";
+        const savedName = loggedIn ? String(cust.name || "").trim() : "";
+        const savedPhone = String(cust.phone || localStorage.getItem("dvs_cust_phone") || "").replace(/\[.*\]/g, "").trim();
+
+        const bannerEl = document.getElementById("docGoogleLoggedBanner");
+        const emailWrapEl = document.getElementById("docEmailInputWrap");
+        const savedTxtEl = document.getElementById("docSavedAccountText");
+        const emailInputEl = document.getElementById("checkoutEmailInput");
+        const phoneInputEl = document.getElementById("checkoutPhoneInput");
+
+        if (phoneInputEl && savedPhone && !phoneInputEl.value) phoneInputEl.value = savedPhone;
+
+        if (loggedIn && savedEmail) {
+            if (bannerEl) bannerEl.classList.remove("hidden");
+            if (emailWrapEl) emailWrapEl.classList.add("hidden");
+            if (savedTxtEl) savedTxtEl.textContent = savedName ? `${savedName} (${savedEmail})` : savedEmail;
+            if (emailInputEl) emailInputEl.value = savedEmail;
+        } else {
+            if (bannerEl) bannerEl.classList.add("hidden");
+            if (emailWrapEl) emailWrapEl.classList.remove("hidden");
+            if (emailInputEl && emailInputEl.value === String(cust.email || "").trim().toLowerCase() && !loggedIn) {
+                emailInputEl.value = "";
+            }
+        }
+    };
+
+    window.syncCourseCheckoutGoogleUi = function() {
+        const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+        const loggedIn = isCustomerGoogleLoggedIn(cust);
+        const savedEmail = loggedIn ? String(cust.email || "").trim().toLowerCase() : "";
+        const savedName = loggedIn ? String(cust.name || "").trim() : "";
+        const savedPhone = String(cust.phone || localStorage.getItem("dvs_cust_phone") || "").replace(/\[.*\]/g, "").trim();
+
+        const bannerEl = document.getElementById("courseSavedAccountBanner");
+        const emailWrapEl = document.getElementById("courseEmailInputWrap");
+        const savedTxtEl = document.getElementById("courseSavedAccountText");
+        const emailInputEl = document.getElementById("courseStudentEmail");
+        const phoneInputEl = document.getElementById("courseStudentPhone");
+        const nameInputEl = document.getElementById("courseStudentName");
+
+        if (nameInputEl && savedName) nameInputEl.value = savedName;
+        if (phoneInputEl && savedPhone && !phoneInputEl.value) phoneInputEl.value = savedPhone;
+
+        if (loggedIn && savedEmail) {
+            if (bannerEl) bannerEl.classList.remove("hidden");
+            if (emailWrapEl) emailWrapEl.classList.add("hidden");
+            if (savedTxtEl) savedTxtEl.textContent = savedName ? `${savedName} (${savedEmail})` : savedEmail;
+            if (emailInputEl) emailInputEl.value = savedEmail;
+        } else {
+            if (bannerEl) bannerEl.classList.add("hidden");
+            if (emailWrapEl) emailWrapEl.classList.remove("hidden");
+            if (emailInputEl && emailInputEl.value === String(cust.email || "").trim().toLowerCase() && !loggedIn) {
+                emailInputEl.value = "";
+            }
+        }
+    };
+
+    window.adjustCheckoutFormForAuthState = function(modalType) {
+        if (modalType === "doc" || !modalType) window.syncDocCheckoutGoogleUi();
+        if (modalType === "course" || !modalType) window.syncCourseCheckoutGoogleUi();
+    };
+
+    const _origHeaderAuth = window.handleHeaderAuthClick;
+    window.handleHeaderAuthClick = function() {
+        const cur = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+        if (isCustomerGoogleLoggedIn(cur)) {
+            if (typeof openCustomerSyncModal === "function") openCustomerSyncModal();
+            if (typeof dvtlRefreshHeaderGoogleBtn === "function") dvtlRefreshHeaderGoogleBtn(cur);
+            return;
+        }
+        const opened = typeof triggerDirectGoogleLoginPopup === "function" ? triggerDirectGoogleLoginPopup() : false;
+        if (!opened && typeof openCustomerSyncModal === "function") {
+            openCustomerSyncModal();
+        }
+    };
+
+    const _origRefreshBtn = window.dvtlRefreshHeaderGoogleBtn;
+    if (typeof _origRefreshBtn === "function") {
+        window.dvtlRefreshHeaderGoogleBtn = function(custArg) {
+            const c = custArg || (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
+            return _origRefreshBtn(isCustomerGoogleLoggedIn(c) ? c : null);
+        };
+    }
+
+    const origOpenDoc = window.openDocCheckoutModal;
+    if (typeof origOpenDoc === "function") {
+        window.openDocCheckoutModal = function() {
+            const res = origOpenDoc.apply(this, arguments);
+            window.syncDocCheckoutGoogleUi();
+            return res;
+        };
+    }
+
+    const origOpenCourse = window.openCourseCheckoutModal;
+    if (typeof origOpenCourse === "function") {
+        window.openCourseCheckoutModal = function() {
+            const res = origOpenCourse.apply(this, arguments);
+            window.syncCourseCheckoutGoogleUi();
+            return res;
+        };
+    }
+})();

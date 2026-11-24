@@ -3,29 +3,29 @@ try { if (localStorage.getItem("dvtl_web_banners_v10_purged") !== "1") { localSt
 function getSemanticSvgIconJs(iconKey) {
     const k = String(iconKey || "").trim();
     const map = {
-        "🧠": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
         "brain": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"/></svg>`,
-        "💰": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
         "coin": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1-1.8-1"/><path d="M12 6v2m0 8v2"/></svg>`,
-        "📊": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
-        "📈": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
         "chart": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>`,
-        "💻": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
         "laptop": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="4" rx="2" ry="2"/><line x1="2" x2="22" y1="20" y2="20"/></svg>`,
-        "⚖️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
-        "⚖": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
         "scale": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
-        "🎓": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
         "grad": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 10v6"/></svg>`,
-        "🏛️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
-        "🏛": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
         "uni": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M20 10v11"/><path d="M8 14v3"/><path d="M12 14v3"/><path d="M16 14v3"/></svg>`,
-        "⚡": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
         "bolt": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
-        "🎯": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
         "target": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
-        "✍️": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
-        "📝": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
+        "": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
         "pen": `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`
     };
     return map[k] || `<svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6"/><path d="M9 11h4"/></svg>`;
@@ -619,7 +619,7 @@ function renderUniOptions(list) {
 
                 <span class="truncate text-xs flex-1">${u.name}</span>
 
-                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold">✓</span>' : ''}
+                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold"></span>' : ''}
 
             </div>
 
@@ -655,7 +655,7 @@ function toggleUniDropdown(e) {
 
         menu.classList.remove("hidden");
 
-        if (chevron) chevron.textContent = "▲";
+        if (chevron) chevron.textContent = "";
 
         const filterInput = document.getElementById("uniFilterInput");
 
@@ -687,7 +687,7 @@ function closeUniDropdown() {
 
     if (menu) menu.classList.add("hidden");
 
-    if (chevron) chevron.textContent = "▼";
+    if (chevron) chevron.textContent = "";
 
 }
 
@@ -1317,21 +1317,21 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
                     <div class="flex items-center gap-1.5 mb-1.5">
                         <span class="text-base">${iconSymbol}</span>
                         <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
-                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto">⚡ CÓ SẴN FILE DRIVE</span>' : ''}
+                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"> CÓ SẴN FILE DRIVE</span>' : ''}
                     </div>
                     <h4 class="font-condensed font-black text-base sm:text-lg text-white tracking-wide uppercase leading-snug line-clamp-2 drop-shadow-md">
                         ${fullDocTitle}
                     </h4>
                     <div class="flex items-center gap-2.5 mt-2 text-[10px]">
                         <span class="text-amber-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg> ${nat.pages} Trang A4</span>
-                        <span class="text-emerald-300 font-bold">★ ${nat.rating} (${nat.reviewsCount})</span>
+                        <span class="text-emerald-300 font-bold"> ${nat.rating} (${nat.reviewsCount})</span>
                         <span class="text-sky-200 font-bold">Google Drive</span>
                     </div>
                 </div>
 
                 <div class="relative z-10 flex items-center justify-between pt-2 border-t border-white/20">
                     <span class="text-[9.5px] font-black text-amber-400 uppercase tracking-wide flex items-center gap-1">
-                        <span>★</span> CHUẨN ĐỀ THI ${docUniBadge} 2026
+                        <span></span> CHUẨN ĐỀ THI ${docUniBadge} 2026
                     </span>
                     <span class="text-[9.5px] font-mono text-sky-200">
                         diepvientailieu.store
@@ -1796,11 +1796,16 @@ function startDocPaymentPolling(orderCode, email) {
 
     setTimeout(() => checkDocPaymentStatus(orderCode, email, false), 1500);
 
+    const timerStart = Date.now();
+    if (window._docTimerInterval) clearInterval(window._docTimerInterval);
+    window._docTimerInterval = setInterval(() => {
+        const totalSec = Math.floor((Date.now() - timerStart) / 1000);
+        const mins = Math.floor(totalSec / 60);
+        const secs = totalSec % 60;
+        if (timerEl) timerEl.textContent = `Đã chờ: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }, 250);
+
     docPollingInterval = setInterval(() => {
-        elapsed += 4;
-        const mins = Math.floor(elapsed / 60);
-        const secs = elapsed % 60;
-        if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
         checkDocPaymentStatus(orderCode, email, false);
     }, 4000);
 }
@@ -1836,23 +1841,26 @@ async function confirmDocManualPayment() {
     const digitsPhone = rawPhone.replace(/\D/g, "");
     const fbEl = document.getElementById("docVerifyFeedbackMsg");
 
-    if (!email || !email.includes("@")) {
+    const hasGoogleLogged = Boolean(cust.email && cust.email.includes("@"));
+    const finalEmail = (hasGoogleLogged ? cust.email : email).trim().toLowerCase();
+
+    if (!finalEmail || !finalEmail.includes("@")) {
         if (fbEl) {
             fbEl.classList.remove("hidden");
-            fbEl.textContent = "⚠️ Vui lòng nhập Email Gmail (hoặc bấm Đăng nhập nhanh Google) để nhận tài liệu!";
+            fbEl.textContent = "Vui lòng nhập Email Gmail để hệ thống phân phát tài liệu Google Drive!";
         }
         if (emailInputEl) emailInputEl.focus();
-        alert("Vui lòng nhập Email Gmail nhận tài liệu Google Drive!");
+        alert("Vui lòng nhập Email Gmail để hệ thống phân phát tài liệu Google Drive!");
         return;
     }
 
     if (digitsPhone.length < 9) {
         if (fbEl) {
             fbEl.classList.remove("hidden");
-            fbEl.textContent = "⚠️ Vui lòng nhập Số điện thoại / Zalo để hoàn thành giao dịch!";
+            fbEl.textContent = "Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!";
         }
         if (phoneInputEl) phoneInputEl.focus();
-        alert("Vui lòng nhập Số điện thoại / Zalo của bạn để hoàn thành giao dịch!");
+        alert("Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!");
         return;
     }
 
@@ -1881,7 +1889,7 @@ async function confirmDocManualPayment() {
 
     if (fbEl) {
         fbEl.classList.remove("hidden");
-        fbEl.textContent = "⏳ Đang đối soát giao dịch ngân hàng ACB & mở khóa Google Drive cho mã đơn #" + orderCode + "...";
+        fbEl.textContent = " Đang đối soát giao dịch ngân hàng ACB & mở khóa Google Drive cho mã đơn #" + orderCode + "...";
     }
     if (!state.webhookUrl || !orderCode) return;
     try {
@@ -1891,11 +1899,11 @@ async function confirmDocManualPayment() {
         if (data && (data.verified === true || data.paid === true)) {
             onDocPaymentConfirmed(orderCode, email || data.email || "", data.driveUrl || "");
         } else if (fbEl) {
-            fbEl.textContent = "⚠️ Hệ thống đang chờ xác nhận chuyển khoản từ ngân hàng ACB cho mã #" + orderCode + " (" + email + " · " + rawPhone + "). Ngay khi tiền về sẽ tự động mở file Google Drive!";
+            fbEl.textContent = " Hệ thống đang chờ xác nhận chuyển khoản từ ngân hàng ACB cho mã #" + orderCode + " (" + email + " · " + rawPhone + "). Ngay khi tiền về sẽ tự động mở file Google Drive!";
         }
     } catch (e) {
         if (fbEl) {
-            fbEl.textContent = "⏳ Đang kết nối máy chủ đối soát ACB cho mã #" + orderCode + ". Vui lòng đợi vài giây...";
+            fbEl.textContent = " Đang kết nối máy chủ đối soát ACB cho mã #" + orderCode + ". Vui lòng đợi vài giây...";
         }
     }
 }
@@ -2999,7 +3007,7 @@ function renderWebSubjTrigger() {
     }
   }
   if (chevron) {
-    chevron.textContent = webSubjDropdownOpen ? "▲" : "▼";
+    chevron.textContent = webSubjDropdownOpen ? "" : "";
   }
 }
 
@@ -3034,7 +3042,7 @@ function renderWebSubjOptions(q = "") {
         <span class="dvs-uni-name-text">
           ${opt.name}
         </span>
-        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+        ${isSel ? '<span class="dvs-uni-check"></span>' : ''}
       </div>
     `;
   }).join("");
@@ -3117,7 +3125,7 @@ function renderWebProgTrigger() {
     }
   }
   if (chevron) {
-    chevron.textContent = webProgDropdownOpen ? "▲" : "▼";
+    chevron.textContent = webProgDropdownOpen ? "" : "";
   }
 }
 
@@ -3152,7 +3160,7 @@ function renderWebProgOptions(q = "") {
         <span class="dvs-uni-name-text">
           ${opt.name}
         </span>
-        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+        ${isSel ? '<span class="dvs-uni-check"></span>' : ''}
       </div>
     `;
   }).join("");
@@ -3658,7 +3666,7 @@ function renderCourseTargetOptionsHtml(list, chosenId) {
                     ${meta.badge}
                 </span>
                 <span class="truncate text-xs flex-1">${meta.cleanTitle}</span>
-                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold">✓</span>' : ''}
+                ${isSelected ? '<span class="text-xs text-sky-600 dark:text-sky-400 font-bold"></span>' : ''}
             </div>
         `;
     }).join("");
@@ -3673,7 +3681,7 @@ function toggleCourseTargetDropdown(e) {
     if (isHidden) {
         courseTargetDropdownOpen = true;
         menu.classList.remove("hidden");
-        if (chevron) chevron.textContent = "▲";
+        if (chevron) chevron.textContent = "";
         const inp = document.getElementById("courseTargetFilterInput");
         if (inp) {
             inp.value = "";
@@ -3690,7 +3698,7 @@ function closeCourseTargetDropdown() {
     const menu = document.getElementById("courseTargetDropdownMenu");
     const chevron = document.getElementById("courseTargetDropdownChevron");
     if (menu) menu.classList.add("hidden");
-    if (chevron) chevron.textContent = "▼";
+    if (chevron) chevron.textContent = "";
 }
 
 function filterCourseTargetList(query) {
@@ -3838,7 +3846,7 @@ function selectCourseCheckoutTier(tierKey) {
                         </div>
                         <div class="flex items-center gap-1.5 flex-shrink-0 text-slate-400">
                             <span class="text-[10px] font-bold text-[#0D1677] dark:text-amber-300 bg-blue-50 dark:bg-white/10 px-1.5 py-0.5 rounded border border-blue-200 dark:border-white/15">Đổi</span>
-                            <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform">▼</span>
+                            <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform"></span>
                         </div>
                     </div>
 
@@ -4045,12 +4053,16 @@ function startCoursePaymentPolling(orderCode, courseTitle, email) {
 
     setTimeout(() => checkCoursePaymentStatus(orderCode, courseTitle, email, false), 1500);
 
-    coursePollingInterval = setInterval(() => {
-        elapsed += 4;
-        const mins = Math.floor(elapsed / 60);
-        const secs = elapsed % 60;
-        if (timerEl) timerEl.textContent = `Đã chờ: ${mins}:${secs.toString().padStart(2,'0')}`;
+    const timerStart = Date.now();
+    if (window._courseTimerInterval) clearInterval(window._courseTimerInterval);
+    window._courseTimerInterval = setInterval(() => {
+        const totalSec = Math.floor((Date.now() - timerStart) / 1000);
+        const mins = Math.floor(totalSec / 60);
+        const secs = totalSec % 60;
+        if (timerEl) timerEl.textContent = `Đã chờ: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }, 250);
 
+    coursePollingInterval = setInterval(() => {
         checkCoursePaymentStatus(orderCode, courseTitle, email, false);
     }, 4000);
 }
@@ -4474,7 +4486,7 @@ function renderSyncedCustomerEntitlements(cust) {
     });
     btls.forEach(b => {
         html += `<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl flex justify-between items-center gap-2">
-            <div><strong class="text-slate-900">🎓 BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
+            <div><strong class="text-slate-900"> BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
             ${b.driveUrl ? `<a href="${b.driveUrl}" target="_blank" class="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-lg whitespace-nowrap">Mở BTL Drive</a>` : `<span class="text-amber-700 font-bold text-[10px] whitespace-nowrap">${b.status || "ĐANG LÀM"}</span>`}
         </div>`;
     });
@@ -4605,17 +4617,20 @@ async function verifyCourseBankPaymentNow() {
     const digitsPhone = rawPhone.replace(/\D/g, "");
     const statusText = document.getElementById("courseWaitingStatusText");
 
-    if (!email || !email.includes("@")) {
-        if (statusText) statusText.textContent = "⚠️ Vui lòng nhập Email Google (hoặc bấm Đăng nhập nhanh Google) để nhận khóa học!";
+    const hasGoogleLogged = Boolean(cust.email && cust.email.includes("@"));
+    const finalEmail = (hasGoogleLogged ? cust.email : email).trim().toLowerCase();
+
+    if (!finalEmail || !finalEmail.includes("@")) {
+        if (statusText) statusText.textContent = "Vui lòng nhập Email Gmail để hệ thống phân phát quyền truy cập khóa học Google Drive!";
         if (emailInputEl) emailInputEl.focus();
-        alert("Vui lòng nhập Email Google để nhận quyền truy cập khóa học!");
+        alert("Vui lòng nhập Email Gmail để hệ thống phân phát quyền truy cập khóa học Google Drive!");
         return;
     }
 
     if (digitsPhone.length < 9) {
-        if (statusText) statusText.textContent = "⚠️ Vui lòng nhập Số điện thoại / Zalo để hoàn thành giao dịch!";
+        if (statusText) statusText.textContent = "Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!";
         if (phoneInputEl) phoneInputEl.focus();
-        alert("Vui lòng nhập Số điện thoại / Zalo của bạn để hoàn thành giao dịch!");
+        alert("Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!");
         return;
     }
 
@@ -4645,7 +4660,7 @@ async function verifyCourseBankPaymentNow() {
     };
     try { sendWebhookData(payload); } catch (e) {}
 
-    if (statusText) statusText.textContent = "⏳ Đang đối soát giao dịch ngân hàng ACB & kích hoạt khóa học cho mã #" + orderCode + "...";
+    if (statusText) statusText.textContent = " Đang đối soát giao dịch ngân hàng ACB & kích hoạt khóa học cho mã #" + orderCode + "...";
     if (!state.webhookUrl || !orderCode) return;
     try {
         const verifyUrl = buildCourseVerifyUrl(orderCode, email) + '&manual=1';
@@ -4654,11 +4669,11 @@ async function verifyCourseBankPaymentNow() {
         if (data && (data.verified === true || data.paid === true)) {
             onCoursePaymentConfirmed(orderCode, selectedCourseForCheckout.title, email || data.email || "", data.driveUrl || "");
         } else if (statusText) {
-            statusText.textContent = "⚠️ Hệ thống đang chờ xác nhận chuyển khoản ACB cho mã #" + orderCode + " (" + email + " · " + rawPhone + "). Ngay khi tiền về sẽ tự động mở khóa!";
+            statusText.textContent = " Hệ thống đang chờ xác nhận chuyển khoản ACB cho mã #" + orderCode + " (" + email + " · " + rawPhone + "). Ngay khi tiền về sẽ tự động mở khóa!";
         }
     } catch (e) {
         if (statusText) {
-            statusText.textContent = "⏳ Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
+            statusText.textContent = " Đang kết nối máy chủ đối soát ngân hàng ACB cho mã #" + orderCode + ". Vui lòng thử lại sau vài giây!";
         }
     }
 }
@@ -4859,9 +4874,9 @@ function openSuccessModal(type, orderData) {
                 <img id="serviceDepositQrImg" src="${qrSrc}" alt="VietQR Đặt Cọc 10% BTL" class="w-44 h-44 mx-auto rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm mb-2 object-contain">
                 <div class="text-xs font-black text-[#0D1677] dark:text-amber-400">Số tiền cọc (10%): ${depAmount.toLocaleString("vi-VN")} VNĐ</div>
                 <div class="text-[11px] font-mono text-slate-600 dark:text-slate-300 mt-0.5">Nội dung CK: <strong>${memo}</strong></div>
-                <div id="serviceVerifyStatusText" class="text-[11px] text-amber-700 dark:text-amber-300 font-bold mt-2">⏳ Đang tự động quét biến động số dư ACB & đối soát hạn nộp (Deadline)...</div>
+                <div id="serviceVerifyStatusText" class="text-[11px] text-amber-700 dark:text-amber-300 font-bold mt-2"> Đang tự động quét biến động số dư ACB & đối soát hạn nộp (Deadline)...</div>
                 <button type="button" onclick="checkServicePaymentStatus('${cleanOrderId}', '${custEmail}', true)" class="mt-2.5 w-full py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs rounded-xl shadow transition">
-                    🔄 Tôi Đã Chuyển Khoản Cọc — Kiểm Tra & Nhận Bản Check Ngay
+                     Tôi Đã Chuyển Khoản Cọc — Kiểm Tra & Nhận Bản Check Ngay
                 </button>
             `;
         }
@@ -4886,7 +4901,7 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
     isServiceVerifyInFlight = true;
     const stEl = document.getElementById("serviceVerifyStatusText");
     if (isManual && stEl) {
-        stEl.textContent = "⏳ Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
+        stEl.textContent = " Đang kiểm tra biến động số dư ngân hàng ACB cho mã #" + orderCode + "...";
     }
     try {
         const verifyUrl = `${state.webhookUrl}?action=verify&orderType=btl&orderId=${encodeURIComponent(orderCode)}&email=${encodeURIComponent(email || "")}${isManual ? "&manual=1" : ""}`;
@@ -4905,34 +4920,34 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
             const deadlineStr = data.deadline || currentServiceOrderData?.assignment?.deadline || "Theo đúng hạn nộp";
 
             if (data.btlDelivered === true && fullUrl) {
-                if (title) title.textContent = "🎉 Đã Tự Động Bàn Giao Bài Tập Lớn (BTL)!";
+                if (title) title.textContent = " Đã Tự Động Bàn Giao Bài Tập Lớn (BTL)!";
                 if (desc) desc.textContent = "Bài Tập Lớn / Tiểu Luận của bạn đã hoàn tất và được cấp quyền Google Drive trực tiếp cho Email của bạn!";
                 if (qrBox) {
                     qrBox.innerHTML = `
                         <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
-                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ BÀN GIAO BTL ĐÚNG HẠN (${deadlineStr})</div>
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300"> ĐÃ BÀN GIAO BTL ĐÚNG HẠN (${deadlineStr})</div>
                             <div class="text-[11px] text-slate-600 dark:text-slate-300">Quyền truy cập Google Drive đã được mở tự động cho <strong>${email}</strong>.</div>
                             <a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">
-                                🚀 MỞ FILE BÀI TẬP LỚN HOÀN CHỈNH (GOOGLE DRIVE)
+                                 MỞ FILE BÀI TẬP LỚN HOÀN CHỈNH (GOOGLE DRIVE)
                             </a>
                             <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 bg-slate-200 dark:bg-white/10 text-slate-800 dark:text-white font-bold text-[11px] rounded-xl text-center">
-                                📂 Mở Kho Bản Xem Trước / Đề Cương BTL
+                                 Mở Kho Bản Xem Trước / Đề Cương BTL
                             </a>
                         </div>
                     `;
                 }
             } else {
-                if (title) title.textContent = "✅ Đã Xác Nhận Đặt Cọc 10% BTL!";
+                if (title) title.textContent = " Đã Xác Nhận Đặt Cọc 10% BTL!";
                 if (desc) desc.textContent = "Hệ thống đã nhận cọc 10% qua ACB, gửi bản xem trước qua Email và hẹn giờ tự động bàn giao bản Full đúng Deadline!";
                 if (qrBox) {
                     qrBox.innerHTML = `
                         <div class="p-3 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 rounded-xl text-left space-y-2">
-                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300">✅ ĐÃ XÁC NHẬN CỌC #${orderCode}</div>
-                            <div class="text-[11px] text-slate-700 dark:text-slate-200">📅 Hạn tự động bàn giao BTL hoàn chỉnh: <strong>${deadlineStr}</strong></div>
+                            <div class="text-xs font-black text-emerald-800 dark:text-emerald-300"> ĐÃ XÁC NHẬN CỌC #${orderCode}</div>
+                            <div class="text-[11px] text-slate-700 dark:text-slate-200"> Hạn tự động bàn giao BTL hoàn chỉnh: <strong>${deadlineStr}</strong></div>
                             <a href="${previewUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl text-center shadow">
-                                📂 MỞ BẢN XEM TRƯỚC / ĐỀ CƯƠNG BTL (GOOGLE DRIVE)
+                                 MỞ BẢN XEM TRƯỚC / ĐỀ CƯƠNG BTL (GOOGLE DRIVE)
                             </a>
-                            ${fullUrl ? `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow">🚀 MỞ FILE BTL HOÀN CHỈNH (GOOGLE DRIVE)</a>` : ""}
+                            ${fullUrl ? `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs rounded-xl text-center shadow"> MỞ FILE BTL HOÀN CHỈNH (GOOGLE DRIVE)</a>` : ""}
                         </div>
                     `;
                 }
@@ -4956,11 +4971,11 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
             };
             localStorage.setItem("dvtl_synced_customer", JSON.stringify(updatedCust));
         } else if (isManual && stEl) {
-            stEl.textContent = "⚠️ Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động cập nhật ngay khi tiền về!";
+            stEl.textContent = " Chưa nhận được Email biến động số dư từ ngân hàng ACB cho mã #" + orderCode + ". Hệ thống sẽ tự động cập nhật ngay khi tiền về!";
         }
     } catch (e) {
         if (isManual && stEl) {
-            stEl.textContent = "⚠️ Đang kết nối máy chủ đối soát ACB. Hệ thống vẫn đang quét tự động mỗi 5 giây...";
+            stEl.textContent = " Đang kết nối máy chủ đối soát ACB. Hệ thống vẫn đang quét tự động mỗi 5 giây...";
         }
     } finally {
         isServiceVerifyInFlight = false;
@@ -5112,7 +5127,7 @@ async function handleDvtlGoogleCredential(response) {
     // 1) Nếu đang ở chế độ Bridge đăng nhập cho App Desktop -> chuyển thẳng id_token về 127.0.0.1!
     if (_dvtlAppBridgeCallbackUrl && /^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(_dvtlAppBridgeCallbackUrl)) {
         const st = document.getElementById("dvtlAppBridgeStatus");
-        if (st) st.textContent = "✓ Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
+        if (st) st.textContent = " Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
         window.location.href = _dvtlAppBridgeCallbackUrl + "?id_token=" + encodeURIComponent(idToken);
         return;
     }
@@ -5163,7 +5178,7 @@ async function handleDvtlGoogleCredential(response) {
 
     if (msgEl) {
         msgEl.className = "mt-2 text-[11px] font-bold text-center text-emerald-600";
-        msgEl.textContent = "✓ Đăng nhập Google thành công (" + verifiedCust.email + ")!";
+        msgEl.textContent = " Đăng nhập Google thành công (" + verifiedCust.email + ")!";
     }
 }
 
@@ -5320,7 +5335,7 @@ async function dvtlCompleteGoogleLogin(profileObj, serverQuery) {
     const msgEl = document.getElementById("dvtlGoogleStatusMsg");
     if (msgEl) {
         msgEl.className = "mt-2 text-[11px] font-bold text-center text-emerald-600";
-        msgEl.textContent = "✓ Đã đăng nhập Google: " + (verifiedCust.name || verifiedCust.email);
+        msgEl.textContent = " Đã đăng nhập Google: " + (verifiedCust.name || verifiedCust.email);
         msgEl.classList.remove("hidden");
     }
 }
@@ -5332,7 +5347,7 @@ async function handleDvtlGoogleAccessToken(tokenResp) {
     // App bridge support if opened with ?app_google_auth=1
     if (_dvtlAppBridgeCallbackUrl && /^http:\/\/127\.0\.0\.1:\d+\/api\/auth\/google\/callback/.test(_dvtlAppBridgeCallbackUrl)) {
         const st = document.getElementById("dvtlAppBridgeStatus");
-        if (st) st.textContent = "✓ Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
+        if (st) st.textContent = " Đã xác thực Google! Đang chuyển về App Điệp Viên Study...";
         window.location.href = _dvtlAppBridgeCallbackUrl + "?access_token=" + encodeURIComponent(accessToken);
         return;
     }
@@ -5475,14 +5490,14 @@ window.openWebCourseStudyHubModal = function(courseId) {
                         <span class="px-2 py-0.5 rounded-md text-[10px] font-black uppercase bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-amber-300">
                             Học phần ${idx + 1} · ${meta.badge}
                         </span>
-                        <span class="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">✓ Đã mở khóa</span>
+                        <span class="text-[10px] font-bold text-emerald-600 dark:text-emerald-400"> Đã mở khóa</span>
                     </div>
                     <h4 class="text-xs sm:text-sm font-black text-slate-900 dark:text-white leading-snug">${u.title}</h4>
                     <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-semibold">${u.instructor || ""}</p>
                 </div>
                 <div class="flex items-center gap-2 pt-2 border-t border-slate-200/70 dark:border-white/10">
                     <a href="${uUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-[11px] rounded-xl text-center shadow-sm transition">
-                        📂 Mở Thư Mục Học Phần Này ↗
+                         Mở Thư Mục Học Phần Này ↗
                     </a>
                 </div>
             </div>
@@ -5491,12 +5506,12 @@ window.openWebCourseStudyHubModal = function(courseId) {
 
     modal.innerHTML = `
         <div class="bg-white dark:bg-[#0A143D] rounded-3xl shadow-2xl border border-slate-200 dark:border-white/15 w-full max-w-2xl max-h-[92vh] overflow-y-auto p-5 sm:p-6 relative" onclick="event.stopPropagation()">
-            <button onclick="closeWebCourseStudyHubModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition">✕</button>
+            <button onclick="closeWebCourseStudyHubModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-300 hover:text-red-600 font-black flex items-center justify-center transition"></button>
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-4 border-b border-slate-200 dark:border-white/10 pr-8">
                 <img src="${course.coverImage || course.defaultCover || 'images/banners/combo_khtn.png'}" alt="${course.title}" class="w-full sm:w-36 aspect-video object-cover rounded-xl border border-slate-200 shrink-0">
                 <div class="space-y-1">
                     <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[10px] font-black uppercase">
-                        ✓ Đã kích hoạt quyền truy cập khóa học
+                         Đã kích hoạt quyền truy cập khóa học
                     </div>
                     <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-white font-condensed uppercase leading-snug">${course.title}</h3>
                     <p class="text-xs text-slate-500 dark:text-slate-300 font-semibold">${course.instructor || ""}</p>
@@ -5506,10 +5521,10 @@ window.openWebCourseStudyHubModal = function(courseId) {
             <div class="mt-4">
                 <div class="flex items-center justify-between gap-2 mb-2.5">
                     <h4 class="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-wide">
-                        📚 Cấu Trúc Các Môn & Chuyên Đề Trong Khóa Của Bạn (${units.length} thư mục)
+                         Cấu Trúc Các Môn & Chuyên Đề Trong Khóa Của Bạn (${units.length} thư mục)
                     </h4>
                     <a href="${mainDriveUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-white font-black text-[11px] shadow-sm transition">
-                        📂 Mở Folder Tổng ↗
+                         Mở Folder Tổng ↗
                     </a>
                 </div>
                 <div class="grid sm:grid-cols-2 gap-3 max-h-[52vh] overflow-y-auto pr-1">
@@ -5553,3 +5568,80 @@ dvtlRefreshHeaderGoogleBtn = function(cust) {
     try { syncDocCheckoutGoogleUi(); } catch (_) {}
     try { syncCourseCheckoutGoogleUi(); } catch (_) {}
 };
+
+
+// [v10.7 FORM VALIDATION OVERRIDE]
+(function() {
+    window.adjustCheckoutFormForAuthState = function(modalType) {
+        const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+        const cleanEmail = String(cust.email || "").trim().toLowerCase();
+        const isLoggedIn = Boolean(cleanEmail && cleanEmail.includes("@"));
+
+        if (modalType === "doc" || !modalType) {
+            const emailInput = document.getElementById("checkoutEmailInput");
+            const emailContainer = emailInput ? emailInput.closest("div") : null;
+            const banner = document.getElementById("docGoogleLoggedBanner");
+            const savedText = document.getElementById("docSavedAccountText");
+            if (isLoggedIn) {
+                if (emailInput) emailInput.value = cleanEmail;
+                if (emailContainer) emailContainer.classList.add("hidden");
+                if (banner) {
+                    banner.classList.remove("hidden");
+                    if (savedText) savedText.textContent = cleanEmail;
+                }
+            } else {
+                if (emailContainer) emailContainer.classList.remove("hidden");
+                if (banner) banner.classList.add("hidden");
+            }
+        }
+
+        if (modalType === "course" || !modalType) {
+            const courseEmailInput = document.getElementById("courseStudentEmail");
+            const courseEmailContainer = courseEmailInput ? courseEmailInput.closest("div") : null;
+            const courseBanner = document.getElementById("courseGoogleLoggedBanner");
+            const courseSavedText = document.getElementById("courseSavedAccountText");
+            if (isLoggedIn) {
+                if (courseEmailInput) courseEmailInput.value = cleanEmail;
+                if (courseEmailContainer) courseEmailContainer.classList.add("hidden");
+                if (courseBanner) {
+                    courseBanner.classList.remove("hidden");
+                    if (courseSavedText) courseSavedText.textContent = cleanEmail;
+                }
+            } else {
+                if (courseEmailContainer) courseEmailContainer.classList.remove("hidden");
+                if (courseBanner) courseBanner.classList.add("hidden");
+            }
+        }
+
+        if (modalType === "course" || !modalType) {
+            const courseEmailInput = document.getElementById("courseStudentEmail");
+            const courseEmailContainer = courseEmailInput ? courseEmailInput.closest("div") : null;
+            if (courseEmailInput && isLoggedIn) {
+                courseEmailInput.value = cleanEmail;
+                if (courseEmailContainer) {
+                    courseEmailContainer.classList.add("hidden");
+                }
+            } else if (courseEmailContainer) {
+                courseEmailContainer.classList.remove("hidden");
+            }
+        }
+    };
+
+    const origOpenDoc = window.openCheckoutModal;
+    if (typeof origOpenDoc === "function") {
+        window.openCheckoutModal = function(docId) {
+            const res = origOpenDoc.apply(this, arguments);
+            setTimeout(() => { if (window.adjustCheckoutFormForAuthState) window.adjustCheckoutFormForAuthState("doc"); }, 50);
+            return res;
+        };
+    }
+
+    const origOpenCourse = window.openCourseCheckoutModal;
+    if (typeof origOpenCourse === "function") {
+        window.openCourseCheckoutModal = function(courseId) {
+            const res = origOpenCourse.apply(this, arguments);
+            setTimeout(() => { if (window.adjustCheckoutFormForAuthState) window.adjustCheckoutFormForAuthState("course"); }, 50);
+            return res;
+        };
+    }
+})();

@@ -5192,6 +5192,91 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         msg = f"{email.strip().lower()}|{hw_id.strip().upper()}|{clean_c}".encode("utf-8")
         return hmac.new(b"DVTL_SPY_DOC_1DEVICE_SECRET_2026", msg, hashlib.sha256).hexdigest()
 
+    def _get_valid_drive_access_token(self, user_access_token: str = "") -> str:
+        if user_access_token and len(user_access_token) > 20:
+            return user_access_token
+        now_ts = time.time()
+        cached_tok = getattr(self, "_cached_drive_tok", "")
+        cached_exp = getattr(self, "_cached_drive_tok_exp", 0.0)
+        if cached_tok and now_ts < cached_exp:
+            return cached_tok
+
+        token_candidates = [
+            Path(os.path.expanduser("~")) / ".gemini" / "antigravity" / "plugin_data" / "gdrive" / "token.json",
+            Path(r"C:\Users\Admin\.gemini\antigravity\plugin_data\gdrive\token.json"),
+            BASE_DIR / "AutoPay_System" / "token_diepvientailieu.json",
+            Path(r"c:\Users\Admin\Downloads\Hệ Thống Tự Động Hoá Điệp Viên Tài Liệu\AutoPay_System\token_diepvientailieu.json"),
+        ]
+        for tf in token_candidates:
+            if not tf.exists():
+                continue
+            try:
+                td = json.loads(tf.read_text(encoding="utf-8"))
+                tok_obj = td.get("token") if isinstance(td.get("token"), dict) else {}
+                client_id = td.get("client_id") or tok_obj.get("client_id") or ""
+                client_secret = td.get("client_secret") or tok_obj.get("client_secret") or ""
+                refresh_tok = tok_obj.get("refresh_token") or td.get("refresh_token") or ""
+                acc_tok = td.get("access_token") or tok_obj.get("access_token") or ""
+                # Always prefer refreshing if we haven't refreshed in this process yet
+                if refresh_tok and client_id and client_secret and not cached_tok:
+                    rr = requests.post(
+                        "https://oauth2.googleapis.com/token",
+                        data={
+                            "client_id": client_id,
+                            "client_secret": client_secret,
+                            "refresh_token": refresh_tok,
+                            "grant_type": "refresh_token",
+                        },
+                        timeout=8,
+                    )
+                    if rr.status_code == 200:
+                        new_tok = rr.json().get("access_token") or ""
+                        if new_tok:
+                            td["access_token"] = new_tok
+                            if isinstance(td.get("token"), dict):
+                                td["token"]["access_token"] = new_tok
+                            try:
+                                tf.write_text(json.dumps(td, indent=2, ensure_ascii=False), encoding="utf-8")
+                            except Exception:
+                                pass
+                            self._cached_drive_tok = new_tok
+                            self._cached_drive_tok_exp = now_ts + 2400
+                            return new_tok
+                if acc_tok:
+                    self._cached_drive_tok = acc_tok
+                    self._cached_drive_tok_exp = now_ts + 600
+                    return acc_tok
+            except Exception:
+                continue
+        return ""
+
+    def _is_user_authorized_for_course(self, email: str, course_id: str) -> bool:
+        em = str(email or "").strip().lower()
+        if not em:
+            g_u = getattr(self, "_google_user", None) or {}
+            em = str(g_u.get("email") or "").strip().lower()
+        if not em:
+            lic = self._load_local_device_license()
+            em = str(lic.get("email") or "").strip().lower()
+        if not em or "@" not in em:
+            return False
+        if self._is_admin_account(em):
+            return True
+        cid = str(course_id or "").strip().upper()
+        lic = self._load_local_device_license()
+        lic_em = str(lic.get("email") or "").strip().lower()
+        unlocked = set(str(x).strip().upper() for x in (lic.get("unlockedCourses") or []))
+        g_u = getattr(self, "_google_user", None) or {}
+        if str(g_u.get("email") or "").strip().lower() == em:
+            for x in (g_u.get("unlockedCourses") or []):
+                unlocked.add(str(x).strip().upper())
+        expanded = set(self._expand_unlocked_courses(list(unlocked)))
+        if lic_em == em and ("ALL-COURSES-399K" in expanded or "__ALL_COURSES_399K__" in expanded or not cid or cid in expanded):
+            return True
+        if "ALL-COURSES-399K" in expanded or (cid and cid in expanded):
+            return True
+        return False
+
     def _is_admin_account(self, email: str, password_or_phone: str = "") -> bool:
         em = str(email or "").strip().lower()
         return em == "diepvientailieu@gmail.com" 
@@ -5517,7 +5602,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         local_lic = self._load_local_device_license()
         raw_name_arg = str(args.get("customerName") or args.get("name") or "").strip()
         cust_name = raw_name_arg if (raw_name_arg and raw_name_arg != "Khách Hàng") else str(local_lic.get("name") or "Khách Hàng").strip()
-        raw_phone = re.sub(r"\[.*?\]", "", str(args.get("customerPhone") or args.get("phone") or local_lic.get("phone") or "")).strip()
+        raw_phone = re.sub(r"\D+", "", re.sub(r"\[.*?\]", "", str(args.get("customerPhone") or args.get("phone") or ""))).strip()[:11]
         drive_id = str(args.get("driveId") or "").strip()
         cust_email = str(args.get("customerEmail") or args.get("email") or local_lic.get("email") or "").strip().lower()
         if (cust_email and "@" in cust_email) or (cust_name and cust_name != "Khách Hàng"):
@@ -5576,6 +5661,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     label_type = "Khóa Học" if order_type == "course" else "Mua Đề Cương"
                     params = {
                         "action": "createOrder",
+                        "silent": "1",
                         "orderCode": order_code,
                         "orderType": label_type,
                         "name": cust_name,
@@ -5602,10 +5688,12 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             except Exception:
                 pass
 
-        if args.get("sync"):
-            _bg_notify()
-        else:
-            threading.Thread(target=_bg_notify, daemon=True).start()
+        has_valid_contact = bool(cust_email and "@" in cust_email and len(raw_phone) >= 10)
+        if has_valid_contact or order_type == "btl":
+            if args.get("sync"):
+                _bg_notify()
+            else:
+                threading.Thread(target=_bg_notify, daemon=True).start()
         return {
             "ok": True,
             "orderCode": order_code,
@@ -6056,7 +6144,28 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             except Exception:
                 pass
 
-        # Hậu xử lý: lọc bỏ file rác, giải mã Shortcut thật & sắp xếp tự nhiên (Folder trước -> Video/Tài liệu sau)
+        # Hậu xử lý: phân loại chuẩn 3 nhóm (folder / video / document), giải mã Shortcut & sắp xếp tự nhiên như Google Drive
+        def _classify_item(mime_val: str, name_val: str, is_fld_flag: bool) -> str:
+            m_low = str(mime_val or "").lower()
+            n_low = str(name_val or "").lower()
+            if is_fld_flag or m_low == "application/vnd.google-apps.folder":
+                return "folder"
+            if m_low.startswith("video/") or re.search(r"\.(mp4|mkv|mov|webm|m4v|avi|ts|flv)$", n_low):
+                return "video"
+            return "document"
+
+        def _build_drive_view_url(fid_s: str, mime_val: str, is_fld_flag: bool, fallback_u: str = "") -> str:
+            m_low = str(mime_val or "").lower()
+            if is_fld_flag or m_low == "application/vnd.google-apps.folder":
+                return f"https://drive.google.com/drive/folders/{fid_s}"
+            if "spreadsheet" in m_low:
+                return f"https://docs.google.com/spreadsheets/d/{fid_s}/edit"
+            if "document" in m_low:
+                return f"https://docs.google.com/document/d/{fid_s}/edit"
+            if "presentation" in m_low:
+                return f"https://docs.google.com/presentation/d/{fid_s}/edit"
+            return fallback_u or f"https://drive.google.com/file/d/{fid_s}/view"
+
         processed_files = []
         seen_ids = set()
         for it in live_files:
@@ -6072,14 +6181,17 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 target_id = str(sc_info.get("targetId") or "").strip()
                 target_mime = str(sc_info.get("targetMimeType") or "").strip()
                 if target_id:
-                    t_is_fld = target_mime == "application/vnd.google-apps.folder"
+                    t_is_fld = (target_mime == "application/vnd.google-apps.folder")
                     if target_id not in seen_ids:
                         seen_ids.add(target_id)
+                        eff_mime = "application/vnd.google-apps.folder" if t_is_fld else (target_mime or "application/octet-stream")
+                        kind = _classify_item(eff_mime, fname, t_is_fld)
                         processed_files.append({
                             "id": target_id,
                             "name": fname,
-                            "mimeType": "application/vnd.google-apps.folder" if t_is_fld else (target_mime or "video/mp4"),
-                            "url": f"https://drive.google.com/drive/folders/{target_id}" if t_is_fld else f"https://drive.google.com/file/d/{target_id}/view",
+                            "mimeType": eff_mime,
+                            "itemKind": kind,
+                            "url": _build_drive_view_url(target_id, eff_mime, t_is_fld),
                             "isFolder": t_is_fld,
                         })
                     continue
@@ -6092,27 +6204,49 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                             "id": tid,
                             "name": str(tname),
                             "mimeType": "application/vnd.google-apps.folder",
+                            "itemKind": "folder",
                             "url": f"https://drive.google.com/drive/folders/{tid}",
                             "isFolder": True,
                         })
                     continue
-            is_fld = bool(it.get("isFolder") or f_mime == "application/vnd.google-apps.folder")
+                # Shortcut không trỏ tới folder -> coi là tài liệu mở trực tiếp trên Drive
+                fid_sc = str(it.get("id") or "").strip()
+                if fid_sc and fid_sc not in seen_ids:
+                    seen_ids.add(fid_sc)
+                    processed_files.append({
+                        "id": fid_sc,
+                        "name": fname,
+                        "mimeType": f_mime,
+                        "itemKind": "document",
+                        "url": it.get("url") or f"https://drive.google.com/file/d/{fid_sc}/view",
+                        "isFolder": False,
+                    })
+                continue
+
+            is_fld = (f_mime == "application/vnd.google-apps.folder") or (bool(it.get("isFolder")) and "google-apps." not in f_mime)
             fid_val = str(it.get("id") or "").strip()
             if not fid_val or fid_val in seen_ids:
                 continue
             seen_ids.add(fid_val)
+            eff_mime2 = "application/vnd.google-apps.folder" if is_fld else f_mime
+            kind2 = _classify_item(eff_mime2, fname, is_fld)
             processed_files.append({
                 "id": fid_val,
                 "name": fname,
-                "mimeType": "application/vnd.google-apps.folder" if is_fld else f_mime,
-                "url": it.get("url") or (f"https://drive.google.com/drive/folders/{fid_val}" if is_fld else f"https://drive.google.com/file/d/{fid_val}/view"),
+                "mimeType": eff_mime2,
+                "itemKind": kind2,
+                "url": _build_drive_view_url(fid_val, eff_mime2, is_fld, str(it.get("url") or "")),
                 "isFolder": is_fld,
             })
 
+        kind_rank = {"folder": 0, "video": 1, "document": 2}
         def _nat_sort_key(entry):
-            parts = re.split(r"(\d+)", str(entry.get("name") or "").lower())
+            nm = str(entry.get("name") or "").strip()
+            # Đẩy các mục mở ngoặc vuông [SHEET...] xuống sau các chương đánh số 0, 1, 2...
+            bracket_penalty = 1 if nm.startswith("[") else 0
+            parts = re.split(r"(\d+)", nm.lower())
             norm_parts = [int(p) if p.isdigit() else p for p in parts]
-            return (0 if entry.get("isFolder") else 1, norm_parts)
+            return (kind_rank.get(entry.get("itemKind"), 2), bracket_penalty, norm_parts)
 
         processed_files.sort(key=_nat_sort_key)
 
@@ -6188,7 +6322,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.25.1", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.25.2", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":
@@ -6918,7 +7052,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.25.1", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.25.2", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -6935,7 +7069,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.25.1"
+                    local_ver = "2026.11.25.2"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     def _ver_tuple(v_str):
                         return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))
@@ -7095,6 +7229,71 @@ def make_http_handler(controller: BackendController, hub: EventHub):
             parsed = urllib.parse.urlparse(self.path)
             route = parsed.path
 
+            # 0A. Direct Authenticated Google Drive Video Streaming (HTTP 206 Partial Content)
+            if route.startswith("/api/drive/stream/"):
+                file_id = route.split("/api/drive/stream/", 1)[1].strip("/")
+                qs_s = urllib.parse.parse_qs(parsed.query)
+                req_email = (qs_s.get("email") or [""])[0].strip().lower()
+                req_course = (qs_s.get("courseId") or [""])[0].strip().upper()
+                if not file_id or not re.match(r"^[A-Za-z0-9_-]{10,}$", file_id):
+                    self.send_error(400, "Invalid Drive file ID")
+                    return
+                if not controller._is_user_authorized_for_course(req_email, req_course):
+                    self.send_error(403, "Account not authorized for this Google Drive course")
+                    return
+                g_user_cur = getattr(controller, "_google_user", None) or {}
+                u_tok = str(g_user_cur.get("accessToken") or "") if str(g_user_cur.get("email") or "").lower() == req_email else ""
+                drive_tok = controller._get_valid_drive_access_token(u_tok)
+                if not drive_tok:
+                    # Fallback redirect to preview if no OAuth token available
+                    self.send_response(302)
+                    self.send_header("Location", f"https://drive.google.com/file/d/{file_id}/preview")
+                    self.end_headers()
+                    return
+
+                range_hdr = self.headers.get("Range") or "bytes=0-"
+                up_headers = {"Authorization": f"Bearer {drive_tok}", "Range": range_hdr}
+                media_url = f"https://www.googleapis.com/drive/v3/files/{file_id}?alt=media&supportsAllDrives=true"
+                try:
+                    up_resp = requests.get(media_url, headers=up_headers, stream=True, timeout=(8, 60))
+                    if up_resp.status_code == 401:
+                        controller._cached_drive_tok = ""
+                        drive_tok = controller._get_valid_drive_access_token("")
+                        if drive_tok:
+                            up_headers["Authorization"] = f"Bearer {drive_tok}"
+                            up_resp = requests.get(media_url, headers=up_headers, stream=True, timeout=(8, 60))
+                    if up_resp.status_code not in (200, 206):
+                        up_resp.close()
+                        self.send_error(up_resp.status_code, "Upstream Drive stream error")
+                        return
+
+                    self.send_response(up_resp.status_code)
+                    ctype = up_resp.headers.get("Content-Type") or "video/mp4"
+                    if ctype == "application/octet-stream":
+                        ctype = "video/mp4"
+                    self.send_header("Content-Type", ctype)
+                    self.send_header("Accept-Ranges", "bytes")
+                    if up_resp.headers.get("Content-Range"):
+                        self.send_header("Content-Range", up_resp.headers["Content-Range"])
+                    if up_resp.headers.get("Content-Length"):
+                        self.send_header("Content-Length", up_resp.headers["Content-Length"])
+                    self.send_header("Cache-Control", "private, max-age=3600")
+                    self.end_headers()
+                    try:
+                        for chunk in up_resp.iter_content(chunk_size=131072):
+                            if chunk:
+                                self.wfile.write(chunk)
+                    except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
+                        pass
+                    finally:
+                        up_resp.close()
+                except Exception as ex_st:
+                    try:
+                        self.send_error(502, str(ex_st))
+                    except Exception:
+                        pass
+                return
+
             # 0. Google 1-Click OAuth Routes (App <-> diepvientailieu.store)
             if route == "/api/auth/google/status":
                 u = getattr(controller, "_google_user", None) or _dvs_load_saved_google_user()
@@ -7139,7 +7338,7 @@ def make_http_handler(controller: BackendController, hub: EventHub):
                         ui = ur.json() if ur.status_code == 200 else {}
                         em = str(ui.get("email") or "").strip().lower()
                         if em:
-                            user = {"email": em, "name": str(ui.get("name") or em.split("@")[0]).strip(), "picture": str(ui.get("picture") or "").strip(), "verifiedByGoogle": True, "isAdmin": em in ("diepvientailieu@gmail.com", "admin@diepvientailieu.store"), "unlockedCourses": [], "phone": ""}
+                            user = {"email": em, "name": str(ui.get("name") or em.split("@")[0]).strip(), "picture": str(ui.get("picture") or "").strip(), "verifiedByGoogle": True, "isAdmin": em == "diepvientailieu@gmail.com", "unlockedCourses": [], "phone": "", "accessToken": acc_tok}
                             try:
                                 gr = requests.get("https://script.google.com/macros/s/AKfycbxMOdsNkhY8-5xQtZ_86STf781VdFJbRsLkK6n8qRF4ENqreMsl4CdELYn-85wHcqvx/exec", params={"action": "verifyGoogleLogin", "accessToken": acc_tok, "deviceName": "DiepVienStudy Desktop"}, timeout=12)
                                 if gr.status_code == 200 and gr.json().get("ok") and isinstance(gr.json().get("customer"), dict):

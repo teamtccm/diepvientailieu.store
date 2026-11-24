@@ -1716,7 +1716,7 @@ function goToDocPaymentStep(e) {
     const name = (nameEl?.value || cust.name || "").trim() || (email ? email.split("@")[0] : "Khách Hàng");
 
     if (!phone || !email) {
-        alert("Vui lòng điền Số điện thoại / Zalo và Email nhận tài liệu!");
+        alert("Vui lòng nhập Email Gmail và số điện thoại Zalo để nhận hỗ trợ!");
         return;
     }
 
@@ -1799,14 +1799,16 @@ function startDocPaymentPolling(orderCode, email) {
 
     setTimeout(() => checkDocPaymentStatus(orderCode, email, false), 1500);
 
-    const timerStart = Date.now();
+    const docDeadline = Date.now() + 15 * 60 * 1000;
     if (window._docTimerInterval) clearInterval(window._docTimerInterval);
-    window._docTimerInterval = setInterval(() => {
-        const totalSec = Math.floor((Date.now() - timerStart) / 1000);
-        const mins = Math.floor(totalSec / 60);
-        const secs = totalSec % 60;
-        if (timerEl) timerEl.textContent = `Đã chờ: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-    }, 250);
+    const updateDocTimer = () => {
+        const remainSec = Math.max(0, Math.ceil((docDeadline - Date.now()) / 1000));
+        const mins = Math.floor(remainSec / 60);
+        const secs = remainSec % 60;
+        if (timerEl) timerEl.textContent = `Thời gian giữ mã thanh toán: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    };
+    updateDocTimer();
+    window._docTimerInterval = setInterval(updateDocTimer, 1000);
 
     docPollingInterval = setInterval(() => {
         checkDocPaymentStatus(orderCode, email, false);
@@ -1860,10 +1862,10 @@ async function confirmDocManualPayment() {
     if (digitsPhone.length < 9) {
         if (fbEl) {
             fbEl.classList.remove("hidden");
-            fbEl.textContent = "Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!";
+            fbEl.textContent = "Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!";
         }
         if (phoneInputEl) phoneInputEl.focus();
-        alert("Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!");
+        alert("Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!");
         return;
     }
 
@@ -2855,7 +2857,7 @@ function expandWebUnlockedCourses(rawList) {
 
 function isWebCourseUnlocked(courseId) {
     const _admCust = typeof getSyncedCustomerLocal === "function" ? (getSyncedCustomerLocal() || {}) : {};
-    if (_admCust.isAdmin || _admCust.email === "diepvientailieu@gmail.com" || _admCust.email === "admin@diepvientailieu.store") return true;
+    if (_admCust.isAdmin || _admCust.email === "diepvientailieu@gmail.com" ) return true;
 
     const cust = getSyncedCustomerLocal();
 
@@ -2872,13 +2874,19 @@ function isWebCourseUnlocked(courseId) {
 function openCourseCheckoutModalByTier(tier) {
     if (typeof COURSES_DATABASE === "undefined") return;
     if (tier === "full_399k") {
+        window._isGenericTierCheckout = false;
+        window._isGenericTierCheckoutTriggered = false;
         openCourseCheckoutModal("ALL-COURSES-399K");
     } else if (tier === "subject_69k") {
-        const firstSubj = COURSES_DATABASE.find(c => String(c.id).startsWith("COURSE-SUBJ-")) || COURSES_DATABASE[0];
-        openCourseCheckoutModal(firstSubj ? firstSubj.id : "COURSE-SUBJ-TOAN12-2K9");
+        window._isGenericTierCheckout = true;
+        window._isGenericTierCheckoutTriggered = true;
+        const firstSubj = COURSES_DATABASE.find(c => c.tier === "subject_69k" || String(c.id).startsWith("K69-")) || COURSES_DATABASE[0];
+        openCourseCheckoutModal(firstSubj ? firstSubj.id : "K69-TOAN-DUC");
     } else {
-        const first199 = COURSES_DATABASE.find(c => !c.isPackageOnly && c.tierType === "course_199k") || COURSES_DATABASE[1] || COURSES_DATABASE[0];
-        openCourseCheckoutModal(first199 ? first199.id : "COURSE-ITEM-01");
+        window._isGenericTierCheckout = true;
+        window._isGenericTierCheckoutTriggered = true;
+        const first199 = COURSES_DATABASE.find(c => !c.isPackageOnly && (c.tier === "course_199k" || String(c.id).startsWith("C199-"))) || COURSES_DATABASE[1] || COURSES_DATABASE[0];
+        openCourseCheckoutModal(first199 ? first199.id : "C199-KHTN1");
     }
 }
 
@@ -3468,7 +3476,7 @@ function renderCourses() {
 
 function isWebAdminEmail(email) {
     const e = String(email || "").trim().toLowerCase();
-    return e === "diepvientailieu@gmail.com" || e === "admin@diepvientailieu.store";
+    return e === "diepvientailieu@gmail.com" ;
 }
 
 function handleWebCourseCardClick(courseId) {
@@ -3777,7 +3785,7 @@ function selectCourseCheckoutTier(tierKey) {
             ...fullCourse,
             id: "ALL-COURSES-399K",
             code: "FULL399K",
-            title: "Gói VIP Full Trọn Bộ 37 Khóa Học & Luyện Đề 2027 (69K + 199K)",
+            title: "Full Tất Cả Khóa Học & Luyện Đề THPTQG · HSA · TSA · V-ACT",
             price: 399000,
             originalPrice: 2500000,
             discountPercent: "84%",
@@ -3806,74 +3814,94 @@ function selectCourseCheckoutTier(tierKey) {
 
     const listEl = document.getElementById("courseTierOptionsList");
     if (listEl) {
-        const tabs = [
-            { key: "subject_69k", label: "Theo môn · 69.000đ" },
-            { key: "course_199k", label: "Mua khóa · 199.000đ" },
-            { key: "full_399k", label: "Trọn bộ 37 Khóa · 399.000đ" }
-        ];
-        const tabsHtml = `
-            <div class="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-slate-100 dark:bg-[#060E2C] border border-slate-200 dark:border-white/10">
-                ${tabs.map(t => {
-                    const active = activeCourseCheckoutTierKey === t.key;
-                    return `<button type="button" onclick="selectCourseCheckoutTier('${t.key}')" class="py-2 px-2 rounded-lg text-[11px] sm:text-xs font-black transition text-center ${active ? 'bg-[#0D1677] text-white shadow-sm' : 'text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-white/10'}">${t.label}</button>`;
-                }).join("")}
-            </div>
-        `;
-
-        let pickerHtml = "";
-        if (activeCourseCheckoutTierKey === "subject_69k" || activeCourseCheckoutTierKey === "course_199k") {
-            const activeList = activeCourseCheckoutTierKey === "subject_69k" ? subjList : courseList;
-            const chosenMeta = getCourseVisualMeta(chosen);
-            const labelHeading = activeCourseCheckoutTierKey === "subject_69k"
-                ? "1. Môn Học Cần Mở Khóa (Tìm mã/tên môn hoặc chọn danh sách):"
-                : "1. Khóa Học Cần Mở Khóa (Tìm mã/tên thầy cô hoặc chọn danh sách):";
-
-            pickerHtml = `
-                <div class="mt-2.5 relative" id="courseTargetComboboxWrapper">
-                    <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                        ${labelHeading}
-                    </label>
-                    <select id="courseCheckoutTargetSelect" class="hidden" onchange="onChangeCourseCheckoutTarget(this.value)">
-                        <option value="${chosen.id}" selected>${chosen.title}</option>
-                    </select>
-
-                    <!-- Custom Interactive Combobox Trigger (Identical to 1. Trường Đại Học) -->
-                    <div id="courseTargetSelectedDisplay" onclick="toggleCourseTargetDropdown(event)" class="w-full bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/15 hover:border-sky-400 dark:hover:border-sky-500 rounded-xl px-3 py-2.5 text-xs font-semibold text-slate-800 dark:text-slate-100 transition cursor-pointer flex items-center justify-between shadow-sm">
-                        <div class="flex items-center gap-2 min-w-0 flex-1 pr-2">
-                            <div class="w-6 h-6 rounded border p-0.5 shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0 ${chosenMeta.colorClass}">
-                                ${chosenMeta.svg}
-                            </div>
-                            <span class="px-1.5 py-0.5 bg-slate-200 dark:bg-white/15 text-slate-900 dark:text-white font-mono font-bold text-[10px] rounded flex-shrink-0">
-                                ${chosenMeta.badge}
-                            </span>
-                            <span class="truncate text-xs font-bold text-slate-800 dark:text-white">${chosenMeta.cleanTitle}</span>
-                        </div>
-                        <div class="flex items-center gap-1.5 flex-shrink-0 text-slate-400">
-                            <span class="text-[10px] font-bold text-[#0D1677] dark:text-amber-300 bg-blue-50 dark:bg-white/10 px-1.5 py-0.5 rounded border border-blue-200 dark:border-white/15">Đổi</span>
-                            <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform"></span>
-                        </div>
-                    </div>
-
-                    <!-- Searchable Dropdown Menu (Identical to 1. Trường Đại Học) -->
-                    <div id="courseTargetDropdownMenu" class="hidden mt-1.5 bg-white dark:bg-[#060E2C] border-2 border-sky-400 dark:border-sky-600 rounded-2xl shadow-2xl z-50 overflow-hidden">
-                        <div class="p-2 border-b border-slate-100 dark:border-white/10 bg-slate-50 dark:bg-[#0A143D]">
-                            <input type="text" id="courseTargetFilterInput" oninput="filterCourseTargetList(this.value)" onclick="event.stopPropagation()" placeholder="Gõ mã môn (Toán 12, Lý 12, HSA, TSA...) hoặc tên thầy cô..." class="w-full bg-white dark:bg-[#03081E] border-2 border-[#0D1677] dark:border-sky-500 rounded-xl px-3 py-2 text-xs text-slate-800 dark:text-slate-100 outline-none shadow-inner">
-                        </div>
-                        <div id="courseTargetOptionsList" class="max-h-56 overflow-y-auto p-1 divide-y divide-slate-100 dark:divide-white/5 text-xs">
-                            ${renderCourseTargetOptionsHtml(activeList, chosen.id)}
-                        </div>
-                    </div>
-                </div>
-            `;
+        const tierBoxEl = document.getElementById("courseTierSelectorBox");
+        if (!window._isGenericTierCheckout || activeCourseCheckoutTierKey === "full_399k") {
+            if (tierBoxEl) tierBoxEl.classList.add("hidden");
+            listEl.innerHTML = "";
         } else {
-            pickerHtml = `
-                <div class="mt-2 p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 text-[11px] font-bold text-emerald-900 dark:text-emerald-200">
-                    Đã chọn <strong>Gói VIP Full Trọn Bộ 37 Khóa Học (399.000đ)</strong>: Mở khóa toàn bộ 37 Khóa học & Combo Luyện Thi 2027 (THPTQG, HSA, TSA, V-ACT) trên Google Drive & Hệ thống học tập.
-                </div>
-            `;
+            if (tierBoxEl) tierBoxEl.classList.remove("hidden");
+            let pickerHtml = "";
+            if (activeCourseCheckoutTierKey === "subject_69k") {
+                const activeList = subjList;
+                const chosenMeta = getCourseVisualMeta(chosen);
+                pickerHtml = `
+                    <div class="mt-1 relative" id="courseTargetComboboxWrapper">
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                            Chọn 1 Môn / Thầy Cô bạn cần mở khóa (69.000đ):
+                        </label>
+                        <select id="courseCheckoutTargetSelect" class="hidden" onchange="onChangeCourseCheckoutTarget(this.value)">
+                            <option value="${chosen.id}" selected>${chosen.title}</option>
+                        </select>
+                        <div id="courseTargetSelectedDisplay" onclick="toggleCourseTargetDropdown(event)" class="w-full bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/15 hover:border-sky-400 dark:hover:border-sky-500 rounded-xl px-3 py-2.5 text-xs font-semibold text-slate-800 dark:text-slate-100 transition cursor-pointer flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2 min-w-0 flex-1 pr-2">
+                                <div class="w-6 h-6 rounded border p-0.5 shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0 ${chosenMeta.colorClass}">
+                                    ${chosenMeta.svg}
+                                </div>
+                                <span class="px-1.5 py-0.5 bg-slate-200 dark:bg-white/15 text-slate-900 dark:text-white font-mono font-bold text-[10px] rounded flex-shrink-0">
+                                    ${chosenMeta.badge}
+                                </span>
+                                <span class="truncate text-xs font-bold text-slate-800 dark:text-white">${chosenMeta.cleanTitle}</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 flex-shrink-0 text-slate-400">
+                                <span class="text-[10px] font-bold text-[#0D1677] dark:text-amber-300 bg-blue-50 dark:bg-white/10 px-1.5 py-0.5 rounded border border-blue-200 dark:border-white/15">Đổi</span>
+                                <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform"></span>
+                            </div>
+                        </div>
+                        <div id="courseTargetDropdownMenu" class="hidden mt-1.5 bg-white dark:bg-[#060E2C] border-2 border-sky-400 dark:border-sky-600 rounded-2xl shadow-2xl z-50 overflow-hidden">
+                            <div class="p-2 border-b border-slate-100 dark:border-white/10 bg-slate-50 dark:bg-[#0A143D]">
+                                <input type="text" id="courseTargetFilterInput" oninput="filterCourseTargetList(this.value)" onclick="event.stopPropagation()" placeholder="Gõ tên môn hoặc thầy cô..." class="w-full bg-white dark:bg-[#03081E] border-2 border-[#0D1677] dark:border-sky-500 rounded-xl px-3 py-2 text-xs text-slate-800 dark:text-slate-100 outline-none shadow-inner">
+                            </div>
+                            <div id="courseTargetOptionsList" class="max-h-56 overflow-y-auto p-1 divide-y divide-slate-100 dark:divide-white/5 text-xs">
+                                ${renderCourseTargetOptionsHtml(activeList, chosen.id)}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (activeCourseCheckoutTierKey === "course_199k") {
+                const activeList = courseList;
+                const chosenMeta = getCourseVisualMeta(chosen);
+                pickerHtml = `
+                    <div class="mt-1 relative" id="courseTargetComboboxWrapper">
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                            Chọn Khóa ĐGNL hoặc Combo Ban bạn cần mở khóa (199.000đ):
+                        </label>
+                        <select id="courseCheckoutTargetSelect" class="hidden" onchange="onChangeCourseCheckoutTarget(this.value)">
+                            <option value="${chosen.id}" selected>${chosen.title}</option>
+                        </select>
+                        <div id="courseTargetSelectedDisplay" onclick="toggleCourseTargetDropdown(event)" class="w-full bg-slate-50 dark:bg-[#060E2C] border-2 border-slate-200 dark:border-white/15 hover:border-sky-400 dark:hover:border-sky-500 rounded-xl px-3 py-2.5 text-xs font-semibold text-slate-800 dark:text-slate-100 transition cursor-pointer flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2 min-w-0 flex-1 pr-2">
+                                <div class="w-6 h-6 rounded border p-0.5 shadow-sm flex items-center justify-center overflow-hidden flex-shrink-0 ${chosenMeta.colorClass}">
+                                    ${chosenMeta.svg}
+                                </div>
+                                <span class="px-1.5 py-0.5 bg-slate-200 dark:bg-white/15 text-slate-900 dark:text-white font-mono font-bold text-[10px] rounded flex-shrink-0">
+                                    ${chosenMeta.badge}
+                                </span>
+                                <span class="truncate text-xs font-bold text-slate-800 dark:text-white">${chosenMeta.cleanTitle}</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 flex-shrink-0 text-slate-400">
+                                <span class="text-[10px] font-bold text-[#0D1677] dark:text-amber-300 bg-blue-50 dark:bg-white/10 px-1.5 py-0.5 rounded border border-blue-200 dark:border-white/15">Đổi</span>
+                                <span id="courseTargetDropdownChevron" class="text-[10px] text-slate-400 transition-transform"></span>
+                            </div>
+                        </div>
+                        <div id="courseTargetDropdownMenu" class="hidden mt-1.5 bg-white dark:bg-[#060E2C] border-2 border-sky-400 dark:border-sky-600 rounded-2xl shadow-2xl z-50 overflow-hidden">
+                            <div class="p-2 border-b border-slate-100 dark:border-white/10 bg-slate-50 dark:bg-[#0A143D]">
+                                <input type="text" id="courseTargetFilterInput" oninput="filterCourseTargetList(this.value)" onclick="event.stopPropagation()" placeholder="Gõ tên khóa hoặc combo..." class="w-full bg-white dark:bg-[#03081E] border-2 border-[#0D1677] dark:border-sky-500 rounded-xl px-3 py-2 text-xs text-slate-800 dark:text-slate-100 outline-none shadow-inner">
+                            </div>
+                            <div id="courseTargetOptionsList" class="max-h-56 overflow-y-auto p-1 divide-y divide-slate-100 dark:divide-white/5 text-xs">
+                                ${renderCourseTargetOptionsHtml(activeList, chosen.id)}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                pickerHtml = `
+                    <div class="mt-1 p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 text-[11px] font-bold text-emerald-900 dark:text-emerald-200">
+                        Đã chọn <strong>Gói VIP Full Trọn Bộ 37 Khóa Học (399.000đ)</strong>: Mở khóa toàn bộ 37 Khóa học & Combo Luyện Thi 2027 trên Google Drive & Hệ thống học tập.
+                    </div>
+                `;
+            }
+            listEl.innerHTML = pickerHtml;
         }
-
-        listEl.innerHTML = tabsHtml + pickerHtml;
     }
 
     // Nếu đang ở Bước 2 (khách đã đăng nhập nên hiện sẵn QR), khi khách đổi gói 69K / 199K / 399K hoặc đổi môn -> cập nhật lại mã QR và mã giao dịch ngay lập tức!
@@ -3928,6 +3956,11 @@ function openCourseCheckoutModal(courseId) {
     if (typeof COURSES_DATABASE === "undefined") return;
     const course = COURSES_DATABASE.find(c => c.id === courseId) || COURSES_DATABASE.find(c => !c.isPackageOnly) || COURSES_DATABASE[0];
     if (!course) return;
+
+    if (!window._isGenericTierCheckoutTriggered) {
+        window._isGenericTierCheckout = false;
+    }
+    window._isGenericTierCheckoutTriggered = false;
 
     baseClickedCourseForCheckout = course;
     selectedCourse199kId = (course.tier === "course_199k" || String(course.id).startsWith("C199-")) ? course.id : "C199-HSA";
@@ -4060,14 +4093,16 @@ function startCoursePaymentPolling(orderCode, courseTitle, email) {
 
     setTimeout(() => checkCoursePaymentStatus(orderCode, courseTitle, email, false), 1500);
 
-    const timerStart = Date.now();
+    const courseDeadline = Date.now() + 15 * 60 * 1000;
     if (window._courseTimerInterval) clearInterval(window._courseTimerInterval);
-    window._courseTimerInterval = setInterval(() => {
-        const totalSec = Math.floor((Date.now() - timerStart) / 1000);
-        const mins = Math.floor(totalSec / 60);
-        const secs = totalSec % 60;
-        if (timerEl) timerEl.textContent = `Đã chờ: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-    }, 250);
+    const updateCourseTimer = () => {
+        const remainSec = Math.max(0, Math.ceil((courseDeadline - Date.now()) / 1000));
+        const mins = Math.floor(remainSec / 60);
+        const secs = remainSec % 60;
+        if (timerEl) timerEl.textContent = `Thời gian giữ mã thanh toán: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    };
+    updateCourseTimer();
+    window._courseTimerInterval = setInterval(updateCourseTimer, 1000);
 
     coursePollingInterval = setInterval(() => {
         checkCoursePaymentStatus(orderCode, courseTitle, email, false);
@@ -4660,9 +4695,9 @@ async function verifyCourseBankPaymentNow() {
     }
 
     if (digitsPhone.length < 9) {
-        if (statusText) statusText.textContent = "Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!";
+        if (statusText) statusText.textContent = "Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!";
         if (phoneInputEl) phoneInputEl.focus();
-        alert("Vui lòng nhập Số điện thoại để hệ thống thêm bạn vào nhóm Zalo học tập & hỗ trợ!");
+        alert("Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!");
         return;
     }
 
@@ -5609,7 +5644,7 @@ dvtlRefreshHeaderGoogleBtn = function(cust) {
         const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null);
         if (!cust || !isCustomerGoogleLoggedIn(cust)) return false;
         const em = String(cust.email || "").trim().toLowerCase();
-        if (cust.isAdmin || em === "diepvientailieu@gmail.com" || em === "admin@diepvientailieu.store") return true;
+        if (cust.isAdmin || em === "diepvientailieu@gmail.com" ) return true;
         if (!Array.isArray(cust.unlockedCourses) || cust.unlockedCourses.length === 0) return false;
         const expanded = expandWebUnlockedCourses(cust.unlockedCourses);
         const target = String(courseId || "").toUpperCase();
@@ -5719,5 +5754,53 @@ dvtlRefreshHeaderGoogleBtn = function(cust) {
             window.syncCourseCheckoutGoogleUi();
             return res;
         };
+    }
+})();
+
+
+// [v13.0 MAIL-DRIVE-WEB SYNC & COVER CACHE PURGE]
+(function() {
+    try {
+        if (localStorage.getItem("dvtl_covers_v13_0_purged") !== "1") {
+            localStorage.removeItem("dvtl_web_course_covers");
+            localStorage.removeItem("dvs_course_custom_covers");
+            localStorage.setItem("dvtl_covers_v13_0_purged", "1");
+        }
+    } catch (_) {}
+
+    // Auto-reverify Google Drive & Master Sheet entitlements on page load for logged-in Gmail
+    async function syncWebEntitlementsWithDrive() {
+        const cust = (typeof getSyncedCustomerLocal === "function") ? getSyncedCustomerLocal() : null;
+        if (!cust || !isCustomerGoogleLoggedIn(cust) || !cust.email) return;
+        const em = String(cust.email).trim().toLowerCase();
+        if (em === "diepvientailieu@gmail.com") {
+            cust.isAdmin = true;
+            localStorage.setItem("dvtl_synced_customer", JSON.stringify(cust));
+            if (typeof state !== "undefined" && state.currentView === "courses" && typeof renderCourses === "function") renderCourses();
+            return;
+        }
+        if (typeof state === "undefined" || !state.webhookUrl) return;
+        try {
+            const devId = typeof getWebDeviceId === "function" ? getWebDeviceId() : "";
+            const url = `${state.webhookUrl}?action=getCustomerSync&email=${encodeURIComponent(em)}&deviceId=${encodeURIComponent(devId)}&_t=${Date.now()}`;
+            const res = await fetch(url, { method: "GET", mode: "cors", cache: "no-store" });
+            const d = await res.json();
+            if (d && d.customer) {
+                const srvCourses = Array.isArray(d.customer.unlockedCourses) ? d.customer.unlockedCourses : [];
+                const updated = {
+                    ...cust,
+                    unlockedCourses: typeof expandWebUnlockedCourses === "function" ? expandWebUnlockedCourses(srvCourses) : srvCourses,
+                    driveVerifiedAt: Date.now()
+                };
+                localStorage.setItem("dvtl_synced_customer", JSON.stringify(updated));
+                if (state.currentView === "courses" && typeof renderCourses === "function") renderCourses();
+            }
+        } catch (_) {}
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => setTimeout(syncWebEntitlementsWithDrive, 600));
+    } else {
+        setTimeout(syncWebEntitlementsWithDrive, 600);
     }
 })();

@@ -1622,10 +1622,3828 @@ const COURSE_CATEGORIES = [
 "label": "V-ACT · BCA · QDA · VSAT"
 }
 ];
-const COURSES_DATABASE = [{"id": "ALL-COURSES-399K", "sku": "DVFULL399", "code": "DVFULL399", "category": "all", "categories": ["all", "khtn_toan_ly_hoa_sinh", "ngoai_ngu_khxh", "lop12_2k9", "dgnl_hsa", "dgtd_tsa", "dgnl_vact_bca"], "subCategory": "lop12_2k9", "categoryLabel": "VIP Full Trọn Bộ 399K", "title": "Gói VIP Full Trọn Bộ 37 Khóa Học & Luyện Đề 2027 (69K + 199K)", "instructor": "TOÀN BỘ HỆ THỐNG KHÓA HỌC ĐIỆP VIÊN STUDY", "duration": "Mở khóa 100% + tự động hưởng mọi cập nhật về sau", "lessons": 1500, "level": "Full Toàn Hệ Thống 2027", "groupName": "VIP Full 399K · Mở Khóa Tất Cả", "rating": 5.0, "students": "4.9k+", "price": 399000, "originalPrice": 2500000, "singlePrice": 69000, "coursePrice": 399000, "tier": "full_399k", "tierType": "full_399k", "subTier": "full_399k", "isPackageOnly": true, "tierShortBadge": "FULL TRỌN BỘ 399K", "tierLabel": "Full Trọn Bộ + Update (399K)", "badge": "VIP Full 399K", "parentCourseId": "ALL-COURSES-399K", "parentSubjectId": "ALL-COURSES-399K", "childCourseIds": ["C199-KHTN1", "C199-KHTN2", "C199-KHXH1", "C199-KHXH2", "C199-HSA", "C199-TSA", "C199-VACT", "K69-TOAN-DUC", "K69-TOAN-TIEN", "K69-TOAN-SHIPPER", "K69-TOAN-MAP", "K69-TOAN-NT", "K69-LY-BIEN", "K69-LY-TIEN", "K69-LY-UNG", "K69-HOA-TRONG", "K69-HOA-NGOC", "K69-VAN-SM", "K69-VAN-NT", "K69-ANH-MP", "K69-ANH-LIEU", "K69-ANH-NT", "K69-SINH-NGHE", "K69-SINH-DUONG", "K69-SU-HUONG", "K69-SU-SEN", "K69-DIA-TUNG", "K69-DIA-TAI", "K69-HSA-HOCMAI", "K69-HSA-MAP", "K69-HSA-EMPIRE", "K69-HSA-EDU", "K69-TSA-BMC", "K69-TSA-HOCMAI", "K69-VACT-HOCMAI", "K69-VACT-EMPIRE", "K69-VACT-MAP"], "extraFolderIds": ["1ZlYt4iot-K6d0fZTb7hGwwnRgUV6Pdwh"], "bannerId": "", "defaultCover": "", "cover": "", "fallbackCover": "", "driveFolderId": "1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a", "driveFolderName": "Full Kho 69K + Kho 199K (Tự Động Update)", "driveFolderUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a", "driveUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa toàn bộ 100% khóa học lẻ 69K, 7 Combo 199K (KHTN 1, KHTN 2, KHXH 1, KHXH 2, HSA, TSA, V-ACT) + tự động cập nhật về sau.", "description": "Mở khóa toàn bộ 2 kho gốc + mọi cập nhật mới về sau + Tặng kèm App Điệp Viên Study (Email + SĐT).", "highlights": ["Mở khóa 100% toàn bộ khóa 69K & Combo 199K", "Tự động nhận toàn bộ cập nhật mới về sau", "Đồng bộ học trực tiếp trên Web, App & Google Drive"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Full Hệ Thống", "lessons": [{"id": "ALL-COURSES-399K-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Full Hệ Thống", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: Điệp Viên Study", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Full Trọn Bộ 399K."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "ALL-COURSES-399K-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHTN1", "sku": "DV199KHTN1", "code": "DV199KHTN1", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Ban KHTN 1 (Toán · Vật Lý · Sinh)", "title": "Combo Ban KHTN 1 — Toán, Vật Lý, Sinh", "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHTN 1 — Toán, Vật Lý, Sinh", "groupName": "COMBO BAN 199K · Combo Ban KHTN 1 — Toán, Vật Lý, Sinh", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHTN 1 (Toán · Vật Lý · Sinh)", "parentCourseId": "C199-KHTN1", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": ["K69-TOAN-DUC", "K69-LY-BIEN", "K69-SINH-NGHE"], "extraFolderIds": ["1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "1m__F2exCz50iNJXhf0JR4TramO29K244"], "bannerId": "1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW", "defaultCover": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960", "cover": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960", "fallbackCover": "", "driveFolderId": "1wH_RQNefQrFk0dTnVQroFsLCzTFZi4J7", "driveFolderName": "Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/1wH_RQNefQrFk0dTnVQroFsLCzTFZi4J7", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Tự Nhiên 1 gồm đúng 3 thư mục thầy cô chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý Thầy Chu Văn Biên + Sinh Học Thầy Phan Khắc Nghệ.", "description": "Combo Ban Khoa Học Tự Nhiên 1 gồm đúng 3 thư mục thầy cô chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý Thầy Chu Văn Biên + Sinh Học Thầy Phan Khắc Nghệ.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHTN 1 (Toán · Vật Lý · Sinh)", "lessons": [{"id": "C199-KHTN1-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHTN 1 (Toán · Vật Lý · Sinh)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHTN1-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHTN2", "sku": "DV199KHTN2", "code": "DV199KHTN2", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Ban KHTN 2 (Toán · Vật Lý · Anh)", "title": "Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh", "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh", "groupName": "COMBO BAN 199K · Combo Ban KHTN 2 — Toán, Vật Lý, Tiếng Anh", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHTN 2 (Toán · Vật Lý · Anh)", "parentCourseId": "C199-KHTN2", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": ["K69-TOAN-DUC", "K69-LY-TIEN", "K69-ANH-MP"], "extraFolderIds": ["1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"], "bannerId": "1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw", "defaultCover": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960", "cover": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960", "fallbackCover": "", "driveFolderId": "13E4qvYJg_AnJsmqDRceRvxqT7MdPPCe9", "driveFolderName": "Combo 199K: KHTN 2 — Toán, Vật Lý, Anh", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/13E4qvYJg_AnJsmqDRceRvxqT7MdPPCe9", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Tự Nhiên 2 (Khối A01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý IPClass + Tiếng Anh Cô Vũ Mai Phương.", "description": "Combo Ban Khoa Học Tự Nhiên 2 (Khối A01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Vật Lý IPClass + Tiếng Anh Cô Vũ Mai Phương.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHTN 2 (Toán · Vật Lý · Anh)", "lessons": [{"id": "C199-KHTN2-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHTN 2 (Toán · Vật Lý · Anh)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHTN 2 — Toán, Vật Lý, Anh."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHTN2-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHXH1", "sku": "DV199KHXH1", "code": "DV199KHXH1", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "title": "Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "instructor": "CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "groupName": "COMBO BAN 199K · Combo Ban KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "parentCourseId": "C199-KHXH1", "parentSubjectId": "K69-VAN-SM", "childCourseIds": ["K69-VAN-SM", "K69-SU-HUONG", "K69-DIA-TUNG"], "extraFolderIds": ["1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm"], "bannerId": "1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe", "defaultCover": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960", "cover": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960", "fallbackCover": "", "driveFolderId": "1POi_V92dNB9IjyVa15Q7TTe5EgtNf85k", "driveFolderName": "Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý", "driveFolderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveUrl": "https://drive.google.com/drive/folders/1POi_V92dNB9IjyVa15Q7TTe5EgtNf85k", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Xã Hội 1 (Khối C00) gồm đúng 3 thư mục chọn lọc: Ngữ Văn Cô Sương Mai + Lịch Sử Cô Lan Hương + Địa Lý Thầy Đàm Thanh Tùng.", "description": "Combo Ban Khoa Học Xã Hội 1 (Khối C00) gồm đúng 3 thư mục chọn lọc: Ngữ Văn Cô Sương Mai + Lịch Sử Cô Lan Hương + Địa Lý Thầy Đàm Thanh Tùng.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "lessons": [{"id": "C199-KHXH1-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHXH1-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-KHXH2", "sku": "DV199KHXH2", "code": "DV199KHXH2", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Ban KHXH 2 (Toán · Văn · Anh)", "title": "Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh", "instructor": "THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "COMBO BAN 199K · Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh", "groupName": "COMBO BAN 199K · Combo Ban KHXH 2 — Toán, Ngữ Văn, Tiếng Anh", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "COMBO BAN 199K", "badge": "199K · Ban KHXH 2 (Toán · Văn · Anh)", "parentCourseId": "C199-KHXH2", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": ["K69-TOAN-DUC", "K69-VAN-SM", "K69-ANH-MP"], "extraFolderIds": ["1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"], "bannerId": "13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR", "defaultCover": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960", "cover": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960", "fallbackCover": "", "driveFolderId": "1USiYayriUVvjhV9uNUsb9KwkUBmvY9Qr", "driveFolderName": "Combo 199K: KHXH 2 — Toán, Văn, Anh", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/1USiYayriUVvjhV9uNUsb9KwkUBmvY9Qr", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Combo Ban Khoa Học Xã Hội 2 (Khối D01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Ngữ Văn Cô Sương Mai + Tiếng Anh Cô Vũ Mai Phương.", "description": "Combo Ban Khoa Học Xã Hội 2 (Khối D01) gồm đúng 3 thư mục chọn lọc: Toán Thầy Đỗ Văn Đức + Ngữ Văn Cô Sương Mai + Tiếng Anh Cô Vũ Mai Phương.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHXH 2 (Toán · Văn · Anh)", "lessons": [{"id": "C199-KHXH2-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHXH 2 (Toán · Văn · Anh)", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: KHXH 2 — Toán, Văn, Anh."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-KHXH2-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-HSA", "sku": "DV199HSA", "code": "DV199HSA", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "ĐGNL HSA ĐHQG Hà Nội", "title": "Khóa ĐGNL HSA (ĐHQG Hà Nội)", "instructor": "HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU", "duration": "Combo 4 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 480, "level": "KHÓA ĐGNL 199K · Khóa ĐGNL HSA (ĐHQG Hà Nội)", "groupName": "KHÓA ĐGNL 199K · Khóa ĐGNL HSA (ĐHQG Hà Nội)", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "KHÓA ĐGNL 199K", "badge": "199K · ĐGNL HSA ĐHQG Hà Nội", "parentCourseId": "C199-HSA", "parentSubjectId": "K69-HSA-HOCMAI", "childCourseIds": ["K69-HSA-HOCMAI", "K69-HSA-MAP", "K69-HSA-EMPIRE", "K69-HSA-EDU"], "extraFolderIds": ["11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg"], "bannerId": "1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C", "defaultCover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960", "cover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960", "fallbackCover": "", "driveFolderId": "1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD", "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)", "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveUrl": "https://drive.google.com/drive/folders/1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Trọn bộ 4 đơn vị luyện thi ĐGNL HSA ĐHQG Hà Nội 2027 (HocMai · MapStudy · Empire Team · HSA Edu) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "description": "Trọn bộ 4 đơn vị luyện thi ĐGNL HSA ĐHQG Hà Nội 2027 (HocMai · MapStudy · Empire Team · HSA Edu) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Gồm đúng 4 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGNL HSA ĐHQG Hà Nội", "lessons": [{"id": "C199-HSA-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGNL HSA ĐHQG Hà Nội", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-HSA-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-TSA", "sku": "DV199TSA", "code": "DV199TSA", "category": "dgtd_tsa", "categories": ["all", "dgtd_tsa", "lop12_2k9"], "subCategory": "dgtd_tsa", "categoryLabel": "ĐGTD TSA ĐH Bách Khoa HN", "title": "Khóa ĐGTD TSA (ĐH Bách Khoa HN)", "instructor": "BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC", "duration": "Combo 2 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 240, "level": "KHÓA ĐGTD 199K · Khóa ĐGTD TSA (ĐH Bách Khoa HN)", "groupName": "KHÓA ĐGTD 199K · Khóa ĐGTD TSA (ĐH Bách Khoa HN)", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "KHÓA ĐGTD 199K", "badge": "199K · ĐGTD TSA ĐH Bách Khoa HN", "parentCourseId": "C199-TSA", "parentSubjectId": "K69-TSA-BMC", "childCourseIds": ["K69-TSA-BMC", "K69-TSA-HOCMAI"], "extraFolderIds": ["1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu"], "bannerId": "1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03", "defaultCover": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960", "cover": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960", "fallbackCover": "", "driveFolderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFolderName": "Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)", "driveFolderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Trọn bộ 2 đơn vị luyện thi ĐGTD TSA ĐH Bách Khoa Hà Nội 2027 (BMC · HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "description": "Trọn bộ 2 đơn vị luyện thi ĐGTD TSA ĐH Bách Khoa Hà Nội 2027 (BMC · HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Gồm đúng 2 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGTD TSA ĐH Bách Khoa HN", "lessons": [{"id": "C199-TSA-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGTD TSA ĐH Bách Khoa HN", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-TSA-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "C199-VACT", "sku": "DV199VACT", "code": "DV199VACT", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "ĐGNL V-ACT ĐHQG TP.HCM", "title": "Khóa ĐGNL V-ACT (ĐHQG TP.HCM)", "instructor": "HOCMAI · EMPIRE TEAM · MAPSTUDY", "duration": "Combo 3 khóa tuyển chọn (1 thầy/môn) · Video HD + PDF", "lessons": 360, "level": "KHÓA ĐGNL 199K · Khóa ĐGNL V-ACT (ĐHQG TP.HCM)", "groupName": "KHÓA ĐGNL 199K · Khóa ĐGNL V-ACT (ĐHQG TP.HCM)", "rating": 5.0, "students": "1.9k+", "price": 199000, "originalPrice": 399000, "singlePrice": 69000, "coursePrice": 199000, "tier": "course_199k", "tierType": "course_199k", "subTier": "combo_199k", "isPackageOnly": false, "tierShortBadge": "COMBO 199K", "tierLabel": "KHÓA ĐGNL 199K", "badge": "199K · ĐGNL V-ACT ĐHQG TP.HCM", "parentCourseId": "C199-VACT", "parentSubjectId": "K69-VACT-HOCMAI", "childCourseIds": ["K69-VACT-HOCMAI", "K69-VACT-EMPIRE", "K69-VACT-MAP"], "extraFolderIds": ["1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB"], "bannerId": "15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10", "defaultCover": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960", "cover": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960", "fallbackCover": "", "driveFolderId": "1bPhV9fqeesm4SISXeIjL9ZgVWwnHxW6o", "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)", "driveFolderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveUrl": "https://drive.google.com/drive/folders/1bPhV9fqeesm4SISXeIjL9ZgVWwnHxW6o", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Trọn bộ 3 đơn vị luyện thi ĐGNL V-ACT ĐHQG TP.HCM 2027 (HocMai · Empire Team · MapStudy) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "description": "Trọn bộ 3 đơn vị luyện thi ĐGNL V-ACT ĐHQG TP.HCM 2027 (HocMai · Empire Team · MapStudy) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Gồm đúng 3 thư mục khóa học chọn lọc xếp chung trong 1 Thư Mục Combo 199K (Lối Tắt)", "Cấp quyền Google Drive riêng cho đúng Email mua hàng · Truy cập trực tiếp trên Google Drive & Hệ thống học tập"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGNL V-ACT ĐHQG TP.HCM", "lessons": [{"id": "C199-VACT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGNL V-ACT ĐHQG TP.HCM", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI · EMPIRE TEAM · MAPSTUDY", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "C199-VACT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-DUC", "sku": "DV69TOANDUC", "code": "DV69TOANDUC", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)", "instructor": "THẦY ĐỖ VĂN ĐỨC — TENSCHOOL", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-DUC", "parentSubjectId": "K69-TOAN-DUC", "childCourseIds": [], "extraFolderIds": [], "bannerId": "19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u", "defaultCover": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960", "cover": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960", "fallbackCover": "", "driveFolderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveFolderName": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)", "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Thầy Đỗ Văn Đức (TenSchool 2K9) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-DUC-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC — TENSCHOOL", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán Thầy Đỗ Văn Đức (TenSchool 2K9)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-DUC-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-TIEN", "sku": "DV69TOANTIEN", "code": "DV69TOANTIEN", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán Thầy Nguyễn Phan Tiến 2K9", "instructor": "THẦY NGUYỄN PHAN TIẾN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-TIEN", "parentSubjectId": "K69-TOAN-TIEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1T9k1aHqUdKGfzzCeePudB3408I2f86Ek", "defaultCover": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960", "cover": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960", "fallbackCover": "", "driveFolderId": "1b73Z89zxCGINyuOVm4pImxwkj2UTidC1", "driveFolderName": "Toán Thầy Nguyễn Phan Tiến 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1", "driveUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Thầy Nguyễn Phan Tiến 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Toán Thầy Nguyễn Phan Tiến 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-TIEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY NGUYỄN PHAN TIẾN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán Thầy Nguyễn Phan Tiến 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-TIEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-SHIPPER", "sku": "DV69TOANSHIP", "code": "DV69TOANSHIP", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán Anh Shiper 2K9", "instructor": "ANH SHIPER TOÁN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-SHIPPER", "parentSubjectId": "K69-TOAN-SHIPPER", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l", "defaultCover": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960", "cover": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960", "fallbackCover": "", "driveFolderId": "1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n", "driveFolderName": "Toán Anh Shiper 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n", "driveUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán Anh Shiper 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Toán Anh Shiper 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-SHIPPER-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: ANH SHIPER TOÁN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán Anh Shiper 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-SHIPPER-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-MAP", "sku": "DV69TOANMAP", "code": "DV69TOANMAP", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Toán — Tổ Toán Học MapStudy 2K9", "instructor": "TỔ TOÁN HỌC MAPSTUDY", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-MAP", "parentSubjectId": "K69-TOAN-MAP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd", "defaultCover": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960", "cover": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960", "fallbackCover": "", "driveFolderId": "1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA", "driveFolderName": "Toán — Tổ Toán Học MapStudy 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA", "driveUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Toán — Tổ Toán Học MapStudy 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Toán — Tổ Toán Học MapStudy 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-MAP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: TỔ TOÁN HỌC MAPSTUDY", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Toán — Tổ Toán Học MapStudy 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-MAP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TOAN-NT", "sku": "DV69TOANNT", "code": "DV69TOANNT", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Toán", "title": "Nền Tảng Toán Thầy Lưu Huy Thưởng", "instructor": "THẦY LƯU HUY THƯỞNG — HOCMAI", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Toán", "groupName": "Khóa Lẻ 69K · Môn Toán", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Toán", "parentCourseId": "K69-TOAN-NT", "parentSubjectId": "K69-TOAN-NT", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV", "defaultCover": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960", "cover": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960", "fallbackCover": "", "driveFolderId": "1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A", "driveFolderName": "Nền Tảng Toán Thầy Lưu Huy Thưởng", "driveFolderUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A", "driveUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Toán Thầy Lưu Huy Thưởng · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng Toán Thầy Lưu Huy Thưởng (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán", "lessons": [{"id": "K69-TOAN-NT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY LƯU HUY THƯỞNG — HOCMAI", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng Toán Thầy Lưu Huy Thưởng."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TOAN-NT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-LY-BIEN", "sku": "DV69LYBIEN", "code": "DV69LYBIEN", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Vật Lý", "title": "Vật Lý Thầy Chu Văn Biên 2K9", "instructor": "THẦY CHU VĂN BIÊN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Vật Lý", "groupName": "Khóa Lẻ 69K · Môn Vật Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Vật Lý", "parentCourseId": "K69-LY-BIEN", "parentSubjectId": "K69-LY-BIEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1Qk1eh8MSussintaXSMK2G1iy9zCKehkw", "defaultCover": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960", "cover": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960", "fallbackCover": "", "driveFolderId": "1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "driveFolderName": "Vật Lý Thầy Chu Văn Biên 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "driveUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Chu Văn Biên 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Vật Lý Thầy Chu Văn Biên 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý", "lessons": [{"id": "K69-LY-BIEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY CHU VĂN BIÊN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Vật Lý Thầy Chu Văn Biên 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-LY-BIEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-LY-TIEN", "sku": "DV69LYTIEN", "code": "DV69LYTIEN", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Vật Lý", "title": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9", "instructor": "THẦY THẮNG & THẦY TIẾN — IPCLASS", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Vật Lý", "groupName": "Khóa Lẻ 69K · Môn Vật Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Vật Lý", "parentCourseId": "K69-LY-TIEN", "parentSubjectId": "K69-LY-TIEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih", "defaultCover": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960", "cover": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960", "fallbackCover": "", "driveFolderId": "1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "driveFolderName": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "driveUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý", "lessons": [{"id": "K69-LY-TIEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY THẮNG & THẦY TIẾN — IPCLASS", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-LY-TIEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-LY-UNG", "sku": "DV69LYUNG", "code": "DV69LYUNG", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Vật Lý", "title": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)", "instructor": "THẦY LÊ TÙNG ƯNG — TENSCHOOL", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Vật Lý", "groupName": "Khóa Lẻ 69K · Môn Vật Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Vật Lý", "parentCourseId": "K69-LY-UNG", "parentSubjectId": "K69-LY-UNG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw", "defaultCover": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960", "cover": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960", "fallbackCover": "", "driveFolderId": "11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU", "driveFolderName": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)", "driveFolderUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU", "driveUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý", "lessons": [{"id": "K69-LY-UNG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY LÊ TÙNG ƯNG — TENSCHOOL", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-LY-UNG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HOA-TRONG", "sku": "DV69HOATRONG", "code": "DV69HOATRONG", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Hóa Học", "title": "Hóa Học Thầy Phạm Văn Trọng 2K9", "instructor": "THẦY PHẠM VĂN TRỌNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Hóa Học", "groupName": "Khóa Lẻ 69K · Môn Hóa Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Hóa Học", "parentCourseId": "K69-HOA-TRONG", "parentSubjectId": "K69-HOA-TRONG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1", "defaultCover": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960", "cover": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960", "fallbackCover": "", "driveFolderId": "1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk", "driveFolderName": "Hóa Học Thầy Phạm Văn Trọng 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk", "driveUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Hóa Học Thầy Phạm Văn Trọng 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Hóa Học Thầy Phạm Văn Trọng 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Hóa Học", "lessons": [{"id": "K69-HOA-TRONG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Hóa Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY PHẠM VĂN TRỌNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Hóa Học Thầy Phạm Văn Trọng 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HOA-TRONG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HOA-NGOC", "sku": "DV69HOANGOC", "code": "DV69HOANGOC", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Hóa Học", "title": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son", "instructor": "THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Hóa Học", "groupName": "Khóa Lẻ 69K · Môn Hóa Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Hóa Học", "parentCourseId": "K69-HOA-NGOC", "parentSubjectId": "K69-HOA-NGOC", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq", "defaultCover": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960", "cover": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960", "fallbackCover": "", "driveFolderId": "1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe", "driveFolderName": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son", "driveFolderUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe", "driveUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Hóa Học", "lessons": [{"id": "K69-HOA-NGOC-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Hóa Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HOA-NGOC-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VAN-SM", "sku": "DV69VANSM", "code": "DV69VANSM", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Ngữ Văn", "title": "Học Văn Cô Sương Mai 2K9", "instructor": "CÔ SƯƠNG MAI", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Ngữ Văn", "groupName": "Khóa Lẻ 69K · Môn Ngữ Văn", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Ngữ Văn", "parentCourseId": "K69-VAN-SM", "parentSubjectId": "K69-VAN-SM", "childCourseIds": [], "extraFolderIds": [], "bannerId": "168PvC5P4T3pnHuCQteIB6MwyAseMHgCP", "defaultCover": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960", "cover": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960", "fallbackCover": "", "driveFolderId": "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveFolderName": "Học Văn Cô Sương Mai 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Học Văn Cô Sương Mai 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Học Văn Cô Sương Mai 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ngữ Văn", "lessons": [{"id": "K69-VAN-SM-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ngữ Văn", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ SƯƠNG MAI", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Học Văn Cô Sương Mai 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VAN-SM-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VAN-NT", "sku": "DV69VANNT", "code": "DV69VANNT", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Ngữ Văn", "title": "Nền Tảng 12 Môn Ngữ Văn (HocMai)", "instructor": "HOCMAI — NỀN TẢNG NGỮ VĂN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Ngữ Văn", "groupName": "Khóa Lẻ 69K · Môn Ngữ Văn", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Ngữ Văn", "parentCourseId": "K69-VAN-NT", "parentSubjectId": "K69-VAN-NT", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1k6hnaIY3HWrymuoZclECCa6lGgtbjyND", "defaultCover": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960", "cover": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960", "fallbackCover": "", "driveFolderId": "1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF", "driveFolderName": "Nền Tảng 12 Môn Ngữ Văn (HocMai)", "driveFolderUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF", "driveUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng 12 Môn Ngữ Văn (HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng 12 Môn Ngữ Văn (HocMai) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ngữ Văn", "lessons": [{"id": "K69-VAN-NT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ngữ Văn", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — NỀN TẢNG NGỮ VĂN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng 12 Môn Ngữ Văn (HocMai)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VAN-NT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-ANH-MP", "sku": "DV69ANHMP", "code": "DV69ANHMP", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Tiếng Anh", "title": "Tiếng Anh Cô Vũ Mai Phương 2K9", "instructor": "CÔ VŨ MAI PHƯƠNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Tiếng Anh", "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Tiếng Anh", "parentCourseId": "K69-ANH-MP", "parentSubjectId": "K69-ANH-MP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5", "defaultCover": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960", "cover": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960", "fallbackCover": "", "driveFolderId": "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1", "driveFolderName": "Tiếng Anh Cô Vũ Mai Phương 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1", "driveUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Tiếng Anh Cô Vũ Mai Phương 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Tiếng Anh Cô Vũ Mai Phương 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh", "lessons": [{"id": "K69-ANH-MP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ VŨ MAI PHƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Tiếng Anh Cô Vũ Mai Phương 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-ANH-MP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-ANH-LIEU", "sku": "DV69ANHLIEU", "code": "DV69ANHLIEU", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Tiếng Anh", "title": "Tiếng Anh Cô Phạm Liễu 2K9", "instructor": "CÔ PHẠM LIỄU", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Tiếng Anh", "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Tiếng Anh", "parentCourseId": "K69-ANH-LIEU", "parentSubjectId": "K69-ANH-LIEU", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa", "defaultCover": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960", "cover": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960", "fallbackCover": "", "driveFolderId": "1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw", "driveFolderName": "Tiếng Anh Cô Phạm Liễu 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw", "driveUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Tiếng Anh Cô Phạm Liễu 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Tiếng Anh Cô Phạm Liễu 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh", "lessons": [{"id": "K69-ANH-LIEU-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ PHẠM LIỄU", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Tiếng Anh Cô Phạm Liễu 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-ANH-LIEU-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-ANH-NT", "sku": "DV69ANHNT", "code": "DV69ANHNT", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Tiếng Anh", "title": "Nền Tảng 12 Môn Tiếng Anh (HocMai)", "instructor": "HOCMAI — NỀN TẢNG TIẾNG ANH", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Tiếng Anh", "groupName": "Khóa Lẻ 69K · Môn Tiếng Anh", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Tiếng Anh", "parentCourseId": "K69-ANH-NT", "parentSubjectId": "K69-ANH-NT", "childCourseIds": [], "extraFolderIds": [], "bannerId": "19jS05grnW40e4meXVPn7a7RvtUEAl19x", "defaultCover": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960", "cover": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960", "fallbackCover": "", "driveFolderId": "1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM", "driveFolderName": "Nền Tảng 12 Môn Tiếng Anh (HocMai)", "driveFolderUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM", "driveUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng 12 Môn Tiếng Anh (HocMai) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng 12 Môn Tiếng Anh (HocMai) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh", "lessons": [{"id": "K69-ANH-NT-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — NỀN TẢNG TIẾNG ANH", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng 12 Môn Tiếng Anh (HocMai)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-ANH-NT-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SINH-NGHE", "sku": "DV69SINHNGHE", "code": "DV69SINHNGHE", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Sinh Học", "title": "Sinh Học Thầy Phan Khắc Nghệ 2K9", "instructor": "THẦY PHAN KHẮC NGHỆ", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Sinh Học", "groupName": "Khóa Lẻ 69K · Môn Sinh Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Sinh Học", "parentCourseId": "K69-SINH-NGHE", "parentSubjectId": "K69-SINH-NGHE", "childCourseIds": [], "extraFolderIds": [], "bannerId": "12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn", "defaultCover": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960", "cover": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960", "fallbackCover": "", "driveFolderId": "1m__F2exCz50iNJXhf0JR4TramO29K244", "driveFolderName": "Sinh Học Thầy Phan Khắc Nghệ 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244", "driveUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Sinh Học Thầy Phan Khắc Nghệ 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Sinh Học Thầy Phan Khắc Nghệ 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Sinh Học", "lessons": [{"id": "K69-SINH-NGHE-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Sinh Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY PHAN KHẮC NGHỆ", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Sinh Học Thầy Phan Khắc Nghệ 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SINH-NGHE-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SINH-DUONG", "sku": "DV69SINHDUONG", "code": "DV69SINHDUONG", "category": "khtn_toan_ly_hoa_sinh", "categories": ["all", "khtn_toan_ly_hoa_sinh", "lop12_2k9"], "subCategory": "khtn_toan_ly_hoa_sinh", "categoryLabel": "Môn Sinh Học", "title": "Nền Tảng Sinh Học Cô Ánh Dương", "instructor": "CÔ ÁNH DƯƠNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Sinh Học", "groupName": "Khóa Lẻ 69K · Môn Sinh Học", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Sinh Học", "parentCourseId": "K69-SINH-DUONG", "parentSubjectId": "K69-SINH-DUONG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1HfwO2IBd44nJtu3b1rfETYWnpY_jR786", "defaultCover": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960", "cover": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960", "fallbackCover": "", "driveFolderId": "13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio", "driveFolderName": "Nền Tảng Sinh Học Cô Ánh Dương", "driveFolderUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio", "driveUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Nền Tảng Sinh Học Cô Ánh Dương · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Nền Tảng Sinh Học Cô Ánh Dương (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Sinh Học", "lessons": [{"id": "K69-SINH-DUONG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Sinh Học", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ ÁNH DƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Nền Tảng Sinh Học Cô Ánh Dương."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SINH-DUONG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SU-HUONG", "sku": "DV69SUHUONG", "code": "DV69SUHUONG", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Lịch Sử", "title": "Lịch Sử Cô Ngô Thị Lan Hương 2K9", "instructor": "CÔ NGÔ THỊ LAN HƯƠNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Lịch Sử", "groupName": "Khóa Lẻ 69K · Môn Lịch Sử", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Lịch Sử", "parentCourseId": "K69-SU-HUONG", "parentSubjectId": "K69-SU-HUONG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK", "defaultCover": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960", "cover": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960", "fallbackCover": "", "driveFolderId": "1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "driveFolderName": "Lịch Sử Cô Ngô Thị Lan Hương 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "driveUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Lịch Sử Cô Ngô Thị Lan Hương 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Lịch Sử Cô Ngô Thị Lan Hương 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Lịch Sử", "lessons": [{"id": "K69-SU-HUONG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Lịch Sử", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ NGÔ THỊ LAN HƯƠNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Lịch Sử Cô Ngô Thị Lan Hương 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SU-HUONG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-SU-SEN", "sku": "DV69SUSEN", "code": "DV69SUSEN", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Lịch Sử", "title": "Lịch Sử Cô Nguyễn Hương Sen 2K9", "instructor": "CÔ NGUYỄN HƯƠNG SEN", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Lịch Sử", "groupName": "Khóa Lẻ 69K · Môn Lịch Sử", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Lịch Sử", "parentCourseId": "K69-SU-SEN", "parentSubjectId": "K69-SU-SEN", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e", "defaultCover": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960", "cover": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960", "fallbackCover": "", "driveFolderId": "1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t", "driveFolderName": "Lịch Sử Cô Nguyễn Hương Sen 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t", "driveUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Lịch Sử Cô Nguyễn Hương Sen 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Lịch Sử Cô Nguyễn Hương Sen 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Lịch Sử", "lessons": [{"id": "K69-SU-SEN-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Lịch Sử", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: CÔ NGUYỄN HƯƠNG SEN", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Lịch Sử Cô Nguyễn Hương Sen 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-SU-SEN-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-DIA-TUNG", "sku": "DV69DIATUNG", "code": "DV69DIATUNG", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Địa Lý", "title": "Địa Lý Thầy Đàm Thanh Tùng 2K9", "instructor": "THẦY ĐÀM THANH TÙNG", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Địa Lý", "groupName": "Khóa Lẻ 69K · Môn Địa Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Địa Lý", "parentCourseId": "K69-DIA-TUNG", "parentSubjectId": "K69-DIA-TUNG", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo", "defaultCover": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960", "cover": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960", "fallbackCover": "", "driveFolderId": "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm", "driveFolderName": "Địa Lý Thầy Đàm Thanh Tùng 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm", "driveUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Địa Lý Thầy Đàm Thanh Tùng 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Địa Lý Thầy Đàm Thanh Tùng 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Địa Lý", "lessons": [{"id": "K69-DIA-TUNG-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Địa Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY ĐÀM THANH TÙNG", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Địa Lý Thầy Đàm Thanh Tùng 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-DIA-TUNG-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-DIA-TAI", "sku": "DV69DIATAI", "code": "DV69DIATAI", "category": "ngoai_ngu_khxh", "categories": ["all", "ngoai_ngu_khxh", "lop12_2k9"], "subCategory": "ngoai_ngu_khxh", "categoryLabel": "Môn Địa Lý", "title": "Địa Lý Thầy Tài 2K9", "instructor": "THẦY TÀI ĐỊA LÝ", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · Địa Lý", "groupName": "Khóa Lẻ 69K · Môn Địa Lý", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · Địa Lý", "parentCourseId": "K69-DIA-TAI", "parentSubjectId": "K69-DIA-TAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq", "defaultCover": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960", "cover": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960", "fallbackCover": "", "driveFolderId": "1DasmiM670vDu3CekdeXCoQeQoeLvKYyq", "driveFolderName": "Địa Lý Thầy Tài 2K9", "driveFolderUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq", "driveUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô Địa Lý Thầy Tài 2K9 · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục Địa Lý Thầy Tài 2K9 (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Địa Lý", "lessons": [{"id": "K69-DIA-TAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Địa Lý", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: THẦY TÀI ĐỊA LÝ", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với Địa Lý Thầy Tài 2K9."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-DIA-TAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-HOCMAI", "sku": "DV69HSAHM", "code": "DV69HSAHM", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HOCMAI — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-HOCMAI", "parentSubjectId": "K69-HSA-HOCMAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveFolderName": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-HOCMAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-HOCMAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-MAP", "sku": "DV69HSAMAP", "code": "DV69HSAMAP", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "MAPSTUDY — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-MAP", "parentSubjectId": "K69-HSA-MAP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "driveFolderName": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "driveUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (MAPSTUDY — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-MAP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: MAPSTUDY — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-MAP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-EMPIRE", "sku": "DV69HSAEMP", "code": "DV69HSAEMP", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "EMPIRE TEAM — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-EMPIRE", "parentSubjectId": "K69-HSA-EMPIRE", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "driveFolderName": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "driveUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (EMPIRE TEAM — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-EMPIRE-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: EMPIRE TEAM — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-EMPIRE-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-HSA-EDU", "sku": "DV69HSAEDU", "code": "DV69HSAEDU", "category": "dgnl_hsa", "categories": ["all", "dgnl_hsa", "lop12_2k9"], "subCategory": "dgnl_hsa", "categoryLabel": "Môn HSA", "title": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HSA EDU — ĐGNL HSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · HSA", "groupName": "Khóa Lẻ 69K · Môn HSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · HSA", "parentCourseId": "K69-HSA-EDU", "parentSubjectId": "K69-HSA-EDU", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu", "defaultCover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "cover": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960", "fallbackCover": "", "driveFolderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg", "driveFolderName": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg", "driveUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) (HSA EDU — ĐGNL HSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA", "lessons": [{"id": "K69-HSA-EDU-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HSA EDU — ĐGNL HSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-HSA-EDU-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TSA-BMC", "sku": "DV69TSABMC", "code": "DV69TSABMC", "category": "dgtd_tsa", "categories": ["all", "dgtd_tsa", "lop12_2k9"], "subCategory": "dgtd_tsa", "categoryLabel": "Môn TSA", "title": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "instructor": "BMC — ĐGTD TSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · TSA", "groupName": "Khóa Lẻ 69K · Môn TSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · TSA", "parentCourseId": "K69-TSA-BMC", "parentSubjectId": "K69-TSA-BMC", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS", "defaultCover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "cover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "fallbackCover": "", "driveFolderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFolderName": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (BMC — ĐGTD TSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — TSA", "lessons": [{"id": "K69-TSA-BMC-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi TSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: BMC — ĐGTD TSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TSA-BMC-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-TSA-HOCMAI", "sku": "DV69TSAHM", "code": "DV69TSAHM", "category": "dgtd_tsa", "categories": ["all", "dgtd_tsa", "lop12_2k9"], "subCategory": "dgtd_tsa", "categoryLabel": "Môn TSA", "title": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HOCMAI — ĐGTD TSA", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · TSA", "groupName": "Khóa Lẻ 69K · Môn TSA", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · TSA", "parentCourseId": "K69-TSA-HOCMAI", "parentSubjectId": "K69-TSA-HOCMAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS", "defaultCover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "cover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960", "fallbackCover": "", "driveFolderId": "1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu", "driveFolderName": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu", "driveUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGTD TSA) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — TSA", "lessons": [{"id": "K69-TSA-HOCMAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi TSA", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — ĐGTD TSA", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-TSA-HOCMAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VACT-HOCMAI", "sku": "DV69VACTHM", "code": "DV69VACTHM", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "Môn V-ACT", "title": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "HOCMAI — ĐGNL V-ACT", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · V-ACT", "groupName": "Khóa Lẻ 69K · Môn V-ACT", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · V-ACT", "parentCourseId": "K69-VACT-HOCMAI", "parentSubjectId": "K69-VACT-HOCMAI", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV", "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "fallbackCover": "", "driveFolderId": "1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveFolderName": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (HOCMAI — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT", "lessons": [{"id": "K69-VACT-HOCMAI-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: HOCMAI — ĐGNL V-ACT", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VACT-HOCMAI-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VACT-EMPIRE", "sku": "DV69VACTEMP", "code": "DV69VACTEMP", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "Môn V-ACT", "title": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "EMPIRE TEAM — ĐGNL V-ACT", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · V-ACT", "groupName": "Khóa Lẻ 69K · Môn V-ACT", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · V-ACT", "parentCourseId": "K69-VACT-EMPIRE", "parentSubjectId": "K69-VACT-EMPIRE", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV", "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "fallbackCover": "", "driveFolderId": "1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "driveFolderName": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "driveUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (EMPIRE TEAM — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT", "lessons": [{"id": "K69-VACT-EMPIRE-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: EMPIRE TEAM — ĐGNL V-ACT", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VACT-EMPIRE-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}, {"id": "K69-VACT-MAP", "sku": "DV69VACTMAP", "code": "DV69VACTMAP", "category": "dgnl_vact_bca", "categories": ["all", "dgnl_vact_bca", "lop12_2k9"], "subCategory": "dgnl_vact_bca", "categoryLabel": "Môn V-ACT", "title": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "instructor": "MAPSTUDY — ĐGNL V-ACT", "duration": "Đúng 01 thư mục thầy cô · Video HD + PDF", "lessons": 95, "level": "Khóa Lẻ 69K · V-ACT", "groupName": "Khóa Lẻ 69K · Môn V-ACT", "rating": 5.0, "students": "1.2k+", "price": 69000, "originalPrice": 299000, "singlePrice": 69000, "coursePrice": 69000, "tier": "subject_69k", "tierType": "subject_69k", "subTier": "teacher_69k", "isPackageOnly": false, "tierShortBadge": "KHÓA LẺ 69K", "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)", "badge": "69K · V-ACT", "parentCourseId": "K69-VACT-MAP", "parentSubjectId": "K69-VACT-MAP", "childCourseIds": [], "extraFolderIds": [], "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV", "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960", "fallbackCover": "", "driveFolderId": "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB", "driveFolderName": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)", "driveFolderUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB", "driveUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB", "driveFileId": "", "driveFileName": "", "driveFileUrl": "", "summary": "Mở khóa chính xác 01 thư mục khóa học ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (MAPSTUDY — ĐGNL V-ACT) trên Google Drive & App Điệp Viên Study.", "description": "Khóa lẻ 69K mở đúng 01 thư mục thầy cô ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) · Đồng bộ học trực tiếp trên Google Drive & Hệ thống học tập.", "highlights": ["Chỉ mở đúng 01 thư mục ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị) (không gồm cả môn)", "Tặng kèm App Điệp Viên Study (Email + SĐT)"], "modules": [{"moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT", "lessons": [{"id": "K69-VACT-MAP-L1", "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT", "duration": "45:00", "videoUrl": "", "keyFormulas": ["Giảng viên / Đơn vị: MAPSTUDY — ĐGNL V-ACT", "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study", "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"], "lectureScript": [{"time": "00:00", "text": "Chào mừng bạn đến với ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)."}]}]}, {"moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive", "lessons": [{"id": "K69-VACT-MAP-L2", "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive", "duration": "60:00", "videoUrl": "", "keyFormulas": ["Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"], "lectureScript": [{"time": "00:00", "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."}]}]}]}];
+const COURSES_DATABASE = [
+  {
+    "id": "ALL-COURSES-399K",
+    "sku": "DVFULL399",
+    "code": "DVFULL399",
+    "category": "all",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "ngoai_ngu_khxh",
+      "lop12_2k9",
+      "dgnl_hsa",
+      "dgtd_tsa",
+      "dgnl_vact_bca"
+    ],
+    "subCategory": "lop12_2k9",
+    "categoryLabel": "VIP Full Trọn Bộ 399K",
+    "title": "Full Tất Cả Khóa Học & Luyện Đề THPTQG · HSA · TSA · V-ACT",
+    "instructor": "TOÀN BỘ HỆ THỐNG KHÓA HỌC ĐIỆP VIÊN STUDY",
+    "duration": "Toàn bộ các môn · Video HD & Đề PDF",
+    "lessons": 1500,
+    "level": "Full Khóa Học & Cập Nhật Mới",
+    "groupName": "Trọn Bộ Toàn Hệ Thống",
+    "rating": 5.0,
+    "students": "4.9k+",
+    "price": 399000,
+    "originalPrice": 2500000,
+    "singlePrice": 69000,
+    "coursePrice": 399000,
+    "tier": "full_399k",
+    "tierType": "full_399k",
+    "subTier": "full_399k",
+    "isPackageOnly": true,
+    "tierShortBadge": "FULL TRỌN BỘ 399K",
+    "tierLabel": "Full Trọn Bộ + Update (399K)",
+    "badge": "VIP Full 399K",
+    "parentCourseId": "ALL-COURSES-399K",
+    "parentSubjectId": "ALL-COURSES-399K",
+    "childCourseIds": [
+      "C199-KHTN1",
+      "C199-KHTN2",
+      "C199-KHXH1",
+      "C199-KHXH2",
+      "C199-HSA",
+      "C199-TSA",
+      "C199-VACT",
+      "K69-TOAN-DUC",
+      "K69-TOAN-TIEN",
+      "K69-TOAN-SHIPPER",
+      "K69-TOAN-MAP",
+      "K69-TOAN-NT",
+      "K69-LY-BIEN",
+      "K69-LY-TIEN",
+      "K69-LY-UNG",
+      "K69-HOA-TRONG",
+      "K69-HOA-NGOC",
+      "K69-VAN-SM",
+      "K69-VAN-NT",
+      "K69-ANH-MP",
+      "K69-ANH-LIEU",
+      "K69-ANH-NT",
+      "K69-SINH-NGHE",
+      "K69-SINH-DUONG",
+      "K69-SU-HUONG",
+      "K69-SU-SEN",
+      "K69-DIA-TUNG",
+      "K69-DIA-TAI",
+      "K69-HSA-HOCMAI",
+      "K69-HSA-MAP",
+      "K69-HSA-EMPIRE",
+      "K69-HSA-EDU",
+      "K69-TSA-BMC",
+      "K69-TSA-HOCMAI",
+      "K69-VACT-HOCMAI",
+      "K69-VACT-EMPIRE",
+      "K69-VACT-MAP"
+    ],
+    "extraFolderIds": [
+      "1ZlYt4iot-K6d0fZTb7hGwwnRgUV6Pdwh"
+    ],
+    "bannerId": "",
+    "defaultCover": "",
+    "cover": "",
+    "fallbackCover": "",
+    "driveFolderId": "1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a",
+    "driveFolderName": "Full Kho 69K + Kho 199K (Tự Động Update)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a",
+    "driveUrl": "https://drive.google.com/drive/folders/1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Sở hữu toàn bộ kho bài giảng THPT Quốc gia các môn Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa cùng trọn bộ các khóa luyện thi HSA, TSA, V-ACT và đề thi cập nhật mới.",
+    "description": "Sở hữu toàn bộ kho bài giảng THPT Quốc gia các môn Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa cùng trọn bộ các khóa luyện thi HSA, TSA, V-ACT và đề thi cập nhật mới.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Full Hệ Thống",
+        "lessons": [
+          {
+            "id": "ALL-COURSES-399K-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Full Hệ Thống",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: Điệp Viên Study",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Full Trọn Bộ 399K."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "ALL-COURSES-399K-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-KHTN1",
+    "sku": "DV199KHTN1",
+    "code": "DV199KHTN1",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Ban KHTN 1 (Toán · Vật Lý · Sinh)",
+    "title": "Combo Khối KHTN 1 — Toán, Vật Lý, Sinh Học",
+    "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
+    "lessons": 360,
+    "level": "Combo Tổ Hợp · Toán, Lý, Sinh",
+    "groupName": "Tổ Hợp KHTN (A00 · B00)",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "COMBO BAN 199K",
+    "badge": "199K · Ban KHTN 1 (Toán · Vật Lý · Sinh)",
+    "parentCourseId": "C199-KHTN1",
+    "parentSubjectId": "K69-TOAN-DUC",
+    "childCourseIds": [
+      "K69-TOAN-DUC",
+      "K69-LY-BIEN",
+      "K69-SINH-NGHE"
+    ],
+    "extraFolderIds": [
+      "1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+      "1m__F2exCz50iNJXhf0JR4TramO29K244"
+    ],
+    "bannerId": "1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1wH_RQNefQrFk0dTnVQroFsLCzTFZi4J7",
+    "driveFolderName": "Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "driveUrl": "https://drive.google.com/drive/folders/1wH_RQNefQrFk0dTnVQroFsLCzTFZi4J7",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Lộ trình ôn thi toàn diện Toán Thầy Đỗ Văn Đức, Vật Lý Thầy Chu Văn Biên và Sinh Học Thầy Phan Khắc Nghệ: từ nền tảng, vận dụng cao đến luyện đề chuẩn cấu trúc mới.",
+    "description": "Lộ trình ôn thi toàn diện Toán Thầy Đỗ Văn Đức, Vật Lý Thầy Chu Văn Biên và Sinh Học Thầy Phan Khắc Nghệ: từ nền tảng, vận dụng cao đến luyện đề chuẩn cấu trúc mới.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHTN 1 (Toán · Vật Lý · Sinh)",
+        "lessons": [
+          {
+            "id": "C199-KHTN1-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHTN 1 (Toán · Vật Lý · Sinh)",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · THẦY CHU VĂN BIÊN · THẦY PHAN KHẮC NGHỆ",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-KHTN1-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-KHTN2",
+    "sku": "DV199KHTN2",
+    "code": "DV199KHTN2",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Ban KHTN 2 (Toán · Vật Lý · Anh)",
+    "title": "Combo Khối KHTN 2 — Toán, Vật Lý, Tiếng Anh",
+    "instructor": "THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
+    "lessons": 360,
+    "level": "Combo Tổ Hợp · Toán, Lý, Anh",
+    "groupName": "Tổ Hợp Khối A01",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "COMBO BAN 199K",
+    "badge": "199K · Ban KHTN 2 (Toán · Vật Lý · Anh)",
+    "parentCourseId": "C199-KHTN2",
+    "parentSubjectId": "K69-TOAN-DUC",
+    "childCourseIds": [
+      "K69-TOAN-DUC",
+      "K69-LY-TIEN",
+      "K69-ANH-MP"
+    ],
+    "extraFolderIds": [
+      "1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+      "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"
+    ],
+    "bannerId": "1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960",
+    "fallbackCover": "",
+    "driveFolderId": "13E4qvYJg_AnJsmqDRceRvxqT7MdPPCe9",
+    "driveFolderName": "Combo 199K: KHTN 2 — Toán, Vật Lý, Anh",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "driveUrl": "https://drive.google.com/drive/folders/13E4qvYJg_AnJsmqDRceRvxqT7MdPPCe9",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Lộ trình ôn thi khối A01 chuyên sâu gồm Toán Thầy Đỗ Văn Đức, Vật Lý IPClass và Tiếng Anh Cô Vũ Mai Phương kèm kho đề thực chiến giải chi tiết.",
+    "description": "Lộ trình ôn thi khối A01 chuyên sâu gồm Toán Thầy Đỗ Văn Đức, Vật Lý IPClass và Tiếng Anh Cô Vũ Mai Phương kèm kho đề thực chiến giải chi tiết.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHTN 2 (Toán · Vật Lý · Anh)",
+        "lessons": [
+          {
+            "id": "C199-KHTN2-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHTN 2 (Toán · Vật Lý · Anh)",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · THẦY THẮNG TIẾN IPCLASS · CÔ VŨ MAI PHƯƠNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: KHTN 2 — Toán, Vật Lý, Anh."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-KHTN2-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-KHXH1",
+    "sku": "DV199KHXH1",
+    "code": "DV199KHXH1",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)",
+    "title": "Combo Khối KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
+    "instructor": "CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
+    "lessons": 360,
+    "level": "Combo Tổ Hợp · Văn, Sử, Địa",
+    "groupName": "Tổ Hợp Khối C00",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "COMBO BAN 199K",
+    "badge": "199K · Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)",
+    "parentCourseId": "C199-KHXH1",
+    "parentSubjectId": "K69-VAN-SM",
+    "childCourseIds": [
+      "K69-VAN-SM",
+      "K69-SU-HUONG",
+      "K69-DIA-TUNG"
+    ],
+    "extraFolderIds": [
+      "1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+      "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm"
+    ],
+    "bannerId": "1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1POi_V92dNB9IjyVa15Q7TTe5EgtNf85k",
+    "driveFolderName": "Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "driveUrl": "https://drive.google.com/drive/folders/1POi_V92dNB9IjyVa15Q7TTe5EgtNf85k",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Lộ trình ôn thi khối C00 bài bản gồm Ngữ Văn Cô Sương Mai, Lịch Sử Cô Ngô Thị Lan Hương và Địa Lý Thầy Đàm Thanh Tùng bám sát đề minh họa mới nhất.",
+    "description": "Lộ trình ôn thi khối C00 bài bản gồm Ngữ Văn Cô Sương Mai, Lịch Sử Cô Ngô Thị Lan Hương và Địa Lý Thầy Đàm Thanh Tùng bám sát đề minh họa mới nhất.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)",
+        "lessons": [
+          {
+            "id": "C199-KHXH1-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHXH 1 (Ngữ Văn · Lịch Sử · Địa Lý)",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ SƯƠNG MAI · CÔ NGÔ THỊ LAN HƯƠNG · THẦY ĐÀM THANH TÙNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-KHXH1-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-KHXH2",
+    "sku": "DV199KHXH2",
+    "code": "DV199KHXH2",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Ban KHXH 2 (Toán · Văn · Anh)",
+    "title": "Combo Khối KHXH 2 — Toán, Ngữ Văn, Tiếng Anh",
+    "instructor": "THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG",
+    "duration": "3 Khóa Trọng Tâm · Video HD & Đề PDF",
+    "lessons": 360,
+    "level": "Combo Tổ Hợp · Toán, Văn, Anh",
+    "groupName": "Tổ Hợp Khối D01",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "COMBO BAN 199K",
+    "badge": "199K · Ban KHXH 2 (Toán · Văn · Anh)",
+    "parentCourseId": "C199-KHXH2",
+    "parentSubjectId": "K69-TOAN-DUC",
+    "childCourseIds": [
+      "K69-TOAN-DUC",
+      "K69-VAN-SM",
+      "K69-ANH-MP"
+    ],
+    "extraFolderIds": [
+      "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+      "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1"
+    ],
+    "bannerId": "13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR",
+    "defaultCover": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960",
+    "cover": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1USiYayriUVvjhV9uNUsb9KwkUBmvY9Qr",
+    "driveFolderName": "Combo 199K: KHXH 2 — Toán, Văn, Anh",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "driveUrl": "https://drive.google.com/drive/folders/1USiYayriUVvjhV9uNUsb9KwkUBmvY9Qr",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Lộ trình ôn thi khối D01 toàn diện gồm Toán Thầy Đỗ Văn Đức, Ngữ Văn Cô Sương Mai và Tiếng Anh Cô Vũ Mai Phương từ cơ bản đến vận dụng cao.",
+    "description": "Lộ trình ôn thi khối D01 toàn diện gồm Toán Thầy Đỗ Văn Đức, Ngữ Văn Cô Sương Mai và Tiếng Anh Cô Vũ Mai Phương từ cơ bản đến vận dụng cao.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ban KHXH 2 (Toán · Văn · Anh)",
+        "lessons": [
+          {
+            "id": "C199-KHXH2-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ban KHXH 2 (Toán · Văn · Anh)",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC · CÔ SƯƠNG MAI · CÔ VŨ MAI PHƯƠNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: KHXH 2 — Toán, Văn, Anh."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-KHXH2-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-HSA",
+    "sku": "DV199HSA",
+    "code": "DV199HSA",
+    "category": "dgnl_hsa",
+    "categories": [
+      "all",
+      "dgnl_hsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_hsa",
+    "categoryLabel": "ĐGNL HSA ĐHQG Hà Nội",
+    "title": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội",
+    "instructor": "HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU",
+    "duration": "4 Đơn Vị Tuyển Chọn · Video HD & Đề PDF",
+    "lessons": 480,
+    "level": "Combo ĐGNL · ĐHQG Hà Nội",
+    "groupName": "Đánh Giá Năng Lực HSA",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "KHÓA ĐGNL 199K",
+    "badge": "199K · ĐGNL HSA ĐHQG Hà Nội",
+    "parentCourseId": "C199-HSA",
+    "parentSubjectId": "K69-HSA-HOCMAI",
+    "childCourseIds": [
+      "K69-HSA-HOCMAI",
+      "K69-HSA-MAP",
+      "K69-HSA-EMPIRE",
+      "K69-HSA-EDU"
+    ],
+    "extraFolderIds": [
+      "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+      "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+      "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg"
+    ],
+    "bannerId": "1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960",
+    "driveFolderId": "1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD",
+    "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "driveUrl": "https://drive.google.com/drive/folders/1srqe9me4XOr-Bg30BSx-mQrFdcaRxgKD",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Trọn bộ lộ trình luyện thi Đánh giá năng lực HSA ĐHQG Hà Nội từ HocMai, MapStudy, Empire Team và HSA Edu: Định lượng, Định tính, Khoa học và Tiếng Anh.",
+    "description": "Trọn bộ lộ trình luyện thi Đánh giá năng lực HSA ĐHQG Hà Nội từ HocMai, MapStudy, Empire Team và HSA Edu: Định lượng, Định tính, Khoa học và Tiếng Anh.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGNL HSA ĐHQG Hà Nội",
+        "lessons": [
+          {
+            "id": "C199-HSA-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGNL HSA ĐHQG Hà Nội",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI · MAPSTUDY · EMPIRE TEAM · HSA EDU",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-HSA-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-TSA",
+    "sku": "DV199TSA",
+    "code": "DV199TSA",
+    "category": "dgtd_tsa",
+    "categories": [
+      "all",
+      "dgtd_tsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgtd_tsa",
+    "categoryLabel": "ĐGTD TSA ĐH Bách Khoa HN",
+    "title": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa HN",
+    "instructor": "BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC",
+    "duration": "2 Đơn Vị Tuyển Chọn · Video HD & Đề PDF",
+    "lessons": 240,
+    "level": "Combo ĐGTD · ĐH Bách Khoa HN",
+    "groupName": "Đánh Giá Tư Duy TSA",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "KHÓA ĐGTD 199K",
+    "badge": "199K · ĐGTD TSA ĐH Bách Khoa HN",
+    "parentCourseId": "C199-TSA",
+    "parentSubjectId": "K69-TSA-BMC",
+    "childCourseIds": [
+      "K69-TSA-BMC",
+      "K69-TSA-HOCMAI"
+    ],
+    "extraFolderIds": [
+      "1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu"
+    ],
+    "bannerId": "1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960",
+    "fallbackCover": "",
+    "driveFolderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "driveFolderName": "Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "driveUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Lộ trình luyện thi chuyên sâu Tư duy Toán học, Đọc hiểu và Tư duy Khoa học kỳ thi TSA ĐH Bách Khoa Hà Nội từ BMC và HocMai.",
+    "description": "Lộ trình luyện thi chuyên sâu Tư duy Toán học, Đọc hiểu và Tư duy Khoa học kỳ thi TSA ĐH Bách Khoa Hà Nội từ BMC và HocMai.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGTD TSA ĐH Bách Khoa HN",
+        "lessons": [
+          {
+            "id": "C199-TSA-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGTD TSA ĐH Bách Khoa HN",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: BMC · HOCMAI — TƯ DUY TOÁN · ĐỌC HIỂU · KHOA HỌC",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-TSA-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C199-VACT",
+    "sku": "DV199VACT",
+    "code": "DV199VACT",
+    "category": "dgnl_vact_bca",
+    "categories": [
+      "all",
+      "dgnl_vact_bca",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_vact_bca",
+    "categoryLabel": "ĐGNL V-ACT ĐHQG TP.HCM",
+    "title": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM",
+    "instructor": "HOCMAI · EMPIRE TEAM · MAPSTUDY",
+    "duration": "3 Đơn Vị Tuyển Chọn · Video HD & Đề PDF",
+    "lessons": 360,
+    "level": "Combo ĐGNL · ĐHQG TP.HCM",
+    "groupName": "Đánh Giá Năng Lực V-ACT",
+    "rating": 5.0,
+    "students": "1.9k+",
+    "price": 199000,
+    "originalPrice": 399000,
+    "singlePrice": 69000,
+    "coursePrice": 199000,
+    "tier": "course_199k",
+    "tierType": "course_199k",
+    "subTier": "combo_199k",
+    "isPackageOnly": false,
+    "tierShortBadge": "COMBO 199K",
+    "tierLabel": "KHÓA ĐGNL 199K",
+    "badge": "199K · ĐGNL V-ACT ĐHQG TP.HCM",
+    "parentCourseId": "C199-VACT",
+    "parentSubjectId": "K69-VACT-HOCMAI",
+    "childCourseIds": [
+      "K69-VACT-HOCMAI",
+      "K69-VACT-EMPIRE",
+      "K69-VACT-MAP"
+    ],
+    "extraFolderIds": [
+      "1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+      "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB"
+    ],
+    "bannerId": "15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10",
+    "defaultCover": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960",
+    "cover": "https://lh3.googleusercontent.com/d/15Bzsd08qpjo8L3SlaxLsq3RHr6oOIt10=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1bPhV9fqeesm4SISXeIjL9ZgVWwnHxW6o",
+    "driveFolderName": "Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "driveUrl": "https://drive.google.com/drive/folders/1bPhV9fqeesm4SISXeIjL9ZgVWwnHxW6o",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Trọn bộ bài giảng và ngân hàng đề thi thực chiến kỳ thi Đánh giá năng lực V-ACT ĐHQG TP.HCM từ HocMai, Empire Team và MapStudy.",
+    "description": "Trọn bộ bài giảng và ngân hàng đề thi thực chiến kỳ thi Đánh giá năng lực V-ACT ĐHQG TP.HCM từ HocMai, Empire Team và MapStudy.",
+    "highlights": [
+      "Hệ thống bài giảng Video Full HD phân chuyên đề từ cơ bản đến vận dụng cao",
+      "Bộ đề thi thực chiến PDF chuẩn cấu trúc mới kèm lời giải chi tiết",
+      "Cấp quyền truy cập Google Drive chính chủ tự động qua Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — ĐGNL V-ACT ĐHQG TP.HCM",
+        "lessons": [
+          {
+            "id": "C199-VACT-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi ĐGNL V-ACT ĐHQG TP.HCM",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI · EMPIRE TEAM · MAPSTUDY",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "C199-VACT-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TOAN-DUC",
+    "sku": "DV69TOANDUC",
+    "code": "DV69TOANDUC",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Toán",
+    "title": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)",
+    "instructor": "THẦY ĐỖ VĂN ĐỨC — TENSCHOOL",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Toán",
+    "parentCourseId": "K69-TOAN-DUC",
+    "parentSubjectId": "K69-TOAN-DUC",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u",
+    "defaultCover": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960",
+    "cover": "https://lh3.googleusercontent.com/d/19dsgaplgZ8jGd3QuFmOFSP8R1wIa4h9u=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "driveFolderName": "Toán Thầy Đỗ Văn Đức (TenSchool 2K9)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "driveUrl": "https://drive.google.com/drive/folders/1i4RBCS2J7QAixPOgmZCpWvV7X3MBM3fo",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán Thầy Đỗ Văn Đức (TenSchool 2K9) (THẦY ĐỖ VĂN ĐỨC — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán",
+        "lessons": [
+          {
+            "id": "K69-TOAN-DUC-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY ĐỖ VĂN ĐỨC — TENSCHOOL",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Toán Thầy Đỗ Văn Đức (TenSchool 2K9)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TOAN-DUC-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TOAN-TIEN",
+    "sku": "DV69TOANTIEN",
+    "code": "DV69TOANTIEN",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Toán",
+    "title": "Toán Thầy Nguyễn Phan Tiến 2K9",
+    "instructor": "THẦY NGUYỄN PHAN TIẾN",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Toán",
+    "parentCourseId": "K69-TOAN-TIEN",
+    "parentSubjectId": "K69-TOAN-TIEN",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1T9k1aHqUdKGfzzCeePudB3408I2f86Ek",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1T9k1aHqUdKGfzzCeePudB3408I2f86Ek=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1b73Z89zxCGINyuOVm4pImxwkj2UTidC1",
+    "driveFolderName": "Toán Thầy Nguyễn Phan Tiến 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1",
+    "driveUrl": "https://drive.google.com/drive/folders/1b73Z89zxCGINyuOVm4pImxwkj2UTidC1",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán Thầy Nguyễn Phan Tiến 2K9 (THẦY NGUYỄN PHAN TIẾN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán",
+        "lessons": [
+          {
+            "id": "K69-TOAN-TIEN-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY NGUYỄN PHAN TIẾN",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Toán Thầy Nguyễn Phan Tiến 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TOAN-TIEN-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TOAN-SHIPPER",
+    "sku": "DV69TOANSHIP",
+    "code": "DV69TOANSHIP",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Toán",
+    "title": "Toán Anh Shiper 2K9",
+    "instructor": "ANH SHIPER TOÁN",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Toán",
+    "parentCourseId": "K69-TOAN-SHIPPER",
+    "parentSubjectId": "K69-TOAN-SHIPPER",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1CNcGxedxoB0rVxxBJvah1dP-2x23Hf8l=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n",
+    "driveFolderName": "Toán Anh Shiper 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n",
+    "driveUrl": "https://drive.google.com/drive/folders/1npBDPOm0un8fpiwhXqnTElSyJCxHEq1n",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán Anh Shiper 2K9 (ANH SHIPER TOÁN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán",
+        "lessons": [
+          {
+            "id": "K69-TOAN-SHIPPER-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: ANH SHIPER TOÁN",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Toán Anh Shiper 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TOAN-SHIPPER-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TOAN-MAP",
+    "sku": "DV69TOANMAP",
+    "code": "DV69TOANMAP",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Toán",
+    "title": "Toán — Tổ Toán Học MapStudy 2K9",
+    "instructor": "TỔ TOÁN HỌC MAPSTUDY",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Toán",
+    "parentCourseId": "K69-TOAN-MAP",
+    "parentSubjectId": "K69-TOAN-MAP",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1UzEyvawDLZyQaqLjLTRAzLZBLXAzLtGd=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA",
+    "driveFolderName": "Toán — Tổ Toán Học MapStudy 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA",
+    "driveUrl": "https://drive.google.com/drive/folders/1Lvx2x6Gz66gNzgHWOn4DjF6m0a8MhuPA",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Toán — Tổ Toán Học MapStudy 2K9 (TỔ TOÁN HỌC MAPSTUDY): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán",
+        "lessons": [
+          {
+            "id": "K69-TOAN-MAP-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: TỔ TOÁN HỌC MAPSTUDY",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Toán — Tổ Toán Học MapStudy 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TOAN-MAP-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TOAN-NT",
+    "sku": "DV69TOANNT",
+    "code": "DV69TOANNT",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Toán",
+    "title": "Nền Tảng Toán Thầy Lưu Huy Thưởng",
+    "instructor": "THẦY LƯU HUY THƯỞNG — HOCMAI",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Toán",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Toán",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Toán",
+    "parentCourseId": "K69-TOAN-NT",
+    "parentSubjectId": "K69-TOAN-NT",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1kbpgW03rnk3_Scg31efEyZGhjFgSBtPV=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A",
+    "driveFolderName": "Nền Tảng Toán Thầy Lưu Huy Thưởng",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A",
+    "driveUrl": "https://drive.google.com/drive/folders/1kme7eKb-PLV_suK3UVLJYEQKMB5BuP6A",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng Toán Thầy Lưu Huy Thưởng (THẦY LƯU HUY THƯỞNG — HOCMAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Toán",
+        "lessons": [
+          {
+            "id": "K69-TOAN-NT-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Toán",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY LƯU HUY THƯỞNG — HOCMAI",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Nền Tảng Toán Thầy Lưu Huy Thưởng."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TOAN-NT-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-LY-BIEN",
+    "sku": "DV69LYBIEN",
+    "code": "DV69LYBIEN",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Vật Lý",
+    "title": "Vật Lý Thầy Chu Văn Biên 2K9",
+    "instructor": "THẦY CHU VĂN BIÊN",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Vật Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Vật Lý",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Vật Lý",
+    "parentCourseId": "K69-LY-BIEN",
+    "parentSubjectId": "K69-LY-BIEN",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1Qk1eh8MSussintaXSMK2G1iy9zCKehkw",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1Qk1eh8MSussintaXSMK2G1iy9zCKehkw=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+    "driveFolderName": "Vật Lý Thầy Chu Văn Biên 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+    "driveUrl": "https://drive.google.com/drive/folders/1UxEYANVp1iw9Us0mSNJR8w9_VFhsx3MP",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Vật Lý Thầy Chu Văn Biên 2K9 (THẦY CHU VĂN BIÊN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý",
+        "lessons": [
+          {
+            "id": "K69-LY-BIEN-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY CHU VĂN BIÊN",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Vật Lý Thầy Chu Văn Biên 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-LY-BIEN-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-LY-TIEN",
+    "sku": "DV69LYTIEN",
+    "code": "DV69LYTIEN",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Vật Lý",
+    "title": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9",
+    "instructor": "THẦY THẮNG & THẦY TIẾN — IPCLASS",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Vật Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Vật Lý",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Vật Lý",
+    "parentCourseId": "K69-LY-TIEN",
+    "parentSubjectId": "K69-LY-TIEN",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1BQdHHWXd9iBGH09xq2LjhBbG9WVgo4ih=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+    "driveFolderName": "Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+    "driveUrl": "https://drive.google.com/drive/folders/1Mz6IblP1vwlLKj9XKBAq4BFnKJBcwqSP",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9 (THẦY THẮNG & THẦY TIẾN — IPCLASS): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý",
+        "lessons": [
+          {
+            "id": "K69-LY-TIEN-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY THẮNG & THẦY TIẾN — IPCLASS",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Vật Lý Thầy Thắng · Thầy Tiến IPClass 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-LY-TIEN-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-LY-UNG",
+    "sku": "DV69LYUNG",
+    "code": "DV69LYUNG",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Vật Lý",
+    "title": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)",
+    "instructor": "THẦY LÊ TÙNG ƯNG — TENSCHOOL",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Vật Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Vật Lý",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Vật Lý",
+    "parentCourseId": "K69-LY-UNG",
+    "parentSubjectId": "K69-LY-UNG",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1wvE4YqVQ8QvPPwN6DrdpT1Kw7HequIiw=w960",
+    "fallbackCover": "",
+    "driveFolderId": "11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU",
+    "driveFolderName": "Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU",
+    "driveUrl": "https://drive.google.com/drive/folders/11QpRWPh7KFv6z3ehH9PyF2rSZBJkvjIU",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Vật Lý Thầy Lê Tùng Ưng (TenS 2K9) (THẦY LÊ TÙNG ƯNG — TENSCHOOL): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Vật Lý",
+        "lessons": [
+          {
+            "id": "K69-LY-UNG-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Vật Lý",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY LÊ TÙNG ƯNG — TENSCHOOL",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Vật Lý Thầy Lê Tùng Ưng (TenS 2K9)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-LY-UNG-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-HOA-TRONG",
+    "sku": "DV69HOATRONG",
+    "code": "DV69HOATRONG",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Hóa Học",
+    "title": "Hóa Học Thầy Phạm Văn Trọng 2K9",
+    "instructor": "THẦY PHẠM VĂN TRỌNG",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Hóa Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Hóa Học",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Hóa Học",
+    "parentCourseId": "K69-HOA-TRONG",
+    "parentSubjectId": "K69-HOA-TRONG",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1FJN2iWnh8OO7Mb2SqiA9gmsxeWNRUsk1=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk",
+    "driveFolderName": "Hóa Học Thầy Phạm Văn Trọng 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk",
+    "driveUrl": "https://drive.google.com/drive/folders/1GG-0AuynJUnQZZKXcrlQpRuTFsye6aQk",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Hóa Học Thầy Phạm Văn Trọng 2K9 (THẦY PHẠM VĂN TRỌNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Hóa Học",
+        "lessons": [
+          {
+            "id": "K69-HOA-TRONG-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Hóa Học",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY PHẠM VĂN TRỌNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Hóa Học Thầy Phạm Văn Trọng 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-HOA-TRONG-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-HOA-NGOC",
+    "sku": "DV69HOANGOC",
+    "code": "DV69HOANGOC",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Hóa Học",
+    "title": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son",
+    "instructor": "THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Hóa Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Hóa Học",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Hóa Học",
+    "parentCourseId": "K69-HOA-NGOC",
+    "parentSubjectId": "K69-HOA-NGOC",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1DmSD53JWqo4mPMqvkg8HW4SgbirM69zq=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe",
+    "driveFolderName": "Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe",
+    "driveUrl": "https://drive.google.com/drive/folders/1vMyBdrXbe_YdZwMOgw9OfTZMrY-9vHXe",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son (THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Hóa Học",
+        "lessons": [
+          {
+            "id": "K69-HOA-NGOC-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Hóa Học",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY VŨ KHẮC NGỌC & CÔ TỐNG THỊ SON",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Nền Tảng Hóa Thầy Vũ Khắc Ngọc & Cô Tống Thị Son."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-HOA-NGOC-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-VAN-SM",
+    "sku": "DV69VANSM",
+    "code": "DV69VANSM",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Ngữ Văn",
+    "title": "Học Văn Cô Sương Mai 2K9",
+    "instructor": "CÔ SƯƠNG MAI",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Ngữ Văn",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Ngữ Văn",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Ngữ Văn",
+    "parentCourseId": "K69-VAN-SM",
+    "parentSubjectId": "K69-VAN-SM",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "168PvC5P4T3pnHuCQteIB6MwyAseMHgCP",
+    "defaultCover": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960",
+    "cover": "https://lh3.googleusercontent.com/d/168PvC5P4T3pnHuCQteIB6MwyAseMHgCP=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "driveFolderName": "Học Văn Cô Sương Mai 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "driveUrl": "https://drive.google.com/drive/folders/1BCgSdV1PUChvoy5P85m8QxklO1ApXdTT",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Học Văn Cô Sương Mai 2K9 (CÔ SƯƠNG MAI): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ngữ Văn",
+        "lessons": [
+          {
+            "id": "K69-VAN-SM-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ngữ Văn",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ SƯƠNG MAI",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Học Văn Cô Sương Mai 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-VAN-SM-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-VAN-NT",
+    "sku": "DV69VANNT",
+    "code": "DV69VANNT",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Ngữ Văn",
+    "title": "Nền Tảng 12 Môn Ngữ Văn (HocMai)",
+    "instructor": "HOCMAI — NỀN TẢNG NGỮ VĂN",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Ngữ Văn",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Ngữ Văn",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Ngữ Văn",
+    "parentCourseId": "K69-VAN-NT",
+    "parentSubjectId": "K69-VAN-NT",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1k6hnaIY3HWrymuoZclECCa6lGgtbjyND",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1k6hnaIY3HWrymuoZclECCa6lGgtbjyND=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF",
+    "driveFolderName": "Nền Tảng 12 Môn Ngữ Văn (HocMai)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF",
+    "driveUrl": "https://drive.google.com/drive/folders/1D9xa1GYZZEDVhxfvQq-i1xlWim66zikF",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng 12 Môn Ngữ Văn (HocMai) (HOCMAI — NỀN TẢNG NGỮ VĂN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Ngữ Văn",
+        "lessons": [
+          {
+            "id": "K69-VAN-NT-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Ngữ Văn",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI — NỀN TẢNG NGỮ VĂN",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Nền Tảng 12 Môn Ngữ Văn (HocMai)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-VAN-NT-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-ANH-MP",
+    "sku": "DV69ANHMP",
+    "code": "DV69ANHMP",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Tiếng Anh",
+    "title": "Tiếng Anh Cô Vũ Mai Phương 2K9",
+    "instructor": "CÔ VŨ MAI PHƯƠNG",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Tiếng Anh",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Tiếng Anh",
+    "parentCourseId": "K69-ANH-MP",
+    "parentSubjectId": "K69-ANH-MP",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1jSW8AIaIx_1bAgb0SfzzeQbyzIXQldd5=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1",
+    "driveFolderName": "Tiếng Anh Cô Vũ Mai Phương 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1",
+    "driveUrl": "https://drive.google.com/drive/folders/1wS0ZGPRPrv52DodhIDIUTgfzumu-3jW1",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Tiếng Anh Cô Vũ Mai Phương 2K9 (CÔ VŨ MAI PHƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh",
+        "lessons": [
+          {
+            "id": "K69-ANH-MP-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ VŨ MAI PHƯƠNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Tiếng Anh Cô Vũ Mai Phương 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-ANH-MP-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-ANH-LIEU",
+    "sku": "DV69ANHLIEU",
+    "code": "DV69ANHLIEU",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Tiếng Anh",
+    "title": "Tiếng Anh Cô Phạm Liễu 2K9",
+    "instructor": "CÔ PHẠM LIỄU",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Tiếng Anh",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Tiếng Anh",
+    "parentCourseId": "K69-ANH-LIEU",
+    "parentSubjectId": "K69-ANH-LIEU",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1WrZj1RIOVrXcAJAaMoQm585xqyK4lAwa=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw",
+    "driveFolderName": "Tiếng Anh Cô Phạm Liễu 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw",
+    "driveUrl": "https://drive.google.com/drive/folders/1Antqpjjo7hKQI_RqlDT3FW8kSTJGHGMw",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Tiếng Anh Cô Phạm Liễu 2K9 (CÔ PHẠM LIỄU): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh",
+        "lessons": [
+          {
+            "id": "K69-ANH-LIEU-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ PHẠM LIỄU",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Tiếng Anh Cô Phạm Liễu 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-ANH-LIEU-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-ANH-NT",
+    "sku": "DV69ANHNT",
+    "code": "DV69ANHNT",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Tiếng Anh",
+    "title": "Nền Tảng 12 Môn Tiếng Anh (HocMai)",
+    "instructor": "HOCMAI — NỀN TẢNG TIẾNG ANH",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Tiếng Anh",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Tiếng Anh",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Tiếng Anh",
+    "parentCourseId": "K69-ANH-NT",
+    "parentSubjectId": "K69-ANH-NT",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "19jS05grnW40e4meXVPn7a7RvtUEAl19x",
+    "defaultCover": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960",
+    "cover": "https://lh3.googleusercontent.com/d/19jS05grnW40e4meXVPn7a7RvtUEAl19x=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM",
+    "driveFolderName": "Nền Tảng 12 Môn Tiếng Anh (HocMai)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM",
+    "driveUrl": "https://drive.google.com/drive/folders/1-sSo3zBXFRoXfQHkSdIOxmH2MkAvEqKM",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng 12 Môn Tiếng Anh (HocMai) (HOCMAI — NỀN TẢNG TIẾNG ANH): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Tiếng Anh",
+        "lessons": [
+          {
+            "id": "K69-ANH-NT-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Tiếng Anh",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI — NỀN TẢNG TIẾNG ANH",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Nền Tảng 12 Môn Tiếng Anh (HocMai)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-ANH-NT-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-SINH-NGHE",
+    "sku": "DV69SINHNGHE",
+    "code": "DV69SINHNGHE",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Sinh Học",
+    "title": "Sinh Học Thầy Phan Khắc Nghệ 2K9",
+    "instructor": "THẦY PHAN KHẮC NGHỆ",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Sinh Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Sinh Học",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Sinh Học",
+    "parentCourseId": "K69-SINH-NGHE",
+    "parentSubjectId": "K69-SINH-NGHE",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn",
+    "defaultCover": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960",
+    "cover": "https://lh3.googleusercontent.com/d/12O7FO6DnKouHOcvAh9LayMHGCbqWsKmn=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1m__F2exCz50iNJXhf0JR4TramO29K244",
+    "driveFolderName": "Sinh Học Thầy Phan Khắc Nghệ 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244",
+    "driveUrl": "https://drive.google.com/drive/folders/1m__F2exCz50iNJXhf0JR4TramO29K244",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Sinh Học Thầy Phan Khắc Nghệ 2K9 (THẦY PHAN KHẮC NGHỆ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Sinh Học",
+        "lessons": [
+          {
+            "id": "K69-SINH-NGHE-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Sinh Học",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY PHAN KHẮC NGHỆ",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Sinh Học Thầy Phan Khắc Nghệ 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-SINH-NGHE-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-SINH-DUONG",
+    "sku": "DV69SINHDUONG",
+    "code": "DV69SINHDUONG",
+    "category": "khtn_toan_ly_hoa_sinh",
+    "categories": [
+      "all",
+      "khtn_toan_ly_hoa_sinh",
+      "lop12_2k9"
+    ],
+    "subCategory": "khtn_toan_ly_hoa_sinh",
+    "categoryLabel": "Môn Sinh Học",
+    "title": "Nền Tảng Sinh Học Cô Ánh Dương",
+    "instructor": "CÔ ÁNH DƯƠNG",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Sinh Học",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Sinh Học",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Sinh Học",
+    "parentCourseId": "K69-SINH-DUONG",
+    "parentSubjectId": "K69-SINH-DUONG",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1HfwO2IBd44nJtu3b1rfETYWnpY_jR786",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1HfwO2IBd44nJtu3b1rfETYWnpY_jR786=w960",
+    "fallbackCover": "",
+    "driveFolderId": "13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio",
+    "driveFolderName": "Nền Tảng Sinh Học Cô Ánh Dương",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio",
+    "driveUrl": "https://drive.google.com/drive/folders/13F0pQtUG-1yix2XrSQo9TkSw8-_UAAio",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Nền Tảng Sinh Học Cô Ánh Dương (CÔ ÁNH DƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Sinh Học",
+        "lessons": [
+          {
+            "id": "K69-SINH-DUONG-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Sinh Học",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ ÁNH DƯƠNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Nền Tảng Sinh Học Cô Ánh Dương."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-SINH-DUONG-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-SU-HUONG",
+    "sku": "DV69SUHUONG",
+    "code": "DV69SUHUONG",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Lịch Sử",
+    "title": "Lịch Sử Cô Ngô Thị Lan Hương 2K9",
+    "instructor": "CÔ NGÔ THỊ LAN HƯƠNG",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Lịch Sử",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Lịch Sử",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Lịch Sử",
+    "parentCourseId": "K69-SU-HUONG",
+    "parentSubjectId": "K69-SU-HUONG",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1J3zG22zlrTo9otUpc5qATJ4n9TL_k4aK=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+    "driveFolderName": "Lịch Sử Cô Ngô Thị Lan Hương 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+    "driveUrl": "https://drive.google.com/drive/folders/1klZMAdkSnSXXSb72fTiKOZnL11EPYswu",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Lịch Sử Cô Ngô Thị Lan Hương 2K9 (CÔ NGÔ THỊ LAN HƯƠNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Lịch Sử",
+        "lessons": [
+          {
+            "id": "K69-SU-HUONG-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Lịch Sử",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ NGÔ THỊ LAN HƯƠNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Lịch Sử Cô Ngô Thị Lan Hương 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-SU-HUONG-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-SU-SEN",
+    "sku": "DV69SUSEN",
+    "code": "DV69SUSEN",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Lịch Sử",
+    "title": "Lịch Sử Cô Nguyễn Hương Sen 2K9",
+    "instructor": "CÔ NGUYỄN HƯƠNG SEN",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Lịch Sử",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Lịch Sử",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Lịch Sử",
+    "parentCourseId": "K69-SU-SEN",
+    "parentSubjectId": "K69-SU-SEN",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1vEP_SFENSGRnYXCAHwdEOxD-LWUCI-0e=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t",
+    "driveFolderName": "Lịch Sử Cô Nguyễn Hương Sen 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t",
+    "driveUrl": "https://drive.google.com/drive/folders/1B_IXBTxhmhZtW5fzln4-uxv-QTq39p6t",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Lịch Sử Cô Nguyễn Hương Sen 2K9 (CÔ NGUYỄN HƯƠNG SEN): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Lịch Sử",
+        "lessons": [
+          {
+            "id": "K69-SU-SEN-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Lịch Sử",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: CÔ NGUYỄN HƯƠNG SEN",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Lịch Sử Cô Nguyễn Hương Sen 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-SU-SEN-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-DIA-TUNG",
+    "sku": "DV69DIATUNG",
+    "code": "DV69DIATUNG",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Địa Lý",
+    "title": "Địa Lý Thầy Đàm Thanh Tùng 2K9",
+    "instructor": "THẦY ĐÀM THANH TÙNG",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Địa Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Địa Lý",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Địa Lý",
+    "parentCourseId": "K69-DIA-TUNG",
+    "parentSubjectId": "K69-DIA-TUNG",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1U3AfsKTzFWPz-vFY2nd9eu2kw7eSWKNo=w960",
+    "fallbackCover": "",
+    "driveFolderId": "16WO3g17nelhGfCzNNaptvgKp0iYzAlvm",
+    "driveFolderName": "Địa Lý Thầy Đàm Thanh Tùng 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm",
+    "driveUrl": "https://drive.google.com/drive/folders/16WO3g17nelhGfCzNNaptvgKp0iYzAlvm",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Địa Lý Thầy Đàm Thanh Tùng 2K9 (THẦY ĐÀM THANH TÙNG): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Địa Lý",
+        "lessons": [
+          {
+            "id": "K69-DIA-TUNG-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Địa Lý",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY ĐÀM THANH TÙNG",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Địa Lý Thầy Đàm Thanh Tùng 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-DIA-TUNG-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-DIA-TAI",
+    "sku": "DV69DIATAI",
+    "code": "DV69DIATAI",
+    "category": "ngoai_ngu_khxh",
+    "categories": [
+      "all",
+      "ngoai_ngu_khxh",
+      "lop12_2k9"
+    ],
+    "subCategory": "ngoai_ngu_khxh",
+    "categoryLabel": "Môn Địa Lý",
+    "title": "Địa Lý Thầy Tài 2K9",
+    "instructor": "THẦY TÀI ĐỊA LÝ",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn Địa Lý",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn Địa Lý",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · Địa Lý",
+    "parentCourseId": "K69-DIA-TAI",
+    "parentSubjectId": "K69-DIA-TAI",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1DasmiM670vDu3CekdeXCoQeQoeLvKYyq",
+    "driveFolderName": "Địa Lý Thầy Tài 2K9",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq",
+    "driveUrl": "https://drive.google.com/drive/folders/1DasmiM670vDu3CekdeXCoQeQoeLvKYyq",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Địa Lý Thầy Tài 2K9 (THẦY TÀI ĐỊA LÝ): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — Địa Lý",
+        "lessons": [
+          {
+            "id": "K69-DIA-TAI-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi Địa Lý",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: THẦY TÀI ĐỊA LÝ",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với Địa Lý Thầy Tài 2K9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-DIA-TAI-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-HSA-HOCMAI",
+    "sku": "DV69HSAHM",
+    "code": "DV69HSAHM",
+    "category": "dgnl_hsa",
+    "categories": [
+      "all",
+      "dgnl_hsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_hsa",
+    "categoryLabel": "Môn HSA",
+    "title": "Luyện Thi ĐGNL HSA — HocMai 2K9",
+    "instructor": "HOCMAI — ĐGNL HSA",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · HSA",
+    "parentCourseId": "K69-HSA-HOCMAI",
+    "parentSubjectId": "K69-HSA-HOCMAI",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
+    "driveFolderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "driveFolderName": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "driveUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — HocMai 2K9 (HOCMAI — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — HocMai 2K9 (HOCMAI — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA",
+        "lessons": [
+          {
+            "id": "K69-HSA-HOCMAI-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI — ĐGNL HSA",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-HSA-HOCMAI-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-HSA-MAP",
+    "sku": "DV69HSAMAP",
+    "code": "DV69HSAMAP",
+    "category": "dgnl_hsa",
+    "categories": [
+      "all",
+      "dgnl_hsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_hsa",
+    "categoryLabel": "Môn HSA",
+    "title": "Luyện Thi ĐGNL HSA — MapStudy 2K9",
+    "instructor": "MAPSTUDY — ĐGNL HSA",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · HSA",
+    "parentCourseId": "K69-HSA-MAP",
+    "parentSubjectId": "K69-HSA-MAP",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
+    "driveFolderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+    "driveFolderName": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+    "driveUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — MapStudy 2K9 (MAPSTUDY — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — MapStudy 2K9 (MAPSTUDY — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA",
+        "lessons": [
+          {
+            "id": "K69-HSA-MAP-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: MAPSTUDY — ĐGNL HSA",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-HSA-MAP-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-HSA-EMPIRE",
+    "sku": "DV69HSAEMP",
+    "code": "DV69HSAEMP",
+    "category": "dgnl_hsa",
+    "categories": [
+      "all",
+      "dgnl_hsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_hsa",
+    "categoryLabel": "Môn HSA",
+    "title": "Luyện Thi ĐGNL HSA — Empire Team 2K9",
+    "instructor": "EMPIRE TEAM — ĐGNL HSA",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · HSA",
+    "parentCourseId": "K69-HSA-EMPIRE",
+    "parentSubjectId": "K69-HSA-EMPIRE",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
+    "driveFolderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+    "driveFolderName": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+    "driveUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — Empire Team 2K9 (EMPIRE TEAM — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — Empire Team 2K9 (EMPIRE TEAM — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA",
+        "lessons": [
+          {
+            "id": "K69-HSA-EMPIRE-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: EMPIRE TEAM — ĐGNL HSA",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-HSA-EMPIRE-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-HSA-EDU",
+    "sku": "DV69HSAEDU",
+    "code": "DV69HSAEDU",
+    "category": "dgnl_hsa",
+    "categories": [
+      "all",
+      "dgnl_hsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_hsa",
+    "categoryLabel": "Môn HSA",
+    "title": "Luyện Thi ĐGNL HSA — HSA Edu 2K9",
+    "instructor": "HSA EDU — ĐGNL HSA",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn HSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn HSA",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · HSA",
+    "parentCourseId": "K69-HSA-EDU",
+    "parentSubjectId": "K69-HSA-EDU",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "defaultCover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "cover": "courses/covers/dgnl_hsa_dhqg.jpg",
+    "fallbackCover": "https://lh3.googleusercontent.com/d/1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_=w960",
+    "driveFolderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
+    "driveFolderName": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
+    "driveUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL HSA — HSA Edu 2K9 (HSA EDU — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL HSA — HSA Edu 2K9 (HSA EDU — ĐGNL HSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — HSA",
+        "lessons": [
+          {
+            "id": "K69-HSA-EDU-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi HSA",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HSA EDU — ĐGNL HSA",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-HSA-EDU-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TSA-BMC",
+    "sku": "DV69TSABMC",
+    "code": "DV69TSABMC",
+    "category": "dgtd_tsa",
+    "categories": [
+      "all",
+      "dgtd_tsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgtd_tsa",
+    "categoryLabel": "Môn TSA",
+    "title": "Luyện Thi ĐGTD TSA Bách Khoa — BMC",
+    "instructor": "BMC — ĐGTD TSA",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn TSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn TSA",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · TSA",
+    "parentCourseId": "K69-TSA-BMC",
+    "parentSubjectId": "K69-TSA-BMC",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960",
+    "fallbackCover": "",
+    "driveFolderId": "17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "driveFolderName": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "driveUrl": "https://drive.google.com/drive/folders/17LjoTYOyxgVo2MYk6MpWfK681vqWwgbe",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — BMC (BMC — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — BMC (BMC — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — TSA",
+        "lessons": [
+          {
+            "id": "K69-TSA-BMC-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi TSA",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: BMC — ĐGTD TSA",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TSA-BMC-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-TSA-HOCMAI",
+    "sku": "DV69TSAHM",
+    "code": "DV69TSAHM",
+    "category": "dgtd_tsa",
+    "categories": [
+      "all",
+      "dgtd_tsa",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgtd_tsa",
+    "categoryLabel": "Môn TSA",
+    "title": "Luyện Thi ĐGTD TSA Bách Khoa — HocMai",
+    "instructor": "HOCMAI — ĐGTD TSA",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn TSA",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn TSA",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · TSA",
+    "parentCourseId": "K69-TSA-HOCMAI",
+    "parentSubjectId": "K69-TSA-HOCMAI",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu",
+    "driveFolderName": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu",
+    "driveUrl": "https://drive.google.com/drive/folders/1Z71HzRYKoQSv5i-qEWq1iP_icICaB3Lu",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — HocMai (HOCMAI — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGTD TSA Bách Khoa — HocMai (HOCMAI — ĐGTD TSA): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — TSA",
+        "lessons": [
+          {
+            "id": "K69-TSA-HOCMAI-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi TSA",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI — ĐGTD TSA",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-TSA-HOCMAI-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-VACT-HOCMAI",
+    "sku": "DV69VACTHM",
+    "code": "DV69VACTHM",
+    "category": "dgnl_vact_bca",
+    "categories": [
+      "all",
+      "dgnl_vact_bca",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_vact_bca",
+    "categoryLabel": "Môn V-ACT",
+    "title": "Luyện Thi ĐGNL V-ACT — HocMai 2K9",
+    "instructor": "HOCMAI — ĐGNL V-ACT",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn V-ACT",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn V-ACT",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · V-ACT",
+    "parentCourseId": "K69-VACT-HOCMAI",
+    "parentSubjectId": "K69-VACT-HOCMAI",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "driveFolderName": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "driveUrl": "https://drive.google.com/drive/folders/1YK2IS2Hzwe4-MqFlJ2kMIJLwDsSPSKuu",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL V-ACT — HocMai 2K9 (HOCMAI — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL V-ACT — HocMai 2K9 (HOCMAI — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT",
+        "lessons": [
+          {
+            "id": "K69-VACT-HOCMAI-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: HOCMAI — ĐGNL V-ACT",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-VACT-HOCMAI-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-VACT-EMPIRE",
+    "sku": "DV69VACTEMP",
+    "code": "DV69VACTEMP",
+    "category": "dgnl_vact_bca",
+    "categories": [
+      "all",
+      "dgnl_vact_bca",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_vact_bca",
+    "categoryLabel": "Môn V-ACT",
+    "title": "Luyện Thi ĐGNL V-ACT — Empire Team 2K9",
+    "instructor": "EMPIRE TEAM — ĐGNL V-ACT",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn V-ACT",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn V-ACT",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · V-ACT",
+    "parentCourseId": "K69-VACT-EMPIRE",
+    "parentSubjectId": "K69-VACT-EMPIRE",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+    "driveFolderName": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+    "driveUrl": "https://drive.google.com/drive/folders/1ic4g3roCpg7_gkj5JNz9Gre52x_BhyW6",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL V-ACT — Empire Team 2K9 (EMPIRE TEAM — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL V-ACT — Empire Team 2K9 (EMPIRE TEAM — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT",
+        "lessons": [
+          {
+            "id": "K69-VACT-EMPIRE-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: EMPIRE TEAM — ĐGNL V-ACT",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-VACT-EMPIRE-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "K69-VACT-MAP",
+    "sku": "DV69VACTMAP",
+    "code": "DV69VACTMAP",
+    "category": "dgnl_vact_bca",
+    "categories": [
+      "all",
+      "dgnl_vact_bca",
+      "lop12_2k9"
+    ],
+    "subCategory": "dgnl_vact_bca",
+    "categoryLabel": "Môn V-ACT",
+    "title": "Luyện Thi ĐGNL V-ACT — MapStudy 2K9",
+    "instructor": "MAPSTUDY — ĐGNL V-ACT",
+    "duration": "Video Full HD & Đề PDF giải chi tiết",
+    "lessons": 95,
+    "level": "Khóa Lẻ 69K · Môn V-ACT",
+    "groupName": "Luyện Thi Chuyên Sâu · Môn V-ACT",
+    "rating": 5.0,
+    "students": "1.2k+",
+    "price": 69000,
+    "originalPrice": 299000,
+    "singlePrice": 69000,
+    "coursePrice": 69000,
+    "tier": "subject_69k",
+    "tierType": "subject_69k",
+    "subTier": "teacher_69k",
+    "isPackageOnly": false,
+    "tierShortBadge": "KHÓA LẺ 69K",
+    "tierLabel": "Khóa Lẻ 1 Thầy Cô (69K)",
+    "badge": "69K · V-ACT",
+    "parentCourseId": "K69-VACT-MAP",
+    "parentSubjectId": "K69-VACT-MAP",
+    "childCourseIds": [],
+    "extraFolderIds": [],
+    "bannerId": "1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV",
+    "defaultCover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960",
+    "cover": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960",
+    "fallbackCover": "",
+    "driveFolderId": "1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB",
+    "driveFolderName": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB",
+    "driveUrl": "https://drive.google.com/drive/folders/1dqiwh_ADEBetnPMC0S-YH8M6SLysaEQB",
+    "driveFileId": "",
+    "driveFileName": "",
+    "driveFileUrl": "",
+    "summary": "Khóa học Luyện Thi ĐGNL V-ACT — MapStudy 2K9 (MAPSTUDY — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "description": "Khóa học Luyện Thi ĐGNL V-ACT — MapStudy 2K9 (MAPSTUDY — ĐGNL V-ACT): đầy đủ lộ trình nền tảng, chuyên đề vận dụng cao và phòng luyện đề thực chiến PDF chuẩn cấu trúc thi mới nhất.",
+    "highlights": [
+      "Bài giảng Video Full HD hệ thống hóa từ nền tảng đến vận dụng cao",
+      "Tài liệu PDF, phiếu bài tập và đề thi thử kèm đáp án chi tiết",
+      "Cấp quyền truy cập Google Drive bảo mật theo Gmail đăng ký"
+    ],
+    "modules": [
+      {
+        "moduleTitle": "Phần 1: Nền Tảng & Trọng Tâm — V-ACT",
+        "lessons": [
+          {
+            "id": "K69-VACT-MAP-L1",
+            "title": "Bài 1: Tổng quan lộ trình & bài giảng cốt lõi V-ACT",
+            "duration": "45:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Giảng viên / Đơn vị: MAPSTUDY — ĐGNL V-ACT",
+              "Học kèm ghi chú & tóm tắt AI trực tiếp trên App Điệp Viên Study",
+              "Mở thư mục Google Drive bài giảng HD + PDF tài liệu đính kèm"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Chào mừng bạn đến với ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Phần 2: Kho Video HD & Tài Liệu PDF Trên Google Drive",
+        "lessons": [
+          {
+            "id": "K69-VACT-MAP-L2",
+            "title": "Bài 2: Luyện đề thực chiến & mở toàn bộ thư mục Google Drive",
+            "duration": "60:00",
+            "videoUrl": "",
+            "keyFormulas": [
+              "Mở đúng thư mục khóa học được cấp quyền riêng cho Email của bạn"
+            ],
+            "lectureScript": [
+              {
+                "time": "00:00",
+                "text": "Bấm Mở Thư Mục Google Drive để học toàn bộ video bài giảng."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
 const COURSE_DRIVE_MAP = {
   "ALL-COURSES-399K": {
-    "name": "Gói VIP Full Trọn Bộ 37 Khóa Học & Luyện Đề 2027 (69K + 199K)",
+    "name": "Full Tất Cả Khóa Học & Luyện Đề THPTQG · HSA · TSA · V-ACT",
     "sku": "DVFULL399",
     "tier": "full_399k",
     "price": 399000,
@@ -1638,7 +5456,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": ""
   },
   "C199-KHTN1": {
-    "name": "Combo 199K: KHTN 1 — Toán, Vật Lý, Sinh",
+    "name": "Combo Khối KHTN 1 — Toán, Vật Lý, Sinh Học",
     "sku": "DV199KHTN1",
     "tier": "course_199k",
     "price": 199000,
@@ -1652,7 +5470,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1SbkCdDoJ-EiGDXSq5WFpC8V8rdiKPGmW=w960"
   },
   "C199-KHTN2": {
-    "name": "Combo 199K: KHTN 2 — Toán, Vật Lý, Anh",
+    "name": "Combo Khối KHTN 2 — Toán, Vật Lý, Tiếng Anh",
     "sku": "DV199KHTN2",
     "tier": "course_199k",
     "price": 199000,
@@ -1666,7 +5484,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1MoGqdKZUOHr6MtVgcQbJ-Ma3ykVQDppw=w960"
   },
   "C199-KHXH1": {
-    "name": "Combo 199K: KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
+    "name": "Combo Khối KHXH 1 — Ngữ Văn, Lịch Sử, Địa Lý",
     "sku": "DV199KHXH1",
     "tier": "course_199k",
     "price": 199000,
@@ -1680,7 +5498,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1Qq9CO0m5D8GEQWbT1fcaMAClo_6snzXe=w960"
   },
   "C199-KHXH2": {
-    "name": "Combo 199K: KHXH 2 — Toán, Văn, Anh",
+    "name": "Combo Khối KHXH 2 — Toán, Ngữ Văn, Tiếng Anh",
     "sku": "DV199KHXH2",
     "tier": "course_199k",
     "price": 199000,
@@ -1694,7 +5512,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/13D6zA1O05AOk0pvoOj6cZL3BrnAzrMlR=w960"
   },
   "C199-HSA": {
-    "name": "Combo 199K: Khóa Đánh Giá Năng Lực HSA (ĐHQG Hà Nội)",
+    "name": "Combo Luyện Thi ĐGNL HSA — ĐHQG Hà Nội",
     "sku": "DV199HSA",
     "tier": "course_199k",
     "price": 199000,
@@ -1709,7 +5527,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1lJAFhSnTLFhRjO_npIAg2rK_sLJutC_C=w960"
   },
   "C199-TSA": {
-    "name": "Combo 199K: Khóa Đánh Giá Tư Duy TSA (ĐH Bách Khoa HN)",
+    "name": "Combo Luyện Thi ĐGTD TSA — ĐH Bách Khoa HN",
     "sku": "DV199TSA",
     "tier": "course_199k",
     "price": 199000,
@@ -1722,7 +5540,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1JtFtLXmTGByHdNVUlWbiGgbFyhV0o_03=w960"
   },
   "C199-VACT": {
-    "name": "Combo 199K: Khóa Đánh Giá Năng Lực V-ACT (ĐHQG TP.HCM)",
+    "name": "Combo Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM",
     "sku": "DV199VACT",
     "tier": "course_199k",
     "price": 199000,
@@ -1967,51 +5785,51 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1-GNWHI3J3DUR_W4GGEcJx8G4ZWKIt-Iq=w960"
   },
   "K69-HSA-HOCMAI": {
-    "name": "ĐGNL HSA / QDA — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — HocMai 2K9",
     "sku": "DV69HSAHM",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/1XZj-uhExqqkupmmRbxmX08AB-NhgCcxi",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-HSA-MAP": {
-    "name": "ĐGNL HSA — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — MapStudy 2K9",
     "sku": "DV69HSAMAP",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/11RHLlw-99okBQTqk6Dp4DxlucorjoW6p",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-HSA-EMPIRE": {
-    "name": "ĐGNL HSA — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — Empire Team 2K9",
     "sku": "DV69HSAEMP",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/1yNPB1d_GzfvPDp6dIpGQtBKp1-L6HkrN",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-HSA-EDU": {
-    "name": "ĐGNL HSA — HSA Edu 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL HSA — HSA Edu 2K9",
     "sku": "DV69HSAEDU",
     "tier": "subject_69k",
     "price": 69000,
     "folderId": "1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
     "extraFolderIds": [],
     "folderUrl": "https://drive.google.com/drive/folders/1n8MDD0giM4kVxjU7bV75vqptkKzb_zjg",
-    "bannerId": "1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1K_Mgvt-b_rbvzrm2tsAgXU8losWOmtxu=w960"
+    "bannerId": "1dI7M0gjeofIa7JSQ7QtsritEJfaeTrG_",
+    "bannerUrl": "courses/covers/dgnl_hsa_dhqg.jpg"
   },
   "K69-TSA-BMC": {
-    "name": "ĐGTD TSA — BMC ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGTD TSA Bách Khoa — BMC",
     "sku": "DV69TSABMC",
     "tier": "subject_69k",
     "price": 69000,
@@ -2022,7 +5840,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960"
   },
   "K69-TSA-HOCMAI": {
-    "name": "ĐGTD TSA — HocMai ĐHBK Hà Nội 2027 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGTD TSA Bách Khoa — HocMai",
     "sku": "DV69TSAHM",
     "tier": "subject_69k",
     "price": 69000,
@@ -2033,7 +5851,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1NWGCb8Aq-fkHTMCX-CrTfB5Yn_uSOQCS=w960"
   },
   "K69-VACT-HOCMAI": {
-    "name": "ĐGNL V-ACT — HocMai 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL V-ACT — HocMai 2K9",
     "sku": "DV69VACTHM",
     "tier": "subject_69k",
     "price": 69000,
@@ -2044,7 +5862,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
   },
   "K69-VACT-EMPIRE": {
-    "name": "ĐGNL V-ACT — Empire Team 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL V-ACT — Empire Team 2K9",
     "sku": "DV69VACTEMP",
     "tier": "subject_69k",
     "price": 69000,
@@ -2055,7 +5873,7 @@ const COURSE_DRIVE_MAP = {
     "bannerUrl": "https://lh3.googleusercontent.com/d/1xzfMyWWiWa8jR5iK6GVykEtEfdZmCaoV=w960"
   },
   "K69-VACT-MAP": {
-    "name": "ĐGNL V-ACT — MapStudy 2K9 (Khóa Lẻ 1 Đơn Vị)",
+    "name": "Luyện Thi ĐGNL V-ACT — MapStudy 2K9",
     "sku": "DV69VACTMAP",
     "tier": "subject_69k",
     "price": 69000,

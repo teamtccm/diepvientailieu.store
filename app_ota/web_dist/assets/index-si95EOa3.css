@@ -4596,16 +4596,33 @@ html.island-host,html.island-host body,html.island-host #root{background:#100e1e
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   padding-top: 7px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
-  font-size: 9.5px;
+  font-size: 9px;
   font-weight: 800;
   color: #FBBF24;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dvs-web-doc-cover-bot span {
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .dvs-web-doc-cover-bot small {
+  margin-left: auto;
+  flex-shrink: 0;
   color: #BAE6FD;
   font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 8.5px;
 }
 
 .dvs-web-doc-body {

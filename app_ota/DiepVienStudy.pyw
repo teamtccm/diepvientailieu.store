@@ -1430,6 +1430,17 @@ class EventHub:
                     pass
 
 
+_PA_LOCK = threading.RLock()
+_SHARED_PA = None
+
+def _get_shared_pyaudio():
+    global _SHARED_PA
+    with _PA_LOCK:
+        if _SHARED_PA is None:
+            import pyaudiowpatch as pyaudio
+            _SHARED_PA = pyaudio.PyAudio()
+        return _SHARED_PA
+
 class BackendController:
     """Thực thi toàn bộ tập lệnh Tauri IPC của Điệp Viên Study."""
 
@@ -1830,6 +1841,13 @@ class BackendController:
     def stop_capture(self):
         if self.capturing:
             self.capturing = False
+            for t in list(getattr(self, "capture_threads", [])):
+                try:
+                    if t and t.is_alive() and t != threading.current_thread():
+                        t.join(timeout=1.5)
+                except Exception:
+                    pass
+            self.capture_threads = []
             self.mic_streamer.flush()
             self.sys_streamer.flush()
         for src in ("microphone", "system"):
@@ -1873,14 +1891,15 @@ class BackendController:
                 pa = None
                 stream = None
                 try:
-                    pa = pyaudio.PyAudio()
-                    stream = pa.open(
-                        format=pyaudio.paFloat32,
-                        channels=1,
-                        rate=16000,
-                        input=True,
-                        frames_per_buffer=1600
-                    )
+                    with _PA_LOCK:
+                        pa = _get_shared_pyaudio()
+                        stream = pa.open(
+                            format=pyaudio.paFloat32,
+                            channels=1,
+                            rate=16000,
+                            input=True,
+                            frames_per_buffer=1600
+                        )
                     self.hub.emit("audio-source-status", {"source": "microphone", "state": "active", "level": 0.01})
                     while self.capturing:
                         data = stream.read(1600, exception_on_overflow=False)
@@ -1897,16 +1916,12 @@ class BackendController:
                         time.sleep(0.2)
                 finally:
                     if stream is not None:
-                        try:
-                            stream.stop_stream()
-                            stream.close()
-                        except Exception:
-                            pass
-                    if pa is not None:
-                        try:
-                            pa.terminate()
-                        except Exception:
-                            pass
+                        with _PA_LOCK:
+                            try:
+                                stream.stop_stream()
+                                stream.close()
+                            except Exception:
+                                pass
             return
 
         # Nhánh macOS / Đa nền tảng qua sounddevice (PortAudio CoreAudio)
@@ -1944,19 +1959,20 @@ class BackendController:
                 pa = None
                 stream = None
                 try:
-                    pa = pyaudio.PyAudio()
-                    loopback = pa.get_default_wasapi_loopback()
-                    sr = int(loopback["defaultSampleRate"])
-                    ch = int(loopback["maxInputChannels"])
-                    chunk_frames = max(1024, sr // 10)
-                    stream = pa.open(
-                        format=pyaudio.paFloat32,
-                        channels=ch,
-                        rate=sr,
-                        input=True,
-                        input_device_index=loopback["index"],
-                        frames_per_buffer=chunk_frames
-                    )
+                    with _PA_LOCK:
+                        pa = _get_shared_pyaudio()
+                        loopback = pa.get_default_wasapi_loopback()
+                        sr = int(loopback["defaultSampleRate"])
+                        ch = int(loopback["maxInputChannels"])
+                        chunk_frames = max(1024, sr // 10)
+                        stream = pa.open(
+                            format=pyaudio.paFloat32,
+                            channels=ch,
+                            rate=sr,
+                            input=True,
+                            input_device_index=loopback["index"],
+                            frames_per_buffer=chunk_frames
+                        )
                     self.hub.emit("audio-source-status", {"source": "system", "state": "active", "level": 0.01})
                     while self.capturing:
                         data = stream.read(chunk_frames, exception_on_overflow=False)
@@ -1979,16 +1995,12 @@ class BackendController:
                         time.sleep(0.2)
                 finally:
                     if stream is not None:
-                        try:
-                            stream.stop_stream()
-                            stream.close()
-                        except Exception:
-                            pass
-                    if pa is not None:
-                        try:
-                            pa.terminate()
-                        except Exception:
-                            pass
+                        with _PA_LOCK:
+                            try:
+                                stream.stop_stream()
+                                stream.close()
+                            except Exception:
+                                pass
             return
 
         # Nhánh macOS CoreAudio Loopback (BlackHole / Loopback / Soundflower / Aggregate)
@@ -2611,27 +2623,62 @@ NỘI DUNG BẢN GHI NGUỒN:
         kind = "none"
         channel_name = "YouTube"
 
-        info = None
+        # Ưu tiên lấy phụ đề siêu nhanh qua youtube_transcript_api (< 0.8s)
         try:
-            import yt_dlp
-            ydl_opts = {
-                "skip_download": True,
-                "noplaylist": True,
-                "quiet": True,
-                "no_warnings": True,
-                "ignore_no_formats_error": True,
-                "js_runtimes": {"node": {}},
-                "extractor_args": {
-                    "youtube": {
-                        "player_client": ["ios", "android", "mweb"],
-                        "player_skip": ["webpage", "configs"],
-                    }
-                },
-            }
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                info = ydl.extract_info(full_url, download=False)
+            from youtube_transcript_api import YouTubeTranscriptApi
+            yt_api = YouTubeTranscriptApi()
+            fetched = None
+            try:
+                fetched = yt_api.fetch(vid, languages=["en", "en-US", "en-GB", "en-orig", "en-CA", "en-AU", "zh-Hans", "zh", "vi"])
+            except Exception:
+                try:
+                    t_list = yt_api.list(vid)
+                    for t_obj in t_list:
+                        fetched = t_obj.fetch()
+                        lang = str(getattr(t_obj, "language_code", "en") or "en").split("-")[0].lower()
+                        kind = "auto" if getattr(t_obj, "is_generated", False) else "manual"
+                        break
+                except Exception:
+                    fetched = None
+            if fetched:
+                api_pieces = []
+                for sn in fetched:
+                    st = float(getattr(sn, "start", 0.0) if hasattr(sn, "start") else sn.get("start", 0.0))
+                    du = float(getattr(sn, "duration", 2.0) if hasattr(sn, "duration") else sn.get("duration", 2.0))
+                    tx = self._clean_caption_line(str(getattr(sn, "text", "") if hasattr(sn, "text") else sn.get("text", "")), lang)
+                    if tx:
+                        api_pieces.append({"start": st, "end": st + max(0.8, du), "text": tx})
+                if api_pieces:
+                    pieces = api_pieces
+                    if kind == "none":
+                        kind = "manual"
+                    dur = max(dur, api_pieces[-1]["end"] + 2.0)
+                    try:
+                        oembed_url = f"https://www.youtube.com/oembed?url={urllib.parse.quote(full_url, safe='')}&format=json"
+                        with urllib.request.urlopen(oembed_url, timeout=4) as oe_r:
+                            oe_d = json.loads(oe_r.read().decode("utf-8", errors="ignore"))
+                            title = oe_d.get("title") or title
+                            channel_name = oe_d.get("author_name") or channel_name
+                    except Exception:
+                        pass
         except Exception:
-            info = None
+            pass
+
+        info = None
+        if not pieces:
+            try:
+                import yt_dlp
+                ydl_opts = {
+                    "skip_download": True,
+                    "noplaylist": True,
+                    "quiet": True,
+                    "no_warnings": True,
+                    "ignore_no_formats_error": True,
+                }
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    info = ydl.extract_info(full_url, download=False)
+            except Exception:
+                info = None
 
         if not isinstance(info, dict):
             try:
@@ -2965,8 +3012,8 @@ NỘI DUNG BẢN GHI NGUỒN:
                     pass
 
             import concurrent.futures
-            chunks = [(i, src_lines[i:i+35]) for i in range(0, len(src_lines), 35)]
-            with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            chunks = [(i, src_lines[i:i+50]) for i in range(0, len(src_lines), 50)]
+            with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
                 list(pool.map(lambda item: _tr_chunk(item[0], item[1]), chunks))
 
         sentences = []
@@ -3017,7 +3064,6 @@ NỘI DUNG BẢN GHI NGUỒN:
                 cmd = [
                     sys.executable, "-m", "yt_dlp",
                     "--no-playlist",
-                    "--extractor-args", "youtube:player_client=ios,android,mweb",
                     "--download-sections", "*0-90",
                     "-x", "--audio-format", "mp3",
                     "--audio-quality", "6",
@@ -3392,34 +3438,35 @@ NỘI DUNG BẢN GHI NGUỒN:
                 stream = None
                 try:
                     import pyaudiowpatch as pyaudio
-                    pa = pyaudio.PyAudio()
-                    dev_info = pa.get_default_input_device_info()
-                    dev_idx = int(dev_info.get("index", 0))
-                    native_sr = int(float(dev_info.get("defaultSampleRate") or 44100))
-                    native_ch = max(1, min(2, int(dev_info.get("maxInputChannels") or 1)))
-                    try:
-                        stream = pa.open(
-                            format=pyaudio.paFloat32,
-                            channels=1,
-                            rate=16000,
-                            input=True,
-                            input_device_index=dev_idx,
-                            frames_per_buffer=1600,
-                        )
-                        use_sr = 16000
-                        use_ch = 1
-                    except Exception:
-                        chunk_f = max(1024, native_sr // 10)
-                        stream = pa.open(
-                            format=pyaudio.paFloat32,
-                            channels=native_ch,
-                            rate=native_sr,
-                            input=True,
-                            input_device_index=dev_idx,
-                            frames_per_buffer=chunk_f,
-                        )
-                        use_sr = native_sr
-                        use_ch = native_ch
+                    with _PA_LOCK:
+                        pa = _get_shared_pyaudio()
+                        dev_info = pa.get_default_input_device_info()
+                        dev_idx = int(dev_info.get("index", 0))
+                        native_sr = int(float(dev_info.get("defaultSampleRate") or 44100))
+                        native_ch = max(1, min(2, int(dev_info.get("maxInputChannels") or 1)))
+                        try:
+                            stream = pa.open(
+                                format=pyaudio.paFloat32,
+                                channels=1,
+                                rate=16000,
+                                input=True,
+                                input_device_index=dev_idx,
+                                frames_per_buffer=1600,
+                            )
+                            use_sr = 16000
+                            use_ch = 1
+                        except Exception:
+                            chunk_f = max(1024, native_sr // 10)
+                            stream = pa.open(
+                                format=pyaudio.paFloat32,
+                                channels=native_ch,
+                                rate=native_sr,
+                                input=True,
+                                input_device_index=dev_idx,
+                                frames_per_buffer=chunk_f,
+                            )
+                            use_sr = native_sr
+                            use_ch = native_ch
 
                     read_frames = max(1024, use_sr // 10)
                     while state.get("recording"):
@@ -3435,16 +3482,12 @@ NỘI DUNG BẢN GHI NGUỒN:
                     state["error"] = str(e)
                 finally:
                     if stream is not None:
-                        try:
-                            stream.stop_stream()
-                            stream.close()
-                        except Exception:
-                            pass
-                    if pa is not None:
-                        try:
-                            pa.terminate()
-                        except Exception:
-                            pass
+                        with _PA_LOCK:
+                            try:
+                                stream.stop_stream()
+                                stream.close()
+                            except Exception:
+                                pass
 
             try:
                 import sounddevice as sd
@@ -6322,7 +6365,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.25.3", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.25.4", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":
@@ -7052,7 +7095,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.25.3", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.25.4", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -7069,7 +7112,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.25.3"
+                    local_ver = "2026.11.25.4"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     def _ver_tuple(v_str):
                         return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))

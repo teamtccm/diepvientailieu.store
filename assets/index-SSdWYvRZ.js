@@ -4947,34 +4947,30 @@ const DVS_COURSE_199K_OPTIONS = DVS_COURSES_DB.filter(
 );
 
 const DVS_SUBJECT_CATALOG_OPTIONS = [
-  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các môn học", iconKey: "all" },
-  { id: "TOAN", badge: "TOÁN HỌC", name: "Môn Toán", iconKey: "toan" },
-  { id: "VAN", badge: "NGỮ VĂN", name: "Môn Ngữ Văn", iconKey: "van" },
-  { id: "ANH", badge: "TIẾNG ANH", name: "Môn Tiếng Anh", iconKey: "anh" },
-  { id: "LY", badge: "VẬT LÝ", name: "Môn Vật Lý", iconKey: "ly" },
-  { id: "HOA", badge: "HÓA HỌC", name: "Môn Hóa Học", iconKey: "hoa" },
-  { id: "SINH", badge: "SINH HỌC", name: "Môn Sinh Học", iconKey: "sinh" },
-  { id: "SU", badge: "LỊCH SỬ", name: "Môn Lịch Sử", iconKey: "su" },
-  { id: "DIA", badge: "ĐỊA LÝ", name: "Môn Địa Lý", iconKey: "dia" },
-  { id: "TRUNG", badge: "TIẾNG TRUNG", name: "Môn Tiếng Trung (HSK · D04)", iconKey: "trung" },
-  { id: "TIN_MOS", badge: "TIN HỌC", name: "Môn Tin Học & Văn Phòng", iconKey: "tin_mos" },
-  { id: "DAI_HOC", badge: "ĐẠI HỌC", name: "Kinh Tế Lượng · Triết Học · Đại Học", iconKey: "dai_hoc" },
-  { id: "NGHE_THUAT", badge: "NGHỆ THUẬT", name: "Âm Nhạc · Guitar · Piano · Thanh Nhạc", iconKey: "nghe_thuat" }
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các môn học (37 khóa)", iconKey: "all" },
+  { id: "TOAN", badge: "TOÁN HỌC", name: "Môn Toán (Đỗ Văn Đức · Nguyễn Phan Tiến · Shiper · MapStudy)", iconKey: "toan" },
+  { id: "LY", badge: "VẬT LÝ", name: "Môn Vật Lý (Chu Văn Biên · Thắng Tiến IPClass · Lê Tùng Ưng)", iconKey: "ly" },
+  { id: "HOA", badge: "HÓA HỌC", name: "Môn Hóa Học (Phạm Văn Trọng · Vũ Khắc Ngọc · Tống Thị Son)", iconKey: "hoa" },
+  { id: "SINH", badge: "SINH HỌC", name: "Môn Sinh Học (Phan Khắc Nghệ · Ánh Dương)", iconKey: "sinh" },
+  { id: "VAN", badge: "NGỮ VĂN", name: "Môn Ngữ Văn (Cô Sương Mai · HocMai Nền Tảng)", iconKey: "van" },
+  { id: "ANH", badge: "TIẾNG ANH", name: "Môn Tiếng Anh (Vũ Mai Phương · Phạm Liễu · HocMai)", iconKey: "anh" },
+  { id: "SU", badge: "LỊCH SỬ", name: "Môn Lịch Sử (Cô Lan Hương · Cô Hương Sen)", iconKey: "su" },
+  { id: "DIA", badge: "ĐỊA LÝ", name: "Môn Địa Lý (Thầy Đàm Thanh Tùng · Thầy Tài)", iconKey: "dia" },
+  { id: "HSA", badge: "ĐGNL HSA", name: "ĐGNL HSA ĐHQG Hà Nội (HocMai · MapStudy · Empire · HSA Edu)", iconKey: "hsa_tsa" },
+  { id: "TSA", badge: "ĐGTD TSA", name: "ĐGTD TSA Bách Khoa (BMC · HocMai)", iconKey: "hsa_tsa" },
+  { id: "VACT", badge: "ĐGNL V-ACT", name: "ĐGNL V-ACT ĐHQG TP.HCM (HocMai · Empire · MapStudy)", iconKey: "vact_bca" }
 ];
 
 const DVS_COURSE_PROGRAM_OPTIONS = [
-  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các khóa học", iconKey: "all" },
-  { id: "PROG:lop12_2k9", badge: "THPTQG 2K9", name: "Khóa Luyện Thi THPTQG Lớp 12 (2K9)", iconKey: "dai_hoc" },
-  { id: "PROG:lop11_2k10", badge: "LỚP 11 · 2K10", name: "Khóa Xuất Phát Sớm Lớp 11 (2K10)", iconKey: "van" },
-  { id: "PROG:dgnl_hsa", badge: "ĐGNL HSA", name: "Khóa Luyện Thi ĐGNL HSA — ĐHQG Hà Nội", iconKey: "hsa_tsa" },
-  { id: "PROG:dgtd_tsa", badge: "ĐGTD TSA", name: "Khóa Luyện Thi ĐGTD TSA — ĐH Bách Khoa", iconKey: "hsa_tsa" },
-  { id: "PROG:vact", badge: "ĐGNL V-ACT", name: "Khóa Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM", iconKey: "vact_bca" },
-  { id: "PROG:bca", badge: "ĐGNL BCA", name: "Khóa Luyện Thi ĐGNL Bộ Công An (BCA)", iconKey: "vact_bca" },
-  { id: "PROG:qda", badge: "ĐGNL QDA", name: "Khóa Luyện Thi ĐGNL Quân Đội (QDA)", iconKey: "vact_bca" },
-  { id: "PROG:vsat", badge: "ĐGNL VSAT", name: "Khóa Luyện Thi ĐGNL VSAT", iconKey: "vact_bca" },
-  { id: "PROG:mos", badge: "CHỨNG CHỈ MOS", name: "Khóa Tin Học Văn Phòng & Chứng Chỉ MOS", iconKey: "tin_mos" },
-  { id: "PROG:daihoc", badge: "ĐẠI HỌC · BTL", name: "Khóa Đại Học · Kinh Tế Lượng · NCKH", iconKey: "dai_hoc" },
-  { id: "PROG:nghe_thuat", badge: "NGHỆ THUẬT", name: "Khóa Nghệ Thuật · Guitar · Piano", iconKey: "nghe_thuat" }
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các khóa học & kỳ thi (37 khóa)", iconKey: "all" },
+  { id: "PROG:khtn", badge: "COMBO KHTN", name: "Combo Khối Tự Nhiên KHTN (Toán · Lý · Hóa · Sinh)", iconKey: "toan" },
+  { id: "PROG:khxh", badge: "COMBO KHXH", name: "Combo Khối Xã Hội KHXH (Văn · Sử · Địa · Anh)", iconKey: "van" },
+  { id: "PROG:dgnl_hsa", badge: "ĐGNL HSA", name: "Khóa Luyện Thi ĐGNL HSA — ĐHQG Hà Nội (5 khóa)", iconKey: "hsa_tsa" },
+  { id: "PROG:dgtd_tsa", badge: "ĐGTD TSA", name: "Khóa Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội (3 khóa)", iconKey: "hsa_tsa" },
+  { id: "PROG:vact", badge: "ĐGNL V-ACT", name: "Khóa Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM (4 khóa)", iconKey: "vact_bca" },
+  { id: "PROG:thptqg", badge: "THPTQG 12", name: "Khóa Luyện Thi Tốt Nghiệp THPT 2K9 (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa)", iconKey: "dai_hoc" },
+  { id: "PROG:single_69k", badge: "KHÓA LẺ 69K", name: "Khóa Lẻ 69K Từng Thầy Cô (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa)", iconKey: "all" },
+  { id: "PROG:combo_199k", badge: "COMBO 199K", name: "Combo 199K Khối KHTN, KHXH & Kỳ Thi ĐGNL / ĐGTD (7 khóa)", iconKey: "hsa_tsa" }
 ];
 
 const DVS_COURSE_HOT_KEYWORDS = [
@@ -6377,6 +6373,7 @@ function fue({model:t, setPage:e}) {
   const [loadingUnitDrive, setLoadingUnitDrive] = E.useState(false);
   const [isGeneratingSummary, setIsGeneratingSummary] = E.useState(false);
   const [videoFallbackIframe, setVideoFallbackIframe] = E.useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = E.useState(false);
   const videoRef = E.useRef(null);
   const playerCardRef = E.useRef(null);
   const manualRecPausedRef = E.useRef(false);
@@ -7093,14 +7090,39 @@ function fue({model:t, setPage:e}) {
                               })
                             ]
                           }),
-                          g.jsx("span", {
-                            className: "dvs-uni-code-pill",
-                            style: {
-                              background: activeDriveFile ? "#DCFCE7" : "#DBEAFE",
-                              color: activeDriveFile ? "#166534" : "#1E40AF",
-                              flexShrink: 0
-                            },
-                            children: activeDriveFile ? "Đang phát từ Drive" : "Chọn bài giảng bên dưới"
+                          g.jsxs("div", {
+                            style: { display: "flex", alignItems: "center", gap: "8px", flexShrink: 0 },
+                            children: [
+                              activeDriveFile && getDriveItemKind(activeDriveFile) === "video" && !videoFallbackIframe && g.jsxs("button", {
+                                type: "button",
+                                className: "pill-btn primary dvs-video-toggle-btn",
+                                style: { padding: "5px 12px", fontSize: "12px", display: "inline-flex", alignItems: "center", gap: "5px" },
+                                onClick: () => {
+                                  const v = videoRef.current;
+                                  if (!v) return;
+                                  if (v.paused) {
+                                    v.play().catch(() => {});
+                                  } else {
+                                    v.pause();
+                                  }
+                                },
+                                children: [
+                                  isVideoPlaying
+                                    ? g.jsxs("svg", { width: 12, height: 12, viewBox: "0 0 24 24", fill: "currentColor", children: [g.jsx("rect", { x: 6, y: 4, width: 4, height: 16, rx: 1 }), g.jsx("rect", { x: 14, y: 4, width: 4, height: 16, rx: 1 })] })
+                                    : g.jsx("svg", { width: 12, height: 12, viewBox: "0 0 24 24", fill: "currentColor", children: g.jsx("polygon", { points: "5 3 19 12 5 21 5 3" }) }),
+                                  isVideoPlaying ? "Tạm dừng video" : "Phát tiếp video"
+                                ]
+                              }),
+                              g.jsx("span", {
+                                className: "dvs-uni-code-pill",
+                                style: {
+                                  background: activeDriveFile ? "#DCFCE7" : "#DBEAFE",
+                                  color: activeDriveFile ? "#166534" : "#1E40AF",
+                                  flexShrink: 0
+                                },
+                                children: activeDriveFile ? (isVideoPlaying ? "Đang phát từ Drive" : "Đang tạm dừng") : "Chọn bài giảng bên dưới"
+                              })
+                            ]
                           })
                         ]
                       }),
@@ -7126,8 +7148,9 @@ function fue({model:t, setPage:e}) {
                                   autoPlay: true,
                                   playsInline: true,
                                   preload: "metadata",
-                                  onPlay: () => startAutoRecordingForVideo(),
-                                  onEnded: () => flushAndSaveActiveVideoSession("ended"),
+                                  onPlay: () => { setIsVideoPlaying(true); startAutoRecordingForVideo(); },
+                                  onPause: () => setIsVideoPlaying(false),
+                                  onEnded: () => { setIsVideoPlaying(false); flushAndSaveActiveVideoSession("ended"); },
                                   onError: () => setVideoFallbackIframe(true),
                                   style: { width: "100%", height: "100%", objectFit: "contain", background: "#000000", display: "block" }
                                 })
@@ -8372,15 +8395,16 @@ function fue({model:t, setPage:e}) {
    - Tab 2: Đặt Làm BTL · Tiểu Luận · Báo Cáo (Tính phí tự động + Cọc 10% + Kết nối VietQR & Telegram)
    ========================================================================= */
 const DVTL_FACULTIES = [
-  { code: "DAI_CUONG", name: "Khối Đại Cương & Lý Luận Chính Trị" },
-  { code: "QUAN_TRI", name: "Khoa / Khối Kinh Tế & Quản Trị" },
-  { code: "TAI_CHINH", name: "Khoa / Khối Tài Chính - Ngân Hàng - Kế Toán" },
-  { code: "CONG_NGHE", name: "Khoa / Khối Công Nghệ & Kỹ Thuật" },
-  { code: "LUAT", name: "Khoa / Khối Luật & Pháp Lý" },
-  { code: "NGOAI_NGU", name: "Khoa / Khối Ngoại Ngữ & Ngôn Ngữ Học" },
-  { code: "DU_LICH", name: "Khoa / Khối Du Lịch & Khách Sạn" },
-  { code: "SU_PHAM", name: "Khoa / Khối Sư Phạm & Giáo Dục" },
-  { code: "XA_HOI", name: "Khoa / Khối Tâm Lý & Xã Hội" }
+  { code: "", badge: "TẤT CẢ", name: "-- Tất Cả Các Khoa / Khối Ngành --", iconKey: "all" },
+  { code: "DAI_CUONG", badge: "ĐẠI CƯƠNG", name: "Khối Đại Cương & Lý Luận Chính Trị", iconKey: "dai_hoc" },
+  { code: "QUAN_TRI", badge: "KINH TẾ", name: "Khoa / Khối Kinh Tế & Quản Trị", iconKey: "toan" },
+  { code: "TAI_CHINH", badge: "TÀI CHÍNH", name: "Khoa / Khối Tài Chính - Ngân Hàng - Kế Toán", iconKey: "hoa" },
+  { code: "CONG_NGHE", badge: "CÔNG NGHỆ", name: "Khoa / Khối Công Nghệ & Kỹ Thuật", iconKey: "ly" },
+  { code: "LUAT", badge: "LUẬT", name: "Khoa / Khối Luật & Pháp Lý", iconKey: "van" },
+  { code: "NGOAI_NGU", badge: "NGOẠI NGỮ", name: "Khoa / Khối Ngoại Ngữ & Ngôn Ngữ Học", iconKey: "anh" },
+  { code: "DU_LICH", badge: "DU LỊCH", name: "Khoa / Khối Du Lịch & Khách Sạn", iconKey: "dia" },
+  { code: "SU_PHAM", badge: "SƯ PHẠM", name: "Khoa / Khối Sư Phạm & Giáo Dục", iconKey: "su" },
+  { code: "XA_HOI", badge: "TÂM LÝ", name: "Khoa / Khối Tâm Lý & Xã Hội", iconKey: "sinh" }
 ];
 
 const DVTL_HOT_KEYWORDS = [
@@ -8528,6 +8552,8 @@ function DvsDeCuongPage({ model: t }) {
   const [uniDropdownOpen, setUniDropdownOpen] = E.useState(false);
   const [uniFilterQuery, setUniFilterQuery] = E.useState("");
   const [selectedFaculty, setSelectedFaculty] = E.useState("");
+  const [facultyDropdownOpen, setFacultyDropdownOpen] = E.useState(false);
+  const [facultyFilterQuery, setFacultyFilterQuery] = E.useState("");
   const [searchKeyword, setSearchKeyword] = E.useState("");
   const [hotDropdownOpen, setHotDropdownOpen] = E.useState(false);
   const [visibleLimit, setVisibleLimit] = E.useState(24);
@@ -8537,6 +8563,7 @@ function DvsDeCuongPage({ model: t }) {
   const verifiedGoogleUser = useDvsVerifiedGoogleUser();
   const userEmail = verifiedGoogleUser?.email || "";
   const selectedUniObj = E.useMemo(() => DVTL_UNIVERSITIES_FULL.find(u => u.id === selectedUniId) || null, [selectedUniId]);
+  const selectedFacultyObj = E.useMemo(() => DVTL_FACULTIES.find(f => f.code === selectedFaculty && f.code !== "") || null, [selectedFaculty]);
 
   const filteredDocs = E.useMemo(() => {
     const qNorm = stripViAccentsJs(searchKeyword).toLowerCase();
@@ -8721,22 +8748,130 @@ null
                     ]
                   }),
 
-                  g.jsxs("label", {
-                    className: "dvs-checkout-field",
+                  g.jsxs("div", {
+                    className: "dvs-checkout-field dvs-uni-combobox-wrap",
                     children: [
                       g.jsx("span", { children: "2. Khoa / Khối Ngành:" }),
-                      g.jsxs("select", {
-                        className: "dvs-select-input",
-                        value: selectedFaculty,
-                        onChange: ev => setSelectedFaculty(ev.target.value),
+                      g.jsxs("div", {
+                        className: "dvs-uni-combobox-rel",
                         children: [
-                          g.jsx("option", { value: "", children: "-- Tất Cả Các Khoa / Khối Ngành --" }),
-                          DVTL_FACULTIES.map(f =>
-                            g.jsx("option", {
-                              value: f.code,
-                              children: f.name
-                            }, f.code)
-                          )
+                          g.jsxs("button", {
+                            type: "button",
+                            className: "dvs-uni-selected-trigger",
+                            onClick: () => {
+                              setHotDropdownOpen(false);
+                              setUniDropdownOpen(false);
+                              setFacultyDropdownOpen(v => !v);
+                            },
+                            children: [
+                              selectedFacultyObj
+                                ? g.jsxs("div", {
+                                    className: "dvs-uni-trigger-left",
+                                    children: [
+                                      g.jsx("span", {
+                                        className: "dvs-uni-icon-box",
+                                        style: { color: getDvsIconThemeByKey(selectedFacultyObj.iconKey || "all").color },
+                                        children: renderDvsSubjectCourseSvg(selectedFacultyObj.iconKey || "all", 14)
+                                      }),
+                                      g.jsx("span", {
+                                        className: "dvs-uni-code-pill",
+                                        style: { background: getDvsIconThemeByKey(selectedFacultyObj.iconKey || "all").pillBg, color: getDvsIconThemeByKey(selectedFacultyObj.iconKey || "all").pillColor },
+                                        children: selectedFacultyObj.badge
+                                      }),
+                                      g.jsx("span", {
+                                        className: "dvs-uni-name-text",
+                                        style: { fontWeight: 700, color: "#0F172A" },
+                                        children: selectedFacultyObj.name
+                                      })
+                                    ]
+                                  })
+                                : g.jsxs("div", {
+                                    className: "dvs-uni-trigger-left",
+                                    children: [
+                                      g.jsx("span", {
+                                        className: "dvs-uni-icon-box",
+                                        children: renderDvsSubjectCourseSvg("all", 14)
+                                      }),
+                                      g.jsx("span", {
+                                        className: "dvs-uni-name-text",
+                                        style: { color: "#64748B" },
+                                        children: "-- Tất Cả Các Khoa / Khối Ngành --"
+                                      })
+                                    ]
+                                  }),
+                              g.jsxs("div", {
+                                className: "dvs-uni-trigger-right",
+                                children: [
+                                  selectedFaculty &&
+                                    g.jsx("span", {
+                                      className: "dvs-uni-clear-x",
+                                      title: "Xóa chọn khối",
+                                      onClick: ev => {
+                                        ev.stopPropagation();
+                                        setSelectedFaculty("");
+                                      },
+                                      children: "×"
+                                    }),
+                                  g.jsx("span", { className: "dvs-uni-change-tag", children: "Đổi" }),
+                                  g.jsx("span", { className: "dvs-uni-chevron", style: { display: "inline-flex", transform: facultyDropdownOpen ? "rotate(180deg)" : "none", transition: "transform 0.15s" }, children: g.jsx("svg", { width: 12, height: 12, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2.5, children: g.jsx("polyline", { points: "6 9 12 15 18 9" }) }) })
+                                ]
+                              })
+                            ]
+                          }),
+                          facultyDropdownOpen &&
+                            g.jsxs("div", {
+                              className: "dvs-uni-dropdown-panel",
+                              children: [
+                                g.jsx("div", {
+                                  className: "dvs-uni-filter-bar",
+                                  children: g.jsx("input", {
+                                    type: "text",
+                                    className: "dvs-uni-filter-input",
+                                    placeholder: "Tìm khoa, khối ngành (Kinh tế, Công nghệ, Luật...)",
+                                    value: facultyFilterQuery,
+                                    autoFocus: true,
+                                    onChange: ev => setFacultyFilterQuery(ev.target.value)
+                                  })
+                                }),
+                                g.jsx("div", {
+                                  className: "dvs-uni-options-scroll",
+                                  children: DVTL_FACULTIES.filter(f => {
+                                    const q = stripViAccentsJs(facultyFilterQuery).toLowerCase();
+                                    if (!q) return true;
+                                    const hay = stripViAccentsJs(`${f.badge || ""} ${f.name} ${f.code}`).toLowerCase();
+                                    return hay.includes(q);
+                                  }).map(f => {
+                                    const isSel = selectedFaculty === f.code;
+                                    const th = getDvsIconThemeByKey(f.iconKey || "all");
+                                    return g.jsxs("div", {
+                                      className: `dvs-uni-option-row ${isSel ? "selected" : ""}`,
+                                      onClick: () => {
+                                        setSelectedFaculty(f.code);
+                                        setFacultyDropdownOpen(false);
+                                        setFacultyFilterQuery("");
+                                      },
+                                      children: [
+                                        g.jsx("span", {
+                                          className: "dvs-uni-icon-box",
+                                          style: { color: th.color },
+                                          children: renderDvsSubjectCourseSvg(f.iconKey || "all", 14)
+                                        }),
+                                        g.jsx("span", {
+                                          className: "dvs-uni-code-pill",
+                                          style: { background: th.pillBg, color: th.pillColor },
+                                          children: f.badge || "KHỐI"
+                                        }),
+                                        g.jsx("span", {
+                                          className: "dvs-uni-name-text",
+                                          children: f.name
+                                        }),
+                                        isSel && g.jsx("span", { className: "dvs-uni-check", children: "✓" })
+                                      ]
+                                    }, f.code || "ALL");
+                                  })
+                                })
+                              ]
+                            })
                         ]
                       })
                     ]

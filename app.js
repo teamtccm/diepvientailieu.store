@@ -1315,9 +1315,8 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
 
                 <div class="relative my-2.5 z-10">
                     <div class="flex items-center gap-1.5 mb-1.5">
-                        <span class="text-base">${iconSymbol}</span>
-                        <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
-                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"> CÓ SẴN FILE DRIVE</span>' : ''}
+                        <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2.5 py-0.5 rounded-md border border-white/15 tracking-wider">#${doc.code}</span>
+                        ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2.5 py-0.5 rounded-full ml-auto tracking-wide"> CÓ SẴN FILE DRIVE</span>' : ''}
                     </div>
                     <h4 class="font-condensed font-black text-base sm:text-[17px] text-white tracking-wide uppercase leading-[1.28] h-[44px] min-h-[44px] max-h-[44px] line-clamp-2 overflow-hidden drop-shadow-md">
                         ${fullDocTitle}
@@ -2911,34 +2910,30 @@ let activeWebCourseProgram = "ALL";
    ========================================================================== */
 
 const DVS_WEB_SUBJECT_OPTIONS = [
-  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các môn học", iconKey: "all" },
-  { id: "TOAN", badge: "TOÁN HỌC", name: "Môn Toán (Toán 12 · 11 · XPS)", iconKey: "toan" },
-  { id: "VAN", badge: "NGỮ VĂN", name: "Môn Ngữ Văn (Đọc hiểu · Nghị luận)", iconKey: "van" },
-  { id: "ANH", badge: "TIẾNG ANH", name: "Môn Tiếng Anh (Pro3M · Pro3MPlus)", iconKey: "anh" },
-  { id: "LY", badge: "VẬT LÝ", name: "Môn Vật Lý (Vũ Ngọc Anh · Chu Văn Biên)", iconKey: "ly" },
-  { id: "HOA", badge: "HÓA HỌC", name: "Môn Hóa Học (Trọng · NAP · SangSang)", iconKey: "hoa" },
-  { id: "SINH", badge: "SINH HỌC", name: "Môn Sinh Học (Di truyền · Tế bào)", iconKey: "sinh" },
-  { id: "SU", badge: "LỊCH SỬ", name: "Môn Lịch Sử (Cô Sen · Cô Lan Hương)", iconKey: "su" },
-  { id: "DIA", badge: "ĐỊA LÝ", name: "Môn Địa Lý (Thầy Tùng · Thầy Tài)", iconKey: "dia" },
-  { id: "TRUNG", badge: "TIẾNG TRUNG", name: "Môn Tiếng Trung (HSK · D04)", iconKey: "trung" },
-  { id: "TIN_MOS", badge: "TIN HỌC", name: "Môn Tin Học (MOS · Word · Excel)", iconKey: "tin_mos" },
-  { id: "DAI_HOC", badge: "ĐẠI HỌC", name: "Kinh Tế Lượng · Triết Học · Master BTL", iconKey: "dai_hoc" },
-  { id: "NGHE_THUAT", badge: "NGHỆ THUẬT", name: "Âm Nhạc · Guitar · Piano · Thanh Nhạc", iconKey: "nghe_thuat" }
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các môn học (37 khóa)", iconKey: "all" },
+  { id: "TOAN", badge: "TOÁN HỌC", name: "Môn Toán (Đỗ Văn Đức · Nguyễn Phan Tiến · Shiper · MapStudy)", iconKey: "toan" },
+  { id: "LY", badge: "VẬT LÝ", name: "Môn Vật Lý (Chu Văn Biên · Thắng Tiến IPClass · Lê Tùng Ưng)", iconKey: "ly" },
+  { id: "HOA", badge: "HÓA HỌC", name: "Môn Hóa Học (Phạm Văn Trọng · Vũ Khắc Ngọc · Tống Thị Son)", iconKey: "hoa" },
+  { id: "SINH", badge: "SINH HỌC", name: "Môn Sinh Học (Phan Khắc Nghệ · Ánh Dương)", iconKey: "sinh" },
+  { id: "VAN", badge: "NGỮ VĂN", name: "Môn Ngữ Văn (Cô Sương Mai · HocMai Nền Tảng)", iconKey: "van" },
+  { id: "ANH", badge: "TIẾNG ANH", name: "Môn Tiếng Anh (Vũ Mai Phương · Phạm Liễu · HocMai)", iconKey: "anh" },
+  { id: "SU", badge: "LỊCH SỬ", name: "Môn Lịch Sử (Cô Lan Hương · Cô Hương Sen)", iconKey: "su" },
+  { id: "DIA", badge: "ĐỊA LÝ", name: "Môn Địa Lý (Thầy Đàm Thanh Tùng · Thầy Tài)", iconKey: "dia" },
+  { id: "HSA", badge: "ĐGNL HSA", name: "ĐGNL HSA ĐHQG Hà Nội (HocMai · MapStudy · Empire · HSA Edu)", iconKey: "hsa_tsa" },
+  { id: "TSA", badge: "ĐGTD TSA", name: "ĐGTD TSA Bách Khoa (BMC · HocMai)", iconKey: "hsa_tsa" },
+  { id: "VACT", badge: "ĐGNL V-ACT", name: "ĐGNL V-ACT ĐHQG TP.HCM (HocMai · Empire · MapStudy)", iconKey: "vact_bca" }
 ];
 
 const DVS_WEB_PROGRAM_OPTIONS = [
-  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các khóa học & kỳ thi", iconKey: "all" },
-  { id: "PROG:lop12_2k9", badge: "THPTQG 2K9", name: "Khóa Luyện Thi THPTQG Lớp 12 (2K9)", iconKey: "dai_hoc" },
-  { id: "PROG:lop11_2k10", badge: "LỚP 11 · 2K10", name: "Khóa Xuất Phát Sớm Lớp 11 (2K10)", iconKey: "van" },
-  { id: "PROG:dgnl_hsa", badge: "ĐGNL HSA", name: "Khóa Luyện Thi ĐGNL HSA — ĐHQG Hà Nội", iconKey: "hsa_tsa" },
-  { id: "PROG:dgtd_tsa", badge: "ĐGTD TSA", name: "Khóa Luyện Thi ĐGTD TSA — ĐH Bách Khoa", iconKey: "hsa_tsa" },
-  { id: "PROG:vact", badge: "ĐGNL V-ACT", name: "Khóa Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM", iconKey: "vact_bca" },
-  { id: "PROG:bca", badge: "ĐGNL BCA", name: "Khóa Luyện Thi ĐGNL Bộ Công An (BCA)", iconKey: "vact_bca" },
-  { id: "PROG:qda", badge: "ĐGNL QDA", name: "Khóa Luyện Thi ĐGNL Quân Đội (QDA)", iconKey: "vact_bca" },
-  { id: "PROG:vsat", badge: "ĐGNL VSAT", name: "Khóa Luyện Thi ĐGNL VSAT Máy Tính", iconKey: "vact_bca" },
-  { id: "PROG:mos", badge: "CHỨNG CHỈ MOS", name: "Khóa Tin Học Văn Phòng & Chứng Chỉ MOS", iconKey: "tin_mos" },
-  { id: "PROG:daihoc", badge: "ĐẠI HỌC · BTL", name: "Khóa Đại Học · Kinh Tế Lượng · NCKH", iconKey: "dai_hoc" },
-  { id: "PROG:nghe_thuat", badge: "NGHỆ THUẬT", name: "Khóa Nghệ Thuật · Guitar · Piano", iconKey: "nghe_thuat" }
+  { id: "ALL", badge: "TẤT CẢ", name: "Tất cả các khóa học & kỳ thi (37 khóa)", iconKey: "all" },
+  { id: "PROG:khtn", badge: "COMBO KHTN", name: "Combo Khối Tự Nhiên KHTN (Toán · Lý · Hóa · Sinh)", iconKey: "toan" },
+  { id: "PROG:khxh", badge: "COMBO KHXH", name: "Combo Khối Xã Hội KHXH (Văn · Sử · Địa · Anh)", iconKey: "van" },
+  { id: "PROG:dgnl_hsa", badge: "ĐGNL HSA", name: "Khóa Luyện Thi ĐGNL HSA — ĐHQG Hà Nội (5 khóa)", iconKey: "hsa_tsa" },
+  { id: "PROG:dgtd_tsa", badge: "ĐGTD TSA", name: "Khóa Luyện Thi ĐGTD TSA — ĐH Bách Khoa Hà Nội (3 khóa)", iconKey: "hsa_tsa" },
+  { id: "PROG:vact", badge: "ĐGNL V-ACT", name: "Khóa Luyện Thi ĐGNL V-ACT — ĐHQG TP.HCM (4 khóa)", iconKey: "vact_bca" },
+  { id: "PROG:thptqg", badge: "THPTQG 12", name: "Khóa Luyện Thi Tốt Nghiệp THPT 2K9 (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa)", iconKey: "dai_hoc" },
+  { id: "PROG:single_69k", badge: "KHÓA LẺ 69K", name: "Khóa Lẻ 69K Từng Thầy Cô (Toán, Lý, Hóa, Sinh, Văn, Anh, Sử, Địa)", iconKey: "all" },
+  { id: "PROG:combo_199k", badge: "COMBO 199K", name: "Combo 199K Khối KHTN, KHXH & Kỳ Thi ĐGNL / ĐGTD (7 khóa)", iconKey: "hsa_tsa" }
 ];
 
 function getDvsIconThemeByKey(iconKey) {
@@ -3282,24 +3277,37 @@ function initWebCourseComboboxes() {
 
 function doesCourseMatchSubject(course, subj) {
     if (!subj || subj === "ALL") return true;
-    const t = `${course.id} ${course.title} ${course.instructor} ${course.groupName || ""}`.toLowerCase();
+    const t = `${course.id} ${course.title} ${course.instructor} ${course.groupName || ""} ${course.categoryLabel || ""}`.toLowerCase();
     switch (subj) {
         case "TOAN": return t.includes("toán") || t.includes("toan");
         case "VAN": return t.includes("văn") || t.includes("van");
-        case "ANH": return t.includes("tiếng anh") || t.includes("anh12") || t.includes("pro3m");
-        case "LY": return t.includes("vật lý") || t.includes("ly12") || t.includes("vật lí");
+        case "ANH": return t.includes("tiếng anh") || t.includes("anh12") || t.includes("anh");
+        case "LY": return t.includes("vật lý") || t.includes("ly12") || t.includes("vật lí") || t.includes("ly");
         case "HOA": return t.includes("hóa") || t.includes("hoa12");
         case "SINH": return t.includes("sinh") || t.includes("sinh12");
-        case "SU": return t.includes("lịch sử") || t.includes("su12");
+        case "SU": return t.includes("lịch sử") || t.includes("su12") || t.includes("sử");
         case "DIA": return t.includes("địa") || t.includes("dia12");
-        case "TRUNG": return t.includes("tiếng trung") || t.includes("hán ngữ") || t.includes("hsk") || t.includes("d04");
-        case "TIN_MOS": return t.includes("mos") || t.includes("excel") || t.includes("word") || t.includes("tin học");
-        case "DAI_HOC": return t.includes("kinh tế lượng") || t.includes("triết học") || t.includes("apa 7") || t.includes("đại học");
-        case "NGHE_THUAT": return t.includes("guitar") || t.includes("piano") || t.includes("thanh nhạc") || t.includes("nghệ thuật");
+        case "HSA": return t.includes("hsa");
+        case "TSA": return t.includes("tsa");
+        case "VACT": return t.includes("v-act") || t.includes("vact");
         default: return true;
     }
 }
 
+function doesCourseMatchProgram(course, prog) {
+    if (!prog || prog === "ALL") return true;
+    const p = prog.replace("PROG:", "");
+    const t = `${course.id} ${course.title} ${course.instructor} ${course.groupName || ""} ${course.tier || ""}`.toLowerCase();
+    if (p === "khtn") return t.includes("khtn");
+    if (p === "khxh") return t.includes("khxh");
+    if (p === "dgnl_hsa") return t.includes("hsa");
+    if (p === "dgtd_tsa") return t.includes("tsa");
+    if (p === "vact") return t.includes("v-act") || t.includes("vact");
+    if (p === "thptqg") return t.includes("2k9") || t.includes("thpt") || t.includes("12");
+    if (p === "single_69k") return course.tier === "subject_69k" || String(course.id).startsWith("K69-");
+    if (p === "combo_199k") return course.tier === "course_199k" || String(course.id).startsWith("C199-");
+    return true;
+}
 function doesCourseMatchProgram(course, prog) {
     if (!prog || prog === "ALL") return true;
     const p = prog.replace("PROG:", "");
@@ -3381,6 +3389,7 @@ function renderSingleCourseCardHtml(course) {
     const footerCategoryText = course.groupName || course.level || course.categoryName || "Khóa Học 2027";
     const durationText = (course.duration || "Full lộ trình 2027 · Video + PDF") + (unlocked ? " · Đã mở khóa" : "");
     const meta = getWebCourseVisualMeta(course);
+    const th = getDvsIconThemeByKey(meta.iconKey);
 
     return `
         <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="group rounded-2xl overflow-hidden flex flex-col bg-white dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70 shadow-emerald-500/10' : 'border-slate-200/90 dark:border-white/10 hover:border-[#0D1677]/60 dark:hover:border-sky-400/60'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
@@ -3399,11 +3408,13 @@ function renderSingleCourseCardHtml(course) {
 
             <!-- CARD BODY (TOP = BADGE & INSTRUCTOR, MIDDLE = COURSE TITLE, BOTTOM = STATS & ACTION) -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <!-- Subject Badge & Code Pill -->
+                <!-- Subject Badge & Code Pill (Đồng bộ 100% với App: Hộp Icon + Tag Pill Tên Môn) -->
                 <div class="flex items-center gap-1.5 mb-0.5">
-                    <span class="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md" style="background: ${meta.pillBg}; color: ${meta.pillColor};">
-                        <svg class="w-3 h-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"></path><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"></path></svg>
-                        <span>${meta.badge}</span>
+                    <span class="w-6 h-6 rounded-md flex items-center justify-center shadow-xs border flex-shrink-0" style="background: ${meta.bg || '#F8FAFC'}; color: ${meta.color || '#0D1677'}; border-color: ${meta.border || '#E2E8F0'};">
+                        ${typeof renderDvsSubjectCourseSvgHtml === "function" ? renderDvsSubjectCourseSvgHtml(meta.iconKey, 13) : ''}
+                    </span>
+                    <span class="inline-flex items-center text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md shadow-xs border" style="background: ${meta.pillBg || '#DBEAFE'}; color: ${meta.pillColor || '#1E40AF'}; border-color: ${meta.border || '#BFDBFE'};">
+                        ${meta.badge}
                     </span>
                 </div>
 
@@ -4656,7 +4667,7 @@ async function submitCustomerSyncWeb() {
     renderCourses();
 
     // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien study (tên file chuẩn Cai_Dat_App_Diep_Vien_Study_Windows.exe)
-    startDirectFileDownload("Cài Đặt App Điệp Viên Study (Windows).exe", "Cài Đặt App Điệp Viên Study (Windows).exe");
+    startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cài Đặt App Điệp Viên Study (Windows).exe");
 
     if (msgEl) {
         msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Cai_Dat_App_Diep_Vien_Study_Windows.exe</strong>! <a href="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" target="_blank" download="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt PDF (Có Hình Minh Họa)</a>.`;
@@ -5119,9 +5130,9 @@ function handleGatedAppDownload(targetPlatform = "exe") {
     });
 
     if (targetPlatform === "macos") {
-        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_MacOS.zip", "Cài Đặt App Điệp Viên Study (MacOS).zip");
+        startDirectFileDownload("https://github.com/teamtccm/diepvientailieu.store/releases/download/v14.2/Cai_Dat_App_Diep_Vien_Study_MacOS.zip", "Cài Đặt App Điệp Viên Study (MacOS).zip");
     } else {
-        startDirectFileDownload("Cài Đặt App Điệp Viên Study (Windows).exe", "Cài Đặt App Điệp Viên Study (Windows).exe");
+        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cài Đặt App Điệp Viên Study (Windows).exe");
     }
 }
 
@@ -5599,7 +5610,7 @@ window.openWebCourseStudyHubModal = function(courseId) {
                     <h4 class="text-xs sm:text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-wide">
                          Cấu Trúc Các Môn & Chuyên Đề Trong Khóa Của Bạn (${units.length} thư mục)
                     </h4>
-                    <a href="${mainDriveUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-white font-black text-[11px] shadow-sm transition">
+                    <a href="${mainDriveUrl}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-white font-black text-xs shadow-sm transition whitespace-nowrap flex-shrink-0 inline-flex items-center justify-center">
                          Mở Drive Khóa Học
                     </a>
                 </div>
@@ -5904,3 +5915,123 @@ dvtlRefreshHeaderGoogleBtn = function(cust) {
         }
     }, true);
 })();
+
+
+/* ==========================================================================
+   FACULTY / KHỐI NGÀNH COMBOBOX FOR KHO ĐỀ CƯƠNG
+   ========================================================================== */
+
+const WEB_FACULTIES_CATALOG = [
+  { id: "", badge: "TẤT CẢ", name: "-- Tất Cả Các Khoa / Khối Ngành --", iconKey: "all" },
+  { id: "DAI_CUONG", badge: "ĐẠI CƯƠNG", name: "Khối Đại Cương & Lý Luận Chính Trị", iconKey: "dai_hoc" },
+  { id: "QUAN_TRI", badge: "KINH TẾ", name: "Khoa / Khối Kinh Tế & Quản Trị", iconKey: "toan" },
+  { id: "TAI_CHINH", badge: "TÀI CHÍNH", name: "Khoa / Khối Tài Chính - Ngân Hàng - Kế Toán", iconKey: "hoa" },
+  { id: "CONG_NGHE", badge: "CÔNG NGHỆ", name: "Khoa / Khối Công Nghệ & Kỹ Thuật", iconKey: "ly" },
+  { id: "LUAT", badge: "LUẬT", name: "Khoa / Khối Luật & Pháp Lý", iconKey: "van" },
+  { id: "NGOAI_NGU", badge: "NGOẠI NGỮ", name: "Khoa / Khối Ngoại Ngữ & Ngôn Ngữ Học", iconKey: "anh" },
+  { id: "DU_LICH", badge: "DU LỊCH", name: "Khoa / Khối Du Lịch & Khách Sạn", iconKey: "dia" },
+  { id: "SU_PHAM", badge: "SƯ PHẠM", name: "Khoa / Khối Sư Phạm & Giáo Dục", iconKey: "su" },
+  { id: "XA_HOI", badge: "TÂM LÝ", name: "Khoa / Khối Tâm Lý & Xã Hội", iconKey: "sinh" }
+];
+
+let selectedFacultyCode = "";
+let facultyDropdownOpen = false;
+
+function toggleFacultyDropdown(e) {
+  if (e) e.stopPropagation();
+  closeUniDropdown();
+  closeHotSearchDropdown();
+
+  const menu = document.getElementById("facultyDropdownMenu");
+  const chevron = document.getElementById("facultyDropdownChevron");
+  if (!menu) return;
+
+  facultyDropdownOpen = !facultyDropdownOpen;
+  if (facultyDropdownOpen) {
+    menu.classList.remove("hidden");
+    if (chevron) chevron.textContent = "▲";
+    renderFacultyOptions(WEB_FACULTIES_CATALOG);
+    setTimeout(() => {
+      const inp = document.getElementById("facultySearchInput");
+      if (inp) {
+        inp.value = "";
+        inp.focus();
+      }
+    }, 50);
+  } else {
+    closeFacultyDropdown();
+  }
+}
+
+function closeFacultyDropdown() {
+  facultyDropdownOpen = false;
+  const menu = document.getElementById("facultyDropdownMenu");
+  const chevron = document.getElementById("facultyDropdownChevron");
+  if (menu) menu.classList.add("hidden");
+  if (chevron) chevron.textContent = "▼";
+}
+
+function handleFacultySearchInput(val) {
+  const qNorm = (typeof removeVietnameseTones === "function" ? removeVietnameseTones(val) : val).toLowerCase().trim();
+  const filtered = WEB_FACULTIES_CATALOG.filter(f => {
+    if (!qNorm) return true;
+    const hay = `${f.badge} ${f.name} ${f.id}`.toLowerCase();
+    const hayNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(hay) : hay;
+    return hay.includes(qNorm) || hayNorm.includes(qNorm);
+  });
+  renderFacultyOptions(filtered);
+}
+
+function renderFacultyOptions(list) {
+  const container = document.getElementById("facultyOptionsList");
+  if (!container) return;
+
+  if (!list || list.length === 0) {
+    container.innerHTML = `<div class="p-3 text-center text-xs text-slate-400 font-medium">Không tìm thấy khoa / khối ngành phù hợp</div>`;
+    return;
+  }
+
+  container.innerHTML = list.map(item => {
+    const isSel = item.id === selectedFacultyCode;
+    const th = typeof getDvsIconThemeByKey === "function" ? getDvsIconThemeByKey(item.iconKey || "all") : { color: "#0D1677", bg: "#EFF6FF", pillBg: "#DBEAFE", pillColor: "#1E40AF" };
+    return `
+      <div id="facultyOption_${item.id || 'ALL'}" class="dvs-uni-option-row ${isSel ? 'selected' : ''}" onclick="selectFaculty('${item.id}')">
+        <span class="dvs-uni-icon-box" style="color: ${th.color};">
+          ${typeof renderDvsSubjectCourseSvgHtml === "function" ? renderDvsSubjectCourseSvgHtml(item.iconKey || "all", 14) : ''}
+        </span>
+        <span class="dvs-uni-code-pill" style="background: ${th.pillBg}; color: ${th.pillColor};">
+          ${item.badge}
+        </span>
+        <span class="dvs-uni-name-text">
+          ${item.name}
+        </span>
+        ${isSel ? '<span class="dvs-uni-check">✓</span>' : ''}
+      </div>
+    `;
+  }).join("");
+}
+
+function selectFaculty(facId) {
+  selectedFacultyCode = facId || "";
+  const found = WEB_FACULTIES_CATALOG.find(f => f.id === selectedFacultyCode) || WEB_FACULTIES_CATALOG[0];
+
+  const labelEl = document.getElementById("facultySelectedLabel");
+  const clearBtn = document.getElementById("facultyClearBtn");
+  const hiddenSelect = document.getElementById("searchFacultySelect");
+
+  if (labelEl) labelEl.textContent = found.name;
+  if (clearBtn) clearBtn.classList.toggle("hidden", !selectedFacultyCode);
+  if (hiddenSelect) hiddenSelect.value = found.name;
+
+  if (typeof state !== "undefined") {
+    state.selectedFaculty = found.id ? found.name : "";
+    if (typeof executeDocSearch === "function") executeDocSearch();
+  }
+
+  closeFacultyDropdown();
+}
+
+function clearFacultySelection(e) {
+  if (e) e.stopPropagation();
+  selectFaculty("");
+}

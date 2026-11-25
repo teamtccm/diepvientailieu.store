@@ -1,33 +1,33 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.25.3",
+  "version": "2026.11.25.4",
   "channel": "stable",
-  "releasedAt": "2026-11-25T07:25:00+07:00",
+  "releasedAt": "2026-11-25T01:45:00Z",
   "minBootstrapVersion": "2026.04.19.1",
-  "notes": "v14.1: Shadowing UI polish, Settings cleanup, course search history fix, 50/50 keyword tag balance, SEO guarantee & interactive FAQ.",
+  "notes": "v14.2: Dong bo combobox Khoa/Khoi nganh tren Web & App, icon box + uppercase pill mon hoc, xoa emoji de cuong web, sua text box duoi app de cuong khong bi dinh chu, cap nhat bo loc 12 mon va 9 chuong trinh chuan 37 khoa hoc.",
   "files": [
     {
       "path": "web_dist/index.html",
-      "sha256": "039bbd55af9b22e624abb87b1b3b22d899a8e9494bfe77568f949177983a74a7",
+      "sha256": "c9709d0b22ef3b7f421b10b594779bde5176fd2d3fed21c3618b3026d71f7524",
       "size": 921,
       "url": "https://diepvientailieu.store/app_ota/web_dist/index.html"
     },
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "0e5b3cf78c238c7fa21b8da1ad8a05176887b5a822a424f2ca04acc3df9f4319",
-      "size": 2261812,
+      "sha256": "bca046d11e96c78cd21f2a0ae722b8ce5dd06ee57bafa04b8d4622caa8950dd9",
+      "size": 2271926,
       "url": "https://diepvientailieu.store/app_ota/web_dist/assets/index-SSdWYvRZ.js"
     },
     {
       "path": "web_dist/assets/index-si95EOa3.css",
-      "sha256": "a19baaa04fed1b95e3147f15e0f311f71ed6cd6d3eb2ab474dde56ae2ea520cd",
-      "size": 359901,
+      "sha256": "0d619205827cfa2f48c20d8e2643e54fee87a9f283890202d165551a815fe2e0",
+      "size": 360292,
       "url": "https://diepvientailieu.store/app_ota/web_dist/assets/index-si95EOa3.css"
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "2e883e5076234a71780f5b1f80b297d20e8e63e1ef48ee4963cd3972d7b067af",
-      "size": 421474,
+      "sha256": "00b57b3c445a19bb9d1e298b996febe5a85c01130949a4e09b22cdcf0a576ba0",
+      "size": 423961,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ]

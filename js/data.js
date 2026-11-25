@@ -5916,12 +5916,28 @@ const RECENT_PURCHASES_STREAM = [
 ];
 const FAQ_DATABASE = [
 {
-question: "Sau khi chuyển khoản bao lâu thì tôi nhận được Khóa học / Đề cương?",
-answer: "Hệ thống AutoPay 24/7 quét biến động số dư ngân hàng ACB tự động chỉ sau 10 - 30 giây. Ngay khi khớp lệnh, hệ thống tự động cấp quyền Google Drive vào đúng địa chỉ Gmail của bạn và kích hoạt tài khoản App Điệp Viên Study."
+question: "1. Mua Đề cương ôn tập (50.000đ) xong thì tôi nhận và mở tài liệu như thế nào?",
+answer: "Ngay sau khi bạn quét mã VietQR ngân hàng ACB hoàn tất chuyển khoản đúng nội dung đơn hàng, hệ thống đối soát tự động 24/7 trong 10 - 30 giây sẽ gửi Email bàn giao kèm đường dẫn Google Drive về đúng địa chỉ Gmail bạn đã đăng ký.\n\nĐồng thời, hệ thống cấp quyền truy cập trực tiếp trên Google Drive và đồng bộ vào mục Đề cương môn học trên App Điệp Viên Study để bạn học và tra cứu ngay lập tức."
 },
 {
-question: "Làm sao để tải APP Diep Vien study về máy tính?",
-answer: "Bạn bấm nút 'APP Diep Vien study' ngay trên thanh menu Website, điền Tên đăng nhập và Email của bạn để mở khóa nút Tải App, hoặc đăng nhập tài khoản để hệ thống tự động tải bộ cài về máy."
+question: "2. Khóa học Lẻ 69K, Combo Tổ hợp & ĐGNL 199K và Full Trọn Bộ 399K học trên App và Google Drive ra sao?",
+answer: "Hệ thống liên kết đồng bộ hai chiều giữa Gmail - Google Drive - Web & App Điệp Viên Study:\n\n- Gói Khóa Lẻ 1 Môn (69.000đ): Mở khóa toàn bộ video bài giảng Full HD và tài liệu PDF của đúng 01 khóa học thầy cô hoặc kỳ thi bạn chọn.\n- Gói Combo Tổ Hợp & ĐGNL / ĐGTD (199.000đ): Mở khóa trọn bộ tổ hợp môn (KHTN 1-2, KHXH 1-2) hoặc khóa luyện thi ĐGNL HSA ĐHQGHN, ĐGTD TSA Bách Khoa, V-ACT ĐHQG TP.HCM.\n- Gói Full Trọn Bộ 38+ Khóa Học (399.000đ): Mở khóa 100% toàn bộ kho khóa học THPT Quốc gia, ĐGNL, ĐGTD, Đại học, Ngoại ngữ, Tin học MOS cùng mọi đợt cập nhật đề thi mới.\n\nTrên App Điệp Viên Study, bạn bấm vào từng thư mục môn/chuyên đề như trên Google Drive: bấm vào Video để phát trực tiếp ngay trong App (tự động ghi âm, tốc ký, tóm tắt AI và lưu vào Ghi chú theo ngày giờ); bấm vào Tài liệu PDF/Sheet để mở trực tiếp trên Google Drive."
+},
+{
+question: "3. Dịch vụ Hỗ trợ học thuật, Tiểu luận & Bài tập lớn (BTL) cam kết chất lượng và chỉnh sửa như thế nào?",
+answer: "Mỗi đề tài Tiểu luận, Báo cáo thực tập, Bài tập lớn và Đồ án môn học đều được đội ngũ chuyên môn nghiên cứu sâu từ tối thiểu 02 nguồn giáo trình đại học chuẩn và các văn bản pháp luật, chuẩn mực hiện hành.\n\n- Cam kết trình bày chuẩn quy định in ấn A4 (Times New Roman 13pt, căn lề chuẩn, mục lục tự động, trích dẫn học thuật APA/IEEE).\n- Kiểm duyệt nội dung chặt chẽ, cam kết không đạo văn và bàn giao đúng hạn đã hẹn.\n- Hỗ trợ chỉnh sửa miễn phí tận tâm theo nhận xét của Giảng viên hướng dẫn qua Zalo hỗ trợ."
+},
+{
+question: "4. Vì sao tôi cần nhập đúng Gmail và Số điện thoại Zalo (chỉ nhập chữ số) khi thanh toán?",
+answer: "Hệ thống vận hành theo kiến trúc bảo mật liên kết Gmail - Google Drive - Web/App:\n\n- Địa chỉ Gmail: Dùng để hệ thống tự động cấp quyền xem trực tiếp trên Google Drive chính chủ và gửi Email bàn giao tài liệu, khóa học ngay khi nhận chuyển khoản.\n- Số điện thoại Zalo (10 chữ số): Dùng để bộ phận học thuật liên hệ hỗ trợ nhanh, gửi thông báo tiến độ Bài tập lớn và hỗ trợ kỹ thuật trong suốt quá trình học."
+},
+{
+question: "5. Tính năng Tự động ghi âm, Ghi chú bài học và Hỏi đáp AI trên App Điệp Viên Study hoạt động thế nào?",
+answer: "Khi bạn mở bất kỳ video bài giảng nào trong mục Khóa học trên App Điệp Viên Study:\n\n- Ngay khi video phát, chế độ ghi âm và ghi chú nội dung tự động khởi động (bạn có thể bấm nút Tạm dừng / Tiếp tục bất cứ lúc nào).\n- Khi bạn chuyển sang video bài giảng khác hoặc bấm Quay lại, hệ thống tự động dừng ghi và lưu đồng bộ bản nháp kèm mốc [Ngày/Tháng/Năm Giờ:Phút] vào mục Ghi chú chung.\n- Bạn có thể đặt câu hỏi trực tiếp cho Trợ lý AI ngay cạnh khung video để được giải thích công thức, tóm tắt trọng tâm bài giảng theo thời gian thực."
+},
+{
+question: "6. Thông tin cá nhân và tài khoản học tập của sinh viên có được bảo mật tuyệt đối không?",
+answer: "Điệp Viên Tài Liệu cam kết bảo mật tuyệt đối 100% thông tin họ tên, Gmail, số điện thoại Zalo, tên trường và đề tài học thuật của học viên.\n\nMỗi hồ sơ khách hàng được lưu trữ bảo mật duy nhất 1 lần trên hệ thống quản trị, quyền truy cập Google Drive được phân quyền riêng biệt cho đúng Gmail đăng ký và không bao giờ chia sẻ cho bên thứ ba."
 }
 ];
 const APP_CONFIG = {

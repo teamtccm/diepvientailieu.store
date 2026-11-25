@@ -3169,21 +3169,19 @@ function DvsShadowingStudyPage({ model: t }) {
     children: g.jsxs("div", {
       className: "dvs-sh-page animate-in",
       children: [
-        /* THANH TRÊN CÙNG TỐI GIẢN CĂN CHỈNH CHUẨN */
+        /* TIÊU ĐỀ ĐỒNG BỘ PHONG CÁCH TOÀN APP */
         g.jsxs("header", {
-          className: "glass-card dvs-sh-topbar",
+          className: "dvs-sh-header-unified",
+          style: { display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "16px", flexWrap: "wrap", marginBottom: "18px" },
           children: [
             g.jsxs("div", {
-              className: "dvs-sh-brand",
+              style: { minWidth: 0 },
               children: [
-                g.jsx("div", {
-                  className: "dvs-sh-brand-icon",
-                  children: g.jsx(ShadowingIcon, { size: 17 })
-                }),
+                g.jsx("div", { className: "eyebrow", children: "LUYỆN PHÁT ÂM & ĐỌC NHẠI" }),
                 g.jsxs("div", {
-                  style: { display: "flex", alignItems: "center", gap: "10px", minWidth: 0 },
+                  style: { display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap", minWidth: 0 },
                   children: [
-                    g.jsx("h1", { children: "Luyện đọc Shadowing" }),
+                    g.jsx("h1", { style: { margin: 0 }, children: "Luyện đọc Shadowing" }),
                     hasLoadedVideo && activeVideo?.title && g.jsx("span", {
                       style: {
                         fontSize: "12px",
@@ -3201,6 +3199,11 @@ function DvsShadowingStudyPage({ model: t }) {
                       children: activeVideo.title
                     })
                   ]
+                }),
+                g.jsx("p", {
+                  className: "page-subtitle",
+                  style: { marginBottom: 0, marginTop: "6px" },
+                  children: "Luyện nghe, đọc đuổi theo từng câu và chấm điểm phát âm chuẩn từ video YouTube hoặc file trên máy."
                 })
               ]
             }),

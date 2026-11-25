@@ -1622,21 +1622,33 @@
 
                         </div>
 
-                        <!-- Ô 3: Tìm Kiếm Nhanh -->
+                        <!-- Ô 3: Tìm Kiếm Nhanh (Đồng bộ chiều cao 42px, tắt popup lịch sử trình duyệt, có nút Xóa & Tìm) -->
 
                         <div class="lg:col-span-4">
 
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
+                            <label for="courseSearchInput" class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1">
 
-                                3. Tìm Kiếm:
+                                3. Tìm Kiếm Khóa Học / Thầy Cô:
 
                             </label>
 
-                            <div class="relative flex items-center bg-slate-100 dark:bg-white/5 border border-slate-300/80 dark:border-white/15 focus-within:border-[#0D1677] dark:focus-within:border-sky-400 rounded-xl overflow-hidden transition">
+                            <div class="flex items-center gap-1.5">
 
-                                <span class="pl-3 text-slate-400 text-xs select-none flex items-center"><svg class="inline-block w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+                                <div class="relative flex-1 flex items-center h-[42px] bg-slate-50 dark:bg-white/5 border-[1.5px] border-slate-300/90 dark:border-white/15 focus-within:border-[#0D1677] focus-within:bg-white dark:focus-within:border-sky-400 rounded-xl overflow-hidden transition shadow-sm">
 
-                                <input id="courseSearchInput" type="search" oninput="renderCourses()" placeholder="Tìm tên môn, thầy cô (Đỗ Văn Đức, Vũ Ngọc Anh, HSA…)" class="w-full bg-transparent px-2.5 py-2 text-xs sm:text-sm text-slate-800 dark:text-slate-100 outline-none">
+                                    <span class="pl-3 text-slate-400 text-xs select-none flex items-center"><svg class="inline-block w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+
+                                    <input id="courseSearchInput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" oninput="renderCourses()" onkeydown="if(event.key==='Enter'){event.preventDefault();renderCourses();}" placeholder="Tìm môn, thầy cô, kỳ thi (Đỗ Văn Đức, HSA, TSA...)" class="w-full h-full bg-transparent px-2.5 text-xs sm:text-[13px] font-semibold text-slate-800 dark:text-slate-100 placeholder:text-slate-400 outline-none">
+
+                                    <button id="courseSearchClearBtn" type="button" onclick="clearWebCourseSearchInput()" class="hidden pr-2.5 text-slate-400 hover:text-red-500 text-xs font-black transition" title="Xóa từ khóa">X</button>
+
+                                </div>
+
+                                <button type="button" onclick="renderCourses()" class="h-[42px] px-4 rounded-xl bg-[#0D1677] hover:bg-[#1E40AF] text-white font-extrabold text-xs tracking-wide shadow-sm transition shrink-0">
+
+                                    Tìm
+
+                                </button>
 
                             </div>
 
@@ -2690,11 +2702,11 @@
 
         <!-- ================================================================
 
-             VIEW 5: CAM KẾT & FEEDBACK TIN NHẮN (GUARANTEE & FEEDBACK)
+             VIEW 5: CAM KẾT CHẤT LƯỢNG & PHẢN HỒI THỰC TẾ (CHUẨN SEO: ĐỀ CƯƠNG · KHÓA HỌC APP/DRIVE · HỖ TRỢ HỌC THUẬT)
 
              ================================================================ -->
 
-        <div id="viewGuaranteeFeedback" class="hidden py-16 bg-slate-50 dark:bg-[#03081E] min-h-screen transition-colors">
+        <div id="viewGuaranteeFeedback" class="hidden py-12 sm:py-16 bg-slate-50 dark:bg-[#03081E] min-h-screen transition-colors">
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -2702,368 +2714,200 @@
 
                 <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-6">
 
-                    <button onclick="switchView('home')" class="hover:text-blue-700">Trang chủ</button>
+                    <button onclick="switchView('home')" class="hover:text-blue-700 font-semibold">Trang chủ</button>
 
                     <span>/</span>
 
-                    <span class="text-slate-900 dark:text-white font-bold">Cam Kết & Phản Hồi</span>
+                    <span class="text-slate-900 dark:text-white font-bold">Cam Kết Chất Lượng & Học Thuật</span>
 
                 </div>
 
-                <!-- 4 CAM KẾT VÀNG -->
+                <!-- 4 CAM KẾT TRỌNG TÂM XOAY QUANH 3 TRỤ CỘT: ĐỀ CƯƠNG · KHÓA HỌC · HỖ TRỢ HỌC THUẬT -->
 
-                <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 mb-16 shadow-2xl">
+                <div class="bg-[#071033] text-white rounded-3xl p-7 sm:p-11 mb-14 shadow-2xl border border-white/10">
 
-                    <div class="text-center max-w-3xl mx-auto mb-12">
+                    <div class="text-center max-w-3xl mx-auto mb-10">
 
                         <span class="px-4 py-1 bg-[#FFA000]/20 text-[#FFA000] font-extrabold text-xs rounded-full uppercase tracking-wider border border-[#FFA000]/40">
 
-                            UY TÍN TẠO NÊN THƯƠNG HIỆU
+                            TIÊU CHUẨN HỌC THUẬT & CÔNG NGHỆ ĐỒNG BỘ
 
                         </span>
 
-                        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3 mb-4 font-condensed tracking-wide uppercase">
+                        <h2 class="text-2xl sm:text-4xl font-black text-white mt-3 mb-3 font-condensed tracking-wide uppercase">
 
-                            4 Cam Kết Vàng Từ Điệp Viên Tài Liệu
+                            4 Cam Kết Vàng Của Hệ Sinh Thái Điệp Viên Tài Liệu
 
                         </h2>
 
-                        <p class="text-slate-400 text-xs sm:text-sm">
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
 
-                            Chúng tôi hiểu rằng điểm số và sự an toàn học thuật của bạn là trên hết.
+                            Hệ thống đồng bộ xuyên suốt giữa <strong>Gmail &leftrightarrow; Google Drive &leftrightarrow; Website &amp; App Điệp Viên Study</strong> cho Đề cương ôn tập đại học, Khóa học luyện thi và Hỗ trợ học thuật chuyên sâu.
 
                         </p>
 
                     </div>
 
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-                        <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-[#FFA000] transition">
+                        <!-- Cam kết 1: Đề cương -->
+                        <article class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-[#FFA000] transition flex flex-col justify-between">
+                            <div>
+                                <div class="mb-3.5 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-amber-400/15 text-[#FFA000]">
+                                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-black text-[#FFA000] mb-2 font-condensed uppercase tracking-wider">Đề Cương Bám Sát Đề Thi Thật</h3>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Hơn 600+ đề cương ôn tập đại học (NEU, FTU, UEB, TMU, AOF, UEH, HUST, VNU...) biên soạn từ giáo trình chuẩn Bộ GD&amp;ĐT, đủ 5 dạng trắc nghiệm, tự luận, vấn đáp, đúng/sai và bài tập có lời giải chi tiết.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-bold text-amber-300">
+                                Mở khóa Google Drive tự động 24/7
+                            </div>
+                        </article>
 
-                            <div class="mb-4"><svg class="inline-block w-8 h-8 shrink-0 text-[#FFA000]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+                        <!-- Cam kết 2: Khóa học App & Drive -->
+                        <article class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-sky-400 transition flex flex-col justify-between">
+                            <div>
+                                <div class="mb-3.5 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-sky-400/15 text-sky-400">
+                                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect width="15" height="14" x="1" y="5" rx="2" ry="2"/></svg>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-black text-sky-400 mb-2 font-condensed uppercase tracking-wider">Khóa Học Đồng Bộ App &amp; Drive</h3>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Các gói Khóa lẻ 69K, Combo Tổ hợp &amp; ĐGNL HSA / TSA / V-ACT 199K và Full Trọn Bộ 399K kết nối trực tiếp Google Drive: xem video bài giảng ngay trên App, tự động ghi âm, lưu ghi chú theo ngày giờ và hỏi đáp AI.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-bold text-sky-300">
+                                Học trực tiếp trên App &amp; Google Drive
+                            </div>
+                        </article>
 
-                            <h4 class="text-lg font-black text-[#FFA000] mb-2 font-condensed uppercase tracking-wider">100% Không Đạo Văn</h4>
+                        <!-- Cam kết 3: Hỗ trợ học thuật BTL -->
+                        <article class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-emerald-400 transition flex flex-col justify-between">
+                            <div>
+                                <div class="mb-3.5 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-emerald-400/15 text-emerald-400">
+                                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-black text-emerald-400 mb-2 font-condensed uppercase tracking-wider">Hỗ Trợ Học Thuật Chuẩn In A4</h3>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Tư vấn, biên soạn Tiểu luận, Báo cáo thực tập và Bài tập lớn độc bản theo yêu cầu đề cương từng trường. Cam kết kiểm duyệt đạo văn nghiêm ngặt, đúng tiến độ và hỗ trợ chỉnh sửa miễn phí theo nhận xét giảng viên.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-bold text-emerald-300">
+                                Chuẩn thể thức A4 &amp; đồng hành qua Zalo
+                            </div>
+                        </article>
 
-                            <p class="text-xs text-slate-400 leading-relaxed">
-
-                                Kiểm tra quét mã nguồn qua hệ thống Turnitin / DoIT, gửi kèm báo cáo kiểm duyệt tỷ lệ trùng lặp dưới 10%.
-
-                            </p>
-
-                        </div>
-
-                        <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-[#FFA000] transition">
-
-                            <div class="mb-4"><svg class="inline-block w-8 h-8 shrink-0 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5"/><path d="M9 2h6"/></svg></div>
-
-                            <h4 class="text-lg font-black text-sky-400 mb-2 font-condensed uppercase tracking-wider">Chuẩn Xác Deadline</h4>
-
-                            <p class="text-xs text-slate-400 leading-relaxed">
-
-                                Bàn giao bài đúng hoặc trước hạn đã hẹn. Đền bù 100% giá trị hợp đồng nếu phát sinh trễ deadline.
-
-                            </p>
-
-                        </div>
-
-                        <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-[#FFA000] transition">
-
-                            <div class="mb-4"><svg class="inline-block w-8 h-8 shrink-0 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-
-                            <h4 class="text-lg font-black text-purple-400 mb-2 font-condensed uppercase tracking-wider">Bảo Mật Danh Tính</h4>
-
-                            <p class="text-xs text-slate-400 leading-relaxed">
-
-                                Cam kết bảo mật thông tin cá nhân, mã sinh viên và tên trường 100%. Tiêu hủy dữ liệu sau khi kết thúc môn.
-
-                            </p>
-
-                        </div>
-
-                        <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-[#FFA000] transition">
-
-                            <div class="mb-4"><svg class="inline-block w-8 h-8 shrink-0 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg></div>
-
-                            <h4 class="text-lg font-black text-emerald-400 mb-2 font-condensed uppercase tracking-wider">Sửa Bài Miễn Phí</h4>
-
-                            <p class="text-xs text-slate-400 leading-relaxed">
-
-                                Hỗ trợ chỉnh sửa nội dung theo mọi yêu cầu góp ý của Giảng viên hướng dẫn trong vòng 4 ngày hoàn toàn miễn phí.
-
-                            </p>
-
-                        </div>
+                        <!-- Cam kết 4: Đối soát & Bảo mật -->
+                        <article class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-purple-400 transition flex flex-col justify-between">
+                            <div>
+                                <div class="mb-3.5 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-purple-400/15 text-purple-400">
+                                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-black text-purple-400 mb-2 font-condensed uppercase tracking-wider">Bàn Giao Tự Động &amp; Bảo Mật</h3>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Hệ thống chỉ xác nhận và cấp quyền chính xác thứ khách mua ngay khi đối soát khớp biến động VietQR ACB chính chủ. Bảo mật tuyệt đối 100% thông tin Gmail, Số điện thoại Zalo và hồ sơ học viên.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-bold text-purple-300">
+                                Tự động gửi Email &amp; cấp quyền Drive
+                            </div>
+                        </article>
 
                     </div>
 
                 </div>
 
-                <!-- 4 FEEDBACK TIN NHẮN -->
+                <!-- PHẢN HỒI THỰC TẾ TỪ HỌC VIÊN & SINH VIÊN -->
 
                 <div>
 
-                    <div class="text-center max-w-3xl mx-auto mb-12">
+                    <div class="text-center max-w-3xl mx-auto mb-10">
 
                         <span class="px-3.5 py-1 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-extrabold text-xs rounded-full uppercase tracking-wider border border-emerald-200 dark:border-emerald-800">
 
-                            MINH CHỨNG THỰC TẾ
+                            ĐÁNH GIÁ THỰC TẾ TỪ HỌC VIÊN
 
                         </span>
 
-                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3 mb-4 font-condensed tracking-wide uppercase">
+                        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3 mb-2 font-condensed tracking-wide uppercase">
 
-                            Hơn 15.000+ Sinh Viên Đã Đạt Điểm A+
+                            Sinh Viên &amp; Học Sinh Nói Gì Về Điệp Viên Tài Liệu
 
                         </h2>
 
                         <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm">
 
-                            Xem những tin nhắn cảm ơn và kết quả điểm số thực tế từ các bạn sinh viên NEU, FTU, TMU, BKHN gửi về cho Shop!
+                            Hàng nghìn học viên đã ôn thi đại học, luyện thi ĐGNL HSA/TSA và hoàn thành học phần xuất sắc.
 
                         </p>
 
                     </div>
 
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-                        <!-- Feedback 1 -->
-
-                        <div class="clean-card hover-lift p-6 flex flex-col justify-between border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] relative">
-
+                        <div class="clean-card p-5 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] flex flex-col justify-between">
                             <div>
-
-                                <div class="flex items-center justify-between mb-4">
-
-                                    <div class="flex items-center gap-3">
-
-                                        <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-xl font-bold text-[#0D1677] dark:text-white border-2 border-[#FFA000]">
-
-                                            MC
-
-                                        </div>
-
-                                        <div>
-
-                                            <h5 class="font-extrabold text-slate-900 dark:text-white text-sm flex items-center gap-1">
-
-                                                <span>Nguyễn Minh Châu</span>
-
-                                                <span class="text-blue-500 text-xs"></span>
-
-                                            </h5>
-
-                                            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold">NEU · Khoa Marketing</div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-black text-[10px] rounded-full border border-emerald-300">
-
-                                        Điểm A+ (9.5)
-
-                                    </span>
-
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-50 text-[#0D1677] dark:bg-white/10 dark:text-sky-300">ĐỀ CƯƠNG ĐẠI HỌC</span>
+                                    <span class="text-amber-500 font-black text-xs">5.0 / 5.0</span>
                                 </div>
-
-                                <div class="bg-slate-50 dark:bg-[#060E2C] p-4 rounded-2xl border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 leading-relaxed italic mb-4">
-
-                                    <div class="text-amber-500 mb-1"></div>
-
-                                    "Anh ơi em vừa nhận điểm BTL Marketing rồi, được 9.5 cao nhất lớp luôn ạ! Thầy khen bài phân tích 4P thực chiến và sâu sắc lắm  Cảm ơn team Điệp Viên Tài Liệu nhiều ạ!"
-
-                                </div>
-
+                                <p class="text-xs text-slate-700 dark:text-slate-200 leading-relaxed">
+                                    "Quét QR 50K xong chưa tới 20 giây là Gmail nhận được thư bàn giao và mở được ngay file Đề cương Kinh tế lượng &amp; Tư tưởng Hồ Chí Minh trên Google Drive. Câu hỏi bám rất sát đề thi cuối kỳ của NEU."
+                                </p>
                             </div>
-
-                            <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-100 dark:border-white/10">
-
-                                <span class="font-bold text-[#0D1677] dark:text-amber-400">Đã Mua BTL</span>
-
-                                <span>2 ngày trước</span>
-
+                            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                                <span>Nguyễn Anh Khoa — NEU</span>
+                                <span>Đã xác thực ACB</span>
                             </div>
-
                         </div>
 
-                        <!-- Feedback 2 -->
-
-                        <div class="clean-card hover-lift p-6 flex flex-col justify-between border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] relative">
-
+                        <div class="clean-card p-5 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] flex flex-col justify-between">
                             <div>
-
-                                <div class="flex items-center justify-between mb-4">
-
-                                    <div class="flex items-center gap-3">
-
-                                        <div class="w-12 h-12 rounded-full bg-amber-100 dark:bg-amber-900 flex items-center justify-center text-xl font-bold text-amber-800 dark:text-white border-2 border-[#FFA000]">
-
-                                            ĐH
-
-                                        </div>
-
-                                        <div>
-
-                                            <h5 class="font-extrabold text-slate-900 dark:text-white text-sm flex items-center gap-1">
-
-                                                <span>Trần Đức Hoàng</span>
-
-                                                <span class="text-blue-500 text-xs"></span>
-
-                                            </h5>
-
-                                            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold">FTU · Kinh Tế Quốc Tế</div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-black text-[10px] rounded-full border border-emerald-300">
-
-                                        Điểm A (9.0)
-
-                                    </span>
-
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-indigo-50 text-indigo-800 dark:bg-white/10 dark:text-indigo-300">COMBO HSA 199K</span>
+                                    <span class="text-amber-500 font-black text-xs">5.0 / 5.0</span>
                                 </div>
-
-                                <div class="bg-slate-50 dark:bg-[#060E2C] p-4 rounded-2xl border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 leading-relaxed italic mb-4">
-
-                                    <div class="text-amber-500 mb-1"></div>
-
-                                    "Siêu đề cương Kinh Tế Lượng trúng tủ 100% phần đọc bảng EViews và biến giả. Nhờ có cẩm nang của shop mà em tự tin làm hết 100% đề thi trong 45 phút, bao qua môn điểm cao luôn!"
-
-                                </div>
-
+                                <p class="text-xs text-slate-700 dark:text-slate-200 leading-relaxed">
+                                    "Mình đăng ký gói Combo ĐGNL HSA 199K, mở App Điệp Viên Study lên là thấy đầy đủ các thư mục bài giảng theo đúng từng giai đoạn. Click vào video phát mượt ngay trên App, tự lưu ghi chú theo ngày giờ cực tiện."
+                                </p>
                             </div>
-
-                            <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-100 dark:border-white/10">
-
-                                <span class="font-bold text-[#0D1677] dark:text-amber-400">Đã Mua Đề Cương</span>
-
-                                <span>Hôm qua</span>
-
+                            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                                <span>Trần Minh Quân — 2K9 Hà Nội</span>
+                                <span>Đã mở khóa Drive</span>
                             </div>
-
                         </div>
 
-                        <!-- Feedback 3 -->
-
-                        <div class="clean-card hover-lift p-6 flex flex-col justify-between border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] relative">
-
+                        <div class="clean-card p-5 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] flex flex-col justify-between">
                             <div>
-
-                                <div class="flex items-center justify-between mb-4">
-
-                                    <div class="flex items-center gap-3">
-
-                                        <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center text-xl font-bold text-purple-800 dark:text-white border-2 border-[#FFA000]">
-
-                                            TT
-
-                                        </div>
-
-                                        <div>
-
-                                            <h5 class="font-extrabold text-slate-900 dark:text-white text-sm flex items-center gap-1">
-
-                                                <span>Lê Thu Thảo</span>
-
-                                                <span class="text-blue-500 text-xs"></span>
-
-                                            </h5>
-
-                                            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold">TMU · Quản Trị Kinh Doanh</div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-black text-[10px] rounded-full border border-emerald-300">
-
-                                        Turnitin 3.8%
-
-                                    </span>
-
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-amber-50 text-amber-800 dark:bg-white/10 dark:text-amber-300">KHÓA LẺ 69K &amp; FULL 399K</span>
+                                    <span class="text-amber-500 font-black text-xs">4.9 / 5.0</span>
                                 </div>
-
-                                <div class="bg-slate-50 dark:bg-[#060E2C] p-4 rounded-2xl border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 leading-relaxed italic mb-4">
-
-                                    <div class="text-amber-500 mb-1"></div>
-
-                                    "Lúc đầu em cũng lo bị đạo văn vì trường em quét Turnitin gắt lắm. Nhưng kết quả ra có 3.8% thôi! Bài viết mượt mà, trích dẫn tài liệu chuẩn chỉnh. 10/10 uy tín luôn shop ơi."
-
-                                </div>
-
+                                <p class="text-xs text-slate-700 dark:text-slate-200 leading-relaxed">
+                                    "Lúc đầu mình mua lẻ khóa Toán thầy Đỗ Văn Đức 69K để học thử, thấy video nét và tài liệu PDF trên Drive sắp xếp khoa học quá nên nâng cấp luôn gói Full 399K để ôn cả Lý, Hóa và TSA Bách Khoa."
+                                </p>
                             </div>
-
-                            <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-100 dark:border-white/10">
-
-                                <span class="font-bold text-[#0D1677] dark:text-amber-400">Đã Mua Tiểu Luận</span>
-
-                                <span>3 ngày trước</span>
-
+                            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                                <span>Lê Hoàng Nam — HUST</span>
+                                <span>Học viên App Study</span>
                             </div>
-
                         </div>
 
-                        <!-- Feedback 4 -->
-
-                        <div class="clean-card hover-lift p-6 flex flex-col justify-between border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] relative">
-
+                        <div class="clean-card p-5 rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] flex flex-col justify-between">
                             <div>
-
-                                <div class="flex items-center justify-between mb-4">
-
-                                    <div class="flex items-center gap-3">
-
-                                        <div class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center text-xl font-bold text-emerald-800 dark:text-white border-2 border-[#FFA000]">
-
-                                            TA
-
-                                        </div>
-
-                                        <div>
-
-                                            <h5 class="font-extrabold text-slate-900 dark:text-white text-sm flex items-center gap-1">
-
-                                                <span>Vũ Tuấn Anh</span>
-
-                                                <span class="text-blue-500 text-xs"></span>
-
-                                            </h5>
-
-                                            <div class="text-[11px] text-slate-500 dark:text-slate-400 font-semibold">BKHN · CNTT & Truyền Thông</div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <span class="px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-black text-[10px] rounded-full border border-emerald-300">
-
-                                        Hỏa Tốc 10h
-
-                                    </span>
-
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-50 text-emerald-800 dark:bg-white/10 dark:text-emerald-300">HỖ TRỢ HỌC THUẬT BTL</span>
+                                    <span class="text-amber-500 font-black text-xs">5.0 / 5.0</span>
                                 </div>
-
-                                <div class="bg-slate-50 dark:bg-[#060E2C] p-4 rounded-2xl border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-300 leading-relaxed italic mb-4">
-
-                                    <div class="text-amber-500 mb-1"></div>
-
-                                    "Deadline gấp 12h tưởng chừng phải nợ môn, may nhờ shop hỗ trợ hỏa tốc xử lý bàn giao trước 2 tiếng. Bài làm CSDL chuẩn chỉ, chạy truy vấn SQL chuẩn đét. Cứu tinh của đời em!"
-
-                                </div>
-
+                                <p class="text-xs text-slate-700 dark:text-slate-200 leading-relaxed">
+                                    "Bài tiểu luận Quản trị chiến lược được trình bày chuẩn chỉnh từ trang bìa, mục lục tự động đến trích dẫn giáo trình chuẩn. Giảng viên góp ý bổ sung bảng số liệu là đội ngũ hỗ trợ qua Zalo sửa ngay trong ngày."
+                                </p>
                             </div>
-
-                            <div class="flex items-center justify-between text-[11px] text-slate-400 pt-2 border-t border-slate-100 dark:border-white/10">
-
-                                <span class="font-bold text-[#0D1677] dark:text-amber-400">Đã Mua Báo Cáo</span>
-
-                                <span>4 ngày trước</span>
-
+                            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                                <span>Nguyễn Thùy Linh — TMU</span>
+                                <span>Điểm A học phần</span>
                             </div>
-
                         </div>
 
                     </div>
@@ -3076,11 +2920,11 @@
 
         <!-- ================================================================
 
-             VIEW 6: CÂU HỎI THƯỜNG GẶP (FAQ)
+             VIEW 6: CÂU HỎI THƯỜNG GẶP (FAQ CHUẨN SEO — ĐỀ CƯƠNG · KHÓA HỌC · HỖ TRỢ HỌC THUẬT)
 
              ================================================================ -->
 
-        <div id="viewFaq" class="hidden py-16 bg-white dark:bg-[#0A143D] min-h-screen transition-colors">
+        <div id="viewFaq" class="hidden py-12 sm:py-16 bg-white dark:bg-[#0A143D] min-h-screen transition-colors">
 
             <div class="max-w-4xl mx-auto px-4 sm:px-6">
 
@@ -3088,192 +2932,207 @@
 
                 <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-6">
 
-                    <button onclick="switchView('home')" class="hover:text-blue-700">Trang chủ</button>
+                    <button onclick="switchView('home')" class="hover:text-blue-700 font-semibold">Trang chủ</button>
 
                     <span>/</span>
 
-                    <span class="text-slate-900 dark:text-white font-bold">Hỏi Đáp FAQ</span>
+                    <span class="text-slate-900 dark:text-white font-bold">Hỏi Đáp &amp; Hướng Dẫn Sử Dụng</span>
 
                 </div>
 
-                <div class="text-center mb-12">
+                <div class="text-center mb-10">
 
                     <span class="px-3.5 py-1 bg-blue-50 dark:bg-blue-950 text-[#0B1958] dark:text-sky-300 font-extrabold text-xs rounded-full uppercase tracking-wider border border-blue-200 dark:border-blue-800">
 
-                        GIẢI ĐÁP TẬN TÂM
+                        CẨM NANG GIẢI ĐÁP TOÀN DIỆN
 
                     </span>
 
-                    <h2 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white mt-3 font-condensed tracking-wide uppercase">
+                    <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3 font-condensed tracking-wide uppercase">
 
-                        Câu Hỏi Thường Gặp Của Sinh Viên
+                        Câu Hỏi Thường Gặp Về Đề Cương, Khóa Học &amp; Học Thuật
 
                     </h2>
 
                     <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2">
 
-                        <svg class="inline-block w-4 h-4 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> Bấm vào từng câu hỏi bên dưới để mở cửa sổ thông báo và cẩm nang hướng dẫn đầy đủ nhất!
+                        Bấm trực tiếp vào từng câu hỏi bên dưới để mở phần giải đáp chi tiết ngay tại chỗ hoặc xem cửa sổ hướng dẫn đầy đủ.
 
                     </p>
 
                 </div>
 
-                <!-- 4 FAQ Cards -->
+                <!-- 6 Interactive SEO FAQ Cards (Inline Accordion + Modal Support) -->
 
-                <div class="space-y-4">
+                <div class="space-y-3.5">
 
                     <!-- FAQ 1 -->
-
-                    <div onclick="openFaqDetailModal(0)" class="clean-card hover-lift p-5 cursor-pointer flex items-center justify-between group transition-all border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D]">
-
-                        <div class="flex items-center gap-4">
-
-                            <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm">
-
-                                Q1
-
-                            </span>
-
-                            <div>
-
-                                <h4 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-600 dark:group-hover:text-amber-400 transition">
-
-                                    1. Mua đề cương xong thì tôi nhận tài liệu như thế nào?
-
-                                </h4>
-
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-
-                                    Nhận tài liệu qua Google Drive chính chủ tự động trong 1-3 phút
-
-                                </p>
-
+                    <article class="clean-card rounded-2xl border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] overflow-hidden transition-all">
+                        <div onclick="toggleFaqAccordion(0, event)" class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm shrink-0">Q1</span>
+                                <div class="min-w-0">
+                                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-700 dark:group-hover:text-amber-400 transition">
+                                        1. Mua Đề cương ôn tập (50.000đ) xong thì tôi nhận và mở tài liệu như thế nào?
+                                    </h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Đối soát VietQR ACB tự động 24/7 — Gửi Email bàn giao &amp; mở quyền Google Drive ngay lập tức
+                                    </p>
+                                </div>
                             </div>
-
+                            <button type="button" onclick="toggleFaqAccordion(0, event)" class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 hover:bg-blue-100 px-3.5 py-2 rounded-xl flex items-center gap-1.5 shrink-0 transition">
+                                <span id="faqBtnLabel_0">Thu gọn giải đáp</span>
+                                <svg id="faqChevron_0" class="w-3.5 h-3.5 transition-transform" style="transform:rotate(180deg)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
                         </div>
-
-                        <span class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 px-3.5 py-2 rounded-xl flex items-center gap-1.5 group-hover:scale-105 transition">
-
-                            <span>Xem giải đáp & thông báo</span> 
-
-                        </span>
-
-                    </div>
+                        <div id="faqInlineAns_0" class="px-5 pb-5 pt-2 border-t border-slate-100 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50/70 dark:bg-white/5">
+                            Ngay sau khi bạn quét mã VietQR ngân hàng ACB hoàn tất chuyển khoản đúng nội dung đơn hàng, hệ thống đối soát tự động 24/7 trong <strong>10 - 30 giây</strong> sẽ gửi Email bàn giao kèm đường dẫn Google Drive về đúng địa chỉ Gmail bạn đã đăng ký. Đồng thời, tài liệu được mở quyền xem trực tiếp trên Google Drive và đồng bộ trên App Điệp Viên Study.
+                        </div>
+                    </article>
 
                     <!-- FAQ 2 -->
-
-                    <div onclick="openFaqDetailModal(1)" class="clean-card hover-lift p-5 cursor-pointer flex items-center justify-between group transition-all border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D]">
-
-                        <div class="flex items-center gap-4">
-
-                            <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm">
-
-                                Q2
-
-                            </span>
-
-                            <div>
-
-                                <h4 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-600 dark:group-hover:text-amber-400 transition">
-
-                                    2. Dịch vụ viết BTL / Tiểu Luận có cam kết không đạo văn không?
-
-                                </h4>
-
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-
-                                    Cam kết 100% bài viết mới, gửi kèm báo cáo Turnitin / DoIT &lt; 10%
-
-                                </p>
-
+                    <article class="clean-card rounded-2xl border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] overflow-hidden transition-all">
+                        <div onclick="toggleFaqAccordion(1, event)" class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm shrink-0">Q2</span>
+                                <div class="min-w-0">
+                                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-700 dark:group-hover:text-amber-400 transition">
+                                        2. Khóa học Lẻ 69K, Combo Tổ hợp &amp; ĐGNL 199K và Full Trọn Bộ 399K học trên App và Google Drive ra sao?
+                                    </h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Xem video trực tiếp trong App Điệp Viên Study &amp; mở tài liệu PDF/Sheet trực tiếp trên Google Drive
+                                    </p>
+                                </div>
                             </div>
-
+                            <button type="button" onclick="toggleFaqAccordion(1, event)" class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 hover:bg-blue-100 px-3.5 py-2 rounded-xl flex items-center gap-1.5 shrink-0 transition">
+                                <span id="faqBtnLabel_1">Xem giải đáp chi tiết</span>
+                                <svg id="faqChevron_1" class="w-3.5 h-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
                         </div>
-
-                        <span class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 px-3.5 py-2 rounded-xl flex items-center gap-1.5 group-hover:scale-105 transition">
-
-                            <span>Xem giải đáp & thông báo</span> 
-
-                        </span>
-
-                    </div>
+                        <div id="faqInlineAns_1" class="hidden px-5 pb-5 pt-2 border-t border-slate-100 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50/70 dark:bg-white/5 space-y-2">
+                            <p>Hệ thống liên kết đồng bộ hai chiều giữa <strong>Gmail &leftrightarrow; Google Drive &leftrightarrow; Web &amp; App Điệp Viên Study</strong>:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li><strong>Gói Khóa Lẻ 1 Môn (69.000đ):</strong> Mở khóa toàn bộ video bài giảng Full HD và tài liệu PDF của đúng 01 khóa học thầy cô hoặc kỳ thi bạn chọn.</li>
+                                <li><strong>Gói Combo Tổ Hợp &amp; ĐGNL / ĐGTD (199.000đ):</strong> Mở khóa trọn bộ tổ hợp môn (KHTN 1-2, KHXH 1-2) hoặc khóa luyện thi ĐGNL HSA ĐHQGHN, ĐGTD TSA Bách Khoa, V-ACT ĐHQG TP.HCM.</li>
+                                <li><strong>Gói Full Trọn Bộ 38+ Khóa Học (399.000đ):</strong> Mở khóa 100% toàn bộ kho khóa học THPT Quốc gia, ĐGNL, ĐGTD, Đại học, Ngoại ngữ, Tin học MOS cùng mọi đợt cập nhật đề thi mới.</li>
+                            </ul>
+                            <p>Trên <strong>App Điệp Viên Study</strong>, danh mục bài giảng hiển thị dạng cây thư mục giống Google Drive: click vào <strong>Thư mục</strong> để mở các chương/chuyên đề con; click vào <strong>Video</strong> để phát trực tiếp ngay trong App; click vào <strong>Tài liệu PDF/Sheet</strong> để mở trực tiếp trên Google Drive.</p>
+                        </div>
+                    </article>
 
                     <!-- FAQ 3 -->
-
-                    <div onclick="openFaqDetailModal(2)" class="clean-card hover-lift p-5 cursor-pointer flex items-center justify-between group transition-all border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D]">
-
-                        <div class="flex items-center gap-4">
-
-                            <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm">
-
-                                Q3
-
-                            </span>
-
-                            <div>
-
-                                <h4 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-600 dark:group-hover:text-amber-400 transition">
-
-                                    3. Nếu giảng viên yêu cầu sửa bài thì có mất thêm tiền không?
-
-                                </h4>
-
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-
-                                    Miễn phí 100% chỉnh sửa bài trong vòng 4 ngày theo nhận xét GVHD
-
-                                </p>
-
+                    <article class="clean-card rounded-2xl border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] overflow-hidden transition-all">
+                        <div onclick="toggleFaqAccordion(2, event)" class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm shrink-0">Q3</span>
+                                <div class="min-w-0">
+                                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-700 dark:group-hover:text-amber-400 transition">
+                                        3. Dịch vụ Hỗ trợ học thuật, Tiểu luận &amp; Bài tập lớn (BTL) cam kết chất lượng và chỉnh sửa như thế nào?
+                                    </h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Biên soạn từ giáo trình chuẩn, trình bày chuẩn in ấn A4 &amp; miễn phí chỉnh sửa theo góp ý GVHD
+                                    </p>
+                                </div>
                             </div>
-
+                            <button type="button" onclick="toggleFaqAccordion(2, event)" class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 hover:bg-blue-100 px-3.5 py-2 rounded-xl flex items-center gap-1.5 shrink-0 transition">
+                                <span id="faqBtnLabel_2">Xem giải đáp chi tiết</span>
+                                <svg id="faqChevron_2" class="w-3.5 h-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
                         </div>
-
-                        <span class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 px-3.5 py-2 rounded-xl flex items-center gap-1.5 group-hover:scale-105 transition">
-
-                            <span>Xem giải đáp & thông báo</span> 
-
-                        </span>
-
-                    </div>
+                        <div id="faqInlineAns_2" class="hidden px-5 pb-5 pt-2 border-t border-slate-100 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50/70 dark:bg-white/5">
+                            Mỗi đề tài Tiểu luận, Báo cáo thực tập, Bài tập lớn và Đồ án môn học đều được nghiên cứu sâu từ tối thiểu 02 nguồn giáo trình đại học chuẩn và văn bản pháp luật hiện hành. Bài làm được căn chỉnh chuẩn in ấn A4 (Times New Roman 13pt, lề chuẩn, mục lục tự động), kiểm duyệt chống đạo văn nghiêm ngặt và hỗ trợ chỉnh sửa miễn phí theo nhận xét của Giảng viên hướng dẫn qua Zalo.
+                        </div>
+                    </article>
 
                     <!-- FAQ 4 -->
-
-                    <div onclick="openFaqDetailModal(3)" class="clean-card hover-lift p-5 cursor-pointer flex items-center justify-between group transition-all border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D]">
-
-                        <div class="flex items-center gap-4">
-
-                            <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm">
-
-                                Q4
-
-                            </span>
-
-                            <div>
-
-                                <h4 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-600 dark:group-hover:text-amber-400 transition">
-
-                                    4. Thông tin cá nhân của tôi có được bảo mật an toàn không?
-
-                                </h4>
-
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-
-                                    Bảo mật danh tính sinh viên 100% theo thỏa thuận NDA &amp; tiêu hủy dữ liệu sau khi hoàn thành
-
-                                </p>
-
+                    <article class="clean-card rounded-2xl border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] overflow-hidden transition-all">
+                        <div onclick="toggleFaqAccordion(3, event)" class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm shrink-0">Q4</span>
+                                <div class="min-w-0">
+                                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-700 dark:group-hover:text-amber-400 transition">
+                                        4. Vì sao tôi cần nhập đúng Gmail và Số điện thoại Zalo (chỉ nhập chữ số) khi hoàn thành giao dịch?
+                                    </h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Gmail nhận quyền Google Drive &amp; Email bàn giao tự động; Số điện thoại Zalo nhận hỗ trợ trực tiếp
+                                    </p>
+                                </div>
                             </div>
-
+                            <button type="button" onclick="toggleFaqAccordion(3, event)" class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 hover:bg-blue-100 px-3.5 py-2 rounded-xl flex items-center gap-1.5 shrink-0 transition">
+                                <span id="faqBtnLabel_3">Xem giải đáp chi tiết</span>
+                                <svg id="faqChevron_3" class="w-3.5 h-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
                         </div>
+                        <div id="faqInlineAns_3" class="hidden px-5 pb-5 pt-2 border-t border-slate-100 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50/70 dark:bg-white/5">
+                            Hệ thống vận hành theo kiến trúc liên kết <strong>Gmail - Google Drive - Web/App</strong>: Địa chỉ <strong>Gmail</strong> dùng để cấp quyền Viewer trực tiếp vào đúng thư mục khóa học / tệp đề cương trên Google Drive và nhận Email bàn giao tự động ngay khi thanh toán xong. <strong>Số điện thoại Zalo (10 chữ số)</strong> giúp bộ phận học thuật hỗ trợ kỹ thuật, giải đáp bài học và bàn giao Bài tập lớn nhanh chóng.
+                        </div>
+                    </article>
 
-                        <span class="w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 text-slate-400 group-hover:bg-[#0D1677] group-hover:text-white flex items-center justify-center font-bold text-sm transition flex-shrink-0"></span>
+                    <!-- FAQ 5 -->
+                    <article class="clean-card rounded-2xl border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] overflow-hidden transition-all">
+                        <div onclick="toggleFaqAccordion(4, event)" class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm shrink-0">Q5</span>
+                                <div class="min-w-0">
+                                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-700 dark:group-hover:text-amber-400 transition">
+                                        5. Tính năng Tự động ghi âm, Ghi chú bài học và Hỏi đáp AI trên App Điệp Viên Study hoạt động thế nào?
+                                    </h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Tự động bật khi phát video, tự động dừng &amp; lưu vào Ghi chú kèm ngày giờ khi chuyển bài hoặc thoát
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" onclick="toggleFaqAccordion(4, event)" class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 hover:bg-blue-100 px-3.5 py-2 rounded-xl flex items-center gap-1.5 shrink-0 transition">
+                                <span id="faqBtnLabel_4">Xem giải đáp chi tiết</span>
+                                <svg id="faqChevron_4" class="w-3.5 h-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                        </div>
+                        <div id="faqInlineAns_4" class="hidden px-5 pb-5 pt-2 border-t border-slate-100 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50/70 dark:bg-white/5">
+                            Khi bạn bấm chọn phát một video bài giảng trên App Điệp Viên Study, hệ thống tự động kích hoạt ghi âm và ghi chú nội dung bài học (chỉ cần 01 nút duy nhất để Tạm dừng / Khởi động tiếp). Khi bạn chuyển sang video khác hoặc bấm Quay lại để thoát, hệ thống tự động dừng ghi và lưu toàn bộ nội dung kèm mốc <strong>[Ngày/Tháng/Năm Giờ:Phút]</strong> vào mục <strong>Ghi chú</strong> chung.
+                        </div>
+                    </article>
 
-                    </div>
+                    <!-- FAQ 6 -->
+                    <article class="clean-card rounded-2xl border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-[#0A143D] overflow-hidden transition-all">
+                        <div onclick="toggleFaqAccordion(5, event)" class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 group">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-black flex items-center justify-center text-sm shrink-0">Q6</span>
+                                <div class="min-w-0">
+                                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base group-hover:text-blue-700 dark:group-hover:text-amber-400 transition">
+                                        6. Thông tin cá nhân và tài khoản học tập của sinh viên có được bảo mật tuyệt đối không?
+                                    </h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Bảo mật 100% hồ sơ khách hàng, lưu trữ duy nhất 1 hồ sơ định danh theo Gmail &amp; phân quyền Drive riêng biệt
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" onclick="toggleFaqAccordion(5, event)" class="text-xs font-bold text-[#0D1677] dark:text-amber-400 bg-blue-50 dark:bg-white/10 hover:bg-blue-100 px-3.5 py-2 rounded-xl flex items-center gap-1.5 shrink-0 transition">
+                                <span id="faqBtnLabel_5">Xem giải đáp chi tiết</span>
+                                <svg id="faqChevron_5" class="w-3.5 h-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                        </div>
+                        <div id="faqInlineAns_5" class="hidden px-5 pb-5 pt-2 border-t border-slate-100 dark:border-white/10 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50/70 dark:bg-white/5">
+                            Điệp Viên Tài Liệu cam kết bảo mật tuyệt đối 100% thông tin cá nhân, Gmail, số điện thoại Zalo, tên trường và đề tài học thuật của sinh viên. Mỗi tài khoản đã đăng ký chỉ lưu duy nhất 01 dòng hồ sơ định danh trên hệ thống, quyền truy cập Google Drive được cấp riêng cho Gmail chính chủ và tuyệt đối không chia sẻ cho bên thứ ba.
+                        </div>
+                    </article>
 
                 </div>
 
             </div>
 
+        </div>
+
+        <!-- MODAL CHI TIẾT FAQ (HỖ TRỢ KHI GỌI openFaqDetailModal) -->
+        <div id="faqDetailModal" class="fixed inset-0 z-[95] hidden items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm" onclick="if(event.target===this)closeFaqDetailModal()">
+            <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-xl w-full p-6 shadow-2xl border border-slate-200 dark:border-white/10 relative" onclick="event.stopPropagation()">
+                <button type="button" onclick="closeFaqDetailModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-red-100 text-slate-600 dark:text-slate-200 hover:text-red-600 font-black flex items-center justify-center transition">&times;</button>
+                <span class="px-3 py-1 bg-blue-50 dark:bg-blue-950 text-[#0D1677] dark:text-sky-300 font-extrabold text-[10px] rounded-full uppercase border border-blue-200 dark:border-blue-800">GIẢI ĐÁP CHI TIẾT</span>
+                <h3 id="faqModalQuestion" class="text-base sm:text-lg font-black text-slate-900 dark:text-white mt-2.5 mb-3 pr-6">Câu hỏi</h3>
+                <div id="faqModalAnswer" class="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed bg-slate-50 dark:bg-white/5 p-4 rounded-2xl border border-slate-200/70 dark:border-white/10"></div>
+                <div class="mt-4 flex justify-end">
+                    <button type="button" onclick="closeFaqDetailModal()" class="px-5 py-2 rounded-xl bg-[#0D1677] hover:bg-[#1E40AF] text-white font-bold text-xs transition">Đã hiểu</button>
+                </div>
+            </div>
         </div>
 
     <!-- ================================================================

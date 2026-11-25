@@ -1248,11 +1248,11 @@ function getNaturalWebDocStats(doc, index = 0) {
     const origPool = [95000, 100000, 110000, 115000, 120000, 125000, 130000, 135000, 140000, 150000];
     const tagPairsPool = [
         ["Tóm Tắt Trọng Tâm", "Câu Hỏi & Đáp Án"],
-        ["Trắc Nghiệm Có Giải Thích", "Đề Thi Các Năm"],
+        ["Trắc Nghiệm Ôn Thi", "Đề Thi Các Năm"],
         ["Lý Thuyết Cốt Lõi", "Bài Tập & Lời Giải"],
         ["Tự Luận & Vấn Đáp", "Bám Sát Đề Cuối Kỳ"],
-        ["Công Thức & Dạng Bài", "Hướng Dẫn Giải Nhanh"],
-        ["Ngân Hàng Câu Hỏi", "Chuẩn Giáo Trình Mới"]
+        ["Công Thức & Dạng Bài", "Giải Nhanh Chi Tiết"],
+        ["Ngân Hàng Câu Hỏi", "Chuẩn Đề Thi Mới"]
     ];
     const pages = (doc.pages && doc.pages !== 42 && doc.pages >= 16) ? doc.pages : pagesPool[h % pagesPool.length];
     const rating = (doc.rating && String(doc.rating) !== "5" && String(doc.rating) !== "5.0") ? String(doc.rating) : ratingsPool[(h >>> 4) % ratingsPool.length];
@@ -1286,8 +1286,8 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
     const nat = getNaturalWebDocStats(doc, index);
 
     return `
-        <div class="clean-card hover-lift overflow-hidden flex flex-col justify-between transition-all duration-300 border-2 border-slate-200 dark:border-white/10 shadow-sm hover:shadow-2xl rounded-[22px]">
-            <div class="relative p-4 text-white flex flex-col justify-between min-h-[205px] select-none rounded-t-[20px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
+        <div class="clean-card hover-lift overflow-hidden flex flex-col justify-start h-full transition-all duration-300 border-2 border-slate-200 dark:border-white/10 shadow-sm hover:shadow-2xl rounded-[22px]">
+            <div class="relative p-4 text-white flex flex-col justify-between h-[204px] min-h-[204px] max-h-[204px] shrink-0 select-none rounded-t-[20px] overflow-hidden" style="background: linear-gradient(160deg, #0B1958 0%, #071135 60%, #0D1677 100%);">
                 <div class="flex justify-between items-center z-10">
                     <div class="flex items-center gap-1.5 bg-black/60 px-2.5 py-1 rounded-xl border border-white/20 backdrop-blur-md shadow-sm">
                         <img src="${mascotBadge}" alt="Logo" class="w-4 h-4 object-contain" loading="lazy" decoding="async">
@@ -1319,10 +1319,10 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
                         <span class="text-[10px] font-bold text-sky-300 bg-black/50 px-2 py-0.5 rounded border border-white/15">#${doc.code}</span>
                         ${doc.isReal ? '<span class="text-[9px] font-extrabold text-amber-300 bg-amber-950/70 border border-amber-400/40 px-2 py-0.5 rounded-full ml-auto"> CÓ SẴN FILE DRIVE</span>' : ''}
                     </div>
-                    <h4 class="font-condensed font-black text-base sm:text-lg text-white tracking-wide uppercase leading-snug line-clamp-2 drop-shadow-md">
+                    <h4 class="font-condensed font-black text-base sm:text-[17px] text-white tracking-wide uppercase leading-[1.28] h-[44px] min-h-[44px] max-h-[44px] line-clamp-2 overflow-hidden drop-shadow-md">
                         ${fullDocTitle}
                     </h4>
-                    <div class="flex items-center gap-2.5 mt-2 text-[10px]">
+                    <div class="flex items-center gap-2.5 mt-1.5 text-[10px]">
                         <span class="text-amber-300 font-bold"><svg class="inline-block w-3.5 h-3.5 shrink-0 align-[-2px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg> ${nat.pages} Trang A4</span>
                         <span class="text-emerald-300 font-bold inline-flex items-center gap-1"><svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>${nat.rating} (${nat.reviewsCount})</span>
                         <span class="text-sky-200 font-bold">Google Drive</span>
@@ -1339,9 +1339,9 @@ function buildSingleDocumentCardHtml(doc, index, selectedUni) {
                 </div>
             </div>
 
-            <div class="p-3.5 bg-white dark:bg-[#0A143D] flex flex-col gap-2.5">
-                <div class="flex items-center gap-1.5 flex-wrap">
-                    ${nat.tags.map(t => `<span class="text-[10px] font-bold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-md border border-slate-200 dark:border-white/10">${t}</span>`).join('')}
+            <div class="p-3.5 bg-white dark:bg-[#0A143D] flex-1 flex flex-col justify-between gap-2.5">
+                <div class="grid grid-cols-2 gap-1.5 w-full">
+                    ${nat.tags.slice(0, 2).map(t => `<span class="text-[10px] font-bold bg-slate-100/90 dark:bg-white/10 text-slate-700 dark:text-slate-200 px-1.5 py-1.5 rounded-lg border border-slate-200/90 dark:border-white/10 text-center whitespace-nowrap overflow-hidden" title="${t}">${t}</span>`).join('')}
                 </div>
 
                 <div class="pt-2 border-t border-slate-100 dark:border-white/10">
@@ -1596,9 +1596,11 @@ function openDocCheckoutModal(docId, customTitle = null) {
     const savedPhone = (cust.phone || "").replace(/\[.*\]/g, "").trim();
     const savedName = (cust.name || "").trim() || (savedEmail ? savedEmail.split("@")[0] : "Khách Hàng");
 
-    if (savedEmail.includes("@")) {
+    const savedDigitsPhone = savedPhone.replace(/\D+/g, "");
+    if (savedEmail.includes("@") && /^0\d{9,10}$/.test(savedDigitsPhone)) {
         const payload = {
             action: "createOrder",
+            silent: "1",
             orderCode: orderCode,
             transferMemo: orderCode,
             name: savedName,
@@ -1859,26 +1861,27 @@ async function confirmDocManualPayment() {
         return;
     }
 
-    if (digitsPhone.length < 9) {
+    if (!/^0\d{9,10}$/.test(digitsPhone)) {
         if (fbEl) {
             fbEl.classList.remove("hidden");
-            fbEl.textContent = "Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!";
+            fbEl.textContent = "Bắt buộc nhập đúng số điện thoại Zalo (10 chữ số bắt đầu bằng số 0) để hoàn thành giao dịch!";
         }
         if (phoneInputEl) phoneInputEl.focus();
-        alert("Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!");
+        alert("Bắt buộc nhập đúng số điện thoại Zalo (10 chữ số bắt đầu bằng số 0) để hoàn thành giao dịch!");
         return;
     }
 
-    const name = (cust.name || "").trim() || email.split("@")[0];
-    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_DOC_CONFIRM" });
+    const name = (cust.name || "").trim() || finalEmail.split("@")[0];
+    saveCustomerProfileEverywhere({ name, phone: digitsPhone, email: finalEmail, source: "WEB_DOC_CONFIRM" });
 
     const payload = {
         action: "createOrder",
+        silent: "1",
         orderCode: orderCode,
         transferMemo: orderCode,
         name: name,
-        email: email,
-        phone: rawPhone,
+        email: finalEmail,
+        phone: digitsPhone,
         sku: state.selectedDoc?.code || "",
         itemName: state.selectedDoc?.name || "",
         price: state.selectedDoc?.price || 50000,
@@ -1898,7 +1901,7 @@ async function confirmDocManualPayment() {
     }
     if (!state.webhookUrl || !orderCode) return;
     try {
-        const verifyUrl = buildDocVerifyUrl(orderCode, email) + '&manual=1';
+        const verifyUrl = buildDocVerifyUrl(orderCode, finalEmail) + '&manual=1';
         const res = await fetch(verifyUrl, { method: "GET", mode: "cors", cache: "no-store" });
         const data = await res.json();
         if (data && (data.verified === true || data.paid === true)) {
@@ -2159,36 +2162,37 @@ async function submitServiceOrder(e) {
 
 
 
-function openFaqDetailModal(faqIndex) {
+function toggleFaqAccordion(faqIndex, ev) {
+    if (ev) ev.stopPropagation();
+    const ansBox = document.getElementById(`faqInlineAns_${faqIndex}`);
+    const btnTxt = document.getElementById(`faqBtnLabel_${faqIndex}`);
+    const chev = document.getElementById(`faqChevron_${faqIndex}`);
+    if (ansBox) {
+        const isHidden = ansBox.classList.contains("hidden");
+        ansBox.classList.toggle("hidden", !isHidden);
+        if (btnTxt) btnTxt.textContent = isHidden ? "Thu gọn giải đáp" : "Xem giải đáp chi tiết";
+        if (chev) chev.style.transform = isHidden ? "rotate(180deg)" : "rotate(0deg)";
+    }
+}
 
-    const faq = FAQ_DATABASE[faqIndex];
-
+function openFaqDetailModal(faqIndex, ev) {
+    if (ev) ev.stopPropagation();
+    toggleFaqAccordion(faqIndex);
+    const faq = (typeof FAQ_DATABASE !== "undefined") ? FAQ_DATABASE[faqIndex] : null;
     if (!faq) return;
 
-    
-
     const modal = document.getElementById("faqDetailModal");
-
     const qElem = document.getElementById("faqModalQuestion");
-
     const aElem = document.getElementById("faqModalAnswer");
 
-    
-
     if (qElem) qElem.textContent = faq.question;
-
-    if (aElem) aElem.innerHTML = faq.answer.replace(/\n\n/g, '<br><br>');
-
-    
+    if (aElem) aElem.innerHTML = String(faq.answer || "").replace(/\n\n/g, "<br><br>").replace(/\n/g, "<br>");
 
     if (modal) {
-
         modal.classList.remove("hidden");
-
+        modal.classList.add("flex");
         document.body.style.overflow = "hidden";
-
     }
-
 }
 
 
@@ -2710,7 +2714,15 @@ function handleWebCourseCoverChange(event) {
 
 
 
+let _webCourseComboboxesInited = false;
 function renderCourseCategoryTabs() {
+    if (!_webCourseComboboxesInited && typeof initWebCourseComboboxes === "function") {
+        _webCourseComboboxesInited = true;
+        try { initWebCourseComboboxes(); } catch (_) {}
+    } else {
+        try { if (typeof renderWebSubjTrigger === "function") renderWebSubjTrigger(); } catch (_) {}
+        try { if (typeof renderWebProgTrigger === "function") renderWebProgTrigger(); } catch (_) {}
+    }
 
     const container = document.getElementById("courseCategoryTabs");
 
@@ -3418,11 +3430,25 @@ function renderSingleCourseCardHtml(course) {
     `;
 }
 
+function clearWebCourseSearchInput() {
+    const inp = document.getElementById("courseSearchInput");
+    if (inp) {
+        inp.value = "";
+        inp.focus();
+    }
+    renderCourses();
+}
+
 function renderCourses() {
     const grid = document.getElementById("coursesGrid");
     if (!grid || typeof COURSES_DATABASE === "undefined") return;
 
-    const searchQ = (document.getElementById("courseSearchInput")?.value || "").trim().toLowerCase();
+    const rawVal = document.getElementById("courseSearchInput")?.value || "";
+    const searchQ = rawVal.trim().toLowerCase();
+    const clearBtn = document.getElementById("courseSearchClearBtn");
+    if (clearBtn) {
+        clearBtn.classList.toggle("hidden", !searchQ);
+    }
     const searchNorm = typeof removeVietnameseTones === "function" ? removeVietnameseTones(searchQ) : searchQ;
 
     const visibleCatalogCourses = COURSES_DATABASE.filter(c => !c.isPackageOnly);
@@ -4026,9 +4052,11 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
         qrImg.src = `https://img.vietqr.io/image/ACB-27820961-compact2.png?amount=${course.price}&addInfo=${encodeURIComponent(transferMemo)}&accountName=TRINH%20DUC%20THINH`;
     }
 
-    if (email.includes("@")) {
+    const initDigitsPhone = rawPhone.replace(/\D+/g, "");
+    if (email.includes("@") && /^0\d{9,10}$/.test(initDigitsPhone)) {
         const payload = {
             action: "createOrder",
+            silent: "1",
             type: "COURSE_REGISTRATION",
             orderType: "Khóa Học",
             status: "PENDING",
@@ -4137,26 +4165,7 @@ function onCoursePaymentConfirmed(orderCode, courseTitle, email, serverDriveUrl 
     const resolvedDriveUrl = serverDriveUrl || (course && course.driveUrl) || "https://drive.google.com/drive/folders/1_1RwRFjIYJO0BmmJEEqVV-4-GNOkLcNQ";
 
     // Gửi 1 yêu cầu đồng bộ duy nhất tới Kho Phát File (cấp quyền song song cả folder chính + extraFolderIds, chống trùng mail 100%)
-    const warehouseWebhook = "https://script.google.com/macros/s/AKfycbxMOdsNkhY8-5xQtZ_86STf781VdFJbRsLkK6n8qRF4ENqreMsl4CdELYn-85wHcqvx/exec";
-    if (course && email) {
-        fetch(warehouseWebhook, {
-            method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "text/plain;charset=utf-8" },
-            body: JSON.stringify({
-                secret: "DVTL_SECRET_2026_TCCM_TO_DIEPVIEN",
-                email: email,
-                name: name,
-                orderCode: orderCode,
-                itemName: course.title,
-                orderType: "Khóa Học Ôn Thi Bản Quyền",
-                isCourse: true,
-                fileId: course.driveFolderId || "",
-                extraFolderIds: course.extraFolderIds || [],
-                fileLink: resolvedDriveUrl
-            })
-        }).catch(() => {});
-    }
+    // Quyền Google Drive & Email bàn giao đã được GAS chính chủ cấp tự động ngay khi khớp biến động ACB
 
     const prev = getSyncedCustomerLocal() || {};
     const unlockedList = expandWebUnlockedCourses([...(prev.unlockedCourses || []), course ? course.id : ""]);
@@ -4408,7 +4417,7 @@ function saveCustomerProfileEverywhere(payload = {}) {
         phone: cleanPhone,
         picture: picture !== undefined ? picture : (sameEmailAsPrev ? (prev.picture || "") : ""),
         verifiedByGoogle: nextVerifiedByGoogle,
-        isAdmin: isAdmin !== undefined ? Boolean(isAdmin) : Boolean(nextVerifiedByGoogle && ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(cleanEmail)),
+        isAdmin: isAdmin !== undefined ? Boolean(isAdmin) : Boolean(nextVerifiedByGoogle && ["diepvientailieu@gmail.com"].includes(cleanEmail)),
         unlockedCourses: Array.isArray(unlockedCourses) ? unlockedCourses : (sameEmailAsPrev ? (prev.unlockedCourses || []) : []),
         purchasedDocs: Array.isArray(purchasedDocs) ? purchasedDocs : (sameEmailAsPrev ? (prev.purchasedDocs || []) : []),
         btlOrders: Array.isArray(btlOrders) ? btlOrders : (sameEmailAsPrev ? (prev.btlOrders || []) : [])
@@ -4694,15 +4703,15 @@ async function verifyCourseBankPaymentNow() {
         return;
     }
 
-    if (digitsPhone.length < 9) {
-        if (statusText) statusText.textContent = "Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!";
+    if (!/^0\d{9,10}$/.test(digitsPhone)) {
+        if (statusText) statusText.textContent = "Bắt buộc nhập đúng số điện thoại Zalo (10 chữ số bắt đầu bằng số 0) để hoàn thành giao dịch!";
         if (phoneInputEl) phoneInputEl.focus();
-        alert("Vui lòng nhập số điện thoại Zalo để nhận hỗ trợ!");
+        alert("Bắt buộc nhập đúng số điện thoại Zalo (10 chữ số bắt đầu bằng số 0) để hoàn thành giao dịch!");
         return;
     }
 
-    const name = (cust.name || "").trim() || email.split("@")[0];
-    saveCustomerProfileEverywhere({ name, phone: rawPhone, email, source: "WEB_COURSE_CONFIRM" });
+    const name = (cust.name || "").trim() || finalEmail.split("@")[0];
+    saveCustomerProfileEverywhere({ name, phone: digitsPhone, email: finalEmail, source: "WEB_COURSE_CONFIRM" });
 
     const course = selectedCourseForCheckout;
     const payload = {
@@ -5214,7 +5223,7 @@ async function handleDvtlGoogleCredential(response) {
         picture: String(decoded.picture || "").trim(),
         phone: (getSyncedCustomerLocal() && getSyncedCustomerLocal().phone) || "",
         verifiedByGoogle: true,
-        isAdmin: ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(String(decoded.email || "").trim().toLowerCase()),
+        isAdmin: ["diepvientailieu@gmail.com"].includes(String(decoded.email || "").trim().toLowerCase()),
         unlockedCourses: [],
         purchasedDocs: [],
         btlOrders: []
@@ -5376,7 +5385,7 @@ async function dvtlCompleteGoogleLogin(profileObj, serverQuery) {
     }, profileObj || {});
 
     verifiedCust.email = String(verifiedCust.email || "").trim().toLowerCase();
-    verifiedCust.isAdmin = ["diepvientailieu@gmail.com", "admin@diepvientailieu.store"].includes(verifiedCust.email);
+    verifiedCust.isAdmin = ["diepvientailieu@gmail.com"].includes(verifiedCust.email);
 
     try {
         const apiUrl = (typeof GAS_WEBAPP_URL !== "undefined" ? GAS_WEBAPP_URL : (window.APPS_SCRIPT_URL || ""));
@@ -5803,4 +5812,95 @@ dvtlRefreshHeaderGoogleBtn = function(cust) {
     } else {
         setTimeout(syncWebEntitlementsWithDrive, 600);
     }
+})();
+
+
+// [v14.0 STRICT DIGITS-ONLY PHONE INPUT & SILENT LEAD CAPTURE]
+(function() {
+    const PHONE_IDS = ["courseStudentPhone", "checkoutPhoneInput", "srvPhoneInput"];
+    let _leadSaveTimer = null;
+
+    function enforceDigitsOnly(el) {
+        if (!el) return;
+        const cleaned = String(el.value || "").replace(/\D+/g, "").slice(0, 11);
+        if (el.value !== cleaned) {
+            el.value = cleaned;
+        }
+    }
+
+    function scheduleSilentLeadCapture() {
+        if (_leadSaveTimer) clearTimeout(_leadSaveTimer);
+        _leadSaveTimer = setTimeout(() => {
+            try {
+                const cust = (typeof getSyncedCustomerLocal === "function" ? getSyncedCustomerLocal() : null) || {};
+                const courseOpen = !document.getElementById("courseCheckoutModal")?.classList.contains("hidden");
+                const docOpen = !document.getElementById("docCheckoutModal")?.classList.contains("hidden");
+                if (courseOpen && typeof selectedCourseForCheckout !== "undefined" && selectedCourseForCheckout) {
+                    const em = (cust.email || document.getElementById("courseStudentEmail")?.value || "").trim().toLowerCase();
+                    const ph = (document.getElementById("courseStudentPhone")?.value || "").replace(/\D+/g, "");
+                    const ordCode = (document.getElementById("courseTransferNote")?.dataset?.orderCode || document.getElementById("courseTransferNote")?.textContent || "").split(" ")[0].trim();
+                    if (em.includes("@") && /^0\d{9,10}$/.test(ph) && ordCode) {
+                        sendWebhookData({
+                            action: "createOrder",
+                            silent: "1",
+                            orderType: "Khóa Học",
+                            orderCode: ordCode,
+                            sku: selectedCourseForCheckout.id,
+                            itemName: selectedCourseForCheckout.title,
+                            price: selectedCourseForCheckout.price,
+                            amount: selectedCourseForCheckout.price,
+                            driveId: selectedCourseForCheckout.driveFolderId || "",
+                            name: cust.name || em.split("@")[0],
+                            phone: ph,
+                            email: em,
+                            deviceId: typeof getWebDeviceId === "function" ? getWebDeviceId() : ""
+                        });
+                    }
+                } else if (docOpen && typeof state !== "undefined" && state.selectedDoc) {
+                    const em = (cust.email || document.getElementById("checkoutEmailInput")?.value || "").trim().toLowerCase();
+                    const ph = (document.getElementById("checkoutPhoneInput")?.value || "").replace(/\D+/g, "");
+                    const ordCode = (document.getElementById("checkoutOrderCode")?.textContent || "").trim().split(" ")[0];
+                    if (em.includes("@") && /^0\d{9,10}$/.test(ph) && ordCode) {
+                        sendWebhookData({
+                            action: "createOrder",
+                            silent: "1",
+                            orderType: "Mua Đề Cương",
+                            orderCode: ordCode,
+                            sku: state.selectedDoc.code || "",
+                            itemName: state.selectedDoc.name || "",
+                            price: state.selectedDoc.price || 50000,
+                            amount: state.selectedDoc.price || 50000,
+                            driveId: state.selectedDoc.driveId || "",
+                            name: cust.name || em.split("@")[0],
+                            phone: ph,
+                            email: em,
+                            deviceId: typeof getWebDeviceId === "function" ? getWebDeviceId() : ""
+                        });
+                    }
+                }
+            } catch (_) {}
+        }, 800);
+    }
+
+    document.addEventListener("input", function(ev) {
+        const t = ev.target;
+        if (!t || !t.id) return;
+        if (PHONE_IDS.includes(t.id)) {
+            enforceDigitsOnly(t);
+            scheduleSilentLeadCapture();
+        } else if (t.id === "courseStudentEmail" || t.id === "checkoutEmailInput") {
+            scheduleSilentLeadCapture();
+        }
+    }, true);
+
+    document.addEventListener("keydown", function(ev) {
+        const t = ev.target;
+        if (!t || !PHONE_IDS.includes(t.id)) return;
+        if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+        const allowed = ["Backspace", "Delete", "Tab", "ArrowLeft", "ArrowRight", "Home", "End", "Enter"];
+        if (allowed.includes(ev.key)) return;
+        if (!/^[0-9]$/.test(ev.key)) {
+            ev.preventDefault();
+        }
+    }, true);
 })();

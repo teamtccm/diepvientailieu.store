@@ -1,21 +1,21 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.25.4",
+  "version": "2026.11.25.5",
   "channel": "stable",
   "releasedAt": "2026-11-25T01:45:00Z",
   "minBootstrapVersion": "2026.04.19.1",
-  "notes": "v14.2: Dong bo combobox Khoa/Khoi nganh tren Web & App, icon box + uppercase pill mon hoc, xoa emoji de cuong web, sua text box duoi app de cuong khong bi dinh chu, cap nhat bo loc 12 mon va 9 chuong trinh chuan 37 khoa hoc.",
+  "notes": "v14.3: Hien thi truc tiep loi giang nguoi noi trong video (Live) o bang Ghi & Tom tat, uu tien nhan dien tieng Viet, nut Tom tat y chinh AI va tu dong luu day du vao Ghi chu.",
   "files": [
     {
       "path": "web_dist/index.html",
-      "sha256": "c9709d0b22ef3b7f421b10b594779bde5176fd2d3fed21c3618b3026d71f7524",
+      "sha256": "ae27d8c872e23a6533f27ef8fbd7a2183d01b93925fd038cf441b6bc4980ec2e",
       "size": 921,
       "url": "https://diepvientailieu.store/app_ota/web_dist/index.html"
     },
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "bca046d11e96c78cd21f2a0ae722b8ce5dd06ee57bafa04b8d4622caa8950dd9",
-      "size": 2271926,
+      "sha256": "4a8753ea40369dfba73c2463e3fc29197e27ddd54e8c21703276ba5ecdc3cc6a",
+      "size": 2278354,
       "url": "https://diepvientailieu.store/app_ota/web_dist/assets/index-SSdWYvRZ.js"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "00b57b3c445a19bb9d1e298b996febe5a85c01130949a4e09b22cdcf0a576ba0",
+      "sha256": "f14fcad7d148425ac4f81e61023b2020b1060251723e74967aed2dc9fb9101db",
       "size": 423961,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }

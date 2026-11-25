@@ -6356,6 +6356,7 @@ function fue({model:t, setPage:e}) {
   const [recordedLessons, setRecordedLessons] = E.useState({});
   const verifiedGoogleAccount = useDvsVerifiedGoogleUser();
   const [rightTab, setRightTab] = E.useState("notes");
+  const [summarizingLesson, setSummarizingLesson] = E.useState(false);
   const [copiedTranscript, setCopiedTranscript] = E.useState(false);
   const [customSummaries, setCustomSummaries] = E.useState({});
   const [lessonNotesMap, setLessonNotesMap] = E.useState(() => {
@@ -6721,7 +6722,8 @@ function fue({model:t, setPage:e}) {
       try {
         t.stop({ title: saveTitle, groupID: null });
       } catch {}
-    } else if (hadMeaningfulWork) {
+    }
+    if (hadMeaningfulWork) {
       const headerBlock =
         `**Thời gian lưu:** ${stamp}  \n` +
         `**Khóa học:** ${sess.courseTitle || ""} (${sess.instructor || ""})  \n` +
@@ -6784,7 +6786,7 @@ function fue({model:t, setPage:e}) {
     setCourseRecActive(true);
     try {
       if (t.canStartMeeting && t.startMeeting && !t.meetingActive) {
-        t.startMeeting();
+        t.startMeeting("system");
       }
     } catch {}
   }, [t]);
@@ -7597,7 +7599,7 @@ function fue({model:t, setPage:e}) {
                               "aria-selected": rightTab === "transcript",
                               className: rightTab === "transcript" ? "selected" : "",
                               onClick: () => setRightTab("transcript"),
-                              children: "Bản ghi"
+                              children: liveEntriesToRender.length > 0 ? `Bản ghi (${liveEntriesToRender.length})` : "Bản ghi"
                             })
                           ]
                         })
@@ -7606,7 +7608,7 @@ function fue({model:t, setPage:e}) {
                       rightTab === "notes"
                         ? g.jsxs("div", {
                             className: "dvs-lesson-notes-box",
-                            style: { display: "flex", flexDirection: "column", gap: "8px", flex: 1, minHeight: "340px" },
+                            style: { display: "flex", flexDirection: "column", gap: "10px", flex: 1, minHeight: "340px" },
                             children: [
                               g.jsx("textarea", {
                                 className: "dvs-lesson-notes-textarea",
@@ -7622,8 +7624,7 @@ function fue({model:t, setPage:e}) {
                                 placeholder: "Ghi chép công thức, ý chính trong lúc xem video. Khi chuyển bài hoặc thoát ra, nội dung sẽ tự động lưu kèm ngày giờ vào mục Ghi chú...",
                                 style: {
                                   width: "100%",
-                                  minHeight: "330px",
-                                  flex: 1,
+                                  minHeight: "155px",
                                   resize: "vertical",
                                   padding: "12px 14px",
                                   borderRadius: "12px",
@@ -7631,16 +7632,104 @@ function fue({model:t, setPage:e}) {
                                   background: "rgba(255, 255, 255, 0.85)",
                                   color: "#0F172A",
                                   fontSize: "13.5px",
-                                  lineHeight: 1.6,
+                                  lineHeight: 1.55,
                                   fontFamily: "inherit",
                                   outline: "none",
                                   boxSizing: "border-box"
                                 }
                               }),
+                              g.jsxs("div", {
+                                className: "dvs-live-speech-card",
+                                style: {
+                                  border: "1px solid rgba(13, 22, 119, 0.14)",
+                                  background: "rgba(239, 246, 255, 0.65)",
+                                  borderRadius: "12px",
+                                  padding: "10px 12px",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  gap: "6px",
+                                  flex: 1,
+                                  minHeight: "140px",
+                                  maxHeight: "230px",
+                                  overflowY: "auto"
+                                },
+                                children: [
+                                  g.jsxs("div", {
+                                    style: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" },
+                                    children: [
+                                      g.jsx("strong", {
+                                        style: { fontSize: "11.5px", color: "#0D1677", textTransform: "uppercase", letterSpacing: "0.03em" },
+                                        children: `Lời giảng ghi nhận (${liveEntriesToRender.length})`
+                                      }),
+                                      g.jsx("button", {
+                                        type: "button",
+                                        disabled: summarizingLesson,
+                                        onClick: async () => {
+                                          if (summarizingLesson) return;
+                                          setSummarizingLesson(true);
+                                          setRightTab("summary");
+                                          try {
+                                            const aiRes = await oe("dvtl_ask_lesson_ai", {
+                                              question: "Hãy tóm tắt đầy đủ, súc tích các ý chính, công thức và ví dụ quan trọng nhất từ nội dung bài giảng đã ghi nhận bên dưới.",
+                                              courseTitle: activeCourse.title,
+                                              instructor: activeCourse.instructor,
+                                              lessonTitle: currentLessonDisplayTitle,
+                                              notes: currentUserNoteText,
+                                              transcript: fullTranscriptText || currentUserNoteText
+                                            });
+                                            if (aiRes && aiRes.answer) {
+                                              setCustomSummaries(prev => ({ ...prev, [noteId]: aiRes.answer }));
+                                              showBanner("Đã tóm tắt ý chính bài giảng bằng AI.");
+                                            }
+                                          } catch {}
+                                          setSummarizingLesson(false);
+                                        },
+                                        style: {
+                                          border: "none",
+                                          background: "#0D1677",
+                                          color: "#FFFFFF",
+                                          fontSize: "11px",
+                                          fontWeight: 700,
+                                          padding: "4px 10px",
+                                          borderRadius: "999px",
+                                          cursor: "pointer"
+                                        },
+                                        children: summarizingLesson ? "Đang tóm tắt..." : "Tóm tắt ý chính"
+                                      })
+                                    ]
+                                  }),
+                                  liveEntriesToRender.length > 0 || (t.interimTranscripts && t.interimTranscripts.length > 0)
+                                    ? g.jsxs("div", {
+                                        style: { display: "flex", flexDirection: "column", gap: "5px", fontSize: "12.5px", color: "#1E293B", lineHeight: 1.45 },
+                                        children: [
+                                          ...liveEntriesToRender.slice(-6).map(item =>
+                                            g.jsxs("div", {
+                                              children: [
+                                                g.jsx("span", { style: { color: "#64748B", fontSize: "11px", marginRight: "6px" }, children: item.time }),
+                                                g.jsx("span", { children: item.text })
+                                              ]
+                                            }, item.id)
+                                          ),
+                                          ...(t.interimTranscripts || []).map((it, idx2) =>
+                                            g.jsx("div", {
+                                              style: { color: "#2563EB", fontStyle: "italic" },
+                                              children: it.text || it.sourceText || ""
+                                            }, `int-${idx2}`)
+                                          )
+                                        ]
+                                      })
+                                    : g.jsx("div", {
+                                        style: { fontSize: "12px", color: "#64748B", fontStyle: "italic" },
+                                        children: isRecRunning
+                                          ? "Đang lắng nghe âm thanh bài giảng từ video... Nội dung người nói sẽ hiện trực tiếp tại đây."
+                                          : "Phát video bài giảng để hệ thống tự động nhận diện lời giảng và tóm tắt ý chính."
+                                      })
+                                ]
+                              }),
                               g.jsx("small", {
                                 className: "muted",
                                 style: { fontSize: "11px" },
-                                children: "Tự động đồng bộ sang mục Ghi chú kèm ngày giờ khi bạn chuyển sang video khác hoặc bấm Quay lại."
+                                children: "Tự động đồng bộ lời giảng, tóm tắt và ghi chú sang mục Ghi chú kèm ngày giờ khi chuyển bài hoặc thoát."
                               })
                             ]
                           })

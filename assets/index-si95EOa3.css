@@ -6518,9 +6518,11 @@ main.page-scroll.dvs-sh-main-lock {
   font-weight: 600;
 }
 .dvs-sh-meaning {
-  font-size: 13px;
-  color: var(--muted);
+  font-size: 17.5px;
+  line-height: 1.5;
+  color: var(--ink);
   font-weight: 600;
+  margin-top: 6px;
 }
 
 /* Thanh nút điều khiển chính (Không emoji, chỉ SVG sạch) */

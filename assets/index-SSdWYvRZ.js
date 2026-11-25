@@ -811,7 +811,7 @@ function KceTypingStudy(){
   const [catFilter,setCatFilter]=E.useState("Tất cả");
   const [tagFilter,setTagFilter]=E.useState("Tất cả");
 
-  const [wordIdx,setWordIdx]=E.useState(0);
+  const [wordIdx,setWordIdx]=E.useState(()=>{try{const savedCh=Number(localStorage.getItem("dvs_typing_chapter"))||0;const savedW=Number(localStorage.getItem("dvs_typing_word_"+dictId+"_"+savedCh));return Number.isFinite(savedW)&&savedW>=0?savedW:0;}catch{return 0;}});
   const [charIdx,setCharIdx]=E.useState(0);
   const [loopDone,setLoopDone]=E.useState(0);
   const [shake,setShake]=E.useState(false);
@@ -876,6 +876,12 @@ function KceTypingStudy(){
 
   E.useEffect(()=>{
     resetChapterSession();
+    try{
+      const savedW = Number(localStorage.getItem("dvs_typing_word_" + dictId + "_" + safeChapter));
+      if (Number.isFinite(savedW) && savedW > 0 && savedW < CHAPTER_SIZE) {
+        setWordIdx(savedW);
+      }
+    }catch{}
     try{localStorage.setItem("dvs_typing_chapter",String(safeChapter))}catch{}
   },[safeChapter,dictId,reviewCustomWords,resetChapterSession]);
 
@@ -887,6 +893,10 @@ function KceTypingStudy(){
     return()=>clearInterval(t);
   },[startedAt,chapterDoneModal,subTab]);
 
+  E.useEffect(()=>{
+    if(reviewCustomWords&&reviewCustomWords.length>0)return;
+    try{localStorage.setItem("dvs_typing_word_"+dictId+"_"+safeChapter,String(wordIdx));}catch{}
+  },[dictId,safeChapter,wordIdx,reviewCustomWords]);
   const currentWordObj=activeWordList[wordIdx]||null;
   const targetStr=(currentWordObj?.name||"").trim();
   const prevWordObj=wordIdx>0?activeWordList[wordIdx-1]:null;
@@ -3789,23 +3799,19 @@ ${t.tldr.trim()}`);const n=(r,i)=>{i.length&&e.push(`${r}
 ${i.map(s=>`• ${s}`).join(`
 `)}`)};return n("Ý CHÍNH",t.keyPoints.map(r=>r.text)),n("QUYẾT ĐỊNH",t.decisions.map(r=>r.text)),n("QUYẾT ĐỊNH TẠM THỜI",t.tentativeDecisions.map(r=>r.text)),n("VẤN ĐỀ CHƯA CHỐT",t.unresolvedTopics.map(r=>`${r.topic}${r.options.length?` · Lựa chọn: ${r.options.join(", ")}`:""} · ${r.status==="No final decision"?"Chưa có quyết định cuối cùng":r.status}`)),n("VIỆC CẦN LÀM",t.actionItems.map(r=>[r.owner,r.task,r.deadline].filter(Boolean).join(" → "))),n("CÂU HỎI MỞ",t.openQuestions.map(r=>r.text)),n("NỘI DUNG TẠM HOÃN",t.deferred.map(r=>[r.text,r.target].filter(Boolean).join(" → "))),e.join(`
 
-`)}function Xu(t){return{id:t.id,timestamp:t.timestamp,startedAt:t.startedAt,audioSource:t.audioSource,rawText:t.rawText??t.sourceText,cleanText:t.sourceText,endedAt:t.endedAt,speaker:t.speaker,speakerProvisional:t.speakerProvisional}}function f8(t,e){const n=[...t].filter(([,s])=>s.trim()).map(([s,a])=>({entryIds:[s],text:a})),r=new Set(n.flatMap(s=>s.entryIds)),i=e.filter(s=>s.text.trim()&&!s.entryIds.some(a=>r.has(a)));return[...n,...i]}const mv={id:"demo",title:"Demo · Review khảo sát người dùng",createdAt:new Date(Date.now()-864e5).toISOString(),updatedAt:new Date(Date.now()-864e5).toISOString(),duration:1080,summary:`TÓM TẮT
-• Khảo sát người dùng chưa hoàn tất: đã nhận 86/120 phản hồi, nhóm nhân viên mới còn thiếu dữ liệu.
-• Bản thử nghiệm meeting note đã nhận diện tốt các ý chính nhưng cần kiểm tra thêm trong môi trường ồn.
+`)}function Xu(t){return{id:t.id,timestamp:t.timestamp,startedAt:t.startedAt,audioSource:t.audioSource,rawText:t.rawText??t.sourceText,cleanText:t.sourceText,endedAt:t.endedAt,speaker:t.speaker,speakerProvisional:t.speakerProvisional}}function f8(t,e){const n=[...t].filter(([,s])=>s.trim()).map(([s,a])=>({entryIds:[s],text:a})),r=new Set(n.flatMap(s=>s.entryIds)),i=e.filter(s=>s.text.trim()&&!s.entryIds.some(a=>r.has(a)));return[...n,...i]}const mv={id:"demo",title:"Hướng dẫn sử dụng Điệp Viên Study · Trợ lý Học tập & Ôn thi Đại học AI",createdAt:new Date(Date.now()-864e5).toISOString(),updatedAt:new Date(Date.now()-864e5).toISOString(),duration:1080,summary:`TỔNG QUAN HỆ SINH THÁI ĐIỆP VIÊN STUDY & ĐIỆP VIÊN TÀI LIỆU
+• Kho Đề Cương Ôn Tập Đại Học: Tổng hợp đề cương chuẩn các trường NEU, FTU, HVTC, HVNH, TMU, BKHN, ĐHQG... kèm ngân hàng trắc nghiệm, tự luận, vấn đáp và bài tập lớn (BTL) chuẩn học thuật.
+• Khóa Học Luyện Thi THPTQG, ĐGNL HSA, ĐGTD TSA & V-ACT (69K · 199K · 399K): Phát video trực tiếp từ Google Drive chất lượng cao, tự động ghi nhận lời giảng và đồng bộ ghi chú theo ngày giờ.
 
-QUYẾT ĐỊNH
-• Gia hạn khảo sát đến 17 giờ thứ Năm.
-• Giữ phạm vi bản demo ở microphone và tiếng Việt.
-
-VIỆC CẦN LÀM
-• Lan gửi nhắc khảo sát và tổng hợp kết quả trước 10 giờ thứ Sáu.
-• Huy kiểm thử nhận diện với ba mức tiếng ồn và báo cáo tỷ lệ lỗi.
-• Minh chuẩn bị bản demo meeting note cho buổi review thứ Hai.`,transcript:`09:00 · Minh: Hôm nay nhóm rà soát tiến độ khảo sát người dùng và bản demo meeting note.
-09:02 · Lan: Khảo sát chưa hoàn tất. Hiện có 86 trên 120 phản hồi, nhóm nhân viên mới vẫn còn thiếu dữ liệu.
-09:05 · Lan: Tôi đề xuất gia hạn khảo sát đến 17 giờ thứ Năm và sẽ tổng hợp kết quả trước 10 giờ thứ Sáu.
-09:08 · Huy: Bản thử nghiệm đã nhận diện tốt các ý chính, nhưng vẫn cần kiểm tra trong môi trường có tiếng ồn.
-09:11 · Huy: Tôi sẽ thử ba mức tiếng ồn và báo cáo tỷ lệ lỗi trước cuối ngày thứ Sáu.
-09:14 · Minh: Nhóm thống nhất giữ phạm vi demo ở microphone và tiếng Việt. Tôi sẽ chuẩn bị bản demo meeting note cho buổi review thứ Hai.`,isDemo:!0};function BB(t){const e=new Date().toISOString();return{id:crypto.randomUUID(),title:"Ghi chú mới",createdAt:e,updatedAt:e,duration:0,summary:"",transcript:"",groupID:t,source:"manual"}}function _B(t,e,n){return e==="all"?!0:e==="inbox"?!t.isDemo&&(!t.groupID||!n.some(r=>r.id===t.groupID)):t.groupID===e}function $i(t,e=!0){const n=new Date(t);return Number.isNaN(n.getTime())?t:new Intl.DateTimeFormat("vi-VN",e?{dateStyle:"medium",timeStyle:"short"}:{timeStyle:"short"}).format(n)}function UE(t){return t.summaryMarkdown!==void 0?qE(t.summaryMarkdown).trim():t.structuredSummary?Sc(t.structuredSummary):t.summary.trim()}function $B(t){const e=UE(t);return[t.title||"Chưa có tiêu đề",$i(t.createdAt),e].filter(Boolean).join(`
+CÔNG CỤ HỌC TẬP AI TÍCH HỢP TRÊN ỨNG DỤNG
+• Ghi Chú & Tóm Tắt Bài Giảng AI: Tự động lắng nghe bài giảng từ video hoặc micro, chép lời theo thời gian thực, tóm tắt ý chính và hỏi đáp AI ngay trên nội dung bài học.
+• Phiên Dịch Trực Tiếp & Dịch File / Link YouTube: Phiên dịch song ngữ Anh - Việt, Trung - Việt tức thì; tải và dịch tự động file ghi âm, video MP4 hoặc đường dẫn YouTube.
+• Chuyển PDF Sang Word (.docx) Chuẩn Định Dạng: Giữ nguyên cấu trúc văn bản, bảng biểu và ký hiệu công thức toán học phức tạp.
+• Luyện Đọc Shadowing & Luyện Gõ Từ Vựng: Chấm điểm phát âm chuẩn Accent 0–100% (Xanh: chuẩn, Vàng: gần đúng, Đỏ: cần sửa) và ghi nhớ tiến độ học từ vựng tự động.`,transcript:`09:00 · Điệp Viên Study: Chào mừng bạn đến với Điệp Viên Study — nền tảng học tập, ôn thi đại học và luyện ngoại ngữ tích hợp AI toàn diện.
+09:02 · Đề Cương & BTL: Bạn có thể tra cứu nhanh đề cương ôn tập theo từng trường đại học, từng khối ngành hoặc đặt biên soạn Bài Tập Lớn (BTL), tiểu luận chuẩn trích dẫn.
+09:05 · Khóa Học Video Drive: Khi vào học các khóa 69K, Combo 199K hay Trọn bộ 399K, hệ thống tự động phát video bài giảng từ Google Drive, nhận diện lời giảng và tóm tắt ý chính sang mục Ghi chú.
+09:08 · Luyện Đọc Shadowing: Dán bất kỳ link YouTube tiếng Anh nào để luyện đọc nhại theo từng câu, bật Micro để hệ thống chấm điểm % Accent và tô màu từng từ phát âm chuẩn hay lệch âm.
+09:11 · Chuyển PDF Sang Word & Phiên Dịch: Kéo thả tài liệu PDF có công thức toán học để chuyển sang Word hoặc tải file ghi âm, video để chép lời và dịch song ngữ tự động.`};function BB(t){const e=new Date().toISOString();return{id:crypto.randomUUID(),title:"Ghi chú mới",createdAt:e,updatedAt:e,duration:0,summary:"",transcript:"",groupID:t,source:"manual"}}function _B(t,e,n){return e==="all"?!0:e==="inbox"?!t.isDemo&&(!t.groupID||!n.some(r=>r.id===t.groupID)):t.groupID===e}function $i(t,e=!0){const n=new Date(t);return Number.isNaN(n.getTime())?t:new Intl.DateTimeFormat("vi-VN",e?{dateStyle:"medium",timeStyle:"short"}:{timeStyle:"short"}).format(n)}function UE(t){return t.summaryMarkdown!==void 0?qE(t.summaryMarkdown).trim():t.structuredSummary?Sc(t.structuredSummary):t.summary.trim()}function $B(t){const e=UE(t);return[t.title||"Chưa có tiêu đề",$i(t.createdAt),e].filter(Boolean).join(`
 
 `)}function HB(t){return t.transcriptSegments?.length?t.transcriptSegments.map(e=>`[${$i(e.timestamp,!1)}] ${e.speaker?`${e.speaker}: `:""}${e.cleanText}`).join(`
 `):t.transcript.trim()}function Yx(t){return t.source?t.source:/^Nguồn: https?:\/\//.test(t.transcript)?"link":t.transcriptSegments?.some(e=>e.audioSource==="file")?"file":t.title.startsWith("Phiên dịch")?"translate":t.transcriptSegments?.length||t.transcript.trim()||t.isDemo?"meeting":"manual"}const p8=t=>/^(Cuộc họp|Phiên dịch) · [\d:,/ ]+$/.test(t.title.trim());function PB(t){return(t.transcriptSegments?.length?t.transcriptSegments.map(n=>n.cleanText).join(`
@@ -7580,15 +7586,147 @@ function fue({model:t, setPage:e}) {
                             g.jsx("button", {
                               type: "button",
                               role: "tab",
-                              "aria-selected": rightTab === "notes",
-                              className: rightTab === "notes" ? "selected" : "",
-                              onClick: () => setRightTab("notes"),
-                              children: "Ghi chú"
-                            }),
-                            g.jsx("button", {
-                              type: "button",
-                              role: "tab",
-                              "aria-selected": rightTab === "summary",
+                              "aria-selected": rightTab === "notes"
+                        ? g.jsxs("div", {
+                            className: "dvs-lesson-notes-box",
+                            style: { display: "flex", flexDirection: "column", gap: "8px", flex: 1, minHeight: "360px" },
+                            children: [
+                              g.jsxs("div", {
+                                className: "dvs-unified-note-card",
+                                style: {
+                                  border: "1px solid rgba(13, 22, 119, 0.16)",
+                                  background: "rgba(255, 255, 255, 0.92)",
+                                  borderRadius: "14px",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  flex: 1,
+                                  overflow: "hidden",
+                                  boxShadow: "0 2px 10px rgba(15, 23, 42, 0.04)"
+                                },
+                                children: [
+                                  g.jsxs("div", {
+                                    className: "dvs-live-speech-card",
+                                    style: {
+                                      padding: "10px 12px",
+                                      background: "rgba(239, 246, 255, 0.65)",
+                                      borderBottom: "1px solid rgba(13, 22, 119, 0.10)",
+                                      display: "flex",
+                                      flexDirection: "column",
+                                      gap: "6px",
+                                      maxHeight: "175px",
+                                      overflowY: "auto"
+                                    },
+                                    children: [
+                                      g.jsxs("div", {
+                                        style: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" },
+                                        children: [
+                                          g.jsx("strong", {
+                                            style: { fontSize: "11.5px", color: "#0D1677", textTransform: "uppercase", letterSpacing: "0.03em" },
+                                            children: `Lời giảng ghi nhận (${liveEntriesToRender.length})`
+                                          }),
+                                          g.jsx("button", {
+                                            type: "button",
+                                            disabled: summarizingLesson,
+                                            onClick: async () => {
+                                              if (summarizingLesson) return;
+                                              setSummarizingLesson(true);
+                                              setRightTab("summary");
+                                              try {
+                                                const aiRes = await oe("dvtl_ask_lesson_ai", {
+                                                  question: "Hãy tóm tắt đầy đủ, súc tích các ý chính, công thức và ví dụ quan trọng nhất từ nội dung bài giảng đã ghi nhận bên dưới.",
+                                                  courseTitle: activeCourse.title,
+                                                  instructor: activeCourse.instructor,
+                                                  lessonTitle: currentLessonDisplayTitle,
+                                                  notes: currentUserNoteText,
+                                                  transcript: fullTranscriptText || currentUserNoteText
+                                                });
+                                                if (aiRes && aiRes.answer) {
+                                                  setCustomSummaries(prev => ({ ...prev, [noteId]: aiRes.answer }));
+                                                  showBanner("Đã tóm tắt ý chính bài giảng bằng AI.");
+                                                }
+                                              } catch {}
+                                              setSummarizingLesson(false);
+                                            },
+                                            style: {
+                                              border: "none",
+                                              background: "#0D1677",
+                                              color: "#FFFFFF",
+                                              fontSize: "11px",
+                                              fontWeight: 700,
+                                              padding: "4px 10px",
+                                              borderRadius: "999px",
+                                              cursor: "pointer"
+                                            },
+                                            children: summarizingLesson ? "Đang tóm tắt..." : "Tóm tắt ý chính"
+                                          })
+                                        ]
+                                      }),
+                                      liveEntriesToRender.length > 0 || (t.interimTranscripts && t.interimTranscripts.length > 0)
+                                        ? g.jsxs("div", {
+                                            style: { display: "flex", flexDirection: "column", gap: "4px", fontSize: "12.5px", color: "#1E293B", lineHeight: 1.45 },
+                                            children: [
+                                              ...liveEntriesToRender.slice(-6).map(item =>
+                                                g.jsxs("div", {
+                                                  children: [
+                                                    g.jsx("span", { style: { color: "#64748B", fontSize: "11px", marginRight: "6px" }, children: item.time }),
+                                                    g.jsx("span", { children: item.text })
+                                                  ]
+                                                }, item.id)
+                                              ),
+                                              ...(t.interimTranscripts || []).map((it, idx2) =>
+                                                g.jsx("div", {
+                                                  style: { color: "#2563EB", fontStyle: "italic" },
+                                                  children: it.text || it.sourceText || ""
+                                                }, `int-${idx2}`)
+                                              )
+                                            ]
+                                          })
+                                        : g.jsx("div", {
+                                            style: { fontSize: "12px", color: "#64748B", fontStyle: "italic" },
+                                            children: isRecRunning
+                                              ? "Đang lắng nghe âm thanh bài giảng từ video... Nội dung người nói sẽ hiện trực tiếp tại đây."
+                                              : "Phát video bài giảng để hệ thống tự động nhận diện lời giảng và tóm tắt ý chính."
+                                          })
+                                    ]
+                                  }),
+                                  g.jsx("textarea", {
+                                    className: "dvs-lesson-notes-textarea",
+                                    value: currentUserNoteText,
+                                    onChange: ev => {
+                                      const val = ev.target.value;
+                                      setLessonNotesMap(prev => {
+                                        const next = { ...prev, [currentLessonNoteKey]: val };
+                                        try { localStorage.setItem("dvs_lesson_notes_v1", JSON.stringify(next)); } catch {}
+                                        return next;
+                                      });
+                                    },
+                                    placeholder: "Ghi chép công thức, ý chính trong lúc xem video. Khi chuyển bài hoặc thoát ra, nội dung sẽ tự động lưu kèm ngày giờ vào mục Ghi chú...",
+                                    style: {
+                                      width: "100%",
+                                      minHeight: "185px",
+                                      flex: 1,
+                                      resize: "none",
+                                      padding: "12px 14px",
+                                      border: "none",
+                                      background: "transparent",
+                                      color: "#0F172A",
+                                      fontSize: "13.5px",
+                                      lineHeight: 1.55,
+                                      fontFamily: "inherit",
+                                      outline: "none",
+                                      boxSizing: "border-box"
+                                    }
+                                  })
+                                ]
+                              }),
+                              g.jsx("small", {
+                                className: "muted",
+                                style: { fontSize: "11px" },
+                                children: "Tự động đồng bộ lời giảng, tóm tắt và ghi chú sang mục Ghi chú kèm ngày giờ khi chuyển bài hoặc thoát."
+                              })
+                            ]
+                          })
+                        : rightTab === "summary",
                               className: rightTab === "summary" ? "selected" : "",
                               onClick: () => setRightTab("summary"),
                               children: "Tóm tắt"
@@ -7608,9 +7746,22 @@ function fue({model:t, setPage:e}) {
                       rightTab === "notes"
                         ? g.jsxs("div", {
                             className: "dvs-lesson-notes-box",
-                            style: { display: "flex", flexDirection: "column", gap: "10px", flex: 1, minHeight: "340px" },
+                            style: { display: "flex", flexDirection: "column", gap: "8px", flex: 1, minHeight: "340px" },
                             children: [
-                              g.jsx("textarea", {
+                              g.jsxs("div", {
+                                className: "dvs-unified-note-card",
+                                style: {
+                                  border: "1px solid rgba(15, 23, 42, 0.14)",
+                                  borderRadius: "12px",
+                                  background: "rgba(255, 255, 255, 0.92)",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  flex: 1,
+                                  overflow: "hidden",
+                                  boxShadow: "0 2px 10px rgba(15, 23, 42, 0.04)"
+                                },
+                                children: [
+                                  g.jsx("textarea", {
                                 className: "dvs-lesson-notes-textarea",
                                 value: currentUserNoteText,
                                 onChange: ev => {
@@ -7624,12 +7775,11 @@ function fue({model:t, setPage:e}) {
                                 placeholder: "Ghi chép công thức, ý chính trong lúc xem video. Khi chuyển bài hoặc thoát ra, nội dung sẽ tự động lưu kèm ngày giờ vào mục Ghi chú...",
                                 style: {
                                   width: "100%",
-                                  minHeight: "155px",
+                                  minHeight: "145px",
                                   resize: "vertical",
                                   padding: "12px 14px",
-                                  borderRadius: "12px",
-                                  border: "1px solid rgba(15, 23, 42, 0.12)",
-                                  background: "rgba(255, 255, 255, 0.85)",
+                                  border: "none",
+                                  background: "transparent",
                                   color: "#0F172A",
                                   fontSize: "13.5px",
                                   lineHeight: 1.55,
@@ -7641,9 +7791,8 @@ function fue({model:t, setPage:e}) {
                               g.jsxs("div", {
                                 className: "dvs-live-speech-card",
                                 style: {
-                                  border: "1px solid rgba(13, 22, 119, 0.14)",
+                                  borderTop: "1px solid rgba(13, 22, 119, 0.12)",
                                   background: "rgba(239, 246, 255, 0.65)",
-                                  borderRadius: "12px",
                                   padding: "10px 12px",
                                   display: "flex",
                                   flexDirection: "column",
@@ -7724,6 +7873,8 @@ function fue({model:t, setPage:e}) {
                                           ? "Đang lắng nghe âm thanh bài giảng từ video... Nội dung người nói sẽ hiện trực tiếp tại đây."
                                           : "Phát video bài giảng để hệ thống tự động nhận diện lời giảng và tóm tắt ý chính."
                                       })
+                                ]
+                              })
                                 ]
                               }),
                               g.jsx("small", {

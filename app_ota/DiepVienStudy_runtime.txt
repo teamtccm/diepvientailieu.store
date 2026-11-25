@@ -101,7 +101,7 @@ HALLUCINATION_PATTERNS = re.compile(
     r"thank you\.?|thanks for watching\.?|subtitles by .*|amara\.org.*|"
     r"hãy đăng ký kênh.*|cảm ơn các bạn đã theo dõi.*|đừng quên nhấn like.*|"
     r"subscribe to .*|please subscribe.*|bell icon.*|mbc.*|kbs.*|sbs.*|"
-    r".*|.*|.*|.*|[\s.,!?;:\-…]+|"
+    r"\[music\]|\[applause\]|\(music\)|[\s.,!?;:\-…]+|"
     r"you|oh|uh|um|hmm|ah"
     r")$",
     re.IGNORECASE,
@@ -865,12 +865,45 @@ class VietLinguaEngine:
     # -------------------------------------------------------------------------
     # 4. FILE & VIDEO PART PROCESSING (CHUNKED FAST WHISPER + BATCH TRANSLATE)
     # -------------------------------------------------------------------------
+    def _translate_file_segments(self, segments: list[dict], detected_lang: str) -> None:
+        if detected_lang == "vi" or not segments:
+            return
+        batch_size = 15
+        for b_start in range(0, len(segments), batch_size):
+            batch = segments[b_start:b_start + batch_size]
+            numbered = "\n".join(f"{i}: {seg['source_text']}" for i, seg in enumerate(batch))
+            tr_prompt = (
+                "Hãy dịch chính xác từng câu dưới đây sang tiếng Việt tự nhiên, sát lời nhân vật. "
+                "Trả về JSON object có key \"translations\" là danh sách chuỗi tiếng Việt tương ứng đúng thứ tự:\n"
+                f"{numbered}"
+            )
+            tr_raw = self.call_llm(
+                prompt=tr_prompt,
+                system_prompt="Return valid JSON: {\"translations\": [\"...\"]}",
+                json_mode=True,
+                temperature=0.1,
+                max_tokens=2048,
+            )
+            tr_list = []
+            if tr_raw:
+                try:
+                    tr_list = json.loads(tr_raw).get("translations") or []
+                except Exception:
+                    pass
+            for i, seg in enumerate(batch):
+                if i < len(tr_list) and isinstance(tr_list[i], str) and tr_list[i].strip():
+                    seg["translated_text"] = tr_list[i].strip()
+                else:
+                    inst_vi, _ = self.translate_instant_google(seg["source_text"], detected_lang, "vi")
+                    seg["translated_text"] = inst_vi or seg["source_text"]
+
     def process_audio_file(self, filepath: str, source_lang: str = "auto") -> dict:
         """
-        Phiên âm & dịch file âm thanh / video nhanh gấp 5 lần bằng Groq Whisper (verbose_json có sẵn timestamps)
-        kết hợp dịch hàng loạt theo ngữ cảnh bằng Qwen 3.8 27B / GPT-OSS + Google Neural Translate dự phòng.
+        Phiên âm & dịch file âm thanh / video nhanh gấp 5 lần bằng Groq Whisper (verbose_json có sẵn timestamps),
+        tự động dự phòng bằng ffmpeg WAV chunking + Google Web Speech API + Google Neural Translate khi không có Groq key.
         """
         tmp_mp3 = os.path.join(tempfile.gettempdir(), f"dvstudy_file_{uuid.uuid4().hex[:8]}.mp3")
+        tmp_chunk_dir = os.path.join(tempfile.gettempdir(), f"dvstudy_chunks_{uuid.uuid4().hex[:8]}")
         target_path = filepath
         try:
             cmd = [
@@ -912,7 +945,7 @@ class VietLinguaEngine:
 
                     detected_lang = detect_script_language(j.get("text", ""), w_lang, source_lang)
                     segments = []
-                    for idx, s in enumerate(raw_segs):
+                    for s in raw_segs:
                         st_txt = (s.get("text") or "").strip()
                         if not st_txt or is_hallucination_or_noise(st_txt, float(s.get("end", 3.0)) - float(s.get("start", 0.0))):
                             continue
@@ -924,43 +957,67 @@ class VietLinguaEngine:
                             "translated_text": "",
                         })
 
-                    if detected_lang != "vi" and segments:
-                        batch_size = 15
-                        for b_start in range(0, len(segments), batch_size):
-                            batch = segments[b_start:b_start + batch_size]
-                            numbered = "\n".join(f"{i}: {seg['source_text']}" for i, seg in enumerate(batch))
-                            tr_prompt = (
-                                "Hãy dịch chính xác từng câu dưới đây sang tiếng Việt tự nhiên, sát lời nhân vật. "
-                                "Trả về JSON object có key \"translations\" là danh sách chuỗi tiếng Việt tương ứng đúng thứ tự:\n"
-                                f"{numbered}"
-                            )
-                            tr_raw = self.call_llm(
-                                prompt=tr_prompt,
-                                system_prompt="Return valid JSON: {\"translations\": [\"...\"]}",
-                                json_mode=True,
-                                temperature=0.1,
-                                max_tokens=2048,
-                            )
-                            tr_list = []
-                            if tr_raw:
-                                try:
-                                    tr_list = json.loads(tr_raw).get("translations") or []
-                                except Exception:
-                                    pass
-                            for i, seg in enumerate(batch):
-                                if i < len(tr_list) and isinstance(tr_list[i], str) and tr_list[i].strip():
-                                    seg["translated_text"] = tr_list[i].strip()
-                                else:
-                                    inst_vi, _ = self.translate_instant_google(seg["source_text"], detected_lang, "vi")
-                                    seg["translated_text"] = inst_vi or seg["source_text"]
+                    if segments:
+                        self._translate_file_segments(segments, detected_lang)
+                        return {"detected_language": detected_lang, "segments": segments}
 
-                    return {"detected_language": detected_lang, "segments": segments}
+            # Dự phòng miễn phí: tách thành các đoạn WAV 16kHz mono (20 giây/đoạn) và phiên âm qua Google Web Speech API
+            os.makedirs(tmp_chunk_dir, exist_ok=True)
+            chunk_pattern = os.path.join(tmp_chunk_dir, "chunk_%03d.wav")
+            seg_cmd = [
+                "ffmpeg", "-y", "-i", filepath,
+                "-vn", "-ac", "1", "-ar", "16000", "-c:a", "pcm_s16le",
+                "-f", "segment", "-segment_time", "20",
+                chunk_pattern,
+            ]
+            subprocess.run(
+                seg_cmd, capture_output=True, timeout=180,
+                creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+            )
+            chunk_files = sorted(
+                os.path.join(tmp_chunk_dir, fn)
+                for fn in os.listdir(tmp_chunk_dir)
+                if fn.endswith(".wav")
+            )
+            segments = []
+            detected_lang = source_lang if source_lang != "auto" else "en"
+            cur_offset = 0.0
+            for cpath in chunk_files:
+                try:
+                    with open(cpath, "rb") as cf:
+                        wav_bytes = cf.read()
+                    dur_sec = max(0.5, (len(wav_bytes) - 44) / float(16000 * 2))
+                    raw_text, det_code = self.transcribe_google_web_free(
+                        wav_bytes, language_hint=source_lang, duration_sec=dur_sec
+                    )
+                    if raw_text:
+                        if source_lang == "auto" and det_code in ("vi", "en", "zh"):
+                            detected_lang = det_code
+                        segments.append({
+                            "start": round(cur_offset, 2),
+                            "end": round(cur_offset + dur_sec, 2),
+                            "speaker": "Người nói 1",
+                            "source_text": raw_text,
+                            "translated_text": "",
+                        })
+                    cur_offset += dur_sec
+                except Exception:
+                    continue
+
+            if segments:
+                self._translate_file_segments(segments, detected_lang)
+                return {"detected_language": detected_lang, "segments": segments}
         except Exception:
             pass
         finally:
             if os.path.exists(tmp_mp3):
                 try:
                     os.remove(tmp_mp3)
+                except Exception:
+                    pass
+            if os.path.isdir(tmp_chunk_dir):
+                try:
+                    shutil.rmtree(tmp_chunk_dir, ignore_errors=True)
                 except Exception:
                     pass
 
@@ -6365,7 +6422,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.25.5", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.25.6", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":
@@ -7095,7 +7152,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.25.5", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.25.6", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -7112,7 +7169,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.25.5"
+                    local_ver = "2026.11.25.6"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     def _ver_tuple(v_str):
                         return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))

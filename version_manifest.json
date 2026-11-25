@@ -1,10 +1,10 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.25.6",
+  "version": "2026.11.25.7",
   "channel": "stable",
   "releasedAt": "2026-11-25T01:45:00Z",
   "minBootstrapVersion": "2026.04.19.1",
-  "notes": "v14.4: Cap nhat ghi chu mau chuan SEO, gop 1 bang Ghi & Tom tat, tang co chu dich nghia Shadowing 17.5px + cham diem Accent, ghi nho tien do Luyen go tu.",
+  "notes": "v14.5: Giao dien Shadowing dong bo, 1 bang Noi dung bai giang truc tiep, khoa co dinh 1 Huong dan su dung, dich PDF Toan & ghi am tieng Anh.",
   "files": [
     {
       "path": "web_dist/index.html",
@@ -14,8 +14,8 @@
     },
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "9f8785d5679e167c2f765703023bbffe7150cf0e808082e37066e0d62b96e7d0",
-      "size": 2289588,
+      "sha256": "3292e9c7136311eabe9b331bb66d0f77ce9e495dce5d03763c9e10125c3bd645",
+      "size": 2281852,
       "url": "https://diepvientailieu.store/app_ota/web_dist/assets/index-SSdWYvRZ.js"
     },
     {
@@ -26,10 +26,10 @@
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "620bc3596ea3bb4278655107002a818ffd74866f7ab07731d5b845e414865ec0",
-      "size": 423961,
+      "sha256": "69b261bee85359c036b5eca6bea00d073e05039c4f61035d9d5866474d2a7645",
+      "size": 426339,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ],
-  "app_version": "2026.11.25.6"
+  "app_version": "2026.11.25.7"
 }

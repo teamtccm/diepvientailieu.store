@@ -7626,62 +7626,7 @@ function fue({model:t, setPage:e}) {
                                         children: [
                                           g.jsx("strong", {
                                             style: { fontSize: "11.5px", color: "#0D1677", textTransform: "uppercase", letterSpacing: "0.03em" },
-                                            children: `Lời giảng ghi nhận (${liveEntriesToRender.length})`
-                                          }),
-                                          g.jsx("button", {
-                                            type: "button",
-                                            disabled: summarizingLesson,
-                                            onClick: async () => {
-                                              if (summarizingLesson) return;
-                                              setSummarizingLesson(true);
-                                              setRightTab("summary");
-                                              try {
-                                                const aiRes = await oe("dvtl_ask_lesson_ai", {
-                                                  question: "Hãy tóm tắt đầy đủ, súc tích các ý chính, công thức và ví dụ quan trọng nhất từ nội dung bài giảng đã ghi nhận bên dưới.",
-                                                  courseTitle: activeCourse.title,
-                                                  instructor: activeCourse.instructor,
-                                                  lessonTitle: currentLessonDisplayTitle,
-                                                  notes: currentUserNoteText,
-                                                  transcript: fullTranscriptText || currentUserNoteText
-                                                });
-                                                if (aiRes && aiRes.answer) {
-                                                  setCustomSummaries(prev => ({ ...prev, [noteId]: aiRes.answer }));
-                                                  try {
-                                                    const stampNow = formatViDateTimeNow();
-                                                    const sumTitle = `[${stampNow}] Tóm tắt: ${currentLessonDisplayTitle}`;
-                                                    const sumMd = `**Thời gian lưu:** ${stampNow}  \n**Khóa học:** ${activeCourse?.title || ""}  \n**Bài giảng:** ${currentLessonDisplayTitle}\n\n---\n\n## Tóm tắt ý chính\n\n${aiRes.answer}\n\n` + (fullTranscriptText ? `## Nội dung bài giảng ghi nhận\n\n${fullTranscriptText}` : "");
-                                                    const sumPayload = {
-                                                      id: `lesson-summary-${activeCourse?.id || "c"}-${noteId}-${Date.now()}`,
-                                                      title: sumTitle,
-                                                      groupID: null,
-                                                      createdAt: new Date().toISOString(),
-                                                      updatedAt: new Date().toISOString(),
-                                                      duration: courseRecSec || 0,
-                                                      source: "meeting",
-                                                      summary: sumMd,
-                                                      summaryMarkdown: sumMd,
-                                                      transcript: fullTranscriptText || aiRes.answer
-                                                    };
-                                                    if (t.saveWatchNote) t.saveWatchNote(sumPayload);
-                                                    else if (t.addNote) t.addNote(sumPayload);
-                                                  } catch {}
-                                                  showBanner("Đã tóm tắt ý chính & lưu vào mục Ghi chú.");
-                                                  if (typeof e === "function") e("notes");
-                                                }
-                                              } catch {}
-                                              setSummarizingLesson(false);
-                                            },
-                                            style: {
-                                              border: "none",
-                                              background: "#0D1677",
-                                              color: "#FFFFFF",
-                                              fontSize: "11px",
-                                              fontWeight: 700,
-                                              padding: "4px 10px",
-                                              borderRadius: "999px",
-                                              cursor: "pointer"
-                                            },
-                                            children: summarizingLesson ? "Đang tóm tắt..." : "Tóm tắt ý chính"
+                                            children: `Nội dung bài giảng (${liveEntriesToRender.length})`
                                           })
                                         ]
                                       }),
@@ -7775,42 +7720,7 @@ function fue({model:t, setPage:e}) {
                                     children: [
                                       g.jsx("strong", {
                                         style: { fontSize: "11.5px", color: "#0D1677", textTransform: "uppercase", letterSpacing: "0.03em" },
-                                        children: `Lời giảng ghi nhận (${liveEntriesToRender.length})`
-                                      }),
-                                      g.jsx("button", {
-                                        type: "button",
-                                        disabled: summarizingLesson,
-                                        onClick: async () => {
-                                          if (summarizingLesson) return;
-                                          setSummarizingLesson(true);
-                                          setRightTab("summary");
-                                          try {
-                                            const aiRes = await oe("dvtl_ask_lesson_ai", {
-                                              question: "Hãy tóm tắt đầy đủ, súc tích các ý chính, công thức và ví dụ quan trọng nhất từ nội dung bài giảng đã ghi nhận bên dưới.",
-                                              courseTitle: activeCourse.title,
-                                              instructor: activeCourse.instructor,
-                                              lessonTitle: currentLessonDisplayTitle,
-                                              notes: currentUserNoteText,
-                                              transcript: fullTranscriptText || currentUserNoteText
-                                            });
-                                            if (aiRes && aiRes.answer) {
-                                              setCustomSummaries(prev => ({ ...prev, [noteId]: aiRes.answer }));
-                                              showBanner("Đã tóm tắt ý chính bài giảng bằng AI.");
-                                            }
-                                          } catch {}
-                                          setSummarizingLesson(false);
-                                        },
-                                        style: {
-                                          border: "none",
-                                          background: "#0D1677",
-                                          color: "#FFFFFF",
-                                          fontSize: "11px",
-                                          fontWeight: 700,
-                                          padding: "4px 10px",
-                                          borderRadius: "999px",
-                                          cursor: "pointer"
-                                        },
-                                        children: summarizingLesson ? "Đang tóm tắt..." : "Tóm tắt ý chính"
+                                        children: `Nội dung bài giảng (${liveEntriesToRender.length})`
                                       })
                                     ]
                                   }),

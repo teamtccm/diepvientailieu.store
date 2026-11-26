@@ -4667,11 +4667,11 @@ async function submitCustomerSyncWeb() {
     renderSyncedCustomerEntitlements(syncedProfile);
     renderCourses();
 
-    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien study (tên file chuẩn Cai_Dat_App_Diep_Vien_Study_Windows.exe)
-    startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cài Đặt App Điệp Viên Study (Windows).exe");
+    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien Study (tên file chuẩn Diep Vien Study.exe)
+    startDirectFileDownload("downloads/Diep%20Vien%20Study.exe", "Diep Vien Study.exe");
 
     if (msgEl) {
-        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Cai_Dat_App_Diep_Vien_Study_Windows.exe</strong>! <a href="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" target="_blank" download="Huong_Dan_Cai_Dat_App_Diep_Vien_Study.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt PDF (Có Hình Minh Họa)</a>.`;
+        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Diep Vien Study.exe</strong>! <a href="Huong_Dan_Cai_Dat.pdf" target="_blank" download="Hướng dẫn cài đặt.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt (PDF)</a>.`;
     }
 }
 
@@ -5101,7 +5101,7 @@ if (typeof window !== "undefined") {
     });
 }
 
-function startDirectFileDownload(hrefUrl, downloadFilename = "Cài Đặt App Điệp Viên Study (Windows).exe") {
+function startDirectFileDownload(hrefUrl, downloadFilename = "Diep Vien Study.exe") {
     try {
         const a = document.createElement("a");
         a.href = hrefUrl;

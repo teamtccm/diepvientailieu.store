@@ -1,10 +1,10 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.25.7",
+  "version": "2026.11.26.1",
   "channel": "stable",
   "releasedAt": "2026-11-25T01:45:00Z",
   "minBootstrapVersion": "2026.04.19.1",
-  "notes": "v14.5: Giao dien Shadowing dong bo, 1 bang Noi dung bai giang truc tiep, khoa co dinh 1 Huong dan su dung, dich PDF Toan & ghi am tieng Anh.",
+  "notes": "v14.6: Don sach Drive, sua phan luong don BTL, cai cach cay thu muc & tang toc nhan dien giong noi thoi gian thuc.",
   "files": [
     {
       "path": "web_dist/index.html",
@@ -26,10 +26,10 @@
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "69b261bee85359c036b5eca6bea00d073e05039c4f61035d9d5866474d2a7645",
-      "size": 426339,
+      "sha256": "d1513d44a734f7eaa951fb8c8ac9db7ebfa62ee218e0cd6ac20fd0b5e147f2b4",
+      "size": 427702,
       "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
     }
   ],
-  "app_version": "2026.11.25.7"
+  "app_version": "2026.11.26.1"
 }

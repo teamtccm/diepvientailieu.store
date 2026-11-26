@@ -1051,6 +1051,7 @@ class LiveClauseStreamer:
         self.last_feed_time = 0.0
         self.last_voice_time = 0.0
         self.interim_sent = False
+        self.last_interim_ts = 0.0
         self.last_final_text = ""
         self.energy_history: deque[float] = deque(maxlen=45)
         # Serial worker (max_workers=1) cho câu chốt để đảm bảo thứ tự thời gian tuyệt đối (chuẩn Meeting Minutes worker.rs)
@@ -1066,6 +1067,7 @@ class LiveClauseStreamer:
             self.silence_samples = 0
             self.speaking = False
             self.interim_sent = False
+            self.last_interim_ts = 0.0
             self.last_feed_time = 0.0
             self.last_voice_time = 0.0
             self.last_final_text = ""
@@ -1133,21 +1135,22 @@ class LiveClauseStreamer:
                 self.interim_sent = False
                 return
 
-            # 1. Phát bản xem trước (interim) ở mốc ~1.40 giây (bằng Google Web Speech 0 tốn quota Groq)
-            if not self.interim_sent and 1.35 <= dur_sec <= 2.30 and silence_sec < 0.16:
+            # 1. Phát bản xem trước (interim) liên tục mỗi ~0.80 giây để chữ hiện tức thì theo lời nói
+            if dur_sec >= 0.70 and silence_sec < 0.18 and (now - self.last_interim_ts) >= 0.80:
                 self.interim_sent = True
+                self.last_interim_ts = now
                 snap_audio = np.concatenate(self.active_chunks)
                 to_interim = (snap_audio, self.utterance_id, self.utterance_started_at, self.controller.current_generation)
 
-            # 2. Điều kiện chốt câu (Pause >= 0.32s sau khi nói >= 0.65s, hoặc câu dài >= 3.25s)
-            should_cut_on_pause = (dur_sec >= 0.65 and silence_sec >= 0.32)
-            should_force_cut = (dur_sec >= 3.25)
+            # 2. Điều kiện chốt câu (Pause >= 0.25s sau khi nói >= 0.55s, hoặc câu dài >= 2.75s)
+            should_cut_on_pause = (dur_sec >= 0.55 and silence_sec >= 0.25)
+            should_force_cut = (dur_sec >= 2.75)
 
             if should_cut_on_pause or should_force_cut:
                 full_audio = np.concatenate(self.active_chunks)
                 overlap_tail = None
 
-                if should_force_cut and silence_sec < 0.18 and len(full_audio) > int(2.4 * self.sr):
+                if should_force_cut and silence_sec < 0.18 and len(full_audio) > int(2.0 * self.sr):
                     search_len = int(0.60 * self.sr)
                     tail_region = full_audio[-search_len:]
                     win = 480  # 30ms (chuẩn vad_chunk_size = 480 samples của Meeting Minutes)
@@ -1159,7 +1162,7 @@ class LiveClauseStreamer:
                         ]
                         min_idx = int(np.argmin(energies))
                         cut_offset = len(full_audio) - search_len + (min_idx + 1) * win
-                        overlap_start = max(0, cut_offset - int(0.06 * self.sr))
+                        overlap_start = max(0, cut_offset - int(0.16 * self.sr))
                         overlap_tail = full_audio[overlap_start:]
                         full_audio = full_audio[:cut_offset]
 
@@ -1172,6 +1175,7 @@ class LiveClauseStreamer:
                 self.active_samples = 0
                 self.silence_samples = 0
                 self.interim_sent = False
+                self.last_interim_ts = 0.0
 
                 if overlap_tail is not None and len(overlap_tail) > 0:
                     self.speaking = True
@@ -5917,7 +5921,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                                         },
                                         timeout=8,
                                     )
-                                elif drive_id_arg or order_code.startswith("DC"):
+                                elif order_type_arg != "btl" and (drive_id_arg or order_code.startswith("DC")):
                                     target_fid = drive_id_arg or "1zPRnfdMbaaYWSKK8PZdZIuooOanjWynp"
                                     sess.post(
                                         self.DVTL_KHO_WEBHOOK_URL,
@@ -6205,6 +6209,23 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 if r and r.status_code == 200:
                     items = r.json().get("files") or []
                     if items:
+                        _promo_kw = ("giới thiệu về nhóm", "lợi ích tham gia nhóm", "0333800642", "033800642")
+                        _clean_items = []
+                        for it in items:
+                            nm_l = str(it.get("name") or "").strip().lower()
+                            mt = str(it.get("mimeType") or "")
+                            if any(k in nm_l for k in _promo_kw):
+                                continue
+                            if mt == "application/vnd.google-apps.shortcut":
+                                continue
+                            _clean_items.append(it)
+                        def _sort_key(it):
+                            mt = str(it.get("mimeType") or "")
+                            is_fld = 0 if mt == "application/vnd.google-apps.folder" else (1 if mt.startswith("video/") else 2)
+                            nm = str(it.get("name") or "")
+                            parts = [int(p) if p.isdigit() else p.lower() for p in re.split(r"(\d+)", nm)]
+                            return (is_fld, parts)
+                        _clean_items.sort(key=_sort_key)
                         live_files = [
                             {
                                 "id": it.get("id"),
@@ -6217,7 +6238,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                                     else f"https://drive.google.com/file/d/{it.get('id')}/view"
                                 ),
                             }
-                            for it in items
+                            for it in _clean_items
                         ]
                         live_synced = True
             except Exception:

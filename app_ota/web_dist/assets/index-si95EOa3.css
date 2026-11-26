@@ -7421,3 +7421,26 @@ html.island-host #root {
     transform: scale(1);
   }
 }
+
+
+/* === CLEAN MINIMAL ORB: LARGE FADED LOGO + DIEPVIENTAILIEU.STORE ONLY === */
+.start-button.dvs-watermark-btn.dvs-web-orb-btn {
+  gap: 10px !important;
+  padding: 16px !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn .dvs-start-emblem {
+  width: 92px !important;
+  height: 92px !important;
+  opacity: 0.38 !important;
+  margin-bottom: 2px !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn:hover .dvs-start-emblem {
+  opacity: 0.58 !important;
+  transform: translateY(-2px) scale(1.05) !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn .dvs-orb-domain {
+  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  letter-spacing: 0.01em !important;
+}

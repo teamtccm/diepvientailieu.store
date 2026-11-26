@@ -4485,11 +4485,9 @@ function wQ({model:t,setPage:e}){
           g.jsx("div",{className:"outer-ring"}),
           g.jsx("div",{className:"middle-ring"}),
           g.jsx("div",{className:"inner-ring"}),
-          g.jsxs("button",{type:"button",className:"start-button dvs-watermark-btn dvs-web-orb-btn",onClick:()=>{const u="https://diepvientailieu.store";try{oe("open_external_url",{url:u}).catch(()=>window.open(u,"_blank"))}catch{window.open(u,"_blank")}},"aria-label":"Mở website diepvientailieu.store",children:[
+          g.jsxs("button",{type:"button",className:"start-button dvs-watermark-btn dvs-web-orb-btn",onClick:()=>{const u="https://diepvientailieu.store";try{oe("open_link",{url:u}).catch(()=>window.open(u,"_blank"))}catch{window.open(u,"_blank")}},"aria-label":"Mở website diepvientailieu.store",children:[
             g.jsx("span",{className:"dvs-start-emblem","aria-hidden":"true"}),
-            g.jsx("span",{className:"dvs-orb-badge",children:"WEBSITE CHÍNH THỨC"}),
-            g.jsx("strong",{className:"dvs-orb-domain",children:"diepvientailieu.store"}),
-            g.jsx("span",{className:"dvs-orb-cta",children:"Truy cập Web ↗"})
+            g.jsx("strong",{className:"dvs-orb-domain",children:"diepvientailieu.store"})
           ]})
         ]}),
         g.jsxs("div",{className:"idle-copy",children:[

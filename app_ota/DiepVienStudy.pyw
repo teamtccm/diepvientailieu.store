@@ -6826,11 +6826,11 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 reveal_file_cross_platform(p)
             return None
 
-        if cmd == "open_link":
-            url = args.get("url")
+        if cmd in ("open_link", "open_external_url"):
+            url = (args or {}).get("url")
             if url:
                 open_url_cross_platform(url)
-            return None
+            return {"ok": True}
 
         if cmd == "open_permission":
             return None
@@ -7247,7 +7247,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.26.7", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.26.8", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -7264,7 +7264,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.26.7"
+                    local_ver = "2026.11.26.8"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     def _ver_tuple(v_str):
                         return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))

@@ -4046,8 +4046,9 @@ function goToCoursePaymentStep(isAutoFromSavedProfile = false) {
     const name = (cust.name || "").trim() || (email.includes("@") ? email.split("@")[0] : "HOC VIEN");
 
     const course = selectedCourseForCheckout;
-    const cleanCode = String(course.code || "KHOAHOC").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
-    const orderCode = `DV${cleanCode}${Math.floor(100 + Math.random() * 900)}`;
+    const tierPrefix = Number(course.price || 0) >= 300000 ? "KH399" : (Number(course.price || 0) >= 100000 ? "KH199" : "KH69");
+    const cleanCode = String(course.code || "KH").replace(/[^A-Za-z0-9]/g, "").toUpperCase().slice(0, 6);
+    const orderCode = `${tierPrefix}${cleanCode}${Math.floor(100 + Math.random() * 900)}`;
     const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 16);
     const transferMemo = `${orderCode} ${cleanName}`.trim();
 
@@ -5130,9 +5131,9 @@ function handleGatedAppDownload(targetPlatform = "exe") {
     });
 
     if (targetPlatform === "macos") {
-        startDirectFileDownload("https://github.com/teamtccm/diepvientailieu.store/releases/download/v14.2/Cai_Dat_App_Diep_Vien_Study_MacOS.zip", "Cài Đặt App Điệp Viên Study (MacOS).zip");
+        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_MacOS.zip", "Cai_Dat_App_Diep_Vien_Study_MacOS.zip");
     } else {
-        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cài Đặt App Điệp Viên Study (Windows).exe");
+        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cai_Dat_App_Diep_Vien_Study_Windows.exe");
     }
 }
 

@@ -5367,17 +5367,21 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         if self._is_admin_account(em):
             return True
         cid = str(course_id or "").strip().upper()
+        if not cid:
+            return False
         lic = self._load_local_device_license()
         lic_em = str(lic.get("email") or "").strip().lower()
-        unlocked = set(str(x).strip().upper() for x in (lic.get("unlockedCourses") or []))
+        unlocked = set()
+        if lic_em == em:
+            for x in (lic.get("unlockedCourses") or []):
+                unlocked.add(str(x).strip().upper())
         g_u = getattr(self, "_google_user", None) or {}
         if str(g_u.get("email") or "").strip().lower() == em:
             for x in (g_u.get("unlockedCourses") or []):
                 unlocked.add(str(x).strip().upper())
         expanded = set(self._expand_unlocked_courses(list(unlocked)))
-        if lic_em == em and ("ALL-COURSES-399K" in expanded or "__ALL_COURSES_399K__" in expanded or not cid or cid in expanded):
-            return True
-        if "ALL-COURSES-399K" in expanded or (cid and cid in expanded):
+        # BẢO MẬT 2 LỚP NGHIÊM NGẶT: Chỉ mở khóa khi ĐÚNG Email đang đăng nhập sở hữu course_id này
+        if "ALL-COURSES-399K" in expanded or "__ALL_COURSES_399K__" in expanded or cid in expanded:
             return True
         return False
 
@@ -5696,12 +5700,24 @@ NỘI DUNG BÀI GIẢNG & NOTE:
     def dvtl_create_order(self, args: dict | None = None) -> dict:
         args = args or {}
         hw_id = self.get_hardware_device_id()
-        order_type = str(args.get("orderType") or "course").strip()
-        order_code = str(args.get("orderCode") or f"DVSTUDY{int(time.time()) % 100000}").strip().upper()
+        order_type = str(args.get("orderType") or "course").strip().lower()
+        amount = int(args.get("amount") or (50000 if order_type in ("btl", "outline", "doc", "file") else 69000))
         item_id = str(args.get("itemId") or "").strip()
+        raw_code = str(args.get("orderCode") or "").strip().upper()
+        rand_tail = str(int(time.time() * 1000) % 9000 + 1000)
+        if not raw_code or raw_code.startswith("DVSTUDY"):
+            if order_type == "btl":
+                order_code = f"COCBTL{rand_tail}"
+            elif order_type == "course":
+                tier_tag = "KH399" if amount >= 300000 else ("KH199" if amount >= 100000 else "KH69")
+                order_code = f"{tier_tag}{rand_tail}"
+            else:
+                clean_sku = re.sub(r"[^A-Z0-9]", "", item_id.upper())[:6]
+                order_code = f"DC{clean_sku}{rand_tail[-3:]}"
+        else:
+            order_code = raw_code
         item_name = str(args.get("itemName") or "Khóa Học / Tài Liệu Điệp Viên").strip()
         package_name = str(args.get("packageName") or item_name).strip()
-        amount = int(args.get("amount") or 69000)
         total_est = int(args.get("totalPrice") or amount)
         local_lic = self._load_local_device_license()
         raw_name_arg = str(args.get("customerName") or args.get("name") or "").strip()
@@ -6143,6 +6159,26 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         token_file = next((p for p in token_candidates if p.exists()), None)
         lic_cur = self._load_local_device_license()
         req_em = str(args.get("email") or lic_cur.get("email") or "").strip().lower()
+        force_refresh = bool(args.get("forceRefresh", False))
+
+        # BẢO MẬT 2 LỚP: App chỉ trình chiếu khóa học & thư mục đã được mở khóa cho đúng Email
+        if not self._is_user_authorized_for_course(req_em, course_id):
+            return {
+                "ok": False,
+                "unauthorized": True,
+                "courseId": course_id,
+                "folderId": folder_id,
+                "files": [],
+                "error": "Tài khoản chưa mở khóa khóa học này. Vui lòng đăng nhập đúng Email đã mua hoặc thanh toán để mở khóa!",
+            }
+
+        # Bộ nhớ đệm ngắn 45 giây cho thư mục Drive để đảm bảo cập nhật thời gian thực khi thư mục thay đổi
+        if not hasattr(self, "_drive_folder_cache"):
+            self._drive_folder_cache = {}
+        cache_key = f"{course_id}::{folder_id}::{req_em}"
+        cached_entry = self._drive_folder_cache.get(cache_key)
+        if not force_refresh and cached_entry and (time.time() - cached_entry.get("_ts", 0) < 45.0):
+            return cached_entry["payload"]
 
         # Nếu là gói Combo và đang ở cấp thư mục gốc của Combo, ưu tiên nạp sẵn danh sách môn học con
         child_ids = list(info.get("childCourseIds") or [])
@@ -6371,7 +6407,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
 
         processed_files.sort(key=_nat_sort_key)
 
-        return {
+        result_payload = {
             "ok": True,
             "courseId": course_id,
             "rootFolderId": self.DVTL_DRIVE_COURSES_ROOT,
@@ -6381,7 +6417,13 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             "folderUrl": f"https://drive.google.com/drive/folders/{folder_id}",
             "files": processed_files,
             "liveSynced": live_synced,
+            "syncedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         }
+        if live_synced and hasattr(self, "_drive_folder_cache"):
+            if len(self._drive_folder_cache) > 64:
+                self._drive_folder_cache.clear()
+            self._drive_folder_cache[cache_key] = {"_ts": time.time(), "payload": result_payload}
+        return result_payload
     # =========================================================================
     # 5. DISPATCHER CHO MỌI LỆNH TAURI INVOKE
     # =========================================================================
@@ -6443,7 +6485,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 threading.Thread(target=_sync_cust_cloud, daemon=True).start()
             return self._load_local_device_license()
         if cmd == "dvtl_get_ota_status":
-            return getattr(self, "_ota_status", {"version": "2026.11.25.6", "autoUpdateEnabled": True})
+            return getattr(self, "_ota_status", {"version": "2026.11.26.2", "autoUpdateEnabled": True})
 
         # --- Live Lecture Mind Map, Segment Notes & PDF-to-Word ---
         if cmd == "convert_pdf_to_word_dialog":

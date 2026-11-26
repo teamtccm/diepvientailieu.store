@@ -4481,20 +4481,21 @@ function wQ({model:t,setPage:e}){
           ]})
         ]})
       ]}):g.jsxs("div",{className:"idle-meeting",children:[
-        g.jsxs("div",{className:"start-visual",children:[
-          g.jsx("div",{className:"outer-ring"}),
-          g.jsx("div",{className:"middle-ring"}),
-          g.jsx("div",{className:"inner-ring"}),
-          g.jsx("div",{className:"orbit-track",children:g.jsx("span",{})}),
-          g.jsxs("button",{className:"start-button dvs-watermark-btn",onClick:()=>void t.startMeeting(),disabled:!t.canStartMeeting||t.busy,"aria-label":"Bắt đầu ghi nội dung buổi học",children:[
-            g.jsx("span",{className:"dvs-start-emblem","aria-hidden":"true"}),
-            g.jsx(Wl,{compact:!0}),
-            g.jsx("strong",{children:"Bắt đầu ghi buổi học"})
+        g.jsxs("div",{className:"dvs-portal-visual",children:[
+          g.jsx("div",{className:"dvs-portal-glow"}),
+          g.jsxs("button",{type:"button",className:"dvs-portal-btn",onClick:()=>{const u="https://diepvientailieu.store";try{oe("open_external_url",{url:u}).catch(()=>window.open(u,"_blank"))}catch{window.open(u,"_blank")}},"aria-label":"Mở website diepvientailieu.store",children:[
+            g.jsxs("div",{className:"dvs-portal-top",children:[
+              g.jsx("img",{src:"/diepvien_logo.png",alt:"Điệp Viên Tài Liệu",className:"dvs-portal-logo"}),
+              g.jsx("span",{className:"dvs-portal-badge",children:"WEBSITE CHÍNH THỨC"})
+            ]}),
+            g.jsx("strong",{className:"dvs-portal-domain",children:"diepvientailieu.store"}),
+            g.jsx("span",{className:"dvs-portal-sub",children:"Kho 600+ Đề Cương · Dịch Vụ BTL · Khóa Học HSA, TSA, 2K9–2K10"}),
+            g.jsx("span",{className:"dvs-portal-cta",children:"Truy cập Website ngay ↗"})
           ]})
         ]}),
         g.jsxs("div",{className:"idle-copy",children:[
-          g.jsx("h2",{children:"Ghi nội dung buổi học & Tóm tắt AI"}),
-          g.jsx("p",{children:"Nhận diện giọng giảng viên, chép lời thời gian thực và tổng hợp kiến thức trọng tâm."})
+          g.jsx("h2",{children:"Hệ sinh thái Điệp Viên Tài Liệu & Công cụ AI"}),
+          g.jsx("p",{children:"Bấm vào thẻ bên trên để mở trang chủ diepvientailieu.store hoặc chọn công cụ học tập AI bên dưới."})
         ]}),
         g.jsx(fH,{model:t,setPage:e}),
         !t.ready&&g.jsxs("small",{className:"accent-text",children:[g.jsx(kf,{size:13}),t.status]}),

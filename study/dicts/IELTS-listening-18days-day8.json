@@ -1,0 +1,457 @@
+[
+    {
+        "name": "motor",
+        "trans": [
+            "n. xe hơi"
+        ]
+    },
+    {
+        "name": "hot balloon",
+        "trans": [
+            "n. khinh khí cầu"
+        ]
+    },
+    {
+        "name": "register",
+        "trans": [
+            "v. Đăng ký"
+        ]
+    },
+    {
+        "name": "calm",
+        "trans": [
+            "adj. bình tĩnh"
+        ]
+    },
+    {
+        "name": "postal",
+        "trans": [
+            "adj. bưu điện"
+        ]
+    },
+    {
+        "name": "bonus",
+        "trans": [
+            "n. tiền thưởng"
+        ]
+    },
+    {
+        "name": "insect",
+        "trans": [
+            "n. Côn trùng"
+        ]
+    },
+    {
+        "name": "warning",
+        "trans": [
+            "n. cảnh báo"
+        ]
+    },
+    {
+        "name": "seed",
+        "trans": [
+            "n. hạt giống"
+        ]
+    },
+    {
+        "name": "custom",
+        "trans": [
+            "n. hải quan"
+        ]
+    },
+    {
+        "name": "goods",
+        "trans": [
+            "n. hàng hóa"
+        ]
+    },
+    {
+        "trans": [
+            "v. từ chối"
+        ]
+    },
+    {
+        "name": "belonging",
+        "trans": [
+            "n. của cải"
+        ]
+    },
+    {
+        "name": "monologue",
+        "trans": [
+            "n. độc thoại"
+        ]
+    },
+    {
+        "name": "label",
+        "trans": [
+            "n. nhãn"
+        ]
+    },
+    {
+        "name": "applicant",
+        "trans": [
+            "n. Người nộp đơn"
+        ]
+    },
+    {
+        "name": "opportunity",
+        "trans": [
+            "n. cơ hội"
+        ]
+    },
+    {
+        "name": "document",
+        "trans": [
+            "n. Tập tin"
+        ]
+    },
+    {
+        "name": "promotion",
+        "trans": [
+            "n. khuyến mãi"
+        ]
+    },
+    {
+        "name": "networking",
+        "trans": [
+            "n. Một hệ thống mạng hỗ trợ lẫn nhau"
+        ]
+    },
+    {
+        "name": "self-employment",
+        "trans": [
+            "n. Tự vận hành"
+        ]
+    },
+    {
+        "name": "organization",
+        "trans": [
+            "n. tổ chức"
+        ]
+    },
+    {
+        "name": "community",
+        "trans": [
+            "n. cộng đồng"
+        ]
+    },
+    {
+        "name": "involvement",
+        "trans": [
+            "n. có liên quan"
+        ]
+    },
+    {
+        "name": "washroom",
+        "trans": [
+            "n. phòng tắm"
+        ]
+    },
+    {
+        "name": "corridor",
+        "trans": [
+            "n. Hành lang"
+        ]
+    },
+    {
+        "name": "control",
+        "trans": [
+            "v. kiểm soát"
+        ]
+    },
+    {
+        "name": "reward",
+        "trans": [
+            "n. phần thưởng"
+        ]
+    },
+    {
+        "name": "competitive",
+        "trans": [
+            "adj. cạnh tranh"
+        ]
+    },
+    {
+        "name": "waste",
+        "trans": [
+            "n. rác thải"
+        ]
+    },
+    {
+        "name": "reduce",
+        "trans": [
+            "v. giảm bớt"
+        ]
+    },
+    {
+        "name": "improvement",
+        "trans": [
+            "n. cải thiện"
+        ]
+    },
+    {
+        "name": "safety",
+        "trans": [
+            "n. an toàn"
+        ]
+    },
+    {
+        "name": "soft",
+        "trans": [
+            "adj. mềm mại"
+        ]
+    },
+    {
+        "name": "fire disaster",
+        "trans": [
+            "n. ngọn lửa"
+        ]
+    },
+    {
+        "name": "secure",
+        "trans": [
+            "adj. an toàn"
+        ]
+    },
+    {
+        "name": "leaf",
+        "trans": [
+            "n. lá"
+        ]
+    },
+    {
+        "name": "rubbish",
+        "trans": [
+            "n. rác thải"
+        ]
+    },
+    {
+        "name": "roof",
+        "trans": [
+            "n. mái nhà"
+        ]
+    },
+    {
+        "name": "gas tank",
+        "trans": [
+            "n. bình xăng"
+        ]
+    },
+    {
+        "name": "gap",
+        "trans": [
+            "n. khoảng trống"
+        ]
+    },
+    {
+        "name": "yard",
+        "trans": [
+            "n. sân"
+        ]
+    },
+    {
+        "name": "remove",
+        "trans": [
+            "v. Di chuyển"
+        ]
+    },
+    {
+        "name": "occur",
+        "trans": [
+            "v. xảy ra"
+        ]
+    },
+    {
+        "name": "brushfire",
+        "trans": [
+            "n. cháy rừng"
+        ]
+    },
+    {
+        "name": "volunteer",
+        "trans": [
+            "n. Tình nguyện viên"
+        ]
+    },
+    {
+        "name": "battery",
+        "trans": [
+            "n. pin"
+        ]
+    },
+    {
+        "name": "bottom",
+        "trans": [
+            "n. đáy"
+        ]
+    },
+    {
+        "name": "confirm",
+        "trans": [
+            "v. Xác nhận"
+        ]
+    },
+    {
+        "name": "wooden",
+        "trans": [
+            "adj. bằng gỗ"
+        ]
+    },
+    {
+        "name": "urban",
+        "trans": [
+            "adj. đô thị"
+        ]
+    },
+    {
+        "name": "souvenir",
+        "trans": [
+            "n. quà lưu niệm"
+        ]
+    },
+    {
+        "name": "recycled",
+        "trans": [
+            "adj. tái chế"
+        ]
+    },
+    {
+        "name": "golf",
+        "trans": [
+            "n. quả bóng golf"
+        ]
+    },
+    {
+        "name": "resort",
+        "trans": [
+            "n. khu nghỉ dưỡng"
+        ]
+    },
+    {
+        "name": "weave",
+        "trans": [
+            "v. bím tóc"
+        ]
+    },
+    {
+        "name": "car transfer",
+        "trans": [
+            "n. chuyển xe"
+        ]
+    },
+    {
+        "name": "endangered",
+        "trans": [
+            "adj. nguy cơ tuyệt chủng"
+        ]
+    },
+    {
+        "name": "herbal",
+        "trans": [
+            "adj. thảo dược"
+        ]
+    },
+    {
+        "name": "length",
+        "trans": [
+            "n. chiều dài"
+        ]
+    },
+    {
+        "name": "fur",
+        "trans": [
+            "n. lông thú"
+        ]
+    },
+    {
+        "name": "consumption",
+        "trans": [
+            "n. tiêu dùng"
+        ]
+    },
+    {
+        "name": "fuel",
+        "trans": [
+            "n. nhiên liệu"
+        ]
+    },
+    {
+        "name": "natural gas",
+        "trans": [
+            "n. khí tự nhiên"
+        ]
+    },
+    {
+        "name": "alter",
+        "trans": [
+            "v. thay đổi"
+        ]
+    },
+    {
+        "name": "smooth",
+        "trans": [
+            "adj. mịn màng"
+        ]
+    },
+    {
+        "name": "utilize",
+        "trans": [
+            "v. tận dụng"
+        ]
+    },
+    {
+        "name": "taste",
+        "trans": [
+            "n. Hương vị"
+        ]
+    },
+    {
+        "name": "petrol",
+        "trans": [
+            "n. xăng"
+        ]
+    },
+    {
+        "name": "sheet",
+        "trans": [
+            "n. giấy"
+        ]
+    },
+    {
+        "name": "storage",
+        "trans": [
+            "n. nhà kho"
+        ]
+    },
+    {
+        "name": "rubber",
+        "trans": [
+            "n. Cao su"
+        ]
+    },
+    {
+        "name": "download",
+        "trans": [
+            "v. Tải xuống"
+        ]
+    },
+    {
+        "name": "invoice",
+        "trans": [
+            "n. hóa đơn"
+        ]
+    },
+    {
+        "name": "security",
+        "trans": [
+            "n. an ninh"
+        ]
+    },
+    {
+        "name": "evidence",
+        "trans": [
+            "n. bằng chứng"
+        ]
+    }
+]

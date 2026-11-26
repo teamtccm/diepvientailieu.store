@@ -1,0 +1,203 @@
+[
+    {
+        "name": "dictionary",
+        "trans": [
+            "n. từ điển"
+        ]
+    },
+    {
+        "name": "encyclopedia",
+        "trans": [
+            "n. Bách khoa toàn thư"
+        ]
+    },
+    {
+        "name": "reference book",
+        "trans": [
+            "n. Sách tham khảo"
+        ]
+    },
+    {
+        "name": "textbook",
+        "trans": [
+            "n. sách giáo khoa"
+        ]
+    },
+    {
+        "name": "handout",
+        "trans": [
+            "n. Tài liệu phát tay"
+        ]
+    },
+    {
+        "name": "paper",
+        "trans": [
+            "n. Giấy"
+        ]
+    },
+    {
+        "name": "online",
+        "trans": [
+            "adj. trực tuyến"
+        ]
+    },
+    {
+        "name": "internet",
+        "trans": [
+            "n. Internet"
+        ]
+    },
+    {
+        "name": "database",
+        "trans": [
+            "n. cơ sở dữ liệu"
+        ]
+    },
+    {
+        "name": "digital",
+        "trans": [
+            "adj. điện tử, kỹ thuật số"
+        ]
+    },
+    {
+        "name": "physical",
+        "trans": [
+            "adj. thể chất"
+        ]
+    },
+    {
+        "name": "video",
+        "trans": [
+            "n. video"
+        ]
+    },
+    {
+        "name": "CD-ROM",
+        "trans": [
+            "n. CD-ROM"
+        ]
+    },
+    {
+        "name": "DVD",
+        "trans": [
+            "n. đĩa video kỹ thuật số"
+        ]
+    },
+    {
+        "name": "periodical",
+        "trans": [
+            "n. tạp chí"
+        ]
+    },
+    {
+        "name": "journal",
+        "trans": [
+            "n. tạp chí"
+        ]
+    },
+    {
+        "name": "current",
+        "trans": [
+            "adj. hiện tại"
+        ]
+    },
+    {
+        "name": "back",
+        "trans": [
+            "adj. quá khứ"
+        ]
+    },
+    {
+        "name": "issue",
+        "trans": [
+            "n. Ấn phẩm"
+        ]
+    },
+    {
+        "name": "leaflet",
+        "trans": [
+            "n. tờ rơi"
+        ]
+    },
+    {
+        "name": "booklet",
+        "trans": [
+            "n. tờ rơi"
+        ]
+    },
+    {
+        "name": "magazine",
+        "trans": [
+            "n. tạp chí"
+        ]
+    },
+    {
+        "name": "newspaper",
+        "trans": [
+            "n. tờ báo"
+        ]
+    },
+    {
+        "name": "novel",
+        "trans": [
+            "n. tiểu thuyết"
+        ]
+    },
+    {
+        "name": "fiction",
+        "trans": [
+            "n. tiểu thuyết hư cấu"
+        ]
+    },
+    {
+        "name": "non - fiction",
+        "trans": [
+            "n. văn học tài liệu"
+        ]
+    },
+    {
+        "name": "enquiry/inquiry",
+        "trans": [
+            "n. hỏi thăm, điều tra"
+        ]
+    },
+    {
+        "name": "delivery desk",
+        "trans": [
+            "n. Bàn mượn"
+        ]
+    },
+    {
+        "name": "circulation desk",
+        "trans": [
+            "n. văn phòng trả sách"
+        ]
+    },
+    {
+        "name": "open shelf",
+        "trans": [
+            "n. kệ mở",
+            "adj. khung mở"
+        ]
+    },
+    {
+        "name": "closed shelf",
+        "trans": [
+            "n. khung kín",
+            "adj. khung kín"
+        ]
+    },
+    {
+        "name": "photocopy",
+        "trans": [
+            "n. sao chụp",
+            "v. sao chép"
+        ]
+    },
+    {
+        "name": "scanner",
+        "trans": [
+            "n. Máy quét"
+        ]
+    }
+]

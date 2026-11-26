@@ -4841,6 +4841,7 @@ function updateVerifiedAppDownloadUI() {
 function validateAppDownloadGate() {
     const nameInp = document.getElementById("appOtpNameInput");
     const emailInp = document.getElementById("appOtpEmailInput");
+    const btnPwa = document.getElementById("btnInstantLaunchPwaApp");
     const btnWinExe = document.getElementById("btnDirectDownloadWinExe");
     const btnMacZip = document.getElementById("btnDirectDownloadMacZip");
     const badge = document.getElementById("appGateLockBadge");
@@ -4850,7 +4851,7 @@ function validateAppDownloadGate() {
     const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal);
     const isReady = nameVal.length >= 2 && emailValid;
 
-    [btnWinExe, btnMacZip].forEach(btn => {
+    [btnPwa, btnWinExe, btnMacZip].forEach(btn => {
         if (!btn) return;
         btn.disabled = !isReady;
         if (isReady) {
@@ -5165,6 +5166,17 @@ function handleGatedAppDownload(targetPlatform = "exe") {
         email: emailVal,
         source: "WEB_APP_DOWNLOAD_GATE"
     });
+
+    if (targetPlatform === "pwa") {
+        const w = 1380, h = 880;
+        const left = Math.max(0, Math.round((window.screen.width - w) / 2));
+        const top = Math.max(0, Math.round((window.screen.height - h) / 2));
+        const appWin = window.open("study/?window=main&install=1", "DiepVienStudyDesktopApp", `width=${w},height=${h},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes`);
+        if (!appWin) {
+            window.location.href = "study/?window=main&install=1";
+        }
+        return;
+    }
 
     if (targetPlatform === "macos") {
         startDirectFileDownload("https://drive.usercontent.google.com/download?id=1PoEK3LzLr6isibG5oZe2APalg4GWI0W_&export=download&confirm=t", "Diep Vien Study (macOS).zip");

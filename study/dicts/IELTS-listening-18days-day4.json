@@ -1,0 +1,440 @@
+[
+    {
+        "name": "trousers",
+        "trans": [
+            "n. quần"
+        ]
+    },
+    {
+        "name": "service",
+        "trans": [
+            "n. dịch vụ"
+        ]
+    },
+    {
+        "name": "viewpoint",
+        "trans": [
+            "n. quan điểm"
+        ]
+    },
+    {
+        "name": "freezer",
+        "trans": [
+            "n. điện lạnh"
+        ]
+    },
+    {
+        "name": "zoom",
+        "trans": [
+            "n. tăng nhanh"
+        ]
+    },
+    {
+        "name": "financial",
+        "trans": [
+            "adj. tài chính"
+        ]
+    },
+    {
+        "name": "buffet",
+        "trans": [
+            "n. Buffet"
+        ]
+    },
+    {
+        "name": "manager",
+        "trans": [
+            "n. người quản lý"
+        ]
+    },
+    {
+        "name": "expense",
+        "trans": [
+            "n. chi phí"
+        ]
+    },
+    {
+        "name": "college",
+        "trans": [
+            "n. trường đại học"
+        ]
+    },
+    {
+        "name": "opposite",
+        "trans": [
+            "adj. Ngược lại"
+        ]
+    },
+    {
+        "name": "cheque",
+        "trans": [
+            "n. kiểm tra"
+        ]
+    },
+    {
+        "name": "supervisor",
+        "trans": [
+            "n. người giám sát"
+        ]
+    },
+    {
+        "name": "refrigerator",
+        "trans": [
+            "n. tủ lạnh"
+        ]
+    },
+    {
+        "name": "science",
+        "trans": [
+            "n. khoa học"
+        ]
+    },
+    {
+        "name": "collection",
+        "trans": [
+            "n. Thu thập"
+        ]
+    },
+    {
+        "name": "collect",
+        "trans": [
+            "v. thu thập"
+        ]
+    },
+    {
+        "name": "literature",
+        "trans": [
+            "n. văn học"
+        ]
+    },
+    {
+        "name": "bank",
+        "trans": [
+            "n. ngân hàng"
+        ]
+    },
+    {
+        "name": "state",
+        "trans": [
+            "n. tình huống"
+        ]
+    },
+    {
+        "name": "item",
+        "trans": [
+            "n. dự án"
+        ]
+    },
+    {
+        "name": "snake",
+        "trans": [
+            "n. con rắn"
+        ]
+    },
+    {
+        "name": "phone bill",
+        "trans": [
+            "n. hóa đơn điện thoại"
+        ]
+    },
+    {
+        "name": "wildlife",
+        "trans": [
+            "n. động vật hoang dã"
+        ]
+    },
+    {
+        "name": "photocopy",
+        "trans": [
+            "n. sao chụp"
+        ]
+    },
+    {
+        "name": "camera",
+        "trans": [
+            "n. máy ảnh"
+        ]
+    },
+    {
+        "name": "reservation",
+        "trans": [
+            "n. Đặt lịch hẹn"
+        ]
+    },
+    {
+        "name": "hold",
+        "trans": [
+            "v. giữ"
+        ]
+    },
+    {
+        "name": "catalogue",
+        "trans": [
+            "n. Thư mục"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "v. Đặt chỗ"
+        ]
+    },
+    {
+        "name": "noisy",
+        "trans": [
+            "adj. ồn ào"
+        ]
+    },
+    {
+        "name": "deposit",
+        "trans": [
+            "n. Gửi tiền"
+        ]
+    },
+    {
+        "name": "transfer",
+        "trans": [
+            "v. chuyển nhượng"
+        ]
+    },
+    {
+        "name": "uniform",
+        "trans": [
+            "n. đồng phục"
+        ]
+    },
+    {
+        "name": "tropical",
+        "trans": [
+            "adj. nhiệt đới"
+        ]
+    },
+    {
+        "name": "preferred",
+        "trans": [
+            "adj. ưu tiên"
+        ]
+    },
+    {
+        "name": "firework",
+        "trans": [
+            "n. pháo hoa"
+        ]
+    },
+    {
+        "name": "loan",
+        "trans": [
+            "n. tiền vay"
+        ]
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "n. huấn luyện viên"
+        ]
+    },
+    {
+        "name": "identification",
+        "trans": [
+            "n. Bằng chứng nhận dạng"
+        ]
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "n. bãi biển"
+        ]
+    },
+    {
+        "name": "statement",
+        "trans": [
+            "n. Danh sách kiểm tra"
+        ]
+    },
+    {
+        "name": "expire",
+        "trans": [
+            "v. Hết hạn"
+        ]
+    },
+    {
+        "name": "librarian",
+        "trans": [
+            "n. thủ thư"
+        ]
+    },
+    {
+        "name": "nationality",
+        "trans": [
+            "n. Quốc tịch"
+        ]
+    },
+    {
+        "name": "guidance",
+        "trans": [
+            "n. hướng dẫn"
+        ]
+    },
+    {
+        "name": "gift",
+        "trans": [
+            "n. quà tặng"
+        ]
+    },
+    {
+        "name": "rule",
+        "trans": [
+            "n. quy tắc"
+        ]
+    },
+    {
+        "name": "side door",
+        "trans": [
+            "n. cửa phụ"
+        ]
+    },
+    {
+        "name": "fix",
+        "trans": [
+            "v. sửa chữa"
+        ]
+    },
+    {
+        "name": "theme",
+        "trans": [
+            "n. chủ đề"
+        ]
+    },
+    {
+        "name": "normal",
+        "trans": [
+            "adj. bình thường"
+        ]
+    },
+    {
+        "name": "benefit",
+        "trans": [
+            "n. Lợi ích"
+        ]
+    },
+    {
+        "name": "tennis",
+        "trans": [
+            "n. quần vợt"
+        ]
+    },
+    {
+        "name": "interest rate",
+        "trans": [
+            "n. lãi suất"
+        ]
+    },
+    {
+        "name": "cable car",
+        "trans": [
+            "n. cáp treo"
+        ]
+    },
+    {
+        "name": "online",
+        "trans": [
+            "adj. trực tuyến"
+        ]
+    },
+    {
+        "name": "source",
+        "trans": [
+            "n. Nguồn"
+        ]
+    },
+    {
+        "name": "branch",
+        "trans": [
+            "n. chi nhánh"
+        ]
+    },
+    {
+        "name": "Canadian",
+        "trans": [
+            "n. người Canada"
+        ]
+    },
+    {
+        "name": "reference number",
+        "trans": [
+            "n. Số tham chiếu"
+        ]
+    },
+    {
+        "name": "amount",
+        "trans": [
+            "n. số lượng"
+        ]
+    },
+    {
+        "name": "automatically",
+        "trans": [
+            "adv. tự động"
+        ]
+    },
+    {
+        "name": "basement",
+        "trans": [
+            "n. tầng hầm"
+        ]
+    },
+    {
+        "name": "wet",
+        "trans": [
+            "adj. ẩm ướt"
+        ]
+    },
+    {
+        "name": "action movie",
+        "trans": [
+            "n. phim hành động"
+        ]
+    },
+    {
+        "name": "engineer",
+        "trans": [
+            "n. kỹ sư"
+        ]
+    },
+    {
+        "name": "signature",
+        "trans": [
+            "n. chữ ký"
+        ]
+    },
+    {
+        "name": "payment",
+        "trans": [
+            "n. trả tiền"
+        ]
+    },
+    {
+        "name": "minimum",
+        "trans": [
+            "n. giá trị tối thiểu"
+        ]
+    },
+    {
+        "name": "relaxation",
+        "trans": [
+            "n. thư giãn"
+        ]
+    },
+    {
+        "name": "scheme",
+        "trans": [
+            "n. Kế hoạch: Hệ thống"
+        ]
+    },
+    {
+        "name": "racket",
+        "trans": [
+            "n. vợt"
+        ]
+    }
+]

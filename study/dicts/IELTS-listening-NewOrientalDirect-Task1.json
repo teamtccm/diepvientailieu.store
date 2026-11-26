@@ -1,0 +1,272 @@
+[
+    {
+        "name": "accommodation",
+        "trans": [
+            "n. Chỗ ở"
+        ]
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "n. thuê",
+            "v. thuê"
+        ]
+    },
+    {
+        "name": "let",
+        "trans": [
+            "v. thuê",
+            "n. thuê"
+        ]
+    },
+    {
+        "name": "hire",
+        "trans": [
+            "v. thuê"
+        ]
+    },
+    {
+        "name": "apartment",
+        "trans": [
+            "n. căn hộ"
+        ]
+    },
+    {
+        "name": "flat",
+        "trans": [
+            "n. căn hộ"
+        ]
+    },
+    {
+        "name": "house",
+        "trans": [
+            "n. khu dân cư"
+        ]
+    },
+    {
+        "name": "bungalow",
+        "trans": [
+            "n. nhà gỗ một tầng"
+        ]
+    },
+    {
+        "name": "terraced house",
+        "trans": [
+            "n. nhà phố"
+        ]
+    },
+    {
+        "name": "homestay",
+        "trans": [
+            "n. Ở trọ"
+        ]
+    },
+    {
+        "name": "host family",
+        "trans": [
+            "n. Ở trọ"
+        ]
+    },
+    {
+        "name": "dormitory",
+        "trans": [
+            "n. ký túc xá"
+        ]
+    },
+    {
+        "name": "hall of residence",
+        "trans": [
+            "n. căn hộ trường học"
+        ]
+    },
+    {
+        "name": "en-suite facility",
+        "trans": [
+            "n. Tiện nghi phòng Suite"
+        ]
+    },
+    {
+        "name": "city centre",
+        "trans": [
+            "n. trung tâm thành phố"
+        ]
+    },
+    {
+        "name": "downtown",
+        "trans": [
+            "adj. trung tâm thành phố",
+            "adv. hướng về trung tâm thành phố, ở trung tâm thành phố",
+            "n. trung tâm thành phố"
+        ]
+    },
+    {
+        "name": "urban",
+        "trans": [
+            "adj. đô thị"
+        ]
+    },
+    {
+        "name": "outskirts",
+        "trans": [
+            "n. ngoại ô"
+        ]
+    },
+    {
+        "name": "uptown",
+        "trans": [
+            "adj. khu dân cư ngoại thành",
+            "adv. ở khu dân cư ngoại ô",
+            "n. Khu dân cư ngoại thành"
+        ]
+    },
+    {
+        "name": "suburb",
+        "trans": [
+            "n. Ngoại ô"
+        ]
+    },
+    {
+        "name": "countryside",
+        "trans": [
+            "n. nông thôn"
+        ]
+    },
+    {
+        "name": "community",
+        "trans": [
+            "n. cộng đồng"
+        ]
+    },
+    {
+        "name": "neighbourhood",
+        "trans": [
+            "n. khu phố, xung quanh"
+        ]
+    },
+    {
+        "name": "surrounding",
+        "trans": [
+            "adj. xung quanh, gần đó"
+        ]
+    },
+    {
+        "name": "dining room",
+        "trans": [
+            "n. nhà hàng"
+        ]
+    },
+    {
+        "name": "living room",
+        "trans": [
+            "n. phòng khách"
+        ]
+    },
+    {
+        "name": "study",
+        "trans": [
+            "n. học tập, nghiên cứu, đề tài"
+        ]
+    },
+    {
+        "name": "laundry room",
+        "trans": [
+            "n. phòng giặt"
+        ]
+    },
+    {
+        "name": "cloakroom",
+        "trans": [
+            "n. phòng thay đồ, lưu trữ hành lý"
+        ]
+    },
+    {
+        "name": "shared kitchen",
+        "trans": [
+            "n. bếp chung"
+        ]
+    },
+    {
+        "name": "shared bathroom",
+        "trans": [
+            "n. Phòng tắm chung"
+        ]
+    },
+    {
+        "name": "separate",
+        "trans": [
+            "adj. riêng biệt"
+        ]
+    },
+    {
+        "name": "foyer",
+        "trans": [
+            "n. phòng chờ, đại sảnh"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "n. gara"
+        ]
+    },
+    {
+        "name": "yard",
+        "trans": [
+            "n. sân"
+        ]
+    },
+    {
+        "name": "garden",
+        "trans": [
+            "n. vườn"
+        ]
+    },
+    {
+        "name": "shared swimming pool",
+        "trans": [
+            "n. Bể bơi chung"
+        ]
+    },
+    {
+        "name": "advisor",
+        "trans": [
+            "n. nhà tư vấn"
+        ]
+    },
+    {
+        "name": "real estate agency",
+        "trans": [
+            "n. công ty bất động sản"
+        ]
+    },
+    {
+        "name": "estate agency",
+        "trans": [
+            "n. đại lý bất động sản"
+        ]
+    },
+    {
+        "name": "estate agent",
+        "trans": [
+            "n. đại lý bất động sản"
+        ]
+    },
+    {
+        "name": "landlord",
+        "trans": [
+            "n. chủ nhà"
+        ]
+    },
+    {
+        "name": "landlady",
+        "trans": [
+            "n. bà chủ nhà"
+        ]
+    },
+    {
+        "name": "tenant",
+        "trans": [
+            "n. bên thuê, người thuê nhà"
+        ]
+    }
+]

@@ -1,0 +1,272 @@
+[
+    {
+        "name": "venue",
+        "trans": [
+            "n. địa điểm"
+        ]
+    },
+    {
+        "name": "theatre / theater",
+        "trans": [
+            "n. rạp hát"
+        ]
+    },
+    {
+        "name": "concert hall",
+        "trans": [
+            "n. phòng hòa nhạc"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "n. viện bảo tàng"
+        ]
+    },
+    {
+        "name": "castle",
+        "trans": [
+            "n. lâu đài"
+        ]
+    },
+    {
+        "name": "unsafe",
+        "trans": [
+            "adj. không an toàn"
+        ]
+    },
+    {
+        "name": "shabby-looking",
+        "trans": [
+            "adj. ngoại hình tồi tàn"
+        ]
+    },
+    {
+        "name": "damaged",
+        "trans": [
+            "adj. bị phá hủy"
+        ]
+    },
+    {
+        "name": "destroy",
+        "trans": [
+            "v. phá hủy"
+        ]
+    },
+    {
+        "name": "bomb",
+        "trans": [
+            "n. quả bom"
+        ]
+    },
+    {
+        "name": "demolition",
+        "trans": [
+            "n. tháo dỡ"
+        ]
+    },
+    {
+        "name": "reconstruct",
+        "trans": [
+            "v. xây dựng lại"
+        ]
+    },
+    {
+        "name": "rebuild",
+        "trans": [
+            "v. xây dựng lại"
+        ]
+    },
+    {
+        "name": "refurbish",
+        "trans": [
+            "v. cải tạo"
+        ]
+    },
+    {
+        "name": "redecorate",
+        "trans": [
+            "v. trang trí lại"
+        ]
+    },
+    {
+        "name": "relocate",
+        "trans": [
+            "v. tái định cư"
+        ]
+    },
+    {
+        "name": "reorient",
+        "trans": [
+            "v. chuyển hướng, đổi hướng"
+        ]
+    },
+    {
+        "name": "exterior",
+        "trans": [
+            "n. bên ngoài"
+        ]
+    },
+    {
+        "name": "repaint",
+        "trans": [
+            "v. sơn lại"
+        ]
+    },
+    {
+        "name": "statue",
+        "trans": [
+            "n. bức tượng"
+        ]
+    },
+    {
+        "name": "sculpture",
+        "trans": [
+            "n. điêu khắc, khắc"
+        ]
+    },
+    {
+        "name": "interior",
+        "trans": [
+            "n. nội bộ"
+        ]
+    },
+    {
+        "name": "ceiling",
+        "trans": [
+            "n. trần nhà"
+        ]
+    },
+    {
+        "name": "light",
+        "trans": [
+            "n. đèn"
+        ]
+    },
+    {
+        "name": "chandelier",
+        "trans": [
+            "n. đèn chùm"
+        ]
+    },
+    {
+        "name": "wall",
+        "trans": [
+            "n. bức tường"
+        ]
+    },
+    {
+        "name": "acoustic",
+        "trans": [
+            "adj. âm thanh"
+        ]
+    },
+    {
+        "name": "floor",
+        "trans": [
+            "n. sàn"
+        ]
+    },
+    {
+        "name": "basement",
+        "trans": [
+            "n. tầng hầm"
+        ]
+    },
+    {
+        "name": "ground floor",
+        "trans": [
+            "n. [Tiếng Anh] tầng một"
+        ]
+    },
+    {
+        "name": "foyer",
+        "trans": [
+            "n. tiền sảnh"
+        ]
+    },
+    {
+        "name": "box office",
+        "trans": [
+            "n. Phòng vé"
+        ]
+    },
+    {
+        "name": "lift",
+        "trans": [
+            "n. [VƯƠNG QUỐC ANH]Thang máy"
+        ]
+    },
+    {
+        "name": "elevator",
+        "trans": [
+            "n. 【Làm đẹp】Thang máy"
+        ]
+    },
+    {
+        "name": "escalator",
+        "trans": [
+            "n. thang cuốn"
+        ]
+    },
+    {
+        "name": "dressing room",
+        "trans": [
+            "n. Phòng bột"
+        ]
+    },
+    {
+        "name": "cloakroom",
+        "trans": [
+            "n. Kiểm tra áo choàng"
+        ]
+    },
+    {
+        "name": "stage",
+        "trans": [
+            "n. sân khấu"
+        ]
+    },
+    {
+        "name": "backstage",
+        "trans": [
+            "n. Hậu trường"
+        ]
+    },
+    {
+        "name": "auditorium",
+        "trans": [
+            "n. khán phòng"
+        ]
+    },
+    {
+        "name": "leg-room",
+        "trans": [
+            "n. Duỗi chân"
+        ]
+    },
+    {
+        "name": "funding",
+        "trans": [
+            "n. quỹ"
+        ]
+    },
+    {
+        "name": "government",
+        "trans": [
+            "n. chính phủ"
+        ]
+    },
+    {
+        "name": "council",
+        "trans": [
+            "n. quốc hội"
+        ]
+    },
+    {
+        "name": "raise",
+        "trans": [
+            "v. gây quỹ (quỹ)"
+        ]
+    }
+]

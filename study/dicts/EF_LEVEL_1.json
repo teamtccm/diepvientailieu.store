@@ -1,0 +1,2368 @@
+[
+    {
+        "name": "school",
+        "usphone": "skuːl",
+        "ukphone": "skuːl",
+        "trans": [
+            "trường học"
+        ]
+    },
+    {
+        "name": "bye",
+        "usphone": "baɪ",
+        "ukphone": "baɪ",
+        "trans": [
+            "tạm biệt"
+        ]
+    },
+    {
+        "name": "hello",
+        "usphone": "həˈloʊ",
+        "ukphone": "həˈləʊ",
+        "trans": [
+            "xin chào"
+        ]
+    },
+    {
+        "name": "he",
+        "usphone": "hi",
+        "ukphone": "hi",
+        "trans": [
+            "anh ấy"
+        ]
+    },
+    {
+        "name": "she",
+        "usphone": "ʃi",
+        "ukphone": "ʃi",
+        "trans": [
+            "cô ấy"
+        ]
+    },
+    {
+        "name": "phone",
+        "usphone": "foʊn",
+        "ukphone": "fəʊn",
+        "trans": [
+            "điện thoại"
+        ]
+    },
+    {
+        "name": "telephone",
+        "usphone": "ˈtelɪfoʊn",
+        "ukphone": "ˈtelɪfəʊn",
+        "trans": [
+            "điện thoại"
+        ]
+    },
+    {
+        "name": "they",
+        "usphone": "ðeɪ",
+        "ukphone": "ðeɪ",
+        "trans": [
+            "họ, chúng"
+        ]
+    },
+    {
+        "name": "you",
+        "usphone": "jə",
+        "ukphone": "ju",
+        "trans": [
+            "bạn, các bạn"
+        ]
+    },
+    {
+        "name": "student",
+        "usphone": "ˈstuːdnt",
+        "ukphone": "ˈstjuːdnt",
+        "trans": [
+            "học sinh"
+        ]
+    },
+    {
+        "name": "eight",
+        "usphone": "eɪt",
+        "ukphone": "eɪt",
+        "trans": [
+            "số 8"
+        ]
+    },
+    {
+        "name": "eighteen",
+        "usphone": "ˌeɪˈtiːn",
+        "ukphone": "ˌeɪˈtiːn",
+        "trans": [
+            "số 18"
+        ]
+    },
+    {
+        "name": "eleven",
+        "usphone": "ɪˈlevn",
+        "ukphone": "ɪˈlevn",
+        "trans": [
+            "số 11"
+        ]
+    },
+    {
+        "name": "fifteen",
+        "usphone": "ˌfɪfˈtiːn",
+        "ukphone": "ˌfɪfˈtiːn",
+        "trans": [
+            "số 15"
+        ]
+    },
+    {
+        "name": "fine",
+        "usphone": "faɪn",
+        "ukphone": "faɪn",
+        "trans": [
+            "khỏe mạnh"
+        ]
+    },
+    {
+        "name": "five",
+        "usphone": "faɪv",
+        "ukphone": "faɪv",
+        "trans": [
+            "số 5"
+        ]
+    },
+    {
+        "name": "four",
+        "usphone": "fɔːr",
+        "ukphone": "fɔː(r)",
+        "trans": [
+            "số 4"
+        ]
+    },
+    {
+        "name": "fourteen",
+        "usphone": "ˌfɔːrˈtiːn",
+        "ukphone": "ˌfɔːˈtiːn",
+        "trans": [
+            "số 14"
+        ]
+    },
+    {
+        "name": "hi",
+        "usphone": "haɪ",
+        "ukphone": "haɪ",
+        "trans": [
+            "xin chào"
+        ]
+    },
+    {
+        "name": "how",
+        "usphone": "haʊ",
+        "ukphone": "haʊ",
+        "trans": [
+            "thế nào"
+        ]
+    },
+    {
+        "name": "meet",
+        "usphone": "miːt",
+        "ukphone": "miːt",
+        "trans": [
+            "gặp gỡ"
+        ]
+    },
+    {
+        "name": "my",
+        "usphone": "maɪ",
+        "ukphone": "maɪ",
+        "trans": [
+            "của tôi"
+        ]
+    },
+    {
+        "name": "name",
+        "usphone": "neɪm",
+        "ukphone": "neɪm",
+        "trans": [
+            "tên"
+        ]
+    },
+    {
+        "name": "nice",
+        "usphone": "naɪs",
+        "ukphone": "naɪs",
+        "trans": [
+            "tuyệt vời"
+        ]
+    },
+    {
+        "name": "nine",
+        "usphone": "naɪn",
+        "ukphone": "naɪn",
+        "trans": [
+            "số 9"
+        ]
+    },
+    {
+        "name": "nineteen",
+        "usphone": "ˌnaɪnˈtiːn",
+        "ukphone": "ˌnaɪnˈtiːn",
+        "trans": [
+            "số 19"
+        ]
+    },
+    {
+        "name": "number",
+        "usphone": "ˈnʌmbər",
+        "ukphone": "ˈnʌmbə(r)",
+        "trans": [
+            "con số"
+        ]
+    },
+    {
+        "name": "one",
+        "usphone": "wʌn",
+        "ukphone": "wʌn",
+        "trans": [
+            "một"
+        ]
+    },
+    {
+        "name": "seven",
+        "usphone": "ˈsevn",
+        "ukphone": "ˈsevn",
+        "trans": [
+            "số 7"
+        ]
+    },
+    {
+        "name": "seventeen",
+        "usphone": "ˌsevnˈtiːn",
+        "ukphone": "ˌsevnˈtiːn",
+        "trans": [
+            "số 17"
+        ]
+    },
+    {
+        "name": "six",
+        "usphone": "sɪks",
+        "ukphone": "sɪks",
+        "trans": [
+            "số 6"
+        ]
+    },
+    {
+        "name": "sixteen",
+        "usphone": "ˌsɪksˈtiːn",
+        "ukphone": "ˌsɪksˈtiːn",
+        "trans": [
+            "số 16"
+        ]
+    },
+    {
+        "name": "spell",
+        "usphone": "spel",
+        "ukphone": "spel",
+        "trans": [
+            "đánh vần"
+        ]
+    },
+    {
+        "name": "ten",
+        "usphone": "ten",
+        "ukphone": "ten",
+        "trans": [
+            "số 10"
+        ]
+    },
+    {
+        "name": "thanks",
+        "usphone": "θæŋks",
+        "ukphone": "θæŋks",
+        "trans": [
+            "cảm ơn"
+        ]
+    },
+    {
+        "name": "that",
+        "usphone": "ðæt",
+        "ukphone": "ðæt",
+        "trans": [
+            "cái đó"
+        ]
+    },
+    {
+        "name": "thirteen",
+        "usphone": "ˌθɜːrˈtiːn",
+        "ukphone": "ˌθɜːˈtiːn",
+        "trans": [
+            "số 13"
+        ]
+    },
+    {
+        "name": "this",
+        "usphone": "ðɪs",
+        "ukphone": "ðɪs",
+        "trans": [
+            "cái này"
+        ]
+    },
+    {
+        "name": "three",
+        "usphone": "θriː",
+        "ukphone": "θriː",
+        "trans": [
+            "số 3"
+        ]
+    },
+    {
+        "name": "twelve",
+        "usphone": "twelv",
+        "ukphone": "twelv",
+        "trans": [
+            "số 12"
+        ]
+    },
+    {
+        "name": "twenty",
+        "usphone": "ˈtwenti",
+        "ukphone": "ˈtwenti",
+        "trans": [
+            "số 20"
+        ]
+    },
+    {
+        "name": "two",
+        "usphone": "tuː",
+        "ukphone": "tuː",
+        "trans": [
+            "số 2"
+        ]
+    },
+    {
+        "name": "what",
+        "usphone": "wɑːt",
+        "ukphone": "wɒt",
+        "trans": [
+            "cái gì"
+        ]
+    },
+    {
+        "name": "your",
+        "usphone": "jʊr",
+        "ukphone": "jɔː(r)",
+        "trans": [
+            "của bạn, của các bạn"
+        ]
+    },
+    {
+        "name": "zero",
+        "usphone": "ˈzɪroʊ",
+        "ukphone": "ˈzɪərəʊ",
+        "trans": [
+            "số 0"
+        ]
+    },
+    {
+        "name": "computer",
+        "usphone": "kəmˈpjuːtər",
+        "ukphone": "kəmˈpjuːtə(r)",
+        "trans": [
+            "máy tính"
+        ]
+    },
+    {
+        "name": "notebook",
+        "usphone": "ˈnoʊtbʊk",
+        "ukphone": "ˈnəʊtbʊk",
+        "trans": [
+            "sổ tay"
+        ]
+    },
+    {
+        "name": "his",
+        "usphone": "hɪz",
+        "ukphone": "hɪz",
+        "trans": [
+            "của anh ấy"
+        ]
+    },
+    {
+        "name": "cute",
+        "usphone": "kjuːt",
+        "ukphone": "kjuːt",
+        "trans": [
+            "đáng yêu"
+        ]
+    },
+    {
+        "name": "blue",
+        "usphone": "bluː",
+        "ukphone": "bluː",
+        "trans": [
+            "màu xanh da trời"
+        ]
+    },
+    {
+        "name": "book",
+        "usphone": "bʊk",
+        "ukphone": "bʊk",
+        "trans": [
+            "quyển sách"
+        ]
+    },
+    {
+        "name": "box",
+        "usphone": "bɑːks",
+        "ukphone": "bɒks",
+        "trans": [
+            "chiếc hộp"
+        ]
+    },
+    {
+        "name": "brown",
+        "usphone": "braʊn",
+        "ukphone": "braʊn",
+        "trans": [
+            "màu nâu"
+        ]
+    },
+    {
+        "name": "book",
+        "usphone": "bʊk",
+        "ukphone": "bʊk",
+        "trans": [
+            "quyển sách"
+        ]
+    },
+    {
+        "name": "pen",
+        "usphone": "pen",
+        "ukphone": "pen",
+        "trans": [
+            "cây bút"
+        ]
+    },
+    {
+        "name": "headphones",
+        "usphone": "ˈhedfoʊnz",
+        "ukphone": "ˈhedfəʊnz",
+        "trans": [
+            "tai nghe chụp tai"
+        ]
+    },
+    {
+        "name": "desk",
+        "usphone": "desk",
+        "ukphone": "desk",
+        "trans": [
+            "bàn làm việc"
+        ]
+    },
+    {
+        "name": "her",
+        "usphone": "hər",
+        "ukphone": "hə(r)",
+        "trans": [
+            "của cô ấy"
+        ]
+    },
+    {
+        "name": "elevator",
+        "usphone": "ˈelɪveɪtər",
+        "ukphone": "ˈelɪveɪtə(r)",
+        "trans": [
+            "thang máy"
+        ]
+    },
+    {
+        "name": "kitchen",
+        "usphone": "ˈkɪtʃɪn",
+        "ukphone": "ˈkɪtʃɪn",
+        "trans": [
+            "nhà bếp"
+        ]
+    },
+    {
+        "name": "office",
+        "usphone": "ˈɔːfɪs",
+        "ukphone": "ˈɒfɪs",
+        "trans": [
+            "văn phòng"
+        ]
+    },
+    {
+        "name": "window",
+        "usphone": "ˈwɪndoʊ",
+        "ukphone": "ˈwɪndəʊ",
+        "trans": [
+            "cửa sổ"
+        ]
+    },
+    {
+        "name": "black",
+        "usphone": "blæk",
+        "ukphone": "blæk",
+        "trans": [
+            "màu đen"
+        ]
+    },
+    {
+        "name": "button",
+        "usphone": "ˈbʌtn",
+        "ukphone": "ˈbʌtn",
+        "trans": [
+            "nút bấm"
+        ]
+    },
+    {
+        "name": "chair",
+        "usphone": "tʃer",
+        "ukphone": "tʃeə(r)",
+        "trans": [
+            "cái ghế"
+        ]
+    },
+    {
+        "name": "close",
+        "usphone": "kloʊz",
+        "ukphone": "kləʊz",
+        "trans": [
+            "đóng lại"
+        ]
+    },
+    {
+        "name": "earphones",
+        "usphone": "ˈɪrfoʊnz",
+        "ukphone": "ˈɪəfəʊnz",
+        "trans": [
+            "tai nghe"
+        ]
+    },
+    {
+        "name": "eighty",
+        "usphone": "ˈeɪti",
+        "ukphone": "ˈeɪti",
+        "trans": [
+            "số 80"
+        ]
+    },
+    {
+        "name": "fifty",
+        "usphone": "ˈfɪfti",
+        "ukphone": "ˈfɪfti",
+        "trans": [
+            "số 50"
+        ]
+    },
+    {
+        "name": "forty",
+        "usphone": "ˈfɔːrti",
+        "ukphone": "ˈfɔːti",
+        "trans": [
+            "số 40"
+        ]
+    },
+    {
+        "name": "green",
+        "usphone": "ɡriːn",
+        "ukphone": "ɡriːn",
+        "trans": [
+            "màu xanh lá"
+        ]
+    },
+    {
+        "name": "keyboard",
+        "usphone": "ˈkiːbɔːrd",
+        "ukphone": "ˈkiːbɔːd",
+        "trans": [
+            "bàn phím"
+        ]
+    },
+    {
+        "name": "listen",
+        "usphone": "ˈlɪsn",
+        "ukphone": "ˈlɪsn",
+        "trans": [
+            "lắng nghe"
+        ]
+    },
+    {
+        "name": "microphone",
+        "usphone": "ˈmaɪkrəfoʊn",
+        "ukphone": "ˈmaɪkrəfəʊn",
+        "trans": [
+            "micro"
+        ]
+    },
+    {
+        "name": "mouse",
+        "usphone": "maʊs",
+        "ukphone": "maʊs",
+        "trans": [
+            "con chuột"
+        ]
+    },
+    {
+        "name": "ninety",
+        "usphone": "ˈnaɪnti",
+        "ukphone": "ˈnaɪnti",
+        "trans": [
+            "số 90"
+        ]
+    },
+    {
+        "name": "open",
+        "usphone": "ˈoʊpən",
+        "ukphone": "ˈəʊpən",
+        "trans": [
+            "mở ra"
+        ]
+    },
+    {
+        "name": "orange",
+        "usphone": "ˈɔːrɪndʒ",
+        "ukphone": "ˈɒrɪndʒ",
+        "trans": [
+            "màu cam"
+        ]
+    },
+    {
+        "name": "pencil",
+        "usphone": "ˈpensl",
+        "ukphone": "ˈpensl",
+        "trans": [
+            "bút chì"
+        ]
+    },
+    {
+        "name": "pink",
+        "usphone": "pɪŋk",
+        "ukphone": "pɪŋk",
+        "trans": [
+            "màu hồng"
+        ]
+    },
+    {
+        "name": "purple",
+        "usphone": "ˈpɜːrpl",
+        "ukphone": "ˈpɜːpl",
+        "trans": [
+            "màu tím"
+        ]
+    },
+    {
+        "name": "read",
+        "usphone": "riːd",
+        "ukphone": "riːd",
+        "trans": [
+            "đọc"
+        ]
+    },
+    {
+        "name": "red",
+        "usphone": "red",
+        "ukphone": "red",
+        "trans": [
+            "màu đỏ"
+        ]
+    },
+    {
+        "name": "say",
+        "usphone": "seɪ",
+        "ukphone": "seɪ",
+        "trans": [
+            "nói"
+        ]
+    },
+    {
+        "name": "screen",
+        "usphone": "skriːn",
+        "ukphone": "skriːn",
+        "trans": [
+            "màn hình"
+        ]
+    },
+    {
+        "name": "seventy",
+        "usphone": "ˈsevnti",
+        "ukphone": "ˈsevnti",
+        "trans": [
+            "số 70"
+        ]
+    },
+    {
+        "name": "sixty",
+        "usphone": "ˈsɪksti",
+        "ukphone": "ˈsɪksti",
+        "trans": [
+            "số 60"
+        ]
+    },
+    {
+        "name": "table",
+        "usphone": "ˈteɪbl",
+        "ukphone": "ˈteɪbl",
+        "trans": [
+            "cái bàn"
+        ]
+    },
+    {
+        "name": "telephone",
+        "usphone": "ˈtelɪfoʊn",
+        "ukphone": "ˈtelɪfəʊn",
+        "trans": [
+            "điện thoại"
+        ]
+    },
+    {
+        "name": "thirty",
+        "usphone": "ˈθɜːrti",
+        "ukphone": "ˈθɜːti",
+        "trans": [
+            "số 30"
+        ]
+    },
+    {
+        "name": "white",
+        "usphone": "waɪt",
+        "ukphone": "waɪt",
+        "trans": [
+            "màu trắng"
+        ]
+    },
+    {
+        "name": "write",
+        "usphone": "raɪt",
+        "ukphone": "raɪt",
+        "trans": [
+            "viết"
+        ]
+    },
+    {
+        "name": "yellow",
+        "usphone": "ˈjeloʊ",
+        "ukphone": "ˈjeləʊ",
+        "trans": [
+            "màu vàng"
+        ]
+    },
+    {
+        "name": "Australian",
+        "usphone": "ɔːˈstreɪliən",
+        "ukphone": "ɒˈstreɪliən",
+        "trans": [
+            "nước Úc"
+        ]
+    },
+    {
+        "name": "British",
+        "usphone": "ˈbrɪtɪʃ",
+        "ukphone": "ˈbrɪtɪʃ",
+        "trans": [
+            "nước Anh"
+        ]
+    },
+    {
+        "name": "crowded",
+        "usphone": "ˈkraʊdɪd",
+        "ukphone": "ˈkraʊdɪd",
+        "trans": [
+            "đông đúc"
+        ]
+    },
+    {
+        "name": "boring",
+        "usphone": "ˈbɔːrɪŋ",
+        "ukphone": "ˈbɔːrɪŋ",
+        "trans": [
+            "nhàm chán"
+        ]
+    },
+    {
+        "name": "building",
+        "usphone": "ˈbɪldɪŋ",
+        "ukphone": "ˈbɪldɪŋ",
+        "trans": [
+            "tòa nhà"
+        ]
+    },
+    {
+        "name": "shop",
+        "usphone": "ʃɑːp",
+        "ukphone": "ʃɒp",
+        "trans": [
+            "cửa hàng"
+        ]
+    },
+    {
+        "name": "museum",
+        "usphone": "mjuˈziːəm",
+        "ukphone": "mjuˈziːəm",
+        "trans": [
+            "bảo tàng"
+        ]
+    },
+    {
+        "name": "be",
+        "usphone": "bi",
+        "ukphone": "bi",
+        "trans": [
+            "là"
+        ]
+    },
+    {
+        "name": "bye",
+        "usphone": "baɪ",
+        "ukphone": "baɪ",
+        "trans": [
+            "tạm biệt"
+        ]
+    },
+    {
+        "name": "from",
+        "usphone": "frəm",
+        "ukphone": "frəm",
+        "trans": [
+            "từ"
+        ]
+    },
+    {
+        "name": "he",
+        "usphone": "hi",
+        "ukphone": "hi",
+        "trans": [
+            "anh ấy"
+        ]
+    },
+    {
+        "name": "hello",
+        "usphone": "həˈloʊ",
+        "ukphone": "həˈləʊ",
+        "trans": [
+            "xin chào"
+        ]
+    },
+    {
+        "name": "her",
+        "usphone": "hər",
+        "ukphone": "hə(r)",
+        "trans": [
+            "của cô ấy"
+        ]
+    },
+    {
+        "name": "United States (of America)",
+        "trans": [
+            "Hoa Kỳ"
+        ]
+    },
+    {
+        "name": "country",
+        "usphone": "ˈkʌntri",
+        "ukphone": "ˈkʌntri",
+        "trans": [
+            "quốc gia"
+        ]
+    },
+    {
+        "name": "French",
+        "usphone": "frentʃ",
+        "ukphone": "frentʃ",
+        "trans": [
+            "nước Pháp"
+        ]
+    },
+    {
+        "name": "American",
+        "usphone": "əˈmerɪkən",
+        "ukphone": "əˈmerɪkən",
+        "trans": [
+            "thuộc châu Mỹ, Mỹ"
+        ]
+    },
+    {
+        "name": "city",
+        "usphone": "ˈsɪti",
+        "ukphone": "ˈsɪti",
+        "trans": [
+            "thành phố"
+        ]
+    },
+    {
+        "name": "exciting",
+        "usphone": "ɪkˈsaɪtɪŋ",
+        "ukphone": "ɪkˈsaɪtɪŋ",
+        "trans": [
+            "thú vị"
+        ]
+    },
+    {
+        "name": "park",
+        "usphone": "pɑːrk",
+        "ukphone": "pɑːk",
+        "trans": [
+            "công viên"
+        ]
+    },
+    {
+        "name": "restaurant",
+        "usphone": "ˈrestrɑːnt",
+        "ukphone": "ˈrestrɒnt",
+        "trans": [
+            "nhà hàng"
+        ]
+    },
+    {
+        "name": "his",
+        "usphone": "hɪz",
+        "ukphone": "hɪz",
+        "trans": [
+            "của anh ấy"
+        ]
+    },
+    {
+        "name": "how",
+        "usphone": "haʊ",
+        "ukphone": "haʊ",
+        "trans": [
+            "thế nào"
+        ]
+    },
+    {
+        "name": "I",
+        "usphone": "aɪ",
+        "ukphone": "aɪ",
+        "trans": [
+            "tôi"
+        ]
+    },
+    {
+        "name": "it",
+        "usphone": "ɪt",
+        "ukphone": "ɪt",
+        "trans": [
+            "nó"
+        ]
+    },
+    {
+        "name": "like",
+        "usphone": "laɪk",
+        "ukphone": "laɪk",
+        "trans": [
+            "thích"
+        ]
+    },
+    {
+        "name": "live",
+        "usphone": "lɪv",
+        "ukphone": "lɪv",
+        "trans": [
+            "sinh sống"
+        ]
+    },
+    {
+        "name": "our",
+        "usphone": "ɑːr",
+        "ukphone": "ɑː(r)",
+        "trans": [
+            "của chúng tôi"
+        ]
+    },
+    {
+        "name": "she",
+        "usphone": "ʃi",
+        "ukphone": "ʃi",
+        "trans": [
+            "cô ấy"
+        ]
+    },
+    {
+        "name": "their",
+        "usphone": "ðer",
+        "ukphone": "ðeə(r)",
+        "trans": [
+            "của họ"
+        ]
+    },
+    {
+        "name": "they",
+        "usphone": "ðeɪ",
+        "ukphone": "ðeɪ",
+        "trans": [
+            "họ, chúng"
+        ]
+    },
+    {
+        "name": "UK",
+        "usphone": "ˌjuːˈkeɪ",
+        "ukphone": "ˌjuːˈkeɪ",
+        "trans": [
+            "Vương quốc Anh"
+        ]
+    },
+    {
+        "name": "US",
+        "usphone": "ˌjuːˈes",
+        "ukphone": "ˌjuːˈes",
+        "trans": [
+            "nước Mỹ"
+        ]
+    },
+    {
+        "name": "we",
+        "usphone": "wi",
+        "ukphone": "wi",
+        "trans": [
+            "chúng tôi"
+        ]
+    },
+    {
+        "name": "where",
+        "usphone": "wer",
+        "ukphone": "weə(r)",
+        "trans": [
+            "ở đâu"
+        ]
+    },
+    {
+        "name": "you",
+        "usphone": "jə",
+        "ukphone": "ju",
+        "trans": [
+            "bạn, các bạn"
+        ]
+    },
+    {
+        "name": "male",
+        "usphone": "meɪl",
+        "ukphone": "meɪl",
+        "trans": [
+            "giới nam"
+        ]
+    },
+    {
+        "name": "only child",
+        "trans": [
+            "con một"
+        ]
+    },
+    {
+        "name": "people",
+        "usphone": "ˈpiːpl",
+        "ukphone": "ˈpiːpl",
+        "trans": [
+            "con người"
+        ]
+    },
+    {
+        "name": "sister",
+        "usphone": "ˈsɪstər",
+        "ukphone": "ˈsɪstə(r)",
+        "trans": [
+            "chị em gái"
+        ]
+    },
+    {
+        "name": "small",
+        "usphone": "smɔːl",
+        "ukphone": "smɔːl",
+        "trans": [
+            "nhỏ"
+        ]
+    },
+    {
+        "name": "son",
+        "usphone": "sʌn",
+        "ukphone": "sʌn",
+        "trans": [
+            "con trai"
+        ]
+    },
+    {
+        "name": "uncle",
+        "usphone": "ˈʌŋkl",
+        "ukphone": "ˈʌŋkl",
+        "trans": [
+            "chú, bác, cậu, dượng"
+        ]
+    },
+    {
+        "name": "ear",
+        "usphone": "ɪr",
+        "ukphone": "ɪə(r)",
+        "trans": [
+            "tai"
+        ]
+    },
+    {
+        "name": "eye",
+        "usphone": "aɪ",
+        "ukphone": "aɪ",
+        "trans": [
+            "con mắt"
+        ]
+    },
+    {
+        "name": "head",
+        "usphone": "hed",
+        "ukphone": "hed",
+        "trans": [
+            "cái đầu"
+        ]
+    },
+    {
+        "name": "mouth",
+        "usphone": "maʊθ",
+        "ukphone": "maʊθ",
+        "trans": [
+            "cái miệng"
+        ]
+    },
+    {
+        "name": "nose",
+        "usphone": "noʊz",
+        "ukphone": "nəʊz",
+        "trans": [
+            "mũi"
+        ]
+    },
+    {
+        "name": "red",
+        "usphone": "red",
+        "ukphone": "red",
+        "trans": [
+            "màu đỏ"
+        ]
+    },
+    {
+        "name": "unhappy",
+        "usphone": "ʌnˈhæpi",
+        "ukphone": "ʌnˈhæpi",
+        "trans": [
+            "không vui"
+        ]
+    },
+    {
+        "name": "architect",
+        "usphone": "ˈɑːrkɪtekt",
+        "ukphone": "ˈɑːkɪtekt",
+        "trans": [
+            "kiến trúc sư"
+        ]
+    },
+    {
+        "name": "doctor",
+        "usphone": "ˈdɑːktər",
+        "ukphone": "ˈdɒktə(r)",
+        "trans": [
+            "bác sĩ"
+        ]
+    },
+    {
+        "name": "engineer",
+        "usphone": "ˌendʒɪˈnɪr",
+        "ukphone": "ˌendʒɪˈnɪə(r)",
+        "trans": [
+            "kỹ sư"
+        ]
+    },
+    {
+        "name": "husband",
+        "usphone": "ˈhʌzbənd",
+        "ukphone": "ˈhʌzbənd",
+        "trans": [
+            "chồng"
+        ]
+    },
+    {
+        "name": "family",
+        "usphone": "ˈfæməli",
+        "ukphone": "ˈfæməli",
+        "trans": [
+            "gia đình"
+        ]
+    },
+    {
+        "name": "mother",
+        "usphone": "ˈmʌðər",
+        "ukphone": "ˈmʌðə(r)",
+        "trans": [
+            "mẹ"
+        ]
+    },
+    {
+        "name": "teacher",
+        "usphone": "ˈtiːtʃər",
+        "ukphone": "ˈtiːtʃə(r)",
+        "trans": [
+            "giáo viên"
+        ]
+    },
+    {
+        "name": "wife",
+        "usphone": "waɪf",
+        "ukphone": "waɪf",
+        "trans": [
+            "vợ"
+        ]
+    },
+    {
+        "name": "green",
+        "usphone": "ɡriːn",
+        "ukphone": "ɡriːn",
+        "trans": [
+            "màu xanh lá"
+        ]
+    },
+    {
+        "name": "blue",
+        "usphone": "bluː",
+        "ukphone": "bluː",
+        "trans": [
+            "màu xanh da trời"
+        ]
+    },
+    {
+        "name": "brown",
+        "usphone": "braʊn",
+        "ukphone": "braʊn",
+        "trans": [
+            "màu nâu"
+        ]
+    },
+    {
+        "name": "grandfather",
+        "usphone": "ˈɡrænfɑːðər",
+        "ukphone": "ˈɡrænfɑːðə(r)",
+        "trans": [
+            "ông nội, ông ngoại"
+        ]
+    },
+    {
+        "name": "grandmother",
+        "usphone": "ˈɡrænmʌðər",
+        "ukphone": "ˈɡrænmʌðə(r)",
+        "trans": [
+            "bà nội, bà ngoại"
+        ]
+    },
+    {
+        "name": "black",
+        "usphone": "blæk",
+        "ukphone": "blæk",
+        "trans": [
+            "màu đen"
+        ]
+    },
+    {
+        "name": "face",
+        "usphone": "feɪs",
+        "ukphone": "feɪs",
+        "trans": [
+            "khuôn mặt"
+        ]
+    },
+    {
+        "name": "hair",
+        "usphone": "her",
+        "ukphone": "heə(r)",
+        "trans": [
+            "tóc"
+        ]
+    },
+    {
+        "name": "smile",
+        "usphone": "smaɪl",
+        "ukphone": "smaɪl",
+        "trans": [
+            "nụ cười"
+        ]
+    },
+    {
+        "name": "boss",
+        "usphone": "bɔːs",
+        "ukphone": "bɒs",
+        "trans": [
+            "sếp"
+        ]
+    },
+    {
+        "name": "manager",
+        "usphone": "ˈmænɪdʒər",
+        "ukphone": "ˈmænɪdʒə(r)",
+        "trans": [
+            "quản lý"
+        ]
+    },
+    {
+        "name": "artist",
+        "usphone": "ˈɑːrtɪst",
+        "ukphone": "ˈɑːtɪst",
+        "trans": [
+            "nghệ sĩ"
+        ]
+    },
+    {
+        "name": "clothes",
+        "usphone": "kloʊðz",
+        "ukphone": "kləʊðz",
+        "trans": [
+            "quần áo"
+        ]
+    },
+    {
+        "name": "firefighter",
+        "usphone": "ˈfaɪərfaɪtər",
+        "ukphone": "ˈfaɪəfaɪtə(r)",
+        "trans": [
+            "lính cứu hỏa"
+        ]
+    },
+    {
+        "name": "secretary",
+        "usphone": "ˈsekrəteri",
+        "ukphone": "ˈsekrətri",
+        "trans": [
+            "thư ký"
+        ]
+    },
+    {
+        "name": "aunt",
+        "usphone": "ænt",
+        "ukphone": "ɑːnt",
+        "trans": [
+            "dì, cô, thím"
+        ]
+    },
+    {
+        "name": "big",
+        "usphone": "bɪɡ",
+        "ukphone": "bɪɡ",
+        "trans": [
+            "lớn, to"
+        ]
+    },
+    {
+        "name": "brother",
+        "usphone": "ˈbrʌðər",
+        "ukphone": "ˈbrʌðə(r)",
+        "trans": [
+            "anh em trai"
+        ]
+    },
+    {
+        "name": "businessman",
+        "usphone": "ˈbɪznəsmæn",
+        "ukphone": "ˈbɪznəsmæn",
+        "trans": [
+            "doanh nhân"
+        ]
+    },
+    {
+        "name": "daughter",
+        "usphone": "ˈdɔːtər",
+        "ukphone": "ˈdɔːtə(r)",
+        "trans": [
+            "con gái"
+        ]
+    },
+    {
+        "name": "family",
+        "usphone": "ˈfæməli",
+        "ukphone": "ˈfæməli",
+        "trans": [
+            "gia đình"
+        ]
+    },
+    {
+        "name": "father",
+        "usphone": "ˈfɑːðər",
+        "ukphone": "ˈfɑːðə(r)",
+        "trans": [
+            "cha"
+        ]
+    },
+    {
+        "name": "female",
+        "usphone": "ˈfiːmeɪl",
+        "ukphone": "ˈfiːmeɪl",
+        "trans": [
+            "giới nữ"
+        ]
+    },
+    {
+        "name": "grandparent",
+        "usphone": "ˈɡrænperənt",
+        "ukphone": "ˈɡrænpeərənt",
+        "trans": [
+            "ông bà"
+        ]
+    },
+    {
+        "name": "have",
+        "usphone": "həv",
+        "ukphone": "həv",
+        "trans": [
+            "có"
+        ]
+    },
+    {
+        "name": "actor",
+        "usphone": "ˈæktər",
+        "ukphone": "ˈæktə(r)",
+        "trans": [
+            "nam diễn viên"
+        ]
+    },
+    {
+        "name": "address",
+        "usphone": "əˈdres",
+        "ukphone": "əˈdres",
+        "trans": [
+            "địa chỉ"
+        ]
+    },
+    {
+        "name": "architect",
+        "usphone": "ˈɑːrkɪtekt",
+        "ukphone": "ˈɑːkɪtekt",
+        "trans": [
+            "kiến trúc sư"
+        ]
+    },
+    {
+        "name": "artist",
+        "usphone": "ˈɑːrtɪst",
+        "ukphone": "ˈɑːtɪst",
+        "trans": [
+            "nghệ sĩ"
+        ]
+    },
+    {
+        "name": "boss",
+        "usphone": "bɔːs",
+        "ukphone": "bɒs",
+        "trans": [
+            "sếp"
+        ]
+    },
+    {
+        "name": "business card",
+        "trans": [
+            "danh thiếp"
+        ]
+    },
+    {
+        "name": "doctor",
+        "usphone": "ˈdɑːktər",
+        "ukphone": "ˈdɒktə(r)",
+        "trans": [
+            "bác sĩ"
+        ]
+    },
+    {
+        "name": "drive",
+        "usphone": "draɪv",
+        "ukphone": "draɪv",
+        "trans": [
+            "lái xe"
+        ]
+    },
+    {
+        "name": "email",
+        "usphone": "ˈiːmeɪl",
+        "ukphone": "ˈiːmeɪl",
+        "trans": [
+            "thư điện tử"
+        ]
+    },
+    {
+        "name": "engineer",
+        "usphone": "ˌendʒɪˈnɪr",
+        "ukphone": "ˌendʒɪˈnɪə(r)",
+        "trans": [
+            "kỹ sư"
+        ]
+    },
+    {
+        "name": "firefighter",
+        "usphone": "ˈfaɪərfaɪtər",
+        "ukphone": "ˈfaɪəfaɪtə(r)",
+        "trans": [
+            "lính cứu hỏa"
+        ]
+    },
+    {
+        "name": "hospital",
+        "usphone": "ˈhɑːspɪtl",
+        "ukphone": "ˈhɒspɪtl",
+        "trans": [
+            "bệnh viện"
+        ]
+    },
+    {
+        "name": "interesting",
+        "usphone": "ˈɪntrəstɪŋ",
+        "ukphone": "ˈɪntrəstɪŋ",
+        "trans": [
+            "thú vị"
+        ]
+    },
+    {
+        "name": "manager",
+        "usphone": "ˈmænɪdʒər",
+        "ukphone": "ˈmænɪdʒə(r)",
+        "trans": [
+            "quản lý"
+        ]
+    },
+    {
+        "name": "nurse",
+        "usphone": "nɜːrs",
+        "ukphone": "nɜːs",
+        "trans": [
+            "y tá"
+        ]
+    },
+    {
+        "name": "office",
+        "usphone": "ˈɔːfɪs",
+        "ukphone": "ˈɒfɪs",
+        "trans": [
+            "văn phòng"
+        ]
+    },
+    {
+        "name": "police officer",
+        "trans": [
+            "sĩ quan cảnh sát"
+        ]
+    },
+    {
+        "name": "really",
+        "usphone": "ˈriːəli",
+        "ukphone": "ˈriːəli",
+        "trans": [
+            "thực sự"
+        ]
+    },
+    {
+        "name": "restaurant",
+        "usphone": "ˈrestrɑːnt",
+        "ukphone": "ˈrestrɒnt",
+        "trans": [
+            "nhà hàng"
+        ]
+    },
+    {
+        "name": "salary",
+        "usphone": "ˈsæləri",
+        "ukphone": "ˈsæləri",
+        "trans": [
+            "tiền lương"
+        ]
+    },
+    {
+        "name": "school",
+        "usphone": "skuːl",
+        "ukphone": "skuːl",
+        "trans": [
+            "trường học"
+        ]
+    },
+    {
+        "name": "secretary",
+        "usphone": "ˈsekrəteri",
+        "ukphone": "ˈsekrətri",
+        "trans": [
+            "thư ký"
+        ]
+    },
+    {
+        "name": "shop",
+        "usphone": "ʃɑːp",
+        "ukphone": "ʃɒp",
+        "trans": [
+            "cửa hàng"
+        ]
+    },
+    {
+        "name": "teach",
+        "usphone": "tiːtʃ",
+        "ukphone": "tiːtʃ",
+        "trans": [
+            "dạy học"
+        ]
+    },
+    {
+        "name": "teacher",
+        "usphone": "ˈtiːtʃər",
+        "ukphone": "ˈtiːtʃə(r)",
+        "trans": [
+            "giáo viên"
+        ]
+    },
+    {
+        "name": "theater",
+        "usphone": "ˈθiːətər",
+        "ukphone": "ˈθɪətə(r)",
+        "trans": [
+            "nhà hát"
+        ]
+    },
+    {
+        "name": "waiter",
+        "usphone": "ˈweɪtər",
+        "ukphone": "ˈweɪtə(r)",
+        "trans": [
+            "phục vụ nam"
+        ]
+    },
+    {
+        "name": "waitress",
+        "usphone": "ˈweɪtrəs",
+        "ukphone": "ˈweɪtrəs",
+        "trans": [
+            "phục vụ nữ"
+        ]
+    },
+    {
+        "name": "dress",
+        "usphone": "dres",
+        "ukphone": "dres",
+        "trans": [
+            "váy liền"
+        ]
+    },
+    {
+        "name": "jacket",
+        "usphone": "ˈdʒækɪt",
+        "ukphone": "ˈdʒækɪt",
+        "trans": [
+            "áo khoác"
+        ]
+    },
+    {
+        "name": "jeans",
+        "usphone": "dʒiːnz",
+        "ukphone": "dʒiːnz",
+        "trans": [
+            "quần jean"
+        ]
+    },
+    {
+        "name": "pants",
+        "usphone": "pænts",
+        "ukphone": "pænts",
+        "trans": [
+            "cái quần"
+        ]
+    },
+    {
+        "name": "shirt",
+        "usphone": "ʃɜːrt",
+        "ukphone": "ʃɜːt",
+        "trans": [
+            "áo sơ mi"
+        ]
+    },
+    {
+        "name": "purple",
+        "usphone": "ˈpɜːrpl",
+        "ukphone": "ˈpɜːpl",
+        "trans": [
+            "màu tím"
+        ]
+    },
+    {
+        "name": "yellow",
+        "usphone": "ˈjeloʊ",
+        "ukphone": "ˈjeləʊ",
+        "trans": [
+            "màu vàng"
+        ]
+    },
+    {
+        "name": "baby",
+        "usphone": "ˈbeɪbi",
+        "ukphone": "ˈbeɪbi",
+        "trans": [
+            "em bé"
+        ]
+    },
+    {
+        "name": "sweater",
+        "usphone": "ˈswetər",
+        "ukphone": "ˈswetə(r)",
+        "trans": [
+            "áo len"
+        ]
+    },
+    {
+        "name": "cheap",
+        "usphone": "tʃiːp",
+        "ukphone": "tʃiːp",
+        "trans": [
+            "rẻ"
+        ]
+    },
+    {
+        "name": "want",
+        "usphone": "wɑːnt",
+        "ukphone": "wɒnt",
+        "trans": [
+            "muốn"
+        ]
+    },
+    {
+        "name": "work",
+        "usphone": "wɜːrk",
+        "ukphone": "wɜːk",
+        "trans": [
+            "làm việc"
+        ]
+    },
+    {
+        "name": "zip code",
+        "trans": [
+            "mã bưu điện"
+        ]
+    },
+    {
+        "name": "shoe",
+        "usphone": "ʃuː",
+        "ukphone": "ʃuː",
+        "trans": [
+            "giày"
+        ]
+    },
+    {
+        "name": "skirt",
+        "usphone": "skɜːrt",
+        "ukphone": "skɜːt",
+        "trans": [
+            "chân váy"
+        ]
+    },
+    {
+        "name": "sock",
+        "usphone": "sɑːk",
+        "ukphone": "sɒk",
+        "trans": [
+            "vớ, tất"
+        ]
+    },
+    {
+        "name": "T-shirt",
+        "trans": [
+            "áo thun ngắn tay"
+        ],
+        "usphone": "'ti,ʃɝt",
+        "ukphone": "'ti, ʃɜ:t"
+    },
+    {
+        "name": "go",
+        "usphone": "ɡoʊ",
+        "ukphone": "ɡəʊ",
+        "trans": [
+            "đi bộ"
+        ]
+    },
+    {
+        "name": "pink",
+        "usphone": "pɪŋk",
+        "ukphone": "pɪŋk",
+        "trans": [
+            "màu hồng"
+        ]
+    },
+    {
+        "name": "white",
+        "usphone": "waɪt",
+        "ukphone": "waɪt",
+        "trans": [
+            "màu trắng"
+        ]
+    },
+    {
+        "name": "cotton",
+        "usphone": "ˈkɑːtn",
+        "ukphone": "ˈkɒtn",
+        "trans": [
+            "bông vải"
+        ]
+    },
+    {
+        "name": "dollar",
+        "usphone": "ˈdɑːlər",
+        "ukphone": "ˈdɒlə(r)",
+        "trans": [
+            "đô la Mỹ"
+        ]
+    },
+    {
+        "name": "first",
+        "usphone": "fɜːrst",
+        "ukphone": "fɜːst",
+        "trans": [
+            "thứ nhất"
+        ]
+    },
+    {
+        "name": "home",
+        "usphone": "hoʊm",
+        "ukphone": "həʊm",
+        "trans": [
+            "nhà"
+        ]
+    },
+    {
+        "name": "second",
+        "usphone": "ˈsekənd",
+        "ukphone": "ˈsekənd",
+        "trans": [
+            "thứ hai"
+        ]
+    },
+    {
+        "name": "third",
+        "usphone": "θɜːrd",
+        "ukphone": "θɜːd",
+        "trans": [
+            "thứ ba"
+        ]
+    },
+    {
+        "name": "woman",
+        "usphone": "ˈwʊmən",
+        "ukphone": "ˈwʊmən",
+        "trans": [
+            "phụ nữ"
+        ]
+    },
+    {
+        "name": "arm",
+        "usphone": "ɑːrm",
+        "ukphone": "ɑːm",
+        "trans": [
+            "cánh tay"
+        ]
+    },
+    {
+        "name": "blond",
+        "usphone": "blɑːnd",
+        "ukphone": "blɒnd",
+        "trans": [
+            "màu vàng hoe"
+        ]
+    },
+    {
+        "name": "body",
+        "usphone": "ˈbɑːdi",
+        "ukphone": "ˈbɒdi",
+        "trans": [
+            "cơ thể"
+        ]
+    },
+    {
+        "name": "ear",
+        "usphone": "ɪr",
+        "ukphone": "ɪə(r)",
+        "trans": [
+            "tai"
+        ]
+    },
+    {
+        "name": "eye",
+        "usphone": "aɪ",
+        "ukphone": "aɪ",
+        "trans": [
+            "con mắt"
+        ]
+    },
+    {
+        "name": "face",
+        "usphone": "feɪs",
+        "ukphone": "feɪs",
+        "trans": [
+            "khuôn mặt"
+        ]
+    },
+    {
+        "name": "fat",
+        "usphone": "fæt",
+        "ukphone": "fæt",
+        "trans": [
+            "mập mạp"
+        ]
+    },
+    {
+        "name": "finger",
+        "usphone": "ˈfɪŋɡər",
+        "ukphone": "ˈfɪŋɡə(r)",
+        "trans": [
+            "ngón tay"
+        ]
+    },
+    {
+        "name": "foot",
+        "usphone": "fʊt",
+        "ukphone": "fʊt",
+        "trans": [
+            "bàn chân"
+        ]
+    },
+    {
+        "name": "grey",
+        "usphone": "ɡreɪ",
+        "ukphone": "ɡreɪ",
+        "trans": [
+            "màu xám"
+        ]
+    },
+    {
+        "name": "hair",
+        "usphone": "her",
+        "ukphone": "heə(r)",
+        "trans": [
+            "tóc"
+        ]
+    },
+    {
+        "name": "hand",
+        "usphone": "hænd",
+        "ukphone": "hænd",
+        "trans": [
+            "bàn tay"
+        ]
+    },
+    {
+        "name": "happy",
+        "usphone": "ˈhæpi",
+        "ukphone": "ˈhæpi",
+        "trans": [
+            "vui vẻ"
+        ]
+    },
+    {
+        "name": "head",
+        "usphone": "hed",
+        "ukphone": "hed",
+        "trans": [
+            "cái đầu"
+        ]
+    },
+    {
+        "name": "know",
+        "usphone": "noʊ",
+        "ukphone": "nəʊ",
+        "trans": [
+            "biết"
+        ]
+    },
+    {
+        "name": "leg",
+        "usphone": "leɡ",
+        "ukphone": "leɡ",
+        "trans": [
+            "cẳng chân"
+        ]
+    },
+    {
+        "name": "long",
+        "usphone": "lɔːŋ",
+        "ukphone": "lɒŋ",
+        "trans": [
+            "dài"
+        ]
+    },
+    {
+        "name": "look",
+        "usphone": "lʊk",
+        "ukphone": "lʊk",
+        "trans": [
+            "nhìn"
+        ]
+    },
+    {
+        "name": "mouth",
+        "usphone": "maʊθ",
+        "ukphone": "maʊθ",
+        "trans": [
+            "cái miệng"
+        ]
+    },
+    {
+        "name": "nose",
+        "usphone": "noʊz",
+        "ukphone": "nəʊz",
+        "trans": [
+            "mũi"
+        ]
+    },
+    {
+        "name": "old",
+        "usphone": "oʊld",
+        "ukphone": "əʊld",
+        "trans": [
+            "già"
+        ]
+    },
+    {
+        "name": "sad",
+        "usphone": "sæd",
+        "ukphone": "sæd",
+        "trans": [
+            "buồn bã"
+        ]
+    },
+    {
+        "name": "short",
+        "usphone": "ʃɔːrt",
+        "ukphone": "ʃɔːt",
+        "trans": [
+            "thấp"
+        ]
+    },
+    {
+        "name": "shoulder",
+        "usphone": "ˈʃoʊldər",
+        "ukphone": "ˈʃəʊldə(r)",
+        "trans": [
+            "bờ vai"
+        ]
+    },
+    {
+        "name": "size",
+        "usphone": "saɪz",
+        "ukphone": "saɪz",
+        "trans": [
+            "kích cỡ"
+        ]
+    },
+    {
+        "name": "slim",
+        "usphone": "slɪm",
+        "ukphone": "slɪm",
+        "trans": [
+            "mảnh mai"
+        ]
+    },
+    {
+        "name": "tall",
+        "usphone": "tɔːl",
+        "ukphone": "tɔːl",
+        "trans": [
+            "cao"
+        ]
+    },
+    {
+        "name": "tattoo",
+        "usphone": "tæˈtuː",
+        "ukphone": "təˈtuː",
+        "trans": [
+            "hình xăm"
+        ]
+    },
+    {
+        "name": "thin",
+        "usphone": "θɪn",
+        "ukphone": "θɪn",
+        "trans": [
+            "ốm, gầy"
+        ]
+    },
+    {
+        "name": "tired",
+        "usphone": "ˈtaɪərd",
+        "ukphone": "ˈtaɪəd",
+        "trans": [
+            "mệt mỏi"
+        ]
+    },
+    {
+        "name": "toe",
+        "usphone": "toʊ",
+        "ukphone": "təʊ",
+        "trans": [
+            "ngón chân"
+        ]
+    },
+    {
+        "name": "unhappy",
+        "usphone": "ʌnˈhæpi",
+        "ukphone": "ʌnˈhæpi",
+        "trans": [
+            "không vui"
+        ]
+    },
+    {
+        "name": "young",
+        "usphone": "jʌŋ",
+        "ukphone": "jʌŋ",
+        "trans": [
+            "trẻ tuổi"
+        ]
+    },
+    {
+        "name": "banana",
+        "usphone": "bəˈnænə",
+        "ukphone": "bəˈnɑːnə",
+        "trans": [
+            "quả chuối"
+        ]
+    },
+    {
+        "name": "carrot",
+        "usphone": "ˈkærət",
+        "ukphone": "ˈkærət",
+        "trans": [
+            "cà rốt"
+        ]
+    },
+    {
+        "name": "egg",
+        "usphone": "eɡ",
+        "ukphone": "eɡ",
+        "trans": [
+            "quả trứng"
+        ]
+    },
+    {
+        "name": "fish",
+        "usphone": "fɪʃ",
+        "ukphone": "fɪʃ",
+        "trans": [
+            "con cá"
+        ]
+    },
+    {
+        "name": "fruit",
+        "usphone": "fruːt",
+        "ukphone": "fruːt",
+        "trans": [
+            "trái cây"
+        ]
+    },
+    {
+        "name": "knife",
+        "usphone": "naɪf",
+        "ukphone": "naɪf",
+        "trans": [
+            "con dao"
+        ]
+    },
+    {
+        "name": "meat",
+        "usphone": "miːt",
+        "ukphone": "miːt",
+        "trans": [
+            "thịt"
+        ]
+    },
+    {
+        "name": "noodle",
+        "usphone": "ˈnuːdl",
+        "ukphone": "ˈnuːdl",
+        "trans": [
+            "mì"
+        ]
+    },
+    {
+        "name": "vegetable",
+        "usphone": "ˈvedʒtəbl",
+        "ukphone": "ˈvedʒtəbl",
+        "trans": [
+            "rau củ"
+        ]
+    },
+    {
+        "name": "awful",
+        "usphone": "ˈɔːfl",
+        "ukphone": "ˈɔːfl",
+        "trans": [
+            "tồi tệ"
+        ]
+    },
+    {
+        "name": "cake",
+        "usphone": "keɪk",
+        "ukphone": "keɪk",
+        "trans": [
+            "bánh kem"
+        ]
+    },
+    {
+        "name": "drink",
+        "usphone": "drɪŋk",
+        "ukphone": "drɪŋk",
+        "trans": [
+            "đồ uống"
+        ]
+    },
+    {
+        "name": "hungry",
+        "usphone": "ˈhʌŋɡri",
+        "ukphone": "ˈhʌŋɡri",
+        "trans": [
+            "đói bụng"
+        ]
+    },
+    {
+        "name": "salty",
+        "usphone": "ˈsɔːlti",
+        "ukphone": "ˈsɔːlti",
+        "trans": [
+            "mặn"
+        ]
+    },
+    {
+        "name": "soup",
+        "usphone": "suːp",
+        "ukphone": "suːp",
+        "trans": [
+            "món súp"
+        ]
+    },
+    {
+        "name": "bag",
+        "usphone": "bæɡ",
+        "ukphone": "bæɡ",
+        "trans": [
+            "cái túi"
+        ]
+    },
+    {
+        "name": "coffee",
+        "usphone": "ˈkɔːfi",
+        "ukphone": "ˈkɒfi",
+        "trans": [
+            "cà phê"
+        ]
+    },
+    {
+        "name": "tea",
+        "usphone": "tiː",
+        "ukphone": "tiː",
+        "trans": [
+            "trà"
+        ]
+    },
+    {
+        "name": "bread",
+        "usphone": "bred",
+        "ukphone": "bred",
+        "trans": [
+            "bánh mì"
+        ]
+    },
+    {
+        "name": "chicken",
+        "usphone": "ˈtʃɪkɪn",
+        "ukphone": "ˈtʃɪkɪn",
+        "trans": [
+            "thịt gà"
+        ]
+    },
+    {
+        "name": "cheese",
+        "usphone": "tʃiːz",
+        "ukphone": "tʃiːz",
+        "trans": [
+            "phô mai"
+        ]
+    },
+    {
+        "name": "dessert",
+        "usphone": "dɪˈzɜːrt",
+        "ukphone": "dɪˈzɜːt",
+        "trans": [
+            "món tráng miệng"
+        ]
+    },
+    {
+        "name": "ice cream",
+        "trans": [
+            "kem"
+        ],
+        "usphone": "aɪs krim",
+        "ukphone": "aɪs kri:m"
+    },
+    {
+        "name": "pizza",
+        "usphone": "ˈpiːtsə",
+        "ukphone": "ˈpiːtsə",
+        "trans": [
+            "bánh pizza"
+        ]
+    },
+    {
+        "name": "rice",
+        "usphone": "raɪs",
+        "ukphone": "raɪs",
+        "trans": [
+            "gạo, cơm"
+        ]
+    },
+    {
+        "name": "salad",
+        "usphone": "ˈsæləd",
+        "ukphone": "ˈsæləd",
+        "trans": [
+            "món salad"
+        ]
+    },
+    {
+        "name": "apple",
+        "usphone": "ˈæpl",
+        "ukphone": "ˈæpl",
+        "trans": [
+            "quả táo"
+        ]
+    },
+    {
+        "name": "milk",
+        "usphone": "mɪlk",
+        "ukphone": "mɪlk",
+        "trans": [
+            "sữa"
+        ]
+    },
+    {
+        "name": "tomato",
+        "usphone": "təˈmeɪtoʊ",
+        "ukphone": "təˈmɑːtəʊ",
+        "trans": [
+            "cà chua"
+        ]
+    },
+    {
+        "name": "chocolate",
+        "usphone": "ˈtʃɑːklət",
+        "ukphone": "ˈtʃɒklət",
+        "trans": [
+            "sô-cô-la"
+        ]
+    },
+    {
+        "name": "pasta",
+        "usphone": "ˈpɑːstə",
+        "ukphone": "ˈpæstə",
+        "trans": [
+            "mì Ý"
+        ]
+    },
+    {
+        "name": "sandwich",
+        "usphone": "ˈsænwɪtʃ",
+        "ukphone": "ˈsænwɪtʃ",
+        "trans": [
+            "bánh mì kẹp"
+        ]
+    },
+    {
+        "name": "spicy",
+        "usphone": "ˈspaɪsi",
+        "ukphone": "ˈspaɪsi",
+        "trans": [
+            "cay"
+        ]
+    }
+]

@@ -1,0 +1,461 @@
+[
+    {
+        "name": "stop watch",
+        "trans": [
+            "Đồng hồ bấm giờ"
+        ]
+    },
+    {
+        "name": "ban",
+        "trans": [
+            "bị cấm"
+        ]
+    },
+    {
+        "name": "filter",
+        "trans": [
+            "bộ lọc"
+        ]
+    },
+    {
+        "name": "standard",
+        "trans": [
+            "Tiêu chuẩn"
+        ]
+    },
+    {
+        "name": "operate",
+        "trans": [
+            "hoạt động"
+        ]
+    },
+    {
+        "name": "feedback",
+        "trans": [
+            "phản hồi"
+        ]
+    },
+    {
+        "name": "brush",
+        "trans": [
+            "bàn chải"
+        ]
+    },
+    {
+        "name": "captain",
+        "trans": [
+            "thuyền trưởng"
+        ]
+    },
+    {
+        "name": "display",
+        "trans": [
+            "hiển thị"
+        ]
+    },
+    {
+        "name": "TV surveillance",
+        "trans": [
+            "giám sát truyền hình"
+        ]
+    },
+    {
+        "name": "button",
+        "trans": [
+            "nút"
+        ]
+    },
+    {
+        "name": "blinded",
+        "trans": [
+            "mù"
+        ]
+    },
+    {
+        "name": "characteristic",
+        "trans": [
+            "Tính năng"
+        ]
+    },
+    {
+        "name": "fixed",
+        "trans": [
+            "đã sửa"
+        ]
+    },
+    {
+        "name": "mathematics",
+        "trans": [
+            "Toán học"
+        ]
+    },
+    {
+        "name": "academic",
+        "trans": [
+            "học thuật"
+        ]
+    },
+    {
+        "name": "scoring",
+        "trans": [
+            "ghi điểm"
+        ]
+    },
+    {
+        "name": "heroine",
+        "trans": [
+            "nữ anh hùng"
+        ]
+    },
+    {
+        "name": "Town Hall",
+        "trans": [
+            "tòa thị chính"
+        ]
+    },
+    {
+        "name": "spare",
+        "trans": [
+            "Lưu"
+        ]
+    },
+    {
+        "name": "altitude",
+        "trans": [
+            "độ cao"
+        ]
+    },
+    {
+        "name": "scenery",
+        "trans": [
+            "phong cảnh"
+        ]
+    },
+    {
+        "name": "fishery",
+        "trans": [
+            "nghề cá"
+        ]
+    },
+    {
+        "name": "certificate",
+        "trans": [
+            "Giấy chứng nhận"
+        ]
+    },
+    {
+        "name": "injure",
+        "trans": [
+            "bị thương"
+        ]
+    },
+    {
+        "name": "strike",
+        "trans": [
+            "tác động"
+        ]
+    },
+    {
+        "name": "luggage",
+        "trans": [
+            "hành lý"
+        ]
+    },
+    {
+        "name": "fringe",
+        "trans": [
+            "cạnh"
+        ]
+    },
+    {
+        "name": "badge",
+        "trans": [
+            "huy hiệu"
+        ]
+    },
+    {
+        "name": "cooperative",
+        "trans": [
+            "hợp tác xã"
+        ]
+    },
+    {
+        "name": "donkey",
+        "trans": [
+            "con lừa"
+        ]
+    },
+    {
+        "name": "riverside",
+        "trans": [
+            "bờ sông"
+        ]
+    },
+    {
+        "name": "humid",
+        "trans": [
+            "ẩm ướt"
+        ]
+    },
+    {
+        "name": "escape",
+        "trans": [
+            "trốn thoát"
+        ]
+    },
+    {
+        "name": "seek",
+        "trans": [
+            "đang tìm kiếm"
+        ]
+    },
+    {
+        "name": "accompany",
+        "trans": [
+            "đi cùng"
+        ]
+    },
+    {
+        "name": "limb",
+        "trans": [
+            "tay chân"
+        ]
+    },
+    {
+        "name": "quiz",
+        "trans": [
+            "kỳ thi nhỏ"
+        ]
+    },
+    {
+        "name": "multimedia",
+        "trans": [
+            "đa phương tiện"
+        ]
+    },
+    {
+        "name": "championship",
+        "trans": [
+            "trạng thái vô địch"
+        ]
+    },
+    {
+        "name": "influential",
+        "trans": [
+            "có ảnh hưởng"
+        ]
+    },
+    {
+        "name": "regulation",
+        "trans": [
+            "quy tắc"
+        ]
+    },
+    {
+        "name": "certificate",
+        "trans": [
+            "Chứng minh…"
+        ]
+    },
+    {
+        "name": "statement",
+        "trans": [
+            "Tuyên bố"
+        ]
+    },
+    {
+        "name": "calculate",
+        "trans": [
+            "Tính toán"
+        ]
+    },
+    {
+        "name": "assume",
+        "trans": [
+            "Giả sử"
+        ]
+    },
+    {
+        "name": "emergency",
+        "trans": [
+            "trường hợp khẩn cấp"
+        ]
+    },
+    {
+        "name": "sign",
+        "trans": [
+            "đánh dấu"
+        ]
+    },
+    {
+        "name": "disabled",
+        "trans": [
+            "bị vô hiệu hóa"
+        ]
+    },
+    {
+        "name": "chain",
+        "trans": [
+            "chuỗi"
+        ]
+    },
+    {
+        "name": "cafeteria",
+        "trans": [
+            "quán ăn tự phục vụ"
+        ]
+    },
+    {
+        "name": "chess",
+        "trans": [
+            "cờ vua"
+        ]
+    },
+    {
+        "name": "president",
+        "trans": [
+            "chủ tịch"
+        ]
+    },
+    {
+        "name": "transport",
+        "trans": [
+            "vận chuyển"
+        ]
+    },
+    {
+        "name": "senior",
+        "trans": [
+            "nâng cao"
+        ]
+    },
+    {
+        "name": "direction",
+        "trans": [
+            "phương hướng"
+        ]
+    },
+    {
+        "name": "political",
+        "trans": [
+            "chính trị"
+        ]
+    },
+    {
+        "name": "landmark",
+        "trans": [
+            "tòa nhà mang tính bước ngoặt"
+        ]
+    },
+    {
+        "name": "submit",
+        "trans": [
+            "Lật nó lại"
+        ]
+    },
+    {
+        "name": "specific",
+        "trans": [
+            "cụ thể",
+            "cụ thể"
+        ]
+    },
+    {
+        "name": "assess",
+        "trans": [
+            "Đánh giá"
+        ]
+    },
+    {
+        "name": "junction",
+        "trans": [
+            "ngã tư"
+        ]
+    },
+    {
+        "name": "assistance",
+        "trans": [
+            "giúp đỡ"
+        ]
+    },
+    {
+        "name": "ambulance",
+        "trans": [
+            "xe cứu thương"
+        ]
+    },
+    {
+        "name": "harbour",
+        "trans": [
+            "hải cảng"
+        ]
+    },
+    {
+        "name": "category",
+        "trans": [
+            "Danh mục"
+        ]
+    },
+    {
+        "name": "sufficient",
+        "trans": [
+            "đủ rồi"
+        ]
+    },
+    {
+        "name": "orchard",
+        "trans": [
+            "vườn cây ăn trái"
+        ]
+    },
+    {
+        "name": "adjust",
+        "trans": [
+            "thích nghi"
+        ]
+    },
+    {
+        "name": "climate",
+        "trans": [
+            "thời tiết"
+        ]
+    },
+    {
+        "name": "previous",
+        "trans": [
+            "trước đó"
+        ]
+    },
+    {
+        "name": "routine",
+        "trans": [
+            "hàng ngày"
+        ]
+    },
+    {
+        "name": "illustration",
+        "trans": [
+            "Mô tả",
+            "Minh họa"
+        ]
+    },
+    {
+        "name": "carer",
+        "trans": [
+            "người chăm sóc"
+        ]
+    },
+    {
+        "name": "stretch",
+        "trans": [
+            "căng ra"
+        ]
+    },
+    {
+        "name": "career",
+        "trans": [
+            "sự nghiệp",
+            "Sự nghiệp"
+        ]
+    }
+]

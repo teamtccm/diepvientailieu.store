@@ -1,0 +1,328 @@
+[
+    {
+        "name": "evidence",
+        "trans": [
+            "bằng chứng"
+        ]
+    },
+    {
+        "name": "alternative",
+        "trans": [
+            "có sẵn"
+        ]
+    },
+    {
+        "name": "intention",
+        "trans": [
+            "ý định"
+        ]
+    },
+    {
+        "name": "relevant",
+        "trans": [
+            "có liên quan"
+        ]
+    },
+    {
+        "name": "outline",
+        "trans": [
+            "phác thảo",
+            "phác thảo"
+        ]
+    },
+    {
+        "name": "extinct",
+        "trans": [
+            "tuyệt chủng"
+        ]
+    },
+    {
+        "name": "wing",
+        "trans": [
+            "cánh"
+        ]
+    },
+    {
+        "name": "nest",
+        "trans": [
+            "tổ",
+            "Tổ"
+        ]
+    },
+    {
+        "name": "interference",
+        "trans": [
+            "sự can thiệp",
+            "can thiệp"
+        ]
+    },
+    {
+        "name": "standard",
+        "trans": [
+            "Tiêu chuẩn"
+        ]
+    },
+    {
+        "name": "subtopic",
+        "trans": [
+            "chủ đề phụ"
+        ]
+    },
+    {
+        "name": "therapy",
+        "trans": [
+            "điều trị",
+            "trị liệu"
+        ]
+    },
+    {
+        "name": "morality",
+        "trans": [
+            "Đạo đức"
+        ]
+    },
+    {
+        "name": "participation",
+        "trans": [
+            "tham gia",
+            "tham gia"
+        ]
+    },
+    {
+        "name": "faculty",
+        "trans": [
+            "chi nhánh",
+            "khoa",
+            "khả năng"
+        ]
+    },
+    {
+        "name": "fit",
+        "trans": [
+            "khỏe mạnh"
+        ]
+    },
+    {
+        "name": "useful",
+        "trans": [
+            "hữu ích"
+        ]
+    },
+    {
+        "name": "confuse",
+        "trans": [
+            "gây nhầm lẫn"
+        ]
+    },
+    {
+        "name": "inconvenient",
+        "trans": [
+            "bất tiện"
+        ]
+    },
+    {
+        "name": "valuable",
+        "trans": [
+            "có giá trị"
+        ]
+    },
+    {
+        "name": "advisor",
+        "trans": [
+            "nhà tư vấn"
+        ]
+    },
+    {
+        "name": "forget",
+        "trans": [
+            "quên"
+        ]
+    },
+    {
+        "name": "lecturer",
+        "trans": [
+            "Giảng viên"
+        ]
+    },
+    {
+        "name": "content",
+        "trans": [
+            "nội dung"
+        ]
+    },
+    {
+        "name": "practical",
+        "trans": [
+            "thực tế"
+        ]
+    },
+    {
+        "name": "improvement",
+        "trans": [
+            "Cải thiện"
+        ]
+    },
+    {
+        "name": "repetitive",
+        "trans": [
+            "lặp đi lặp lại"
+        ]
+    },
+    {
+        "name": "village",
+        "trans": [
+            "làng"
+        ]
+    },
+    {
+        "name": "mission",
+        "trans": [
+            "Sứ mệnh"
+        ]
+    },
+    {
+        "name": "qualification",
+        "trans": [
+            "Trình độ chuyên môn"
+        ]
+    },
+    {
+        "name": "curriculum",
+        "trans": [
+            "các khóa học"
+        ]
+    },
+    {
+        "name": "training",
+        "trans": [
+            "đào tạo"
+        ]
+    },
+    {
+        "name": "colleague",
+        "trans": [
+            "đồng nghiệp"
+        ]
+    },
+    {
+        "name": "description",
+        "trans": [
+            "Mô tả"
+        ]
+    },
+    {
+        "name": "administration",
+        "trans": [
+            "quản lý"
+        ]
+    },
+    {
+        "name": "farming",
+        "trans": [
+            "Nông nghiệp",
+            "nông nghiệp"
+        ]
+    },
+    {
+        "name": "damage",
+        "trans": [
+            "thiệt hại",
+            "hư hỏng"
+        ]
+    },
+    {
+        "name": "checklist",
+        "trans": [
+            "Danh sách kiểm tra",
+            "Danh sách kiểm tra"
+        ]
+    },
+    {
+        "name": "figures",
+        "trans": [
+            "Giá",
+            "Số tiền"
+        ]
+    },
+    {
+        "name": "presentation",
+        "trans": [
+            "tuyên bố",
+            "hiển thị"
+        ]
+    },
+    {
+        "name": "professor",
+        "trans": [
+            "giáo sư",
+            "giáo viên"
+        ]
+    },
+    {
+        "name": "seminar",
+        "trans": [
+            "hội thảo"
+        ]
+    },
+    {
+        "name": "chemistry",
+        "trans": [
+            "Hóa học"
+        ]
+    },
+    {
+        "name": "trade",
+        "trans": [
+            "buôn bán",
+            "giao dịch"
+        ]
+    },
+    {
+        "name": "payment",
+        "trans": [
+            "trả tiền"
+        ]
+    },
+    {
+        "name": "portable",
+        "trans": [
+            "xách tay"
+        ]
+    },
+    {
+        "name": "comedy",
+        "trans": [
+            "Hài kịch"
+        ]
+    },
+    {
+        "name": "pattern",
+        "trans": [
+            "chế độ"
+        ]
+    },
+    {
+        "name": "fresh",
+        "trans": [
+            "tươi"
+        ]
+    },
+    {
+        "name": "application",
+        "trans": [
+            "Áp dụng"
+        ]
+    },
+    {
+        "name": "employee",
+        "trans": [
+            "nhân viên"
+        ]
+    },
+    {
+        "name": "evaporate",
+        "trans": [
+            "bay hơi"
+        ]
+    }
+]

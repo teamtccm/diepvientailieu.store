@@ -1,0 +1,158 @@
+[
+    {
+        "name": "species",
+        "trans": [
+            "n. Loài"
+        ]
+    },
+    {
+        "name": "rare",
+        "trans": [
+            "adj. hiếm"
+        ]
+    },
+    {
+        "name": "female",
+        "trans": [
+            "adj. nữ"
+        ]
+    },
+    {
+        "name": "mammal",
+        "trans": [
+            "n. động vật có vú"
+        ]
+    },
+    {
+        "name": "reptile",
+        "trans": [
+            "n. loài bò sát"
+        ]
+    },
+    {
+        "name": "amphibian",
+        "trans": [
+            "n. động vật lưỡng cư"
+        ]
+    },
+    {
+        "name": "livestock",
+        "trans": [
+            "n. vật nuôi"
+        ]
+    },
+    {
+        "name": "cattle",
+        "trans": [
+            "n. con bò"
+        ]
+    },
+    {
+        "name": "distribution",
+        "trans": [
+            "n. phân phối, phân bổ"
+        ]
+    },
+    {
+        "name": "habitat",
+        "trans": [
+            "n. môi trường sống"
+        ]
+    },
+    {
+        "name": "inhabit",
+        "trans": [
+            "v. sống"
+        ]
+    },
+    {
+        "name": "territory",
+        "trans": [
+            "n. Lãnh thổ"
+        ]
+    },
+    {
+        "name": "nest",
+        "trans": [
+            "n. tổ"
+        ]
+    },
+    {
+        "name": "reserve",
+        "trans": [
+            "n. khu vực được bảo vệ"
+        ]
+    },
+    {
+        "name": "sanctuary",
+        "trans": [
+            "n. khu vực được bảo vệ"
+        ]
+    },
+    {
+        "name": "conservation",
+        "trans": [
+            "n. bảo vệ"
+        ]
+    },
+    {
+        "name": "zoo",
+        "trans": [
+            "n. sở thú"
+        ]
+    },
+    {
+        "name": "tail",
+        "trans": [
+            "n. đuôi"
+        ]
+    },
+    {
+        "name": "pattern",
+        "trans": [
+            "n. hoa văn, phong cách"
+        ]
+    },
+    {
+        "name": "jaw",
+        "trans": [
+            "n. hàm, cằm"
+        ]
+    },
+    {
+        "name": "tongue",
+        "trans": [
+            "n. lưỡi"
+        ]
+    },
+    {
+        "name": "mane",
+        "trans": [
+            "n. bờm"
+        ]
+    },
+    {
+        "name": "teeth",
+        "trans": [
+            "n. Răng"
+        ]
+    },
+    {
+        "name": "beak",
+        "trans": [
+            "n. mỏ"
+        ]
+    },
+    {
+        "name": "claw",
+        "trans": [
+            "n. móng vuốt"
+        ]
+    },
+    {
+        "name": "feather",
+        "trans": [
+            "n. lông vũ"
+        ]
+    }
+]

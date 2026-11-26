@@ -1,0 +1,278 @@
+[
+    {
+        "name": "personal details",
+        "trans": [
+            "pl. N. thông tin cá nhân"
+        ]
+    },
+    {
+        "name": "last name",
+        "trans": [
+            "n. Họ"
+        ]
+    },
+    {
+        "name": "family name",
+        "trans": [
+            "n. Họ"
+        ]
+    },
+    {
+        "name": "surname",
+        "trans": [
+            "n. Họ"
+        ]
+    },
+    {
+        "name": "first name",
+        "trans": [
+            "n. tên"
+        ]
+    },
+    {
+        "name": "given name",
+        "trans": [
+            "n. tên"
+        ]
+    },
+    {
+        "name": "title",
+        "trans": [
+            "n. tiêu đề"
+        ]
+    },
+    {
+        "name": "country of origin",
+        "trans": [
+            "n. đất nước sinh ra"
+        ]
+    },
+    {
+        "name": "nationality",
+        "trans": [
+            "n. Quốc tịch"
+        ]
+    },
+    {
+        "name": "occupation",
+        "trans": [
+            "n. Sự nghiệp"
+        ]
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "n. nha sĩ"
+        ]
+    },
+    {
+        "name": "surgeon",
+        "trans": [
+            "n. bác sĩ phẫu thuật"
+        ]
+    },
+    {
+        "name": "interior designer",
+        "trans": [
+            "n. nhà thiết kế nội thất"
+        ]
+    },
+    {
+        "name": "medical condition",
+        "trans": [
+            "n. tình trạng thể chất"
+        ]
+    },
+    {
+        "name": "glasses",
+        "trans": [
+            "pl. n. kính đeo mắt"
+        ]
+    },
+    {
+        "name": "asthma",
+        "trans": [
+            "n. Hen suyễn"
+        ]
+    },
+    {
+        "name": "heart disease",
+        "trans": [
+            "n. bệnh tim"
+        ]
+    },
+    {
+        "name": "address",
+        "trans": [
+            "n. địa chỉ"
+        ]
+    },
+    {
+        "name": "road",
+        "trans": [
+            "n. đường"
+        ]
+    },
+    {
+        "name": "street",
+        "trans": [
+            "n. đường phố"
+        ]
+    },
+    {
+        "name": "avenue",
+        "trans": [
+            "n. Đường chính"
+        ]
+    },
+    {
+        "name": "lane",
+        "trans": [
+            "n. con đường"
+        ]
+    },
+    {
+        "name": "postcode",
+        "trans": [
+            "n. [Vương quốc Anh]Mã bưu chính"
+        ]
+    },
+    {
+        "name": "zip code",
+        "trans": [
+            "n. [US]Mã bưu chính"
+        ]
+    },
+    {
+        "name": "emergency",
+        "trans": [
+            "n. trường hợp khẩn cấp"
+        ]
+    },
+    {
+        "name": "diet",
+        "trans": [
+            "n. chế độ ăn uống"
+        ]
+    },
+    {
+        "name": "vegetarian",
+        "trans": [
+            "n. ăn chay"
+        ]
+    },
+    {
+        "name": "no red meat",
+        "trans": [
+            "n. Không ăn thịt đỏ"
+        ]
+    },
+    {
+        "name": "elementary",
+        "trans": [
+            "adj. cơ bản"
+        ]
+    },
+    {
+        "name": "basic",
+        "trans": [
+            "adj. cơ bản"
+        ]
+    },
+    {
+        "name": "intermediate",
+        "trans": [
+            "adj. Trung cấp"
+        ]
+    },
+    {
+        "name": "advanced",
+        "trans": [
+            "adj. nâng cao"
+        ]
+    },
+    {
+        "name": "membership",
+        "trans": [
+            "n. Tư cách thành viên"
+        ]
+    },
+    {
+        "name": "apply",
+        "trans": [
+            "v. Áp dụng"
+        ]
+    },
+    {
+        "name": "entitlement",
+        "trans": [
+            "n. quyền"
+        ]
+    },
+    {
+        "name": "facilities",
+        "trans": [
+            "pl. n. cơ sở vật chất"
+        ]
+    },
+    {
+        "name": "restricted",
+        "trans": [
+            "adj. bị hạn chế"
+        ]
+    },
+    {
+        "name": "swimming pool",
+        "trans": [
+            "n. bể bơi"
+        ]
+    },
+    {
+        "name": "studio",
+        "trans": [
+            "n. phòng thu"
+        ]
+    },
+    {
+        "name": "preference",
+        "trans": [
+            "n. ưu tiên"
+        ]
+    },
+    {
+        "name": "priority",
+        "trans": [
+            "n. ưu tiên"
+        ]
+    },
+    {
+        "name": "session",
+        "trans": [
+            "n. một lúc nào đó"
+        ]
+    },
+    {
+        "name": "assess",
+        "trans": [
+            "v. đánh giá"
+        ]
+    },
+    {
+        "name": "restaurant",
+        "trans": [
+            "n. nhà hàng"
+        ]
+    },
+    {
+        "name": "changing room",
+        "trans": [
+            "n. phòng thay đồ"
+        ]
+    },
+    {
+        "name": "fee",
+        "trans": [
+            "n. chi phí"
+        ]
+    }
+]

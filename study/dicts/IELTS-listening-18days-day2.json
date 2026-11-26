@@ -1,0 +1,464 @@
+[
+    {
+        "name": "gym",
+        "trans": [
+            "n. phòng tập thể dục"
+        ]
+    },
+    {
+        "name": "laundry",
+        "trans": [
+            "n. tiệm giặt là"
+        ]
+    },
+    {
+        "name": "harbour",
+        "trans": [
+            "n. hải cảng"
+        ]
+    },
+    {
+        "name": "balcony",
+        "trans": [
+            "n. ban công"
+        ]
+    },
+    {
+        "name": "intermediate",
+        "trans": [
+            "adj. Trung cấp"
+        ]
+    },
+    {
+        "name": "electricity",
+        "trans": [
+            "n. điện"
+        ]
+    },
+    {
+        "name": "Africa",
+        "trans": [
+            "n. Châu Phi"
+        ]
+    },
+    {
+        "name": "vegetarian",
+        "trans": [
+            "n. ăn chay"
+        ]
+    },
+    {
+        "name": "India",
+        "trans": [
+            "n. Ấn Độ"
+        ]
+    },
+    {
+        "name": "navigation",
+        "trans": [
+            "n. Điều hướng"
+        ]
+    },
+    {
+        "name": "translate",
+        "trans": [
+            "v. Dịch"
+        ]
+    },
+    {
+        "name": "helicopter",
+        "trans": [
+            "n. máy bay trực thăng"
+        ]
+    },
+    {
+        "name": "event",
+        "trans": [
+            "n. sự kiện"
+        ]
+    },
+    {
+        "name": "organic",
+        "trans": [
+            "adj. hữu cơ"
+        ]
+    },
+    {
+        "name": "vacant",
+        "trans": [
+            "adj. bỏ trống"
+        ]
+    },
+    {
+        "name": "exhibition",
+        "trans": [
+            "n. triển lãm"
+        ]
+    },
+    {
+        "name": "waitress",
+        "trans": [
+            "n. cô hầu bàn"
+        ]
+    },
+    {
+        "name": "detail",
+        "trans": [
+            "n. Chi tiết"
+        ]
+    },
+    {
+        "name": "leaflet",
+        "trans": [
+            "n. tờ rơi"
+        ]
+    },
+    {
+        "name": "coastline",
+        "trans": [
+            "n. bờ biển"
+        ]
+    },
+    {
+        "name": "keyboard",
+        "trans": [
+            "n. bàn phím"
+        ]
+    },
+    {
+        "name": "ruin",
+        "trans": [
+            "n. tàn tích"
+        ]
+    },
+    {
+        "name": "database",
+        "trans": [
+            "n. cơ sở dữ liệu"
+        ]
+    },
+    {
+        "name": "accommodation",
+        "trans": [
+            "n. Chỗ ở"
+        ]
+    },
+    {
+        "name": "slide",
+        "trans": [
+            "n. trượt"
+        ]
+    },
+    {
+        "name": "stair lift",
+        "trans": [
+            "n. Thang máy"
+        ]
+    },
+    {
+        "name": "hostel",
+        "trans": [
+            "n. nhà khách"
+        ]
+    },
+    {
+        "name": "average",
+        "trans": [
+            "adj. Bình thường"
+        ]
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "v. du lịch"
+        ]
+    },
+    {
+        "name": "challenge",
+        "trans": [
+            "n. thử thách"
+        ]
+    },
+    {
+        "name": "teenager",
+        "trans": [
+            "n. thiếu niên"
+        ]
+    },
+    {
+        "name": "junior",
+        "trans": [
+            "n. thiếu niên"
+        ]
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "n. thuê"
+        ]
+    },
+    {
+        "name": "fax",
+        "trans": [
+            "n. Fax"
+        ]
+    },
+    {
+        "name": "landlady",
+        "trans": [
+            "n. bà chủ nhà"
+        ]
+    },
+    {
+        "name": "switch",
+        "trans": [
+            "n. chuyển đổi"
+        ]
+    },
+    {
+        "name": "hire",
+        "trans": [
+            "v. thuê"
+        ]
+    },
+    {
+        "name": "heater",
+        "trans": [
+            "n. lò sưởi"
+        ]
+    },
+    {
+        "name": "maid",
+        "trans": [
+            "n. người giúp việc"
+        ]
+    },
+    {
+        "name": "fridge",
+        "trans": [
+            "n. tủ lạnh"
+        ]
+    },
+    {
+        "name": "lock",
+        "trans": [
+            "n. khóa"
+        ]
+    },
+    {
+        "name": "midnight",
+        "trans": [
+            "n. nửa đêm"
+        ]
+    },
+    {
+        "name": "department",
+        "trans": [
+            "n. Sở"
+        ]
+    },
+    {
+        "name": "further",
+        "trans": [
+            "adj. hơn nữa"
+        ]
+    },
+    {
+        "name": "personal",
+        "trans": [
+            "adj. cá nhân"
+        ]
+    },
+    {
+        "name": "recruitment",
+        "trans": [
+            "n. tuyển dụng"
+        ]
+    },
+    {
+        "name": "fight",
+        "trans": [
+            "n. chiến đấu"
+        ]
+    },
+    {
+        "name": "occasional",
+        "trans": [
+            "adj. Thỉnh thoảng"
+        ]
+    },
+    {
+        "name": "skill",
+        "trans": [
+            "n. Kỹ năng"
+        ]
+    },
+    {
+        "name": "requirement",
+        "trans": [
+            "n. yêu cầu"
+        ]
+    },
+    {
+        "name": "vision",
+        "trans": [
+            "n. tầm nhìn"
+        ]
+    },
+    {
+        "name": "math",
+        "trans": [
+            "n. Toán học"
+        ]
+    },
+    {
+        "name": "prepare",
+        "trans": [
+            "v. chuẩn bị"
+        ]
+    },
+    {
+        "name": "customer",
+        "trans": [
+            "n. khách hàng"
+        ]
+    },
+    {
+        "name": "cultural",
+        "trans": [
+            "adj. văn hóa"
+        ]
+    },
+    {
+        "name": "refreshment",
+        "trans": [
+            "n. Món tráng miệng"
+        ]
+    },
+    {
+        "name": "accommodation",
+        "trans": [
+            "n. Chỗ ở"
+        ]
+    },
+    {
+        "name": "awareness",
+        "trans": [
+            "n. ý thức"
+        ]
+    },
+    {
+        "name": "cash",
+        "trans": [
+            "n. Tiền mặt"
+        ]
+    },
+    {
+        "name": "advice",
+        "trans": [
+            "n. Đề xuất"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "n. viện bảo tàng"
+        ]
+    },
+    {
+        "name": "credit card",
+        "trans": [
+            "n. thẻ tín dụng"
+        ]
+    },
+    {
+        "name": "snowboarding",
+        "trans": [
+            "n. trượt tuyết"
+        ]
+    },
+    {
+        "name": "sailing",
+        "trans": [
+            "n. chèo thuyền"
+        ]
+    },
+    {
+        "name": "in advance",
+        "trans": [
+            "trước"
+        ]
+    },
+    {
+        "name": "mountain",
+        "trans": [
+            "n. núi"
+        ]
+    },
+    {
+        "name": "destination",
+        "trans": [
+            "n. điểm đến"
+        ]
+    },
+    {
+        "name": "suggestion",
+        "trans": [
+            "n. Đề xuất"
+        ]
+    },
+    {
+        "name": "alternative",
+        "trans": [
+            "adj. chọn lọc"
+        ]
+    },
+    {
+        "name": "job agency",
+        "trans": [
+            "n. Cơ quan tuyển dụng"
+        ]
+    },
+    {
+        "name": "booklet",
+        "trans": [
+            "n. tờ rơi"
+        ]
+    },
+    {
+        "name": "European",
+        "trans": [
+            "n. Châu Âu"
+        ]
+    },
+    {
+        "name": "contact",
+        "trans": [
+            "v. Liên hệ"
+        ]
+    },
+    {
+        "name": "flat",
+        "trans": [
+            "n. căn hộ"
+        ]
+    },
+    {
+        "name": "plant",
+        "trans": [
+            "v. trồng cây"
+        ]
+    },
+    {
+        "name": "venue",
+        "trans": [
+            "n. Nơi hội họp/tập hợp"
+        ]
+    },
+    {
+        "name": "interviewer",
+        "trans": [
+            "n. người phỏng vấn"
+        ]
+    }
+]

@@ -1,0 +1,218 @@
+[
+    {
+        "name": "pedestrian",
+        "trans": [
+            "n. người đi bộ"
+        ]
+    },
+    {
+        "name": "safety",
+        "trans": [
+            "n. an toàn"
+        ]
+    },
+    {
+        "name": "traffic accident",
+        "trans": [
+            "n. tai nạn giao thông"
+        ]
+    },
+    {
+        "name": "traffic jam",
+        "trans": [
+            "n. ùn tắc giao thông"
+        ]
+    },
+    {
+        "name": "traffic congestion",
+        "trans": [
+            "n. ùn tắc giao thông"
+        ]
+    },
+    {
+        "name": "pollution",
+        "trans": [
+            "n. sự ô nhiễm"
+        ]
+    },
+    {
+        "name": "install",
+        "trans": [
+            "v. Cài đặt"
+        ]
+    },
+    {
+        "name": "traffic light",
+        "trans": [
+            "n. đèn giao thông"
+        ]
+    },
+    {
+        "name": "crossroads",
+        "trans": [
+            "n. ngã tư"
+        ]
+    },
+    {
+        "name": "intersection",
+        "trans": [
+            "n. ngã tư"
+        ]
+    },
+    {
+        "name": "junction",
+        "trans": [
+            "n. ngã tư"
+        ]
+    },
+    {
+        "name": "erect",
+        "trans": [
+            "v. thành lập"
+        ]
+    },
+    {
+        "name": "sign",
+        "trans": [
+            "n. biểu tượng"
+        ]
+    },
+    {
+        "name": "keep clear",
+        "trans": [
+            "Không được phép làm nghề"
+        ]
+    },
+    {
+        "name": "out of bounds",
+        "trans": [
+            "Không được phép vào"
+        ]
+    },
+    {
+        "name": "pavement",
+        "trans": [
+            "n. vỉa hè"
+        ]
+    },
+    {
+        "name": "footpath",
+        "trans": [
+            "n. vỉa hè"
+        ]
+    },
+    {
+        "name": "widen",
+        "trans": [
+            "v. làm rộng hơn"
+        ]
+    },
+    {
+        "name": "colour",
+        "trans": [
+            "v. màu sắc"
+        ]
+    },
+    {
+        "name": "mark",
+        "trans": [
+            "v. đánh dấu"
+        ]
+    },
+    {
+        "name": "bend",
+        "trans": [
+            "n. bước ngoặt"
+        ]
+    },
+    {
+        "name": "corner",
+        "trans": [
+            "n. bước ngoặt"
+        ]
+    },
+    {
+        "name": "cycle path/ lane",
+        "trans": [
+            "n. đường dành cho xe đạp"
+        ]
+    },
+    {
+        "name": "separate",
+        "trans": [
+            "adj. riêng biệt"
+        ]
+    },
+    {
+        "name": "parking",
+        "trans": [
+            "n. bãi đậu xe"
+        ]
+    },
+    {
+        "name": "car park",
+        "trans": [
+            "n. [Anh]Bãi đậu xe"
+        ]
+    },
+    {
+        "name": "parking lot",
+        "trans": [
+            "n. [US]Bãi đậu xe"
+        ]
+    },
+    {
+        "name": "disabled",
+        "trans": [
+            "adj. bị vô hiệu hóa"
+        ]
+    },
+    {
+        "name": "pay and display",
+        "trans": [
+            "Hệ thống thanh toán bãi đậu xe"
+        ]
+    },
+    {
+        "name": "regulation",
+        "trans": [
+            "n. quy định, quy tắc"
+        ]
+    },
+    {
+        "name": "regulate",
+        "trans": [
+            "v. kiểm soát, điều tiết"
+        ]
+    },
+    {
+        "name": "restriction",
+        "trans": [
+            "n. giới hạn"
+        ]
+    },
+    {
+        "name": "lorry",
+        "trans": [
+            "n. xe tải"
+        ]
+    },
+    {
+        "name": "load",
+        "trans": [
+            "v. tải"
+        ]
+    },
+    {
+        "name": "obey",
+        "trans": [
+            "v. tuân thủ"
+        ]
+    },
+    {
+        "name": "ban",
+        "trans": [
+            "v. bị cấm"
+        ]
+    }
+]

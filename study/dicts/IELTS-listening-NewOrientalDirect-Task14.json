@@ -1,0 +1,278 @@
+[
+    {
+        "name": "ferry",
+        "trans": [
+            "n. một chiếc phà (đặc biệt là một chuyến theo lịch trình)"
+        ]
+    },
+    {
+        "name": "boat",
+        "trans": [
+            "n. thuyền"
+        ]
+    },
+    {
+        "name": "ship",
+        "trans": [
+            "n. (đặc biệt là hàng hải) tàu, tàu biển, tàu"
+        ]
+    },
+    {
+        "name": "steam ship",
+        "trans": [
+            "n. tàu hơi nước, nồi hấp"
+        ]
+    },
+    {
+        "name": "harbor",
+        "trans": [
+            "n. cảng, bến cảng"
+        ]
+    },
+    {
+        "name": "fly",
+        "trans": [
+            "v. (của một con chim, côn trùng hoặc máy bay) bay"
+        ]
+    },
+    {
+        "name": "airport",
+        "trans": [
+            "n. nhà ga hàng không, sân bay"
+        ]
+    },
+    {
+        "name": "terminal",
+        "trans": [
+            "n. sân bay, nhà ga"
+        ]
+    },
+    {
+        "name": "train",
+        "trans": [
+            "n. xe lửa"
+        ]
+    },
+    {
+        "name": "tram",
+        "trans": [
+            "n. một chiếc xe điện thường hoạt động trong thành phố"
+        ]
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "n. huấn luyện viên, gia sư, gia sư riêng"
+        ]
+    },
+    {
+        "name": "minibus",
+        "trans": [
+            "n. xe buýt nhỏ"
+        ]
+    },
+    {
+        "name": "attraction",
+        "trans": [
+            "n. Lực hấp dẫn (lực), những điều hấp dẫn"
+        ]
+    },
+    {
+        "name": "places of interest",
+        "trans": [
+            "n. địa điểm yêu thích"
+        ]
+    },
+    {
+        "name": "theme park",
+        "trans": [
+            "n. công viên giải trí"
+        ]
+    },
+    {
+        "name": "campsite",
+        "trans": [
+            "n. trại nghỉ mát, khu cắm trại"
+        ]
+    },
+    {
+        "name": "castle",
+        "trans": [
+            "n. lâu đài, pháo đài"
+        ]
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "n. sa mạc"
+        ]
+    },
+    {
+        "name": "mountain",
+        "trans": [
+            "n. (cao) núi, núi"
+        ]
+    },
+    {
+        "name": "forest",
+        "trans": [
+            "n. rừng, diện tích rừng"
+        ]
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "n. hồ"
+        ]
+    },
+    {
+        "name": "waterfall",
+        "trans": [
+            "n. thác nước"
+        ]
+    },
+    {
+        "name": "botanic garden",
+        "trans": [
+            "n. vườn thực vật"
+        ]
+    },
+    {
+        "name": "sea",
+        "trans": [
+            "n. biển, đại dương"
+        ]
+    },
+    {
+        "name": "ocean",
+        "trans": [
+            "n. đại dương, biển"
+        ]
+    },
+    {
+        "name": "coast",
+        "trans": [
+            "n. bờ biển, khu vực ven biển"
+        ]
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "n. ven biển, ven hồ, bãi biển, bãi cát"
+        ]
+    },
+    {
+        "name": "island/isle",
+        "trans": [
+            "n. hòn đảo"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "n. bảo tàng, viện bảo tàng"
+        ]
+    },
+    {
+        "name": "gallery",
+        "trans": [
+            "n. (tác phẩm nghệ thuật) phòng triển lãm, phòng trưng bày nghệ thuật, phòng trưng bày"
+        ]
+    },
+    {
+        "name": "sculpture",
+        "trans": [
+            "n. điêu khắc, chạm khắc, bức tượng"
+        ]
+    },
+    {
+        "name": "heritage site",
+        "trans": [
+            "n. Tàn tích (danh lam thắng cảnh)"
+        ]
+    },
+    {
+        "name": "adventure playground",
+        "trans": [
+            "n. công viên giải trí trẻ em"
+        ]
+    },
+    {
+        "name": "circus",
+        "trans": [
+            "n. rạp xiếc, người biểu diễn xiếc, biểu diễn xiếc"
+        ]
+    },
+    {
+        "name": "whale watch",
+        "trans": [
+            "n. cụm từ xem cá voi"
+        ]
+    },
+    {
+        "name": "bush walking",
+        "trans": [
+            "n. Đi bộ trong rừng"
+        ]
+    },
+    {
+        "name": "trekking",
+        "trans": [
+            "n. Các hoạt động giải trí liên quan đến đi bộ đường dài"
+        ]
+    },
+    {
+        "name": "hiking",
+        "trans": [
+            "n. một cuộc đi bộ dài (ở nông thôn)"
+        ]
+    },
+    {
+        "name": "fishing",
+        "trans": [
+            "n. câu cá"
+        ]
+    },
+    {
+        "name": "kite surfing",
+        "trans": [
+            "n. lướt ván diều"
+        ]
+    },
+    {
+        "name": "surfing",
+        "trans": [
+            "n. lướt sóng"
+        ]
+    },
+    {
+        "name": "water skiing",
+        "trans": [
+            "n. trượt nước"
+        ]
+    },
+    {
+        "name": "scuba diving",
+        "trans": [
+            "n. Lặn"
+        ]
+    },
+    {
+        "name": "sunbathe",
+        "trans": [
+            "v. (làm đen da) tắm nắng hoặc tắm nắng"
+        ]
+    },
+    {
+        "name": "skiing",
+        "trans": [
+            "n. trượt tuyết"
+        ]
+    },
+    {
+        "name": "recreation",
+        "trans": [
+            "n. giải trí, trò tiêu khiển (phương pháp)"
+        ]
+    }
+]

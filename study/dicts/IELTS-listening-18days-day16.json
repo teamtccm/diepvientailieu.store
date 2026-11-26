@@ -1,0 +1,464 @@
+[
+    {
+        "name": "real",
+        "trans": [
+            "thực"
+        ]
+    },
+    {
+        "name": "activity",
+        "trans": [
+            "Hoạt động"
+        ]
+    },
+    {
+        "name": "impact",
+        "trans": [
+            "ảnh hưởng"
+        ]
+    },
+    {
+        "name": "sociable",
+        "trans": [
+            "xã hội"
+        ]
+    },
+    {
+        "name": "focus on",
+        "trans": [
+            "tập trung vào"
+        ]
+    },
+    {
+        "name": "realistic",
+        "trans": [
+            "thực tế"
+        ]
+    },
+    {
+        "name": "bungalow",
+        "trans": [
+            "nhà gỗ một tầng"
+        ]
+    },
+    {
+        "name": "pest",
+        "trans": [
+            "loài gây hại"
+        ]
+    },
+    {
+        "name": "polish",
+        "trans": [
+            "đánh bóng"
+        ]
+    },
+    {
+        "name": "paddle",
+        "trans": [
+            "chèo thuyền"
+        ]
+    },
+    {
+        "name": "speed",
+        "trans": [
+            "tốc độ"
+        ]
+    },
+    {
+        "name": "resistant",
+        "trans": [
+            "nổi loạn"
+        ]
+    },
+    {
+        "name": "contest",
+        "trans": [
+            "tranh luận"
+        ]
+    },
+    {
+        "name": "survive",
+        "trans": [
+            "sống sót"
+        ]
+    },
+    {
+        "name": "sailor",
+        "trans": [
+            "thủy thủ"
+        ]
+    },
+    {
+        "name": "rival",
+        "trans": [
+            "đối thủ"
+        ]
+    },
+    {
+        "name": "humidity",
+        "trans": [
+            "Độ ẩm"
+        ]
+    },
+    {
+        "name": "acid rainfall",
+        "trans": [
+            "mưa axit"
+        ]
+    },
+    {
+        "name": "movement",
+        "trans": [
+            "Hoạt động"
+        ]
+    },
+    {
+        "name": "appearance",
+        "trans": [
+            "Ngoại hình"
+        ]
+    },
+    {
+        "name": "herbivorous",
+        "trans": [
+            "ăn cỏ"
+        ]
+    },
+    {
+        "name": "organ",
+        "trans": [
+            "cơ quan"
+        ]
+    },
+    {
+        "name": "tongue",
+        "trans": [
+            "lưỡi"
+        ]
+    },
+    {
+        "name": "self defence",
+        "trans": [
+            "tự vệ"
+        ]
+    },
+    {
+        "name": "varied",
+        "trans": [
+            "có thể thay đổi"
+        ]
+    },
+    {
+        "name": "physical",
+        "trans": [
+            "thể chất"
+        ]
+    },
+    {
+        "name": "destruction",
+        "trans": [
+            "phá hủy"
+        ]
+    },
+    {
+        "name": "subsidy",
+        "trans": [
+            "trợ cấp"
+        ]
+    },
+    {
+        "name": "income",
+        "trans": [
+            "thu nhập"
+        ]
+    },
+    {
+        "name": "charge",
+        "trans": [
+            "hỏi giá"
+        ]
+    },
+    {
+        "name": "calculator",
+        "trans": [
+            "máy tính"
+        ]
+    },
+    {
+        "name": "caterpillar",
+        "trans": [
+            "sâu bướm"
+        ]
+    },
+    {
+        "name": "antifreeze",
+        "trans": [
+            "chất chống đông"
+        ]
+    },
+    {
+        "name": "concentration",
+        "trans": [
+            "tập trung"
+        ]
+    },
+    {
+        "name": "pepper",
+        "trans": [
+            "hạt tiêu"
+        ]
+    },
+    {
+        "name": "mood",
+        "trans": [
+            "tâm trạng"
+        ]
+    },
+    {
+        "name": "domestic",
+        "trans": [
+            "Trong nước"
+        ]
+    },
+    {
+        "name": "nursery",
+        "trans": [
+            "mẫu giáo"
+        ]
+    },
+    {
+        "name": "melt",
+        "trans": [
+            "tan chảy"
+        ]
+    },
+    {
+        "name": "quantity",
+        "trans": [
+            "số lượng"
+        ]
+    },
+    {
+        "name": "pause",
+        "trans": [
+            "tạm dừng"
+        ]
+    },
+    {
+        "name": "happiness",
+        "trans": [
+            "hạnh phúc"
+        ]
+    },
+    {
+        "name": "negative",
+        "trans": [
+            "tiêu cực"
+        ]
+    },
+    {
+        "name": "human",
+        "trans": [
+            "con người"
+        ]
+    },
+    {
+        "name": "goal",
+        "trans": [
+            "mục tiêu"
+        ]
+    },
+    {
+        "name": "suppressing",
+        "trans": [
+            "bị đàn áp"
+        ]
+    },
+    {
+        "name": "wax",
+        "trans": [
+            "sáp"
+        ]
+    },
+    {
+        "name": "dragonfly",
+        "trans": [
+            "chuồn chuồn"
+        ]
+    },
+    {
+        "name": "malaria",
+        "trans": [
+            "Sốt rét"
+        ]
+    },
+    {
+        "name": "weakness",
+        "trans": [
+            "Điểm yếu"
+        ]
+    },
+    {
+        "name": "contaminate",
+        "trans": [
+            "sự ô nhiễm"
+        ]
+    },
+    {
+        "name": "reinforce",
+        "trans": [
+            "tăng cường"
+        ]
+    },
+    {
+        "name": "distance",
+        "trans": [
+            "khoảng cách"
+        ]
+    },
+    {
+        "name": "pump",
+        "trans": [
+            "bơm nước"
+        ]
+    },
+    {
+        "name": "competitor",
+        "trans": [
+            "đối thủ cạnh tranh"
+        ]
+    },
+    {
+        "name": "skyscraper",
+        "trans": [
+            "tòa nhà chọc trời"
+        ]
+    },
+    {
+        "name": "construction",
+        "trans": [
+            "xây dựng"
+        ]
+    },
+    {
+        "name": "guideline",
+        "trans": [
+            "hướng dẫn"
+        ]
+    },
+    {
+        "name": "carnivorous",
+        "trans": [
+            "ăn thịt"
+        ]
+    },
+    {
+        "name": "prey",
+        "trans": [
+            "kẻ săn mồi"
+        ]
+    },
+    {
+        "name": "evolve",
+        "trans": [
+            "sự tiến hóa"
+        ]
+    },
+    {
+        "name": "sting",
+        "trans": [
+            "cái gai"
+        ]
+    },
+    {
+        "name": "scent",
+        "trans": [
+            "mùi"
+        ]
+    },
+    {
+        "name": "cure",
+        "trans": [
+            "chữa bệnh"
+        ]
+    },
+    {
+        "name": "particular",
+        "trans": [
+            "đặc biệt"
+        ]
+    },
+    {
+        "name": "planet",
+        "trans": [
+            "hành tinh"
+        ]
+    },
+    {
+        "name": "supplement",
+        "trans": [
+            "bổ sung"
+        ]
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "nha sĩ"
+        ]
+    },
+    {
+        "name": "personality",
+        "trans": [
+            "nhân vật"
+        ]
+    },
+    {
+        "name": "hibernate",
+        "trans": [
+            "ngủ đông"
+        ]
+    },
+    {
+        "name": "substance",
+        "trans": [
+            "vấn đề"
+        ]
+    },
+    {
+        "name": "bark",
+        "trans": [
+            "vỏ cây"
+        ]
+    },
+    {
+        "name": "surface",
+        "trans": [
+            "bề mặt"
+        ]
+    },
+    {
+        "name": "wealth",
+        "trans": [
+            "sự giàu có"
+        ]
+    },
+    {
+        "name": "exploration",
+        "trans": [
+            "phát hiện"
+        ]
+    },
+    {
+        "name": "boost",
+        "trans": [
+            "thúc đẩy"
+        ]
+    },
+    {
+        "name": "immigration",
+        "trans": [
+            "di cư"
+        ]
+    }
+]

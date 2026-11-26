@@ -7362,7 +7362,7 @@ function doPost(e) {
 
 
 
-    <script src="js/app.js?v=15.2"></script>
+    <script src="js/app.js?v=16.1"></script>
 
 
 
@@ -7870,17 +7870,29 @@ function doPost(e) {
 
                 <p id="appGateStatusHint" class="hidden"></p>
 
-                <!-- 4. Official Windows & Apple Logo Download Buttons -->
-                <div class="grid sm:grid-cols-2 gap-2 pt-0.5">
+                <!-- 4. Instant Zero-Warning Desktop App + Offline ZIP Download Buttons -->
+                <div class="space-y-2 pt-0.5">
+                    <button type="button" id="btnInstantLaunchPwaApp" disabled onclick="handleGatedAppDownload('pwa')" class="w-full py-3 px-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xs sm:text-[13px] rounded-xl shadow-lg flex items-center justify-between transition opacity-45 cursor-not-allowed">
+                        <span class="flex items-center gap-2.5 text-left">
+                            <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            <span>
+                                <span class="block uppercase tracking-wide leading-tight">Mở &amp; Cài App Trực Tiếp (Khuyên Dùng)</span>
+                                <span class="block text-[10.5px] font-normal text-emerald-100 leading-tight">Dùng ngay trên Windows &amp; MacBook · 0% Cảnh Báo Trình Duyệt</span>
+                            </span>
+                        </span>
+                        <span class="px-2.5 py-1 bg-amber-400 text-slate-950 rounded-lg text-[10px] font-black whitespace-nowrap shadow-xs">MỞ NGAY 1S</span>
+                    </button>
+
+                    <div class="grid sm:grid-cols-2 gap-2">
                     <button type="button" id="btnDirectDownloadWinExe" disabled onclick="handleGatedAppDownload('exe')" class="w-full py-2.5 px-3.5 bg-[#0D1677] hover:bg-[#1E40AF] text-white font-black text-xs rounded-xl shadow-md flex items-center justify-between transition opacity-45 cursor-not-allowed">
                         <span class="flex items-center gap-2.5 text-left">
                             <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.557L10.35 4.55v7.095H3V5.557zm0 12.886l7.35 1.007v-7.02H3v6.013zm8.165 1.12L21 21v-8.57h-9.835v7.127zm0-15.126v7.208H21V3l-9.835 1.437z"/></svg>
                             <span>
                                 <span class="block uppercase tracking-wide leading-tight">Tải Cho Windows</span>
-                                <span class="block text-[10px] font-normal text-sky-200 leading-tight">Bản Độc Lập (.ZIP · Giải nén mở ngay)</span>
+                                <span class="block text-[10px] font-normal text-sky-200 leading-tight">Bản Offline (.ZIP · Giải nén mở ngay)</span>
                             </span>
                         </span>
-                        <span class="px-2 py-0.5 bg-[#FFA000] text-slate-950 rounded text-[9.5px] font-black whitespace-nowrap">TẢI NGAY</span>
+                        <span class="px-2 py-0.5 bg-[#FFA000] text-slate-950 rounded text-[9.5px] font-black whitespace-nowrap">WINDOWS</span>
                     </button>
 
                     <button type="button" id="btnDirectDownloadMacZip" disabled onclick="handleGatedAppDownload('macos')" class="w-full py-2.5 px-3.5 bg-slate-900 hover:bg-slate-800 text-white font-black text-xs rounded-xl shadow-md flex items-center justify-between transition opacity-45 cursor-not-allowed">
@@ -7893,6 +7905,7 @@ function doPost(e) {
                         </span>
                         <span class="px-2 py-0.5 bg-white/20 rounded text-[9.5px] font-black whitespace-nowrap">macOS</span>
                     </button>
+                    </div>
                 </div>
 
                 <!-- 5. Clean Single PDF Installation Guide Button -->

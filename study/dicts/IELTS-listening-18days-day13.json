@@ -1,0 +1,470 @@
+[
+    {
+        "name": "referee",
+        "trans": [
+            "nhân chứng"
+        ]
+    },
+    {
+        "name": "puzzling",
+        "trans": [
+            "không thể giải thích được"
+        ]
+    },
+    {
+        "name": "perspective",
+        "trans": [
+            "quan điểm"
+        ]
+    },
+    {
+        "name": "path",
+        "trans": [
+            "con đường"
+        ]
+    },
+    {
+        "name": "representative",
+        "trans": [
+            "đại diện"
+        ]
+    },
+    {
+        "name": "discontinue",
+        "trans": [
+            "chấm dứt"
+        ]
+    },
+    {
+        "name": "accounting",
+        "trans": [
+            "Kế toán"
+        ]
+    },
+    {
+        "name": "satellite",
+        "trans": [
+            "vệ tinh"
+        ]
+    },
+    {
+        "name": "permission",
+        "trans": [
+            "cho phép"
+        ]
+    },
+    {
+        "name": "variation",
+        "trans": [
+            "thay đổi"
+        ]
+    },
+    {
+        "name": "innovation",
+        "trans": [
+            "Đổi mới"
+        ]
+    },
+    {
+        "name": "divide",
+        "trans": [
+            "chia"
+        ]
+    },
+    {
+        "name": "diet",
+        "trans": [
+            "chế độ ăn uống"
+        ]
+    },
+    {
+        "name": "partly",
+        "trans": [
+            "một phần"
+        ]
+    },
+    {
+        "name": "stimulating",
+        "trans": [
+            "thú vị"
+        ]
+    },
+    {
+        "name": "master",
+        "trans": [
+            "Bậc thầy"
+        ]
+    },
+    {
+        "name": "microbiology",
+        "trans": [
+            "Vi sinh vật"
+        ]
+    },
+    {
+        "name": "essay",
+        "trans": [
+            "Giấy"
+        ]
+    },
+    {
+        "name": "strategy",
+        "trans": [
+            "chiến lược"
+        ]
+    },
+    {
+        "name": "cosmetics",
+        "trans": [
+            "Mỹ phẩm"
+        ]
+    },
+    {
+        "name": "extension",
+        "trans": [
+            "trì hoãn"
+        ]
+    },
+    {
+        "name": "record",
+        "trans": [
+            "ghi lại"
+        ]
+    },
+    {
+        "name": "bibliography",
+        "trans": [
+            "Thư mục"
+        ]
+    },
+    {
+        "name": "incorrect",
+        "trans": [
+            "sai"
+        ]
+    },
+    {
+        "name": "thorough",
+        "trans": [
+            "kỹ lưỡng"
+        ]
+    },
+    {
+        "name": "definition",
+        "trans": [
+            "độ nét"
+        ]
+    },
+    {
+        "name": "connective",
+        "trans": [
+            "Từ nối"
+        ]
+    },
+    {
+        "name": "solution",
+        "trans": [
+            "giải pháp"
+        ]
+    },
+    {
+        "name": "leisure",
+        "trans": [
+            "giải trí"
+        ]
+    },
+    {
+        "name": "decisive",
+        "trans": [
+            "Quyết đoán"
+        ]
+    },
+    {
+        "name": "ambitious",
+        "trans": [
+            "đầy tham vọng"
+        ]
+    },
+    {
+        "name": "specialised",
+        "trans": [
+            "chuyên nghiệp"
+        ]
+    },
+    {
+        "name": "observe",
+        "trans": [
+            "quan sát"
+        ]
+    },
+    {
+        "name": "dominance",
+        "trans": [
+            "thống trị"
+        ]
+    },
+    {
+        "name": "stick",
+        "trans": [
+            "cái gai"
+        ]
+    },
+    {
+        "name": "imaginable",
+        "trans": [
+            "có thể tưởng tượng được"
+        ]
+    },
+    {
+        "name": "worthy",
+        "trans": [
+            "đáng giá"
+        ]
+    },
+    {
+        "name": "interpersonal",
+        "trans": [
+            "giữa các cá nhân"
+        ]
+    },
+    {
+        "name": "accessible",
+        "trans": [
+            "có thể truy cập"
+        ]
+    },
+    {
+        "name": "regrettable",
+        "trans": [
+            "đáng tiếc"
+        ]
+    },
+    {
+        "name": "wind",
+        "trans": [
+            "gió"
+        ]
+    },
+    {
+        "name": "economics",
+        "trans": [
+            "Kinh tế"
+        ]
+    },
+    {
+        "name": "postgraduate",
+        "trans": [
+            "sinh viên tốt nghiệp"
+        ]
+    },
+    {
+        "name": "management",
+        "trans": [
+            "quản lý"
+        ]
+    },
+    {
+        "name": "adviser",
+        "trans": [
+            "nhà tư vấn"
+        ]
+    },
+    {
+        "name": "folder",
+        "trans": [
+            "thư mục"
+        ]
+    },
+    {
+        "name": "identify",
+        "trans": [
+            "xác định"
+        ]
+    },
+    {
+        "name": "worksheet",
+        "trans": [
+            "sách bài tập"
+        ]
+    },
+    {
+        "name": "access",
+        "trans": [
+            "đóng"
+        ]
+    },
+    {
+        "name": "profit",
+        "trans": [
+            "sở thích"
+        ]
+    },
+    {
+        "name": "cultivate",
+        "trans": [
+            "trồng trọt"
+        ]
+    },
+    {
+        "name": "highlight",
+        "trans": [
+            "Điểm nổi bật"
+        ]
+    },
+    {
+        "name": "diploma",
+        "trans": [
+            "Bằng tốt nghiệp"
+        ]
+    },
+    {
+        "name": "tutorial",
+        "trans": [
+            "hướng dẫn"
+        ]
+    },
+    {
+        "name": "assessment",
+        "trans": [
+            "đánh giá"
+        ]
+    },
+    {
+        "name": "brand",
+        "trans": [
+            "Thương hiệu"
+        ]
+    },
+    {
+        "name": "image",
+        "trans": [
+            "hình ảnh"
+        ]
+    },
+    {
+        "name": "residential",
+        "trans": [
+            "khu dân cư"
+        ]
+    },
+    {
+        "name": "intimacy",
+        "trans": [
+            "sự thân mật"
+        ]
+    },
+    {
+        "name": "inappropriate",
+        "trans": [
+            "không phù hợp"
+        ]
+    },
+    {
+        "name": "underline",
+        "trans": [
+            "nhấn mạnh"
+        ]
+    },
+    {
+        "name": "analyse",
+        "trans": [
+            "phân tích"
+        ]
+    },
+    {
+        "name": "quote",
+        "trans": [
+            "Trích dẫn"
+        ]
+    },
+    {
+        "name": "sub-topic",
+        "trans": [
+            "phụ đề"
+        ]
+    },
+    {
+        "name": "frustrated",
+        "trans": [
+            "thất vọng"
+        ]
+    },
+    {
+        "name": "premise",
+        "trans": [
+            "tiền đề"
+        ]
+    },
+    {
+        "name": "intelligent",
+        "trans": [
+            "thông minh"
+        ]
+    },
+    {
+        "name": "sector",
+        "trans": [
+            "Sở"
+        ]
+    },
+    {
+        "name": "transcription",
+        "trans": [
+            "Sao chép"
+        ]
+    },
+    {
+        "name": "chimpanzee",
+        "trans": [
+            "tinh tinh"
+        ]
+    },
+    {
+        "name": "imitate",
+        "trans": [
+            "bắt chước"
+        ]
+    },
+    {
+        "name": "nutshell",
+        "trans": [
+            "vỏ hạt"
+        ]
+    },
+    {
+        "name": "invalid",
+        "trans": [
+            "không hợp lệ"
+        ]
+    },
+    {
+        "name": "ability",
+        "trans": [
+            "khả năng"
+        ]
+    },
+    {
+        "name": "leadership",
+        "trans": [
+            "kỹ năng lãnh đạo"
+        ]
+    },
+    {
+        "name": "majority",
+        "trans": [
+            "đa số"
+        ]
+    },
+    {
+        "name": "seat belt",
+        "trans": [
+            "dây an toàn"
+        ]
+    },
+    {
+        "name": "theory",
+        "trans": [
+            "lý thuyết"
+        ]
+    }
+]

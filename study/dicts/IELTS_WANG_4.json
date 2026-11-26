@@ -1,0 +1,2770 @@
+[
+    {
+        "name": "abnormal",
+        "trans": [
+            "bất thường"
+        ],
+        "usphone": "æbˈnɔːml",
+        "ukphone": "æbˈnɔːrml"
+    },
+    {
+        "name": "academic",
+        "trans": [
+            "học thuật"
+        ],
+        "usphone": "ˌækəˈdemɪk",
+        "ukphone": "ˌækəˈdemɪk"
+    },
+    {
+        "name": "accessible",
+        "trans": [
+            "có thể truy cập"
+        ],
+        "usphone": "əkˈsesəbl",
+        "ukphone": "əkˈsesəbl"
+    },
+    {
+        "name": "accountable",
+        "trans": [
+            "chịu trách nhiệm"
+        ],
+        "usphone": "əˈkaʊntəbl",
+        "ukphone": "əˈkaʊntəbl"
+    },
+    {
+        "name": "accurate",
+        "trans": [
+            "đúng"
+        ],
+        "usphone": "ˈækjərət",
+        "ukphone": "ˈækjərət"
+    },
+    {
+        "name": "additional",
+        "trans": [
+            "thêm"
+        ],
+        "usphone": "əˈdɪʃənl",
+        "ukphone": "əˈdɪʃənl"
+    },
+    {
+        "name": "adequate",
+        "trans": [
+            "đủ, thỏa đáng"
+        ],
+        "usphone": "ˈædɪkwət",
+        "ukphone": "ˈædɪkwət"
+    },
+    {
+        "name": "advanced",
+        "trans": [
+            "tiên tiến"
+        ],
+        "usphone": "əd'vænst",
+        "ukphone": "əd'vænst"
+    },
+    {
+        "name": "advisable",
+        "trans": [
+            "khôn ngoan"
+        ],
+        "usphone": "ədˈvaɪzəbl",
+        "ukphone": "ədˈvaɪzəbl"
+    },
+    {
+        "name": "allergic",
+        "trans": [
+            "dị ứng"
+        ],
+        "usphone": "əˈlɜːdʒɪk",
+        "ukphone": "əˈlɜːrdʒɪk"
+    },
+    {
+        "name": "alternative",
+        "trans": [
+            "tùy chọn"
+        ],
+        "usphone": "ɔːlˈtɜːnətɪv",
+        "ukphone": "ɔːlˈtɜːrnətɪv"
+    },
+    {
+        "name": "amazing",
+        "trans": [
+            "đáng ngạc nhiên"
+        ],
+        "usphone": "əˈmeɪzɪŋ",
+        "ukphone": "əˈmeɪzɪŋ"
+    },
+    {
+        "name": "ambiguous",
+        "trans": [
+            "mơ hồ"
+        ],
+        "usphone": "æmˈbɪɡjuəs",
+        "ukphone": "æmˈbɪɡjuəs"
+    },
+    {
+        "name": "ambitious",
+        "trans": [
+            "cực kỳ tham vọng"
+        ],
+        "usphone": "æmˈbɪʃəs",
+        "ukphone": "æmˈbɪʃəs"
+    },
+    {
+        "name": "analytical",
+        "trans": [
+            "phân tích"
+        ],
+        "usphone": "ˌænəˈlɪtɪkl",
+        "ukphone": "ˌænəˈlɪtɪkl"
+    },
+    {
+        "name": "ancient",
+        "trans": [
+            "cổ xưa"
+        ],
+        "usphone": "ˈeɪnʃənt",
+        "ukphone": "ˈeɪnʃənt"
+    },
+    {
+        "name": "angry",
+        "trans": [
+            "tức giận"
+        ],
+        "usphone": "ˈæŋɡri",
+        "ukphone": "ˈæŋɡri"
+    },
+    {
+        "name": "applied",
+        "trans": [
+            "áp dụng"
+        ],
+        "usphone": "əˈplaɪd",
+        "ukphone": "əˈplaɪd"
+    },
+    {
+        "name": "archaeological",
+        "trans": [
+            "khảo cổ học"
+        ],
+        "usphone": "ˌɑrkiːəˈlɑdʒɪkəl",
+        "ukphone": "ˌɑːrkiːəˈlɒdʒɪkəl"
+    },
+    {
+        "name": "artificial",
+        "trans": [
+            "nhân tạo"
+        ],
+        "usphone": "ˌɑːtɪˈfɪʃl",
+        "ukphone": "ˌɑːrtɪˈfɪʃl"
+    },
+    {
+        "name": "artistic",
+        "trans": [
+            "nghệ thuật"
+        ],
+        "usphone": "ɑːˈtɪstɪk",
+        "ukphone": "ɑːrˈtɪstɪk"
+    },
+    {
+        "name": "ascending",
+        "trans": [
+            "tăng lên"
+        ],
+        "usphone": "ə'sɛndɪŋ",
+        "ukphone": "ə'sendiŋ"
+    },
+    {
+        "name": "atmospheric",
+        "trans": [
+            "Khí quyển"
+        ],
+        "usphone": "ˌætməsˈferɪk",
+        "ukphone": "ˌætməsˈferɪk"
+    },
+    {
+        "name": "attentive",
+        "trans": [
+            "Chú ý"
+        ],
+        "usphone": "əˈtentɪv",
+        "ukphone": "əˈtentɪv"
+    },
+    {
+        "name": "audio",
+        "trans": [
+            "phát âm"
+        ],
+        "usphone": "ˈɔːdiəʊ",
+        "ukphone": "ˈɔːdioʊ"
+    },
+    {
+        "name": "available",
+        "trans": [
+            "có sẵn, có thời gian"
+        ],
+        "usphone": "əˈveɪləbl",
+        "ukphone": "əˈveɪləbl"
+    },
+    {
+        "name": "aware",
+        "trans": [
+            "nhận thức được"
+        ],
+        "usphone": "əˈweə",
+        "ukphone": "əˈwer"
+    },
+    {
+        "name": "awful",
+        "trans": [
+            "khủng khiếp"
+        ],
+        "usphone": "ˈɔːfl",
+        "ukphone": "ˈɔːfl"
+    },
+    {
+        "name": "auto",
+        "trans": [
+            "tự động"
+        ],
+        "usphone": "ˈɔːtəʊ",
+        "ukphone": "ˈɔːtoʊ"
+    },
+    {
+        "name": "bald",
+        "trans": [
+            "trần trụi"
+        ],
+        "usphone": "bɔːld",
+        "ukphone": "bɔːld"
+    },
+    {
+        "name": "barren",
+        "trans": [
+            "cằn cỗi"
+        ],
+        "usphone": "ˈbærən",
+        "ukphone": "ˈbærən"
+    },
+    {
+        "name": "basic",
+        "trans": [
+            "cơ bản"
+        ],
+        "usphone": "ˈbeɪsɪk",
+        "ukphone": "ˈbeɪsɪk"
+    },
+    {
+        "name": "beautiful",
+        "trans": [
+            "đẹp"
+        ],
+        "usphone": "ˈbjuːtɪfl",
+        "ukphone": "ˈbjuːtɪfl"
+    },
+    {
+        "name": "biological",
+        "trans": [
+            "sinh học"
+        ],
+        "usphone": "ˌbaɪəˈlɒdʒɪkl",
+        "ukphone": "ˌbaɪəˈlɑːdʒɪkl"
+    },
+    {
+        "name": "blind",
+        "trans": [
+            "mù"
+        ],
+        "usphone": "blaɪnd",
+        "ukphone": "blaɪnd"
+    },
+    {
+        "name": "blond",
+        "trans": [
+            "tóc vàng"
+        ],
+        "usphone": "blɒnd",
+        "ukphone": "blɑːnd"
+    },
+    {
+        "name": "British",
+        "trans": [
+            "người Anh"
+        ],
+        "usphone": "'brɪtɪʃ",
+        "ukphone": "'brɪtɪʃ"
+    },
+    {
+        "name": "broad",
+        "trans": [
+            "rộng rãi"
+        ],
+        "usphone": "brɔːd",
+        "ukphone": "brɔːd"
+    },
+    {
+        "name": "buried",
+        "trans": [
+            "chôn cất"
+        ],
+        "usphone": "ˈberid",
+        "ukphone": "ˈberid"
+    },
+    {
+        "name": "calculating",
+        "trans": [
+            "tính toán"
+        ],
+        "usphone": "ˈkælkjuleɪtɪŋ",
+        "ukphone": "ˈkælkjuleɪtɪŋ"
+    },
+    {
+        "name": "casual",
+        "trans": [
+            "Tình cờ"
+        ],
+        "usphone": "ˈkæʒuəl",
+        "ukphone": "ˈkæʒuəl"
+    },
+    {
+        "name": "central",
+        "trans": [
+            "trung tâm"
+        ],
+        "usphone": "ˈsentrəl",
+        "ukphone": "ˈsentrəl"
+    },
+    {
+        "name": "challenging",
+        "trans": [
+            "đầy thử thách"
+        ],
+        "usphone": "ˈtʃælɪndʒɪŋ",
+        "ukphone": "ˈtʃælɪndʒɪŋ"
+    },
+    {
+        "name": "cheaper",
+        "trans": [
+            "Rẻ hơn"
+        ],
+        "usphone": "ˈtʃiːpə",
+        "ukphone": "ˈtʃipər"
+    },
+    {
+        "name": "cheerful",
+        "trans": [
+            "hạnh phúc"
+        ],
+        "usphone": "ˈtʃɪəfl",
+        "ukphone": "ˈtʃɪrfl"
+    },
+    {
+        "name": "children's",
+        "trans": [
+            "trẻ em"
+        ],
+        "usphone": "ˈtʃɪldrənz",
+        "ukphone": "ˈtʃɪldrənz"
+    },
+    {
+        "name": "classical",
+        "trans": [
+            "cổ điển"
+        ],
+        "usphone": "ˈklæsɪkl",
+        "ukphone": "ˈklæsɪkl"
+    },
+    {
+        "name": "clean",
+        "trans": [
+            "sạch sẽ"
+        ],
+        "usphone": "kliːn",
+        "ukphone": "kliːn"
+    },
+    {
+        "name": "cleanest",
+        "trans": [
+            "sạch sẽ nhất"
+        ],
+        "usphone": "kliːnist",
+        "ukphone": "kliːnist"
+    },
+    {
+        "name": "clear",
+        "trans": [
+            "rõ ràng"
+        ],
+        "usphone": "klɪə",
+        "ukphone": "klɪr"
+    },
+    {
+        "name": "clever",
+        "trans": [
+            "thông minh"
+        ],
+        "usphone": "ˈklevə",
+        "ukphone": "ˈklevər"
+    },
+    {
+        "name": "coastal",
+        "trans": [
+            "bờ biển"
+        ],
+        "usphone": "ˈkəʊstl",
+        "ukphone": "ˈkoʊstl"
+    },
+    {
+        "name": "comfortable",
+        "trans": [
+            "thoải mái"
+        ],
+        "usphone": "ˈkʌmftəbl",
+        "ukphone": "ˈkʌmftəbl"
+    },
+    {
+        "name": "common",
+        "trans": [
+            "Bình thường"
+        ],
+        "usphone": "ˈkɒmən",
+        "ukphone": "ˈkɑːmən"
+    },
+    {
+        "name": "commonsense",
+        "trans": [
+            "lẽ thường"
+        ],
+        "usphone": "ˈkɑmənˌsɛns",
+        "ukphone": "ˈkɒmənˌsɛns"
+    },
+    {
+        "name": "complete",
+        "trans": [
+            "hoàn toàn"
+        ],
+        "usphone": "kəmˈpliːt",
+        "ukphone": "kəmˈpliːt"
+    },
+    {
+        "name": "completed",
+        "trans": [
+            "hoàn thành"
+        ],
+        "usphone": "kəmˈpliːtɪd",
+        "ukphone": "kəmˈpliːtɪd"
+    },
+    {
+        "name": "confident",
+        "trans": [
+            "tự tin"
+        ],
+        "usphone": "ˈkɒnfɪdənt",
+        "ukphone": "ˈkɑːnfɪdənt"
+    },
+    {
+        "name": "conservative",
+        "trans": [
+            "bảo thủ"
+        ],
+        "usphone": "kənˈsɜːvətɪv",
+        "ukphone": "kənˈsɜːrvətɪv"
+    },
+    {
+        "name": "convenient",
+        "trans": [
+            "Thuận tiện"
+        ],
+        "usphone": "kənˈviːniənt",
+        "ukphone": "kənˈviːniənt"
+    },
+    {
+        "name": "co-operative",
+        "trans": [
+            "hợp tác xã (= hợp tác xã)"
+        ],
+        "usphone": "ˈkoʊˌɑpəˌreɪtɪv",
+        "ukphone": "ˈkəʊˌɒpərətɪv"
+    },
+    {
+        "name": "corrupt",
+        "trans": [
+            "tham nhũng"
+        ],
+        "usphone": "kəˈrʌpt",
+        "ukphone": "kəˈrʌpt"
+    },
+    {
+        "name": "costly",
+        "trans": [
+            "đắt tiền, tốn kém"
+        ],
+        "usphone": "ˈkɒstli",
+        "ukphone": "ˈkɔːstli"
+    },
+    {
+        "name": "cream",
+        "trans": [
+            "màu kem"
+        ],
+        "usphone": "kriːm",
+        "ukphone": "kriːm"
+    },
+    {
+        "name": "critical",
+        "trans": [
+            "quan trọng"
+        ],
+        "usphone": "ˈkrɪtɪkl",
+        "ukphone": "ˈkrɪtɪkl"
+    },
+    {
+        "name": "crucial",
+        "trans": [
+            "quan trọng, quyết định"
+        ],
+        "usphone": "ˈkruːʃl",
+        "ukphone": "ˈkruːʃl"
+    },
+    {
+        "name": "cultural",
+        "trans": [
+            "văn hóa"
+        ],
+        "usphone": "ˈkʌltʃərəl",
+        "ukphone": "ˈkʌltʃərəl"
+    },
+    {
+        "name": "curly",
+        "trans": [
+            "tóc xoăn"
+        ],
+        "usphone": "ˈkɜːli",
+        "ukphone": "ˈkɜːrli"
+    },
+    {
+        "name": "current",
+        "trans": [
+            "hiện tại"
+        ],
+        "usphone": "ˈkʌrənt",
+        "ukphone": "ˈkɜːrənt"
+    },
+    {
+        "name": "daily",
+        "trans": [
+            "hàng ngày"
+        ],
+        "usphone": "ˈdeɪli",
+        "ukphone": "ˈdeɪli"
+    },
+    {
+        "name": "dairy",
+        "trans": [
+            "sữa"
+        ],
+        "usphone": "ˈdeəri",
+        "ukphone": "ˈderi"
+    },
+    {
+        "name": "dangerous",
+        "trans": [
+            "nguy hiểm"
+        ],
+        "usphone": "ˈdeɪndʒərəs",
+        "ukphone": "ˈdeɪndʒərəs"
+    },
+    {
+        "name": "dark",
+        "trans": [
+            "tối"
+        ],
+        "usphone": "dɑːk",
+        "ukphone": "dɑːrk"
+    },
+    {
+        "name": "departmental",
+        "trans": [
+            "Sở"
+        ],
+        "usphone": "ˌdiːpɑːtˈmentl",
+        "ukphone": "ˌdiːpɑːrtˈmentl"
+    },
+    {
+        "name": "dependent",
+        "trans": [
+            "phụ thuộc"
+        ],
+        "usphone": "dɪˈpendənt",
+        "ukphone": "dɪˈpendənt"
+    },
+    {
+        "name": "detailed",
+        "trans": [
+            "chi tiết"
+        ],
+        "usphone": "ˈdiːteɪld",
+        "ukphone": "ˈdiːteɪld"
+    },
+    {
+        "name": "different",
+        "trans": [
+            "khác nhau"
+        ],
+        "usphone": "ˈdɪfrənt",
+        "ukphone": "ˈdɪfrənt"
+    },
+    {
+        "name": "direct",
+        "trans": [
+            "trực tiếp"
+        ],
+        "usphone": "dəˈrekt",
+        "ukphone": "dəˈrekt"
+    },
+    {
+        "name": "disabled",
+        "trans": [
+            "khuyết tật về thể chất"
+        ],
+        "usphone": "dɪsˈeɪbld",
+        "ukphone": "dɪsˈeɪbld"
+    },
+    {
+        "name": "distant",
+        "trans": [
+            "rất xa"
+        ],
+        "usphone": "ˈdɪstənt",
+        "ukphone": "ˈdɪstənt"
+    },
+    {
+        "name": "distinct",
+        "trans": [
+            "hiển nhiên"
+        ],
+        "usphone": "dɪˈstɪŋkt",
+        "ukphone": "dɪˈstɪŋkt"
+    },
+    {
+        "name": "domestic",
+        "trans": [
+            "Trong nước, nội bộ"
+        ],
+        "usphone": "dəˈmestɪk",
+        "ukphone": "dəˈmestɪk"
+    },
+    {
+        "name": "dominant",
+        "trans": [
+            "Điều quan trọng nhất"
+        ],
+        "usphone": "ˈdɒmɪnənt",
+        "ukphone": "ˈdɑːmɪnənt"
+    },
+    {
+        "name": "eastern",
+        "trans": [
+            "phương đông"
+        ],
+        "usphone": "ˈiːstən",
+        "ukphone": "ˈiːstərn"
+    },
+    {
+        "name": "economic",
+        "trans": [
+            "kinh tế"
+        ],
+        "usphone": "ˌiːkəˈnɒmɪk",
+        "ukphone": "ˌiːkəˈnɑːmɪk"
+    },
+    {
+        "name": "educational",
+        "trans": [
+            "giáo dục"
+        ],
+        "usphone": "ˌedʒuˈkeɪʃənl",
+        "ukphone": "ˌedʒuˈkeɪʃənl"
+    },
+    {
+        "name": "effective",
+        "trans": [
+            "hợp lệ"
+        ],
+        "usphone": "ɪˈfektɪv",
+        "ukphone": "ɪˈfektɪv"
+    },
+    {
+        "name": "efficient",
+        "trans": [
+            "hiệu quả"
+        ],
+        "usphone": "ɪˈfɪʃnt",
+        "ukphone": "ɪˈfɪʃnt"
+    },
+    {
+        "name": "elementary",
+        "trans": [
+            "Thiếu niên"
+        ],
+        "usphone": "ˌelɪˈmentri",
+        "ukphone": "ˌelɪˈmentri"
+    },
+    {
+        "name": "empty",
+        "trans": [
+            "trống rỗng"
+        ],
+        "usphone": "ˈempti",
+        "ukphone": "ˈempti"
+    },
+    {
+        "name": "enormous",
+        "trans": [
+            "rộng lớn"
+        ],
+        "usphone": "ɪˈnɔːməs",
+        "ukphone": "ɪˈnɔːrməs"
+    },
+    {
+        "name": "enthusiastic",
+        "trans": [
+            "đam mê"
+        ],
+        "usphone": "ɪnˌθjuːziˈæstɪk",
+        "ukphone": "ɪnˌθuːziˈæstɪk"
+    },
+    {
+        "name": "environmental",
+        "trans": [
+            "môi trường"
+        ],
+        "usphone": "ɪnˌvaɪrənˈmentl",
+        "ukphone": "ɪnˌvaɪrənˈmentl"
+    },
+    {
+        "name": "essential",
+        "trans": [
+            "cơ bản"
+        ],
+        "usphone": "ɪˈsenʃl",
+        "ukphone": "ɪˈsenʃl"
+    },
+    {
+        "name": "excited",
+        "trans": [
+            "vui mừng"
+        ],
+        "usphone": "ɪkˈsaɪtɪd",
+        "ukphone": "ɪkˈsaɪtɪd"
+    },
+    {
+        "name": "exciting",
+        "trans": [
+            "thú vị"
+        ],
+        "usphone": "ɪkˈsaɪtɪŋ",
+        "ukphone": "ɪkˈsaɪtɪŋ"
+    },
+    {
+        "name": "existent",
+        "trans": [
+            "tồn tại"
+        ],
+        "usphone": "ɪɡˈzɪstənt",
+        "ukphone": "ɪɡˈzɪstənt"
+    },
+    {
+        "name": "expensive",
+        "trans": [
+            "đắt tiền"
+        ],
+        "usphone": "ɪkˈspensɪv",
+        "ukphone": "ɪkˈspensɪv"
+    },
+    {
+        "name": "experienced",
+        "trans": [
+            "có kinh nghiệm"
+        ],
+        "usphone": "ɪkˈspɪəriənst",
+        "ukphone": "ɪkˈspɪriənst"
+    },
+    {
+        "name": "experimental",
+        "trans": [
+            "thực nghiệm"
+        ],
+        "usphone": "ɪkˌsperɪˈmentl",
+        "ukphone": "ɪkˌsperɪˈmentl"
+    },
+    {
+        "name": "extensive",
+        "trans": [
+            "rộng rãi"
+        ],
+        "usphone": "ɪkˈstensɪv",
+        "ukphone": "ɪkˈstensɪv"
+    },
+    {
+        "name": "extra",
+        "trans": [
+            "thêm"
+        ],
+        "usphone": "ˈekstrə",
+        "ukphone": "ˈekstrə"
+    },
+    {
+        "name": "fair",
+        "trans": [
+            "đẹp, công bằng"
+        ],
+        "usphone": "feə",
+        "ukphone": "fer"
+    },
+    {
+        "name": "fake",
+        "trans": [
+            "giả"
+        ],
+        "usphone": "feɪk",
+        "ukphone": "feɪk"
+    },
+    {
+        "name": "famed",
+        "trans": [
+            "nổi tiếng"
+        ],
+        "usphone": "feɪmd",
+        "ukphone": "feɪmd"
+    },
+    {
+        "name": "familiar",
+        "trans": [
+            "quen thuộc"
+        ],
+        "usphone": "fəˈmɪliə",
+        "ukphone": "fəˈmɪliər"
+    },
+    {
+        "name": "famous",
+        "trans": [
+            "nổi tiếng"
+        ],
+        "usphone": "ˈfeɪməs",
+        "ukphone": "ˈfeɪməs"
+    },
+    {
+        "name": "fancy",
+        "trans": [
+            "kỳ lạ"
+        ],
+        "usphone": "ˈfænsi",
+        "ukphone": "ˈfænsi"
+    },
+    {
+        "name": "fashionable",
+        "trans": [
+            "phổ biến, thời trang"
+        ],
+        "usphone": "ˈfæʃnəbl",
+        "ukphone": "ˈfæʃnəbl"
+    },
+    {
+        "name": "favourite",
+        "trans": [
+            "yêu thích"
+        ],
+        "usphone": "ˈfeɪvərɪt",
+        "ukphone": "ˈfeɪvərɪt"
+    },
+    {
+        "name": "final",
+        "trans": [
+            "cuối cùng"
+        ],
+        "usphone": "ˈfaɪnl",
+        "ukphone": "ˈfaɪnl"
+    },
+    {
+        "name": "financial",
+        "trans": [
+            "tài chính"
+        ],
+        "usphone": "faɪˈnænʃl",
+        "ukphone": "faɪˈnænʃl"
+    },
+    {
+        "name": "fine",
+        "trans": [
+            "được rồi"
+        ],
+        "usphone": "faɪn",
+        "ukphone": "faɪn"
+    },
+    {
+        "name": "firm",
+        "trans": [
+            "chất rắn"
+        ],
+        "usphone": "fɜːm",
+        "ukphone": "fɜːrm"
+    },
+    {
+        "name": "flexible",
+        "trans": [
+            "linh hoạt"
+        ],
+        "usphone": "ˈfleksəbl",
+        "ukphone": "ˈfleksəbl"
+    },
+    {
+        "name": "foreign",
+        "trans": [
+            "nước ngoài"
+        ],
+        "usphone": "ˈfɒrən",
+        "ukphone": "ˈfɔːrən"
+    },
+    {
+        "name": "formal",
+        "trans": [
+            "chính thức"
+        ],
+        "usphone": "ˈfɔːml",
+        "ukphone": "ˈfɔːrml"
+    },
+    {
+        "name": "former",
+        "trans": [
+            "trước đó"
+        ],
+        "usphone": "ˈfɔːmə",
+        "ukphone": "ˈfɔːrmər"
+    },
+    {
+        "name": "free",
+        "trans": [
+            "miễn phí"
+        ],
+        "usphone": "friː",
+        "ukphone": "friː"
+    },
+    {
+        "name": "frequent",
+        "trans": [
+            "thường xuyên"
+        ],
+        "usphone": "ˈfriːkwənt , friˈkwent",
+        "ukphone": "ˈfriːkwənt , friˈkwent"
+    },
+    {
+        "name": "fundamental",
+        "trans": [
+            "cơ bản"
+        ],
+        "usphone": "ˌfʌndəˈmentl",
+        "ukphone": "ˌfʌndəˈmentl"
+    },
+    {
+        "name": "further",
+        "trans": [
+            "hơn nữa"
+        ],
+        "usphone": "ˈfɜːðə",
+        "ukphone": "ˈfɜːrðər"
+    },
+    {
+        "name": "general",
+        "trans": [
+            "thông thường, chung chung"
+        ],
+        "usphone": "ˈdʒenrəl",
+        "ukphone": "ˈdʒenrəl"
+    },
+    {
+        "name": "genetic",
+        "trans": [
+            "di truyền"
+        ],
+        "usphone": "dʒəˈnetɪk",
+        "ukphone": "dʒəˈnetɪk"
+    },
+    {
+        "name": "geographical",
+        "trans": [
+            "địa lý"
+        ],
+        "usphone": "ˌdʒiːəˈɡræfɪkl",
+        "ukphone": "ˌdʒiːəˈɡræfɪkl"
+    },
+    {
+        "name": "global",
+        "trans": [
+            "toàn cầu, tổng thể"
+        ],
+        "usphone": "ˈɡləʊbl",
+        "ukphone": "ˈɡloʊbl"
+    },
+    {
+        "name": "handy",
+        "trans": [
+            "Thuận tiện"
+        ],
+        "usphone": "ˈhændi",
+        "ukphone": "ˈhændi"
+    },
+    {
+        "name": "harmful",
+        "trans": [
+            "Có hại"
+        ],
+        "usphone": "ˈhɑːmfl",
+        "ukphone": "ˈhɑːrmfl"
+    },
+    {
+        "name": "hazardous",
+        "trans": [
+            "mạo hiểm, nguy hiểm"
+        ],
+        "usphone": "ˈhæzədəs",
+        "ukphone": "ˈhæzərdəs"
+    },
+    {
+        "name": "healthy",
+        "trans": [
+            "khỏe mạnh"
+        ],
+        "usphone": "ˈhelθi",
+        "ukphone": "ˈhelθi"
+    },
+    {
+        "name": "heavier",
+        "trans": [
+            "nặng hơn"
+        ],
+        "usphone": "ˈhevɪə",
+        "ukphone": "ˈheviər"
+    },
+    {
+        "name": "heavy",
+        "trans": [
+            "nặng nề"
+        ],
+        "usphone": "ˈhevi",
+        "ukphone": "ˈhevi"
+    },
+    {
+        "name": "helpful",
+        "trans": [
+            "hữu ích"
+        ],
+        "usphone": "ˈhelpfl",
+        "ukphone": "ˈhelpfl"
+    },
+    {
+        "name": "herbivorous",
+        "trans": [
+            "ăn cỏ"
+        ],
+        "usphone": "hɜ:'bɪvərəs",
+        "ukphone": "həˈbɪvərəs,ə-"
+    },
+    {
+        "name": "higher",
+        "trans": [
+            "cao hơn"
+        ],
+        "usphone": "ˈhaɪə",
+        "ukphone": "ˈhaɪər"
+    },
+    {
+        "name": "highly-trained",
+        "trans": [
+            "được đào tạo bài bản"
+        ],
+        "usphone": "ˈhaɪliˌtreɪnd",
+        "ukphone": "ˈhaɪliˌtreɪnd"
+    },
+    {
+        "name": "historical",
+        "trans": [
+            "lịch sử"
+        ],
+        "usphone": "hɪˈstɒrɪkl",
+        "ukphone": "hɪˈstɔːrɪkl"
+    },
+    {
+        "name": "least",
+        "trans": [
+            "ít nhất, nhỏ nhất"
+        ],
+        "usphone": "liːst",
+        "ukphone": "liːst"
+    },
+    {
+        "name": "ill",
+        "trans": [
+            "bị bệnh"
+        ],
+        "usphone": "ɪl",
+        "ukphone": "ɪl"
+    },
+    {
+        "name": "illegal",
+        "trans": [
+            "bất hợp pháp"
+        ],
+        "usphone": "ɪˈliːɡl",
+        "ukphone": "ɪˈliːɡl"
+    },
+    {
+        "name": "immune",
+        "trans": [
+            "miễn dịch"
+        ],
+        "usphone": "ɪˈmjuːn",
+        "ukphone": "ɪˈmjuːn"
+    },
+    {
+        "name": "important",
+        "trans": [
+            "quan trọng"
+        ],
+        "usphone": "ɪmˈpɔːtnt",
+        "ukphone": "ɪmˈpɔːrtnt"
+    },
+    {
+        "name": "impossible",
+        "trans": [
+            "không thể"
+        ],
+        "usphone": "ɪmˈpɒsəbl",
+        "ukphone": "ɪmˈpɑːsəbl"
+    },
+    {
+        "name": "inaccurate",
+        "trans": [
+            "không chính xác"
+        ],
+        "usphone": "ɪn'ækjərət",
+        "ukphone": "ɪn'ækjʊrət"
+    },
+    {
+        "name": "inadequate",
+        "trans": [
+            "không đầy đủ"
+        ],
+        "usphone": "ɪnˈædɪkwət",
+        "ukphone": "ɪnˈædɪkwət"
+    },
+    {
+        "name": "individual",
+        "trans": [
+            "cá nhân"
+        ],
+        "usphone": "ˌɪndɪˈvɪdʒuəl",
+        "ukphone": "ˌɪndɪˈvɪdʒuəl"
+    },
+    {
+        "name": "industrial",
+        "trans": [
+            "công nghiệp"
+        ],
+        "usphone": "ɪnˈdʌstriəl",
+        "ukphone": "ɪnˈdʌstriəl"
+    },
+    {
+        "name": "informative",
+        "trans": [
+            "Thông báo, cung cấp thông tin"
+        ],
+        "usphone": "ɪnˈfɔːmətɪv",
+        "ukphone": "ɪnˈfɔːrmətɪv"
+    },
+    {
+        "name": "initial",
+        "trans": [
+            "ban đầu"
+        ],
+        "usphone": "ɪˈnɪʃl",
+        "ukphone": "ɪˈnɪʃl"
+    },
+    {
+        "name": "inspiring",
+        "trans": [
+            "truyền cảm hứng"
+        ],
+        "usphone": "ɪnˈspaɪərɪŋ",
+        "ukphone": "ɪnˈspaɪərɪŋ"
+    },
+    {
+        "name": "intact",
+        "trans": [
+            "nguyên vẹn"
+        ],
+        "usphone": "ɪnˈtækt",
+        "ukphone": "ɪnˈtækt"
+    },
+    {
+        "name": "intelligent",
+        "trans": [
+            "trí tuệ"
+        ],
+        "usphone": "ɪnˈtelɪdʒənt",
+        "ukphone": "ɪnˈtelɪdʒənt"
+    },
+    {
+        "name": "intensive",
+        "trans": [
+            "gia cố"
+        ],
+        "usphone": "ɪnˈtensɪv",
+        "ukphone": "ɪnˈtensɪv"
+    },
+    {
+        "name": "interesting",
+        "trans": [
+            "thú vị"
+        ],
+        "usphone": "'ɪntrəstɪŋ",
+        "ukphone": "ˈɪntrəstɪŋ"
+    },
+    {
+        "name": "intermediate",
+        "trans": [
+            "Trung cấp"
+        ],
+        "usphone": "ˌɪntəˈmiːdiət",
+        "ukphone": "ˌɪntərˈmiːdiət"
+    },
+    {
+        "name": "internal",
+        "trans": [
+            "nội bộ"
+        ],
+        "usphone": "ɪnˈtɜːnl",
+        "ukphone": "ɪnˈtɜːrnl"
+    },
+    {
+        "name": "international",
+        "trans": [
+            "Quốc tế"
+        ],
+        "usphone": "ˌɪntəˈnæʃnəl",
+        "ukphone": "ˌɪntərˈnæʃnəl"
+    },
+    {
+        "name": "irregular",
+        "trans": [
+            "không thường xuyên"
+        ],
+        "usphone": "ɪˈreɡjələ",
+        "ukphone": "ɪˈreɡjələr"
+    },
+    {
+        "name": "irritable",
+        "trans": [
+            "cáu kỉnh"
+        ],
+        "usphone": "ˈɪrɪtəbl",
+        "ukphone": "ˈɪrɪtəbl"
+    },
+    {
+        "name": "isolated",
+        "trans": [
+            "bị cô lập"
+        ],
+        "usphone": "ˈaɪsəleɪtɪd",
+        "ukphone": "ˈaɪsəleɪtɪd"
+    },
+    {
+        "name": "key",
+        "trans": [
+            "then chốt, cốt yếu"
+        ],
+        "usphone": "kiː",
+        "ukphone": "kiː"
+    },
+    {
+        "name": "latest",
+        "trans": [
+            "mới nhất"
+        ],
+        "usphone": "ˈleɪtɪst",
+        "ukphone": "ˈleɪtɪst"
+    },
+    {
+        "name": "legal",
+        "trans": [
+            "hợp pháp"
+        ],
+        "usphone": "ˈliːɡl",
+        "ukphone": "ˈliːɡl"
+    },
+    {
+        "name": "little-known",
+        "trans": [
+            "không rõ, vô danh"
+        ],
+        "usphone": "ˈlɪtəlˌnoʊn",
+        "ukphone": "ˈlɪtl̩ˌnəʊn"
+    },
+    {
+        "name": "loyal",
+        "trans": [
+            "trung thành"
+        ],
+        "usphone": "ˈlɔɪəl",
+        "ukphone": "ˈlɔɪəl"
+    },
+    {
+        "name": "magic",
+        "trans": [
+            "ma thuật"
+        ],
+        "usphone": "ˈmædʒɪk",
+        "ukphone": "ˈmædʒɪk"
+    },
+    {
+        "name": "magical",
+        "trans": [
+            "không thể tưởng tượng được, không thể tin được"
+        ],
+        "usphone": "ˈmædʒɪkl",
+        "ukphone": "ˈmædʒɪkl"
+    },
+    {
+        "name": "magnificent",
+        "trans": [
+            "tuyệt đẹp"
+        ],
+        "usphone": "mæɡˈnɪfɪsnt",
+        "ukphone": "mæɡˈnɪfɪsnt"
+    },
+    {
+        "name": "major",
+        "trans": [
+            "chính"
+        ],
+        "usphone": "ˈmeɪdʒə",
+        "ukphone": "ˈmeɪdʒər"
+    },
+    {
+        "name": "martial",
+        "trans": [
+            "võ thuật"
+        ],
+        "usphone": "ˈmɑːʃl",
+        "ukphone": "ˈmɑːrʃl"
+    },
+    {
+        "name": "mature",
+        "trans": [
+            "trưởng thành"
+        ],
+        "usphone": "məˈtʃʊə",
+        "ukphone": "məˈtʃʊr"
+    },
+    {
+        "name": "medical",
+        "trans": [
+            "y tế"
+        ],
+        "usphone": "ˈmedɪkl",
+        "ukphone": "ˈmedɪkl"
+    },
+    {
+        "name": "mental",
+        "trans": [
+            "tinh thần"
+        ],
+        "usphone": "ˈmentl",
+        "ukphone": "ˈmentl"
+    },
+    {
+        "name": "mid",
+        "trans": [
+            "ở giữa"
+        ],
+        "usphone": "mɪd",
+        "ukphone": "mɪd"
+    },
+    {
+        "name": "migratory",
+        "trans": [
+            "di cư"
+        ],
+        "usphone": "ˈmaɪɡrətri",
+        "ukphone": "ˈmaɪɡrətɔːri"
+    },
+    {
+        "name": "military",
+        "trans": [
+            "quân sự, quân đội"
+        ],
+        "usphone": "ˈmɪlətri",
+        "ukphone": "ˈmɪləteri"
+    },
+    {
+        "name": "miserable",
+        "trans": [
+            "đau đớn"
+        ],
+        "usphone": "ˈmɪzrəbl",
+        "ukphone": "ˈmɪzrəbl"
+    },
+    {
+        "name": "mobile",
+        "trans": [
+            "thể thao"
+        ],
+        "usphone": "ˈməʊbaɪl",
+        "ukphone": "ˈmoʊbl"
+    },
+    {
+        "name": "moderate",
+        "trans": [
+            "vừa phải"
+        ],
+        "usphone": "ˈmɒdərət , ˈmɒdəreɪt",
+        "ukphone": "ˈmɑːdərət , ˈmɑːdəreɪt"
+    },
+    {
+        "name": "modern",
+        "trans": [
+            "hiện đại"
+        ],
+        "usphone": "ˈmɒdn",
+        "ukphone": "ˈmɑːdərn"
+    },
+    {
+        "name": "musical",
+        "trans": [
+            "âm nhạc"
+        ],
+        "usphone": "ˈmjuːzɪkl",
+        "ukphone": "ˈmjuːzɪkl"
+    },
+    {
+        "name": "natural",
+        "trans": [
+            "tự nhiên"
+        ],
+        "usphone": "ˈnætʃrəl",
+        "ukphone": "ˈnætʃrəl"
+    },
+    {
+        "name": "negative",
+        "trans": [
+            "tiêu cực"
+        ],
+        "usphone": "ˈneɡətɪv",
+        "ukphone": "ˈneɡətɪv"
+    },
+    {
+        "name": "neighbouring",
+        "trans": [
+            "lân cận, liền kề"
+        ],
+        "usphone": "ˈneɪbərɪŋ",
+        "ukphone": "ˈneɪbərɪŋ"
+    },
+    {
+        "name": "nervous",
+        "trans": [
+            "lo lắng"
+        ],
+        "usphone": "ˈnɜːvəs",
+        "ukphone": "ˈnɜːrvəs"
+    },
+    {
+        "name": "noble",
+        "trans": [
+            "cao quý, quý tộc"
+        ],
+        "usphone": "'nobl",
+        "ukphone": "'nəʊb(ə)l"
+    },
+    {
+        "name": "noisy",
+        "trans": [
+            "ồn ào"
+        ],
+        "usphone": "ˈnɔɪzi",
+        "ukphone": "ˈnɔɪzi"
+    },
+    {
+        "name": "non-active",
+        "trans": [
+            "không hoạt động"
+        ],
+        "usphone": "ˌnɑnˈæktɪv",
+        "ukphone": "ˌnɒnˈæktɪv"
+    },
+    {
+        "name": "normal",
+        "trans": [
+            "bình thường"
+        ],
+        "usphone": "ˈnɔːml",
+        "ukphone": "ˈnɔːrml"
+    },
+    {
+        "name": "northern",
+        "trans": [
+            "miền Bắc"
+        ],
+        "usphone": "ˈnɔːðən",
+        "ukphone": "ˈnɔːrðərn"
+    },
+    {
+        "name": "objective",
+        "trans": [
+            "mục tiêu"
+        ],
+        "usphone": "əbˈdʒektɪv",
+        "ukphone": "əbˈdʒektɪv"
+    },
+    {
+        "name": "occupational",
+        "trans": [
+            "chuyên nghiệp"
+        ],
+        "usphone": "ˌɒkjuˈpeɪʃənl",
+        "ukphone": "ˌɑːkjuˈpeɪʃənl"
+    },
+    {
+        "name": "Olympic",
+        "trans": [
+            "thế vận hội"
+        ],
+        "usphone": "əˈlɪmpɪk",
+        "ukphone": "əˈlɪmpɪk"
+    },
+    {
+        "name": "optic",
+        "trans": [
+            "Quang học"
+        ],
+        "usphone": "'ɑptɪk",
+        "ukphone": "'ɑːptɪk"
+    },
+    {
+        "name": "optional",
+        "trans": [
+            "tùy chọn"
+        ],
+        "usphone": "ˈɒpʃənl",
+        "ukphone": "ˈɑːpʃənl"
+    },
+    {
+        "name": "oral",
+        "trans": [
+            "nói"
+        ],
+        "usphone": "ˈɔːrəl",
+        "ukphone": "ˈɔːrəl"
+    },
+    {
+        "name": "organic",
+        "trans": [
+            "hữu cơ"
+        ],
+        "usphone": "ɔːˈɡænɪk",
+        "ukphone": "ɔːrˈɡænɪk"
+    },
+    {
+        "name": "overall",
+        "trans": [
+            "toàn bộ"
+        ],
+        "usphone": "ˌəʊvərˈɔːl , ˈəʊvərɔːl",
+        "ukphone": "ˌoʊvərˈɔːl , ˈoʊvərɔːl"
+    },
+    {
+        "name": "overhead",
+        "trans": [
+            "trên đầu"
+        ],
+        "usphone": "ˌəʊvəˈhed , ˈəʊvəhed",
+        "ukphone": "ˌoʊvərˈhed , ˈoʊvərhed"
+    },
+    {
+        "name": "overseas",
+        "trans": [
+            "ở nước ngoài"
+        ],
+        "usphone": "ˌəʊvəˈsiːz",
+        "ukphone": "ˌoʊvərˈsiːz"
+    },
+    {
+        "name": "parental",
+        "trans": [
+            "của cha mẹ"
+        ],
+        "usphone": "pəˈrentl",
+        "ukphone": "pəˈrentl"
+    },
+    {
+        "name": "payable",
+        "trans": [
+            "phải trả"
+        ],
+        "usphone": "ˈpeɪəbl",
+        "ukphone": "ˈpeɪəbl"
+    },
+    {
+        "name": "perfect",
+        "trans": [
+            "hoàn hảo"
+        ],
+        "usphone": "ˈpɜːfɪkt , pəˈfekt",
+        "ukphone": "ˈpɜːrfɪkt , pərˈfekt"
+    },
+    {
+        "name": "personal",
+        "trans": [
+            "cá nhân"
+        ],
+        "usphone": "ˈpɜːsənl",
+        "ukphone": "ˈpɜːrsənl"
+    },
+    {
+        "name": "physical",
+        "trans": [
+            "thể chất"
+        ],
+        "usphone": "ˈfɪzɪkl",
+        "ukphone": "ˈfɪzɪkl"
+    },
+    {
+        "name": "pleasant",
+        "trans": [
+            "dễ chịu"
+        ],
+        "usphone": "ˈpleznt",
+        "ukphone": "ˈpleznt"
+    },
+    {
+        "name": "political",
+        "trans": [
+            "chính trị"
+        ],
+        "usphone": "pəˈlɪtɪkl",
+        "ukphone": "pəˈlɪtɪkl"
+    },
+    {
+        "name": "pop",
+        "trans": [
+            "phổ biến"
+        ],
+        "usphone": "pɒp",
+        "ukphone": "pɑːp"
+    },
+    {
+        "name": "popular",
+        "trans": [
+            "hợp thời trang"
+        ],
+        "usphone": "ˈpɒpjələ",
+        "ukphone": "ˈpɑːpjələr"
+    },
+    {
+        "name": "positive",
+        "trans": [
+            "tích cực"
+        ],
+        "usphone": "ˈpɒzətɪv",
+        "ukphone": "ˈpɑːzətɪv"
+    },
+    {
+        "name": "possible",
+        "trans": [
+            "có thể"
+        ],
+        "usphone": "ˈpɒsəbl",
+        "ukphone": "ˈpɑːsəbl"
+    },
+    {
+        "name": "potential",
+        "trans": [
+            "tiềm năng"
+        ],
+        "usphone": "pəˈtenʃl",
+        "ukphone": "pəˈtenʃl"
+    },
+    {
+        "name": "practical",
+        "trans": [
+            "thực tế"
+        ],
+        "usphone": "ˈpræktɪkl",
+        "ukphone": "ˈpræktɪkl"
+    },
+    {
+        "name": "precious",
+        "trans": [
+            "quý giá"
+        ],
+        "usphone": "ˈpreʃəs",
+        "ukphone": "ˈpreʃəs"
+    },
+    {
+        "name": "predictable",
+        "trans": [
+            "có thể dự đoán được"
+        ],
+        "usphone": "prɪˈdɪktəbl",
+        "ukphone": "prɪˈdɪktəbl"
+    },
+    {
+        "name": "present",
+        "trans": [
+            "hiện tại"
+        ],
+        "usphone": "ˈpreznt , prɪˈzent",
+        "ukphone": "ˈpreznt , prɪˈzent"
+    },
+    {
+        "name": "previous",
+        "trans": [
+            "trước đó, bản gốc"
+        ],
+        "usphone": "ˈpriːviəs",
+        "ukphone": "ˈpriːviəs"
+    },
+    {
+        "name": "printed",
+        "trans": [
+            "in"
+        ],
+        "usphone": "ˈprɪntɪd",
+        "ukphone": "ˈprɪntɪd"
+    },
+    {
+        "name": "private",
+        "trans": [
+            "riêng tư"
+        ],
+        "usphone": "ˈpraɪvət",
+        "ukphone": "ˈpraɪvɪt"
+    },
+    {
+        "name": "professional",
+        "trans": [
+            "chuyên nghiệp"
+        ],
+        "usphone": "prəˈfeʃənl",
+        "ukphone": "prəˈfeʃənl"
+    },
+    {
+        "name": "promising",
+        "trans": [
+            "đầy hứa hẹn"
+        ],
+        "usphone": "ˈprɒmɪsɪŋ",
+        "ukphone": "ˈprɑːmɪsɪŋ"
+    },
+    {
+        "name": "psychiatric",
+        "trans": [
+            "tâm thần"
+        ],
+        "usphone": "ˌsaɪkiˈætrɪk",
+        "ukphone": "ˌsaɪkiˈætrɪk"
+    },
+    {
+        "name": "psychological",
+        "trans": [
+            "tâm lý"
+        ],
+        "usphone": "ˌsaɪkəˈlɒdʒɪkl",
+        "ukphone": "ˌsaɪkəˈlɑːdʒɪkl"
+    },
+    {
+        "name": "public",
+        "trans": [
+            "công khai"
+        ],
+        "usphone": "ˈpʌblɪk",
+        "ukphone": "ˈpʌblɪk"
+    },
+    {
+        "name": "pure",
+        "trans": [
+            "tinh khiết"
+        ],
+        "usphone": "pjʊə",
+        "ukphone": "pjʊr"
+    },
+    {
+        "name": "purest",
+        "trans": [
+            "tinh khiết nhất (cao cấp nhất)"
+        ],
+        "usphone": "ˈpjʊərɪst",
+        "ukphone": "ˈpjʊrəst"
+    },
+    {
+        "name": "Queen's",
+        "trans": [
+            "của nữ hoàng"
+        ],
+        "usphone": "kwinz",
+        "ukphone": "kwiːnz"
+    },
+    {
+        "name": "random",
+        "trans": [
+            "ngẫu nhiên"
+        ],
+        "usphone": "ˈrændəm",
+        "ukphone": "ˈrændəm"
+    },
+    {
+        "name": "rapid",
+        "trans": [
+            "nhanh"
+        ],
+        "usphone": "ˈræpɪd",
+        "ukphone": "ˈræpɪd"
+    },
+    {
+        "name": "rare",
+        "trans": [
+            "hiếm"
+        ],
+        "usphone": "reə",
+        "ukphone": "rer"
+    },
+    {
+        "name": "raw",
+        "trans": [
+            "thô"
+        ],
+        "usphone": "rɔː",
+        "ukphone": "rɔː"
+    },
+    {
+        "name": "recycled",
+        "trans": [
+            "tái chế"
+        ],
+        "usphone": "ˌriːˈsaɪkld",
+        "ukphone": "ˌriːˈsaɪkld"
+    },
+    {
+        "name": "redundant",
+        "trans": [
+            "dư thừa"
+        ],
+        "usphone": "rɪˈdʌndənt",
+        "ukphone": "rɪˈdʌndənt"
+    },
+    {
+        "name": "regional",
+        "trans": [
+            "địa phương"
+        ],
+        "usphone": "ˈriːdʒənl",
+        "ukphone": "ˈriːdʒənl"
+    },
+    {
+        "name": "regular",
+        "trans": [
+            "thường xuyên, đều đặn"
+        ],
+        "usphone": "ˈreɡjələ",
+        "ukphone": "ˈreɡjələr"
+    },
+    {
+        "name": "reinforced",
+        "trans": [
+            "tăng cường"
+        ],
+        "usphone": "ˌriːɪnˈfɔːst",
+        "ukphone": "ˌriːɪnˈfɔːrst"
+    },
+    {
+        "name": "related",
+        "trans": [
+            "có liên quan"
+        ],
+        "usphone": "rɪˈleɪtɪd",
+        "ukphone": "rɪˈleɪtɪd"
+    },
+    {
+        "name": "relevant",
+        "trans": [
+            "có liên quan"
+        ],
+        "usphone": "ˈreləvənt",
+        "ukphone": "ˈreləvənt"
+    },
+    {
+        "name": "reliable",
+        "trans": [
+            "đáng tin cậy"
+        ],
+        "usphone": "rɪˈlaɪəbl",
+        "ukphone": "rɪˈlaɪəbl"
+    },
+    {
+        "name": "remote",
+        "trans": [
+            "rất xa"
+        ],
+        "usphone": "rɪˈməʊt",
+        "ukphone": "rɪˈmoʊt"
+    },
+    {
+        "name": "resistant",
+        "trans": [
+            "Chống chịu"
+        ],
+        "usphone": "rɪˈzɪstənt",
+        "ukphone": "rɪˈzɪstənt"
+    },
+    {
+        "name": "reverse",
+        "trans": [
+            "Ngược lại"
+        ],
+        "usphone": "rɪˈvɜːs",
+        "ukphone": "rɪˈvɜːrs"
+    },
+    {
+        "name": "rising",
+        "trans": [
+            "tăng lên"
+        ],
+        "usphone": "ˈraɪzɪŋ",
+        "ukphone": "ˈraɪzɪŋ"
+    },
+    {
+        "name": "royal",
+        "trans": [
+            "hoàng gia"
+        ],
+        "usphone": "ˈrɔɪəl",
+        "ukphone": "ˈrɔɪəl"
+    },
+    {
+        "name": "rural",
+        "trans": [
+            "Nông thôn"
+        ],
+        "usphone": "ˈrʊərəl",
+        "ukphone": "ˈrʊrəl"
+    },
+    {
+        "name": "sacked",
+        "trans": [
+            "bị sa thải"
+        ],
+        "usphone": "sækt",
+        "ukphone": "sækt"
+    },
+    {
+        "name": "safe",
+        "trans": [
+            "an toàn"
+        ],
+        "usphone": "seɪf",
+        "ukphone": "seɪf"
+    },
+    {
+        "name": "satisfactory",
+        "trans": [
+            "hài lòng"
+        ],
+        "usphone": "ˌsætɪsˈfæktəri",
+        "ukphone": "ˌsætɪsˈfæktəri"
+    },
+    {
+        "name": "scarce",
+        "trans": [
+            "không đầy đủ"
+        ],
+        "usphone": "skeəs",
+        "ukphone": "skers"
+    },
+    {
+        "name": "scientific",
+        "trans": [
+            "khoa học"
+        ],
+        "usphone": "ˌsaɪənˈtɪfɪk",
+        "ukphone": "ˌsaɪənˈtɪfɪk"
+    },
+    {
+        "name": "seasonal",
+        "trans": [
+            "theo mùa"
+        ],
+        "usphone": "ˈsiːzənl",
+        "ukphone": "ˈsiːzənl"
+    },
+    {
+        "name": "seasoned",
+        "trans": [
+            "sấy khô bằng không khí"
+        ],
+        "usphone": "ˈsiːznd",
+        "ukphone": "ˈsiːznd"
+    },
+    {
+        "name": "secondary",
+        "trans": [
+            "thứ hai"
+        ],
+        "usphone": "ˈsekəndri",
+        "ukphone": "ˈsekənderi"
+    },
+    {
+        "name": "second-hand",
+        "trans": [
+            "đồ cũ"
+        ],
+        "usphone": "ˈsɛkəndˌhænd",
+        "ukphone": "ˈsɛkəndˌhænd"
+    },
+    {
+        "name": "self-funded",
+        "trans": [
+            "tự túc"
+        ],
+        "usphone": "ˈsɛlfˌfʌndɪd",
+        "ukphone": "ˈsɛlfˌfʌndɪd"
+    },
+    {
+        "name": "self-sufficient",
+        "trans": [
+            "tự túc"
+        ],
+        "usphone": "'selfsə'fiʃənt",
+        "ukphone": "ˌselfsə'fɪʃnt"
+    },
+    {
+        "name": "senior",
+        "trans": [
+            "nâng cao"
+        ],
+        "usphone": "ˈsiːniə",
+        "ukphone": "ˈsiːniər"
+    },
+    {
+        "name": "sensible",
+        "trans": [
+            "khôn ngoan"
+        ],
+        "usphone": "ˈsensəbl",
+        "ukphone": "ˈsensəbl"
+    },
+    {
+        "name": "serial",
+        "trans": [
+            "liên tục"
+        ],
+        "usphone": "ˈsɪəriəl",
+        "ukphone": "ˈsɪriəl"
+    },
+    {
+        "name": "serious",
+        "trans": [
+            "nghiêm trọng"
+        ],
+        "usphone": "ˈsɪəriəs",
+        "ukphone": "ˈsɪriəs"
+    },
+    {
+        "name": "seven-screen",
+        "trans": [
+            "bảy màn hình"
+        ],
+        "usphone": "ˈsɛvənˌskrin",
+        "ukphone": "ˈsɛvənˌskriːn"
+    },
+    {
+        "name": "several",
+        "trans": [
+            "một số"
+        ],
+        "usphone": "ˈsevrəl",
+        "ukphone": "ˈsevrəl"
+    },
+    {
+        "name": "shared",
+        "trans": [
+            "đã chia sẻ"
+        ],
+        "usphone": "ʃeəd",
+        "ukphone": "ʃerd"
+    },
+    {
+        "name": "sharp",
+        "trans": [
+            "sắc nét, khẩn cấp"
+        ],
+        "usphone": "ʃɑːp",
+        "ukphone": "ʃɑːrp"
+    },
+    {
+        "name": "short",
+        "trans": [
+            "ngắn"
+        ],
+        "usphone": "ʃɔːt",
+        "ukphone": "ʃɔːrt"
+    },
+    {
+        "name": "sick",
+        "trans": [
+            "bị bệnh"
+        ],
+        "usphone": "sɪk",
+        "ukphone": "sɪk"
+    },
+    {
+        "name": "silent",
+        "trans": [
+            "yên tĩnh"
+        ],
+        "usphone": "ˈsaɪlənt",
+        "ukphone": "ˈsaɪlənt"
+    },
+    {
+        "name": "silver",
+        "trans": [
+            "bạc"
+        ],
+        "usphone": "ˈsɪlvə",
+        "ukphone": "ˈsɪlvər"
+    },
+    {
+        "name": "similar",
+        "trans": [
+            "tương tự"
+        ],
+        "usphone": "ˈsɪmələ",
+        "ukphone": "ˈsɪmələr"
+    },
+    {
+        "name": "simple",
+        "trans": [
+            "đơn giản"
+        ],
+        "usphone": "ˈsɪmpl",
+        "ukphone": "ˈsɪmpl"
+    },
+    {
+        "name": "sleepy",
+        "trans": [
+            "Muốn ngủ"
+        ],
+        "usphone": "ˈsliːpi",
+        "ukphone": "ˈsliːpi"
+    },
+    {
+        "name": "slim",
+        "trans": [
+            "mảnh khảnh"
+        ],
+        "usphone": "slɪm",
+        "ukphone": "slɪm"
+    },
+    {
+        "name": "smart",
+        "trans": [
+            "thông minh"
+        ],
+        "usphone": "smɑːt",
+        "ukphone": "smɑːrt"
+    },
+    {
+        "name": "smelly",
+        "trans": [
+            "có mùi hôi"
+        ],
+        "usphone": "ˈsmeli",
+        "ukphone": "ˈsmeli"
+    },
+    {
+        "name": "social",
+        "trans": [
+            "xã hội"
+        ],
+        "usphone": "ˈsəʊʃl",
+        "ukphone": "ˈsoʊʃl"
+    },
+    {
+        "name": "solar",
+        "trans": [
+            "năng lượng mặt trời"
+        ],
+        "usphone": "ˈsəʊlə",
+        "ukphone": "ˈsoʊlər"
+    },
+    {
+        "name": "soundproof",
+        "trans": [
+            "Cách âm"
+        ],
+        "usphone": "ˈsaʊn(d)pruːf",
+        "ukphone": "ˈsaʊn(d)ˌpruf"
+    },
+    {
+        "name": "southern",
+        "trans": [
+            "miền Nam"
+        ],
+        "usphone": "ˈsʌðən",
+        "ukphone": "ˈsʌðərn"
+    },
+    {
+        "name": "spacious",
+        "trans": [
+            "rộng rãi"
+        ],
+        "usphone": "ˈspeɪʃəs",
+        "ukphone": "ˈspeɪʃəs"
+    },
+    {
+        "name": "spare",
+        "trans": [
+            "dư thừa"
+        ],
+        "usphone": "speə",
+        "ukphone": "sper"
+    },
+    {
+        "name": "special",
+        "trans": [
+            "đặc biệt"
+        ],
+        "usphone": "ˈspeʃl",
+        "ukphone": "ˈspeʃl"
+    },
+    {
+        "name": "specialised",
+        "trans": [
+            "đặc biệt, tận tâm"
+        ],
+        "usphone": "'speʃəlaɪzd",
+        "ukphone": "'speʃəlaɪzd"
+    },
+    {
+        "name": "species",
+        "trans": [
+            "loại, loài"
+        ],
+        "usphone": "ˈspiːʃiːz",
+        "ukphone": "ˈspiːʃiːz"
+    },
+    {
+        "name": "specific",
+        "trans": [
+            "đặc biệt"
+        ],
+        "usphone": "spəˈsɪfɪk",
+        "ukphone": "spəˈsɪfɪk"
+    },
+    {
+        "name": "spiral",
+        "trans": [
+            "xoắn ốc"
+        ],
+        "usphone": "ˈspaɪrəl",
+        "ukphone": "ˈspaɪrəl"
+    },
+    {
+        "name": "stable",
+        "trans": [
+            "tính từ ổn định n. bút ngựa"
+        ],
+        "usphone": "ˈsteɪbl",
+        "ukphone": "ˈsteɪbl"
+    },
+    {
+        "name": "steady",
+        "trans": [
+            "ổn định"
+        ],
+        "usphone": "ˈstedi",
+        "ukphone": "ˈstedi"
+    },
+    {
+        "name": "stout",
+        "trans": [
+            "(mô tả người) mạnh mẽ, mạnh mẽ"
+        ],
+        "usphone": "staʊt",
+        "ukphone": "staʊt"
+    },
+    {
+        "name": "strained",
+        "trans": [
+            "lo lắng"
+        ],
+        "usphone": "streɪnd",
+        "ukphone": "streɪnd"
+    },
+    {
+        "name": "stressful",
+        "trans": [
+            "căng thẳng"
+        ],
+        "usphone": "ˈstresfl",
+        "ukphone": "ˈstresfl"
+    },
+    {
+        "name": "stretching",
+        "trans": [
+            "kéo dài"
+        ],
+        "usphone": "ˈstretʃɪŋ",
+        "ukphone": "ˈstretʃɪŋ"
+    },
+    {
+        "name": "strong",
+        "trans": [
+            "mạnh mẽ"
+        ],
+        "usphone": "strɒŋ",
+        "ukphone": "strɔːŋ"
+    },
+    {
+        "name": "stronger",
+        "trans": [
+            "mạnh mẽ hơn"
+        ],
+        "usphone": "ˈstrɒŋgə",
+        "ukphone": "ˈstrɔːŋər"
+    },
+    {
+        "name": "subjective",
+        "trans": [
+            "chủ quan"
+        ],
+        "usphone": "səbˈdʒektɪv",
+        "ukphone": "səbˈdʒektɪv"
+    },
+    {
+        "name": "successful",
+        "trans": [
+            "thành công"
+        ],
+        "usphone": "səkˈsesfl",
+        "ukphone": "səkˈsesfl"
+    },
+    {
+        "name": "sufficient",
+        "trans": [
+            "đầy đủ"
+        ],
+        "usphone": "səˈfɪʃnt",
+        "ukphone": "səˈfɪʃnt"
+    },
+    {
+        "name": "suitable",
+        "trans": [
+            "phù hợp"
+        ],
+        "usphone": "ˈsuːtəbl",
+        "ukphone": "ˈsuːtəbl"
+    },
+    {
+        "name": "super",
+        "trans": [
+            "siêu"
+        ],
+        "usphone": "ˈsuːpə",
+        "ukphone": "ˈsuːpər"
+    },
+    {
+        "name": "surprised",
+        "trans": [
+            "Đáng ngạc nhiên"
+        ],
+        "usphone": "səˈpraɪzd",
+        "ukphone": "sərˈpraɪzd"
+    },
+    {
+        "name": "systematic",
+        "trans": [
+            "có tính hệ thống"
+        ],
+        "usphone": "ˌsɪstəˈmætɪk",
+        "ukphone": "ˌsɪstəˈmætɪk"
+    },
+    {
+        "name": "technical",
+        "trans": [
+            "công nghệ"
+        ],
+        "usphone": "ˈteknɪkl",
+        "ukphone": "ˈteknɪkl"
+    },
+    {
+        "name": "theoretical",
+        "trans": [
+            "lý thuyết"
+        ],
+        "usphone": "ˌθɪəˈretɪkl",
+        "ukphone": "ˌθiːəˈretɪkl"
+    },
+    {
+        "name": "traditional",
+        "trans": [
+            "truyền thống"
+        ],
+        "usphone": "trəˈdɪʃənl",
+        "ukphone": "trəˈdɪʃənl"
+    },
+    {
+        "name": "troublesome",
+        "trans": [
+            "mang lại rắc rối"
+        ],
+        "usphone": "ˈtrʌblsəm",
+        "ukphone": "ˈtrʌblsəm"
+    },
+    {
+        "name": "typical",
+        "trans": [
+            "điển hình"
+        ],
+        "usphone": "ˈtɪpɪkl",
+        "ukphone": "ˈtɪpɪkl"
+    },
+    {
+        "name": "unanimous",
+        "trans": [
+            "nhất trí"
+        ],
+        "usphone": "juˈnænɪməs",
+        "ukphone": "juˈnænɪməs"
+    },
+    {
+        "name": "uncomfortable",
+        "trans": [
+            "khó chịu"
+        ],
+        "usphone": "ʌnˈkʌmftəbl",
+        "ukphone": "ʌnˈkʌmftəbl"
+    },
+    {
+        "name": "unconvincing",
+        "trans": [
+            "không thuyết phục"
+        ],
+        "usphone": "ˌənˈkɑnvɪnsɪŋ",
+        "ukphone": "ˌʌnkənˈvɪnsɪŋ"
+    },
+    {
+        "name": "underground",
+        "trans": [
+            "dưới lòng đất"
+        ],
+        "usphone": "ˌʌndəˈɡraʊnd , ˈʌndəɡraʊnd",
+        "ukphone": "ˌʌndərˈɡraʊnd , ˈʌndərɡraʊnd"
+    },
+    {
+        "name": "unfair",
+        "trans": [
+            "không công bằng"
+        ],
+        "usphone": "ˌʌnˈfeə",
+        "ukphone": "ˌʌnˈfer"
+    },
+    {
+        "name": "unhealthy",
+        "trans": [
+            "không khỏe mạnh"
+        ],
+        "usphone": "ʌnˈhelθi",
+        "ukphone": "ʌnˈhelθi"
+    },
+    {
+        "name": "unique",
+        "trans": [
+            "độc nhất"
+        ],
+        "usphone": "juˈniːk",
+        "ukphone": "juˈniːk"
+    },
+    {
+        "name": "united",
+        "trans": [
+            "Hoa"
+        ],
+        "usphone": "jʊ'naɪtɪd",
+        "ukphone": "jʊ'naɪtɪd"
+    },
+    {
+        "name": "unreliable",
+        "trans": [
+            "không đáng tin cậy"
+        ],
+        "usphone": "ˌʌnrɪˈlaɪəbl",
+        "ukphone": "ˌʌnrɪˈlaɪəbl"
+    },
+    {
+        "name": "unsocial",
+        "trans": [
+            "Khó gần"
+        ],
+        "usphone": "ˌənˈsoʊʃəl",
+        "ukphone": "ˌʌnˈsəʊʃəl"
+    },
+    {
+        "name": "unusual",
+        "trans": [
+            "phi thường"
+        ],
+        "usphone": "ʌnˈjuːʒuəl",
+        "ukphone": "ʌnˈjuːʒuəl"
+    },
+    {
+        "name": "useful",
+        "trans": [
+            "hữu ích"
+        ],
+        "usphone": "ˈjuːsfl",
+        "ukphone": "ˈjuːsfl"
+    },
+    {
+        "name": "useless",
+        "trans": [
+            "vô dụng"
+        ],
+        "usphone": "ˈjuːsləs",
+        "ukphone": "ˈjuːsləs"
+    },
+    {
+        "name": "usual",
+        "trans": [
+            "bình thường, tầm thường"
+        ],
+        "usphone": "ˈjuːʒuəl",
+        "ukphone": "ˈjuːʒuəl"
+    },
+    {
+        "name": "various",
+        "trans": [
+            "khác nhau"
+        ],
+        "usphone": "ˈveəriəs",
+        "ukphone": "ˈveriəs"
+    },
+    {
+        "name": "violent",
+        "trans": [
+            "khốc liệt, bạo lực"
+        ],
+        "usphone": "ˈvaɪələnt",
+        "ukphone": "ˈvaɪələnt"
+    },
+    {
+        "name": "virtual",
+        "trans": [
+            "ảo"
+        ],
+        "usphone": "ˈvɜːtʃuəl",
+        "ukphone": "ˈvɜːrtʃuəl"
+    },
+    {
+        "name": "visible",
+        "trans": [
+            "có thể nhìn thấy"
+        ],
+        "usphone": "ˈvɪzəbl",
+        "ukphone": "ˈvɪzəbl"
+    },
+    {
+        "name": "visual",
+        "trans": [
+            "trực quan"
+        ],
+        "usphone": "ˈvɪʒuəl",
+        "ukphone": "ˈvɪʒuəl"
+    },
+    {
+        "name": "warm",
+        "trans": [
+            "ấm áp"
+        ],
+        "usphone": "wɔːm",
+        "ukphone": "wɔːrm"
+    },
+    {
+        "name": "washable",
+        "trans": [
+            "có thể giặt được"
+        ],
+        "usphone": "ˈwɑʃəbl̩",
+        "ukphone": "ˈwɒʃəbl̩"
+    },
+    {
+        "name": "wealthy",
+        "trans": [
+            "giàu có"
+        ],
+        "usphone": "ˈwelθi",
+        "ukphone": "ˈwelθi"
+    },
+    {
+        "name": "weekly",
+        "trans": [
+            "hàng tuần"
+        ],
+        "usphone": "ˈwiːkli",
+        "ukphone": "ˈwiːkli"
+    },
+    {
+        "name": "western",
+        "trans": [
+            "phương Tây"
+        ],
+        "usphone": "'wɛstɚn",
+        "ukphone": "'west(ə)n"
+    },
+    {
+        "name": "whole",
+        "trans": [
+            "toàn bộ"
+        ],
+        "usphone": "həʊl",
+        "ukphone": "hoʊl"
+    },
+    {
+        "name": "wide",
+        "trans": [
+            "rộng rãi"
+        ],
+        "usphone": "waɪd",
+        "ukphone": "waɪd"
+    },
+    {
+        "name": "wise",
+        "trans": [
+            "khôn ngoan"
+        ],
+        "usphone": "waɪz",
+        "ukphone": "waɪz"
+    },
+    {
+        "name": "worthwhile",
+        "trans": [
+            "đáng giá"
+        ],
+        "usphone": "ˌwɜːθˈwaɪl",
+        "ukphone": "ˌwɜːrθˈwaɪl"
+    },
+    {
+        "name": "worthy",
+        "trans": [
+            "đáng làm điều gì đó"
+        ],
+        "usphone": "ˈwɜːði",
+        "ukphone": "ˈwɜːrði"
+    },
+    {
+        "name": "almost",
+        "trans": [
+            "gần như"
+        ],
+        "usphone": "ˈɔːlməʊst",
+        "ukphone": "ˈɔːlmoʊst"
+    },
+    {
+        "name": "currently",
+        "trans": [
+            "vị trí hiện tại"
+        ],
+        "usphone": "ˈkʌrəntli",
+        "ukphone": "ˈkɜːrəntli"
+    },
+    {
+        "name": "directly",
+        "trans": [
+            "trực tiếp"
+        ],
+        "usphone": "dəˈrektli",
+        "ukphone": "dəˈrektli"
+    },
+    {
+        "name": "effectively",
+        "trans": [
+            "một cách hiệu quả"
+        ],
+        "usphone": "ɪˈfektɪvli",
+        "ukphone": "ɪˈfektɪvli"
+    },
+    {
+        "name": "efficiently",
+        "trans": [
+            "hiệu quả"
+        ],
+        "usphone": "ɪˈfɪʃntli",
+        "ukphone": "ɪˈfɪʃntli"
+    },
+    {
+        "name": "originally",
+        "trans": [
+            "ban đầu"
+        ],
+        "usphone": "əˈrɪdʒənəli",
+        "ukphone": "əˈrɪdʒənəli"
+    },
+    {
+        "name": "physically",
+        "trans": [
+            "về thể chất"
+        ],
+        "usphone": "ˈfɪzɪkli",
+        "ukphone": "ˈfɪzɪkli"
+    },
+    {
+        "name": "professionally",
+        "trans": [
+            "một cách chuyên nghiệp"
+        ],
+        "usphone": "prəˈfeʃənəli",
+        "ukphone": "prəˈfeʃənəli"
+    },
+    {
+        "name": "rapidly",
+        "trans": [
+            "nhanh chóng"
+        ],
+        "usphone": "ˈræpɪdli",
+        "ukphone": "ˈræpɪdli"
+    },
+    {
+        "name": "regularly",
+        "trans": [
+            "thường xuyên"
+        ],
+        "usphone": "ˈreɡjələli",
+        "ukphone": "ˈreɡjələrli"
+    },
+    {
+        "name": "scarcely",
+        "trans": [
+            "không đầy đủ"
+        ],
+        "usphone": "ˈskeəsli",
+        "ukphone": "ˈskersli"
+    },
+    {
+        "name": "virtually",
+        "trans": [
+            "gần như"
+        ],
+        "usphone": "ˈvɜːtʃuəli",
+        "ukphone": "ˈvɜːrtʃuəli"
+    }
+]

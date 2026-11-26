@@ -1,0 +1,296 @@
+[
+    {
+        "name": "tour",
+        "trans": [
+            "n. thăm nom, du lịch, tham quan"
+        ]
+    },
+    {
+        "name": "tourism",
+        "trans": [
+            "n. du lịch"
+        ]
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "v. (thường là đường dài) du lịch"
+        ]
+    },
+    {
+        "name": "trip",
+        "trans": [
+            "n. (thường là chuyến đi ngắn) chuyến đi, hành trình"
+        ]
+    },
+    {
+        "name": "self-drive tour",
+        "trans": [
+            "n. Tour tự lái"
+        ]
+    },
+    {
+        "name": "cruise",
+        "trans": [
+            "n. hành trình, chuyến đi bằng thuyền"
+        ]
+    },
+    {
+        "name": "excursion",
+        "trans": [
+            "n. (thường đề cập đến những người đi du lịch cùng nhau) một chuyến đi bộ đường dài hoặc một chuyến đi ngắn"
+        ]
+    },
+    {
+        "name": "tourist",
+        "trans": [
+            "n. khách du lịch"
+        ]
+    },
+    {
+        "name": "traveler",
+        "trans": [
+            "n. du khách, khách du lịch"
+        ]
+    },
+    {
+        "name": "visitor",
+        "trans": [
+            "n. du khách, khách du lịch"
+        ]
+    },
+    {
+        "name": "holiday maker",
+        "trans": [
+            "n. người đi nghỉ mát"
+        ]
+    },
+    {
+        "name": "tour guide",
+        "trans": [
+            "n. hướng dẫn viên du lịch"
+        ]
+    },
+    {
+        "name": "accommodation",
+        "trans": [
+            "n. nơi cư trú, nơi làm việc, nơi ở"
+        ]
+    },
+    {
+        "name": "car hire",
+        "trans": [
+            "n. thuê xe"
+        ]
+    },
+    {
+        "name": "car rental",
+        "trans": [
+            "n. thuê xe"
+        ]
+    },
+    {
+        "name": "hire a car",
+        "trans": [
+            "v. thuê xe"
+        ]
+    },
+    {
+        "name": "rent a car",
+        "trans": [
+            "v. thuê xe"
+        ]
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "n. dẫn đường hàng không, hành trình"
+        ]
+    },
+    {
+        "name": "meal",
+        "trans": [
+            "n. bữa ăn"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "n. sách (giấy hoặc điện tử)"
+        ]
+    },
+    {
+        "name": "booking",
+        "trans": [
+            "n. đặt phòng, cuộc hẹn"
+        ]
+    },
+    {
+        "name": "reserve",
+        "trans": [
+            "v. để dành riêng một cách đặc biệt, để dành cho, dự trữ"
+        ]
+    },
+    {
+        "name": "reservation",
+        "trans": [
+            "n. đặt phòng, cuộc hẹn"
+        ]
+    },
+    {
+        "name": "travel agency",
+        "trans": [
+            "n. đại lý du lịch"
+        ]
+    },
+    {
+        "name": "in advance",
+        "trans": [
+            "adv. trước"
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "adj. có sẵn"
+        ]
+    },
+    {
+        "name": "cancel",
+        "trans": [
+            "v. hủy bỏ, chấm dứt, thu hồi"
+        ]
+    },
+    {
+        "name": "cancellation",
+        "trans": [
+            "n. Hủy bỏ"
+        ]
+    },
+    {
+        "name": "full refund",
+        "trans": [
+            "n. Hoàn trả đầy đủ"
+        ]
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "n. giá cả, phí, trị giá"
+        ]
+    },
+    {
+        "name": "charge",
+        "trans": [
+            "v. (đặc biệt là đối với một dịch vụ hoặc hoạt động) tính phí, yêu cầu hoặc đưa ra mức giá"
+        ]
+    },
+    {
+        "name": "extra charge",
+        "trans": [
+            "n. phí bổ sung"
+        ]
+    },
+    {
+        "name": "adult fare",
+        "trans": [
+            "n. Giá vé người lớn"
+        ]
+    },
+    {
+        "name": "child fare",
+        "trans": [
+            "n. Vé trẻ em"
+        ]
+    },
+    {
+        "name": "cash",
+        "trans": [
+            "n. tiền mặt"
+        ]
+    },
+    {
+        "name": "credit card",
+        "trans": [
+            "n. thẻ tín dụng"
+        ]
+    },
+    {
+        "name": "brochure",
+        "trans": [
+            "n. tài liệu quảng cáo, tờ rơi thông tin (hoặc quảng cáo)"
+        ]
+    },
+    {
+        "name": "map",
+        "trans": [
+            "n. bản đồ"
+        ]
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "n. Hộ chiếu"
+        ]
+    },
+    {
+        "name": "visa",
+        "trans": [
+            "n. thị thực"
+        ]
+    },
+    {
+        "name": "driving license",
+        "trans": [
+            "n. bằng lái xe"
+        ]
+    },
+    {
+        "name": "first-aid kit",
+        "trans": [
+            "n. bộ sơ cứu"
+        ]
+    },
+    {
+        "name": "repair kit",
+        "trans": [
+            "n. bộ sửa chữa"
+        ]
+    },
+    {
+        "name": "helmet",
+        "trans": [
+            "n. mũ bảo hiểm, mũ cứng"
+        ]
+    },
+    {
+        "name": "life jacket",
+        "trans": [
+            "n. áo phao"
+        ]
+    },
+    {
+        "name": "swimming costume",
+        "trans": [
+            "n. áo tắm"
+        ]
+    },
+    {
+        "name": "sun cream",
+        "trans": [
+            "n. kem chống nắng"
+        ]
+    },
+    {
+        "name": "tent",
+        "trans": [
+            "n. lều"
+        ]
+    },
+    {
+        "name": "sleeping bag",
+        "trans": [
+            "n. túi ngủ"
+        ]
+    }
+]

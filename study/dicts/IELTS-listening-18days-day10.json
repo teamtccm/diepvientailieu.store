@@ -1,0 +1,206 @@
+[
+    {
+        "name": "mammal",
+        "trans": [
+            "động vật có vú"
+        ]
+    },
+    {
+        "name": "postpone",
+        "trans": [
+            "trì hoãn"
+        ]
+    },
+    {
+        "name": "woodland",
+        "trans": [
+            "Rừng cây",
+            "rừng"
+        ]
+    },
+    {
+        "name": "cave",
+        "trans": [
+            "hang động"
+        ]
+    },
+    {
+        "name": "order",
+        "trans": [
+            "đặt hàng",
+            "đặt hàng",
+            "lệnh"
+        ]
+    },
+    {
+        "name": "lawyer",
+        "trans": [
+            "luật sư"
+        ]
+    },
+    {
+        "name": "acid",
+        "trans": [
+            "chua"
+        ]
+    },
+    {
+        "name": "beat",
+        "trans": [
+            "(tim) đang đập"
+        ]
+    },
+    {
+        "name": "fitness",
+        "trans": [
+            "sức khỏe"
+        ]
+    },
+    {
+        "name": "necessity",
+        "trans": [
+            "Sự cần thiết"
+        ]
+    },
+    {
+        "name": "church",
+        "trans": [
+            "nhà thờ"
+        ]
+    },
+    {
+        "name": "flood",
+        "trans": [
+            "lũ lụt"
+        ]
+    },
+    {
+        "name": "publication",
+        "trans": [
+            "xuất bản"
+        ]
+    },
+    {
+        "name": "critical",
+        "trans": [
+            "quan trọng",
+            "quan trọng"
+        ]
+    },
+    {
+        "name": "behavior",
+        "trans": [
+            "hành vi"
+        ]
+    },
+    {
+        "name": "vote",
+        "trans": [
+            "bỏ phiếu"
+        ]
+    },
+    {
+        "name": "session",
+        "trans": [
+            "cuộc họp",
+            "học kỳ"
+        ]
+    },
+    {
+        "name": "crop",
+        "trans": [
+            "cây trồng"
+        ]
+    },
+    {
+        "name": "technique",
+        "trans": [
+            "Kỹ năng"
+        ]
+    },
+    {
+        "name": "entrant",
+        "trans": [
+            "người tham gia"
+        ]
+    },
+    {
+        "name": "overload",
+        "trans": [
+            "quá tải",
+            "quá tải"
+        ]
+    },
+    {
+        "name": "council",
+        "trans": [
+            "ủy ban"
+        ]
+    },
+    {
+        "name": "chairman",
+        "trans": [
+            "chủ tịch"
+        ]
+    },
+    {
+        "name": "railway",
+        "trans": [
+            "đường sắt"
+        ]
+    },
+    {
+        "name": "contract",
+        "trans": [
+            "hợp đồng"
+        ]
+    },
+    {
+        "name": "rare",
+        "trans": [
+            "hiếm"
+        ]
+    },
+    {
+        "name": "common room",
+        "trans": [
+            "phòng sinh hoạt chung"
+        ]
+    },
+    {
+        "name": "enquiry",
+        "trans": [
+            "Tư vấn"
+        ]
+    },
+    {
+        "name": "thick",
+        "trans": [
+            "dày"
+        ]
+    },
+    {
+        "name": "liquid",
+        "trans": [
+            "chất lỏng"
+        ]
+    },
+    {
+        "name": "dye",
+        "trans": [
+            "thuốc nhuộm"
+        ]
+    },
+    {
+        "name": "rat",
+        "trans": [
+            "chuột"
+        ]
+    },
+    {
+        "name": "measure",
+        "trans": [
+            "Đo lường"
+        ]
+    }
+]

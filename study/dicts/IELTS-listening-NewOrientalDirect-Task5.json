@@ -1,0 +1,230 @@
+[
+    {
+        "name": "general practice",
+        "trans": [
+            "n. thực hành chung, bác sĩ đa khoa"
+        ]
+    },
+    {
+        "name": "health center",
+        "trans": [
+            "n. trung tâm y tế"
+        ]
+    },
+    {
+        "name": "clinic",
+        "trans": [
+            "n. phòng khám"
+        ]
+    },
+    {
+        "name": "infirmary",
+        "trans": [
+            "n. bệnh xá"
+        ]
+    },
+    {
+        "name": "emergency",
+        "trans": [
+            "n. trường hợp khẩn cấp"
+        ]
+    },
+    {
+        "name": "outpatient",
+        "trans": [
+            "n. bệnh nhân ngoại trú"
+        ]
+    },
+    {
+        "name": "practitioner",
+        "trans": [
+            "n. Người hành nghề (y khoa hoặc luật)"
+        ]
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "n. nha sĩ"
+        ]
+    },
+    {
+        "name": "veterinarian",
+        "trans": [
+            "n. bác sĩ thú y"
+        ]
+    },
+    {
+        "name": "surgeon",
+        "trans": [
+            "n. bác sĩ phẫu thuật"
+        ]
+    },
+    {
+        "name": "physician",
+        "trans": [
+            "n. bác sĩ"
+        ]
+    },
+    {
+        "name": "physicist",
+        "trans": [
+            "n. nhà vật lý"
+        ]
+    },
+    {
+        "name": "have a flu",
+        "trans": [
+            "bị cúm"
+        ]
+    },
+    {
+        "name": "have a cold",
+        "trans": [
+            "lạnh"
+        ]
+    },
+    {
+        "name": "infectious",
+        "trans": [
+            "adj. truyền nhiễm"
+        ]
+    },
+    {
+        "name": "fever",
+        "trans": [
+            "n. sốt, v. sốt"
+        ]
+    },
+    {
+        "name": "headache",
+        "trans": [
+            "n. đau đầu"
+        ]
+    },
+    {
+        "name": "cough",
+        "trans": [
+            "n. ho, v. ho"
+        ]
+    },
+    {
+        "name": "sneeze",
+        "trans": [
+            "n. hắt hơi, v. hắt hơi"
+        ]
+    },
+    {
+        "name": "have a stuffed nose",
+        "trans": [
+            "nghẹt mũi"
+        ]
+    },
+    {
+        "name": "have a running nose",
+        "trans": [
+            "sổ mũi"
+        ]
+    },
+    {
+        "name": "have a sore throat",
+        "trans": [
+            "đau họng"
+        ]
+    },
+    {
+        "name": "have a dry throat",
+        "trans": [
+            "Khô họng"
+        ]
+    },
+    {
+        "name": "have sore eyes",
+        "trans": [
+            "đau mắt"
+        ]
+    },
+    {
+        "name": "shoulder",
+        "trans": [
+            "n. vai"
+        ]
+    },
+    {
+        "name": "back",
+        "trans": [
+            "n. trở lại"
+        ]
+    },
+    {
+        "name": "wrist",
+        "trans": [
+            "n. cổ tay"
+        ]
+    },
+    {
+        "name": "elbow",
+        "trans": [
+            "n. Khuỷu tay"
+        ]
+    },
+    {
+        "name": "knee",
+        "trans": [
+            "n. đầu gối"
+        ]
+    },
+    {
+        "name": "toe",
+        "trans": [
+            "n. ngón chân"
+        ]
+    },
+    {
+        "name": "waist",
+        "trans": [
+            "n. eo"
+        ]
+    },
+    {
+        "name": "finger",
+        "trans": [
+            "n. ngón tay"
+        ]
+    },
+    {
+        "name": "ankle",
+        "trans": [
+            "n. mắt cá chân"
+        ]
+    },
+    {
+        "name": "get a pounding",
+        "trans": [
+            "đánh"
+        ]
+    },
+    {
+        "name": "sprain",
+        "trans": [
+            "n. bong gân, v. bong gân"
+        ]
+    },
+    {
+        "name": "insomnia",
+        "trans": [
+            "n. mất ngủ"
+        ]
+    },
+    {
+        "name": "vomit",
+        "trans": [
+            "n. nôn mửa, v. nôn mửa"
+        ]
+    },
+    {
+        "name": "allergy",
+        "trans": [
+            "n. dị ứng"
+        ]
+    }
+]

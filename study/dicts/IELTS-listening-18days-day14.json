@@ -1,0 +1,465 @@
+[
+    {
+        "name": "power steering",
+        "trans": [
+            "Vô lăng trợ lực"
+        ]
+    },
+    {
+        "name": "photo journalism",
+        "trans": [
+            "tin tức ảnh",
+            "phóng sự ảnh"
+        ]
+    },
+    {
+        "name": "structure",
+        "trans": [
+            "cấu trúc"
+        ]
+    },
+    {
+        "name": "repetition",
+        "trans": [
+            "Lặp lại"
+        ]
+    },
+    {
+        "name": "invest",
+        "trans": [
+            "đầu tư"
+        ]
+    },
+    {
+        "name": "framing",
+        "trans": [
+            "khung"
+        ]
+    },
+    {
+        "name": "crime",
+        "trans": [
+            "tội ác"
+        ]
+    },
+    {
+        "name": "creative",
+        "trans": [
+            "sáng tạo"
+        ]
+    },
+    {
+        "name": "frame",
+        "trans": [
+            "Thiết kế"
+        ]
+    },
+    {
+        "name": "inspire",
+        "trans": [
+            "khuyến khích"
+        ]
+    },
+    {
+        "name": "handout",
+        "trans": [
+            "Tài liệu phát tay"
+        ]
+    },
+    {
+        "name": "disappoint",
+        "trans": [
+            "thất vọng"
+        ]
+    },
+    {
+        "name": "independent",
+        "trans": [
+            "độc lập"
+        ]
+    },
+    {
+        "name": "external",
+        "trans": [
+            "bên ngoài"
+        ]
+    },
+    {
+        "name": "obey",
+        "trans": [
+            "tuân thủ"
+        ]
+    },
+    {
+        "name": "procedure",
+        "trans": [
+            "Thủ tục",
+            "quá trình"
+        ]
+    },
+    {
+        "name": "consumer",
+        "trans": [
+            "người tiêu dùng"
+        ]
+    },
+    {
+        "name": "effect",
+        "trans": [
+            "ảnh hưởng"
+        ]
+    },
+    {
+        "name": "mineral",
+        "trans": [
+            "Khoáng sản"
+        ]
+    },
+    {
+        "name": "stitch",
+        "trans": [
+            "sửa chữa"
+        ]
+    },
+    {
+        "name": "pure",
+        "trans": [
+            "tinh khiết"
+        ]
+    },
+    {
+        "name": "virus",
+        "trans": [
+            "virus"
+        ]
+    },
+    {
+        "name": "identity",
+        "trans": [
+            "danh tính"
+        ]
+    },
+    {
+        "name": "evaluation",
+        "trans": [
+            "Đánh giá"
+        ]
+    },
+    {
+        "name": "sound quality",
+        "trans": [
+            "chất lượng âm thanh"
+        ]
+    },
+    {
+        "name": "case study",
+        "trans": [
+            "Nghiên cứu điển hình"
+        ]
+    },
+    {
+        "name": "coral",
+        "trans": [
+            "San hô"
+        ]
+    },
+    {
+        "name": "frog",
+        "trans": [
+            "ếch"
+        ]
+    },
+    {
+        "name": "bacteria",
+        "trans": [
+            "Vi khuẩn"
+        ]
+    },
+    {
+        "name": "smooth",
+        "trans": [
+            "mịn màng"
+        ]
+    },
+    {
+        "name": "chain",
+        "trans": [
+            "chuỗi"
+        ]
+    },
+    {
+        "name": "optimisation",
+        "trans": [
+            "Tối ưu hóa"
+        ]
+    },
+    {
+        "name": "fibre",
+        "trans": [
+            "chất xơ"
+        ]
+    },
+    {
+        "name": "stabilise",
+        "trans": [
+            "làm ổn định",
+            "làm ổn định"
+        ]
+    },
+    {
+        "name": "bone",
+        "trans": [
+            "xương"
+        ]
+    },
+    {
+        "name": "patterns",
+        "trans": [
+            "chế độ"
+        ]
+    },
+    {
+        "name": "robot",
+        "trans": [
+            "người máy"
+        ]
+    },
+    {
+        "name": "attention",
+        "trans": [
+            "chú ý"
+        ]
+    },
+    {
+        "name": "smell",
+        "trans": [
+            "đánh hơi"
+        ]
+    },
+    {
+        "name": "delay",
+        "trans": [
+            "trì hoãn"
+        ]
+    },
+    {
+        "name": "accurate",
+        "trans": [
+            "đúng"
+        ]
+    },
+    {
+        "name": "chapter",
+        "trans": [
+            "chương"
+        ]
+    },
+    {
+        "name": "darkroom",
+        "trans": [
+            "phòng tối"
+        ]
+    },
+    {
+        "name": "volume",
+        "trans": [
+            "khối lượng"
+        ]
+    },
+    {
+        "name": "craft",
+        "trans": [
+            "làm bằng tay"
+        ]
+    },
+    {
+        "name": "packing",
+        "trans": [
+            "bao bì"
+        ]
+    },
+    {
+        "name": "appreciate",
+        "trans": [
+            "biết ơn"
+        ]
+    },
+    {
+        "name": "accurate",
+        "trans": [
+            "chính xác"
+        ]
+    },
+    {
+        "name": "stimulate",
+        "trans": [
+            "thú vị"
+        ]
+    },
+    {
+        "name": "utility",
+        "trans": [
+            "Tính thực tiễn"
+        ]
+    },
+    {
+        "name": "strict",
+        "trans": [
+            "nghiêm khắc"
+        ]
+    },
+    {
+        "name": "font",
+        "trans": [
+            "phông chữ"
+        ]
+    },
+    {
+        "name": "retail",
+        "trans": [
+            "bán lẻ"
+        ]
+    },
+    {
+        "name": "staircase",
+        "trans": [
+            "cầu thang"
+        ]
+    },
+    {
+        "name": "accumulate",
+        "trans": [
+            "tích lũy"
+        ]
+    },
+    {
+        "name": "steam",
+        "trans": [
+            "hơi nước"
+        ]
+    },
+    {
+        "name": "timber",
+        "trans": [
+            "gỗ"
+        ]
+    },
+    {
+        "name": "aggressive",
+        "trans": [
+            "hung hãn"
+        ]
+    },
+    {
+        "name": "analysis",
+        "trans": [
+            "phân tích"
+        ]
+    },
+    {
+        "name": "additive",
+        "trans": [
+            "phụ gia"
+        ]
+    },
+    {
+        "name": "proofread",
+        "trans": [
+            "Hiệu đính"
+        ]
+    },
+    {
+        "name": "ignore",
+        "trans": [
+            "bỏ qua"
+        ]
+    },
+    {
+        "name": "rural",
+        "trans": [
+            "Nông thôn"
+        ]
+    },
+    {
+        "name": "nitrogen",
+        "trans": [
+            "Nitơ"
+        ]
+    },
+    {
+        "name": "ozone layer",
+        "trans": [
+            "tầng ozone"
+        ]
+    },
+    {
+        "name": "sculpture",
+        "trans": [
+            "khắc"
+        ]
+    },
+    {
+        "name": "moisture",
+        "trans": [
+            "Độ ẩm",
+            "độ ẩm"
+        ]
+    },
+    {
+        "name": "rubber",
+        "trans": [
+            "lốp cao su"
+        ]
+    },
+    {
+        "name": "downhill",
+        "trans": [
+            "xuống dốc"
+        ]
+    },
+    {
+        "name": "roof",
+        "trans": [
+            "mái nhà"
+        ]
+    },
+    {
+        "name": "condition",
+        "trans": [
+            "Điều kiện",
+            "trạng thái"
+        ]
+    },
+    {
+        "name": "fluid",
+        "trans": [
+            "chất lỏng",
+            "chất lỏng"
+        ]
+    },
+    {
+        "name": "kidney",
+        "trans": [
+            "thận",
+            "thận"
+        ]
+    },
+    {
+        "name": "machine",
+        "trans": [
+            "máy móc"
+        ]
+    },
+    {
+        "name": "eyesight",
+        "trans": [
+            "tầm nhìn"
+        ]
+    },
+    {
+        "name": "camel",
+        "trans": [
+            "lạc đà"
+        ]
+    }
+]

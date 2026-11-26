@@ -1,0 +1,2359 @@
+[
+  {
+    "id": "TOEIC",
+    "name": "Từ vựng TOEIC",
+    "description": "Bộ từ vựng TOEIC phổ biến",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "TOEIC"
+    ],
+    "url": "/dicts/TOEIC.json",
+    "length": 1694,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts",
+    "name": "Từ vựng IELTS",
+    "description": "Bộ từ vựng IELTS cốt lõi",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_3_T.json",
+    "length": 3575,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "4000_Essential_English_Words1",
+    "name": "4000 Từ vựng thiết yếu 1",
+    "description": "4000 từ vựng Tiếng Anh thiết yếu (Nghĩa)",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/4000_Essential_English_Words-meaning.json",
+    "length": 3600,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "4000_Essential_English_Words2",
+    "name": "4000 Từ vựng thiết yếu 2",
+    "description": "4000 từ vựng Tiếng Anh thiết yếu (Câu)",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/4000_Essential_English_Words-sentence.json",
+    "length": 3600,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "longman_communication_3000_words",
+    "name": "Longman Communication 3000",
+    "description": "3000 từ vựng tiếng Anh giao tiếp thông dụng nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Longman_Communication_3000.json",
+    "length": 3168,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Oxford5000",
+    "name": "5000 Từ vựng Oxford",
+    "description": "Bộ 5000 từ vựng tiếng Anh Oxford",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Oxford5000.json",
+    "length": 5836,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_2000_English_Words",
+    "name": "2000 Từ vựng tiếng Anh",
+    "description": "2000 từ vựng có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/top2000words.json",
+    "length": 1867,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "coca_20000",
+    "name": "20.000 Từ vựng COCA",
+    "description": "Bộ 20.000 từ vựng COCA",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/coca20000.json",
+    "length": 20199,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_1500_nouns_Words",
+    "name": "1500 Danh từ",
+    "description": "1500 danh từ có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Top1500NounWords.json",
+    "length": 1525,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_1000_verb_Words",
+    "name": "1000 Động từ",
+    "description": "1000 động từ có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Top1000VerbWords.json",
+    "length": 1011,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_500_Adj_Words",
+    "name": "500 Tính từ",
+    "description": "500 tính từ có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Top500AdjectiveWords.json",
+    "length": 527,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_250_Adv_Words",
+    "name": "250 Phó từ",
+    "description": "250 phó từ có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Top250AdverbWords.json",
+    "length": 255,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "pet-2024",
+    "name": "Từ vựng PET 2024",
+    "description": "Từ vựng tiếng Anh Cambridge PET 2024",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PET"
+    ],
+    "url": "/dicts/pet-vacabulary-list-2024.json",
+    "length": 1871,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "TOEFL_ZhangHongYan",
+    "name": "Từ vựng TOEFL (Zhang Hongyan)",
+    "description": "Từ vựng TOEFL phân theo chủ đề (Zhang Hongyan)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "TOEFL"
+    ],
+    "url": "/dicts/TOEFL_ZhangHongYan.json",
+    "length": 4032,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "gre3000",
+    "name": "Từ vựng GRE 3000",
+    "description": "Bộ từ vựng GRE 3000",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/GRE3000_3_T.json",
+    "length": 3041,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "gmat",
+    "name": "Từ vựng GMAT",
+    "description": "Bộ từ vựng GMAT",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GMAT"
+    ],
+    "url": "/dicts/GMAT_3_T.json",
+    "length": 3047,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "gre1500",
+    "name": "1500 Từ vựng GRE cốt lõi",
+    "description": "Từ vựng GRE & TEM8 tần suất cao",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/GRE_1500.json",
+    "length": 1533,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Oxford3000",
+    "name": "3000 Từ vựng Oxford",
+    "description": "Bộ 3000 từ vựng tiếng Anh Oxford",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "Phiên bản Oxford"
+    ],
+    "url": "/dicts/Oxford3000.json",
+    "length": 1342,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_50_Prepositions",
+    "name": "50 Giới từ",
+    "description": "50 giới từ có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Top50Prepositions.json",
+    "length": 46,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "top_60_Pronouns",
+    "name": "60 Đại từ",
+    "description": "60 đại từ có tần suất sử dụng cao nhất",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Top60Pronouns.json",
+    "length": 59,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTSXDF7000",
+    "name": "7000 Từ vựng IELTS (XDF)",
+    "description": "Bộ 7000 từ vựng IELTS qua câu nói (XDF)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_XDF_7000.json",
+    "length": 5567,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-oral-900",
+    "name": "900 Câu Speaking IELTS",
+    "description": "900 Câu IELTS Speaking cơ bản",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-oral-900.json",
+    "length": 900,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "japanese-hiragana",
+    "name": "Chữ Hiragana",
+    "description": "Luyện tập chữ Hiragana tiếng Nhật",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản",
+      "Gojuon",
+      "Hiragana"
+    ],
+    "url": "/dicts/JapaneseHiragana.json",
+    "length": 280,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese-katakana",
+    "name": "Chữ Katakana",
+    "description": "Luyện tập chữ Katakana tiếng Nhật",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản",
+      "Gojuon",
+      "Katakana"
+    ],
+    "url": "/dicts/JapaneseKatakana.json",
+    "length": 280,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "Common-Phrases-FCE-Unofficial",
+    "name": "Cụm từ thông dụng FCE",
+    "description": "Các cụm từ thông dụng trong FCE",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "FCE"
+    ],
+    "url": "/dicts/Common-Phrases-FCE-Unofficial.json",
+    "length": 438,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Common-Phrases-PTE-Unofficial",
+    "name": "Cụm từ thông dụng PTE",
+    "description": "Các cụm từ thông dụng trong PTE",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/Common-Phrases-PTE-Unofficial.json",
+    "length": 274,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Duolingo_Vocabulary_B1",
+    "name": "Duolingo B1",
+    "description": "Từ vựng phân loại Duolingo cấp độ B1",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "CEFR"
+    ],
+    "url": "/dicts/Duolingo_Vocabulary_B1.json",
+    "length": 801,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Duolingo_Vocabulary_B2",
+    "name": "Duolingo B2",
+    "description": "Từ vựng phân loại Duolingo cấp độ B2",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "CEFR"
+    ],
+    "url": "/dicts/Duolingo_Vocabulary_B2.json",
+    "length": 1423,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Duolingo_Vocabulary_C1",
+    "name": "Duolingo C1",
+    "description": "Từ vựng phân loại Duolingo cấp độ C1",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "CEFR"
+    ],
+    "url": "/dicts/Duolingo_Vocabulary_C1.json",
+    "length": 1314,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel1",
+    "name": "EF Cấp độ 1",
+    "description": "Tiếng Anh EF - Cấp độ 1",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_1.json",
+    "length": 297,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel10",
+    "name": "EF Cấp độ 10",
+    "description": "Tiếng Anh EF - Cấp độ 10",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_10.json",
+    "length": 174,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel11",
+    "name": "EF Cấp độ 11",
+    "description": "Tiếng Anh EF - Cấp độ 11",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_11.json",
+    "length": 176,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel12",
+    "name": "EF Cấp độ 12",
+    "description": "Tiếng Anh EF - Cấp độ 12",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_12.json",
+    "length": 170,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel13",
+    "name": "EF Cấp độ 13",
+    "description": "Tiếng Anh EF - Cấp độ 13",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_13.json",
+    "length": 172,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel14",
+    "name": "EF Cấp độ 14",
+    "description": "Tiếng Anh EF - Cấp độ 14",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_14.json",
+    "length": 171,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel15",
+    "name": "EF Cấp độ 15",
+    "description": "Tiếng Anh EF - Cấp độ 15",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_15.json",
+    "length": 168,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel16",
+    "name": "EF Cấp độ 16",
+    "description": "Tiếng Anh EF - Cấp độ 16",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_16.json",
+    "length": 170,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel2",
+    "name": "EF Cấp độ 2",
+    "description": "Tiếng Anh EF - Cấp độ 2",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_2.json",
+    "length": 353,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel3",
+    "name": "EF Cấp độ 3",
+    "description": "Tiếng Anh EF - Cấp độ 3",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_3.json",
+    "length": 172,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel4",
+    "name": "EF Cấp độ 4",
+    "description": "Tiếng Anh EF - Cấp độ 4",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_4.json",
+    "length": 178,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel5",
+    "name": "EF Cấp độ 5",
+    "description": "Tiếng Anh EF - Cấp độ 5",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_5.json",
+    "length": 172,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel6",
+    "name": "EF Cấp độ 6",
+    "description": "Tiếng Anh EF - Cấp độ 6",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_6.json",
+    "length": 172,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel7",
+    "name": "EF Cấp độ 7",
+    "description": "Tiếng Anh EF - Cấp độ 7",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_7.json",
+    "length": 171,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel8",
+    "name": "EF Cấp độ 8",
+    "description": "Tiếng Anh EF - Cấp độ 8",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_8.json",
+    "length": 172,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "eflevel9",
+    "name": "EF Cấp độ 9",
+    "description": "Tiếng Anh EF - Cấp độ 9",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "EF"
+    ],
+    "url": "/dicts/EF_LEVEL_9.json",
+    "length": 165,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ZaiYaoNiMing_GRE3000",
+    "name": "GRE 3000 Tái xuất",
+    "description": "Bộ từ vựng GRE 3000 (Phiên bản mới)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/ZaiYaoNiMing_GRE3000.json",
+    "length": 3041,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "word roots1",
+    "name": "Gốc từ thông dụng",
+    "description": "Các gốc từ phổ biến trong tiếng Anh",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/word_roots1.json",
+    "length": 369,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "suffix word",
+    "name": "Hậu tố thông dụng",
+    "description": "Các hậu tố phổ biến trong tiếng Anh",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/suffix_word.json",
+    "length": 126,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS9988wangyong",
+    "name": "IELTS 9988 (Wang Yong)",
+    "description": "Từ vựng IELTS 9988 (Wang Yong)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS9988wangyong.json",
+    "length": 3698,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "heqiong",
+    "name": "IELTS Listening (He Qiong)",
+    "description": "Từ vựng tổng hợp IELTS Listening (He Qiong)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/HeQiong_IELTS.json",
+    "length": 2529,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-1",
+    "name": "IELTS Listening 18 ngày - Ngày 1",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 1",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day1.json",
+    "length": 74,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-10",
+    "name": "IELTS Listening 18 ngày - Ngày 10",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 10",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day10.json",
+    "length": 33,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-11",
+    "name": "IELTS Listening 18 ngày - Ngày 11",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 11",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day11.json",
+    "length": 52,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-12",
+    "name": "IELTS Listening 18 ngày - Ngày 12",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 12",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day12.json",
+    "length": 77,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-13",
+    "name": "IELTS Listening 18 ngày - Ngày 13",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 13",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day13.json",
+    "length": 78,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-14",
+    "name": "IELTS Listening 18 ngày - Ngày 14",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 14",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day14.json",
+    "length": 76,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-15",
+    "name": "IELTS Listening 18 ngày - Ngày 15",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 15",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day15.json",
+    "length": 77,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-16",
+    "name": "IELTS Listening 18 ngày - Ngày 16",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 16",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day16.json",
+    "length": 77,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-17",
+    "name": "IELTS Listening 18 ngày - Ngày 17",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 17",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day17.json",
+    "length": 46,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-18",
+    "name": "IELTS Listening 18 ngày - Ngày 18",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 18",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day18.json",
+    "length": 76,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-2",
+    "name": "IELTS Listening 18 ngày - Ngày 2",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 2",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day2.json",
+    "length": 77,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-3",
+    "name": "IELTS Listening 18 ngày - Ngày 3",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 3",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day3.json",
+    "length": 77,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-4",
+    "name": "IELTS Listening 18 ngày - Ngày 4",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 4",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day4.json",
+    "length": 73,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-5",
+    "name": "IELTS Listening 18 ngày - Ngày 5",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 5",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day5.json",
+    "length": 76,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-6",
+    "name": "IELTS Listening 18 ngày - Ngày 6",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 6",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day6.json",
+    "length": 77,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-7",
+    "name": "IELTS Listening 18 ngày - Ngày 7",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 7",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day7.json",
+    "length": 75,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-8",
+    "name": "IELTS Listening 18 ngày - Ngày 8",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 8",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day8.json",
+    "length": 76,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-18-days-9",
+    "name": "IELTS Listening 18 ngày - Ngày 9",
+    "description": "Luyện nghe IELTS 18 ngày - Bài tập ngày 9",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-18days-day9.json",
+    "length": 76,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task1",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 1",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 1",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task1.json",
+    "length": 44,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task10",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 10",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 10",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task10.json",
+    "length": 44,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task11",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 11",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 11",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task11.json",
+    "length": 36,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task12",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 12",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 12",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task12.json",
+    "length": 45,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task13",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 13",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 13",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task13.json",
+    "length": 49,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task14",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 14",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 14",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task14.json",
+    "length": 46,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task15",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 15",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 15",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task15.json",
+    "length": 29,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task16",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 16",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 16",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task16.json",
+    "length": 42,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task17",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 17",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 17",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task17.json",
+    "length": 22,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task18",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 18",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 18",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task18.json",
+    "length": 37,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task19",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 19",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 19",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task19.json",
+    "length": 26,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task2",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 2",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 2",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task2.json",
+    "length": 33,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task3",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 3",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 3",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task3.json",
+    "length": 33,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task4",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 4",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 4",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task4.json",
+    "length": 33,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task5",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 5",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 5",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task5.json",
+    "length": 38,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task6",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 6",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 6",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task6.json",
+    "length": 33,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task7",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 7",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 7",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task7.json",
+    "length": 39,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task8",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 8",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 8",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task8.json",
+    "length": 32,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-listening-NeworientalDirect-Task9",
+    "name": "IELTS Listening Trung cấp (XDF) - Task 9",
+    "description": "Luyện nghe IELTS Trung cấp cấp tốc - Task 9",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS-listening-NewOrientalDirect-Task9.json",
+    "length": 46,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ieltsWang11",
+    "name": "IELTS Wang C11",
+    "description": "Đề tổng hợp IELTS Wang",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_WANG_11.json",
+    "length": 1738,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ieltsWang3",
+    "name": "IELTS Wang C3",
+    "description": "Danh từ riêng trong đề thi IELTS Listening",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_WANG_3.json",
+    "length": 1135,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ieltsWang4",
+    "name": "IELTS Wang C4",
+    "description": "Tính từ/Phó từ trong đề thi IELTS Listening",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_WANG_4.json",
+    "length": 346,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ieltsWang5",
+    "name": "IELTS Wang C5",
+    "description": "Luyện tập nối âm và nuốt âm IELTS",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_WANG_5.json",
+    "length": 1569,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS-807",
+    "name": "IELTS Wang Lu 807",
+    "description": "Từ vựng IELTS Wang Lu 807",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-807.json",
+    "length": 4340,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTSKingLu807",
+    "name": "IELTS Wang Lu 807 Nghe (Bản 2)",
+    "description": "Từ vựng IELTS Listening Wang Lu 807 (Phiên bản 2)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTSKingLu807.json",
+    "length": 1916,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts-real-high",
+    "name": "IELTS thực tế tần suất cao",
+    "description": "Từ vựng IELTS thực tế (Tần suất xuất hiện cao nhất)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-real-high.json",
+    "length": 524,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts-real-1",
+    "name": "IELTS thực tế từ vựng 1",
+    "description": "Từ vựng IELTS thực tế tần suất cao 1",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-real-1.json",
+    "length": 737,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts-real-2",
+    "name": "IELTS thực tế từ vựng 2",
+    "description": "Từ vựng IELTS thực tế tần suất cao 2",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-real-2.json",
+    "length": 402,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts-real-3",
+    "name": "IELTS thực tế từ vựng 3",
+    "description": "Từ vựng IELTS thực tế tần suất cao 3",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-real-3.json",
+    "length": 256,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts-real-4",
+    "name": "IELTS thực tế từ vựng 4",
+    "description": "Từ vựng IELTS thực tế tần suất cao 4",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-real-4.json",
+    "length": 201,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts-real-5",
+    "name": "IELTS thực tế từ vựng 5",
+    "description": "Từ vựng IELTS thực tế tần suất cao 5",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/ielts-real-5.json",
+    "length": 183,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTSVocabularyBible",
+    "name": "Kinh thánh từ vựng IELTS",
+    "description": "Bộ Kinh thánh từ vựng IELTS (Huizhen Jing)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTSVocabularyBible.json",
+    "length": 3673,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_FIB_L",
+    "name": "Listening FIB Từ vựng",
+    "description": "Từ vựng PTE Listening FIB",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_FIB_L.json",
+    "length": 646,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Macmillan7000",
+    "name": "Macmillan 7000",
+    "description": "Bộ 7000 từ vựng Macmillan",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Macmillan7000.json",
+    "length": 6268,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce1",
+    "name": "New Concept English 1",
+    "description": "New Concept English Quyển 1",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/NCE_1.json",
+    "length": 900,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce-new-1",
+    "name": "New Concept English 1 (Mới)",
+    "description": "New Concept English Quyển 1 (Bản mới)",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/nce-new-1.json",
+    "length": 908,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce2",
+    "name": "New Concept English 2",
+    "description": "New Concept English Quyển 2",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/NCE_2.json",
+    "length": 858,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce-new-2",
+    "name": "New Concept English 2 (Mới)",
+    "description": "New Concept English Quyển 2 (Bản mới)",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/nce-new-2.json",
+    "length": 862,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce3",
+    "name": "New Concept English 3",
+    "description": "New Concept English Quyển 3",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/NCE_3.json",
+    "length": 1052,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce-new-3",
+    "name": "New Concept English 3 (Mới)",
+    "description": "New Concept English Quyển 3 (Bản mới)",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/nce-new-3.json",
+    "length": 1062,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce4",
+    "name": "New Concept English 4",
+    "description": "New Concept English Quyển 4",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/NCE_4.json",
+    "length": 784,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "nce-new-4",
+    "name": "New Concept English 4 (Mới)",
+    "description": "New Concept English Quyển 4 (Bản mới)",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "New Concept English"
+    ],
+    "url": "/dicts/nce-new-4.json",
+    "length": 793,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_Basic_apeuni",
+    "name": "PTE Căn bản (Apeuni)",
+    "description": "Từ vựng PTE căn bản từ Apeuni",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_Basic_apeuni.json",
+    "length": 2652,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_Listening_apeuni.json",
+    "name": "PTE Listening FIB (Apeuni)",
+    "description": "Từ vựng PTE Listening FIB từ Apeuni",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_Listening_apeuni.json",
+    "length": 674,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_Advanced_apeuni.json",
+    "name": "PTE Nâng cao (Apeuni)",
+    "description": "Từ vựng PTE nâng cao từ Apeuni",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_Advanced_apeuni.json",
+    "length": 3169,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_Read_apeuni.json",
+    "name": "PTE Reading FIB (Apeuni)",
+    "description": "Từ vựng PTE Reading FIB từ Apeuni",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_Read_apeuni.json",
+    "length": 630,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-A",
+    "name": "Reading A-Z (RAZ) Cấp độ A",
+    "description": "Reading A-Z (RAZ) Cấp độ A",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-A.json",
+    "length": 487,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-AA",
+    "name": "Reading A-Z (RAZ) Cấp độ AA",
+    "description": "Reading A-Z (RAZ) Cấp độ AA",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-AA.json",
+    "length": 422,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-B",
+    "name": "Reading A-Z (RAZ) Cấp độ B",
+    "description": "Reading A-Z (RAZ) Cấp độ B",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-B.json",
+    "length": 465,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-C",
+    "name": "Reading A-Z (RAZ) Cấp độ C",
+    "description": "Reading A-Z (RAZ) Cấp độ C",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-C.json",
+    "length": 480,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-D",
+    "name": "Reading A-Z (RAZ) Cấp độ D",
+    "description": "Reading A-Z (RAZ) Cấp độ D",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-D.json",
+    "length": 436,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-E",
+    "name": "Reading A-Z (RAZ) Cấp độ E",
+    "description": "Reading A-Z (RAZ) Cấp độ E",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-E.json",
+    "length": 427,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-F",
+    "name": "Reading A-Z (RAZ) Cấp độ F",
+    "description": "Reading A-Z (RAZ) Cấp độ F",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-F.json",
+    "length": 437,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-G",
+    "name": "Reading A-Z (RAZ) Cấp độ G",
+    "description": "Reading A-Z (RAZ) Cấp độ G",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-G.json",
+    "length": 435,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-H",
+    "name": "Reading A-Z (RAZ) Cấp độ H",
+    "description": "Reading A-Z (RAZ) Cấp độ H",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-H.json",
+    "length": 385,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-I",
+    "name": "Reading A-Z (RAZ) Cấp độ I",
+    "description": "Reading A-Z (RAZ) Cấp độ I",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-I.json",
+    "length": 408,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-J",
+    "name": "Reading A-Z (RAZ) Cấp độ J",
+    "description": "Reading A-Z (RAZ) Cấp độ J",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-J.json",
+    "length": 434,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-K",
+    "name": "Reading A-Z (RAZ) Cấp độ K",
+    "description": "Reading A-Z (RAZ) Cấp độ K",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-K.json",
+    "length": 397,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-L",
+    "name": "Reading A-Z (RAZ) Cấp độ L",
+    "description": "Reading A-Z (RAZ) Cấp độ L",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-L.json",
+    "length": 402,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-M",
+    "name": "Reading A-Z (RAZ) Cấp độ M",
+    "description": "Reading A-Z (RAZ) Cấp độ M",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-M.json",
+    "length": 403,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-N",
+    "name": "Reading A-Z (RAZ) Cấp độ N",
+    "description": "Reading A-Z (RAZ) Cấp độ N",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-N.json",
+    "length": 376,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-O",
+    "name": "Reading A-Z (RAZ) Cấp độ O",
+    "description": "Reading A-Z (RAZ) Cấp độ O",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-O.json",
+    "length": 429,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-P",
+    "name": "Reading A-Z (RAZ) Cấp độ P",
+    "description": "Reading A-Z (RAZ) Cấp độ P",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-P.json",
+    "length": 379,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-Q",
+    "name": "Reading A-Z (RAZ) Cấp độ Q",
+    "description": "Reading A-Z (RAZ) Cấp độ Q",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-Q.json",
+    "length": 442,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-R",
+    "name": "Reading A-Z (RAZ) Cấp độ R",
+    "description": "Reading A-Z (RAZ) Cấp độ R",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-R.json",
+    "length": 422,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-S",
+    "name": "Reading A-Z (RAZ) Cấp độ S",
+    "description": "Reading A-Z (RAZ) Cấp độ S",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-S.json",
+    "length": 434,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-T",
+    "name": "Reading A-Z (RAZ) Cấp độ T",
+    "description": "Reading A-Z (RAZ) Cấp độ T",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-T.json",
+    "length": 427,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-all",
+    "name": "Reading A-Z (RAZ) Cấp độ Trọn bộ",
+    "description": "Reading A-Z (RAZ) Cấp độ Trọn bộ",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-all.json",
+    "length": 5831,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-U",
+    "name": "Reading A-Z (RAZ) Cấp độ U",
+    "description": "Reading A-Z (RAZ) Cấp độ U",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-U.json",
+    "length": 418,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-V",
+    "name": "Reading A-Z (RAZ) Cấp độ V",
+    "description": "Reading A-Z (RAZ) Cấp độ V",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-V.json",
+    "length": 409,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-W",
+    "name": "Reading A-Z (RAZ) Cấp độ W",
+    "description": "Reading A-Z (RAZ) Cấp độ W",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-W.json",
+    "length": 392,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-X",
+    "name": "Reading A-Z (RAZ) Cấp độ X",
+    "description": "Reading A-Z (RAZ) Cấp độ X",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-X.json",
+    "length": 546,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-Y",
+    "name": "Reading A-Z (RAZ) Cấp độ Y",
+    "description": "Reading A-Z (RAZ) Cấp độ Y",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-Y.json",
+    "length": 461,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-Z",
+    "name": "Reading A-Z (RAZ) Cấp độ Z",
+    "description": "Reading A-Z (RAZ) Cấp độ Z",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-Z.json",
+    "length": 414,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-Z1",
+    "name": "Reading A-Z (RAZ) Cấp độ Z1",
+    "description": "Reading A-Z (RAZ) Cấp độ Z1",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-Z1.json",
+    "length": 467,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "raz-Z2",
+    "name": "Reading A-Z (RAZ) Cấp độ Z2",
+    "description": "Reading A-Z (RAZ) Cấp độ Z2",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "RAZ"
+    ],
+    "url": "/dicts/raz-Z2.json",
+    "length": 492,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ReadingExplorer3",
+    "name": "Reading Explorer 3",
+    "description": "Từ vựng từ Reading Explorer 3 (Third Edition)",
+    "category": "Tiếng Anh Trẻ em",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/ReadingExplorer3.json",
+    "length": 239,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_FIB_R_junior",
+    "name": "Reading FIB Căn bản",
+    "description": "Từ vựng PTE Reading FIB cơ bản",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_FIB_R_junior.json",
+    "length": 941,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_FIB_R_senior",
+    "name": "Reading FIB Nâng cao",
+    "description": "Từ vựng PTE Reading FIB nâng cao",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_FIB_R_senior.json",
+    "length": 1272,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "SATen",
+    "name": "SAT Anh - Anh",
+    "description": "Từ vựng SAT giải nghĩa bằng tiếng Anh",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "SAT"
+    ],
+    "url": "/dicts/SATen.json",
+    "length": 2681,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "biomedical-terms",
+    "name": "Thuật ngữ Y sinh",
+    "description": "Từ vựng chuyên ngành Y sinh",
+    "category": "Từ vựng chuyên ngành",
+    "tags": [
+      "Sinh học"
+    ],
+    "url": "/dicts/BIOmedical.json",
+    "length": 560,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "bec2",
+    "name": "Tiếng Anh thương mại BEC",
+    "description": "Từ vựng tiếng Anh thương mại chung",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "BEC"
+    ],
+    "url": "/dicts/BEC_2_T.json",
+    "length": 2753,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "japanese001-zh",
+    "name": "Tiếng Nhật thông dụng",
+    "description": "Từ vựng tiếng Nhật giao tiếp cơ bản",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/Japanesebasicword.json",
+    "length": 100,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "en2german",
+    "name": "Từ vựng Anh - Đức",
+    "description": "Từ vựng tiếng Anh, dịch Anh - Đức",
+    "category": "Tiếng Đức",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/en2german.json",
+    "length": 5025,
+    "language": "en",
+    "languageCategory": "de"
+  },
+  {
+    "id": "bec3",
+    "name": "Từ vựng BEC",
+    "description": "Từ vựng các kỳ thi BEC chung",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "BEC"
+    ],
+    "url": "/dicts/BEC_3_T.json",
+    "length": 2825,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "gre",
+    "name": "Từ vựng GRE",
+    "description": "Bộ từ vựng GRE",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/GRE_3_T.json",
+    "length": 6515,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "GRE_ciyileiji",
+    "name": "Từ vựng GRE theo chủ đề",
+    "description": "Bộ từ vựng GRE phân loại theo chủ đề",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/gre-ciyileiji.json",
+    "length": 8785,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "GRE-computer-based-test",
+    "name": "Từ vựng GRE thi trên máy tính",
+    "description": "Bộ từ vựng thi GRE trên máy tính",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/GRE-computer-based-test.json",
+    "length": 1451,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts_disorder",
+    "name": "Từ vựng IELTS (Ngẫu nhiên)",
+    "description": "Bộ từ vựng IELTS đầy đủ (Ngẫu nhiên)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_disorder.json",
+    "length": 9389,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "ielts_order",
+    "name": "Từ vựng IELTS (Theo thứ tự)",
+    "description": "Bộ từ vựng IELTS đầy đủ (Theo thứ tự)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_order.json",
+    "length": 9389,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "IELTS_tinglichangjing",
+    "name": "Từ vựng IELTS Listening",
+    "description": "Từ vựng IELTS Listening theo chủ đề",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/IELTS_tinglichangjing.json",
+    "length": 1204,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "DuckCircle_IELTS",
+    "name": "Từ vựng IELTS cốt lõi (Yaquan)",
+    "description": "Bộ từ vựng IELTS cốt lõi (Yaquan)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "IELTS"
+    ],
+    "url": "/dicts/DuckCircle_IELTS.json",
+    "length": 2644,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "japanese006-zh",
+    "name": "Từ vựng JLPT N1",
+    "description": "Bộ từ vựng tiếng Nhật trình độ N1",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/JapVocabList.N1.json",
+    "length": 3477,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese005-zh",
+    "name": "Từ vựng JLPT N2",
+    "description": "Bộ từ vựng tiếng Nhật trình độ N2",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/JapVocabList.N2.json",
+    "length": 1836,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese004-zh",
+    "name": "Từ vựng JLPT N3",
+    "description": "Bộ từ vựng tiếng Nhật trình độ N3",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/JapVocabList.N3.json",
+    "length": 1830,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese003-zh",
+    "name": "Từ vựng JLPT N4",
+    "description": "Bộ từ vựng tiếng Nhật trình độ N4",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/JapVocabList.N4.json",
+    "length": 635,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese002-zh",
+    "name": "Từ vựng JLPT N5",
+    "description": "Bộ từ vựng tiếng Nhật trình độ N5",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/JapVocabList.N5.json",
+    "length": 670,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "ket",
+    "name": "Từ vựng KET",
+    "description": "Từ vựng tiếng Anh Cambridge KET 2021",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "KET"
+    ],
+    "url": "/dicts/ket2021.json",
+    "length": 1147,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "japanese007",
+    "name": "Từ vựng N1 Tần suất cao",
+    "description": "Từ vựng N1 tiếng Nhật tần suất cao",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/Jap_High-Frequency_N1.json",
+    "length": 3000,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese008",
+    "name": "Từ vựng N2 Tần suất cao",
+    "description": "Từ vựng N2 tiếng Nhật tần suất cao",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/Jap_High-Frequency_N2.json",
+    "length": 2500,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese009",
+    "name": "Từ vựng N3 Tần suất cao",
+    "description": "Từ vựng N3 tiếng Nhật tần suất cao",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/Jap_High-Frequency_N3.json",
+    "length": 1999,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "japanese0010",
+    "name": "Từ vựng N4, N5 Tần suất cao",
+    "description": "Từ vựng N4, N5 tiếng Nhật tần suất cao",
+    "category": "Tiếng Nhật",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/Jap_High-Frequency_N4N5.json",
+    "length": 2000,
+    "language": "romaji",
+    "languageCategory": "ja"
+  },
+  {
+    "id": "PTE_junior",
+    "name": "Từ vựng PTE Căn bản",
+    "description": "Bộ từ vựng PTE mức độ căn bản",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_junior.json",
+    "length": 2651,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_senior",
+    "name": "Từ vựng PTE Trình độ cao",
+    "description": "Bộ từ vựng PTE trình độ cao",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_senior.json",
+    "length": 3170,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "sat",
+    "name": "Từ vựng SAT",
+    "description": "Từ vựng thi SAT Hoa Kỳ",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "SAT"
+    ],
+    "url": "/dicts/SAT_3_T.json",
+    "length": 4464,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "toefl",
+    "name": "Từ vựng TOEFL",
+    "description": "Từ vựng TOEFL phổ biến",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "TOEFL"
+    ],
+    "url": "/dicts/TOEFL_3_T.json",
+    "length": 4264,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "Categorized_TOEFL_Vocabulary_by_Zhanghongyan",
+    "name": "Từ vựng TOEFL theo chủ đề",
+    "description": "Từ vựng TOEFL phân theo chủ đề (Zhang Hongyan 2021)",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "TOEFL"
+    ],
+    "url": "/dicts/Categorized_TOEFL_Vocabulary_by_Zhanghongyan.json",
+    "length": 4123,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "voa",
+    "name": "Từ vựng VOA Cơ bản",
+    "description": "Từ vựng tiếng Anh VOA cấp độ cơ bản",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/voa.json",
+    "length": 1505,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "roger",
+    "name": "Từ vựng của Roger",
+    "description": "Tiếng Anh ứng dụng trong học tập & công việc",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Ngoại khoá"
+    ],
+    "url": "/dicts/RogersWords.json",
+    "length": 4174,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "german2en",
+    "name": "Từ vựng Đức - Anh",
+    "description": "Từ vựng tiếng Đức, dịch Đức - Anh",
+    "category": "Tiếng Đức",
+    "tags": [
+      "Cơ bản"
+    ],
+    "url": "/dicts/german2en.json",
+    "length": 5892,
+    "language": "de",
+    "languageCategory": "de"
+  },
+  {
+    "id": "Merriam_Webster_sVocabularyBuilder",
+    "name": "Từ điển gốc từ Merriam-Webster",
+    "description": "Bộ từ vựng gốc của Merriam-Webster",
+    "category": "Từ điển Tiếng Anh",
+    "tags": [
+      "Khác"
+    ],
+    "url": "/dicts/Merriam_Webster_sVocabularyBuilder.json",
+    "length": 1191,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "GRE_equivalent",
+    "name": "Từ đồng nghĩa GRE",
+    "description": "Các từ đồng nghĩa trong GRE",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "GRE"
+    ],
+    "url": "/dicts/GRE_equivalent.json",
+    "length": 827,
+    "language": "en",
+    "languageCategory": "en"
+  },
+  {
+    "id": "PTE_WFD",
+    "name": "WFD Từ vựng trên máy tính",
+    "description": "Từ vựng PTE WFD trên máy tính",
+    "category": "Kỳ thi Quốc tế",
+    "tags": [
+      "PTE"
+    ],
+    "url": "/dicts/PTE_WFD.json",
+    "length": 1212,
+    "language": "en",
+    "languageCategory": "en"
+  }
+]

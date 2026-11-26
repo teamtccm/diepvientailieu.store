@@ -1,0 +1,478 @@
+[
+    {
+        "name": "intelligence",
+        "trans": [
+            "Tình báo"
+        ]
+    },
+    {
+        "name": "gene",
+        "trans": [
+            "[Di sản] gen"
+        ]
+    },
+    {
+        "name": "seasonal",
+        "trans": [
+            "theo mùa"
+        ]
+    },
+    {
+        "name": "science",
+        "trans": [
+            "khoa học",
+            "Công nghệ"
+        ]
+    },
+    {
+        "name": "crocodile",
+        "trans": [
+            "cá sấu"
+        ]
+    },
+    {
+        "name": "wetland",
+        "trans": [
+            "đất ngập nước",
+            "đầm lầy"
+        ]
+    },
+    {
+        "name": "population",
+        "trans": [
+            "dân số"
+        ]
+    },
+    {
+        "name": "depth",
+        "trans": [
+            "Độ sâu",
+            "sâu sắc"
+        ]
+    },
+    {
+        "name": "cultivation",
+        "trans": [
+            "trồng trọt",
+            "nông nghiệp"
+        ]
+    },
+    {
+        "name": "relationship",
+        "trans": [
+            "mối quan hệ",
+            "hiệp hội"
+        ]
+    },
+    {
+        "name": "ingredients",
+        "trans": [
+            "Chất liệu",
+            "gia vị"
+        ]
+    },
+    {
+        "name": "motivation",
+        "trans": [
+            "động lực"
+        ]
+    },
+    {
+        "name": "organic",
+        "trans": [
+            "hữu cơ"
+        ]
+    },
+    {
+        "name": "business",
+        "trans": [
+            "doanh nhân"
+        ]
+    },
+    {
+        "name": "preparation",
+        "trans": [
+            "chuẩn bị"
+        ]
+    },
+    {
+        "name": "senior",
+        "trans": [
+            "cao cấp"
+        ]
+    },
+    {
+        "name": "outdoor",
+        "trans": [
+            "ngoài trời"
+        ]
+    },
+    {
+        "name": "display",
+        "trans": [
+            "hiển thị"
+        ]
+    },
+    {
+        "name": "merchandiser",
+        "trans": [
+            "doanh nhân"
+        ]
+    },
+    {
+        "name": "lateral",
+        "trans": [
+            "đi ngang"
+        ]
+    },
+    {
+        "name": "rope",
+        "trans": [
+            "dây thừng"
+        ]
+    },
+    {
+        "name": "lack",
+        "trans": [
+            "mất tích"
+        ]
+    },
+    {
+        "name": "danger",
+        "trans": [
+            "nguy hiểm"
+        ]
+    },
+    {
+        "name": "sensitive",
+        "trans": [
+            "nhạy cảm"
+        ]
+    },
+    {
+        "name": "history",
+        "trans": [
+            "lịch sử"
+        ]
+    },
+    {
+        "name": "lifestyle",
+        "trans": [
+            "lối sống"
+        ]
+    },
+    {
+        "name": "create",
+        "trans": [
+            "tạo ra"
+        ]
+    },
+    {
+        "name": "social class",
+        "trans": [
+            "địa vị xã hội"
+        ]
+    },
+    {
+        "name": "reason",
+        "trans": [
+            "Lý do"
+        ]
+    },
+    {
+        "name": "training",
+        "trans": [
+            "đào tạo"
+        ]
+    },
+    {
+        "name": "fear",
+        "trans": [
+            "sợ hãi"
+        ]
+    },
+    {
+        "name": "instead of",
+        "trans": [
+            "thay vì"
+        ]
+    },
+    {
+        "name": "competition",
+        "trans": [
+            "sự cạnh tranh"
+        ]
+    },
+    {
+        "name": "conflict",
+        "trans": [
+            "xung đột"
+        ]
+    },
+    {
+        "name": "a sense of community",
+        "trans": [
+            "ý thức thuộc về tập thể"
+        ]
+    },
+    {
+        "name": "inefficient",
+        "trans": [
+            "không hiệu quả"
+        ]
+    },
+    {
+        "name": "rate",
+        "trans": [
+            "tỷ lệ"
+        ]
+    },
+    {
+        "name": "attitude",
+        "trans": [
+            "thái độ"
+        ]
+    },
+    {
+        "name": "completion",
+        "trans": [
+            "Hoàn thành"
+        ]
+    },
+    {
+        "name": "psychology",
+        "trans": [
+            "Tâm lý học"
+        ]
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "bị bỏ rơi"
+        ]
+    },
+    {
+        "name": "olive oil",
+        "trans": [
+            "dầu ô liu"
+        ]
+    },
+    {
+        "name": "vegetation",
+        "trans": [
+            "thảm thực vật",
+            "thực vật"
+        ]
+    },
+    {
+        "name": "underground",
+        "trans": [
+            "dưới lòng đất",
+            "bí mật"
+        ]
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "bị bỏ rơi",
+            "sa mạc"
+        ]
+    },
+    {
+        "name": "migration",
+        "trans": [
+            "Di chuyển",
+            "nhập cư"
+        ]
+    },
+    {
+        "name": "shrimp",
+        "trans": [
+            "con tôm",
+            "con tôm"
+        ]
+    },
+    {
+        "name": "worm",
+        "trans": [
+            "côn trùng",
+            "con sâu"
+        ]
+    },
+    {
+        "name": "nutrition",
+        "trans": [
+            "Dinh dưỡng"
+        ]
+    },
+    {
+        "name": "temperature",
+        "trans": [
+            "nhiệt độ"
+        ]
+    },
+    {
+        "name": "entertainment",
+        "trans": [
+            "Giải trí",
+            "giải trí"
+        ]
+    },
+    {
+        "name": "journalism",
+        "trans": [
+            "báo chí"
+        ]
+    },
+    {
+        "name": "symbolism",
+        "trans": [
+            "biểu tượng"
+        ]
+    },
+    {
+        "name": "castle",
+        "trans": [
+            "lâu đài"
+        ]
+    },
+    {
+        "name": "method",
+        "trans": [
+            "đường"
+        ]
+    },
+    {
+        "name": "portrait",
+        "trans": [
+            "chân dung"
+        ]
+    },
+    {
+        "name": "poet",
+        "trans": [
+            "nhà thơ"
+        ]
+    },
+    {
+        "name": "male",
+        "trans": [
+            "nam giới"
+        ]
+    },
+    {
+        "name": "female",
+        "trans": [
+            "phụ nữ"
+        ]
+    },
+    {
+        "name": "elephant",
+        "trans": [
+            "con voi"
+        ]
+    },
+    {
+        "name": "weight",
+        "trans": [
+            "trọng lượng"
+        ]
+    },
+    {
+        "name": "wild",
+        "trans": [
+            "hoang dã"
+        ]
+    },
+    {
+        "name": "ancient",
+        "trans": [
+            "cổ xưa"
+        ]
+    },
+    {
+        "name": "extreme sport",
+        "trans": [
+            "thể thao mạo hiểm"
+        ]
+    },
+    {
+        "name": "equipment",
+        "trans": [
+            "Thiết bị"
+        ]
+    },
+    {
+        "name": "golf",
+        "trans": [
+            "quả bóng golf"
+        ]
+    },
+    {
+        "name": "regulation",
+        "trans": [
+            "quy tắc"
+        ]
+    },
+    {
+        "name": "restricted",
+        "trans": [
+            "Có những hạn chế"
+        ]
+    },
+    {
+        "name": "confront",
+        "trans": [
+            "đối mặt"
+        ]
+    },
+    {
+        "name": "entertainment",
+        "trans": [
+            "chương trình giải trí"
+        ]
+    },
+    {
+        "name": "individual",
+        "trans": [
+            "cá nhân"
+        ]
+    },
+    {
+        "name": "tend to",
+        "trans": [
+            "có xu hướng"
+        ]
+    },
+    {
+        "name": "authority",
+        "trans": [
+            "thẩm quyền"
+        ]
+    },
+    {
+        "name": "lecture",
+        "trans": [
+            "bài giảng"
+        ]
+    },
+    {
+        "name": "absent",
+        "trans": [
+            "vắng mặt"
+        ]
+    },
+    {
+        "name": "recall",
+        "trans": [
+            "nhớ lại",
+            "nhớ lại"
+        ]
+    },
+    {
+        "name": "sentence",
+        "trans": [
+            "câu"
+        ]
+    }
+]

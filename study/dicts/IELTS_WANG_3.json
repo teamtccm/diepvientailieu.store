@@ -1,0 +1,9082 @@
+[
+    {
+        "name": "ability",
+        "trans": [
+            "khả năng"
+        ],
+        "usphone": "əˈbɪləti",
+        "ukphone": "əˈbɪləti"
+    },
+    {
+        "name": "abstract",
+        "trans": [
+            "Tóm tắt"
+        ],
+        "usphone": "ˈæbstrækt , æbˈstrækt",
+        "ukphone": "ˈæbstrækt , æbˈstrækt"
+    },
+    {
+        "name": "accountant",
+        "trans": [
+            "kế toán"
+        ],
+        "usphone": "əˈkaʊntənt",
+        "ukphone": "əˈkaʊntənt"
+    },
+    {
+        "name": "accuracy",
+        "trans": [
+            "Độ chính xác"
+        ],
+        "usphone": "ˈækjərəsi",
+        "ukphone": "ˈækjərəsi"
+    },
+    {
+        "name": "acid",
+        "trans": [
+            "Axit"
+        ],
+        "usphone": "ˈæsɪd",
+        "ukphone": "ˈæsɪd"
+    },
+    {
+        "name": "action",
+        "trans": [
+            "hành động"
+        ],
+        "usphone": "ˈækʃn",
+        "ukphone": "ˈækʃn"
+    },
+    {
+        "name": "activity",
+        "trans": [
+            "Hoạt động"
+        ],
+        "usphone": "ækˈtɪvəti",
+        "ukphone": "ækˈtɪvəti"
+    },
+    {
+        "name": "actor",
+        "trans": [
+            "diễn viên"
+        ],
+        "usphone": "ˈæktə",
+        "ukphone": "ˈæktər"
+    },
+    {
+        "name": "adult",
+        "trans": [
+            "người lớn"
+        ],
+        "usphone": "ˈædʌlt",
+        "ukphone": "əˈdʌlt"
+    },
+    {
+        "name": "adventure",
+        "trans": [
+            "cuộc phiêu lưu"
+        ],
+        "usphone": "ədˈventʃə",
+        "ukphone": "ədˈventʃər"
+    },
+    {
+        "name": "advertisements",
+        "trans": [
+            "quảng cáo, tuyên truyền"
+        ],
+        "usphone": "ədˈvɜːtɪsmənts",
+        "ukphone": "ˌædvərˈtaɪzmənts"
+    },
+    {
+        "name": "advertising",
+        "trans": [
+            "quảng cáo"
+        ],
+        "usphone": "ˈædvətaɪzɪŋ",
+        "ukphone": "ˈædvərtaɪzɪŋ"
+    },
+    {
+        "name": "advice",
+        "trans": [
+            "Đề xuất"
+        ],
+        "usphone": "ədˈvaɪs",
+        "ukphone": "ədˈvaɪs"
+    },
+    {
+        "name": "age",
+        "trans": [
+            "tuổi tác"
+        ],
+        "usphone": "eɪdʒ",
+        "ukphone": "eɪdʒ"
+    },
+    {
+        "name": "agency",
+        "trans": [
+            "đại lý, trung gian"
+        ],
+        "usphone": "ˈeɪdʒənsi",
+        "ukphone": "ˈeɪdʒənsi"
+    },
+    {
+        "name": "agreement",
+        "trans": [
+            "đồng ý"
+        ],
+        "usphone": "əˈɡriːmənt",
+        "ukphone": "əˈɡriːmənt"
+    },
+    {
+        "name": "agriculture",
+        "trans": [
+            "Nông nghiệp"
+        ],
+        "usphone": "ˈæɡrɪkʌltʃə",
+        "ukphone": "ˈæɡrɪkʌltʃər"
+    },
+    {
+        "name": "aid",
+        "trans": [
+            "giúp đỡ"
+        ],
+        "usphone": "eɪd",
+        "ukphone": "eɪd"
+    },
+    {
+        "name": "aim",
+        "trans": [
+            "nhắm, nhằm mục đích"
+        ],
+        "usphone": "eɪm",
+        "ukphone": "eɪm"
+    },
+    {
+        "name": "air",
+        "trans": [
+            "không khí"
+        ],
+        "usphone": "eə",
+        "ukphone": "er"
+    },
+    {
+        "name": "allergy",
+        "trans": [
+            "dị ứng"
+        ],
+        "usphone": "ˈælədʒi",
+        "ukphone": "ˈælərdʒi"
+    },
+    {
+        "name": "alley",
+        "trans": [
+            "hẻm, đường"
+        ],
+        "usphone": "ˈæli",
+        "ukphone": "ˈæli"
+    },
+    {
+        "name": "allowance",
+        "trans": [
+            "trợ cấp"
+        ],
+        "usphone": "əˈlaʊəns",
+        "ukphone": "əˈlaʊəns"
+    },
+    {
+        "name": "alteration",
+        "trans": [
+            "thay đổi"
+        ],
+        "usphone": "ˌɔːltəˈreɪʃn",
+        "ukphone": "ˌɔːltəˈreɪʃn"
+    },
+    {
+        "name": "altitude",
+        "trans": [
+            "độ cao"
+        ],
+        "usphone": "ˈæltɪtjuːd",
+        "ukphone": "ˈæltɪtuːd"
+    },
+    {
+        "name": "ambition",
+        "trans": [
+            "tham vọng"
+        ],
+        "usphone": "æmˈbɪʃn",
+        "ukphone": "æmˈbɪʃn"
+    },
+    {
+        "name": "ambulance",
+        "trans": [
+            "xe cứu thương"
+        ],
+        "usphone": "ˈæmbjələns",
+        "ukphone": "ˈæmbjələns"
+    },
+    {
+        "name": "amount",
+        "trans": [
+            "số lượng"
+        ],
+        "usphone": "əˈmaʊnt",
+        "ukphone": "əˈmaʊnt"
+    },
+    {
+        "name": "analysis",
+        "trans": [
+            "phân tích"
+        ],
+        "usphone": "əˈnæləsɪs",
+        "ukphone": "əˈnæləsɪs"
+    },
+    {
+        "name": "analyst",
+        "trans": [
+            "nhà phân tích"
+        ],
+        "usphone": "ˈænəlɪst",
+        "ukphone": "ˈænəlɪst"
+    },
+    {
+        "name": "anger",
+        "trans": [
+            "tức giận"
+        ],
+        "usphone": "ˈæŋɡə",
+        "ukphone": "ˈæŋɡər"
+    },
+    {
+        "name": "animal",
+        "trans": [
+            "động vật"
+        ],
+        "usphone": "ˈænɪml",
+        "ukphone": "ˈænɪml"
+    },
+    {
+        "name": "ankle",
+        "trans": [
+            "mắt cá chân"
+        ],
+        "usphone": "ˈæŋkl",
+        "ukphone": "ˈæŋkl"
+    },
+    {
+        "name": "answer",
+        "trans": [
+            "câu trả lời"
+        ],
+        "usphone": "ˈɑːnsə",
+        "ukphone": "ˈænsər"
+    },
+    {
+        "name": "Antarctica",
+        "trans": [
+            "Nam Cực"
+        ],
+        "usphone": "ˌæntˈɑrk.tɪ.kə",
+        "ukphone": "ˌæntˈɑːr.kə.tɪ.kə"
+    },
+    {
+        "name": "ape",
+        "trans": [
+            "vượn"
+        ],
+        "usphone": "ep",
+        "ukphone": "eɪp"
+    },
+    {
+        "name": "appearance",
+        "trans": [
+            "Ngoại hình"
+        ],
+        "usphone": "əˈpɪərəns",
+        "ukphone": "əˈpɪrəns"
+    },
+    {
+        "name": "architect",
+        "trans": [
+            "kiến trúc sư"
+        ],
+        "usphone": "ˈɑːkɪtekt",
+        "ukphone": "ˈɑːrkɪtekt"
+    },
+    {
+        "name": "architectures",
+        "trans": [
+            "kiến trúc, tòa nhà"
+        ],
+        "usphone": "ˈɑr.kɪˌtɛk.tʃərz",
+        "ukphone": "ˈɑː.kɪˌtek.tjʊrz"
+    },
+    {
+        "name": "area",
+        "trans": [
+            "khu vực, một phần"
+        ],
+        "usphone": "ˈeəriə",
+        "ukphone": "ˈeriə"
+    },
+    {
+        "name": "argument",
+        "trans": [
+            "Đối số"
+        ],
+        "usphone": "ˈɑːɡjumənt",
+        "ukphone": "ˈɑːrɡjumənt"
+    },
+    {
+        "name": "aristocrat",
+        "trans": [
+            "cao quý"
+        ],
+        "usphone": "ˈærɪstəkræt",
+        "ukphone": "əˈrɪstəkræt"
+    },
+    {
+        "name": "army",
+        "trans": [
+            "quân đội"
+        ],
+        "usphone": "ˈɑːmi",
+        "ukphone": "ˈɑːrmi"
+    },
+    {
+        "name": "art",
+        "trans": [
+            "nghệ thuật"
+        ],
+        "usphone": "ɑːt",
+        "ukphone": "ɑːrt"
+    },
+    {
+        "name": "article",
+        "trans": [
+            "đồ vật, vật dụng"
+        ],
+        "usphone": "ˈɑːtɪkl",
+        "ukphone": "ˈɑːrtɪkl"
+    },
+    {
+        "name": "aspirin",
+        "trans": [
+            "Aspirin"
+        ],
+        "usphone": "ˈæsprɪn",
+        "ukphone": "ˈæsprɪn"
+    },
+    {
+        "name": "assignment",
+        "trans": [
+            "bài tập về nhà"
+        ],
+        "usphone": "əˈsaɪnmənt",
+        "ukphone": "əˈsaɪnmənt"
+    },
+    {
+        "name": "atlas",
+        "trans": [
+            "tập bản đồ"
+        ],
+        "usphone": "ˈætləs",
+        "ukphone": "ˈætləs"
+    },
+    {
+        "name": "audience",
+        "trans": [
+            "khán giả"
+        ],
+        "usphone": "ˈɔːdiəns",
+        "ukphone": "ˈɑːdiəns"
+    },
+    {
+        "name": "auditorium",
+        "trans": [
+            "khán phòng"
+        ],
+        "usphone": "ˌɔːdɪˈtɔːriəm",
+        "ukphone": "ˌɔːdɪˈtɔːriəm"
+    },
+    {
+        "name": "author",
+        "trans": [
+            "tác giả"
+        ],
+        "usphone": "ˈɔːθə",
+        "ukphone": "ˈɔːθər"
+    },
+    {
+        "name": "authority",
+        "trans": [
+            "thẩm quyền"
+        ],
+        "usphone": "ɔːˈθɒrəti",
+        "ukphone": "əˈθɔːrəti"
+    },
+    {
+        "name": "average",
+        "trans": [
+            "trung bình"
+        ],
+        "usphone": "ˈævərɪdʒ",
+        "ukphone": "ˈævərɪdʒ"
+    },
+    {
+        "name": "award",
+        "trans": [
+            "phần thưởng"
+        ],
+        "usphone": "əˈwɔːd",
+        "ukphone": "əˈwɔːrd"
+    },
+    {
+        "name": "bachelor",
+        "trans": [
+            "Cử nhân"
+        ],
+        "usphone": "ˈbætʃələ",
+        "ukphone": "ˈbætʃələr"
+    },
+    {
+        "name": "background",
+        "trans": [
+            "nền"
+        ],
+        "usphone": "ˈbækɡraʊnd",
+        "ukphone": "ˈbækɡraʊnd"
+    },
+    {
+        "name": "bacteria",
+        "trans": [
+            "Vi khuẩn"
+        ],
+        "usphone": "bækˈtɪəriə",
+        "ukphone": "bækˈtɪriə"
+    },
+    {
+        "name": "badge",
+        "trans": [
+            "huy hiệu"
+        ],
+        "usphone": "bædʒ",
+        "ukphone": "bædʒ"
+    },
+    {
+        "name": "badminton",
+        "trans": [
+            "Cầu lông"
+        ],
+        "usphone": "ˈbædmɪntən",
+        "ukphone": "ˈbædmɪntən"
+    },
+    {
+        "name": "backpack",
+        "trans": [
+            "Du lịch tự túc với túi đeo vai lớn"
+        ],
+        "usphone": "ˈbækpæk",
+        "ukphone": "ˈbækpæk"
+    },
+    {
+        "name": "baldness",
+        "trans": [
+            "Hói"
+        ],
+        "usphone": "'bɔldnɪs",
+        "ukphone": "'bɔːldnis"
+    },
+    {
+        "name": "band",
+        "trans": [
+            "ban nhạc"
+        ],
+        "usphone": "bænd",
+        "ukphone": "bænd"
+    },
+    {
+        "name": "bandage",
+        "trans": [
+            "băng bó"
+        ],
+        "usphone": "ˈbændɪdʒ",
+        "ukphone": "ˈbændɪdʒ"
+    },
+    {
+        "name": "bands",
+        "trans": [
+            "ban nhạc"
+        ],
+        "usphone": "bændz",
+        "ukphone": "bændz"
+    },
+    {
+        "name": "bank",
+        "trans": [
+            "ngân hàng"
+        ],
+        "usphone": "bæŋk",
+        "ukphone": "bæŋk"
+    },
+    {
+        "name": "banquet",
+        "trans": [
+            "Tiệc"
+        ],
+        "usphone": "ˈbæŋkwɪt",
+        "ukphone": "ˈbæŋkwɪt"
+    },
+    {
+        "name": "base",
+        "trans": [
+            "Khái niệm cơ bản"
+        ],
+        "usphone": "beɪs",
+        "ukphone": "beɪs"
+    },
+    {
+        "name": "basement",
+        "trans": [
+            "tầng hầm"
+        ],
+        "usphone": "ˈbeɪsmənt",
+        "ukphone": "ˈbeɪsmənt"
+    },
+    {
+        "name": "bases",
+        "trans": [
+            "đáy, đế"
+        ],
+        "usphone": "ˈbeɪsɪz , ˈbeɪsiːz",
+        "ukphone": "ˈbeɪsɪz , ˈbeɪsiːz"
+    },
+    {
+        "name": "basis",
+        "trans": [
+            "Khái niệm cơ bản"
+        ],
+        "usphone": "ˈbeɪsɪs",
+        "ukphone": "ˈbeɪsɪs"
+    },
+    {
+        "name": "bath",
+        "trans": [
+            "đi tắm"
+        ],
+        "usphone": "bɑːθ",
+        "ukphone": "bæθ"
+    },
+    {
+        "name": "batteries",
+        "trans": [
+            "pin"
+        ],
+        "usphone": "ˈbætəriz",
+        "ukphone": "ˈbætəriz"
+    },
+    {
+        "name": "battery",
+        "trans": [
+            "pin"
+        ],
+        "usphone": "ˈbætri",
+        "ukphone": "ˈbætəri"
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "bãi biển"
+        ],
+        "usphone": "biːtʃ",
+        "ukphone": "biːtʃ"
+    },
+    {
+        "name": "beard",
+        "trans": [
+            "râu"
+        ],
+        "usphone": "bɪəd",
+        "ukphone": "bɪrd"
+    },
+    {
+        "name": "beats",
+        "trans": [
+            "số nhịp"
+        ],
+        "usphone": "biːts",
+        "ukphone": "biːts"
+    },
+    {
+        "name": "beauty",
+        "trans": [
+            "sắc đẹp"
+        ],
+        "usphone": "ˈbjuːti",
+        "ukphone": "ˈbjuːti"
+    },
+    {
+        "name": "bed",
+        "trans": [
+            "giường"
+        ],
+        "usphone": "bed",
+        "ukphone": "bed"
+    },
+    {
+        "name": "bedroom",
+        "trans": [
+            "phòng ngủ"
+        ],
+        "usphone": "ˈbedruːm",
+        "ukphone": "ˈbedruːm"
+    },
+    {
+        "name": "bed sheet",
+        "trans": [
+            "ga trải giường"
+        ],
+        "usphone": "ˈbɛd ʃit",
+        "ukphone": "ˈbɛd ʃiːt"
+    },
+    {
+        "name": "bedsit",
+        "trans": [
+            "(một phòng ngủ và phòng khách) căn hộ nhỏ"
+        ],
+        "usphone": "ˈbɛd.sɪt",
+        "ukphone": "ˈbɛd.sɪt"
+    },
+    {
+        "name": "behaviors",
+        "trans": [
+            "hành vi, thái độ"
+        ],
+        "usphone": "bɪˈheɪvjəz",
+        "ukphone": "bɪˈheɪvjərz"
+    },
+    {
+        "name": "belt",
+        "trans": [
+            "dây đai"
+        ],
+        "usphone": "belt",
+        "ukphone": "belt"
+    },
+    {
+        "name": "benefit",
+        "trans": [
+            "Ưu điểm"
+        ],
+        "usphone": "ˈbenɪfɪt",
+        "ukphone": "ˈbenɪfɪt"
+    },
+    {
+        "name": "beverage",
+        "trans": [
+            "nước giải khát"
+        ],
+        "usphone": "ˈbevərɪdʒ",
+        "ukphone": "ˈbevərɪdʒ"
+    },
+    {
+        "name": "bibliography",
+        "trans": [
+            "Thư mục"
+        ],
+        "usphone": "ˌbɪbliˈɒɡrəfi",
+        "ukphone": "ˌbɪbliˈɑːɡrəfi"
+    },
+    {
+        "name": "bicycle",
+        "trans": [
+            "xe đạp"
+        ],
+        "usphone": "ˈbaɪsɪkl",
+        "ukphone": "ˈbaɪsɪkl"
+    },
+    {
+        "name": "bill",
+        "trans": [
+            "hoá đơn"
+        ],
+        "usphone": "bɪl",
+        "ukphone": "bɪl"
+    },
+    {
+        "name": "biologist",
+        "trans": [
+            "nhà sinh vật học"
+        ],
+        "usphone": "baɪˈɒlədʒɪst",
+        "ukphone": "baɪˈɑːlədʒɪst"
+    },
+    {
+        "name": "bird",
+        "trans": [
+            "chim"
+        ],
+        "usphone": "bɜːd",
+        "ukphone": "bɜːrd"
+    },
+    {
+        "name": "birth",
+        "trans": [
+            "sinh ra"
+        ],
+        "usphone": "bɜːθ",
+        "ukphone": "bɜːrθ"
+    },
+    {
+        "name": "blanket",
+        "trans": [
+            "chăn"
+        ],
+        "usphone": "ˈblæŋkɪt",
+        "ukphone": "ˈblæŋkɪt"
+    },
+    {
+        "name": "blast",
+        "trans": [
+            "vụ nổ"
+        ],
+        "usphone": "blɑːst",
+        "ukphone": "blæst"
+    },
+    {
+        "name": "block",
+        "trans": [
+            "khu phố"
+        ],
+        "usphone": "blɒk",
+        "ukphone": "blɑːk"
+    },
+    {
+        "name": "blouse",
+        "trans": [
+            "áo sơ mi nữ"
+        ],
+        "usphone": "blaʊz",
+        "ukphone": "blaʊs"
+    },
+    {
+        "name": "board",
+        "trans": [
+            "bảng, ban giám đốc"
+        ],
+        "usphone": "bɔːd",
+        "ukphone": "bɔːrd"
+    },
+    {
+        "name": "boarder",
+        "trans": [
+            "Sinh viên sống trong khuôn viên trường"
+        ],
+        "usphone": "'bɔrdɚ",
+        "ukphone": "ˈbɔ:də(r)"
+    },
+    {
+        "name": "boat",
+        "trans": [
+            "thuyền"
+        ],
+        "usphone": "bəʊt",
+        "ukphone": "boʊt"
+    },
+    {
+        "name": "bone",
+        "trans": [
+            "xương"
+        ],
+        "usphone": "bəʊn",
+        "ukphone": "boʊn"
+    },
+    {
+        "name": "bowl",
+        "trans": [
+            "bát"
+        ],
+        "usphone": "bəʊl",
+        "ukphone": "boʊl"
+    },
+    {
+        "name": "bowling",
+        "trans": [
+            "quả bóng bowling"
+        ],
+        "usphone": "ˈbəʊlɪŋ",
+        "ukphone": "ˈboʊlɪŋ"
+    },
+    {
+        "name": "branch",
+        "trans": [
+            "chi nhánh, phép chia"
+        ],
+        "usphone": "brɑːntʃ",
+        "ukphone": "bræntʃ"
+    },
+    {
+        "name": "breakfast",
+        "trans": [
+            "bữa ăn sáng"
+        ],
+        "usphone": "ˈbrekfəst",
+        "ukphone": "ˈbrekfəst"
+    },
+    {
+        "name": "brick",
+        "trans": [
+            "Gạch"
+        ],
+        "usphone": "brɪk",
+        "ukphone": "brɪk"
+    },
+    {
+        "name": "bridge",
+        "trans": [
+            "cầu"
+        ],
+        "usphone": "brɪdʒ",
+        "ukphone": "brɪdʒ"
+    },
+    {
+        "name": "brochures",
+        "trans": [
+            "tờ rơi"
+        ],
+        "usphone": "ˈbroʊˌʃʊrz",
+        "ukphone": "ˈbrəʊ.ʃʊəz"
+    },
+    {
+        "name": "building",
+        "trans": [
+            "các tòa nhà"
+        ],
+        "usphone": "ˈbɪldɪŋ",
+        "ukphone": "ˈbɪldɪŋ"
+    },
+    {
+        "name": "bungalow",
+        "trans": [
+            "nhà gỗ một tầng"
+        ],
+        "usphone": "ˈbʌŋɡələʊ",
+        "ukphone": "ˈbʌŋɡəloʊ"
+    },
+    {
+        "name": "burger",
+        "trans": [
+            "bánh mì kẹp thịt"
+        ],
+        "usphone": "ˈbɜːɡə",
+        "ukphone": "ˈbɜːrɡər"
+    },
+    {
+        "name": "burglar",
+        "trans": [
+            "tên cướp đêm"
+        ],
+        "usphone": "ˈbɜːɡlə",
+        "ukphone": "ˈbɜːrɡlər"
+    },
+    {
+        "name": "bus",
+        "trans": [
+            "xe buýt"
+        ],
+        "usphone": "bʌs",
+        "ukphone": "bʌs"
+    },
+    {
+        "name": "cab",
+        "trans": [
+            "Taxi"
+        ],
+        "usphone": "kæb",
+        "ukphone": "kæb"
+    },
+    {
+        "name": "cabinet",
+        "trans": [
+            "tủ"
+        ],
+        "usphone": "ˈkæbɪnət",
+        "ukphone": "ˈkæbɪnət"
+    },
+    {
+        "name": "cable",
+        "trans": [
+            "cáp, truyền hình cáp"
+        ],
+        "usphone": "ˈkeɪbl",
+        "ukphone": "ˈkeɪbl"
+    },
+    {
+        "name": "cafe",
+        "trans": [
+            "quán cà phê"
+        ],
+        "usphone": "ˈkæfeɪ",
+        "ukphone": "kæˈfeɪ"
+    },
+    {
+        "name": "cafeteria",
+        "trans": [
+            "quán cà phê, quán ăn tự phục vụ"
+        ],
+        "usphone": "ˌkæfəˈtɪəriə",
+        "ukphone": "ˌkæfəˈtɪriə"
+    },
+    {
+        "name": "cage",
+        "trans": [
+            "cái lồng"
+        ],
+        "usphone": "keɪdʒ",
+        "ukphone": "keɪdʒ"
+    },
+    {
+        "name": "Cambridge",
+        "trans": [
+            "Cambridge"
+        ],
+        "usphone": "ˈkembrɪdʒ",
+        "ukphone": "ˈkeɪmbrɪdʒ"
+    },
+    {
+        "name": "camel",
+        "trans": [
+            "lạc đà"
+        ],
+        "usphone": "ˈkæml",
+        "ukphone": "ˈkæml"
+    },
+    {
+        "name": "camera",
+        "trans": [
+            "máy ảnh"
+        ],
+        "usphone": "ˈkæmərə",
+        "ukphone": "ˈkæmərə"
+    },
+    {
+        "name": "camp",
+        "trans": [
+            "cắm trại"
+        ],
+        "usphone": "kæmp",
+        "ukphone": "kæmp"
+    },
+    {
+        "name": "campus",
+        "trans": [
+            "khuôn viên trường"
+        ],
+        "usphone": "ˈkæmpəs",
+        "ukphone": "ˈkæmpəs"
+    },
+    {
+        "name": "candidate",
+        "trans": [
+            "thí sinh, người dự thi"
+        ],
+        "usphone": "ˈkændɪdət",
+        "ukphone": "ˈkændɪdət"
+    },
+    {
+        "name": "candle",
+        "trans": [
+            "nến"
+        ],
+        "usphone": "ˈkændl",
+        "ukphone": "ˈkændl"
+    },
+    {
+        "name": "canteen",
+        "trans": [
+            "căng tin"
+        ],
+        "usphone": "kænˈtiːn",
+        "ukphone": "kænˈtiːn"
+    },
+    {
+        "name": "capital",
+        "trans": [
+            "vốn"
+        ],
+        "usphone": "ˈkæpɪtl",
+        "ukphone": "ˈkæpɪtl"
+    },
+    {
+        "name": "capsule",
+        "trans": [
+            "viên nang"
+        ],
+        "usphone": "ˈkæpsjuːl",
+        "ukphone": "ˈkæpsl"
+    },
+    {
+        "name": "carbon",
+        "trans": [
+            "Cacbon"
+        ],
+        "usphone": "ˈkɑːbən",
+        "ukphone": "ˈkɑːrbən"
+    },
+    {
+        "name": "care",
+        "trans": [
+            "chú ý đến, chăm sóc"
+        ],
+        "usphone": "keə",
+        "ukphone": "ker"
+    },
+    {
+        "name": "career",
+        "trans": [
+            "sự nghiệp"
+        ],
+        "usphone": "kəˈrɪə",
+        "ukphone": "kəˈrɪr"
+    },
+    {
+        "name": "carpet",
+        "trans": [
+            "thảm"
+        ],
+        "usphone": "ˈkɑːpɪt",
+        "ukphone": "ˈkɑːrpɪt"
+    },
+    {
+        "name": "carving",
+        "trans": [
+            "khắc"
+        ],
+        "usphone": "ˈkɑːvɪŋ",
+        "ukphone": "ˈkɑːrvɪŋ"
+    },
+    {
+        "name": "cashier",
+        "trans": [
+            "nhân viên thu ngân"
+        ],
+        "usphone": "kæˈʃɪə",
+        "ukphone": "kæˈʃɪr"
+    },
+    {
+        "name": "castle",
+        "trans": [
+            "lâu đài"
+        ],
+        "usphone": "ˈkɑːsl",
+        "ukphone": "ˈkæsl"
+    },
+    {
+        "name": "category",
+        "trans": [
+            "loại"
+        ],
+        "usphone": "ˈkætəɡəri",
+        "ukphone": "ˈkætəɡɔːri"
+    },
+    {
+        "name": "cathedral",
+        "trans": [
+            "thánh đường"
+        ],
+        "usphone": "kəˈθiːdrəl",
+        "ukphone": "kəˈθiːdrəl"
+    },
+    {
+        "name": "cause",
+        "trans": [
+            "nguyên nhân"
+        ],
+        "usphone": "kɔːz",
+        "ukphone": "kɔːz"
+    },
+    {
+        "name": "cave",
+        "trans": [
+            "hang động"
+        ],
+        "usphone": "keɪv",
+        "ukphone": "keɪv"
+    },
+    {
+        "name": "cents",
+        "trans": [
+            "điểm"
+        ],
+        "usphone": "sents",
+        "ukphone": "sents"
+    },
+    {
+        "name": "century",
+        "trans": [
+            "thế kỷ"
+        ],
+        "usphone": "ˈsentʃəri",
+        "ukphone": "ˈsentʃəri"
+    },
+    {
+        "name": "certificate",
+        "trans": [
+            "Giấy chứng nhận"
+        ],
+        "usphone": "səˈtɪfɪkət , səˈtɪfɪkeɪt",
+        "ukphone": "sərˈtɪfɪkət , sərˈtɪfɪkeɪt"
+    },
+    {
+        "name": "chair",
+        "trans": [
+            "cái ghế"
+        ],
+        "usphone": "tʃeə",
+        "ukphone": "tʃer"
+    },
+    {
+        "name": "chance",
+        "trans": [
+            "cơ hội"
+        ],
+        "usphone": "tʃɑːns",
+        "ukphone": "tʃæns"
+    },
+    {
+        "name": "chancellor",
+        "trans": [
+            "Hiệu trưởng trường đại học (Anh)"
+        ],
+        "usphone": "ˈtʃɑːnsələ",
+        "ukphone": "ˈtʃænsələr"
+    },
+    {
+        "name": "channel",
+        "trans": [
+            "eo biển"
+        ],
+        "usphone": "ˈtʃænl",
+        "ukphone": "ˈtʃænl"
+    },
+    {
+        "name": "chapter",
+        "trans": [
+            "chương"
+        ],
+        "usphone": "ˈtʃæptə",
+        "ukphone": "ˈtʃæptər"
+    },
+    {
+        "name": "character",
+        "trans": [
+            "chất lượng, đặc điểm"
+        ],
+        "usphone": "ˈkærəktə",
+        "ukphone": "ˈkærəktər"
+    },
+    {
+        "name": "charge",
+        "trans": [
+            "Tính phí"
+        ],
+        "usphone": "tʃɑːdʒ",
+        "ukphone": "tʃɑːrdʒ"
+    },
+    {
+        "name": "charity",
+        "trans": [
+            "từ thiện"
+        ],
+        "usphone": "ˈtʃærəti",
+        "ukphone": "ˈtʃærəti"
+    },
+    {
+        "name": "chart",
+        "trans": [
+            "biểu đồ"
+        ],
+        "usphone": "tʃɑːt",
+        "ukphone": "tʃɑːrt"
+    },
+    {
+        "name": "chat",
+        "trans": [
+            "trò chuyện"
+        ],
+        "usphone": "tʃæt",
+        "ukphone": "tʃæt"
+    },
+    {
+        "name": "checklist",
+        "trans": [
+            "Danh sách kiểm tra"
+        ],
+        "usphone": "ˈtʃeklɪst",
+        "ukphone": "ˈtʃeklɪst"
+    },
+    {
+        "name": "checks",
+        "trans": [
+            "kiểm tra kiểm tra"
+        ],
+        "usphone": "tʃeks",
+        "ukphone": "tʃeks"
+    },
+    {
+        "name": "cheese",
+        "trans": [
+            "phô mai"
+        ],
+        "usphone": "tʃiːz",
+        "ukphone": "tʃiːz"
+    },
+    {
+        "name": "chemist's",
+        "trans": [
+            "cửa hàng thuốc"
+        ],
+        "usphone": "ˈkɛm.ɪsts",
+        "ukphone": "ˈkɛm.ɪsts"
+    },
+    {
+        "name": "chest",
+        "trans": [
+            "ngực"
+        ],
+        "usphone": "tʃest",
+        "ukphone": "tʃest"
+    },
+    {
+        "name": "chick",
+        "trans": [
+            "gà con"
+        ],
+        "usphone": "tʃɪk",
+        "ukphone": "tʃɪk"
+    },
+    {
+        "name": "chicken",
+        "trans": [
+            "gà"
+        ],
+        "usphone": "ˈtʃɪkɪn",
+        "ukphone": "ˈtʃɪkɪn"
+    },
+    {
+        "name": "child",
+        "trans": [
+            "bọn trẻ"
+        ],
+        "usphone": "tʃaɪld",
+        "ukphone": "tʃaɪld"
+    },
+    {
+        "name": "chin",
+        "trans": [
+            "cái cằm"
+        ],
+        "usphone": "tʃɪn",
+        "ukphone": "tʃɪn"
+    },
+    {
+        "name": "chocolate",
+        "trans": [
+            "sô cô la"
+        ],
+        "usphone": "ˈtʃɒklət",
+        "ukphone": "ˈtʃɔːklət"
+    },
+    {
+        "name": "choice",
+        "trans": [
+            "chọn"
+        ],
+        "usphone": "tʃɔɪs",
+        "ukphone": "tʃɔɪs"
+    },
+    {
+        "name": "church",
+        "trans": [
+            "nhà thờ"
+        ],
+        "usphone": "tʃɜːtʃ",
+        "ukphone": "tʃɜːrtʃ"
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "rạp chiếu phim"
+        ],
+        "usphone": "ˈsɪnəmə",
+        "ukphone": "ˈsɪnəmə"
+    },
+    {
+        "name": "circle",
+        "trans": [
+            "tròn"
+        ],
+        "usphone": "ˈsɜːkl",
+        "ukphone": "ˈsɜːrkl"
+    },
+    {
+        "name": "city",
+        "trans": [
+            "thành phố"
+        ],
+        "usphone": "ˈsɪti",
+        "ukphone": "ˈsɪti"
+    },
+    {
+        "name": "clarity",
+        "trans": [
+            "rõ ràng"
+        ],
+        "usphone": "ˈklærəti",
+        "ukphone": "ˈklærəti"
+    },
+    {
+        "name": "cleaner",
+        "trans": [
+            "sạch hơn"
+        ],
+        "usphone": "ˈkliːnə",
+        "ukphone": "ˈkliːnər"
+    },
+    {
+        "name": "cleaning",
+        "trans": [
+            "sạch sẽ"
+        ],
+        "usphone": "ˈkliːnɪŋ",
+        "ukphone": "ˈkliːnɪŋ"
+    },
+    {
+        "name": "client",
+        "trans": [
+            "Khách hàng"
+        ],
+        "usphone": "ˈklaɪənt",
+        "ukphone": "ˈklaɪənt"
+    },
+    {
+        "name": "cliffs",
+        "trans": [
+            "vách đá"
+        ],
+        "usphone": "klɪfs",
+        "ukphone": "klɪfs"
+    },
+    {
+        "name": "climate",
+        "trans": [
+            "thời tiết"
+        ],
+        "usphone": "ˈklaɪmət",
+        "ukphone": "ˈklaɪmət"
+    },
+    {
+        "name": "clinic",
+        "trans": [
+            "phòng khám"
+        ],
+        "usphone": "ˈklɪnɪk",
+        "ukphone": "ˈklɪnɪk"
+    },
+    {
+        "name": "clock",
+        "trans": [
+            "đồng hồ"
+        ],
+        "usphone": "klɒk",
+        "ukphone": "klɑːk"
+    },
+    {
+        "name": "cloth",
+        "trans": [
+            "vải"
+        ],
+        "usphone": "klɒθ",
+        "ukphone": "klɔːθ"
+    },
+    {
+        "name": "clothing",
+        "trans": [
+            "quần áo"
+        ],
+        "usphone": "ˈkləʊðɪŋ",
+        "ukphone": "ˈkloʊðɪŋ"
+    },
+    {
+        "name": "club",
+        "trans": [
+            "câu lạc bộ"
+        ],
+        "usphone": "klʌb",
+        "ukphone": "klʌb"
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "huấn luyện viên"
+        ],
+        "usphone": "kəʊtʃ",
+        "ukphone": "koʊtʃ"
+    },
+    {
+        "name": "coast",
+        "trans": [
+            "bờ biển"
+        ],
+        "usphone": "kəʊst",
+        "ukphone": "koʊst"
+    },
+    {
+        "name": "code",
+        "trans": [
+            "Mật khẩu"
+        ],
+        "usphone": "kəʊd",
+        "ukphone": "koʊd"
+    },
+    {
+        "name": "coke",
+        "trans": [
+            "Cocacola"
+        ],
+        "usphone": "kəʊk",
+        "ukphone": "koʊk"
+    },
+    {
+        "name": "cola",
+        "trans": [
+            "Cocacola"
+        ],
+        "usphone": "ˈkəʊlə",
+        "ukphone": "ˈkoʊlə"
+    },
+    {
+        "name": "colleague",
+        "trans": [
+            "đồng nghiệp"
+        ],
+        "usphone": "ˈkɒliːɡ",
+        "ukphone": "ˈkɑːliːɡ"
+    },
+    {
+        "name": "college",
+        "trans": [
+            "đại học"
+        ],
+        "usphone": "ˈkɒlɪdʒ",
+        "ukphone": "ˈkɑːlɪdʒ"
+    },
+    {
+        "name": "comedy",
+        "trans": [
+            "Hài kịch"
+        ],
+        "usphone": "ˈkɒmədi",
+        "ukphone": "ˈkɑːmədi"
+    },
+    {
+        "name": "commercials",
+        "trans": [
+            "quảng cáo"
+        ],
+        "usphone": "kəˈmɜːʃəlz",
+        "ukphone": "kəˈmɜrʃəlz"
+    },
+    {
+        "name": "commuter",
+        "trans": [
+            "người đi lại"
+        ],
+        "usphone": "kəˈmjuːtə",
+        "ukphone": "kəˈmjuːtər"
+    },
+    {
+        "name": "companion",
+        "trans": [
+            "bạn đồng hành"
+        ],
+        "usphone": "kəmˈpæniən",
+        "ukphone": "kəmˈpæniən"
+    },
+    {
+        "name": "company",
+        "trans": [
+            "công ty, tình bạn"
+        ],
+        "usphone": "ˈkʌmpəni",
+        "ukphone": "ˈkʌmpəni"
+    },
+    {
+        "name": "complaint",
+        "trans": [
+            "phàn nàn"
+        ],
+        "usphone": "kəmˈpleɪnt",
+        "ukphone": "kəmˈpleɪnt"
+    },
+    {
+        "name": "complex",
+        "trans": [
+            "tòa nhà phức hợp hoặc khối"
+        ],
+        "usphone": "ˈkɒmpleks",
+        "ukphone": "kəmˈpleks , ˈkɑːmpleks"
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "máy tính"
+        ],
+        "usphone": "kəmˈpjuːtə",
+        "ukphone": "kəmˈpjuːtər"
+    },
+    {
+        "name": "concert",
+        "trans": [
+            "buổi hòa nhạc"
+        ],
+        "usphone": "ˈkɒnsət",
+        "ukphone": "ˈkɑːnsərt"
+    },
+    {
+        "name": "conclusion",
+        "trans": [
+            "Kết luận"
+        ],
+        "usphone": "kənˈkluːʒn",
+        "ukphone": "kənˈkluːʒn"
+    },
+    {
+        "name": "condition",
+        "trans": [
+            "điều kiện"
+        ],
+        "usphone": "kənˈdɪʃn",
+        "ukphone": "kənˈdɪʃn"
+    },
+    {
+        "name": "conferences",
+        "trans": [
+            "cuộc họp"
+        ],
+        "usphone": "ˈkɒnfərənsɪz",
+        "ukphone": "ˈkɑːnfərənsəz"
+    },
+    {
+        "name": "confidence",
+        "trans": [
+            "tự tin"
+        ],
+        "usphone": "ˈkɒnfɪdəns",
+        "ukphone": "ˈkɑːnfɪdəns"
+    },
+    {
+        "name": "confirmation",
+        "trans": [
+            "xác nhận"
+        ],
+        "usphone": "ˌkɒnfəˈmeɪʃn",
+        "ukphone": "ˌkɑːnfərˈmeɪʃn"
+    },
+    {
+        "name": "congestion",
+        "trans": [
+            "đông đúc"
+        ],
+        "usphone": "kənˈdʒestʃən",
+        "ukphone": "kənˈdʒestʃən"
+    },
+    {
+        "name": "conqueror",
+        "trans": [
+            "kẻ chinh phục"
+        ],
+        "usphone": "ˈkɒŋkərə",
+        "ukphone": "ˈkɑːŋkərər"
+    },
+    {
+        "name": "conquest",
+        "trans": [
+            "chinh phục"
+        ],
+        "usphone": "ˈkɒŋkwest",
+        "ukphone": "ˈkɑːŋkwest"
+    },
+    {
+        "name": "conversation",
+        "trans": [
+            "đối thoại"
+        ],
+        "usphone": "ˌkɒnvəˈseɪʃn",
+        "ukphone": "ˌkɑːnvərˈseɪʃn"
+    },
+    {
+        "name": "conservation",
+        "trans": [
+            "khu bảo tồn"
+        ],
+        "usphone": "ˌkɒnsəˈveɪʃn",
+        "ukphone": "ˌkɑːnsərˈveɪʃn"
+    },
+    {
+        "name": "construction",
+        "trans": [
+            "xây dựng"
+        ],
+        "usphone": "kənˈstrʌkʃn",
+        "ukphone": "kənˈstrʌkʃn"
+    },
+    {
+        "name": "consultant",
+        "trans": [
+            "người tư vấn, người cố vấn"
+        ],
+        "usphone": "kənˈsʌltənt",
+        "ukphone": "kənˈsʌltənt"
+    },
+    {
+        "name": "consumption",
+        "trans": [
+            "tiêu dùng"
+        ],
+        "usphone": "kənˈsʌmpʃn",
+        "ukphone": "kənˈsʌmpʃn"
+    },
+    {
+        "name": "contact",
+        "trans": [
+            "Liên hệ"
+        ],
+        "usphone": "ˈkɒntækt",
+        "ukphone": "ˈkɑːntækt"
+    },
+    {
+        "name": "container",
+        "trans": [
+            "thùng chứa"
+        ],
+        "usphone": "kənˈteɪnə",
+        "ukphone": "kənˈteɪnər"
+    },
+    {
+        "name": "contaminants",
+        "trans": [
+            "chất ô nhiễm"
+        ],
+        "usphone": "kən'tæmɪnənts",
+        "ukphone": "kən'tæmɪnənts"
+    },
+    {
+        "name": "contamination",
+        "trans": [
+            "ô nhiễm (= ô nhiễm)"
+        ],
+        "usphone": "kənˌtæmɪˈneɪʃn",
+        "ukphone": "kənˌtæmɪˈneɪʃn"
+    },
+    {
+        "name": "content",
+        "trans": [
+            "nội dung"
+        ],
+        "usphone": "ˈkɒntent , kənˈtent",
+        "ukphone": "ˈkɑːntent , kənˈtent"
+    },
+    {
+        "name": "continent",
+        "trans": [
+            "lục địa"
+        ],
+        "usphone": "ˈkɒntɪnənt",
+        "ukphone": "ˈkɑːntɪnənt"
+    },
+    {
+        "name": "contract",
+        "trans": [
+            "hợp đồng"
+        ],
+        "usphone": "ˈkɒntrækt , kənˈtrækt",
+        "ukphone": "ˈkɑːntrækt , kənˈtrækt"
+    },
+    {
+        "name": "contracts",
+        "trans": [
+            "hợp đồng"
+        ],
+        "usphone": "kənˈtrækts",
+        "ukphone": "kənˈtrækts"
+    },
+    {
+        "name": "controversy",
+        "trans": [
+            "tranh cãi"
+        ],
+        "usphone": "ˈkɑntrəvɝ​sɪ",
+        "ukphone": "'kɑːntrəvɜːrsi"
+    },
+    {
+        "name": "convenience",
+        "trans": [
+            "thuận tiện"
+        ],
+        "usphone": "kənˈviːniəns",
+        "ukphone": "kənˈviːniəns"
+    },
+    {
+        "name": "cooperations",
+        "trans": [
+            "Hợp tác"
+        ],
+        "usphone": "ˌkoʊˌɑp.əˈreɪ.ʃənz",
+        "ukphone": "ˌkəʊˌɒp.əˈreɪ.ʃənz"
+    },
+    {
+        "name": "cop",
+        "trans": [
+            "(nam) cảnh sát"
+        ],
+        "usphone": "kɒp",
+        "ukphone": "kɑːp"
+    },
+    {
+        "name": "copy",
+        "trans": [
+            "sao chép"
+        ],
+        "usphone": "ˈkɒpi",
+        "ukphone": "ˈkɑːpi"
+    },
+    {
+        "name": "corporation",
+        "trans": [
+            "công ty"
+        ],
+        "usphone": "ˌkɔːpəˈreɪʃn",
+        "ukphone": "ˌkɔːrpəˈreɪʃn"
+    },
+    {
+        "name": "corpse",
+        "trans": [
+            "xác chết"
+        ],
+        "usphone": "kɔːps",
+        "ukphone": "kɔːrps"
+    },
+    {
+        "name": "correspondence",
+        "trans": [
+            "viết một lá thư"
+        ],
+        "usphone": "ˌkɒrəˈspɒndəns",
+        "ukphone": "ˌkɔːrəˈspɑːndəns"
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "chi phí, chi tiêu"
+        ],
+        "usphone": "kɒst",
+        "ukphone": "kɔːst"
+    },
+    {
+        "name": "costume",
+        "trans": [
+            "quần áo"
+        ],
+        "usphone": "ˈkɒstjuːm",
+        "ukphone": "ˈkɑːstuːm"
+    },
+    {
+        "name": "cot",
+        "trans": [
+            "Cũi"
+        ],
+        "usphone": "kɒt",
+        "ukphone": "kɑːt"
+    },
+    {
+        "name": "cottage",
+        "trans": [
+            "trang trại, nhà tranh"
+        ],
+        "usphone": "ˈkɒtɪdʒ",
+        "ukphone": "ˈkɑːtɪdʒ"
+    },
+    {
+        "name": "cough",
+        "trans": [
+            "ho"
+        ],
+        "usphone": "kɒf",
+        "ukphone": "kɔːf"
+    },
+    {
+        "name": "council",
+        "trans": [
+            "ủy ban"
+        ],
+        "usphone": "ˈkaʊnsl",
+        "ukphone": "ˈkaʊnsl"
+    },
+    {
+        "name": "country",
+        "trans": [
+            "đất nước"
+        ],
+        "usphone": "ˈkʌntri",
+        "ukphone": "ˈkʌntri"
+    },
+    {
+        "name": "course",
+        "trans": [
+            "các khóa học"
+        ],
+        "usphone": "kɔːs",
+        "ukphone": "kɔːrs"
+    },
+    {
+        "name": "crack",
+        "trans": [
+            "vết nứt"
+        ],
+        "usphone": "kræk",
+        "ukphone": "kræk"
+    },
+    {
+        "name": "craft",
+        "trans": [
+            "Nghề thủ công"
+        ],
+        "usphone": "krɑːft",
+        "ukphone": "kræft"
+    },
+    {
+        "name": "cream",
+        "trans": [
+            "kem, thuốc mỡ"
+        ],
+        "usphone": "kriːm",
+        "ukphone": "kriːm"
+    },
+    {
+        "name": "credit",
+        "trans": [
+            "uy tín, danh tiếng"
+        ],
+        "usphone": "ˈkredɪt",
+        "ukphone": "ˈkredɪt"
+    },
+    {
+        "name": "creek",
+        "trans": [
+            "lạch"
+        ],
+        "usphone": "kriːk",
+        "ukphone": "kriːk"
+    },
+    {
+        "name": "crime",
+        "trans": [
+            "tội ác"
+        ],
+        "usphone": "kraɪm",
+        "ukphone": "kraɪm"
+    },
+    {
+        "name": "crisis",
+        "trans": [
+            "khủng hoảng"
+        ],
+        "usphone": "ˈkraɪsɪs",
+        "ukphone": "ˈkraɪsɪs"
+    },
+    {
+        "name": "crocodile",
+        "trans": [
+            "cá sấu"
+        ],
+        "usphone": "'krɑkə'daɪl",
+        "ukphone": "'krɒkədaɪl"
+    },
+    {
+        "name": "crop",
+        "trans": [
+            "cây trồng"
+        ],
+        "usphone": "krɒp",
+        "ukphone": "krɑːp"
+    },
+    {
+        "name": "cultivation",
+        "trans": [
+            "trồng trọt"
+        ],
+        "usphone": "ˌkʌltɪˈveɪʃn",
+        "ukphone": "ˌkʌltɪˈveɪʃn"
+    },
+    {
+        "name": "culture",
+        "trans": [
+            "văn hóa"
+        ],
+        "usphone": "ˈkʌltʃə",
+        "ukphone": "ˈkʌltʃər"
+    },
+    {
+        "name": "cup",
+        "trans": [
+            "cốc"
+        ],
+        "usphone": "kʌp",
+        "ukphone": "kʌp"
+    },
+    {
+        "name": "cupboard",
+        "trans": [
+            "tủ"
+        ],
+        "usphone": "ˈkʌbəd",
+        "ukphone": "ˈkʌbərd"
+    },
+    {
+        "name": "curtain",
+        "trans": [
+            "Rèm cửa"
+        ],
+        "usphone": "ˈkɜːtn",
+        "ukphone": "ˈkɜːrtn"
+    },
+    {
+        "name": "customer",
+        "trans": [
+            "khách hàng"
+        ],
+        "usphone": "ˈkʌstəmə",
+        "ukphone": "ˈkʌstəmər"
+    },
+    {
+        "name": "cutlery",
+        "trans": [
+            "bộ đồ ăn"
+        ],
+        "usphone": "ˈkʌtləri",
+        "ukphone": "ˈkʌtləri"
+    },
+    {
+        "name": "cycle",
+        "trans": [
+            "chu kỳ, xe đạp"
+        ],
+        "usphone": "ˈsaɪkl",
+        "ukphone": "ˈsaɪkl"
+    },
+    {
+        "name": "cycling",
+        "trans": [
+            "Đi xe đạp"
+        ],
+        "usphone": "ˈsaɪklɪŋ",
+        "ukphone": "ˈsaɪklɪŋ"
+    },
+    {
+        "name": "damage",
+        "trans": [
+            "phá hủy"
+        ],
+        "usphone": "ˈdæmɪdʒ",
+        "ukphone": "ˈdæmɪdʒ"
+    },
+    {
+        "name": "danger",
+        "trans": [
+            "nguy hiểm"
+        ],
+        "usphone": "ˈdeɪndʒə",
+        "ukphone": "ˈdeɪndʒər"
+    },
+    {
+        "name": "data",
+        "trans": [
+            "dữ liệu"
+        ],
+        "usphone": "ˈdeɪtə",
+        "ukphone": "ˈdeɪtə"
+    },
+    {
+        "name": "date",
+        "trans": [
+            "Ngày"
+        ],
+        "usphone": "deɪt",
+        "ukphone": "deɪt"
+    },
+    {
+        "name": "day",
+        "trans": [
+            "ngày"
+        ],
+        "usphone": "deɪ",
+        "ukphone": "deɪ"
+    },
+    {
+        "name": "deadline",
+        "trans": [
+            "thời hạn"
+        ],
+        "usphone": "ˈdedlaɪn",
+        "ukphone": "ˈdedlaɪn"
+    },
+    {
+        "name": "debate",
+        "trans": [
+            "Tranh luận"
+        ],
+        "usphone": "dɪˈbeɪt",
+        "ukphone": "dɪˈbeɪt"
+    },
+    {
+        "name": "debt",
+        "trans": [
+            "Nợ"
+        ],
+        "usphone": "det",
+        "ukphone": "det"
+    },
+    {
+        "name": "decade",
+        "trans": [
+            "mười năm"
+        ],
+        "usphone": "ˈdekeɪd",
+        "ukphone": "ˈdekeɪd"
+    },
+    {
+        "name": "decision",
+        "trans": [
+            "quyết định"
+        ],
+        "usphone": "dɪˈsɪʒn",
+        "ukphone": "dɪˈsɪʒn"
+    },
+    {
+        "name": "decline",
+        "trans": [
+            "ngã"
+        ],
+        "usphone": "dɪˈklaɪn",
+        "ukphone": "dɪˈklaɪn"
+    },
+    {
+        "name": "decorations",
+        "trans": [
+            "trang trí"
+        ],
+        "usphone": "ˌdekəˈreɪʃənz",
+        "ukphone": "ˌdekəˈreɪʃənz"
+    },
+    {
+        "name": "delay",
+        "trans": [
+            "sự chậm trễ"
+        ],
+        "usphone": "dɪˈleɪ",
+        "ukphone": "dɪˈleɪ"
+    },
+    {
+        "name": "delegate",
+        "trans": [
+            "đại diện"
+        ],
+        "usphone": "ˈdelɪɡət , ˈdelɪɡeɪt",
+        "ukphone": "ˈdelɪɡət , ˈdelɪɡeɪt"
+    },
+    {
+        "name": "delight",
+        "trans": [
+            "hạnh phúc"
+        ],
+        "usphone": "dɪˈlaɪt",
+        "ukphone": "dɪˈlaɪt"
+    },
+    {
+        "name": "delivery",
+        "trans": [
+            "gửi, giao"
+        ],
+        "usphone": "dɪˈlɪvəri",
+        "ukphone": "dɪˈlɪvəri"
+    },
+    {
+        "name": "demonstration",
+        "trans": [
+            "cuộc biểu tình"
+        ],
+        "usphone": "ˌdemənˈstreɪʃn",
+        "ukphone": "ˌdemənˈstreɪʃn"
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "nha sĩ"
+        ],
+        "usphone": "ˈdentɪst",
+        "ukphone": "ˈdentɪst"
+    },
+    {
+        "name": "department",
+        "trans": [
+            "bộ phận, cửa hàng"
+        ],
+        "usphone": "dɪˈpɑːtmənt",
+        "ukphone": "dɪˈpɑːrtmənt"
+    },
+    {
+        "name": "deposit",
+        "trans": [
+            "Gửi tiền"
+        ],
+        "usphone": "dɪˈpɒzɪt",
+        "ukphone": "dɪˈpɑːzɪt"
+    },
+    {
+        "name": "depth",
+        "trans": [
+            "Độ sâu"
+        ],
+        "usphone": "depθ",
+        "ukphone": "depθ"
+    },
+    {
+        "name": "description",
+        "trans": [
+            "Mô tả"
+        ],
+        "usphone": "dɪˈskrɪpʃn",
+        "ukphone": "dɪˈskrɪpʃn"
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "sa mạc"
+        ],
+        "usphone": "dɪˈzɜːt , ˈdezət",
+        "ukphone": "ˈdezərt , dɪˈzɜːrt"
+    },
+    {
+        "name": "design",
+        "trans": [
+            "Thiết kế"
+        ],
+        "usphone": "dɪˈzaɪn",
+        "ukphone": "dɪˈzaɪn"
+    },
+    {
+        "name": "designer",
+        "trans": [
+            "nhà thiết kế"
+        ],
+        "usphone": "dɪˈzaɪnə",
+        "ukphone": "dɪˈzaɪnər"
+    },
+    {
+        "name": "desire",
+        "trans": [
+            "mong muốn"
+        ],
+        "usphone": "dɪˈzaɪə",
+        "ukphone": "dɪˈzaɪər"
+    },
+    {
+        "name": "desks",
+        "trans": [
+            "bàn"
+        ],
+        "usphone": "desks",
+        "ukphone": "desks"
+    },
+    {
+        "name": "destination",
+        "trans": [
+            "điểm đến"
+        ],
+        "usphone": "ˌdestɪˈneɪʃn",
+        "ukphone": "ˌdestɪˈneɪʃn"
+    },
+    {
+        "name": "detail",
+        "trans": [
+            "Chi tiết"
+        ],
+        "usphone": "ˈdiːteɪl",
+        "ukphone": "ˈdiːteɪl"
+    },
+    {
+        "name": "diary",
+        "trans": [
+            "nhật ký"
+        ],
+        "usphone": "ˈdaɪəri",
+        "ukphone": "ˈdaɪəri"
+    },
+    {
+        "name": "dictation",
+        "trans": [
+            "chính tả"
+        ],
+        "usphone": "dɪkˈteɪʃn",
+        "ukphone": "dɪkˈteɪʃn"
+    },
+    {
+        "name": "diet",
+        "trans": [
+            "chế độ ăn uống"
+        ],
+        "usphone": "ˈdaɪət",
+        "ukphone": "ˈdaɪət"
+    },
+    {
+        "name": "dining",
+        "trans": [
+            "ăn"
+        ],
+        "usphone": "ˈdaɪnɪŋ",
+        "ukphone": "ˈdaɪnɪŋ"
+    },
+    {
+        "name": "dinner",
+        "trans": [
+            "bữa tối"
+        ],
+        "usphone": "ˈdɪnə",
+        "ukphone": "ˈdɪnər"
+    },
+    {
+        "name": "dioxide",
+        "trans": [
+            "điôxit"
+        ],
+        "usphone": "daɪˈɒksaɪd",
+        "ukphone": "daɪˈɑːksaɪd"
+    },
+    {
+        "name": "direction",
+        "trans": [
+            "phương hướng"
+        ],
+        "usphone": "dəˈrekʃn",
+        "ukphone": "dəˈrekʃn"
+    },
+    {
+        "name": "director",
+        "trans": [
+            "giám đốc"
+        ],
+        "usphone": "dəˈrektə",
+        "ukphone": "dəˈrektər"
+    },
+    {
+        "name": "disagreement",
+        "trans": [
+            "Không đồng ý"
+        ],
+        "usphone": "ˌdɪsəˈɡriːmənt",
+        "ukphone": "ˌdɪsəˈɡriːmənt"
+    },
+    {
+        "name": "disaster",
+        "trans": [
+            "phim thảm họa"
+        ],
+        "usphone": "dɪˈzɑːstə",
+        "ukphone": "dɪˈzæstər"
+    },
+    {
+        "name": "discipline",
+        "trans": [
+            "kỷ luật, chủ đề"
+        ],
+        "usphone": "ˈdɪsəplɪn",
+        "ukphone": "ˈdɪsəplɪn"
+    },
+    {
+        "name": "disco",
+        "trans": [
+            "sàn nhảy"
+        ],
+        "usphone": "'dɪsko",
+        "ukphone": "'dɪskəʊ"
+    },
+    {
+        "name": "discomfort",
+        "trans": [
+            "nơi không thoải mái"
+        ],
+        "usphone": "dɪsˈkʌmfət",
+        "ukphone": "dɪsˈkʌmfərt"
+    },
+    {
+        "name": "discos",
+        "trans": [
+            "sàn nhảy"
+        ],
+        "usphone": "ˈdɪsˌkoʊz",
+        "ukphone": "ˈdɪskəʊz"
+    },
+    {
+        "name": "discount",
+        "trans": [
+            "Giảm giá"
+        ],
+        "usphone": "ˈdɪskaʊnt , dɪsˈkaʊnt",
+        "ukphone": "ˈdɪskaʊnt , dɪsˈkaʊnt"
+    },
+    {
+        "name": "discovery",
+        "trans": [
+            "khám phá"
+        ],
+        "usphone": "dɪˈskʌvəri",
+        "ukphone": "dɪˈskʌvəri"
+    },
+    {
+        "name": "disease",
+        "trans": [
+            "bệnh tật"
+        ],
+        "usphone": "dɪˈziːz",
+        "ukphone": "dɪˈziːz"
+    },
+    {
+        "name": "dish",
+        "trans": [
+            "món ăn"
+        ],
+        "usphone": "dɪʃ",
+        "ukphone": "dɪʃ"
+    },
+    {
+        "name": "disposal",
+        "trans": [
+            "Quy trình"
+        ],
+        "usphone": "dɪˈspəʊzl",
+        "ukphone": "dɪˈspoʊzl"
+    },
+    {
+        "name": "dispute",
+        "trans": [
+            "Tranh chấp"
+        ],
+        "usphone": "dɪˈspjuːt",
+        "ukphone": "dɪˈspjuːt"
+    },
+    {
+        "name": "distance",
+        "trans": [
+            "khoảng cách"
+        ],
+        "usphone": "ˈdɪstəns",
+        "ukphone": "ˈdɪstəns"
+    },
+    {
+        "name": "divorce",
+        "trans": [
+            "ly hôn"
+        ],
+        "usphone": "dɪˈvɔːs",
+        "ukphone": "dɪˈvɔːrs"
+    },
+    {
+        "name": "document",
+        "trans": [
+            "Tập tin"
+        ],
+        "usphone": "ˈdɒkjumənt , ˈdɒkjument",
+        "ukphone": "ˈdɑːkjumənt , ˈdɑːkjument"
+    },
+    {
+        "name": "documentary",
+        "trans": [
+            "phim tài liệu"
+        ],
+        "usphone": "ˌdɒkjuˈmentri",
+        "ukphone": "ˌdɑːkjuˈmentri"
+    },
+    {
+        "name": "donation",
+        "trans": [
+            "Đóng góp"
+        ],
+        "usphone": "dəʊˈneɪʃn",
+        "ukphone": "doʊˈneɪʃn"
+    },
+    {
+        "name": "donkey",
+        "trans": [
+            "con lừa"
+        ],
+        "usphone": "ˈdɒŋki",
+        "ukphone": "ˈdɑːŋki"
+    },
+    {
+        "name": "drafts",
+        "trans": [
+            "dự thảo, lệnh chuyển tiền"
+        ],
+        "usphone": "dræfts",
+        "ukphone": "drɑːfts"
+    },
+    {
+        "name": "drama",
+        "trans": [
+            "kịch"
+        ],
+        "usphone": "ˈdrɑːmə",
+        "ukphone": "ˈdrɑːmə"
+    },
+    {
+        "name": "draw",
+        "trans": [
+            "Vẽ"
+        ],
+        "usphone": "drɔː",
+        "ukphone": "drɔː"
+    },
+    {
+        "name": "drawer",
+        "trans": [
+            "ngăn kéo"
+        ],
+        "usphone": "drɔː",
+        "ukphone": "drɔːr"
+    },
+    {
+        "name": "drink",
+        "trans": [
+            "đồ uống"
+        ],
+        "usphone": "drɪŋk",
+        "ukphone": "drɪŋk"
+    },
+    {
+        "name": "drinking",
+        "trans": [
+            "uống nước, uống"
+        ],
+        "usphone": "ˈdrɪŋkɪŋ",
+        "ukphone": "ˈdrɪŋkɪŋ"
+    },
+    {
+        "name": "driver",
+        "trans": [
+            "người lái xe"
+        ],
+        "usphone": "ˈdraɪvə",
+        "ukphone": "ˈdraɪvər"
+    },
+    {
+        "name": "driving",
+        "trans": [
+            "lái xe"
+        ],
+        "usphone": "ˈdraɪvɪŋ",
+        "ukphone": "ˈdraɪvɪŋ"
+    },
+    {
+        "name": "drug",
+        "trans": [
+            "Thuốc"
+        ],
+        "usphone": "drʌɡ",
+        "ukphone": "drʌɡ"
+    },
+    {
+        "name": "drum",
+        "trans": [
+            "trống"
+        ],
+        "usphone": "drʌm",
+        "ukphone": "drʌm"
+    },
+    {
+        "name": "due",
+        "trans": [
+            "phải trả, cái gì đó đến hạn"
+        ],
+        "usphone": "djuː",
+        "ukphone": "duː"
+    },
+    {
+        "name": "duration",
+        "trans": [
+            "tiếp tục"
+        ],
+        "usphone": "djuˈreɪʃn",
+        "ukphone": "duˈreɪʃn"
+    },
+    {
+        "name": "dust",
+        "trans": [
+            "bụi bặm"
+        ],
+        "usphone": "dʌst",
+        "ukphone": "dʌst"
+    },
+    {
+        "name": "duty",
+        "trans": [
+            "trách nhiệm"
+        ],
+        "usphone": "ˈdjuːti",
+        "ukphone": "ˈduːti"
+    },
+    {
+        "name": "eagle",
+        "trans": [
+            "đại bàng"
+        ],
+        "usphone": "ˈiːɡl",
+        "ukphone": "ˈiːɡl"
+    },
+    {
+        "name": "ear",
+        "trans": [
+            "đôi tai"
+        ],
+        "usphone": "ɪə",
+        "ukphone": "ɪr"
+    },
+    {
+        "name": "east",
+        "trans": [
+            "phía đông"
+        ],
+        "usphone": "iːst",
+        "ukphone": "iːst"
+    },
+    {
+        "name": "eating",
+        "trans": [
+            "ăn"
+        ],
+        "usphone": "ˈiːtɪŋ",
+        "ukphone": "ˈiːtɪŋ"
+    },
+    {
+        "name": "economy",
+        "trans": [
+            "kinh tế"
+        ],
+        "usphone": "ɪˈkɒnəmi",
+        "ukphone": "ɪˈkɑːnəmi"
+    },
+    {
+        "name": "editor",
+        "trans": [
+            "Chỉnh sửa"
+        ],
+        "usphone": "ˈedɪtə",
+        "ukphone": "ˈedɪtər"
+    },
+    {
+        "name": "education",
+        "trans": [
+            "giáo dục"
+        ],
+        "usphone": "ˌedʒuˈkeɪʃn",
+        "ukphone": "ˌedʒuˈkeɪʃn"
+    },
+    {
+        "name": "elbow",
+        "trans": [
+            "khuỷu tay"
+        ],
+        "usphone": "ˈelbəʊ",
+        "ukphone": "ˈelboʊ"
+    },
+    {
+        "name": "elder",
+        "trans": [
+            "người lớn tuổi"
+        ],
+        "usphone": "ˈeldə",
+        "ukphone": "ˈeldər"
+    },
+    {
+        "name": "electricity",
+        "trans": [
+            "điện"
+        ],
+        "usphone": "ɪˌlekˈtrɪsəti",
+        "ukphone": "ɪˌlekˈtrɪsəti"
+    },
+    {
+        "name": "elements",
+        "trans": [
+            "yếu tố"
+        ],
+        "usphone": "ˈelɪmənts",
+        "ukphone": "ˈeləmənts"
+    },
+    {
+        "name": "elevator",
+        "trans": [
+            "thang máy, cần cẩu"
+        ],
+        "usphone": "ˈelɪveɪtə",
+        "ukphone": "ˈelɪveɪtər"
+    },
+    {
+        "name": "emotion",
+        "trans": [
+            "cảm xúc"
+        ],
+        "usphone": "ɪˈməʊʃn",
+        "ukphone": "ɪˈmoʊʃn"
+    },
+    {
+        "name": "emperor",
+        "trans": [
+            "hoàng đế"
+        ],
+        "usphone": "ˈempərə",
+        "ukphone": "ˈempərər"
+    },
+    {
+        "name": "employee",
+        "trans": [
+            "nhân viên"
+        ],
+        "usphone": "ɪmˈplɔɪiː",
+        "ukphone": "ɪmˈplɔɪiː"
+    },
+    {
+        "name": "employer",
+        "trans": [
+            "chủ lao động"
+        ],
+        "usphone": "ɪmˈplɔɪə",
+        "ukphone": "ɪmˈplɔɪər"
+    },
+    {
+        "name": "encyclopedia",
+        "trans": [
+            "Bách khoa toàn thư"
+        ],
+        "usphone": "ɪnˌsaɪkləˈpiːdiə",
+        "ukphone": "ɪnˌsaɪkləˈpiːdiə"
+    },
+    {
+        "name": "ending",
+        "trans": [
+            "kết quả"
+        ],
+        "usphone": "ˈendɪŋ",
+        "ukphone": "ˈendɪŋ"
+    },
+    {
+        "name": "energies",
+        "trans": [
+            "năng lượng"
+        ],
+        "usphone": "ˈenədʒiz",
+        "ukphone": "ˈenədʒiz"
+    },
+    {
+        "name": "engine",
+        "trans": [
+            "động cơ"
+        ],
+        "usphone": "ˈendʒɪn",
+        "ukphone": "ˈendʒɪn"
+    },
+    {
+        "name": "engineer",
+        "trans": [
+            "kỹ sư"
+        ],
+        "usphone": "ˌendʒɪˈnɪə",
+        "ukphone": "ˌendʒɪˈnɪr"
+    },
+    {
+        "name": "entrance",
+        "trans": [
+            "lối vào"
+        ],
+        "usphone": "ˈentrəns , ɪnˈtrɑːns",
+        "ukphone": "ˈentrəns , ɪnˈtræns"
+    },
+    {
+        "name": "epidemic",
+        "trans": [
+            "dịch bệnh"
+        ],
+        "usphone": "ˌepɪˈdemɪk",
+        "ukphone": "ˌepɪˈdemɪk"
+    },
+    {
+        "name": "equipment",
+        "trans": [
+            "Thiết bị"
+        ],
+        "usphone": "ɪˈkwɪpmənt",
+        "ukphone": "ɪˈkwɪpmənt"
+    },
+    {
+        "name": "ethic",
+        "trans": [
+            "Đạo đức"
+        ],
+        "usphone": "ˈeθɪk",
+        "ukphone": "ˈeθɪk"
+    },
+    {
+        "name": "evening",
+        "trans": [
+            "đêm, bữa tiệc"
+        ],
+        "usphone": "ˈiːvnɪŋ",
+        "ukphone": "ˈiːvnɪŋ"
+    },
+    {
+        "name": "event",
+        "trans": [
+            "sự kiện"
+        ],
+        "usphone": "ɪˈvent",
+        "ukphone": "ɪˈvent"
+    },
+    {
+        "name": "evidence",
+        "trans": [
+            "bằng chứng"
+        ],
+        "usphone": "ˈevɪdəns",
+        "ukphone": "ˈevɪdəns"
+    },
+    {
+        "name": "examination",
+        "trans": [
+            "kỳ thi"
+        ],
+        "usphone": "ɪɡˌzæmɪˈneɪʃn",
+        "ukphone": "ɪɡˌzæmɪˈneɪʃn"
+    },
+    {
+        "name": "example",
+        "trans": [
+            "Ví dụ"
+        ],
+        "usphone": "ɪɡˈzɑːmpl",
+        "ukphone": "ɪɡˈzæmpl"
+    },
+    {
+        "name": "exception",
+        "trans": [
+            "ngoại lệ"
+        ],
+        "usphone": "ɪkˈsepʃn",
+        "ukphone": "ɪkˈsepʃn"
+    },
+    {
+        "name": "exchange",
+        "trans": [
+            "trao đổi"
+        ],
+        "usphone": "ɪksˈtʃeɪndʒ",
+        "ukphone": "ɪksˈtʃeɪndʒ"
+    },
+    {
+        "name": "excitement",
+        "trans": [
+            "vui mừng"
+        ],
+        "usphone": "ɪkˈsaɪtmənt",
+        "ukphone": "ɪkˈsaɪtmənt"
+    },
+    {
+        "name": "excursion",
+        "trans": [
+            "đi bộ đường dài"
+        ],
+        "usphone": "ɪkˈskɜːʃn",
+        "ukphone": "ɪkˈskɜːrʒn"
+    },
+    {
+        "name": "excuse",
+        "trans": [
+            "xin lỗi"
+        ],
+        "usphone": "ɪkˈskjuːs , ɪkˈskjuːz",
+        "ukphone": "ɪkˈskjuːs , ɪkˈskjuːz"
+    },
+    {
+        "name": "exercises",
+        "trans": [
+            "tập thể dục"
+        ],
+        "usphone": "ˈeksəsaɪzɪz",
+        "ukphone": "ˈeksərsaɪzɪz"
+    },
+    {
+        "name": "exhibition",
+        "trans": [
+            "Triển lãm"
+        ],
+        "usphone": "ˌeksɪˈbɪʃn",
+        "ukphone": "ˌeksɪˈbɪʃn"
+    },
+    {
+        "name": "existence",
+        "trans": [
+            "tồn tại"
+        ],
+        "usphone": "ɪɡˈzɪstəns",
+        "ukphone": "ɪɡˈzɪstəns"
+    },
+    {
+        "name": "existing",
+        "trans": [
+            "tồn tại"
+        ],
+        "usphone": "ɪɡˈzɪstɪŋ",
+        "ukphone": "ɪɡˈzɪstɪŋ"
+    },
+    {
+        "name": "expansion",
+        "trans": [
+            "mở rộng"
+        ],
+        "usphone": "ɪk'spænʃən",
+        "ukphone": "ɪk'spænʃn"
+    },
+    {
+        "name": "expense",
+        "trans": [
+            "chi phí"
+        ],
+        "usphone": "ɪkˈspens",
+        "ukphone": "ɪkˈspens"
+    },
+    {
+        "name": "experiment",
+        "trans": [
+            "thí nghiệm"
+        ],
+        "usphone": "ɪkˈsperɪmənt",
+        "ukphone": "ɪkˈsperɪmənt"
+    },
+    {
+        "name": "expert",
+        "trans": [
+            "chuyên gia"
+        ],
+        "usphone": "ˈekspɜːt",
+        "ukphone": "ˈekspɜːrt"
+    },
+    {
+        "name": "explanation",
+        "trans": [
+            "giải thích"
+        ],
+        "usphone": "ˌekspləˈneɪʃn",
+        "ukphone": "ˌekspləˈneɪʃn"
+    },
+    {
+        "name": "explosion",
+        "trans": [
+            "vụ nổ"
+        ],
+        "usphone": "ɪk'sploʒən",
+        "ukphone": "ɪk'splouʒn"
+    },
+    {
+        "name": "exposition",
+        "trans": [
+            "triển lãm"
+        ],
+        "usphone": "ˌekspəˈzɪʃn",
+        "ukphone": "ˌekspəˈzɪʃn"
+    },
+    {
+        "name": "exposure",
+        "trans": [
+            "tiếp xúc"
+        ],
+        "usphone": "ɪkˈspəʊʒə",
+        "ukphone": "ɪkˈspoʊʒər"
+    },
+    {
+        "name": "extension",
+        "trans": [
+            "phần mở rộng"
+        ],
+        "usphone": "ɪkˈstenʃn",
+        "ukphone": "ɪkˈstenʃn"
+    },
+    {
+        "name": "facility",
+        "trans": [
+            "cơ sở vật chất"
+        ],
+        "usphone": "fəˈsɪləti",
+        "ukphone": "fəˈsɪləti"
+    },
+    {
+        "name": "factor",
+        "trans": [
+            "yếu tố"
+        ],
+        "usphone": "ˈfæktə",
+        "ukphone": "ˈfæktər"
+    },
+    {
+        "name": "factory",
+        "trans": [
+            "nhà máy"
+        ],
+        "usphone": "ˈfæktri",
+        "ukphone": "ˈfæktri"
+    },
+    {
+        "name": "faculty",
+        "trans": [
+            "khoa"
+        ],
+        "usphone": "ˈfæklti",
+        "ukphone": "ˈfæklti"
+    },
+    {
+        "name": "failure",
+        "trans": [
+            "thất bại"
+        ],
+        "usphone": "ˈfeɪljə",
+        "ukphone": "ˈfeɪljər"
+    },
+    {
+        "name": "falcon",
+        "trans": [
+            "Falcon (một loại chim ưng)"
+        ],
+        "usphone": "ˈfɔː(l)k(ə)n",
+        "ukphone": "ˈfælkən"
+    },
+    {
+        "name": "fan",
+        "trans": [
+            "quạt"
+        ],
+        "usphone": "fæn",
+        "ukphone": "fæn"
+    },
+    {
+        "name": "fare",
+        "trans": [
+            "Giá vé du lịch và tàu thuyền"
+        ],
+        "usphone": "feə",
+        "ukphone": "fer"
+    },
+    {
+        "name": "farm",
+        "trans": [
+            "trang trại"
+        ],
+        "usphone": "fɑːm",
+        "ukphone": "fɑːrm"
+    },
+    {
+        "name": "farmer",
+        "trans": [
+            "nông dân"
+        ],
+        "usphone": "ˈfɑːmə",
+        "ukphone": "ˈfɑːrmər"
+    },
+    {
+        "name": "farming",
+        "trans": [
+            "Nông nghiệp"
+        ],
+        "usphone": "ˈfɑːmɪŋ",
+        "ukphone": "ˈfɑːrmɪŋ"
+    },
+    {
+        "name": "fashion",
+        "trans": [
+            "thời trang"
+        ],
+        "usphone": "ˈfæʃn",
+        "ukphone": "ˈfæʃn"
+    },
+    {
+        "name": "fat",
+        "trans": [
+            "béo"
+        ],
+        "usphone": "fæt",
+        "ukphone": "fæt"
+    },
+    {
+        "name": "feast",
+        "trans": [
+            "bữa tiệc"
+        ],
+        "usphone": "fiːst",
+        "ukphone": "fiːst"
+    },
+    {
+        "name": "feather",
+        "trans": [
+            "lông vũ"
+        ],
+        "usphone": "ˈfeðə",
+        "ukphone": "ˈfeðər"
+    },
+    {
+        "name": "feature",
+        "trans": [
+            "Tính năng"
+        ],
+        "usphone": "ˈfiːtʃə",
+        "ukphone": "ˈfiːtʃər"
+    },
+    {
+        "name": "feedback",
+        "trans": [
+            "phản hồi, trở lại"
+        ],
+        "usphone": "ˈfiːdbæk",
+        "ukphone": "ˈfiːdbæk"
+    },
+    {
+        "name": "fellowship",
+        "trans": [
+            "Học bổng, Quan hệ đối tác"
+        ],
+        "usphone": "'fɛloʃɪp",
+        "ukphone": "'felouʃɪp"
+    },
+    {
+        "name": "female",
+        "trans": [
+            "phụ nữ"
+        ],
+        "usphone": "ˈfiːmeɪl",
+        "ukphone": "ˈfiːmeɪl"
+    },
+    {
+        "name": "ferries",
+        "trans": [
+            "phà"
+        ],
+        "usphone": "ˈfɛriz",
+        "ukphone": "ˈfɛriz"
+    },
+    {
+        "name": "festival",
+        "trans": [
+            "lễ hội"
+        ],
+        "usphone": "ˈfestɪvl",
+        "ukphone": "ˈfestɪvl"
+    },
+    {
+        "name": "field",
+        "trans": [
+            "lĩnh vực"
+        ],
+        "usphone": "fiːld",
+        "ukphone": "fiːld"
+    },
+    {
+        "name": "figure",
+        "trans": [
+            "con số"
+        ],
+        "usphone": "ˈfɪɡə",
+        "ukphone": "ˈfɪɡjər"
+    },
+    {
+        "name": "film",
+        "trans": [
+            "phim"
+        ],
+        "usphone": "fɪlm",
+        "ukphone": "fɪlm"
+    },
+    {
+        "name": "finding",
+        "trans": [
+            "khám phá"
+        ],
+        "usphone": "ˈfaɪndɪŋ",
+        "ukphone": "ˈfaɪndɪŋ"
+    },
+    {
+        "name": "finger",
+        "trans": [
+            "ngón tay"
+        ],
+        "usphone": "ˈfɪŋɡə",
+        "ukphone": "ˈfɪŋɡər"
+    },
+    {
+        "name": "firms",
+        "trans": [
+            "tên thương mại, công ty"
+        ],
+        "usphone": "fɜːmz",
+        "ukphone": "fɜːrmz"
+    },
+    {
+        "name": "fish",
+        "trans": [
+            "cá"
+        ],
+        "usphone": "fɪʃ",
+        "ukphone": "fɪʃ"
+    },
+    {
+        "name": "fishing",
+        "trans": [
+            "câu cá"
+        ],
+        "usphone": "ˈfɪʃɪŋ",
+        "ukphone": "ˈfɪʃɪŋ"
+    },
+    {
+        "name": "flag",
+        "trans": [
+            "cờ"
+        ],
+        "usphone": "flæɡ",
+        "ukphone": "flæɡ"
+    },
+    {
+        "name": "flash",
+        "trans": [
+            "đèn flash"
+        ],
+        "usphone": "flæʃ",
+        "ukphone": "flæʃ"
+    },
+    {
+        "name": "flat",
+        "trans": [
+            "Căn hộ (kiểu Anh)"
+        ],
+        "usphone": "flæt",
+        "ukphone": "flæt"
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "chuyến bay"
+        ],
+        "usphone": "flaɪt",
+        "ukphone": "flaɪt"
+    },
+    {
+        "name": "flood",
+        "trans": [
+            "lũ lụt"
+        ],
+        "usphone": "flʌd",
+        "ukphone": "flʌd"
+    },
+    {
+        "name": "flooding",
+        "trans": [
+            "lũ lụt"
+        ],
+        "usphone": "ˈflʌdɪŋ",
+        "ukphone": "ˈflʌdɪŋ"
+    },
+    {
+        "name": "flour",
+        "trans": [
+            "bột mì"
+        ],
+        "usphone": "ˈflaʊə",
+        "ukphone": "ˈflaʊər"
+    },
+    {
+        "name": "flourish",
+        "trans": [
+            "khoe khoang"
+        ],
+        "usphone": "ˈflʌrɪʃ",
+        "ukphone": "ˈflɜːrɪʃ"
+    },
+    {
+        "name": "flow",
+        "trans": [
+            "giao thông"
+        ],
+        "usphone": "fləʊ",
+        "ukphone": "floʊ"
+    },
+    {
+        "name": "flu",
+        "trans": [
+            "bệnh cúm"
+        ],
+        "usphone": "fluː",
+        "ukphone": "fluː"
+    },
+    {
+        "name": "fly",
+        "trans": [
+            "bay"
+        ],
+        "usphone": "flaɪ",
+        "ukphone": "flaɪ"
+    },
+    {
+        "name": "forest",
+        "trans": [
+            "rừng"
+        ],
+        "usphone": "ˈfɒrɪst",
+        "ukphone": "ˈfɔːrɪst"
+    },
+    {
+        "name": "forestry",
+        "trans": [
+            "lâm nghiệp, khoa học lâm nghiệp"
+        ],
+        "usphone": "ˈfɒrɪstri",
+        "ukphone": "ˈfɔːrɪstri"
+    },
+    {
+        "name": "form",
+        "trans": [
+            "bàn"
+        ],
+        "usphone": "fɔːm",
+        "ukphone": "fɔːrm"
+    },
+    {
+        "name": "formula",
+        "trans": [
+            "công thức"
+        ],
+        "usphone": "ˈfɔːmjələ",
+        "ukphone": "ˈfɔːrmjələ"
+    },
+    {
+        "name": "fortnight",
+        "trans": [
+            "hai tuần mười bốn ngày"
+        ],
+        "usphone": "ˈfɔːtnaɪt",
+        "ukphone": "ˈfɔːrtnaɪt"
+    },
+    {
+        "name": "fortune",
+        "trans": [
+            "tài sản, may mắn"
+        ],
+        "usphone": "ˈfɔːtʃuːn",
+        "ukphone": "ˈfɔːrtʃən"
+    },
+    {
+        "name": "foyer",
+        "trans": [
+            "tiền sảnh"
+        ],
+        "usphone": "ˈfɔɪeɪ",
+        "ukphone": "ˈfɔɪər"
+    },
+    {
+        "name": "freedom",
+        "trans": [
+            "sự tự do"
+        ],
+        "usphone": "ˈfriːdəm",
+        "ukphone": "ˈfriːdəm"
+    },
+    {
+        "name": "freezer",
+        "trans": [
+            "tủ đông"
+        ],
+        "usphone": "ˈfriːzə",
+        "ukphone": "ˈfriːzər"
+    },
+    {
+        "name": "freshman",
+        "trans": [
+            "Sinh viên năm nhất"
+        ],
+        "usphone": "ˈfreʃmən",
+        "ukphone": "ˈfreʃmən"
+    },
+    {
+        "name": "fruit",
+        "trans": [
+            "trái cây"
+        ],
+        "usphone": "fruːt",
+        "ukphone": "fruːt"
+    },
+    {
+        "name": "fur",
+        "trans": [
+            "lông thú"
+        ],
+        "usphone": "fɜː",
+        "ukphone": "fɜːr"
+    },
+    {
+        "name": "furniture",
+        "trans": [
+            "đồ nội thất"
+        ],
+        "usphone": "ˈfɜːnɪtʃə",
+        "ukphone": "ˈfɜːrnɪtʃər"
+    },
+    {
+        "name": "future",
+        "trans": [
+            "tương lai"
+        ],
+        "usphone": "ˈfjuːtʃə",
+        "ukphone": "ˈfjuːtʃər"
+    },
+    {
+        "name": "gallery",
+        "trans": [
+            "phòng trưng bày nghệ thuật"
+        ],
+        "usphone": "ˈɡæləri",
+        "ukphone": "ˈɡæləri"
+    },
+    {
+        "name": "gap",
+        "trans": [
+            "khoảng trống"
+        ],
+        "usphone": "ɡæp",
+        "ukphone": "ɡæp"
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "gara"
+        ],
+        "usphone": "ˈɡærɑːʒ",
+        "ukphone": "ɡəˈrɑːʒ"
+    },
+    {
+        "name": "garbage",
+        "trans": [
+            "chất thải"
+        ],
+        "usphone": "ˈɡɑːbɪdʒ",
+        "ukphone": "ˈɡɑːrbɪdʒ"
+    },
+    {
+        "name": "garden",
+        "trans": [
+            "vườn"
+        ],
+        "usphone": "ˈɡɑːdn",
+        "ukphone": "ˈɡɑːrdn"
+    },
+    {
+        "name": "gasoline",
+        "trans": [
+            "Dầu (Mỹ)"
+        ],
+        "usphone": "ˈɡæsəliːn",
+        "ukphone": "ˈɡæsəliːn"
+    },
+    {
+        "name": "gender",
+        "trans": [
+            "giới tính"
+        ],
+        "usphone": "ˈdʒendə",
+        "ukphone": "ˈdʒendər"
+    },
+    {
+        "name": "germ",
+        "trans": [
+            "Vi khuẩn"
+        ],
+        "usphone": "dʒɜːm",
+        "ukphone": "dʒɜːrm"
+    },
+    {
+        "name": "gesture",
+        "trans": [
+            "cử chỉ"
+        ],
+        "usphone": "ˈdʒestʃə",
+        "ukphone": "ˈdʒestʃər"
+    },
+    {
+        "name": "glass",
+        "trans": [
+            "kính"
+        ],
+        "usphone": "ɡlɑːs",
+        "ukphone": "ɡlæs"
+    },
+    {
+        "name": "goal",
+        "trans": [
+            "mục tiêu"
+        ],
+        "usphone": "ɡəʊl",
+        "ukphone": "ɡoʊl"
+    },
+    {
+        "name": "gold",
+        "trans": [
+            "vàng"
+        ],
+        "usphone": "ɡəʊld",
+        "ukphone": "ɡoʊld"
+    },
+    {
+        "name": "golf",
+        "trans": [
+            "chơi gôn"
+        ],
+        "usphone": "ɡɒlf",
+        "ukphone": "ɡɑːlf"
+    },
+    {
+        "name": "grade",
+        "trans": [
+            "lớp"
+        ],
+        "usphone": "ɡreɪd",
+        "ukphone": "ɡreɪd"
+    },
+    {
+        "name": "grades",
+        "trans": [
+            "lớp"
+        ],
+        "usphone": "ɡreɪdz",
+        "ukphone": "ɡreɪdz"
+    },
+    {
+        "name": "graduate",
+        "trans": [
+            "tốt nghiệp"
+        ],
+        "usphone": "ˈɡrædʒuət , ˈɡrædʒueɪt",
+        "ukphone": "ˈɡrædʒuət , ˈɡrædʒueɪt"
+    },
+    {
+        "name": "graduates",
+        "trans": [
+            "tốt nghiệp"
+        ],
+        "usphone": "ˈɡrædʒueɪts",
+        "ukphone": "ˈɡrædʒueɪts"
+    },
+    {
+        "name": "grain",
+        "trans": [
+            "Ngũ cốc"
+        ],
+        "usphone": "ɡreɪn",
+        "ukphone": "ɡreɪn"
+    },
+    {
+        "name": "grass",
+        "trans": [
+            "cỏ"
+        ],
+        "usphone": "ɡrɑːs",
+        "ukphone": "ɡræs"
+    },
+    {
+        "name": "green",
+        "trans": [
+            "màu xanh lá cây"
+        ],
+        "usphone": "ɡriːn",
+        "ukphone": "ɡriːn"
+    },
+    {
+        "name": "ground",
+        "trans": [
+            "địa điểm, mặt đất"
+        ],
+        "usphone": "ɡraʊnd",
+        "ukphone": "ɡraʊnd"
+    },
+    {
+        "name": "group",
+        "trans": [
+            "nhóm, đội"
+        ],
+        "usphone": "ɡruːp",
+        "ukphone": "ɡruːp"
+    },
+    {
+        "name": "growth",
+        "trans": [
+            "phát triển"
+        ],
+        "usphone": "ɡrəʊθ",
+        "ukphone": "ɡroʊθ"
+    },
+    {
+        "name": "guest",
+        "trans": [
+            "khách"
+        ],
+        "usphone": "ɡest",
+        "ukphone": "ɡest"
+    },
+    {
+        "name": "guide",
+        "trans": [
+            "hướng dẫn viên du lịch, hướng dẫn viên"
+        ],
+        "usphone": "ɡaɪd",
+        "ukphone": "ɡaɪd"
+    },
+    {
+        "name": "gulf",
+        "trans": [
+            "vịnh, vực sâu"
+        ],
+        "usphone": "ɡʌlf",
+        "ukphone": "ɡʌlf"
+    },
+    {
+        "name": "guy",
+        "trans": [
+            "anh chàng"
+        ],
+        "usphone": "ɡaɪ",
+        "ukphone": "ɡaɪ"
+    },
+    {
+        "name": "gym",
+        "trans": [
+            "phòng tập thể dục"
+        ],
+        "usphone": "dʒɪm",
+        "ukphone": "dʒɪm"
+    },
+    {
+        "name": "habit",
+        "trans": [
+            "thói quen"
+        ],
+        "usphone": "ˈhæbɪt",
+        "ukphone": "ˈhæbɪt"
+    },
+    {
+        "name": "hand",
+        "trans": [
+            "bàn tay, con trỏ"
+        ],
+        "usphone": "hænd",
+        "ukphone": "hænd"
+    },
+    {
+        "name": "handball",
+        "trans": [
+            "bóng ném"
+        ],
+        "usphone": "ˈhan(d)bɔːl",
+        "ukphone": "ˈhæn(d)ˌbɔl"
+    },
+    {
+        "name": "handbooks",
+        "trans": [
+            "Hướng dẫn sử dụng"
+        ],
+        "usphone": "ˈhændˌbʊks",
+        "ukphone": "ˈhændˌbʊks"
+    },
+    {
+        "name": "handling",
+        "trans": [
+            "Quy trình"
+        ],
+        "usphone": "ˈhændlɪŋ",
+        "ukphone": "ˈhændlɪŋ"
+    },
+    {
+        "name": "handout",
+        "trans": [
+            "Tài liệu phát tay"
+        ],
+        "usphone": "ˈhændaʊt",
+        "ukphone": "ˈhændaʊt"
+    },
+    {
+        "name": "hat",
+        "trans": [
+            "mũ"
+        ],
+        "usphone": "hæt",
+        "ukphone": "hæt"
+    },
+    {
+        "name": "headache",
+        "trans": [
+            "đau đầu"
+        ],
+        "usphone": "ˈhedeɪk",
+        "ukphone": "ˈhedeɪk"
+    },
+    {
+        "name": "heading",
+        "trans": [
+            "Tiêu đề"
+        ],
+        "usphone": "ˈhedɪŋ",
+        "ukphone": "ˈhedɪŋ"
+    },
+    {
+        "name": "health",
+        "trans": [
+            "sức khỏe"
+        ],
+        "usphone": "helθ",
+        "ukphone": "helθ"
+    },
+    {
+        "name": "hearing",
+        "trans": [
+            "thính giác"
+        ],
+        "usphone": "ˈhɪərɪŋ",
+        "ukphone": "ˈhɪrɪŋ"
+    },
+    {
+        "name": "heart",
+        "trans": [
+            "trái tim"
+        ],
+        "usphone": "hɑːt",
+        "ukphone": "hɑːrt"
+    },
+    {
+        "name": "heating",
+        "trans": [
+            "sưởi ấm"
+        ],
+        "usphone": "ˈhiːtɪŋ",
+        "ukphone": "ˈhiːtɪŋ"
+    },
+    {
+        "name": "hen",
+        "trans": [
+            "con gà mái"
+        ],
+        "usphone": "hen",
+        "ukphone": "hen"
+    },
+    {
+        "name": "herb",
+        "trans": [
+            "thuốc thảo dược"
+        ],
+        "usphone": "hɜːb",
+        "ukphone": "ɜːrb"
+    },
+    {
+        "name": "hero",
+        "trans": [
+            "anh hùng"
+        ],
+        "usphone": "ˈhɪərəʊ",
+        "ukphone": "ˈhɪroʊ"
+    },
+    {
+        "name": "heroes",
+        "trans": [
+            "anh hùng"
+        ],
+        "usphone": "ˈhɪərəʊz",
+        "ukphone": "ˈhɪroʊz"
+    },
+    {
+        "name": "heroine",
+        "trans": [
+            "nữ anh hùng"
+        ],
+        "usphone": "ˈherəʊɪn",
+        "ukphone": "ˈheroʊɪn"
+    },
+    {
+        "name": "hike",
+        "trans": [
+            "đi bộ đường dài"
+        ],
+        "usphone": "haɪk",
+        "ukphone": "haɪk"
+    },
+    {
+        "name": "hiking",
+        "trans": [
+            "đi bộ đường dài"
+        ],
+        "usphone": "ˈhaɪkɪŋ",
+        "ukphone": "ˈhaɪkɪŋ"
+    },
+    {
+        "name": "hint",
+        "trans": [
+            "gợi ý"
+        ],
+        "usphone": "hɪnt",
+        "ukphone": "hɪnt"
+    },
+    {
+        "name": "hints",
+        "trans": [
+            "gợi ý"
+        ],
+        "usphone": "hɪnts",
+        "ukphone": "hɪnts"
+    },
+    {
+        "name": "historian",
+        "trans": [
+            "nhà sử học"
+        ],
+        "usphone": "hɪˈstɔːriən",
+        "ukphone": "hɪˈstɔːriən"
+    },
+    {
+        "name": "hit",
+        "trans": [
+            "Những thứ, kỹ thuật thu hút sự chú ý"
+        ],
+        "usphone": "hɪt",
+        "ukphone": "hɪt"
+    },
+    {
+        "name": "hits",
+        "trans": [
+            "Những thứ, kỹ thuật thu hút sự chú ý"
+        ],
+        "usphone": "hɪts",
+        "ukphone": "hɪts"
+    },
+    {
+        "name": "hobby",
+        "trans": [
+            "sở thích"
+        ],
+        "usphone": "ˈhɒbi",
+        "ukphone": "ˈhɑːbi"
+    },
+    {
+        "name": "holiday",
+        "trans": [
+            "kỳ nghỉ"
+        ],
+        "usphone": "ˈhɒlədeɪ",
+        "ukphone": "ˈhɑːlədeɪ"
+    },
+    {
+        "name": "horse",
+        "trans": [
+            "con ngựa"
+        ],
+        "usphone": "hɔːs",
+        "ukphone": "hɔːrs"
+    },
+    {
+        "name": "hospital",
+        "trans": [
+            "bệnh viện"
+        ],
+        "usphone": "ˈhɒspɪtl",
+        "ukphone": "ˈhɑːspɪtl"
+    },
+    {
+        "name": "housework",
+        "trans": [
+            "Việc nhà"
+        ],
+        "usphone": "ˈhaʊswɜːk",
+        "ukphone": "ˈhaʊswɜːrk"
+    },
+    {
+        "name": "housing",
+        "trans": [
+            "nhà ở"
+        ],
+        "usphone": "ˈhaʊzɪŋ",
+        "ukphone": "ˈhaʊzɪŋ"
+    },
+    {
+        "name": "households",
+        "trans": [
+            "gia đình"
+        ],
+        "usphone": "'haʊs,hold",
+        "ukphone": "ˈhaʊshəʊld"
+    },
+    {
+        "name": "hour",
+        "trans": [
+            "giờ"
+        ],
+        "usphone": "ˈaʊə",
+        "ukphone": "ˈaʊər"
+    },
+    {
+        "name": "hotel",
+        "trans": [
+            "khách sạn"
+        ],
+        "usphone": "həʊˈtel",
+        "ukphone": "hoʊˈtel"
+    },
+    {
+        "name": "hotline",
+        "trans": [
+            "Đường dây nóng"
+        ],
+        "usphone": "ˈhɒtlʌɪn",
+        "ukphone": "ˈhɑtˌlaɪn"
+    },
+    {
+        "name": "hunt",
+        "trans": [
+            "săn bắn"
+        ],
+        "usphone": "hʌnt",
+        "ukphone": "hʌnt"
+    },
+    {
+        "name": "hunting",
+        "trans": [
+            "săn bắn"
+        ],
+        "usphone": "ˈhʌntɪŋ",
+        "ukphone": "ˈhʌntɪŋ"
+    },
+    {
+        "name": "idea",
+        "trans": [
+            "ý tưởng"
+        ],
+        "usphone": "aɪˈdɪə",
+        "ukphone": "aɪˈdiːə"
+    },
+    {
+        "name": "identification",
+        "trans": [
+            "xác định"
+        ],
+        "usphone": "aɪˌdentɪfɪˈkeɪʃn",
+        "ukphone": "aɪˌdentɪfɪˈkeɪʃn"
+    },
+    {
+        "name": "identity",
+        "trans": [
+            "danh tính"
+        ],
+        "usphone": "aɪˈdentəti",
+        "ukphone": "aɪˈdentəti"
+    },
+    {
+        "name": "image",
+        "trans": [
+            "hình ảnh"
+        ],
+        "usphone": "ˈɪmɪdʒ",
+        "ukphone": "ˈɪmɪdʒ"
+    },
+    {
+        "name": "impact",
+        "trans": [
+            "ảnh hưởng"
+        ],
+        "usphone": "ˈɪmpækt , ɪmˈpækt",
+        "ukphone": "ˈɪmpækt , ɪmˈpækt"
+    },
+    {
+        "name": "imports",
+        "trans": [
+            "nhập khẩu"
+        ],
+        "usphone": "ˈɪmˌpɔrts",
+        "ukphone": "ˈɪmˌpɔːts"
+    },
+    {
+        "name": "inability",
+        "trans": [
+            "Không có khả năng"
+        ],
+        "usphone": "ˌɪnəˈbɪləti",
+        "ukphone": "ˌɪnəˈbɪləti"
+    },
+    {
+        "name": "incoming",
+        "trans": [
+            "Đến (điện thoại)"
+        ],
+        "usphone": "ˈɪnkʌmɪŋ",
+        "ukphone": "ˈɪnkʌmɪŋ"
+    },
+    {
+        "name": "index",
+        "trans": [
+            "chỉ mục"
+        ],
+        "usphone": "ˈɪndeks",
+        "ukphone": "ˈɪndeks"
+    },
+    {
+        "name": "industry",
+        "trans": [
+            "công nghiệp, ngành công nghiệp"
+        ],
+        "usphone": "ˈɪndəstri",
+        "ukphone": "ˈɪndəstri"
+    },
+    {
+        "name": "infection",
+        "trans": [
+            "viêm"
+        ],
+        "usphone": "ɪnˈfekʃn",
+        "ukphone": "ɪnˈfekʃn"
+    },
+    {
+        "name": "influence",
+        "trans": [
+            "ảnh hưởng"
+        ],
+        "usphone": "ˈɪnfluəns",
+        "ukphone": "ˈɪnfluəns"
+    },
+    {
+        "name": "information",
+        "trans": [
+            "thông tin"
+        ],
+        "usphone": "ˌɪnfəˈmeɪʃn",
+        "ukphone": "ˌɪnfərˈmeɪʃn"
+    },
+    {
+        "name": "injection",
+        "trans": [
+            "tiêm"
+        ],
+        "usphone": "ɪnˈdʒekʃn",
+        "ukphone": "ɪnˈdʒekʃn"
+    },
+    {
+        "name": "injury",
+        "trans": [
+            "bị thương"
+        ],
+        "usphone": "ˈɪndʒəri",
+        "ukphone": "ˈɪndʒəri"
+    },
+    {
+        "name": "inland",
+        "trans": [
+            "Nội địa"
+        ],
+        "usphone": "ˌɪnˈlænd , ˈɪnlænd",
+        "ukphone": "ˌɪnˈlænd , ˈɪnlænd"
+    },
+    {
+        "name": "insect",
+        "trans": [
+            "Côn trùng"
+        ],
+        "usphone": "ˈɪnsekt",
+        "ukphone": "ˈɪnsekt"
+    },
+    {
+        "name": "insomnia",
+        "trans": [
+            "mất ngủ"
+        ],
+        "usphone": "ɪnˈsɒmniə",
+        "ukphone": "ɪnˈsɑːmniə"
+    },
+    {
+        "name": "institute",
+        "trans": [
+            "cơ quan"
+        ],
+        "usphone": "ˈɪnstɪtjuːt",
+        "ukphone": "ˈɪnstɪtuːt"
+    },
+    {
+        "name": "institution",
+        "trans": [
+            "cơ quan"
+        ],
+        "usphone": "ˌɪnstɪˈtjuːʃn",
+        "ukphone": "ˌɪnstɪˈtuːʃn"
+    },
+    {
+        "name": "instruction",
+        "trans": [
+            "hướng dẫn"
+        ],
+        "usphone": "ɪnˈstrʌkʃn",
+        "ukphone": "ɪnˈstrʌkʃn"
+    },
+    {
+        "name": "instructor",
+        "trans": [
+            "huấn luyện viên"
+        ],
+        "usphone": "ɪnˈstrʌktə",
+        "ukphone": "ɪnˈstrʌktər"
+    },
+    {
+        "name": "instrument",
+        "trans": [
+            "nhạc cụ"
+        ],
+        "usphone": "ˈɪnstrəmənt",
+        "ukphone": "ˈɪnstrəmənt"
+    },
+    {
+        "name": "interest",
+        "trans": [
+            "Lãi suất"
+        ],
+        "usphone": "ˈɪntrəst",
+        "ukphone": "ˈɪntrəst"
+    },
+    {
+        "name": "Internet",
+        "trans": [
+            "Internet"
+        ],
+        "usphone": "'ɪntɚnɛt",
+        "ukphone": "'ɪntənet"
+    },
+    {
+        "name": "interviewer",
+        "trans": [
+            "người phỏng vấn, giám khảo"
+        ],
+        "usphone": "ˈɪntəvjuːə",
+        "ukphone": "ˈɪntərvjuːər"
+    },
+    {
+        "name": "introduction",
+        "trans": [
+            "Giới thiệu"
+        ],
+        "usphone": ",ɪntrə'dʌkʃən",
+        "ukphone": ",ɪntrə'dʌkʃ(ə)n"
+    },
+    {
+        "name": "investigator",
+        "trans": [
+            "điều tra viên"
+        ],
+        "usphone": "ɪnˈvestɪɡeɪtə",
+        "ukphone": "ɪnˈvestɪɡeɪtər"
+    },
+    {
+        "name": "investment",
+        "trans": [
+            "đầu tư"
+        ],
+        "usphone": "ɪnˈvestmənt",
+        "ukphone": "ɪnˈvestmənt"
+    },
+    {
+        "name": "irrigation",
+        "trans": [
+            "tưới tiêu"
+        ],
+        "usphone": "ˌɪrɪˈgeɪʃən",
+        "ukphone": "ˌɪrəˈgeɪʃən"
+    },
+    {
+        "name": "island",
+        "trans": [
+            "hòn đảo"
+        ],
+        "usphone": "ˈaɪlənd",
+        "ukphone": "ˈaɪlənd"
+    },
+    {
+        "name": "isolation",
+        "trans": [
+            "cách ly"
+        ],
+        "usphone": "ˌaɪsəˈleɪʃn",
+        "ukphone": "ˌaɪsəˈleɪʃn"
+    },
+    {
+        "name": "item",
+        "trans": [
+            "đồ vật, hàng hóa"
+        ],
+        "usphone": "ˈaɪtəm",
+        "ukphone": "ˈaɪtəm"
+    },
+    {
+        "name": "jacket",
+        "trans": [
+            "áo khoác"
+        ],
+        "usphone": "ˈdʒækɪt",
+        "ukphone": "ˈdʒækɪt"
+    },
+    {
+        "name": "jam",
+        "trans": [
+            "bị tắc"
+        ],
+        "usphone": "dʒæm",
+        "ukphone": "dʒæm"
+    },
+    {
+        "name": "jaw",
+        "trans": [
+            "hàm, cằm"
+        ],
+        "usphone": "dʒɔː",
+        "ukphone": "dʒɔː"
+    },
+    {
+        "name": "jeans",
+        "trans": [
+            "vải jean"
+        ],
+        "usphone": "ˈdʒinz",
+        "ukphone": "ˈdʒiːnz"
+    },
+    {
+        "name": "journal",
+        "trans": [
+            "tạp chí học thuật"
+        ],
+        "usphone": "ˈdʒɜːnl",
+        "ukphone": "ˈdʒɜːrnl"
+    },
+    {
+        "name": "judge",
+        "trans": [
+            "thẩm phán"
+        ],
+        "usphone": "dʒʌdʒ",
+        "ukphone": "dʒʌdʒ"
+    },
+    {
+        "name": "juice",
+        "trans": [
+            "(trái cây) nước ép"
+        ],
+        "usphone": "dʒuːs",
+        "ukphone": "dʒuːs"
+    },
+    {
+        "name": "junction",
+        "trans": [
+            "ngã tư"
+        ],
+        "usphone": "ˈdʒʌŋkʃn",
+        "ukphone": "ˈdʒʌŋkʃn"
+    },
+    {
+        "name": "junior",
+        "trans": [
+            "Thiếu niên"
+        ],
+        "usphone": "ˈdʒuːniə",
+        "ukphone": "ˈdʒuːniər"
+    },
+    {
+        "name": "keeper",
+        "trans": [
+            "người nuôi dưỡng"
+        ],
+        "usphone": "ˈkiːpə",
+        "ukphone": "ˈkiːpər"
+    },
+    {
+        "name": "kelp",
+        "trans": [
+            "rong biển"
+        ],
+        "usphone": "kɛlp",
+        "ukphone": "kɛlp"
+    },
+    {
+        "name": "keyword",
+        "trans": [
+            "từ khóa"
+        ],
+        "usphone": "ˈkiːwəːd",
+        "ukphone": "ˈkiˌwərd"
+    },
+    {
+        "name": "kid",
+        "trans": [
+            "bọn trẻ"
+        ],
+        "usphone": "kɪd",
+        "ukphone": "kɪd"
+    },
+    {
+        "name": "king",
+        "trans": [
+            "vua"
+        ],
+        "usphone": "kɪŋ",
+        "ukphone": "kɪŋ"
+    },
+    {
+        "name": "kiosk",
+        "trans": [
+            "chính ủy"
+        ],
+        "usphone": "ˈkiːɒsk",
+        "ukphone": "ˈkiːɑːsk"
+    },
+    {
+        "name": "kit",
+        "trans": [
+            "hộp công cụ"
+        ],
+        "usphone": "kɪt",
+        "ukphone": "kɪt"
+    },
+    {
+        "name": "kitchen",
+        "trans": [
+            "nhà bếp"
+        ],
+        "usphone": "ˈkɪtʃɪn",
+        "ukphone": "ˈkɪtʃɪn"
+    },
+    {
+        "name": "kits",
+        "trans": [
+            "hộp công cụ"
+        ],
+        "usphone": "kits",
+        "ukphone": "kits"
+    },
+    {
+        "name": "knife",
+        "trans": [
+            "Con dao"
+        ],
+        "usphone": "naɪf",
+        "ukphone": "naɪf"
+    },
+    {
+        "name": "knowledge",
+        "trans": [
+            "kiến thức"
+        ],
+        "usphone": "ˈnɒlɪdʒ",
+        "ukphone": "ˈnɑːlɪdʒ"
+    },
+    {
+        "name": "koala",
+        "trans": [
+            "koala"
+        ],
+        "usphone": "kəʊˈɑːlə",
+        "ukphone": "koʊˈɑːlə"
+    },
+    {
+        "name": "lab",
+        "trans": [
+            "phòng thí nghiệm"
+        ],
+        "usphone": "læb",
+        "ukphone": "læb"
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "hồ"
+        ],
+        "usphone": "leɪk",
+        "ukphone": "leɪk"
+    },
+    {
+        "name": "lamp",
+        "trans": [
+            "đèn"
+        ],
+        "usphone": "læmp",
+        "ukphone": "læmp"
+    },
+    {
+        "name": "land",
+        "trans": [
+            "đất đai"
+        ],
+        "usphone": "lænd",
+        "ukphone": "lænd"
+    },
+    {
+        "name": "landmark",
+        "trans": [
+            "tòa nhà mang tính bước ngoặt, biển báo đường bộ"
+        ],
+        "usphone": "ˈlændmɑːk",
+        "ukphone": "ˈlændmɑːrk"
+    },
+    {
+        "name": "landscape",
+        "trans": [
+            "phong cảnh"
+        ],
+        "usphone": "ˈlændskeɪp",
+        "ukphone": "ˈlændskeɪp"
+    },
+    {
+        "name": "language",
+        "trans": [
+            "Ngôn ngữ"
+        ],
+        "usphone": "ˈlæŋɡwɪdʒ",
+        "ukphone": "ˈlæŋɡwɪdʒ"
+    },
+    {
+        "name": "laptop",
+        "trans": [
+            "máy tính xách tay"
+        ],
+        "usphone": "ˈlæptɒp",
+        "ukphone": "ˈlæptɑːp"
+    },
+    {
+        "name": "laser",
+        "trans": [
+            "tia laze"
+        ],
+        "usphone": "ˈleɪzə",
+        "ukphone": "ˈleɪzər"
+    },
+    {
+        "name": "lava",
+        "trans": [
+            "đá núi lửa"
+        ],
+        "usphone": "ˈlɑːvə",
+        "ukphone": "ˈlɑːvə"
+    },
+    {
+        "name": "lawyer",
+        "trans": [
+            "luật sư"
+        ],
+        "usphone": "ˈlɔːjə",
+        "ukphone": "ˈlɔːjər"
+    },
+    {
+        "name": "layer",
+        "trans": [
+            "lớp"
+        ],
+        "usphone": "ˈleɪə",
+        "ukphone": "ler"
+    },
+    {
+        "name": "lecture",
+        "trans": [
+            "dạy"
+        ],
+        "usphone": "ˈlektʃə",
+        "ukphone": "ˈlektʃər"
+    },
+    {
+        "name": "lecturer",
+        "trans": [
+            "giáo viên"
+        ],
+        "usphone": "ˈlektʃərə",
+        "ukphone": "ˈlektʃərər"
+    },
+    {
+        "name": "leisure",
+        "trans": [
+            "Giải trí"
+        ],
+        "usphone": "ˈleʒə",
+        "ukphone": "ˈliːʒər"
+    },
+    {
+        "name": "lemon",
+        "trans": [
+            "chanh"
+        ],
+        "usphone": "ˈlemən",
+        "ukphone": "ˈlemən"
+    },
+    {
+        "name": "lender",
+        "trans": [
+            "Người cho người khác mượn tài sản"
+        ],
+        "usphone": "'lɛndɚ",
+        "ukphone": "'lendə"
+    },
+    {
+        "name": "length",
+        "trans": [
+            "chiều dài"
+        ],
+        "usphone": "leŋθ",
+        "ukphone": "leŋθ"
+    },
+    {
+        "name": "lesson",
+        "trans": [
+            "các khóa học"
+        ],
+        "usphone": "ˈlesn",
+        "ukphone": "ˈlesn"
+    },
+    {
+        "name": "letter",
+        "trans": [
+            "lá thư"
+        ],
+        "usphone": "ˈletə",
+        "ukphone": "ˈletər"
+    },
+    {
+        "name": "level",
+        "trans": [
+            "trình độ"
+        ],
+        "usphone": "ˈlevl",
+        "ukphone": "ˈlevl"
+    },
+    {
+        "name": "library",
+        "trans": [
+            "thư viện"
+        ],
+        "usphone": "ˈlaɪbrəri",
+        "ukphone": "ˈlaɪbreri"
+    },
+    {
+        "name": "lift",
+        "trans": [
+            "Thang máy"
+        ],
+        "usphone": "lɪft",
+        "ukphone": "lɪft"
+    },
+    {
+        "name": "light",
+        "trans": [
+            "đèn"
+        ],
+        "usphone": "laɪt",
+        "ukphone": "laɪt"
+    },
+    {
+        "name": "line",
+        "trans": [
+            "đội"
+        ],
+        "usphone": "laɪn",
+        "ukphone": "laɪn"
+    },
+    {
+        "name": "lion",
+        "trans": [
+            "sư tử"
+        ],
+        "usphone": "'laɪən",
+        "ukphone": "'laɪən"
+    },
+    {
+        "name": "lists",
+        "trans": [
+            "danh sách, danh sách kiểm tra"
+        ],
+        "usphone": "lɪsts",
+        "ukphone": "lɪsts"
+    },
+    {
+        "name": "loan",
+        "trans": [
+            "tiền vay"
+        ],
+        "usphone": "ləʊn",
+        "ukphone": "loʊn"
+    },
+    {
+        "name": "location",
+        "trans": [
+            "vị trí địa lý"
+        ],
+        "usphone": "ləʊˈkeɪʃn",
+        "ukphone": "loʊˈkeɪʃn"
+    },
+    {
+        "name": "lock",
+        "trans": [
+            "khóa"
+        ],
+        "usphone": "lɒk",
+        "ukphone": "lɑːk"
+    },
+    {
+        "name": "loss",
+        "trans": [
+            "mất mát"
+        ],
+        "usphone": "lɒs",
+        "ukphone": "lɔːs"
+    },
+    {
+        "name": "lounge",
+        "trans": [
+            "Phòng chờ"
+        ],
+        "usphone": "laʊndʒ",
+        "ukphone": "laʊndʒ"
+    },
+    {
+        "name": "loyalty",
+        "trans": [
+            "lòng trung thành"
+        ],
+        "usphone": "ˈlɔɪəlti",
+        "ukphone": "ˈlɔɪəlti"
+    },
+    {
+        "name": "luck",
+        "trans": [
+            "may mắn"
+        ],
+        "usphone": "lʌk",
+        "ukphone": "lʌk"
+    },
+    {
+        "name": "lunch",
+        "trans": [
+            "bữa trưa"
+        ],
+        "usphone": "lʌntʃ",
+        "ukphone": "lʌntʃ"
+    },
+    {
+        "name": "lung",
+        "trans": [
+            "Phổi"
+        ],
+        "usphone": "lʌŋ",
+        "ukphone": "lʌŋ"
+    },
+    {
+        "name": "machine",
+        "trans": [
+            "máy móc"
+        ],
+        "usphone": "məˈʃiːn",
+        "ukphone": "məˈʃiːn"
+    },
+    {
+        "name": "magazine",
+        "trans": [
+            "tạp chí"
+        ],
+        "usphone": "ˌmæɡəˈziːn",
+        "ukphone": "ˈmæɡəziːn"
+    },
+    {
+        "name": "maid",
+        "trans": [
+            "người giúp việc"
+        ],
+        "usphone": "meɪd",
+        "ukphone": "meɪd"
+    },
+    {
+        "name": "mail",
+        "trans": [
+            "Thư"
+        ],
+        "usphone": "meɪl",
+        "ukphone": "meɪl"
+    },
+    {
+        "name": "majority",
+        "trans": [
+            "đa số"
+        ],
+        "usphone": "məˈdʒɒrəti",
+        "ukphone": "məˈdʒɔːrəti"
+    },
+    {
+        "name": "making",
+        "trans": [
+            "sản xuất"
+        ],
+        "usphone": "ˈmeɪkɪŋ",
+        "ukphone": "ˈmeɪkɪŋ"
+    },
+    {
+        "name": "male",
+        "trans": [
+            "nam"
+        ],
+        "usphone": "meɪl",
+        "ukphone": "meɪl"
+    },
+    {
+        "name": "manager",
+        "trans": [
+            "người quản lý"
+        ],
+        "usphone": "ˈmænɪdʒə",
+        "ukphone": "ˈmænɪdʒər"
+    },
+    {
+        "name": "mane",
+        "trans": [
+            "(sư tử, v.v.) bờm"
+        ],
+        "usphone": "meɪn",
+        "ukphone": "meɪn"
+    },
+    {
+        "name": "manufacture",
+        "trans": [
+            "sản xuất"
+        ],
+        "usphone": "ˌmænjuˈfæktʃə",
+        "ukphone": "ˌmænjuˈfæktʃər"
+    },
+    {
+        "name": "map",
+        "trans": [
+            "bản đồ"
+        ],
+        "usphone": "mæp",
+        "ukphone": "mæp"
+    },
+    {
+        "name": "margin",
+        "trans": [
+            "lề"
+        ],
+        "usphone": "ˈmɑːdʒɪn",
+        "ukphone": "ˈmɑːrdʒɪn"
+    },
+    {
+        "name": "mark",
+        "trans": [
+            "ghi điểm"
+        ],
+        "usphone": "mɑːk",
+        "ukphone": "mɑːrk"
+    },
+    {
+        "name": "market",
+        "trans": [
+            "thị trường"
+        ],
+        "usphone": "ˈmɑːkɪt",
+        "ukphone": "ˈmɑːrkɪt"
+    },
+    {
+        "name": "marketing",
+        "trans": [
+            "Tiếp thị"
+        ],
+        "usphone": "ˈmɑːkɪtɪŋ",
+        "ukphone": "ˈmɑːrkɪtɪŋ"
+    },
+    {
+        "name": "marsh",
+        "trans": [
+            "đầm lầy"
+        ],
+        "usphone": "mɑːʃ",
+        "ukphone": "mɑːrʃ"
+    },
+    {
+        "name": "master",
+        "trans": [
+            "Bậc thầy"
+        ],
+        "usphone": "ˈmɑːstə",
+        "ukphone": "ˈmæstər"
+    },
+    {
+        "name": "mat",
+        "trans": [
+            "miếng đệm chân"
+        ],
+        "usphone": "mæt",
+        "ukphone": "mæt"
+    },
+    {
+        "name": "matching",
+        "trans": [
+            "trận đấu"
+        ],
+        "usphone": "ˈmætʃɪŋ",
+        "ukphone": "ˈmætʃɪŋ"
+    },
+    {
+        "name": "material",
+        "trans": [
+            "Chất liệu"
+        ],
+        "usphone": "məˈtɪəriəl",
+        "ukphone": "məˈtɪriəl"
+    },
+    {
+        "name": "maturity",
+        "trans": [
+            "trưởng thành"
+        ],
+        "usphone": "məˈtʃʊərəti",
+        "ukphone": "məˈtʃʊrəti"
+    },
+    {
+        "name": "maximum",
+        "trans": [
+            "tối đa"
+        ],
+        "usphone": "ˈmæksəməm",
+        "ukphone": "'mæksɪməm"
+    },
+    {
+        "name": "meal",
+        "trans": [
+            "bữa ăn"
+        ],
+        "usphone": "miːl",
+        "ukphone": "miːl"
+    },
+    {
+        "name": "measure",
+        "trans": [
+            "Đo lường"
+        ],
+        "usphone": "ˈmeʒə",
+        "ukphone": "ˈmeʒər"
+    },
+    {
+        "name": "measurement",
+        "trans": [
+            "Đo lường"
+        ],
+        "usphone": "ˈmeʒəmənt",
+        "ukphone": "ˈmeʒərmənt"
+    },
+    {
+        "name": "meat",
+        "trans": [
+            "thịt"
+        ],
+        "usphone": "miːt",
+        "ukphone": "miːt"
+    },
+    {
+        "name": "media",
+        "trans": [
+            "phương tiện truyền thông"
+        ],
+        "usphone": "ˈmiːdiə",
+        "ukphone": "ˈmiːdiə"
+    },
+    {
+        "name": "medication",
+        "trans": [
+            "y học"
+        ],
+        "usphone": "ˌmedɪˈkeɪʃn",
+        "ukphone": "ˌmedɪˈkeɪʃn"
+    },
+    {
+        "name": "medicine",
+        "trans": [
+            "y học"
+        ],
+        "usphone": "ˈmedsn",
+        "ukphone": "ˈmedɪsn"
+    },
+    {
+        "name": "medium",
+        "trans": [
+            "Vừa phải, phương tiện truyền thông"
+        ],
+        "usphone": "ˈmiːdiəm",
+        "ukphone": "ˈmiːdiəm"
+    },
+    {
+        "name": "method",
+        "trans": [
+            "phương pháp"
+        ],
+        "usphone": "ˈmeθəd",
+        "ukphone": "ˈmeθəd"
+    },
+    {
+        "name": "microphone",
+        "trans": [
+            "Micrô"
+        ],
+        "usphone": "ˈmaɪkrəfəʊn",
+        "ukphone": "ˈmaɪkrəfoʊn"
+    },
+    {
+        "name": "migration",
+        "trans": [
+            "di cư, nhập cư"
+        ],
+        "usphone": "maɪˈɡreɪʃn",
+        "ukphone": "maɪˈɡreɪʃn"
+    },
+    {
+        "name": "mile",
+        "trans": [
+            "dặm"
+        ],
+        "usphone": "maɪl",
+        "ukphone": "maɪl"
+    },
+    {
+        "name": "mileage",
+        "trans": [
+            "máy đo đường"
+        ],
+        "usphone": "ˈmaɪlɪdʒ",
+        "ukphone": "ˈmaɪlɪdʒ"
+    },
+    {
+        "name": "milk",
+        "trans": [
+            "sữa"
+        ],
+        "usphone": "mɪlk",
+        "ukphone": "mɪlk"
+    },
+    {
+        "name": "mill",
+        "trans": [
+            "xưởng"
+        ],
+        "usphone": "mɪl",
+        "ukphone": "mɪl"
+    },
+    {
+        "name": "mine",
+        "trans": [
+            "Của tôi"
+        ],
+        "usphone": "maɪn",
+        "ukphone": "maɪn"
+    },
+    {
+        "name": "mineral",
+        "trans": [
+            "Khoáng sản"
+        ],
+        "usphone": "ˈmɪnərəl",
+        "ukphone": "ˈmɪnərəl"
+    },
+    {
+        "name": "minimum",
+        "trans": [
+            "nhỏ nhất"
+        ],
+        "usphone": "ˈmɪnɪməm",
+        "ukphone": "ˈmɪnɪməm"
+    },
+    {
+        "name": "minute",
+        "trans": [
+            "phút"
+        ],
+        "usphone": "'mɪnɪt",
+        "ukphone": "'mɪnɪt"
+    },
+    {
+        "name": "mixture",
+        "trans": [
+            "hỗn hợp"
+        ],
+        "usphone": "ˈmɪkstʃə",
+        "ukphone": "ˈmɪkstʃər"
+    },
+    {
+        "name": "model",
+        "trans": [
+            "người mẫu"
+        ],
+        "usphone": "ˈmɒdl",
+        "ukphone": "ˈmɑːdl"
+    },
+    {
+        "name": "money",
+        "trans": [
+            "tiền bạc"
+        ],
+        "usphone": "ˈmʌni",
+        "ukphone": "ˈmʌni"
+    },
+    {
+        "name": "monopoly",
+        "trans": [
+            "độc quyền"
+        ],
+        "usphone": "məˈnɒpəli",
+        "ukphone": "məˈnɑːpəli"
+    },
+    {
+        "name": "month",
+        "trans": [
+            "tháng"
+        ],
+        "usphone": "mʌnθ",
+        "ukphone": "mʌnθ"
+    },
+    {
+        "name": "mood",
+        "trans": [
+            "cảm xúc"
+        ],
+        "usphone": "muːd",
+        "ukphone": "muːd"
+    },
+    {
+        "name": "morality",
+        "trans": [
+            "đạo đức, tinh thần"
+        ],
+        "usphone": "məˈræləti",
+        "ukphone": "məˈræləti"
+    },
+    {
+        "name": "mosquito",
+        "trans": [
+            "muỗi"
+        ],
+        "usphone": "məˈskiːtəʊ",
+        "ukphone": "məˈskiːtoʊ"
+    },
+    {
+        "name": "motel",
+        "trans": [
+            "Nhà nghỉ"
+        ],
+        "usphone": "məʊˈtel",
+        "ukphone": "moʊˈtel"
+    },
+    {
+        "name": "mountain",
+        "trans": [
+            "núi"
+        ],
+        "usphone": "ˈmaʊntən",
+        "ukphone": "ˈmaʊntn"
+    },
+    {
+        "name": "moustache",
+        "trans": [
+            "ria mép ở môi trên"
+        ],
+        "usphone": "məˈstɑːʃ",
+        "ukphone": "ˈmʌstæʃ"
+    },
+    {
+        "name": "mouth",
+        "trans": [
+            "miệng"
+        ],
+        "usphone": "maʊθ , maʊð",
+        "ukphone": "maʊθ , maʊð"
+    },
+    {
+        "name": "movie",
+        "trans": [
+            "phim"
+        ],
+        "usphone": "ˈmuːvi",
+        "ukphone": "ˈmuːvi"
+    },
+    {
+        "name": "muscle",
+        "trans": [
+            "cơ bắp"
+        ],
+        "usphone": "ˈmʌsl",
+        "ukphone": "ˈmʌsl"
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "viện bảo tàng"
+        ],
+        "usphone": "mjuˈziːəm",
+        "ukphone": "mjuˈziːəm"
+    },
+    {
+        "name": "music",
+        "trans": [
+            "âm nhạc"
+        ],
+        "usphone": "ˈmjuːzɪk",
+        "ukphone": "ˈmjuːzɪk"
+    },
+    {
+        "name": "musical",
+        "trans": [
+            "âm nhạc"
+        ],
+        "usphone": "ˈmjuːzɪkl",
+        "ukphone": "ˈmjuːzɪkl"
+    },
+    {
+        "name": "musician",
+        "trans": [
+            "nhạc sĩ"
+        ],
+        "usphone": "mjuˈzɪʃn",
+        "ukphone": "mjuˈzɪʃn"
+    },
+    {
+        "name": "nap",
+        "trans": [
+            "ngủ trưa"
+        ],
+        "usphone": "næp",
+        "ukphone": "næp"
+    },
+    {
+        "name": "nature",
+        "trans": [
+            "tự nhiên"
+        ],
+        "usphone": "ˈneɪtʃə",
+        "ukphone": "ˈneɪtʃər"
+    },
+    {
+        "name": "naught",
+        "trans": [
+            "Không=không có"
+        ],
+        "usphone": "nɔːt",
+        "ukphone": "nɔːt"
+    },
+    {
+        "name": "neck",
+        "trans": [
+            "cổ"
+        ],
+        "usphone": "nek",
+        "ukphone": "nek"
+    },
+    {
+        "name": "net",
+        "trans": [
+            "mạng lưới"
+        ],
+        "usphone": "net",
+        "ukphone": "net"
+    },
+    {
+        "name": "newspaper",
+        "trans": [
+            "tờ báo"
+        ],
+        "usphone": "ˈnjuːzpeɪpə",
+        "ukphone": "ˈnuːzpeɪpər"
+    },
+    {
+        "name": "night",
+        "trans": [
+            "đêm"
+        ],
+        "usphone": "naɪt",
+        "ukphone": "naɪt"
+    },
+    {
+        "name": "noise",
+        "trans": [
+            "tiếng ồn"
+        ],
+        "usphone": "nɔɪz",
+        "ukphone": "nɔɪz"
+    },
+    {
+        "name": "north",
+        "trans": [
+            "phía bắc"
+        ],
+        "usphone": "nɔːθ",
+        "ukphone": "nɔːrθ"
+    },
+    {
+        "name": "northeast",
+        "trans": [
+            "Đông Bắc"
+        ],
+        "usphone": "ˌnɔːθˈiːst",
+        "ukphone": "ˌnɔːrˈθist"
+    },
+    {
+        "name": "northwest",
+        "trans": [
+            "Tây Bắc"
+        ],
+        "usphone": "ˌnɔːθˈwest , nɔːˈwest",
+        "ukphone": "ˌnɔːrˈθwest"
+    },
+    {
+        "name": "nose",
+        "trans": [
+            "mũi"
+        ],
+        "usphone": "nəʊz",
+        "ukphone": "noʊz"
+    },
+    {
+        "name": "note",
+        "trans": [
+            "Ghi chú"
+        ],
+        "usphone": "nəʊt",
+        "ukphone": "noʊt"
+    },
+    {
+        "name": "notice",
+        "trans": [
+            "Lưu ý"
+        ],
+        "usphone": "ˈnəʊtɪs",
+        "ukphone": "ˈnoʊtɪs"
+    },
+    {
+        "name": "nurse",
+        "trans": [
+            "y tá"
+        ],
+        "usphone": "nɜːs",
+        "ukphone": "nɜːrs"
+    },
+    {
+        "name": "nursery",
+        "trans": [
+            "mẫu giáo"
+        ],
+        "usphone": "ˈnɜːsəri",
+        "ukphone": "ˈnɜːrsəri"
+    },
+    {
+        "name": "nursing",
+        "trans": [
+            "quan tâm"
+        ],
+        "usphone": "ˈnɜːsɪŋ",
+        "ukphone": "ˈnɜːrsɪŋ"
+    },
+    {
+        "name": "nut",
+        "trans": [
+            "quả hạch"
+        ],
+        "usphone": "nʌt",
+        "ukphone": "nʌt"
+    },
+    {
+        "name": "nutrition",
+        "trans": [
+            "Dinh dưỡng"
+        ],
+        "usphone": "njuˈtrɪʃn",
+        "ukphone": "nuˈtrɪʃn"
+    },
+    {
+        "name": "objective",
+        "trans": [
+            "mục đích, mục tiêu"
+        ],
+        "usphone": "əbˈdʒektɪv",
+        "ukphone": "əbˈdʒektɪv"
+    },
+    {
+        "name": "occasion",
+        "trans": [
+            "dịp, thời gian"
+        ],
+        "usphone": "əˈkeɪʒn",
+        "ukphone": "əˈkeɪʒn"
+    },
+    {
+        "name": "occupant",
+        "trans": [
+            "người chiếm hữu, thường trú"
+        ],
+        "usphone": "ˈɒkjəpənt",
+        "ukphone": "ˈɑːkjəpənt"
+    },
+    {
+        "name": "ocean",
+        "trans": [
+            "đại dương"
+        ],
+        "usphone": "ˈəʊʃn",
+        "ukphone": "ˈoʊʃn"
+    },
+    {
+        "name": "oculist",
+        "trans": [
+            "bác sĩ nhãn khoa"
+        ],
+        "usphone": "'ɑkjəlɪst",
+        "ukphone": "'ɒkjʊlɪst"
+    },
+    {
+        "name": "ointment",
+        "trans": [
+            "Thuốc mỡ"
+        ],
+        "usphone": "ˈɔɪntmənt",
+        "ukphone": "ˈɔɪntmənt"
+    },
+    {
+        "name": "option",
+        "trans": [
+            "chọn"
+        ],
+        "usphone": "ˈɒpʃn",
+        "ukphone": "ˈɑːpʃn"
+    },
+    {
+        "name": "order",
+        "trans": [
+            "lệnh"
+        ],
+        "usphone": "ˈɔːdə",
+        "ukphone": "ˈɔːrdər"
+    },
+    {
+        "name": "ordinary",
+        "trans": [
+            "Bình thường"
+        ],
+        "usphone": "ˈɔːdnri",
+        "ukphone": "ˈɔːrdneri"
+    },
+    {
+        "name": "organiser",
+        "trans": [
+            "người tổ chức"
+        ],
+        "usphone": "'ɔ:gənaɪzə",
+        "ukphone": "'ɔgənaɪzə"
+    },
+    {
+        "name": "original",
+        "trans": [
+            "ban đầu"
+        ],
+        "usphone": "əˈrɪdʒənl",
+        "ukphone": "əˈrɪdʒənl"
+    },
+    {
+        "name": "outline",
+        "trans": [
+            "phác thảo"
+        ],
+        "usphone": "ˈaʊtlaɪn",
+        "ukphone": "ˈaʊtlaɪn"
+    },
+    {
+        "name": "overdraft",
+        "trans": [
+            "thấu chi"
+        ],
+        "usphone": "ˈəʊvədrɑːft",
+        "ukphone": "ˈoʊvərdræft"
+    },
+    {
+        "name": "owner",
+        "trans": [
+            "chủ sở hữu"
+        ],
+        "usphone": "ˈəʊnə",
+        "ukphone": "ˈoʊnər"
+    },
+    {
+        "name": "ownership",
+        "trans": [
+            "quyền sở hữu"
+        ],
+        "usphone": "ˈəʊnəʃɪp",
+        "ukphone": "ˈoʊnərʃɪp"
+    },
+    {
+        "name": "Oxford",
+        "trans": [
+            "Oxford"
+        ],
+        "usphone": "ˈɑk.sfərd",
+        "ukphone": "ˈɒks.fərd"
+    },
+    {
+        "name": "package",
+        "trans": [
+            "bao bì"
+        ],
+        "usphone": "ˈpækɪdʒ",
+        "ukphone": "ˈpækɪdʒ"
+    },
+    {
+        "name": "page",
+        "trans": [
+            "Số trang"
+        ],
+        "usphone": "peɪdʒ",
+        "ukphone": "peɪdʒ"
+    },
+    {
+        "name": "paint",
+        "trans": [
+            "sơn"
+        ],
+        "usphone": "peɪnt",
+        "ukphone": "peɪnt"
+    },
+    {
+        "name": "painting",
+        "trans": [
+            "bức vẽ"
+        ],
+        "usphone": "ˈpeɪntɪŋ",
+        "ukphone": "ˈpeɪntɪŋ"
+    },
+    {
+        "name": "pair",
+        "trans": [
+            "một cặp"
+        ],
+        "usphone": "peə",
+        "ukphone": "per"
+    },
+    {
+        "name": "pal",
+        "trans": [
+            "đối tác"
+        ],
+        "usphone": "pæl",
+        "ukphone": "pæl"
+    },
+    {
+        "name": "palace",
+        "trans": [
+            "cung điện"
+        ],
+        "usphone": "ˈpæləs",
+        "ukphone": "ˈpæləs"
+    },
+    {
+        "name": "panic",
+        "trans": [
+            "nỗi sợ hãi"
+        ],
+        "usphone": "ˈpænɪk",
+        "ukphone": "ˈpænɪk"
+    },
+    {
+        "name": "paper",
+        "trans": [
+            "báo, giấy"
+        ],
+        "usphone": "ˈpeɪpə",
+        "ukphone": "ˈpeɪpər"
+    },
+    {
+        "name": "parcel",
+        "trans": [
+            "gói"
+        ],
+        "usphone": "ˈpɑːsl",
+        "ukphone": "ˈpɑːrsl"
+    },
+    {
+        "name": "parent",
+        "trans": [
+            "cha mẹ"
+        ],
+        "usphone": "ˈpeərənt",
+        "ukphone": "ˈperənt"
+    },
+    {
+        "name": "park",
+        "trans": [
+            "Park.Parking"
+        ],
+        "usphone": "pɑːk",
+        "ukphone": "pɑːrk"
+    },
+    {
+        "name": "parking",
+        "trans": [
+            "bãi đậu xe"
+        ],
+        "usphone": "ˈpɑːkɪŋ",
+        "ukphone": "ˈpɑːrkɪŋ"
+    },
+    {
+        "name": "participant",
+        "trans": [
+            "người tham gia"
+        ],
+        "usphone": "pɑːˈtɪsɪpənt",
+        "ukphone": "pɑːrˈtɪsɪpənt"
+    },
+    {
+        "name": "passages",
+        "trans": [
+            "vượt qua"
+        ],
+        "usphone": "ˈpæsɪdʒɪz",
+        "ukphone": "ˈpæsədʒəz"
+    },
+    {
+        "name": "passenger",
+        "trans": [
+            "du khách"
+        ],
+        "usphone": "ˈpæsɪndʒə",
+        "ukphone": "ˈpæsɪndʒər"
+    },
+    {
+        "name": "pastime",
+        "trans": [
+            "Giải trí"
+        ],
+        "usphone": "ˈpɑːstaɪm",
+        "ukphone": "ˈpæstaɪm"
+    },
+    {
+        "name": "patient",
+        "trans": [
+            "bệnh nhân"
+        ],
+        "usphone": "ˈpeɪʃnt",
+        "ukphone": "ˈpeɪʃnt"
+    },
+    {
+        "name": "payment",
+        "trans": [
+            "thù lao, thanh toán"
+        ],
+        "usphone": "ˈpeɪmənt",
+        "ukphone": "ˈpeɪmənt"
+    },
+    {
+        "name": "pedestrian",
+        "trans": [
+            "người đi bộ"
+        ],
+        "usphone": "pəˈdestriən",
+        "ukphone": "pəˈdestriən"
+    },
+    {
+        "name": "pension",
+        "trans": [
+            "lương hưu"
+        ],
+        "usphone": "ˈpenʃn , ˈpɒ̃sjɒ̃",
+        "ukphone": "ˈpenʃn , pɑːnsiˈoʊn"
+    },
+    {
+        "name": "pensioners",
+        "trans": [
+            "người về hưu"
+        ],
+        "usphone": "ˈpɛnʃənərz",
+        "ukphone": "ˈpɛnʃənərz"
+    },
+    {
+        "name": "percent",
+        "trans": [
+            "Tỷ lệ phần trăm"
+        ],
+        "usphone": "pəˈsent",
+        "ukphone": "pərˈsent"
+    },
+    {
+        "name": "performer",
+        "trans": [
+            "người biểu diễn"
+        ],
+        "usphone": "pəˈfɔːmə",
+        "ukphone": "pərˈfɔːrmər"
+    },
+    {
+        "name": "perfume",
+        "trans": [
+            "nước hoa"
+        ],
+        "usphone": "ˈpɜːfjuːm",
+        "ukphone": "pərˈfjuːm"
+    },
+    {
+        "name": "period",
+        "trans": [
+            "sân khấu"
+        ],
+        "usphone": "ˈpɪəriəd",
+        "ukphone": "ˈpɪriəd"
+    },
+    {
+        "name": "periodical",
+        "trans": [
+            "tạp chí"
+        ],
+        "usphone": "ˌpɪəriˈɒdɪkl",
+        "ukphone": "ˌpɪriˈɑːdɪkl"
+    },
+    {
+        "name": "perk",
+        "trans": [
+            "Thu nhập thêm, chiết khấu của công ty"
+        ],
+        "usphone": "pɜːk",
+        "ukphone": "pɜːrk"
+    },
+    {
+        "name": "permit",
+        "trans": [
+            "giấy phép"
+        ],
+        "usphone": "pəˈmɪt",
+        "ukphone": "pərˈmɪt"
+    },
+    {
+        "name": "person",
+        "trans": [
+            "mọi người"
+        ],
+        "usphone": "ˈpɜːsn",
+        "ukphone": "ˈpɜːrsn"
+    },
+    {
+        "name": "personality",
+        "trans": [
+            "Tính cách"
+        ],
+        "usphone": "ˌpɜːsəˈnæləti",
+        "ukphone": "ˌpɜːrsəˈnæləti"
+    },
+    {
+        "name": "pet",
+        "trans": [
+            "thú cưng"
+        ],
+        "usphone": "pet",
+        "ukphone": "pet"
+    },
+    {
+        "name": "petrol",
+        "trans": [
+            "xăng"
+        ],
+        "usphone": "ˈpetrəl",
+        "ukphone": "ˈpetrəl"
+    },
+    {
+        "name": "petroleum",
+        "trans": [
+            "dầu"
+        ],
+        "usphone": "pəˈtrəʊliəm",
+        "ukphone": "pəˈtroʊliəm"
+    },
+    {
+        "name": "philosopher",
+        "trans": [
+            "triết gia"
+        ],
+        "usphone": "fəˈlɒsəfə",
+        "ukphone": "fəˈlɑːsəfər"
+    },
+    {
+        "name": "photo",
+        "trans": [
+            "những bức ảnh"
+        ],
+        "usphone": "ˈfəʊtəʊ",
+        "ukphone": "ˈfoʊtoʊ"
+    },
+    {
+        "name": "photograph",
+        "trans": [
+            "những bức ảnh"
+        ],
+        "usphone": "ˈfəʊtəɡrɑːf",
+        "ukphone": "ˈfoʊtəɡræf"
+    },
+    {
+        "name": "physician",
+        "trans": [
+            "bác sĩ"
+        ],
+        "usphone": "fɪˈzɪʃn",
+        "ukphone": "fɪˈzɪʃn"
+    },
+    {
+        "name": "physics",
+        "trans": [
+            "Vật lý"
+        ],
+        "usphone": "ˈfɪzɪks",
+        "ukphone": "ˈfɪzɪks"
+    },
+    {
+        "name": "pianist",
+        "trans": [
+            "nghệ sĩ dương cầm"
+        ],
+        "usphone": "ˈpɪənɪst",
+        "ukphone": "ˈpiːənɪst"
+    },
+    {
+        "name": "piano",
+        "trans": [
+            "đàn piano"
+        ],
+        "usphone": "piˈænəʊ , ˈpjɑːnəʊ",
+        "ukphone": "piˈænoʊ , ˈpjɑːnoʊ"
+    },
+    {
+        "name": "picnic",
+        "trans": [
+            "dã ngoại"
+        ],
+        "usphone": "ˈpɪknɪk",
+        "ukphone": "ˈpɪknɪk"
+    },
+    {
+        "name": "picture",
+        "trans": [
+            "Hình"
+        ],
+        "usphone": "ˈpɪktʃə",
+        "ukphone": "ˈpɪktʃər"
+    },
+    {
+        "name": "pie",
+        "trans": [
+            "kem"
+        ],
+        "usphone": "paɪ",
+        "ukphone": "paɪ"
+    },
+    {
+        "name": "pill",
+        "trans": [
+            "viên thuốc"
+        ],
+        "usphone": "pɪl",
+        "ukphone": "pɪl"
+    },
+    {
+        "name": "pink",
+        "trans": [
+            "màu hồng"
+        ],
+        "usphone": "pɪŋk",
+        "ukphone": "pɪŋk"
+    },
+    {
+        "name": "place",
+        "trans": [
+            "nơi, địa điểm, cấu hình"
+        ],
+        "usphone": "pleɪs",
+        "ukphone": "pleɪs"
+    },
+    {
+        "name": "placement",
+        "trans": [
+            "địa điểm"
+        ],
+        "usphone": "ˈpleɪsmənt",
+        "ukphone": "ˈpleɪsmənt"
+    },
+    {
+        "name": "plan",
+        "trans": [
+            "kế hoạch"
+        ],
+        "usphone": "plæn",
+        "ukphone": "plæn"
+    },
+    {
+        "name": "planners",
+        "trans": [
+            "người lập kế hoạch"
+        ],
+        "usphone": "ˈplænərz",
+        "ukphone": "ˈplænərz"
+    },
+    {
+        "name": "plans",
+        "trans": [
+            "kế hoạch"
+        ],
+        "usphone": "plænz",
+        "ukphone": "plænz"
+    },
+    {
+        "name": "plant",
+        "trans": [
+            "trồng cây"
+        ],
+        "usphone": "plænt",
+        "ukphone": "plɑːnt"
+    },
+    {
+        "name": "planting",
+        "trans": [
+            "trồng cây"
+        ],
+        "usphone": "ˈplɑːntɪŋ",
+        "ukphone": "ˈplæntɪŋ"
+    },
+    {
+        "name": "plastic",
+        "trans": [
+            "nhựa"
+        ],
+        "usphone": "ˈplæstɪk",
+        "ukphone": "ˈplæstɪk"
+    },
+    {
+        "name": "plate",
+        "trans": [
+            "đĩa"
+        ],
+        "usphone": "pleɪt",
+        "ukphone": "pleɪt"
+    },
+    {
+        "name": "player",
+        "trans": [
+            "người chơi"
+        ],
+        "usphone": "ˈpleɪə",
+        "ukphone": "ˈpleɪər"
+    },
+    {
+        "name": "playground",
+        "trans": [
+            "sân chơi"
+        ],
+        "usphone": "ˈpleɪɡraʊnd",
+        "ukphone": "ˈpleɪɡraʊnd"
+    },
+    {
+        "name": "pleasure",
+        "trans": [
+            "vui vẻ"
+        ],
+        "usphone": "ˈpleʒə",
+        "ukphone": "ˈpleʒər"
+    },
+    {
+        "name": "pocket",
+        "trans": [
+            "túi"
+        ],
+        "usphone": "ˈpɒkɪt",
+        "ukphone": "ˈpɑːkɪt"
+    },
+    {
+        "name": "point",
+        "trans": [
+            "điểm"
+        ],
+        "usphone": "pɔɪnt",
+        "ukphone": "pɔɪnt"
+    },
+    {
+        "name": "police",
+        "trans": [
+            "cảnh sát"
+        ],
+        "usphone": "pəˈliːs",
+        "ukphone": "pəˈliːs"
+    },
+    {
+        "name": "poll",
+        "trans": [
+            "(ý kiến) khảo sát"
+        ],
+        "usphone": "pəʊl",
+        "ukphone": "poʊl"
+    },
+    {
+        "name": "pollutant",
+        "trans": [
+            "chất gây ô nhiễm, nguồn ô nhiễm"
+        ],
+        "usphone": "pəˈluːtənt",
+        "ukphone": "pəˈluːtənt"
+    },
+    {
+        "name": "pollute",
+        "trans": [
+            "làm ô nhiễm, làm ô uế"
+        ],
+        "usphone": "pəˈluːt",
+        "ukphone": "pəˈluːt"
+    },
+    {
+        "name": "pollution",
+        "trans": [
+            "sự ô nhiễm"
+        ],
+        "usphone": "pəˈluːʃn",
+        "ukphone": "pəˈluːʃn"
+    },
+    {
+        "name": "port",
+        "trans": [
+            "hải cảng"
+        ],
+        "usphone": "pɔːt",
+        "ukphone": "pɔːrt"
+    },
+    {
+        "name": "position",
+        "trans": [
+            "vị trí"
+        ],
+        "usphone": "pəˈzɪʃn",
+        "ukphone": "pəˈzɪʃn"
+    },
+    {
+        "name": "post",
+        "trans": [
+            "vị trí, bài đăng"
+        ],
+        "usphone": "træk",
+        "ukphone": "træk"
+    },
+    {
+        "name": "postgraduate",
+        "trans": [
+            "sinh viên tốt nghiệp"
+        ],
+        "usphone": "ˌpəʊstˈɡrædʒuət",
+        "ukphone": "ˌpoʊstˈɡrædʒuət"
+    },
+    {
+        "name": "particulars",
+        "trans": [
+            "chi tiết, tính năng"
+        ],
+        "usphone": "pəˈtɪkjələrz",
+        "ukphone": "pəˈtɪkjʊləz"
+    },
+    {
+        "name": "potteries",
+        "trans": [
+            "sứ"
+        ],
+        "usphone": "ˈpɑtəriz",
+        "ukphone": "ˈpɒtəriz"
+    },
+    {
+        "name": "power",
+        "trans": [
+            "quyền lực, năng lượng"
+        ],
+        "usphone": "ˈpaʊə",
+        "ukphone": "ˈpaʊər"
+    },
+    {
+        "name": "powerpoint",
+        "trans": [
+            "Tập tin chiếu"
+        ],
+        "usphone": "ˈpaʊəpɔɪnt",
+        "ukphone": "ˈpaʊərpɔɪnt"
+    },
+    {
+        "name": "precaution",
+        "trans": [
+            "phòng ngừa"
+        ],
+        "usphone": "prɪˈkɔːʃn",
+        "ukphone": "prɪˈkɔːʃn"
+    },
+    {
+        "name": "precision",
+        "trans": [
+            "Độ chính xác"
+        ],
+        "usphone": "prɪˈsɪʒn",
+        "ukphone": "prɪˈsɪʒn"
+    },
+    {
+        "name": "preference",
+        "trans": [
+            "Ưu tiên"
+        ],
+        "usphone": "ˈprefrəns",
+        "ukphone": "ˈprefrəns"
+    },
+    {
+        "name": "preposition",
+        "trans": [
+            "giới từ"
+        ],
+        "usphone": "ˌprepəˈzɪʃn",
+        "ukphone": "ˌprepəˈzɪʃn"
+    },
+    {
+        "name": "prescription",
+        "trans": [
+            "hiệu thuốc"
+        ],
+        "usphone": "prɪˈskrɪpʃn",
+        "ukphone": "prɪˈskrɪpʃn"
+    },
+    {
+        "name": "presentation",
+        "trans": [
+            "lời nói, tuyên bố"
+        ],
+        "usphone": "ˌpreznˈteɪʃn",
+        "ukphone": "ˌpriːzenˈteɪʃn"
+    },
+    {
+        "name": "preservation",
+        "trans": [
+            "lưu lại"
+        ],
+        "usphone": "ˌprezəˈveɪʃn",
+        "ukphone": "ˌprezərˈveɪʃn"
+    },
+    {
+        "name": "president",
+        "trans": [
+            "Hiệu trưởng, hiệu trưởng (đại học, tiếng Anh Mỹ), chủ tịch"
+        ],
+        "usphone": "ˈprezɪdənt",
+        "ukphone": "ˈprezɪdənt"
+    },
+    {
+        "name": "prevention",
+        "trans": [
+            "phòng ngừa"
+        ],
+        "usphone": "prɪˈvenʃn",
+        "ukphone": "prɪˈvenʃn"
+    },
+    {
+        "name": "printing",
+        "trans": [
+            "In"
+        ],
+        "usphone": "ˈprɪntɪŋ",
+        "ukphone": "ˈprɪntɪŋ"
+    },
+    {
+        "name": "priority",
+        "trans": [
+            "ưa thích"
+        ],
+        "usphone": "praɪˈɒrəti",
+        "ukphone": "praɪˈɔːrəti"
+    },
+    {
+        "name": "privacy",
+        "trans": [
+            "Quyền riêng tư"
+        ],
+        "usphone": "ˈprɪvəsi",
+        "ukphone": "ˈpraɪvəsi"
+    },
+    {
+        "name": "prize",
+        "trans": [
+            "tiền thưởng"
+        ],
+        "usphone": "praɪz",
+        "ukphone": "praɪz"
+    },
+    {
+        "name": "problem",
+        "trans": [
+            "câu hỏi"
+        ],
+        "usphone": "ˈprɒbləm",
+        "ukphone": "ˈprɑːbləm"
+    },
+    {
+        "name": "product",
+        "trans": [
+            "Sản phẩm"
+        ],
+        "usphone": "ˈprɒdʌkt",
+        "ukphone": "ˈprɑːdʌkt"
+    },
+    {
+        "name": "production",
+        "trans": [
+            "sản xuất"
+        ],
+        "usphone": "prəˈdʌkʃn",
+        "ukphone": "prəˈdʌkʃn"
+    },
+    {
+        "name": "professors",
+        "trans": [
+            "giáo sư"
+        ],
+        "usphone": "prəˈfesəz",
+        "ukphone": "prəˈfesərz"
+    },
+    {
+        "name": "profit",
+        "trans": [
+            "lợi nhuận"
+        ],
+        "usphone": "ˈprɒfɪt",
+        "ukphone": "ˈprɑːfɪt"
+    },
+    {
+        "name": "project",
+        "trans": [
+            "kỹ thuật, đề tài nghiên cứu, dự án"
+        ],
+        "usphone": "ˈprɒdʒekt , prəˈdʒekt",
+        "ukphone": "ˈprɑːdʒekt , prəˈdʒekt"
+    },
+    {
+        "name": "promotion",
+        "trans": [
+            "khuyến mãi"
+        ],
+        "usphone": "prəˈməʊʃn",
+        "ukphone": "prəˈmoʊʃn"
+    },
+    {
+        "name": "prone",
+        "trans": [
+            "dễ dàng, có xu hướng"
+        ],
+        "usphone": "prəʊn",
+        "ukphone": "proʊn"
+    },
+    {
+        "name": "property",
+        "trans": [
+            "tài sản"
+        ],
+        "usphone": "ˈprɒpəti",
+        "ukphone": "ˈprɑːpərti"
+    },
+    {
+        "name": "prospectus",
+        "trans": [
+            "Tài liệu tuyển sinh, giới thiệu nội dung"
+        ],
+        "usphone": "prəˈspektəs",
+        "ukphone": "prəˈspektəs"
+    },
+    {
+        "name": "protein",
+        "trans": [
+            "chất đạm"
+        ],
+        "usphone": "ˈprəʊtiːn",
+        "ukphone": "ˈproʊtiːn"
+    },
+    {
+        "name": "psychiatrist",
+        "trans": [
+            "bác sĩ tâm thần"
+        ],
+        "usphone": "saɪˈkaɪətrɪst",
+        "ukphone": "saɪˈkaɪətrɪst"
+    },
+    {
+        "name": "psychologist",
+        "trans": [
+            "nhà tâm lý học"
+        ],
+        "usphone": "saɪˈkɒlədʒɪst",
+        "ukphone": "saɪˈkɑːlədʒɪst"
+    },
+    {
+        "name": "psychotherapy",
+        "trans": [
+            "tâm lý trị liệu"
+        ],
+        "usphone": "sʌɪkəʊˈθɛrəpi",
+        "ukphone": "ˌsaɪkoʊˈθɛrəpi"
+    },
+    {
+        "name": "publication",
+        "trans": [
+            "nhà xuất bản"
+        ],
+        "usphone": "ˌpʌblɪˈkeɪʃn",
+        "ukphone": "ˌpʌblɪˈkeɪʃn"
+    },
+    {
+        "name": "pump",
+        "trans": [
+            "máy bơm"
+        ],
+        "usphone": "pʌmp",
+        "ukphone": "pʌmp"
+    },
+    {
+        "name": "purpose",
+        "trans": [
+            "mục đích, mục tiêu"
+        ],
+        "usphone": "ˈpɜːpəs",
+        "ukphone": "ˈpɜːrpəs"
+    },
+    {
+        "name": "purse",
+        "trans": [
+            "ví"
+        ],
+        "usphone": "pɜːs",
+        "ukphone": "pɜːrs"
+    },
+    {
+        "name": "quality",
+        "trans": [
+            "chất lượng"
+        ],
+        "usphone": "ˈkwɒləti",
+        "ukphone": "ˈkwɑːləti"
+    },
+    {
+        "name": "quantity",
+        "trans": [
+            "số lượng"
+        ],
+        "usphone": "ˈkwɒntəti",
+        "ukphone": "ˈkwɑːntəti"
+    },
+    {
+        "name": "quarter",
+        "trans": [
+            "một phần tư"
+        ],
+        "usphone": "ˈkwɔːtə",
+        "ukphone": "ˈkwɔːrtər"
+    },
+    {
+        "name": "question",
+        "trans": [
+            "câu hỏi"
+        ],
+        "usphone": "ˈkwestʃən",
+        "ukphone": "ˈkwestʃən"
+    },
+    {
+        "name": "radar",
+        "trans": [
+            "rađa"
+        ],
+        "usphone": "ˈreɪdɑː",
+        "ukphone": "ˈreɪdɑːr"
+    },
+    {
+        "name": "radiator",
+        "trans": [
+            "máy làm mát, máy sưởi"
+        ],
+        "usphone": "ˈreɪdieɪtə",
+        "ukphone": "ˈreɪdieɪtər"
+    },
+    {
+        "name": "radio",
+        "trans": [
+            "đài phát thanh"
+        ],
+        "usphone": "ˈreɪdiəʊ",
+        "ukphone": "ˈreɪdioʊ"
+    },
+    {
+        "name": "railway",
+        "trans": [
+            "đường sắt"
+        ],
+        "usphone": "ˈreɪlweɪ",
+        "ukphone": "ˈreɪlweɪ"
+    },
+    {
+        "name": "rain",
+        "trans": [
+            "mưa"
+        ],
+        "usphone": "reɪn",
+        "ukphone": "reɪn"
+    },
+    {
+        "name": "rainfall",
+        "trans": [
+            "lượng mưa"
+        ],
+        "usphone": "ˈreɪnfɔːl",
+        "ukphone": "ˈreɪnfɔːl"
+    },
+    {
+        "name": "range",
+        "trans": [
+            "phạm vi"
+        ],
+        "usphone": "reɪndʒ",
+        "ukphone": "reɪndʒ"
+    },
+    {
+        "name": "rank",
+        "trans": [
+            "cấp độ"
+        ],
+        "usphone": "ræŋk",
+        "ukphone": "ræŋk"
+    },
+    {
+        "name": "rat",
+        "trans": [
+            "chuột"
+        ],
+        "usphone": "ræt",
+        "ukphone": "ræt"
+    },
+    {
+        "name": "rate",
+        "trans": [
+            "tỷ lệ"
+        ],
+        "usphone": "reɪt",
+        "ukphone": "reɪt"
+    },
+    {
+        "name": "rats",
+        "trans": [
+            "chuột"
+        ],
+        "usphone": "ræts",
+        "ukphone": "ræts"
+    },
+    {
+        "name": "ray",
+        "trans": [
+            "ánh sáng"
+        ],
+        "usphone": "reɪ",
+        "ukphone": "reɪ"
+    },
+    {
+        "name": "reader",
+        "trans": [
+            "người đọc"
+        ],
+        "usphone": "ˈriːdə",
+        "ukphone": "ˈriːdər"
+    },
+    {
+        "name": "reading",
+        "trans": [
+            "đọc"
+        ],
+        "usphone": "ˈriːdɪŋ",
+        "ukphone": "ˈriːdɪŋ"
+    },
+    {
+        "name": "reason",
+        "trans": [
+            "Lý do"
+        ],
+        "usphone": "ˈriːzn",
+        "ukphone": "ˈriːzn"
+    },
+    {
+        "name": "reception",
+        "trans": [
+            "sự đón tiếp"
+        ],
+        "usphone": "rɪˈsepʃn",
+        "ukphone": "rɪˈsepʃn"
+    },
+    {
+        "name": "recipe",
+        "trans": [
+            "toa thuốc"
+        ],
+        "usphone": "ˈresəpi",
+        "ukphone": "ˈresəpi"
+    },
+    {
+        "name": "recorder",
+        "trans": [
+            "máy ghi âm"
+        ],
+        "usphone": "rɪˈkɔːdə",
+        "ukphone": "rɪˈkɔːrdər"
+    },
+    {
+        "name": "recording",
+        "trans": [
+            "Ghi âm"
+        ],
+        "usphone": "rɪˈkɔːdɪŋ",
+        "ukphone": "rɪˈkɔːrdɪŋ"
+    },
+    {
+        "name": "recreation",
+        "trans": [
+            "giải trí, sự giải trí"
+        ],
+        "usphone": "ˌriːkriˈeɪʃn",
+        "ukphone": "ˌriːkriˈeɪʃn"
+    },
+    {
+        "name": "recruit",
+        "trans": [
+            "tuyển dụng"
+        ],
+        "usphone": "rɪˈkruːt",
+        "ukphone": "rɪˈkruːt"
+    },
+    {
+        "name": "recycling",
+        "trans": [
+            "Tái chế"
+        ],
+        "usphone": "ˌriːˈsaɪklɪŋ",
+        "ukphone": "ˌriːˈsaɪklɪŋ"
+    },
+    {
+        "name": "referee",
+        "trans": [
+            "trọng tài"
+        ],
+        "usphone": "ˌrefəˈriː",
+        "ukphone": "ˌrefəˈriː"
+    },
+    {
+        "name": "reference",
+        "trans": [
+            "thư mục, người chứng nhận"
+        ],
+        "usphone": "ˈrefrəns",
+        "ukphone": "ˈrefrəns"
+    },
+    {
+        "name": "reflectance",
+        "trans": [
+            "hệ số phản xạ"
+        ],
+        "usphone": "rɪˈflɛkt(ə)ns",
+        "ukphone": "rəˈflɛktəns"
+    },
+    {
+        "name": "reform",
+        "trans": [
+            "cải cách"
+        ],
+        "usphone": "rɪ'fɔrm",
+        "ukphone": "rɪ'fɔːrm"
+    },
+    {
+        "name": "refuge",
+        "trans": [
+            "nơi trú ẩn"
+        ],
+        "usphone": "ˈrefjuːdʒ",
+        "ukphone": "ˈrefjuːdʒ"
+    },
+    {
+        "name": "region",
+        "trans": [
+            "khu vực"
+        ],
+        "usphone": "ˈriːdʒən",
+        "ukphone": "ˈriːdʒən"
+    },
+    {
+        "name": "regulation",
+        "trans": [
+            "quy tắc và quy định"
+        ],
+        "usphone": "ˌreɡjuˈleɪʃn",
+        "ukphone": "ˌreɡjuˈleɪʃn"
+    },
+    {
+        "name": "relation",
+        "trans": [
+            "mối quan hệ"
+        ],
+        "usphone": "rɪˈleɪʃn",
+        "ukphone": "rɪˈleɪʃn"
+    },
+    {
+        "name": "relationship",
+        "trans": [
+            "mối quan hệ"
+        ],
+        "usphone": "rɪˈleɪʃnʃɪp",
+        "ukphone": "rɪˈleɪʃnʃɪp"
+    },
+    {
+        "name": "relaxation",
+        "trans": [
+            "thư giãn"
+        ],
+        "usphone": "ˌriːlækˈseɪʃn",
+        "ukphone": "ˌriːlækˈseɪʃn"
+    },
+    {
+        "name": "relief",
+        "trans": [
+            "giảm bớt (sự đau đớn)"
+        ],
+        "usphone": "rɪˈliːf",
+        "ukphone": "rɪˈliːf"
+    },
+    {
+        "name": "religion",
+        "trans": [
+            "tôn giáo"
+        ],
+        "usphone": "rɪˈlɪdʒən",
+        "ukphone": "rɪˈlɪdʒən"
+    },
+    {
+        "name": "remark",
+        "trans": [
+            "Đánh giá"
+        ],
+        "usphone": "rɪˈmɑːk",
+        "ukphone": "rɪˈmɑːrk"
+    },
+    {
+        "name": "removal",
+        "trans": [
+            "loại bỏ"
+        ],
+        "usphone": "rɪˈmuːvl",
+        "ukphone": "rɪˈmuːvl"
+    },
+    {
+        "name": "renewal",
+        "trans": [
+            "cập nhật, làm mới"
+        ],
+        "usphone": "rɪˈnjuːəl",
+        "ukphone": "rɪˈnuːəl"
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "thuê"
+        ],
+        "usphone": "rent",
+        "ukphone": "rent"
+    },
+    {
+        "name": "rental",
+        "trans": [
+            "thuê"
+        ],
+        "usphone": "ˈrentl",
+        "ukphone": "ˈrentl"
+    },
+    {
+        "name": "repetition",
+        "trans": [
+            "Lặp lại"
+        ],
+        "usphone": "ˌrepəˈtɪʃn",
+        "ukphone": "ˌrepəˈtɪʃn"
+    },
+    {
+        "name": "replacement",
+        "trans": [
+            "thay vì"
+        ],
+        "usphone": "rɪˈpleɪsmənt",
+        "ukphone": "rɪˈpleɪsmənt"
+    },
+    {
+        "name": "report",
+        "trans": [
+            "báo cáo"
+        ],
+        "usphone": "rɪˈpɔːt",
+        "ukphone": "rɪˈpɔːrt"
+    },
+    {
+        "name": "reproduce",
+        "trans": [
+            "sinh sản"
+        ],
+        "usphone": "ˌriːprəˈdjuːs",
+        "ukphone": "ˌriːprəˈduːs"
+    },
+    {
+        "name": "research",
+        "trans": [
+            "nghiên cứu, nghiên cứu khoa học"
+        ],
+        "usphone": "rɪˈsɜːtʃ",
+        "ukphone": "ˈriːsɜːrtʃ , rɪˈsɜːrtʃ"
+    },
+    {
+        "name": "reservation",
+        "trans": [
+            "dự trữ, đặt trước"
+        ],
+        "usphone": "ˌrezəˈveɪʃn",
+        "ukphone": "ˌrezərˈveɪʃn"
+    },
+    {
+        "name": "reserve",
+        "trans": [
+            "dự trữ, nâng cao"
+        ],
+        "usphone": "rɪˈzɜːv",
+        "ukphone": "rɪˈzɜːrv"
+    },
+    {
+        "name": "residence",
+        "trans": [
+            "sống"
+        ],
+        "usphone": "ˈrezɪdəns",
+        "ukphone": "ˈrezɪdəns"
+    },
+    {
+        "name": "resident",
+        "trans": [
+            "cư dân"
+        ],
+        "usphone": "ˈrezɪdənt",
+        "ukphone": "ˈrezɪdənt"
+    },
+    {
+        "name": "resource",
+        "trans": [
+            "Tài nguyên"
+        ],
+        "usphone": "rɪˈsɔːs",
+        "ukphone": "ˈriːsɔːrs"
+    },
+    {
+        "name": "respondent",
+        "trans": [
+            "người được phỏng vấn, đối tượng điều tra"
+        ],
+        "usphone": "rɪˈspɒndənt",
+        "ukphone": "rɪˈspɑːndənt"
+    },
+    {
+        "name": "response",
+        "trans": [
+            "câu trả lời"
+        ],
+        "usphone": "rɪˈspɒns",
+        "ukphone": "rɪˈspɑːns"
+    },
+    {
+        "name": "restaurant",
+        "trans": [
+            "nhà hàng"
+        ],
+        "usphone": "ˈrestrɒnt",
+        "ukphone": "ˈrestrɑːnt"
+    },
+    {
+        "name": "result",
+        "trans": [
+            "kết quả"
+        ],
+        "usphone": "rɪˈzʌlt",
+        "ukphone": "rɪˈzʌlt"
+    },
+    {
+        "name": "retirement",
+        "trans": [
+            "nghỉ hưu"
+        ],
+        "usphone": "rɪˈtaɪəmənt",
+        "ukphone": "rɪˈtaɪərmənt"
+    },
+    {
+        "name": "return",
+        "trans": [
+            "chuyến đi khứ hồi"
+        ],
+        "usphone": "rɪˈtɜːn",
+        "ukphone": "rɪˈtɜːrn"
+    },
+    {
+        "name": "review",
+        "trans": [
+            "Bình luận"
+        ],
+        "usphone": "rɪˈvjuː",
+        "ukphone": "rɪˈvjuː"
+    },
+    {
+        "name": "revision",
+        "trans": [
+            "sửa đổi"
+        ],
+        "usphone": "rɪˈvɪʒn",
+        "ukphone": "rɪˈvɪʒn"
+    },
+    {
+        "name": "rice",
+        "trans": [
+            "gạo"
+        ],
+        "usphone": "raɪs",
+        "ukphone": "raɪs"
+    },
+    {
+        "name": "rider",
+        "trans": [
+            "người cưỡi ngựa"
+        ],
+        "usphone": "ˈraɪdə",
+        "ukphone": "ˈraɪdər"
+    },
+    {
+        "name": "riders",
+        "trans": [
+            "người cưỡi ngựa"
+        ],
+        "usphone": "ˈraɪdərz",
+        "ukphone": "ˈraɪdərz"
+    },
+    {
+        "name": "risk",
+        "trans": [
+            "cuộc phiêu lưu"
+        ],
+        "usphone": "rɪsk",
+        "ukphone": "rɪsk"
+    },
+    {
+        "name": "river",
+        "trans": [
+            "con sông"
+        ],
+        "usphone": "ˈrɪvə",
+        "ukphone": "ˈrɪvər"
+    },
+    {
+        "name": "robot",
+        "trans": [
+            "người máy"
+        ],
+        "usphone": "ˈrəʊbɒt",
+        "ukphone": "ˈroʊbɑːt"
+    },
+    {
+        "name": "rock",
+        "trans": [
+            "đá"
+        ],
+        "usphone": "rɒk",
+        "ukphone": "rɑːk"
+    },
+    {
+        "name": "rocket",
+        "trans": [
+            "tên lửa"
+        ],
+        "usphone": "ˈrɒkɪt",
+        "ukphone": "ˈrɑːkɪt"
+    },
+    {
+        "name": "role",
+        "trans": [
+            "vai trò"
+        ],
+        "usphone": "rəʊl",
+        "ukphone": "roʊl"
+    },
+    {
+        "name": "roommates",
+        "trans": [
+            "bạn cùng phòng"
+        ],
+        "usphone": "ˈruːmmeɪts",
+        "ukphone": "ˈruˌmeɪts"
+    },
+    {
+        "name": "route",
+        "trans": [
+            "tuyến đường"
+        ],
+        "usphone": "ruːt",
+        "ukphone": "ruːt"
+    },
+    {
+        "name": "rule",
+        "trans": [
+            "quy tắc"
+        ],
+        "usphone": "rul",
+        "ukphone": "ruːl"
+    },
+    {
+        "name": "safari",
+        "trans": [
+            "công viên safari"
+        ],
+        "usphone": "səˈfɑːri",
+        "ukphone": "səˈfɑːri"
+    },
+    {
+        "name": "safety",
+        "trans": [
+            "an toàn"
+        ],
+        "usphone": "ˈseɪfti",
+        "ukphone": "ˈseɪfti"
+    },
+    {
+        "name": "sail",
+        "trans": [
+            "đi thuyền, du lịch bằng thuyền"
+        ],
+        "usphone": "seɪl",
+        "ukphone": "seɪl"
+    },
+    {
+        "name": "sailing",
+        "trans": [
+            "chèo thuyền"
+        ],
+        "usphone": "ˈseɪlɪŋ",
+        "ukphone": "ˈseɪlɪŋ"
+    },
+    {
+        "name": "salad",
+        "trans": [
+            "xà lách"
+        ],
+        "usphone": "ˈsæləd",
+        "ukphone": "ˈsæləd"
+    },
+    {
+        "name": "salads",
+        "trans": [
+            "xà lách"
+        ],
+        "usphone": "ˈsælədz",
+        "ukphone": "ˈsælədz"
+    },
+    {
+        "name": "salary",
+        "trans": [
+            "tiền lương"
+        ],
+        "usphone": "ˈsæləri",
+        "ukphone": "ˈsæləri"
+    },
+    {
+        "name": "sale",
+        "trans": [
+            "bán hàng"
+        ],
+        "usphone": "seɪl",
+        "ukphone": "seɪl"
+    },
+    {
+        "name": "salt",
+        "trans": [
+            "muối"
+        ],
+        "usphone": "sɔːlt",
+        "ukphone": "sɔːlt"
+    },
+    {
+        "name": "sample",
+        "trans": [
+            "mẫu vật"
+        ],
+        "usphone": "ˈsɑːmpl",
+        "ukphone": "ˈsæmpl"
+    },
+    {
+        "name": "sandal",
+        "trans": [
+            "dép xăng đan"
+        ],
+        "usphone": "ˈsændl",
+        "ukphone": "ˈsændl"
+    },
+    {
+        "name": "satellite",
+        "trans": [
+            "vệ tinh"
+        ],
+        "usphone": "ˈsætəlaɪt",
+        "ukphone": "ˈsætəlaɪt"
+    },
+    {
+        "name": "sauce",
+        "trans": [
+            "nước tương"
+        ],
+        "usphone": "sɔːs",
+        "ukphone": "sɔːs"
+    },
+    {
+        "name": "saving",
+        "trans": [
+            "tiết kiệm tiền"
+        ],
+        "usphone": "ˈseɪvɪŋ",
+        "ukphone": "ˈseɪvɪŋ"
+    },
+    {
+        "name": "scale",
+        "trans": [
+            "cân bằng"
+        ],
+        "usphone": "skeɪl",
+        "ukphone": "skeɪl"
+    },
+    {
+        "name": "scandal",
+        "trans": [
+            "Vụ bê bối"
+        ],
+        "usphone": "ˈskændl",
+        "ukphone": "ˈskændl"
+    },
+    {
+        "name": "scandals",
+        "trans": [
+            "Vụ bê bối"
+        ],
+        "usphone": "ˈskændəlz",
+        "ukphone": "ˈskændəlz"
+    },
+    {
+        "name": "scar",
+        "trans": [
+            "vết sẹo"
+        ],
+        "usphone": "skɑː",
+        "ukphone": "skɑːr"
+    },
+    {
+        "name": "scent",
+        "trans": [
+            "mùi"
+        ],
+        "usphone": "sent",
+        "ukphone": "sent"
+    },
+    {
+        "name": "schedule",
+        "trans": [
+            "lịch trình"
+        ],
+        "usphone": "ˈʃedjuːl",
+        "ukphone": "ˈskedʒuːl"
+    },
+    {
+        "name": "scheme",
+        "trans": [
+            "kế hoạch"
+        ],
+        "usphone": "skiːm",
+        "ukphone": "skiːm"
+    },
+    {
+        "name": "scholar",
+        "trans": [
+            "học giả"
+        ],
+        "usphone": "ˈskɒlə",
+        "ukphone": "ˈskɑːlər"
+    },
+    {
+        "name": "scholarship",
+        "trans": [
+            "Học bổng"
+        ],
+        "usphone": "ˈskɒləʃɪp",
+        "ukphone": "ˈskɑːlərʃɪp"
+    },
+    {
+        "name": "science",
+        "trans": [
+            "khóa học khoa học, khoa học"
+        ],
+        "usphone": "ˈsaɪəns",
+        "ukphone": "ˈsaɪəns"
+    },
+    {
+        "name": "scientist",
+        "trans": [
+            "nhà khoa học"
+        ],
+        "usphone": "ˈsaɪəntɪst",
+        "ukphone": "ˈsaɪəntɪst"
+    },
+    {
+        "name": "score",
+        "trans": [
+            "ghi điểm"
+        ],
+        "usphone": "skɔː",
+        "ukphone": "skɔːr"
+    },
+    {
+        "name": "script",
+        "trans": [
+            "Bản thảo"
+        ],
+        "usphone": "skrɪpt",
+        "ukphone": "skrɪpt"
+    },
+    {
+        "name": "sculpture",
+        "trans": [
+            "khắc"
+        ],
+        "usphone": "ˈskʌlptʃə",
+        "ukphone": "ˈskʌlptʃər"
+    },
+    {
+        "name": "sea",
+        "trans": [
+            "biển, đại dương"
+        ],
+        "usphone": "siː",
+        "ukphone": "siː"
+    },
+    {
+        "name": "season",
+        "trans": [
+            "mùa"
+        ],
+        "usphone": "ˈsiːzn",
+        "ukphone": "ˈsiːzn"
+    },
+    {
+        "name": "seat",
+        "trans": [
+            "chỗ ngồi"
+        ],
+        "usphone": "siːt",
+        "ukphone": "siːt"
+    },
+    {
+        "name": "second",
+        "trans": [
+            "giây"
+        ],
+        "usphone": "ˈsekənd , sɪˈkɒnd",
+        "ukphone": "ˈsekənd , sɪˈkɑːnd"
+    },
+    {
+        "name": "secretary",
+        "trans": [
+            "thư ký"
+        ],
+        "usphone": "ˈsekrətri",
+        "ukphone": "ˈsekrəteri"
+    },
+    {
+        "name": "section",
+        "trans": [
+            "một phần"
+        ],
+        "usphone": "ˈsekʃn",
+        "ukphone": "ˈsekʃn"
+    },
+    {
+        "name": "sector",
+        "trans": [
+            "một phần"
+        ],
+        "usphone": "ˈsektə",
+        "ukphone": "ˈsektər"
+    },
+    {
+        "name": "selection",
+        "trans": [
+            "chọn"
+        ],
+        "usphone": "sɪˈlekʃn",
+        "ukphone": "sɪˈlekʃn"
+    },
+    {
+        "name": "selections",
+        "trans": [
+            "chọn"
+        ],
+        "usphone": "səˈlɛkʃənz",
+        "ukphone": "sɪˈlɛkʃənz"
+    },
+    {
+        "name": "seminar",
+        "trans": [
+            "hội thảo học thuật"
+        ],
+        "usphone": "ˈsemɪnɑː",
+        "ukphone": "ˈsemɪnɑːr"
+    },
+    {
+        "name": "sense",
+        "trans": [
+            "cảm thấy"
+        ],
+        "usphone": "sens",
+        "ukphone": "sens"
+    },
+    {
+        "name": "sentence",
+        "trans": [
+            "câu"
+        ],
+        "usphone": "ˈsentəns",
+        "ukphone": "ˈsentəns"
+    },
+    {
+        "name": "servant",
+        "trans": [
+            "người hầu"
+        ],
+        "usphone": "ˈsɜːvənt",
+        "ukphone": "ˈsɜːrvənt"
+    },
+    {
+        "name": "service",
+        "trans": [
+            "dịch vụ"
+        ],
+        "usphone": "ˈsɜːvɪs",
+        "ukphone": "ˈsɜːrvɪs"
+    },
+    {
+        "name": "sewage",
+        "trans": [
+            "nước thải"
+        ],
+        "usphone": "ˈsuːɪdʒ",
+        "ukphone": "ˈsuːɪdʒ"
+    },
+    {
+        "name": "sewer",
+        "trans": [
+            "cống thoát nước"
+        ],
+        "usphone": "ˈsuːə",
+        "ukphone": "ˈsuːər"
+    },
+    {
+        "name": "sex",
+        "trans": [
+            "giới tính"
+        ],
+        "usphone": "seks",
+        "ukphone": "seks"
+    },
+    {
+        "name": "shade",
+        "trans": [
+            "cái bóng"
+        ],
+        "usphone": "ʃeɪd",
+        "ukphone": "ʃeɪd"
+    },
+    {
+        "name": "sheep",
+        "trans": [
+            "cừu"
+        ],
+        "usphone": "ʃiːp",
+        "ukphone": "ʃiːp"
+    },
+    {
+        "name": "sheet",
+        "trans": [
+            "ga trải giường"
+        ],
+        "usphone": "ʃiːt",
+        "ukphone": "ʃiːt"
+    },
+    {
+        "name": "shelf",
+        "trans": [
+            "kệ"
+        ],
+        "usphone": "ʃɛlf",
+        "ukphone": "ʃelf"
+    },
+    {
+        "name": "shell",
+        "trans": [
+            "vỏ"
+        ],
+        "usphone": "ʃel",
+        "ukphone": "ʃel"
+    },
+    {
+        "name": "shelter",
+        "trans": [
+            "nơi trú ẩn"
+        ],
+        "usphone": "ˈʃeltə",
+        "ukphone": "ˈʃeltər"
+    },
+    {
+        "name": "ship",
+        "trans": [
+            "thuyền"
+        ],
+        "usphone": "ʃɪp",
+        "ukphone": "ʃɪp"
+    },
+    {
+        "name": "shoe",
+        "trans": [
+            "giày"
+        ],
+        "usphone": "ʃuː",
+        "ukphone": "ʃuː"
+    },
+    {
+        "name": "shoplifters",
+        "trans": [
+            "người ăn trộm"
+        ],
+        "usphone": "ˈʃɑpˌlɪftərz",
+        "ukphone": "ˈʃɒpˌlɪftəz"
+    },
+    {
+        "name": "shopper",
+        "trans": [
+            "người mua sắm"
+        ],
+        "usphone": "ˈʃɒpə",
+        "ukphone": "ˈʃɑːpər"
+    },
+    {
+        "name": "shortage",
+        "trans": [
+            "những thiếu sót, thiếu sót"
+        ],
+        "usphone": "ˈʃɔːtɪdʒ",
+        "ukphone": "ˈʃɔːrtɪdʒ"
+    },
+    {
+        "name": "shower",
+        "trans": [
+            "tắm"
+        ],
+        "usphone": "ˈʃaʊə",
+        "ukphone": "ˈʃaʊər"
+    },
+    {
+        "name": "side",
+        "trans": [
+            "mặt, cạnh"
+        ],
+        "usphone": "saɪd",
+        "ukphone": "saɪd"
+    },
+    {
+        "name": "sight",
+        "trans": [
+            "chân trời, tầm nhìn"
+        ],
+        "usphone": "saɪt",
+        "ukphone": "saɪt"
+    },
+    {
+        "name": "sign",
+        "trans": [
+            "đánh dấu"
+        ],
+        "usphone": "saɪn",
+        "ukphone": "saɪn"
+    },
+    {
+        "name": "signature",
+        "trans": [
+            "chữ ký"
+        ],
+        "usphone": "ˈsɪɡnətʃə",
+        "ukphone": "ˈsɪɡnətʃər"
+    },
+    {
+        "name": "silence",
+        "trans": [
+            "yên tĩnh"
+        ],
+        "usphone": "ˈsaɪləns",
+        "ukphone": "ˈsaɪləns"
+    },
+    {
+        "name": "simulation",
+        "trans": [
+            "mô phỏng"
+        ],
+        "usphone": "ˌsɪmjuˈleɪʃn",
+        "ukphone": "ˌsɪmjuˈleɪʃn"
+    },
+    {
+        "name": "single",
+        "trans": [
+            "một chiều, đơn"
+        ],
+        "usphone": "ˈsɪŋɡl",
+        "ukphone": "ˈsɪŋɡl"
+    },
+    {
+        "name": "site",
+        "trans": [
+            "vị trí"
+        ],
+        "usphone": "saɪt",
+        "ukphone": "saɪt"
+    },
+    {
+        "name": "size",
+        "trans": [
+            "kích thước"
+        ],
+        "usphone": "saɪz",
+        "ukphone": "saɪz"
+    },
+    {
+        "name": "skating",
+        "trans": [
+            "trượt băng"
+        ],
+        "usphone": "ˈskeɪtɪŋ",
+        "ukphone": "ˈskeɪtɪŋ"
+    },
+    {
+        "name": "skeleton",
+        "trans": [
+            "bộ xương"
+        ],
+        "usphone": "ˈskelɪtn",
+        "ukphone": "ˈskelɪtn"
+    },
+    {
+        "name": "skill",
+        "trans": [
+            "Kỹ năng"
+        ],
+        "usphone": "skɪl",
+        "ukphone": "skɪl"
+    },
+    {
+        "name": "skin",
+        "trans": [
+            "da"
+        ],
+        "usphone": "skɪn",
+        "ukphone": "skɪn"
+    },
+    {
+        "name": "skirt",
+        "trans": [
+            "váy ngắn"
+        ],
+        "usphone": "skɜːt",
+        "ukphone": "skɜːrt"
+    },
+    {
+        "name": "slang",
+        "trans": [
+            "tiếng lóng"
+        ],
+        "usphone": "slæŋ",
+        "ukphone": "slæŋ"
+    },
+    {
+        "name": "slave",
+        "trans": [
+            "nô lệ"
+        ],
+        "usphone": "sleɪv",
+        "ukphone": "sleɪv"
+    },
+    {
+        "name": "sleep",
+        "trans": [
+            "ngủ"
+        ],
+        "usphone": "sliːp",
+        "ukphone": "sliːp"
+    },
+    {
+        "name": "sleeping",
+        "trans": [
+            "ngủ"
+        ],
+        "usphone": "ˈsliːpɪŋ",
+        "ukphone": "ˈsliːpɪŋ"
+    },
+    {
+        "name": "slip",
+        "trans": [
+            "mảnh giấy"
+        ],
+        "usphone": "slɪp",
+        "ukphone": "slɪp"
+    },
+    {
+        "name": "smell",
+        "trans": [
+            "mùi, mùi hôi"
+        ],
+        "usphone": "smel",
+        "ukphone": "smel"
+    },
+    {
+        "name": "smoke",
+        "trans": [
+            "khói"
+        ],
+        "usphone": "sməʊk",
+        "ukphone": "smoʊk"
+    },
+    {
+        "name": "smoking",
+        "trans": [
+            "hút thuốc"
+        ],
+        "usphone": "ˈsməʊkɪŋ",
+        "ukphone": "ˈsmoʊkɪŋ"
+    },
+    {
+        "name": "snack",
+        "trans": [
+            "đồ ăn nhanh, đồ ăn nhẹ"
+        ],
+        "usphone": "snæk",
+        "ukphone": "snæk"
+    },
+    {
+        "name": "soil",
+        "trans": [
+            "đất"
+        ],
+        "usphone": "sɔɪl",
+        "ukphone": "sɔɪl"
+    },
+    {
+        "name": "solution",
+        "trans": [
+            "giải pháp"
+        ],
+        "usphone": "səˈluːʃn",
+        "ukphone": "səˈluːʃn"
+    },
+    {
+        "name": "sound",
+        "trans": [
+            "âm thanh"
+        ],
+        "usphone": "saʊnd",
+        "ukphone": "saʊnd"
+    },
+    {
+        "name": "source",
+        "trans": [
+            "Nguồn"
+        ],
+        "usphone": "sɔːs",
+        "ukphone": "sɔːrs"
+    },
+    {
+        "name": "south",
+        "trans": [
+            "miền Nam"
+        ],
+        "usphone": "saʊθ",
+        "ukphone": "saʊθ"
+    },
+    {
+        "name": "southeast",
+        "trans": [
+            "Đông Nam Bộ"
+        ],
+        "usphone": "ˌsaʊθˈiːst",
+        "ukphone": "ˌsaʊˈθist"
+    },
+    {
+        "name": "southwest",
+        "trans": [
+            "Tây Nam"
+        ],
+        "usphone": "ˌsaʊθˈwest",
+        "ukphone": "ˌsaʊˈθwest"
+    },
+    {
+        "name": "space",
+        "trans": [
+            "không gian"
+        ],
+        "usphone": "speɪs",
+        "ukphone": "speɪs"
+    },
+    {
+        "name": "speaker",
+        "trans": [
+            "loa, loa phóng thanh"
+        ],
+        "usphone": "ˈspiːkə",
+        "ukphone": "ˈspiːkər"
+    },
+    {
+        "name": "speaking",
+        "trans": [
+            "ngôn ngữ nói"
+        ],
+        "usphone": "ˈspiːkɪŋ",
+        "ukphone": "ˈspiːkɪŋ"
+    },
+    {
+        "name": "speed",
+        "trans": [
+            "tốc độ"
+        ],
+        "usphone": "spiːd",
+        "ukphone": "spiːd"
+    },
+    {
+        "name": "spending",
+        "trans": [
+            "chi phí"
+        ],
+        "usphone": "ˈspendɪŋ",
+        "ukphone": "ˈspendɪŋ"
+    },
+    {
+        "name": "spider",
+        "trans": [
+            "nhện"
+        ],
+        "usphone": "ˈspaɪdə",
+        "ukphone": "ˈspaɪdər"
+    },
+    {
+        "name": "sponsor",
+        "trans": [
+            "nhà tài trợ"
+        ],
+        "usphone": "'spɑnsɚ",
+        "ukphone": "'spɑːnsər"
+    },
+    {
+        "name": "spoons",
+        "trans": [
+            "thìa, cái thìa"
+        ],
+        "usphone": "spuːnz",
+        "ukphone": "spuːnz"
+    },
+    {
+        "name": "sportsman",
+        "trans": [
+            "vận động viên nam"
+        ],
+        "usphone": "ˈspɔːtsmən",
+        "ukphone": "ˈspɔrtsmən"
+    },
+    {
+        "name": "spot",
+        "trans": [
+            "vị trí"
+        ],
+        "usphone": "spɒt",
+        "ukphone": "spɑːt"
+    },
+    {
+        "name": "stability",
+        "trans": [
+            "ổn định"
+        ],
+        "usphone": "stəˈbɪləti",
+        "ukphone": "stəˈbɪləti"
+    },
+    {
+        "name": "stack",
+        "trans": [
+            "thư viện"
+        ],
+        "usphone": "stæk",
+        "ukphone": "stæk"
+    },
+    {
+        "name": "stage",
+        "trans": [
+            "sân khấu"
+        ],
+        "usphone": "steɪdʒ",
+        "ukphone": "steɪdʒ"
+    },
+    {
+        "name": "stair",
+        "trans": [
+            "cầu thang"
+        ],
+        "usphone": "steə",
+        "ukphone": "ster"
+    },
+    {
+        "name": "standard",
+        "trans": [
+            "Tiêu chuẩn"
+        ],
+        "usphone": "ˈstændəd",
+        "ukphone": "ˈstændərd"
+    },
+    {
+        "name": "star",
+        "trans": [
+            "ngôi sao"
+        ],
+        "usphone": "stɑː",
+        "ukphone": "stɑːr"
+    },
+    {
+        "name": "starter",
+        "trans": [
+            "Món khai vị"
+        ],
+        "usphone": "ˈstɑːtə",
+        "ukphone": "ˈstɑːrtər"
+    },
+    {
+        "name": "starting",
+        "trans": [
+            "bắt đầu"
+        ],
+        "usphone": "ˈstɑːtɪŋ",
+        "ukphone": "ˈstɑːrtɪŋ"
+    },
+    {
+        "name": "state",
+        "trans": [
+            "tiểu bang"
+        ],
+        "usphone": "steɪt",
+        "ukphone": "steɪt"
+    },
+    {
+        "name": "statement",
+        "trans": [
+            "tuyên bố"
+        ],
+        "usphone": "ˈsteɪtmənt",
+        "ukphone": "ˈsteɪtmənt"
+    },
+    {
+        "name": "station",
+        "trans": [
+            "trạm"
+        ],
+        "usphone": "ˈsteɪʃn",
+        "ukphone": "ˈsteɪʃn"
+    },
+    {
+        "name": "status",
+        "trans": [
+            "trạng thái"
+        ],
+        "usphone": "ˈsteɪtəs",
+        "ukphone": "ˈsteɪtəs"
+    },
+    {
+        "name": "steak",
+        "trans": [
+            "Bít tết"
+        ],
+        "usphone": "steɪk",
+        "ukphone": "steɪk"
+    },
+    {
+        "name": "steam",
+        "trans": [
+            "hơi nước"
+        ],
+        "usphone": "stiːm",
+        "ukphone": "stiːm"
+    },
+    {
+        "name": "step",
+        "trans": [
+            "bậc thang, cầu thang"
+        ],
+        "usphone": "step",
+        "ukphone": "step"
+    },
+    {
+        "name": "sting",
+        "trans": [
+            "cái gai"
+        ],
+        "usphone": "stɪŋ",
+        "ukphone": "stɪŋ"
+    },
+    {
+        "name": "stock",
+        "trans": [
+            "hàng tồn kho"
+        ],
+        "usphone": "stɒk",
+        "ukphone": "stɑːk"
+    },
+    {
+        "name": "stomach",
+        "trans": [
+            "dạ dày, bụng"
+        ],
+        "usphone": "ˈstʌmək",
+        "ukphone": "ˈstʌmək"
+    },
+    {
+        "name": "stomachache",
+        "trans": [
+            "đau bụng"
+        ],
+        "usphone": "ˈstʌməkeɪk",
+        "ukphone": "ˈstʌməkeɪk"
+    },
+    {
+        "name": "stone",
+        "trans": [
+            "Cục đá"
+        ],
+        "usphone": "stəʊn",
+        "ukphone": "stoʊn"
+    },
+    {
+        "name": "store",
+        "trans": [
+            "trung tâm mua sắm"
+        ],
+        "usphone": "stɔː",
+        "ukphone": "stɔːr"
+    },
+    {
+        "name": "story",
+        "trans": [
+            "câu chuyện"
+        ],
+        "usphone": "ˈstɔːri",
+        "ukphone": "ˈstɔːri"
+    },
+    {
+        "name": "strategy",
+        "trans": [
+            "Chiến lược"
+        ],
+        "usphone": "ˈstrætədʒi",
+        "ukphone": "ˈstrætədʒi"
+    },
+    {
+        "name": "strength",
+        "trans": [
+            "sức mạnh"
+        ],
+        "usphone": "streŋθ",
+        "ukphone": "streŋθ"
+    },
+    {
+        "name": "strike",
+        "trans": [
+            "đình công"
+        ],
+        "usphone": "straɪk",
+        "ukphone": "straɪk"
+    },
+    {
+        "name": "style",
+        "trans": [
+            "phong cách"
+        ],
+        "usphone": "staɪl",
+        "ukphone": "staɪl"
+    },
+    {
+        "name": "subject",
+        "trans": [
+            "chủ đề"
+        ],
+        "usphone": "ˈsʌbdʒɪkt , səbˈdʒekt",
+        "ukphone": "ˈsʌbdʒɪkt , səbˈdʒekt"
+    },
+    {
+        "name": "syrup",
+        "trans": [
+            "xi-rô"
+        ],
+        "usphone": "ˈsɪrəp",
+        "ukphone": "ˈsɪrəp"
+    },
+    {
+        "name": "subsidy",
+        "trans": [
+            "trợ cấp"
+        ],
+        "usphone": "ˈsʌbsədi",
+        "ukphone": "ˈsʌbsədi"
+    },
+    {
+        "name": "suburb",
+        "trans": [
+            "Ngoại ô"
+        ],
+        "usphone": "ˈsʌbɜːb",
+        "ukphone": "ˈsʌbɜːrb"
+    },
+    {
+        "name": "sugar",
+        "trans": [
+            "đường"
+        ],
+        "usphone": "ˈʃʊɡə",
+        "ukphone": "ˈʃʊɡər"
+    },
+    {
+        "name": "suit",
+        "trans": [
+            "bộ đồ"
+        ],
+        "usphone": "suːt",
+        "ukphone": "suːt"
+    },
+    {
+        "name": "sunshield",
+        "trans": [
+            "tấm che nắng"
+        ],
+        "usphone": "ˈsʌnˌʃild",
+        "ukphone": "ˈsʌnˌʃiːld"
+    },
+    {
+        "name": "supervisor",
+        "trans": [
+            "người cố vấn"
+        ],
+        "usphone": "ˈsuːpəvaɪzə",
+        "ukphone": "ˈsuːpərvaɪzər"
+    },
+    {
+        "name": "supports",
+        "trans": [
+            "hỗ trợ, trụ cột"
+        ],
+        "usphone": "səˈpɔːts",
+        "ukphone": "səˈpɔːrts"
+    },
+    {
+        "name": "surface",
+        "trans": [
+            "bề mặt"
+        ],
+        "usphone": "ˈsɜːfɪs",
+        "ukphone": "ˈsɜːrfɪs"
+    },
+    {
+        "name": "surgeon",
+        "trans": [
+            "bác sĩ phẫu thuật"
+        ],
+        "usphone": "ˈsɜːdʒən",
+        "ukphone": "ˈsɜːrdʒən"
+    },
+    {
+        "name": "surname",
+        "trans": [
+            "Họ"
+        ],
+        "usphone": "ˈsɜːneɪm",
+        "ukphone": "ˈsɜːrneɪm"
+    },
+    {
+        "name": "surprise",
+        "trans": [
+            "bất ngờ"
+        ],
+        "usphone": "səˈpraɪz",
+        "ukphone": "sərˈpraɪz"
+    },
+    {
+        "name": "survey",
+        "trans": [
+            "đo lường, điều tra"
+        ],
+        "usphone": "ˈsɜːveɪ , səˈveɪ",
+        "ukphone": "ˈsɜːrveɪ , sərˈveɪ"
+    },
+    {
+        "name": "survival",
+        "trans": [
+            "Sống sót"
+        ],
+        "usphone": "səˈvaɪvl",
+        "ukphone": "sərˈvaɪvl"
+    },
+    {
+        "name": "sweater",
+        "trans": [
+            "áo len"
+        ],
+        "usphone": "'swɛtɚ",
+        "ukphone": "'swetə"
+    },
+    {
+        "name": "switch",
+        "trans": [
+            "chuyển đổi"
+        ],
+        "usphone": "swɪtʃ",
+        "ukphone": "swɪtʃ"
+    },
+    {
+        "name": "switches",
+        "trans": [
+            "chuyển đổi"
+        ],
+        "usphone": "swɪtʃis",
+        "ukphone": "swɪtʃis"
+    },
+    {
+        "name": "symptom",
+        "trans": [
+            "Triệu chứng"
+        ],
+        "usphone": "ˈsɪmptəm",
+        "ukphone": "ˈsɪmptəm"
+    },
+    {
+        "name": "syndicate",
+        "trans": [
+            "tập đoàn"
+        ],
+        "usphone": "ˈsɪndɪkət , ˈsɪndɪkeɪt",
+        "ukphone": "ˈsɪndɪkət , ˈsɪndɪkeɪt"
+    },
+    {
+        "name": "system",
+        "trans": [
+            "hệ thống"
+        ],
+        "usphone": "ˈsɪstəm",
+        "ukphone": "ˈsɪstəm"
+    },
+    {
+        "name": "table",
+        "trans": [
+            "bảng, biểu đồ"
+        ],
+        "usphone": "ˈteɪbl",
+        "ukphone": "ˈteɪbl"
+    },
+    {
+        "name": "tablet",
+        "trans": [
+            "viên thuốc"
+        ],
+        "usphone": "ˈtæblət",
+        "ukphone": "ˈtæblət"
+    },
+    {
+        "name": "tape",
+        "trans": [
+            "băng"
+        ],
+        "usphone": "teɪp",
+        "ukphone": "teɪp"
+    },
+    {
+        "name": "tax",
+        "trans": [
+            "thuế"
+        ],
+        "usphone": "tæks",
+        "ukphone": "tæks"
+    },
+    {
+        "name": "taxi",
+        "trans": [
+            "Taxi"
+        ],
+        "usphone": "ˈtæksi",
+        "ukphone": "ˈtæksi"
+    },
+    {
+        "name": "tea",
+        "trans": [
+            "trà"
+        ],
+        "usphone": "tiː",
+        "ukphone": "tiː"
+    },
+    {
+        "name": "teacher",
+        "trans": [
+            "giáo viên"
+        ],
+        "usphone": "ˈtiːtʃə",
+        "ukphone": "ˈtiːtʃər"
+    },
+    {
+        "name": "teaching",
+        "trans": [
+            "giảng dạy"
+        ],
+        "usphone": "ˈtiːtʃɪŋ",
+        "ukphone": "ˈtiːtʃɪŋ"
+    },
+    {
+        "name": "team",
+        "trans": [
+            "đội, nhóm"
+        ],
+        "usphone": "tiːm",
+        "ukphone": "tiːm"
+    },
+    {
+        "name": "jargon",
+        "trans": [
+            "biệt ngữ, tiếng lóng"
+        ],
+        "usphone": "ˈdʒɑːɡən",
+        "ukphone": "ˈdʒɑːrɡən"
+    },
+    {
+        "name": "term",
+        "trans": [
+            "học kỳ"
+        ],
+        "usphone": "tɜːm",
+        "ukphone": "tɜːrm"
+    },
+    {
+        "name": "technology",
+        "trans": [
+            "Công nghệ"
+        ],
+        "usphone": "tekˈnɒlədʒi",
+        "ukphone": "tekˈnɑːlədʒi"
+    },
+    {
+        "name": "teeth",
+        "trans": [
+            "Răng"
+        ],
+        "usphone": "tiːθ",
+        "ukphone": "tiːθ"
+    },
+    {
+        "name": "telephone",
+        "trans": [
+            "điện thoại"
+        ],
+        "usphone": "ˈtelɪfəʊn",
+        "ukphone": "ˈtelɪfoʊn"
+    },
+    {
+        "name": "telescope",
+        "trans": [
+            "kính thiên văn"
+        ],
+        "usphone": "ˈtelɪskəʊp",
+        "ukphone": "ˈtelɪskoʊp"
+    },
+    {
+        "name": "television",
+        "trans": [
+            "truyền hình"
+        ],
+        "usphone": "ˈtelɪvɪʒn",
+        "ukphone": "ˈtelɪvɪʒn"
+    },
+    {
+        "name": "temper",
+        "trans": [
+            "tính khí"
+        ],
+        "usphone": "ˈtempə",
+        "ukphone": "ˈtempər"
+    },
+    {
+        "name": "temple",
+        "trans": [
+            "ngôi đền"
+        ],
+        "usphone": "ˈtempl",
+        "ukphone": "ˈtempl"
+    },
+    {
+        "name": "text",
+        "trans": [
+            "Bài viết"
+        ],
+        "usphone": "tekst",
+        "ukphone": "tekst"
+    },
+    {
+        "name": "texture",
+        "trans": [
+            "kết cấu"
+        ],
+        "usphone": "ˈtekstʃə",
+        "ukphone": "ˈtekstʃər"
+    },
+    {
+        "name": "galaxy",
+        "trans": [
+            "dải ngân hà"
+        ],
+        "usphone": "ˈɡæləksi",
+        "ukphone": "ˈɡæləksi"
+    },
+    {
+        "name": "theft",
+        "trans": [
+            "trộm cắp"
+        ],
+        "usphone": "θeft",
+        "ukphone": "θeft"
+    },
+    {
+        "name": "theory",
+        "trans": [
+            "lý thuyết"
+        ],
+        "usphone": "ˈθɪəri",
+        "ukphone": "ˈθiːəri"
+    },
+    {
+        "name": "therapist",
+        "trans": [
+            "Chuyên gia vật lý trị liệu"
+        ],
+        "usphone": "ˈθerəpɪst",
+        "ukphone": "ˈθerəpɪst"
+    },
+    {
+        "name": "therapy",
+        "trans": [
+            "vật lý trị liệu, trị liệu"
+        ],
+        "usphone": "ˈθerəpi",
+        "ukphone": "ˈθerəpi"
+    },
+    {
+        "name": "thesis",
+        "trans": [
+            "Đề tài, Luận văn"
+        ],
+        "usphone": "ˈθiːsɪs",
+        "ukphone": "ˈθiːsɪs"
+    },
+    {
+        "name": "thief",
+        "trans": [
+            "tên trộm"
+        ],
+        "usphone": "θiːf",
+        "ukphone": "θiːf"
+    },
+    {
+        "name": "thieves",
+        "trans": [
+            "tên trộm"
+        ],
+        "usphone": "θiːvz",
+        "ukphone": "θivz"
+    },
+    {
+        "name": "thinking",
+        "trans": [
+            "nghĩ"
+        ],
+        "usphone": "ˈθɪŋkɪŋ",
+        "ukphone": "ˈθɪŋkɪŋ"
+    },
+    {
+        "name": "third",
+        "trans": [
+            "thứ ba"
+        ],
+        "usphone": "θɜːd",
+        "ukphone": "θɜːrd"
+    },
+    {
+        "name": "thought",
+        "trans": [
+            "ý tưởng"
+        ],
+        "usphone": "θɔːt",
+        "ukphone": "θɔːt"
+    },
+    {
+        "name": "threat",
+        "trans": [
+            "Đe dọa"
+        ],
+        "usphone": "θret",
+        "ukphone": "θret"
+    },
+    {
+        "name": "thriller",
+        "trans": [
+            "phim kinh dị"
+        ],
+        "usphone": "ˈθrɪlə",
+        "ukphone": "ˈθrɪlər"
+    },
+    {
+        "name": "ticket",
+        "trans": [
+            "vé"
+        ],
+        "usphone": "ˈtɪkɪt",
+        "ukphone": "ˈtɪkɪt"
+    },
+    {
+        "name": "tide",
+        "trans": [
+            "thủy triều"
+        ],
+        "usphone": "taɪd",
+        "ukphone": "taɪd"
+    },
+    {
+        "name": "tides",
+        "trans": [
+            "thủy triều"
+        ],
+        "usphone": "taɪdz",
+        "ukphone": "taɪdz"
+    },
+    {
+        "name": "tile",
+        "trans": [
+            "ngói"
+        ],
+        "usphone": "taɪl",
+        "ukphone": "taɪl"
+    },
+    {
+        "name": "timber",
+        "trans": [
+            "gỗ"
+        ],
+        "usphone": "ˈtɪmbə",
+        "ukphone": "ˈtɪmbər"
+    },
+    {
+        "name": "time",
+        "trans": [
+            "thời gian"
+        ],
+        "usphone": "taɪm",
+        "ukphone": "taɪm"
+    },
+    {
+        "name": "title",
+        "trans": [
+            "tựa đề"
+        ],
+        "usphone": "ˈtaɪtl",
+        "ukphone": "ˈtaɪtl"
+    },
+    {
+        "name": "toaster",
+        "trans": [
+            "máy nướng bánh mì"
+        ],
+        "usphone": "ˈtəʊstə",
+        "ukphone": "ˈtoʊstər"
+    },
+    {
+        "name": "toilet",
+        "trans": [
+            "phòng tắm"
+        ],
+        "usphone": "ˈtɔɪlət",
+        "ukphone": "ˈtɔɪlət"
+    },
+    {
+        "name": "tomato",
+        "trans": [
+            "cà chua"
+        ],
+        "usphone": "təˈmɑːtəʊ",
+        "ukphone": "təˈmeɪtoʊ"
+    },
+    {
+        "name": "tone",
+        "trans": [
+            "giọng điệu của một ngôn ngữ"
+        ],
+        "usphone": "təʊn",
+        "ukphone": "toʊn"
+    },
+    {
+        "name": "tool",
+        "trans": [
+            "Công cụ"
+        ],
+        "usphone": "tuːl",
+        "ukphone": "tuːl"
+    },
+    {
+        "name": "top",
+        "trans": [
+            "hàng đầu"
+        ],
+        "usphone": "tɒp",
+        "ukphone": "tɑːp"
+    },
+    {
+        "name": "topic",
+        "trans": [
+            "chủ đề"
+        ],
+        "usphone": "ˈtɒpɪk",
+        "ukphone": "ˈtɑːpɪk"
+    },
+    {
+        "name": "total",
+        "trans": [
+            "tổng cộng"
+        ],
+        "usphone": "ˈtəʊtl",
+        "ukphone": "ˈtoʊtl"
+    },
+    {
+        "name": "touching",
+        "trans": [
+            "Liên hệ"
+        ],
+        "usphone": "ˈtʌtʃɪŋ",
+        "ukphone": "ˈtʌtʃɪŋ"
+    },
+    {
+        "name": "tour",
+        "trans": [
+            "du lịch"
+        ],
+        "usphone": "tʊə",
+        "ukphone": "tʊr"
+    },
+    {
+        "name": "touring",
+        "trans": [
+            "du lịch"
+        ],
+        "usphone": "ˈtʊərɪŋ",
+        "ukphone": "ˈtʊrɪŋ"
+    },
+    {
+        "name": "tourism",
+        "trans": [
+            "du lịch"
+        ],
+        "usphone": "ˈtʊərɪzəm",
+        "ukphone": "ˈtʊrɪzəm"
+    },
+    {
+        "name": "tourist",
+        "trans": [
+            "khách du lịch"
+        ],
+        "usphone": "ˈtʊərɪst",
+        "ukphone": "ˈtʊrɪst"
+    },
+    {
+        "name": "towel",
+        "trans": [
+            "khăn tắm"
+        ],
+        "usphone": "ˈtaʊəl",
+        "ukphone": "ˈtaʊəl"
+    },
+    {
+        "name": "tower",
+        "trans": [
+            "tháp"
+        ],
+        "usphone": "ˈtaʊə",
+        "ukphone": "ˈtaʊər"
+    },
+    {
+        "name": "town",
+        "trans": [
+            "thị trấn nhỏ"
+        ],
+        "usphone": "taʊn",
+        "ukphone": "taʊn"
+    },
+    {
+        "name": "track",
+        "trans": [
+            "quỹ đạo"
+        ],
+        "usphone": "træk",
+        "ukphone": "træk"
+    },
+    {
+        "name": "tractor",
+        "trans": [
+            "máy kéo"
+        ],
+        "usphone": "ˈtræktə",
+        "ukphone": "ˈtræktər"
+    },
+    {
+        "name": "trade",
+        "trans": [
+            "buôn bán"
+        ],
+        "usphone": "treɪd",
+        "ukphone": "treɪd"
+    },
+    {
+        "name": "tram",
+        "trans": [
+            "xe điện"
+        ],
+        "usphone": "træm",
+        "ukphone": "træm"
+    },
+    {
+        "name": "tragedy",
+        "trans": [
+            "Bi kịch"
+        ],
+        "usphone": "ˈtrædʒədi",
+        "ukphone": "ˈtrædʒədi"
+    },
+    {
+        "name": "trailer",
+        "trans": [
+            "xe kéo"
+        ],
+        "usphone": "ˈtreɪlə",
+        "ukphone": "ˈtreɪlər"
+    },
+    {
+        "name": "training",
+        "trans": [
+            "đào tạo"
+        ],
+        "usphone": "ˈtreɪnɪŋ",
+        "ukphone": "ˈtreɪnɪŋ"
+    },
+    {
+        "name": "trend",
+        "trans": [
+            "Xu hướng"
+        ],
+        "usphone": "trend",
+        "ukphone": "trend"
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "du lịch"
+        ],
+        "usphone": "ˈtrævl",
+        "ukphone": "ˈtrævl"
+    },
+    {
+        "name": "traveller",
+        "trans": [
+            "khách du lịch"
+        ],
+        "usphone": "ˈtrævələ",
+        "ukphone": "ˈtrævələr"
+    },
+    {
+        "name": "treatment",
+        "trans": [
+            "điều trị"
+        ],
+        "usphone": "ˈtriːtmənt",
+        "ukphone": "ˈtriːtmənt"
+    },
+    {
+        "name": "trip",
+        "trans": [
+            "du lịch"
+        ],
+        "usphone": "trɪp",
+        "ukphone": "trɪp"
+    },
+    {
+        "name": "tribe",
+        "trans": [
+            "bộ lạc"
+        ],
+        "usphone": "traɪb",
+        "ukphone": "traɪb"
+    },
+    {
+        "name": "tribute",
+        "trans": [
+            "cống phẩm"
+        ],
+        "usphone": "ˈtrɪbjuːt",
+        "ukphone": "ˈtrɪbjuːt"
+    },
+    {
+        "name": "tributes",
+        "trans": [
+            "cống phẩm"
+        ],
+        "usphone": "ˈtrɪbjuts",
+        "ukphone": "ˈtrɪbjʊts"
+    },
+    {
+        "name": "Trinity",
+        "trans": [
+            "Cao đẳng Trinity"
+        ],
+        "usphone": "ˈtrɪnəti",
+        "ukphone": "ˈtrɪnəti"
+    },
+    {
+        "name": "trolley",
+        "trans": [
+            "xe điện"
+        ],
+        "usphone": "ˈtrɒli",
+        "ukphone": "ˈtrɑːli"
+    },
+    {
+        "name": "trouble",
+        "trans": [
+            "rắc rối"
+        ],
+        "usphone": "ˈtrʌbl",
+        "ukphone": "ˈtrʌbl"
+    },
+    {
+        "name": "tube",
+        "trans": [
+            "đường ống, tàu điện ngầm"
+        ],
+        "usphone": "tjuːb",
+        "ukphone": "tuːb"
+    },
+    {
+        "name": "tunnels",
+        "trans": [
+            "đường hầm"
+        ],
+        "usphone": "ˈtʌnlz",
+        "ukphone": "ˈtʌnlz"
+    },
+    {
+        "name": "tuition",
+        "trans": [
+            "Học phí"
+        ],
+        "usphone": "tjuˈɪʃn",
+        "ukphone": "tuˈɪʃn"
+    },
+    {
+        "name": "tune",
+        "trans": [
+            "điều chỉnh"
+        ],
+        "usphone": "tjuːn",
+        "ukphone": "tuːn"
+    },
+    {
+        "name": "tunes",
+        "trans": [
+            "điều chỉnh"
+        ],
+        "usphone": "tunz",
+        "ukphone": "tjuːnz"
+    },
+    {
+        "name": "tutor",
+        "trans": [
+            "gia sư, cố vấn"
+        ],
+        "usphone": "ˈtjuːtə",
+        "ukphone": "ˈtuːtər"
+    },
+    {
+        "name": "type",
+        "trans": [
+            "loại"
+        ],
+        "usphone": "taɪp",
+        "ukphone": "taɪp"
+    },
+    {
+        "name": "umpire",
+        "trans": [
+            "trọng tài"
+        ],
+        "usphone": "ˈʌmpʌɪə",
+        "ukphone": "ˈəmˌpaɪ(ə)r"
+    },
+    {
+        "name": "understanding",
+        "trans": [
+            "hiểu"
+        ],
+        "usphone": "ˌʌndəˈstændɪŋ",
+        "ukphone": "ˌʌndərˈstændɪŋ"
+    },
+    {
+        "name": "utensil",
+        "trans": [
+            "đồ dùng"
+        ],
+        "usphone": "juːˈtensl",
+        "ukphone": "juːˈtensl"
+    },
+    {
+        "name": "uniform",
+        "trans": [
+            "đồng phục"
+        ],
+        "usphone": "ˈjuːnɪfɔːm",
+        "ukphone": "ˈjuːnɪfɔːrm"
+    },
+    {
+        "name": "union",
+        "trans": [
+            "công đoàn"
+        ],
+        "usphone": "ˈjuːniən",
+        "ukphone": "ˈjuːniən"
+    },
+    {
+        "name": "university",
+        "trans": [
+            "trường đại học"
+        ],
+        "usphone": "ˌjuːnɪˈvɜːsəti",
+        "ukphone": "ˌjuːnɪˈvɜːrsəti"
+    },
+    {
+        "name": "usage",
+        "trans": [
+            "sử dụng"
+        ],
+        "usphone": "ˈjuːsɪdʒ",
+        "ukphone": "ˈjuːsɪdʒ"
+    },
+    {
+        "name": "vacancy",
+        "trans": [
+            "Vị trí tuyển dụng"
+        ],
+        "usphone": "ˈveɪkənsi",
+        "ukphone": "ˈveɪkənsi"
+    },
+    {
+        "name": "vacation",
+        "trans": [
+            "kỳ nghỉ"
+        ],
+        "usphone": "veɪˈkeɪʃn",
+        "ukphone": "veɪˈkeɪʃn"
+    },
+    {
+        "name": "value",
+        "trans": [
+            "giá trị"
+        ],
+        "usphone": "ˈvæljuː",
+        "ukphone": "ˈvæljuː"
+    },
+    {
+        "name": "particulars",
+        "trans": [
+            "chi tiết, tính năng"
+        ],
+        "usphone": "pəˈtɪkjələrz",
+        "ukphone": "pəˈtɪkjʊləz"
+    },
+    {
+        "name": "variety",
+        "trans": [
+            "loại"
+        ],
+        "usphone": "vəˈraɪəti",
+        "ukphone": "vəˈraɪəti"
+    },
+    {
+        "name": "vegetable",
+        "trans": [
+            "rau củ"
+        ],
+        "usphone": "ˈvedʒtəbl",
+        "ukphone": "ˈvedʒtəbl"
+    },
+    {
+        "name": "velvet",
+        "trans": [
+            "nhung"
+        ],
+        "usphone": "ˈvelvɪt",
+        "ukphone": "ˈvelvɪt"
+    },
+    {
+        "name": "vet",
+        "trans": [
+            "bác sĩ thú y"
+        ],
+        "usphone": "vet",
+        "ukphone": "vet"
+    },
+    {
+        "name": "video",
+        "trans": [
+            "Video"
+        ],
+        "usphone": "ˈvɪdiəʊ",
+        "ukphone": "ˈvɪdioʊ"
+    },
+    {
+        "name": "view",
+        "trans": [
+            "phong cảnh, quang cảnh, quan điểm"
+        ],
+        "usphone": "vjuː",
+        "ukphone": "vjuː"
+    },
+    {
+        "name": "village",
+        "trans": [
+            "làng miền núi, làng"
+        ],
+        "usphone": "ˈvɪlɪdʒ",
+        "ukphone": "ˈvɪlɪdʒ"
+    },
+    {
+        "name": "vinegar",
+        "trans": [
+            "giấm"
+        ],
+        "usphone": "ˈvɪnɪɡə",
+        "ukphone": "ˈvɪnɪɡər"
+    },
+    {
+        "name": "visa",
+        "trans": [
+            "thị thực"
+        ],
+        "usphone": "ˈviːzə",
+        "ukphone": "ˈviːzə"
+    },
+    {
+        "name": "visitor",
+        "trans": [
+            "du khách"
+        ],
+        "usphone": "ˈvɪzɪtə",
+        "ukphone": "ˈvɪzɪtər"
+    },
+    {
+        "name": "vitamin",
+        "trans": [
+            "vitamin"
+        ],
+        "usphone": "ˈvɪtəmɪn",
+        "ukphone": "ˈvaɪtəmɪn"
+    },
+    {
+        "name": "vocation",
+        "trans": [
+            "ngành nghề, nghề nghiệp"
+        ],
+        "usphone": "vəʊˈkeɪʃn",
+        "ukphone": "voʊˈkeɪʃn"
+    },
+    {
+        "name": "volunteer",
+        "trans": [
+            "Tình nguyện viên"
+        ],
+        "usphone": "ˌvɒlənˈtɪə",
+        "ukphone": "ˌvɑːlənˈtɪr"
+    },
+    {
+        "name": "volunteers",
+        "trans": [
+            "Tình nguyện viên"
+        ],
+        "usphone": "ˌvɒlənˈtɪəz",
+        "ukphone": "ˌvɑːlənˈtɪrz"
+    },
+    {
+        "name": "waist",
+        "trans": [
+            "Vòng eo"
+        ],
+        "usphone": "weɪst",
+        "ukphone": "weɪst"
+    },
+    {
+        "name": "waiter",
+        "trans": [
+            "bồi bàn"
+        ],
+        "usphone": "ˈweɪtə",
+        "ukphone": "ˈweɪtər"
+    },
+    {
+        "name": "walk",
+        "trans": [
+            "đi bộ"
+        ],
+        "usphone": "wɔːk",
+        "ukphone": "wɔːk"
+    },
+    {
+        "name": "walking",
+        "trans": [
+            "đi bộ"
+        ],
+        "usphone": "ˈwɔːkɪŋ",
+        "ukphone": "ˈwɔːkɪŋ"
+    },
+    {
+        "name": "wall",
+        "trans": [
+            "bức tường"
+        ],
+        "usphone": "wɔːl",
+        "ukphone": "wɔːl"
+    },
+    {
+        "name": "world",
+        "trans": [
+            "thế giới"
+        ],
+        "usphone": "wɜːld",
+        "ukphone": "wɜːrld"
+    },
+    {
+        "name": "warming",
+        "trans": [
+            "sự nóng lên"
+        ],
+        "usphone": "ˈwɔːmɪŋ",
+        "ukphone": "ˈwɔːrmɪŋ"
+    },
+    {
+        "name": "washing",
+        "trans": [
+            "rửa"
+        ],
+        "usphone": "ˈwɒʃɪŋ",
+        "ukphone": "ˈwɑːʃɪŋ"
+    },
+    {
+        "name": "wasp",
+        "trans": [
+            "ong bắp cày"
+        ],
+        "usphone": "wɒsp",
+        "ukphone": "wɑːsp"
+    },
+    {
+        "name": "waste",
+        "trans": [
+            "chất thải"
+        ],
+        "usphone": "weɪst",
+        "ukphone": "weɪst"
+    },
+    {
+        "name": "wasteland",
+        "trans": [
+            "đất hoang"
+        ],
+        "usphone": "'westlənd",
+        "ukphone": "'weɪs(t)lænd; -lənd"
+    },
+    {
+        "name": "water",
+        "trans": [
+            "nước"
+        ],
+        "usphone": "ˈwɔːtə",
+        "ukphone": "ˈwɔːtər"
+    },
+    {
+        "name": "wave",
+        "trans": [
+            "làn sóng"
+        ],
+        "usphone": "weɪv",
+        "ukphone": "weɪv"
+    },
+    {
+        "name": "wax",
+        "trans": [
+            "sáp"
+        ],
+        "usphone": "wæks",
+        "ukphone": "wæks"
+    },
+    {
+        "name": "wealth",
+        "trans": [
+            "sự giàu có"
+        ],
+        "usphone": "welθ",
+        "ukphone": "welθ"
+    },
+    {
+        "name": "weapon",
+        "trans": [
+            "vũ khí"
+        ],
+        "usphone": "ˈwepən",
+        "ukphone": "ˈwepən"
+    },
+    {
+        "name": "weather",
+        "trans": [
+            "thời tiết"
+        ],
+        "usphone": "ˈweðə",
+        "ukphone": "ˈweðər"
+    },
+    {
+        "name": "weeds",
+        "trans": [
+            "cỏ dại"
+        ],
+        "usphone": "wiːdz",
+        "ukphone": "wiːdz"
+    },
+    {
+        "name": "week",
+        "trans": [
+            "tuần"
+        ],
+        "usphone": "wiːk",
+        "ukphone": "wiːk"
+    },
+    {
+        "name": "weekday",
+        "trans": [
+            "Các ngày trong tuần (không phải thứ bảy và chủ nhật)"
+        ],
+        "usphone": "ˈwiːkdeɪ",
+        "ukphone": "ˈwiːkdeɪ"
+    },
+    {
+        "name": "weekend",
+        "trans": [
+            "cuối tuần"
+        ],
+        "usphone": "ˌwiːkˈend",
+        "ukphone": "ˈwiːkend"
+    },
+    {
+        "name": "weight",
+        "trans": [
+            "trọng lượng"
+        ],
+        "usphone": "weɪt",
+        "ukphone": "weɪt"
+    },
+    {
+        "name": "welfare",
+        "trans": [
+            "phúc lợi"
+        ],
+        "usphone": "ˈwelfeə",
+        "ukphone": "ˈwelfer"
+    },
+    {
+        "name": "west",
+        "trans": [
+            "tây"
+        ],
+        "usphone": "wɛst",
+        "ukphone": "west"
+    },
+    {
+        "name": "wetland",
+        "trans": [
+            "đầm lầy, vùng đất ngập nước"
+        ],
+        "usphone": "ˈwetlənd",
+        "ukphone": "ˈwetlənd"
+    },
+    {
+        "name": "whale",
+        "trans": [
+            "cá voi"
+        ],
+        "usphone": "weɪl",
+        "ukphone": "weɪl"
+    },
+    {
+        "name": "wheel",
+        "trans": [
+            "vô lăng, bánh xe"
+        ],
+        "usphone": "wiːl",
+        "ukphone": "wiːl"
+    },
+    {
+        "name": "width",
+        "trans": [
+            "Chiều rộng"
+        ],
+        "usphone": "wɪdθ",
+        "ukphone": "wɪdθ"
+    },
+    {
+        "name": "willows",
+        "trans": [
+            "liễu"
+        ],
+        "usphone": "ˈwiləuz",
+        "ukphone": "ˈwiləuz"
+    },
+    {
+        "name": "wind",
+        "trans": [
+            "gió"
+        ],
+        "usphone": "wɪnd , waɪnd",
+        "ukphone": "wɪnd , waɪnd"
+    },
+    {
+        "name": "wing",
+        "trans": [
+            "cánh, phụ lục"
+        ],
+        "usphone": "wɪŋ",
+        "ukphone": "wɪŋ"
+    },
+    {
+        "name": "word",
+        "trans": [
+            "từ"
+        ],
+        "usphone": "wɜːd",
+        "ukphone": "wərd"
+    },
+    {
+        "name": "workforce",
+        "trans": [
+            "lực lượng lao động"
+        ],
+        "usphone": "ˈwɜːkfɔːs",
+        "ukphone": "ˈwɜːrkfɔːrs"
+    },
+    {
+        "name": "working",
+        "trans": [
+            "làm việc"
+        ],
+        "usphone": "ˈwɜːkɪŋ",
+        "ukphone": "ˈwɜːrkɪŋ"
+    },
+    {
+        "name": "wound",
+        "trans": [
+            "chấn thương"
+        ],
+        "usphone": "wuːnd , waʊnd",
+        "ukphone": "waʊnd , wuːnd"
+    },
+    {
+        "name": "writing",
+        "trans": [
+            "viết"
+        ],
+        "usphone": "ˈraɪtɪŋ",
+        "ukphone": "ˈraɪtɪŋ"
+    },
+    {
+        "name": "year",
+        "trans": [
+            "năm"
+        ],
+        "usphone": "jɪə",
+        "ukphone": "jɪr"
+    },
+    {
+        "name": "yoga",
+        "trans": [
+            "Yoga"
+        ],
+        "usphone": "ˈjəʊɡə",
+        "ukphone": "ˈjoʊɡə"
+    },
+    {
+        "name": "youth",
+        "trans": [
+            "giới trẻ"
+        ],
+        "usphone": "juːθ",
+        "ukphone": "juːθ"
+    },
+    {
+        "name": "zero",
+        "trans": [
+            "không"
+        ],
+        "usphone": "ˈzɪərəʊ",
+        "ukphone": "ˈzɪroʊ"
+    }
+]

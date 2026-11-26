@@ -1,0 +1,194 @@
+[
+    {
+        "name": "administration",
+        "trans": [
+            "n. hành chính, quản lý"
+        ]
+    },
+    {
+        "name": "office",
+        "trans": [
+            "n. văn phòng"
+        ]
+    },
+    {
+        "name": "clerical",
+        "trans": [
+            "adj. văn thư"
+        ]
+    },
+    {
+        "name": "file",
+        "trans": [
+            "v. lưu trữ, N. thư mục"
+        ]
+    },
+    {
+        "name": "computer-literate",
+        "trans": [
+            "adj. thành thạo máy tính"
+        ]
+    },
+    {
+        "name": "teleconference",
+        "trans": [
+            "n. hội nghị truyền hình"
+        ]
+    },
+    {
+        "name": "type",
+        "trans": [
+            "v. đánh máy, N. loại"
+        ]
+    },
+    {
+        "name": "spreadsheet",
+        "trans": [
+            "n. bảng tính"
+        ]
+    },
+    {
+        "name": "data entry",
+        "trans": [
+            "n. nhập dữ liệu"
+        ]
+    },
+    {
+        "name": "interpersonal",
+        "trans": [
+            "adj. giữa các cá nhân"
+        ]
+    },
+    {
+        "name": "organisational",
+        "trans": [
+            "adj. có tổ chức"
+        ]
+    },
+    {
+        "name": "communicate",
+        "trans": [
+            "v. giao tiếp"
+        ]
+    },
+    {
+        "name": "flexible",
+        "trans": [
+            "adj. linh hoạt, đàn hồi"
+        ]
+    },
+    {
+        "name": "overtime",
+        "trans": [
+            "adv. làm thêm giờ, tính từ làm thêm giờ"
+        ]
+    },
+    {
+        "name": "position",
+        "trans": [
+            "n. Vị trí"
+        ]
+    },
+    {
+        "name": "occupation",
+        "trans": [
+            "n. Sự nghiệp"
+        ]
+    },
+    {
+        "name": "part-time",
+        "trans": [
+            "adj. bán thời gian"
+        ]
+    },
+    {
+        "name": "full-time",
+        "trans": [
+            "adj. toàn thời gian"
+        ]
+    },
+    {
+        "name": "temporary",
+        "trans": [
+            "adj. tạm thời"
+        ]
+    },
+    {
+        "name": "internship",
+        "trans": [
+            "n. Thực tập"
+        ]
+    },
+    {
+        "name": "intern",
+        "trans": [
+            "n. thực tập sinh"
+        ]
+    },
+    {
+        "name": "cleaner",
+        "trans": [
+            "n. sạch hơn"
+        ]
+    },
+    {
+        "name": "receptionist",
+        "trans": [
+            "n. lễ tân"
+        ]
+    },
+    {
+        "name": "secretary",
+        "trans": [
+            "n. thư ký"
+        ]
+    },
+    {
+        "name": "representative",
+        "trans": [
+            "n. đại diện"
+        ]
+    },
+    {
+        "name": "engineer",
+        "trans": [
+            "n. kỹ sư"
+        ]
+    },
+    {
+        "name": "accountant",
+        "trans": [
+            "n. kế toán viên"
+        ]
+    },
+    {
+        "name": "staff",
+        "trans": [
+            "n. nhân viên"
+        ]
+    },
+    {
+        "name": "manager",
+        "trans": [
+            "n. người quản lý"
+        ]
+    },
+    {
+        "name": "freelancer",
+        "trans": [
+            "n. người làm nghề tự do"
+        ]
+    },
+    {
+        "name": "assistant",
+        "trans": [
+            "n. trợ lý"
+        ]
+    },
+    {
+        "name": "customer service",
+        "trans": [
+            "n. dịch vụ khách hàng"
+        ]
+    }
+]

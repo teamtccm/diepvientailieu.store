@@ -1,0 +1,446 @@
+[
+    {
+        "name": "beginner",
+        "trans": [
+            "n. Người mới bắt đầu"
+        ]
+    },
+    {
+        "name": "account",
+        "trans": [
+            "n. Tài khoản"
+        ]
+    },
+    {
+        "name": "leather shoes",
+        "trans": [
+            "n. giày da"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "n. gara"
+        ]
+    },
+    {
+        "name": "wheel",
+        "trans": [
+            "n. bánh xe"
+        ]
+    },
+    {
+        "name": "moderate",
+        "trans": [
+            "adj. Nhẹ: Trung bình"
+        ]
+    },
+    {
+        "name": "waterfall",
+        "trans": [
+            "n. thác nước"
+        ]
+    },
+    {
+        "name": "express",
+        "trans": [
+            "n. Chuyển phát nhanh"
+        ]
+    },
+    {
+        "name": "code",
+        "trans": [
+            "n. mã hóa mã"
+        ]
+    },
+    {
+        "name": "avenue",
+        "trans": [
+            "n. (Bắc-Nam) đường"
+        ]
+    },
+    {
+        "name": "drama",
+        "trans": [
+            "n. kịch"
+        ]
+    },
+    {
+        "name": "gas",
+        "trans": [
+            "n. khí đốt"
+        ]
+    },
+    {
+        "name": "fluent",
+        "trans": [
+            "adj. mịn màng"
+        ]
+    },
+    {
+        "name": "shower",
+        "trans": [
+            "n. tắm"
+        ]
+    },
+    {
+        "name": "minibus",
+        "trans": [
+            "n. xe tải"
+        ]
+    },
+    {
+        "name": "plant",
+        "trans": [
+            "n. nhà máy"
+        ]
+    },
+    {
+        "name": "transit",
+        "trans": [
+            "n. vận chuyển"
+        ]
+    },
+    {
+        "name": "cookery",
+        "trans": [
+            "n. nấu nướng"
+        ]
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "n. Phim: Rạp chiếu phim"
+        ]
+    },
+    {
+        "name": "tank",
+        "trans": [
+            "n. bể chứa, bồn rửa, hồ bơi"
+        ]
+    },
+    {
+        "name": "enjoyable",
+        "trans": [
+            "adj. hạnh phúc: vui vẻ"
+        ]
+    },
+    {
+        "name": "warehouse",
+        "trans": [
+            "n. nhà kho"
+        ]
+    },
+    {
+        "name": "yoga",
+        "trans": [
+            "n. Yoga"
+        ]
+    },
+    {
+        "name": "mat",
+        "trans": [
+            "n. chiếu"
+        ]
+    },
+    {
+        "name": "Asian",
+        "trans": [
+            "n. người châu á"
+        ]
+    },
+    {
+        "name": "knife",
+        "trans": [
+            "n. Con dao"
+        ]
+    },
+    {
+        "name": "container",
+        "trans": [
+            "n. thùng chứa: thùng chứa"
+        ]
+    },
+    {
+        "name": "mirror",
+        "trans": [
+            "n. gương"
+        ]
+    },
+    {
+        "name": "first aid",
+        "trans": [
+            "n. sơ cứu"
+        ]
+    },
+    {
+        "name": "campaign",
+        "trans": [
+            "n. Hoạt động"
+        ]
+    },
+    {
+        "name": "conference",
+        "trans": [
+            "n. cuộc họp, tư vấn"
+        ]
+    },
+    {
+        "name": "limited",
+        "trans": [
+            "adj. hạn chế"
+        ]
+    },
+    {
+        "name": "exterior",
+        "trans": [
+            "adj. bên ngoài"
+        ]
+    },
+    {
+        "name": "basis",
+        "trans": [
+            "n. Khái niệm cơ bản"
+        ]
+    },
+    {
+        "name": "internet",
+        "trans": [
+            "n. Internet"
+        ]
+    },
+    {
+        "name": "resume",
+        "trans": [
+            "n. sơ yếu lý lịch"
+        ]
+    },
+    {
+        "name": "type",
+        "trans": [
+            "n. Loại"
+        ]
+    },
+    {
+        "name": "layout",
+        "trans": [
+            "n. Bố cục"
+        ]
+    },
+    {
+        "name": "correction",
+        "trans": [
+            "n. đúng, sửa đổi"
+        ]
+    },
+    {
+        "name": "experience",
+        "trans": [
+            "n. kinh nghiệm"
+        ]
+    },
+    {
+        "name": "avoid",
+        "trans": [
+            "v. tránh"
+        ]
+    },
+    {
+        "name": "bakery",
+        "trans": [
+            "n. tiệm bánh"
+        ]
+    },
+    {
+        "name": "reference",
+        "trans": [
+            "n. Tài liệu tham khảo"
+        ]
+    },
+    {
+        "name": "agency",
+        "trans": [
+            "n. đại lý"
+        ]
+    },
+    {
+        "name": "manufacture",
+        "trans": [
+            "v. chế tạo"
+        ]
+    },
+    {
+        "name": "tutor",
+        "trans": [
+            "n. người cố vấn"
+        ]
+    },
+    {
+        "name": "kid",
+        "trans": [
+            "n. đứa trẻ"
+        ]
+    },
+    {
+        "name": "example",
+        "trans": [
+            "n. Ví dụ"
+        ]
+    },
+    {
+        "name": "private",
+        "trans": [
+            "adj. riêng tư"
+        ]
+    },
+    {
+        "name": "screen",
+        "trans": [
+            "n. màn hình"
+        ]
+    },
+    {
+        "name": "manager",
+        "trans": [
+            "n. người quản lý"
+        ]
+    },
+    {
+        "name": "choice",
+        "trans": [
+            "n. chọn"
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "adj. có sẵn"
+        ]
+    },
+    {
+        "name": "instruction",
+        "trans": [
+            "n. Mô tả"
+        ]
+    },
+    {
+        "name": "freezer",
+        "trans": [
+            "n. tủ lạnh"
+        ]
+    },
+    {
+        "name": "financial",
+        "trans": [
+            "adj. tài chính"
+        ]
+    },
+    {
+        "name": "camping",
+        "trans": [
+            "n. kỳ nghỉ cắm trại"
+        ]
+    },
+    {
+        "name": "block",
+        "trans": [
+            "n. khu phố"
+        ]
+    },
+    {
+        "name": "climbing",
+        "trans": [
+            "n. leo núi"
+        ]
+    },
+    {
+        "name": "free",
+        "trans": [
+            "adj. miễn phí"
+        ]
+    },
+    {
+        "name": "view",
+        "trans": [
+            "n. tầm nhìn"
+        ]
+    },
+    {
+        "name": "include",
+        "trans": [
+            "v. bao gồm"
+        ]
+    },
+    {
+        "name": "cancel",
+        "trans": [
+            "v. Hủy bỏ"
+        ]
+    },
+    {
+        "name": "performer",
+        "trans": [
+            "n. người chơi"
+        ]
+    },
+    {
+        "name": "suitable",
+        "trans": [
+            "adj. thích hợp"
+        ]
+    },
+    {
+        "name": "opera",
+        "trans": [
+            "n. nhà hát opera"
+        ]
+    },
+    {
+        "name": "theatre",
+        "trans": [
+            "n. rạp hát"
+        ]
+    },
+    {
+        "name": "library",
+        "trans": [
+            "n. thư viện"
+        ]
+    },
+    {
+        "name": "townhall",
+        "trans": [
+            "n. tòa thị chính"
+        ]
+    },
+    {
+        "name": "studio",
+        "trans": [
+            "n. phòng thu"
+        ]
+    },
+    {
+        "name": "interview",
+        "trans": [
+            "v. phỏng vấn"
+        ]
+    },
+    {
+        "name": "select",
+        "trans": [
+            "v. chọn"
+        ]
+    },
+    {
+        "name": "edit",
+        "trans": [
+            "v. Chỉnh sửa"
+        ]
+    },
+    {
+        "name": "parking",
+        "trans": [
+            "n. bãi đậu xe"
+        ]
+    }
+]

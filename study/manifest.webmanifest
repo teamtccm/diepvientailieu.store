@@ -1,0 +1,30 @@
+{
+  "id": "/study/",
+  "name": "Điệp Viên Study — Không Gian Học Tập AI",
+  "short_name": "Điệp Viên Study",
+  "description": "Khóa học Video HD, 600+ Đề cương Đại học, Đặt BTL, Ghi âm bài giảng AI, Luyện gõ từ vựng & Shadowing.",
+  "start_url": "/study/?window=main",
+  "scope": "/study/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "orientation": "any",
+  "background_color": "#0D1677",
+  "theme_color": "#0D1677",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

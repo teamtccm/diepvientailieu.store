@@ -1,0 +1,464 @@
+[
+    {
+        "name": "remain",
+        "trans": [
+            "v. giữ"
+        ]
+    },
+    {
+        "name": "detailed",
+        "trans": [
+            "adj. Chi tiết"
+        ]
+    },
+    {
+        "name": "disadvantage",
+        "trans": [
+            "n. Nhược điểm"
+        ]
+    },
+    {
+        "name": "lift",
+        "trans": [
+            "v. nâng"
+        ]
+    },
+    {
+        "name": "medical",
+        "trans": [
+            "adj. y tế"
+        ]
+    },
+    {
+        "name": "arrange",
+        "trans": [
+            "v. sắp xếp"
+        ]
+    },
+    {
+        "name": "artist",
+        "trans": [
+            "n. nghệ sĩ"
+        ]
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "n. Hộ chiếu"
+        ]
+    },
+    {
+        "name": "university",
+        "trans": [
+            "n. trường đại học"
+        ]
+    },
+    {
+        "name": "occupation",
+        "trans": [
+            "n. Sự nghiệp"
+        ]
+    },
+    {
+        "name": "audience",
+        "trans": [
+            "n. khán giả"
+        ]
+    },
+    {
+        "name": "landscape",
+        "trans": [
+            "n. phong cảnh"
+        ]
+    },
+    {
+        "name": "clay",
+        "trans": [
+            "n. đất sét"
+        ]
+    },
+    {
+        "name": "advantage",
+        "trans": [
+            "n. Ưu điểm"
+        ]
+    },
+    {
+        "name": "deck",
+        "trans": [
+            "n. boong tàu"
+        ]
+    },
+    {
+        "name": "tourist",
+        "trans": [
+            "n. du khách"
+        ]
+    },
+    {
+        "name": "entrance",
+        "trans": [
+            "n. lối vào"
+        ]
+    },
+    {
+        "name": "concern",
+        "trans": [
+            "n. những điều phải lo lắng"
+        ]
+    },
+    {
+        "name": "feature",
+        "trans": [
+            "n. Tính năng"
+        ]
+    },
+    {
+        "name": "service",
+        "trans": [
+            "n. dịch vụ"
+        ]
+    },
+    {
+        "name": "opportunity",
+        "trans": [
+            "n. cơ hội"
+        ]
+    },
+    {
+        "name": "band",
+        "trans": [
+            "n. đội"
+        ]
+    },
+    {
+        "name": "camp",
+        "trans": [
+            "n. cắm trại"
+        ]
+    },
+    {
+        "name": "festival",
+        "trans": [
+            "n. lễ hội"
+        ]
+    },
+    {
+        "name": "protection",
+        "trans": [
+            "n. bảo vệ"
+        ]
+    },
+    {
+        "name": "model",
+        "trans": [
+            "n. người mẫu"
+        ]
+    },
+    {
+        "name": "salt",
+        "trans": [
+            "n. muối"
+        ]
+    },
+    {
+        "name": "purple",
+        "trans": [
+            "n. màu tím"
+        ]
+    },
+    {
+        "name": "calorie",
+        "trans": [
+            "n. Calo"
+        ]
+    },
+    {
+        "name": "race",
+        "trans": [
+            "n. sự cạnh tranh"
+        ]
+    },
+    {
+        "name": "concert",
+        "trans": [
+            "n. buổi hòa nhạc"
+        ]
+    },
+    {
+        "name": "provide",
+        "trans": [
+            "v. cung cấp"
+        ]
+    },
+    {
+        "name": "broadcast",
+        "trans": [
+            "v. phát sóng"
+        ]
+    },
+    {
+        "name": "tent",
+        "trans": [
+            "n. lều"
+        ]
+    },
+    {
+        "name": "piano",
+        "trans": [
+            "n. đàn piano"
+        ]
+    },
+    {
+        "name": "share",
+        "trans": [
+            "v. Chia sẻ"
+        ]
+    },
+    {
+        "name": "discount",
+        "trans": [
+            "n. Giảm giá"
+        ]
+    },
+    {
+        "name": "tablet",
+        "trans": [
+            "n. viên thuốc"
+        ]
+    },
+    {
+        "name": "original",
+        "trans": [
+            "adj. nguyên bản"
+        ]
+    },
+    {
+        "name": "control",
+        "trans": [
+            "n. kiểm soát"
+        ]
+    },
+    {
+        "name": "handle",
+        "trans": [
+            "v. hoạt động"
+        ]
+    },
+    {
+        "name": "participant",
+        "trans": [
+            "n. người tham gia"
+        ]
+    },
+    {
+        "name": "repair",
+        "trans": [
+            "n. sửa chữa"
+        ]
+    },
+    {
+        "name": "advertisement",
+        "trans": [
+            "n. quảng cáo"
+        ]
+    },
+    {
+        "name": "silver",
+        "trans": [
+            "n. bạc"
+        ]
+    },
+    {
+        "name": "additional",
+        "trans": [
+            "adj. bổ sung"
+        ]
+    },
+    {
+        "name": "dining room",
+        "trans": [
+            "n. nhà hàng"
+        ]
+    },
+    {
+        "name": "candle",
+        "trans": [
+            "n. nến"
+        ]
+    },
+    {
+        "name": "single",
+        "trans": [
+            "n. độc thân"
+        ]
+    },
+    {
+        "name": "performance",
+        "trans": [
+            "n. hiệu suất"
+        ]
+    },
+    {
+        "name": "supermarket",
+        "trans": [
+            "n. siêu thị"
+        ]
+    },
+    {
+        "name": "avenue",
+        "trans": [
+            "n. Đường chính"
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "adj. có sẵn"
+        ]
+    },
+    {
+        "name": "vacuum",
+        "trans": [
+            "n. chân không"
+        ]
+    },
+    {
+        "name": "registration",
+        "trans": [
+            "n. Đăng ký"
+        ]
+    },
+    {
+        "name": "sale",
+        "trans": [
+            "n. để bán"
+        ]
+    },
+    {
+        "name": "cousin",
+        "trans": [
+            "n. anh em họ"
+        ]
+    },
+    {
+        "name": "reusable",
+        "trans": [
+            "adj. có thể được tái sử dụng"
+        ]
+    },
+    {
+        "name": "certificate",
+        "trans": [
+            "n. Giấy chứng nhận"
+        ]
+    },
+    {
+        "name": "swimming pool",
+        "trans": [
+            "n. bể bơi"
+        ]
+    },
+    {
+        "name": "initial",
+        "trans": [
+            "adj. ban đầu"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "n. gara"
+        ]
+    },
+    {
+        "name": "deliver",
+        "trans": [
+            "v. vượt qua"
+        ]
+    },
+    {
+        "name": "primary school",
+        "trans": [
+            "n. trường tiểu học"
+        ]
+    },
+    {
+        "name": "purchase",
+        "trans": [
+            "n. mua"
+        ]
+    },
+    {
+        "name": "consult",
+        "trans": [
+            "v. Hỏi: Tư vấn"
+        ]
+    },
+    {
+        "name": "alarm",
+        "trans": [
+            "n. Đồng hồ báo thức: báo thức"
+        ]
+    },
+    {
+        "name": "driving license",
+        "trans": [
+            "n. bằng lái xe"
+        ]
+    },
+    {
+        "name": "sandwich",
+        "trans": [
+            "n. bánh sandwich"
+        ]
+    },
+    {
+        "name": "postcode",
+        "trans": [
+            "n. Mã vùng"
+        ]
+    },
+    {
+        "name": "loss",
+        "trans": [
+            "n. giảm bớt"
+        ]
+    },
+    {
+        "name": "technician",
+        "trans": [
+            "n. nhân viên kỹ thuật"
+        ]
+    },
+    {
+        "name": "tour",
+        "trans": [
+            "n. du lịch"
+        ]
+    },
+    {
+        "name": "valid",
+        "trans": [
+            "adj. hợp lệ"
+        ]
+    },
+    {
+        "name": "wheelchair",
+        "trans": [
+            "n. xe lăn"
+        ]
+    },
+    {
+        "name": "fridge",
+        "trans": [
+            "n. tủ lạnh"
+        ]
+    },
+    {
+        "name": "poetry",
+        "trans": [
+            "n. thơ ca"
+        ]
+    }
+]

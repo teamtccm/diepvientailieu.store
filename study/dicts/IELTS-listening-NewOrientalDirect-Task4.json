@@ -1,0 +1,202 @@
+[
+    {
+        "name": "borrow",
+        "trans": [
+            "v. mượn"
+        ]
+    },
+    {
+        "name": "lend",
+        "trans": [
+            "v. cho mượn"
+        ]
+    },
+    {
+        "name": "return",
+        "trans": [
+            "v. trở lại"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "v. Đặt chỗ"
+        ]
+    },
+    {
+        "name": "reserve",
+        "trans": [
+            "v. đặt chỗ trước, đặt trước"
+        ]
+    },
+    {
+        "name": "consultation",
+        "trans": [
+            "n. Tư vấn"
+        ]
+    },
+    {
+        "name": "library card",
+        "trans": [
+            "n. thẻ thư viện"
+        ]
+    },
+    {
+        "name": "admission",
+        "trans": [
+            "n. sự vào cửa, vé vào cửa"
+        ]
+    },
+    {
+        "name": "counter",
+        "trans": [
+            "n. quầy tính tiền"
+        ]
+    },
+    {
+        "name": "shelf",
+        "trans": [
+            "n. kệ"
+        ]
+    },
+    {
+        "name": "staff",
+        "trans": [
+            "n. nhân viên"
+        ]
+    },
+    {
+        "name": "librarian",
+        "trans": [
+            "n. thủ thư"
+        ]
+    },
+    {
+        "name": "catalog(ue)",
+        "trans": [
+            "n. Thư mục"
+        ]
+    },
+    {
+        "name": "category",
+        "trans": [
+            "n. loại, hạng mục"
+        ]
+    },
+    {
+        "name": "classification",
+        "trans": [
+            "n. Phân loại"
+        ]
+    },
+    {
+        "name": "call slip",
+        "trans": [
+            "n. Phiếu mượn sách"
+        ]
+    },
+    {
+        "name": "title",
+        "trans": [
+            "n. Tiêu đề"
+        ]
+    },
+    {
+        "name": "author",
+        "trans": [
+            "n. tác giả"
+        ]
+    },
+    {
+        "name": "index",
+        "trans": [
+            "n. chỉ mục"
+        ]
+    },
+    {
+        "name": "deadline",
+        "trans": [
+            "n. thời hạn"
+        ]
+    },
+    {
+        "name": "expire",
+        "trans": [
+            "v. hết hạn, chấm dứt"
+        ]
+    },
+    {
+        "name": "expiry",
+        "trans": [
+            "n. hết hạn, chấm dứt"
+        ]
+    },
+    {
+        "name": "recall",
+        "trans": [
+            "v. thu hồi, lấy lại"
+        ]
+    },
+    {
+        "name": "renew",
+        "trans": [
+            "v. cập nhật"
+        ]
+    },
+    {
+        "name": "renewal",
+        "trans": [
+            "n. cập nhật"
+        ]
+    },
+    {
+        "name": "due",
+        "trans": [
+            "adj. đến hạn"
+        ]
+    },
+    {
+        "name": "overdue",
+        "trans": [
+            "adj. hết hạn"
+        ]
+    },
+    {
+        "name": "fine",
+        "trans": [
+            "v. ổn",
+            "n. ổn"
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "adj. có sẵn"
+        ]
+    },
+    {
+        "name": "circulation",
+        "trans": [
+            "n. sự lưu thông"
+        ]
+    },
+    {
+        "name": "stock",
+        "trans": [
+            "n. hàng tồn kho, dự trữ"
+        ]
+    },
+    {
+        "name": "loan",
+        "trans": [
+            "v. Cho vay",
+            "n. Cho mượn đồ"
+        ]
+    },
+    {
+        "name": "inter library service",
+        "trans": [
+            "n. dịch vụ liên thư viện"
+        ]
+    }
+]

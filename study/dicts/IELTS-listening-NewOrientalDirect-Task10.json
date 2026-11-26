@@ -1,0 +1,266 @@
+[
+    {
+        "name": "reserve",
+        "trans": [
+            "v. Sách"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "v. Sách"
+        ]
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "v. thuê"
+        ]
+    },
+    {
+        "name": "hire",
+        "trans": [
+            "v. thuê"
+        ]
+    },
+    {
+        "name": "room",
+        "trans": [
+            "n. phòng, không gian"
+        ]
+    },
+    {
+        "name": "in advance",
+        "trans": [
+            "adv. trước"
+        ]
+    },
+    {
+        "name": "event",
+        "trans": [
+            "n. nguyên nhân, sự việc"
+        ]
+    },
+    {
+        "name": "ceremony",
+        "trans": [
+            "n. buổi lễ"
+        ]
+    },
+    {
+        "name": "conference",
+        "trans": [
+            "n. cuộc họp"
+        ]
+    },
+    {
+        "name": "anniversary",
+        "trans": [
+            "n. ngày kỷ niệm"
+        ]
+    },
+    {
+        "name": "facility",
+        "trans": [
+            "n. cơ sở vật chất"
+        ]
+    },
+    {
+        "name": "hall",
+        "trans": [
+            "n. khán phòng"
+        ]
+    },
+    {
+        "name": "projector",
+        "trans": [
+            "n. máy chiếu"
+        ]
+    },
+    {
+        "name": "microphone",
+        "trans": [
+            "n. Micrô"
+        ]
+    },
+    {
+        "name": "cater",
+        "trans": [
+            "v. Phục vụ cho"
+        ]
+    },
+    {
+        "name": "buffet",
+        "trans": [
+            "n. Buffet"
+        ]
+    },
+    {
+        "name": "entertainment",
+        "trans": [
+            "n. Giải trí"
+        ]
+    },
+    {
+        "name": "gym",
+        "trans": [
+            "n. phòng tập thể dục"
+        ]
+    },
+    {
+        "name": "spa",
+        "trans": [
+            "n. spa"
+        ]
+    },
+    {
+        "name": "live",
+        "trans": [
+            "adj. sống"
+        ]
+    },
+    {
+        "name": "band",
+        "trans": [
+            "n. ban nhạc"
+        ]
+    },
+    {
+        "name": "rooftop",
+        "trans": [
+            "n. mái nhà"
+        ]
+    },
+    {
+        "name": "gallery",
+        "trans": [
+            "n. phòng trưng bày"
+        ]
+    },
+    {
+        "name": "payment",
+        "trans": [
+            "n. thanh toán"
+        ]
+    },
+    {
+        "name": "charge",
+        "trans": [
+            "v. Tính phí"
+        ]
+    },
+    {
+        "name": "discount",
+        "trans": [
+            "n. Giảm giá"
+        ]
+    },
+    {
+        "name": "deposit",
+        "trans": [
+            "n. đặt cọc"
+        ]
+    },
+    {
+        "name": "cash",
+        "trans": [
+            "n. Tiền mặt"
+        ]
+    },
+    {
+        "name": "credit card",
+        "trans": [
+            "n. thẻ tín dụng"
+        ]
+    },
+    {
+        "name": "check / cheque",
+        "trans": [
+            "n. kiểm tra"
+        ]
+    },
+    {
+        "name": "transport",
+        "trans": [
+            "n. vận chuyển"
+        ]
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "n. máy bay, chuyến bay"
+        ]
+    },
+    {
+        "name": "shuttle",
+        "trans": [
+            "n. xe buýt đi lại"
+        ]
+    },
+    {
+        "name": "door-to-door",
+        "trans": [
+            "adj. cửa đến cửa"
+        ]
+    },
+    {
+        "name": "departure",
+        "trans": [
+            "n. khởi hành"
+        ]
+    },
+    {
+        "name": "arrival",
+        "trans": [
+            "n. Đến"
+        ]
+    },
+    {
+        "name": "transfer",
+        "trans": [
+            "v. chuyển nhượng"
+        ]
+    },
+    {
+        "name": "connection",
+        "trans": [
+            "n. vận tải đa phương thức, chuyển giao"
+        ]
+    },
+    {
+        "name": "solar",
+        "trans": [
+            "adj. năng lượng mặt trời"
+        ]
+    },
+    {
+        "name": "licence / license",
+        "trans": [
+            "n. giấy phép"
+        ]
+    },
+    {
+        "name": "taxi",
+        "trans": [
+            "n. Taxi"
+        ]
+    },
+    {
+        "name": "cab",
+        "trans": [
+            "n. Taxi"
+        ]
+    },
+    {
+        "name": "tram",
+        "trans": [
+            "n. xe điện"
+        ]
+    },
+    {
+        "name": "helicopter",
+        "trans": [
+            "n. máy bay trực thăng"
+        ]
+    }
+]

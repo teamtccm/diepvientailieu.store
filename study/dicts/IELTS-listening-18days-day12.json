@@ -1,0 +1,468 @@
+[
+    {
+        "name": "limitation",
+        "trans": [
+            "n. giới hạn"
+        ]
+    },
+    {
+        "name": "grassland",
+        "trans": [
+            "n. đồng cỏ"
+        ]
+    },
+    {
+        "name": "marine",
+        "trans": [
+            "adj. đại dương",
+            "hàng hải"
+        ]
+    },
+    {
+        "name": "undergraduate",
+        "trans": [
+            "n. sinh viên đại học"
+        ]
+    },
+    {
+        "name": "scrub",
+        "trans": [
+            "v. Chà mạnh"
+        ]
+    },
+    {
+        "name": "journal",
+        "trans": [
+            "n. tạp chí"
+        ]
+    },
+    {
+        "name": "base",
+        "trans": [
+            "n. Khái niệm cơ bản",
+            "căn cứ"
+        ]
+    },
+    {
+        "name": "archaeology",
+        "trans": [
+            "n. Khảo cổ học"
+        ]
+    },
+    {
+        "name": "reference",
+        "trans": [
+            "n. Tài liệu tham khảo",
+            "Sách tham khảo"
+        ]
+    },
+    {
+        "name": "classical",
+        "trans": [
+            "adj. cổ điển"
+        ]
+    },
+    {
+        "name": "brief",
+        "trans": [
+            "adj. ngắn"
+        ]
+    },
+    {
+        "name": "module",
+        "trans": [
+            "n. mô-đun"
+        ]
+    },
+    {
+        "name": "compulsory",
+        "trans": [
+            "adj. bắt buộc"
+        ]
+    },
+    {
+        "name": "classification",
+        "trans": [
+            "n. Phân loại"
+        ]
+    },
+    {
+        "name": "score",
+        "trans": [
+            "n. ghi điểm"
+        ]
+    },
+    {
+        "name": "judge",
+        "trans": [
+            "v. thẩm phán"
+        ]
+    },
+    {
+        "name": "coursework",
+        "trans": [
+            "n. bài tập"
+        ]
+    },
+    {
+        "name": "origin",
+        "trans": [
+            "n. Xuất xứ"
+        ]
+    },
+    {
+        "name": "oral",
+        "trans": [
+            "adj. bằng lời nói"
+        ]
+    },
+    {
+        "name": "engine",
+        "trans": [
+            "n. động cơ"
+        ]
+    },
+    {
+        "name": "capacity",
+        "trans": [
+            "n. công suất",
+            "khả năng"
+        ]
+    },
+    {
+        "name": "prefer",
+        "trans": [
+            "v. thích hơn"
+        ]
+    },
+    {
+        "name": "commercial",
+        "trans": [
+            "adj. thương mại"
+        ]
+    },
+    {
+        "name": "reliable",
+        "trans": [
+            "adj. đáng tin cậy"
+        ]
+    },
+    {
+        "name": "roll over",
+        "trans": [
+            "v. cuộn"
+        ]
+    },
+    {
+        "name": "harmful",
+        "trans": [
+            "adj. Có hại"
+        ]
+    },
+    {
+        "name": "statistics",
+        "trans": [
+            "n. Thống kê"
+        ]
+    },
+    {
+        "name": "note",
+        "trans": [
+            "n. Ghi chú"
+        ]
+    },
+    {
+        "name": "raise",
+        "trans": [
+            "v. cải thiện"
+        ]
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "n. chi phí"
+        ]
+    },
+    {
+        "name": "reputation",
+        "trans": [
+            "n. danh tiếng"
+        ]
+    },
+    {
+        "name": "software",
+        "trans": [
+            "n. Phần mềm"
+        ]
+    },
+    {
+        "name": "creative",
+        "trans": [
+            "adj. sáng tạo"
+        ]
+    },
+    {
+        "name": "diploma",
+        "trans": [
+            "n. bằng tốt nghiệp"
+        ]
+    },
+    {
+        "name": "respondent",
+        "trans": [
+            "n. Bị đơn"
+        ]
+    },
+    {
+        "name": "uncertain",
+        "trans": [
+            "adj. không chắc chắn"
+        ]
+    },
+    {
+        "name": "gradual",
+        "trans": [
+            "adj. dần dần"
+        ]
+    },
+    {
+        "name": "privacy",
+        "trans": [
+            "n. Quyền riêng tư"
+        ]
+    },
+    {
+        "name": "margin",
+        "trans": [
+            "n. cạnh"
+        ]
+    },
+    {
+        "name": "interaction",
+        "trans": [
+            "n. tương tác"
+        ]
+    },
+    {
+        "name": "bibliography",
+        "trans": [
+            "n. Thư mục"
+        ]
+    },
+    {
+        "name": "scale",
+        "trans": [
+            "n. quy mô"
+        ]
+    },
+    {
+        "name": "legislation",
+        "trans": [
+            "n. pháp luật"
+        ]
+    },
+    {
+        "name": "flexibility",
+        "trans": [
+            "n. Tính linh hoạt"
+        ]
+    },
+    {
+        "name": "overweigh",
+        "trans": [
+            "v. quan trọng hơn"
+        ]
+    },
+    {
+        "name": "psycholinguistics",
+        "trans": [
+            "n. tâm lý học"
+        ]
+    },
+    {
+        "name": "distinguish",
+        "trans": [
+            "v. sự khác biệt"
+        ]
+    },
+    {
+        "name": "explode",
+        "trans": [
+            "v. vụ nổ"
+        ]
+    },
+    {
+        "name": "celebrity",
+        "trans": [
+            "n. người nổi tiếng"
+        ]
+    },
+    {
+        "name": "pigeon",
+        "trans": [
+            "n. chim bồ câu"
+        ]
+    },
+    {
+        "name": "vague",
+        "trans": [
+            "adj. mơ hồ"
+        ]
+    },
+    {
+        "name": "exploit",
+        "trans": [
+            "v. phát triển"
+        ]
+    },
+    {
+        "name": "disguise",
+        "trans": [
+            "v. Ngụy trang"
+        ]
+    },
+    {
+        "name": "index",
+        "trans": [
+            "n. chỉ mục"
+        ]
+    },
+    {
+        "name": "text",
+        "trans": [
+            "n. văn bản"
+        ]
+    },
+    {
+        "name": "factual",
+        "trans": [
+            "adj. thực tế"
+        ]
+    },
+    {
+        "name": "digital",
+        "trans": [
+            "adj. kỹ thuật số"
+        ]
+    },
+    {
+        "name": "editor",
+        "trans": [
+            "n. Chỉnh sửa"
+        ]
+    },
+    {
+        "name": "status",
+        "trans": [
+            "n. trạng thái"
+        ]
+    },
+    {
+        "name": "theoretical",
+        "trans": [
+            "adj. Về mặt lý thuyết"
+        ]
+    },
+    {
+        "name": "freedom",
+        "trans": [
+            "n. sự tự do"
+        ]
+    },
+    {
+        "name": "challenging",
+        "trans": [
+            "adj. đầy thử thách"
+        ]
+    },
+    {
+        "name": "background",
+        "trans": [
+            "n. nền"
+        ]
+    },
+    {
+        "name": "overview",
+        "trans": [
+            "n. Tổng quan"
+        ]
+    },
+    {
+        "name": "existing",
+        "trans": [
+            "adj. hiện có"
+        ]
+    },
+    {
+        "name": "chat",
+        "trans": [
+            "n. trò chuyện"
+        ]
+    },
+    {
+        "name": "technology",
+        "trans": [
+            "n. công nghệ"
+        ]
+    },
+    {
+        "name": "debate",
+        "trans": [
+            "v. Tranh luận"
+        ]
+    },
+    {
+        "name": "friendliness",
+        "trans": [
+            "n. Thân thiện"
+        ]
+    },
+    {
+        "name": "exchange",
+        "trans": [
+            "v. trao đổi"
+        ]
+    },
+    {
+        "name": "conclusion",
+        "trans": [
+            "n. Kết luận"
+        ]
+    },
+    {
+        "name": "secretary",
+        "trans": [
+            "n. thư ký"
+        ]
+    },
+    {
+        "name": "upper",
+        "trans": [
+            "adj. tầng lớp thượng lưu"
+        ]
+    },
+    {
+        "name": "cautious",
+        "trans": [
+            "adj. thận trọng"
+        ]
+    },
+    {
+        "name": "dissertation",
+        "trans": [
+            "n. Giấy"
+        ]
+    },
+    {
+        "name": "methodology",
+        "trans": [
+            "n. phương pháp luận"
+        ]
+    },
+    {
+        "name": "generalisation",
+        "trans": [
+            "n. khái quát hóa"
+        ]
+    }
+]

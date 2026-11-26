@@ -1,0 +1,458 @@
+[
+    {
+        "name": "printer",
+        "trans": [
+            "n. máy in"
+        ]
+    },
+    {
+        "name": "withdraw",
+        "trans": [
+            "v. lấy lại"
+        ]
+    },
+    {
+        "name": "outstanding",
+        "trans": [
+            "adj. Nổi bật"
+        ]
+    },
+    {
+        "name": "canteen",
+        "trans": [
+            "n. căng tin"
+        ]
+    },
+    {
+        "name": "exact",
+        "trans": [
+            "adj. chính xác"
+        ]
+    },
+    {
+        "name": "switch off",
+        "trans": [
+            "v. tắt"
+        ]
+    },
+    {
+        "name": "boot",
+        "trans": [
+            "n. ủng"
+        ]
+    },
+    {
+        "name": "wood",
+        "trans": [
+            "n. gỗ"
+        ]
+    },
+    {
+        "name": "forbid",
+        "trans": [
+            "v. bị cấm"
+        ]
+    },
+    {
+        "name": "client",
+        "trans": [
+            "n. Khách hàng"
+        ]
+    },
+    {
+        "name": "rail",
+        "trans": [
+            "n. đường ray xe lửa"
+        ]
+    },
+    {
+        "name": "intermediate",
+        "trans": [
+            "adj. ở giữa"
+        ]
+    },
+    {
+        "name": "appliance",
+        "trans": [
+            "n. Thiết bị điện"
+        ]
+    },
+    {
+        "name": "intensive",
+        "trans": [
+            "adj. tăng cường"
+        ]
+    },
+    {
+        "name": "allergy",
+        "trans": [
+            "n. dị ứng"
+        ]
+    },
+    {
+        "name": "vegetarian",
+        "trans": [
+            "n. ăn chay"
+        ]
+    },
+    {
+        "name": "bargain",
+        "trans": [
+            "n. mặc cả"
+        ]
+    },
+    {
+        "name": "relative",
+        "trans": [
+            "adj. tương đối"
+        ]
+    },
+    {
+        "name": "condition",
+        "trans": [
+            "n. tình huống"
+        ]
+    },
+    {
+        "name": "package",
+        "trans": [
+            "n. gói"
+        ]
+    },
+    {
+        "name": "fare",
+        "trans": [
+            "n. chi phí"
+        ]
+    },
+    {
+        "name": "armchair",
+        "trans": [
+            "n. ghế bành"
+        ]
+    },
+    {
+        "name": "advanced",
+        "trans": [
+            "adj. nâng cao"
+        ]
+    },
+    {
+        "name": "material",
+        "trans": [
+            "n. vấn đề"
+        ]
+    },
+    {
+        "name": "jeans",
+        "trans": [
+            "n. quần jean"
+        ]
+    },
+    {
+        "name": "trolley",
+        "trans": [
+            "n. xe đẩy"
+        ]
+    },
+    {
+        "name": "sightseeing",
+        "trans": [
+            "n. Tham quan"
+        ]
+    },
+    {
+        "name": "post office",
+        "trans": [
+            "n. bưu điện"
+        ]
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "n. thuê"
+        ]
+    },
+    {
+        "name": "sports centre",
+        "trans": [
+            "n. trung tâm thể thao"
+        ]
+    },
+    {
+        "name": "Monday",
+        "trans": [
+            "n. thứ hai"
+        ]
+    },
+    {
+        "name": "Sunday",
+        "trans": [
+            "n. chủ nhật"
+        ]
+    },
+    {
+        "name": "rail",
+        "trans": [
+            "n. đường ray, lan can"
+        ]
+    },
+    {
+        "name": "stair lift",
+        "trans": [
+            "n. cầu thang nâng"
+        ]
+    },
+    {
+        "name": "seat",
+        "trans": [
+            "n. chỗ ngồi"
+        ]
+    },
+    {
+        "name": "living room",
+        "trans": [
+            "n. phòng khách phòng khách"
+        ]
+    },
+    {
+        "name": "bathroom",
+        "trans": [
+            "n. phòng tắm, nhà vệ sinh"
+        ]
+    },
+    {
+        "name": "kitchen",
+        "trans": [
+            "n. nhà bếp"
+        ]
+    },
+    {
+        "name": "washing machine",
+        "trans": [
+            "n. máy giặt"
+        ]
+    },
+    {
+        "name": "video",
+        "trans": [
+            "n. tivi, máy ghi hình"
+        ]
+    },
+    {
+        "name": "basin",
+        "trans": [
+            "n. lưu vực"
+        ]
+    },
+    {
+        "name": "campus",
+        "trans": [
+            "n. khuôn viên trường"
+        ]
+    },
+    {
+        "name": "balcony",
+        "trans": [
+            "n. ban công"
+        ]
+    },
+    {
+        "name": "lamp",
+        "trans": [
+            "n. đèn"
+        ]
+    },
+    {
+        "name": "survey",
+        "trans": [
+            "n. khảo sát, đo lường"
+        ]
+    },
+    {
+        "name": "community",
+        "trans": [
+            "n. cộng đồng"
+        ]
+    },
+    {
+        "name": "dissatisfaction",
+        "trans": [
+            "n. không hài lòng"
+        ]
+    },
+    {
+        "name": "quality",
+        "trans": [
+            "n. chất lượng"
+        ]
+    },
+    {
+        "name": "local",
+        "trans": [
+            "adj. địa phương"
+        ]
+    },
+    {
+        "name": "swimming pool",
+        "trans": [
+            "n. bể bơi"
+        ]
+    },
+    {
+        "name": "bedsheet",
+        "trans": [
+            "n. ga trải giường"
+        ]
+    },
+    {
+        "name": "carpet",
+        "trans": [
+            "n. thảm"
+        ]
+    },
+    {
+        "name": "Thursday",
+        "trans": [
+            "n. thứ năm"
+        ]
+    },
+    {
+        "name": "iron",
+        "trans": [
+            "n. ủi đồ"
+        ]
+    },
+    {
+        "name": "suburb",
+        "trans": [
+            "n. Ngoại ô"
+        ]
+    },
+    {
+        "name": "exterior",
+        "trans": [
+            "adj. bên ngoài"
+        ]
+    },
+    {
+        "name": "setting",
+        "trans": [
+            "n. môi trường"
+        ]
+    },
+    {
+        "name": "ceremony",
+        "trans": [
+            "n. Lễ"
+        ]
+    },
+    {
+        "name": "consult",
+        "trans": [
+            "v. Tư vấn"
+        ]
+    },
+    {
+        "name": "premium",
+        "trans": [
+            "adj. chất lượng cao"
+        ]
+    },
+    {
+        "name": "apply",
+        "trans": [
+            "v. Áp dụng"
+        ]
+    },
+    {
+        "name": "brochure",
+        "trans": [
+            "n. tờ rơi"
+        ]
+    },
+    {
+        "name": "reception",
+        "trans": [
+            "n. giải trí"
+        ]
+    },
+    {
+        "name": "annual",
+        "trans": [
+            "adj. hàng năm"
+        ]
+    },
+    {
+        "name": "guard",
+        "trans": [
+            "n. bảo vệ"
+        ]
+    },
+    {
+        "name": "poster",
+        "trans": [
+            "n. áp phích"
+        ]
+    },
+    {
+        "name": "health check",
+        "trans": [
+            "n. Khám thực thể"
+        ]
+    },
+    {
+        "name": "petrol",
+        "trans": [
+            "n. xăng"
+        ]
+    },
+    {
+        "name": "literacy",
+        "trans": [
+            "n. Biết chữ"
+        ]
+    },
+    {
+        "name": "comedy",
+        "trans": [
+            "n. Hài kịch"
+        ]
+    },
+    {
+        "name": "lounge",
+        "trans": [
+            "n. Phòng chờ"
+        ]
+    },
+    {
+        "name": "Spanish",
+        "trans": [
+            "n. người Tây Ban Nha"
+        ]
+    },
+    {
+        "name": "yoga",
+        "trans": [
+            "n. Yoga"
+        ]
+    },
+    {
+        "name": "headache",
+        "trans": [
+            "n. đau đầu"
+        ]
+    },
+    {
+        "name": "burglar",
+        "trans": [
+            "n. tên trộm"
+        ]
+    },
+    {
+        "name": "goods",
+        "trans": [
+            "n. hàng hóa"
+        ]
+    }
+]

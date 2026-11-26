@@ -1,35 +1,47 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.26.3",
+  "version": "2026.11.26.4",
   "channel": "stable",
-  "releasedAt": "2026-11-26T03:12:40Z",
+  "releasedAt": "2026-11-26T04:17:01Z",
   "minBootstrapVersion": "2026.04.19.1",
   "notes": "v15.0: Bao mat 2 lop Drive/App, ma don rieng biet DC/KH69/KH199/KH399/COCBTL, thu muc khoa hoc cap nhat thoi gian thuc, ASR nhanh muot, dong goi Windows/macOS sieu nhe.",
   "files": [
     {
       "path": "web_dist/index.html",
-      "sha256": "698d3813d08de67648a5d67825097dc805005ed64bad54ff3cd6e7bc3661f5bc",
-      "size": 4020,
-      "url": "https://diepvientailieu.store/app_ota/web_dist/index.html"
+      "otaFile": "app_ota/web_dist/index.html",
+      "sha256": "6468628b21e6f7094705e6aea47c722ce7cb92d2882bce6506ddccfe33de15ec",
+      "size": 3626
     },
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
+      "otaFile": "app_ota/web_dist/assets/index-SSdWYvRZ.js",
       "sha256": "3292e9c7136311eabe9b331bb66d0f77ce9e495dce5d03763c9e10125c3bd645",
-      "size": 2281852,
-      "url": "https://diepvientailieu.store/app_ota/web_dist/assets/index-SSdWYvRZ.js"
+      "size": 2281852
     },
     {
       "path": "web_dist/assets/index-si95EOa3.css",
+      "otaFile": "app_ota/web_dist/assets/index-si95EOa3.css",
       "sha256": "977bfa49b8ef4d520ac17e012dde18a81e681a4c911f105062cdcd7afd448483",
-      "size": 360333,
-      "url": "https://diepvientailieu.store/app_ota/web_dist/assets/index-si95EOa3.css"
+      "size": 360333
+    },
+    {
+      "path": "web_dist/images/zalo_group_qr.jpg",
+      "otaFile": "app_ota/web_dist/images/zalo_group_qr.jpg",
+      "sha256": "3448b7287f8c36439ebcf5bfca9918dc04405018a54c7f3497feeda75a414109",
+      "size": 126363
+    },
+    {
+      "path": "web_dist/images/zalo_icon.png",
+      "otaFile": "app_ota/web_dist/images/zalo_icon.png",
+      "sha256": "dda1a4eca022017e671f84a173c602eccf66222a50de91714861ad1a75a84b24",
+      "size": 106065
     },
     {
       "path": "DiepVienStudy.pyw",
-      "sha256": "541678cdefb038b3e1b86709621b3abb06a036848e231342749dff980afcd815",
-      "size": 430008,
-      "url": "https://diepvientailieu.store/app_ota/DiepVienStudy_runtime.txt"
+      "otaFile": "app_ota/DiepVienStudy.pyw",
+      "sha256": "be657b911f07670f0676edec08cf073ed76cf7960233c3734143bb8e114eeade",
+      "size": 430008
     }
   ],
-  "app_version": "2026.11.26.3"
+  "app_version": "2026.11.26.4"
 }

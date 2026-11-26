@@ -6997,14 +6997,10 @@ function doPost(e) {
     </div>
 
     <div id="dvsZaloGroupModal" class="fixed inset-0 z-[120] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" onclick="if(event.target===this){this.classList.add('hidden');this.classList.remove('flex');}">
-        <div class="bg-white dark:bg-[#0A143D] rounded-3xl max-w-sm w-full p-5 shadow-2xl border border-slate-200 dark:border-white/15 relative text-center" onclick="event.stopPropagation()">
-            <button type="button" onclick="var m=document.getElementById('dvsZaloGroupModal');m.classList.add('hidden');m.classList.remove('flex');" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-slate-100 hover:bg-red-100 text-slate-600 hover:text-red-600 font-black flex items-center justify-center text-sm">&times;</button>
-            <h3 class="text-base font-black text-[#0D1677] dark:text-amber-300 uppercase mb-1">Nhóm Zalo Cộng Đồng</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-300 mb-3">Quét mã QR bằng Zalo để tham gia nhóm Tổng Kho Khóa Học</p>
-            <img src="images/zalo_group_qr.jpg" alt="QR Nhóm Zalo Tổng Kho Khóa Học | Điệp Viên Tài Liệu" class="w-full rounded-2xl border border-slate-200 shadow-md mb-3">
-            <a href="https://zalo.me/0792453169" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-[#0068FF] hover:bg-[#0055D4] text-white font-extrabold text-xs shadow transition">
-                <span>Nhắn Zalo Hỗ Trợ Trực Tiếp: 0792 453 169</span>
-            </a>
+        <div class="bg-white rounded-3xl w-[290px] p-5 shadow-2xl border border-slate-200 relative text-center" onclick="event.stopPropagation()">
+            <button type="button" onclick="var m=document.getElementById('dvsZaloGroupModal');m.classList.add('hidden');m.classList.remove('flex');" class="absolute top-2.5 right-2.5 z-10 w-7 h-7 rounded-full bg-slate-100 hover:bg-red-500 text-slate-600 hover:text-white font-black flex items-center justify-center text-sm transition">&times;</button>
+            <img src="images/zalo_group_qr.jpg" alt="QR Nhóm Zalo Hỗ Trợ" class="w-56 h-56 mx-auto rounded-2xl object-contain">
+            <div class="mt-2.5 text-sm font-extrabold text-[#0F172A]">Nhóm Zalo Hỗ Trợ</div>
         </div>
     </div>
 

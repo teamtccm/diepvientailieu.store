@@ -42,7 +42,10 @@ if IS_WINDOWS:
 
 import numpy as np
 import requests
-import webview
+try:
+    import webview
+except Exception:
+    webview = None
 
 BASE_DIR = Path(__file__).resolve().parent
 APP_DATA_DIR = Path(os.environ.get("LOCALAPPDATA") or Path.home() / "AppData" / "Local") / "DiepVienStudy"
@@ -7800,6 +7803,34 @@ def main():
                 sw_logical = int(webview.screens[0].width)
         except Exception:
             pass
+
+    if webview is None:
+        main_url = f"http://127.0.0.1:{port}/?window=main"
+        opened = False
+        if IS_MAC:
+            for mac_browser in ("/Applications/Google Chrome.app", "/Applications/Microsoft Edge.app", "/Applications/Brave Browser.app"):
+                if os.path.exists(mac_browser):
+                    subprocess.Popen(["open", "-na", mac_browser, "--args", f"--app={main_url}", "--window-size=1380,880"])
+                    opened = True
+                    break
+        elif IS_WINDOWS:
+            for win_browser in (
+                r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+                r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+                r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+            ):
+                if os.path.exists(win_browser):
+                    subprocess.Popen([win_browser, f"--app={main_url}", "--window-size=1380,880"])
+                    opened = True
+                    break
+        if not opened:
+            open_url_cross_platform(main_url)
+        try:
+            while True:
+                time.sleep(2.0)
+        except KeyboardInterrupt:
+            os._exit(0)
+        return
 
     main_win = webview.create_window(
         title="Điệp Viên Study",

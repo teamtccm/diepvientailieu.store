@@ -1677,35 +1677,14 @@ function scanBankEmailsAndDeliver(ss, fastMode) {
           parsedAmount > 0 ? parsedAmount : "Biến động ACB",
           parsedMemo + " [MSG:" + msgId + "]"
         ]);
+        try {
+          var mAcbUnm = ss.getSheetByName("Lịch Sử Giao Dịch ACB");
+          if (mAcbUnm) mAcbUnm.appendRow([msgTimeStr, "ACB", "27820961", "BIẾN ĐỘNG SỐ DƯ (+)", parsedAmount > 0 ? parsedAmount : "Biến động ACB", parsedMemo + " [MSG:" + msgId + "]", "", "Chưa khớp mã đơn", "Email ACB (27820961)"]);
+        } catch (eMuAcb) {}
         processedMsgIds[msgId] = true;
 
         if (parsedAmount > 0) {
-          try {
-            var propsUnm = PropertiesService.getScriptProperties();
-            var unmKey = "TG_UNMATCHED_ACB_" + msgId;
-            if (!propsUnm.getProperty(unmKey)) {
-              propsUnm.setProperty(unmKey, String(new Date().getTime()));
-              // Gợi ý tối đa 3 đơn PENDING có cùng số tiền để Admin đối soát 1 chạm
-              var candidateHints = [];
-              for (var cIdx = 0; cIdx < pendingOrders.length && candidateHints.length < 3; cIdx++) {
-                if (!pendingOrders[cIdx].matched && pendingOrders[cIdx].amount === parsedAmount) {
-                  candidateHints.push("• <code>" + escTgHtml(pendingOrders[cIdx].code) + "</code> — " + escTgHtml(pendingOrders[cIdx].name) + " (" + escTgHtml(pendingOrders[cIdx].email || pendingOrders[cIdx].phone || "Chưa rõ") + ")");
-                }
-              }
-              var hintBlock = candidateHints.length > 0
-                ? ("\n💡 <b>Đơn chờ khớp cùng mệnh giá:</b>\n" + candidateHints.join("\n"))
-                : "";
-              banTelegram(
-                "💰 <b>[BIẾN ĐỘNG SỐ DƯ ACB MỚI — CHỜ ĐỐI SOÁT MÃ ĐƠN]</b>\n" +
-                "━━━━━━━━━━━━━━━━━━\n" +
-                "💵 Số tiền nhận: <b>+" + parsedAmount.toLocaleString("vi-VN") + " VNĐ</b>\n" +
-                "🏦 Tài khoản: <b>ACB - 27820961 (TRINH DUC THINH)</b>\n" +
-                "📝 Nội dung CK: <code>" + escTgHtml(parsedMemo) + "</code>\n" +
-                "🕒 Thời gian: " + escTgHtml(msgTimeStr) +
-                hintBlock
-              );
-            }
-          } catch (eTgUnm) {}
+          // Chỉ ghi nhận biến động số dư chưa khớp đơn vào Sheet Lịch Sử Giao Dịch ACB, không spam thông báo Telegram
         }
       }
     }
@@ -1719,6 +1698,7 @@ function scanBankEmailsAndDeliver(ss, fastMode) {
 
   if (!fastMode) {
     try { kiemTraDonHoanThanh(ss); } catch (eBtlAfter) {}
+    try { kiemTraVaGuiBaoCaoCuoiThang(ss); } catch (eMonthlyRev) {}
   }
 }
 
@@ -1778,6 +1758,23 @@ function hoanTatDonDeCuongHoacKhoaHoc(ss, oSheet, order, actualAmt, parsedMemo, 
       fullMemoLog
     ]);
   }
+  // Đồng bộ trực tiếp lên Tab Tiếng Việt trên Sheet Tổng
+  try {
+    var tTime = msgTimeStr || Utilities.formatDate(new Date(), "GMT+7", "yyyy-MM-dd HH:mm:ss");
+    var mAcbTab = ss.getSheetByName("Lịch Sử Giao Dịch ACB");
+    if (mAcbTab) mAcbTab.appendRow([tTime, "ACB", "27820961", "Nhận tiền đơn " + order.code, actualAmt, fullMemoLog, "", "Đã khớp đơn & bàn giao", "Thông báo ACB (27820961)"]);
+    ["Đơn Hàng Đề Cương", "Đơn Hàng Khóa Học"].forEach(function(tName) {
+      var mOrdTab = ss.getSheetByName(tName);
+      if (!mOrdTab) return;
+      var mRows = mOrdTab.getDataRange().getValues();
+      for (var rIdx = mRows.length - 1; rIdx >= 1; rIdx--) {
+        if (String(mRows[rIdx][1] || "").trim().toUpperCase() === order.code) {
+          mOrdTab.getRange(rIdx + 1, 12, 1, 2).setValues([["Đã thanh toán", deliveryNote]]);
+          break;
+        }
+      }
+    });
+  } catch (eMirrorPaid) {}
 
   try {
     var propsTg = PropertiesService.getScriptProperties();
@@ -2075,8 +2072,35 @@ function dongBoHoSoKhachHangChuan(ss, info) {
     try { cache.remove("CUST_SYNC_V7_" + cleanEmail); } catch (eRm) {}
   }
 
-  // Đẩy việc ghi sang 2 Sheet dự phòng (BANG_LUU_TRU & FOLDER_06) vào hàng đợi ngầm (0ms delay cho khách!)
+  // Đồng bộ trực tiếp sang Tab Tiếng Việt 'Thông Tin Khách Hàng' trên Sheet Tổng
   if (rowRecord) {
+    try {
+      var mSs = getMasterSpreadsheet();
+      var mcTab = mSs ? mSs.getSheetByName("Thông Tin Khách Hàng") : null;
+      if (mcTab) {
+        var mcData = mcTab.getDataRange().getValues();
+        var mcIdx = -1;
+        for (var j = 1; j < mcData.length; j++) {
+          if (String(mcData[j][0] || "").trim().toLowerCase() === cleanEmail) {
+            mcIdx = j + 1;
+            break;
+          }
+        }
+        var prods = [rowRecord[5], rowRecord[6]].filter(Boolean).join(", ");
+        var vnSt = (rowRecord[4] === "PAID_VERIFIED_BANK_EMAIL") ? "Đã thanh toán (Xác thực ACB)" : (rowRecord[4] || "Đã đăng ký");
+        if (mcIdx > 0) {
+          mcTab.getRange(mcIdx, 2, 1, 10).setValues([[
+            rowRecord[1], rowRecord[2], mcData[mcIdx - 1][3] || "1", mcData[mcIdx - 1][4] || "0 đ",
+            vnSt, prods, rowRecord[7], rowRecord[8], rowRecord[9], rowRecord[10]
+          ]]);
+        } else {
+          mcTab.appendRow([
+            cleanEmail, rowRecord[1], rowRecord[2], "1", "0 đ",
+            vnSt, prods, rowRecord[7], rowRecord[8], rowRecord[9], rowRecord[10], "Đồng bộ tự động (Web/App)"
+          ]);
+        }
+      }
+    } catch (eMc) {}
     enqueueCustomerBackupMirror(cleanEmail, rowRecord);
   }
 }
@@ -2929,8 +2953,8 @@ function guiEmailMoiDungAppMienPhiTccm(email, name, orderCode, itemName) {
 
   try {
     var displayName = String(name || "Bạn").trim() || "Bạn";
-    var winUrl = "https://diepvientailieu.store/downloads/Diep%20Vien%20Study.exe";
-    var macUrl = "https://diepvientailieu.store/downloads/Diep%20Vien%20Study.zip";
+    var winUrl = "https://drive.usercontent.google.com/download?id=15IeJcRng3aF15EAue5qDmo-C5Xbnc6ny&export=download&confirm=t";
+    var macUrl = "https://drive.usercontent.google.com/download?id=1PoEK3LzLr6isibG5oZe2APalg4GWI0W_&export=download&confirm=t";
     var pdfGuideUrl = "https://diepvientailieu.store/Huong_Dan_Cai_Dat.pdf";
     var htmlBody =
       '<div style="max-width:600px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;background:#f8fafc;padding:16px;">' +
@@ -2971,31 +2995,9 @@ function guiEmailMoiDungAppMienPhiTccm(email, name, orderCode, itemName) {
 // 9. API ĐÓN ĐƠN HÀNG SIÊU TỐC + BÁO TELEGRAM TỨC THÌ KHI CÓ KHÁCH ĐẶT ĐƠN
 // =========================================================================
 function sendNewOrderTelegramOnce(orderCode, orderType, custName, custEmail, cleanPhone, itemSku, itemName, orderAmt, schoolStr) {
-  var hasRealContact = (custEmail && custEmail.indexOf("@") !== -1) || (cleanPhone && cleanPhone.length >= 8);
-  if (!orderCode || !hasRealContact) return;
-  try {
-    var props = PropertiesService.getScriptProperties();
-    var tgKey = "TG_NEW_ORD_" + orderCode;
-    if (props.getProperty(tgKey)) return;
-    props.setProperty(tgKey, String(new Date().getTime()));
-
-    var cleanMemoName = boDau(custName || "").replace(/[^A-Za-z0-9 ]/g, " ").toUpperCase().trim().substring(0, 18);
-    var expectedMemo = (orderCode + " " + cleanMemoName).trim();
-
-    banTelegram(
-      "🛒 <b>[ĐƠN HÀNG MỚI VỪA TẠO — ĐANG CHỜ CHUYỂN KHOẢN]</b>\n" +
-      "━━━━━━━━━━━━━━━━━━\n" +
-      "🆔 Mã đơn: <code>" + escTgHtml(orderCode) + "</code> · <b>" + escTgHtml(orderType) + "</b>\n" +
-      "👤 Khách hàng: <b>" + escTgHtml(custName || "Khách Hàng") + "</b>\n" +
-      (cleanPhone ? ("📞 SĐT / Zalo: <code>" + escTgHtml(cleanPhone) + "</code>\n") : "") +
-      (custEmail ? ("📧 Email nhận file: <code>" + escTgHtml(custEmail) + "</code>\n") : "") +
-      (schoolStr ? ("🏫 Trường: " + escTgHtml(schoolStr) + "\n") : "") +
-      "📚 Sản phẩm: <b>" + escTgHtml(itemName) + "</b>" + (itemSku ? (" (<code>" + escTgHtml(itemSku) + "</code>)") : "") + "\n" +
-      "💰 Giá trị đơn: <b>" + Number(orderAmt || 0).toLocaleString("vi-VN") + " VNĐ</b>\n" +
-      "📝 Nội dung QR: <code>" + escTgHtml(expectedMemo) + "</code>\n" +
-      "⏳ <i>Hệ thống đang tự động canh biến động ACB để mở khóa &amp; giao file...</i>"
-    );
-  } catch (eNewTg) {}
+  // Đã tắt thông báo khi mới tạo đơn nháp (chưa trả tiền) theo yêu cầu:
+  // Telegram chỉ nhận thông báo khi Khách Mua Hàng Thành Công, Bàn Giao Thành Công và Tổng Kết Doanh Thu Cuối Tháng.
+  return;
 }
 
 function upsertDonDeCuong(ss, bankInfo, orderInput) {
@@ -3074,7 +3076,7 @@ function upsertDonDeCuong(ss, bankInfo, orderInput) {
     return { orderCode: orderCode, isNew: false, status: existingStatus || "PENDING" };
   }
 
-  oSheet.appendRow([
+  var newDcRow = [
     nowStr,
     orderCode,
     orderType,
@@ -3089,7 +3091,22 @@ function upsertDonDeCuong(ss, bankInfo, orderInput) {
     "Chờ xác thực Email biến động số dư ACB",
     bankInfo.accountNo,
     driveId
-  ]);
+  ];
+  oSheet.appendRow(newDcRow);
+
+  // Đồng bộ trực tiếp vào tab Tiếng Việt trên Sheet Tổng
+  try {
+    var isKhoaHoc = (String(orderType).toUpperCase().indexOf("KHÓA") !== -1 || orderCode.indexOf("KH") === 0 || String(itemSku).indexOf("COURSE") === 0 || String(itemSku).indexOf("ALL-") === 0);
+    var mTabName = isKhoaHoc ? "Đơn Hàng Khóa Học" : "Đơn Hàng Đề Cương";
+    var mTab = ss.getSheetByName(mTabName);
+    if (mTab) {
+      mTab.appendRow([
+        nowStr, orderCode, orderType, custName, custEmail, cleanPhone ? "'" + cleanPhone : "",
+        itemSku, itemName, orderAmt, bankInfo.bankName, bankInfo.accountNo,
+        "Chờ thanh toán", "Chờ xác thực ACB", driveId
+      ]);
+    }
+  } catch (eMirrorDc) {}
 
   setOrderStatusCache(orderCode, {
     ok: true,
@@ -3178,7 +3195,7 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     }
   }
 
-  btlSheet.appendRow([
+  var newBtlRow = [
     sCode,
     sName,
     sPhone ? "'" + sPhone : "",
@@ -3194,7 +3211,16 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     "Chờ xác thực Email biến động số dư ACB",
     bankInfo.accountNo,
     "Hệ thống Tự động & CTV Học Thuật"
-  ]);
+  ];
+  btlSheet.appendRow(newBtlRow);
+
+  // Đồng bộ trực tiếp vào tab Tiếng Việt 'Đơn Hàng Bài Tập Lớn' trên Sheet Tổng
+  try {
+    var mBtlTab = ss.getSheetByName("Đơn Hàng Bài Tập Lớn");
+    if (mBtlTab) {
+      mBtlTab.appendRow(newBtlRow);
+    }
+  } catch (eMirrorBtl) {}
 
   setOrderStatusCache(sCode, {
     ok: true,
@@ -3207,29 +3233,7 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     deadline: sDeadline
   }, 1800);
 
-  // Báo ngay Telegram đơn Đặt làm BTL / Tiểu luận mới kèm cảnh báo Deadline gấp!
-  try {
-    var propsBtlTg = PropertiesService.getScriptProperties();
-    var btlTgKey = "TG_NEW_BTL_" + sCode;
-    if (!propsBtlTg.getProperty(btlTgKey)) {
-      propsBtlTg.setProperty(btlTgKey, String(new Date().getTime()));
-      var dlMs = parseDeadlineMs(sDeadline);
-      var hoursLeft = dlMs > 0 ? ((dlMs - new Date().getTime()) / 3600000) : 999;
-      var urgentBadge = (hoursLeft > 0 && hoursLeft <= 48) ? " 🔥 <b>[DEADLINE GẤP &lt; 48H]</b>" : "";
-      banTelegram(
-        "📝 <b>[ĐƠN ĐẶT LÀM BTL / TIỂU LUẬN MỚI]</b>" + urgentBadge + "\n" +
-        "━━━━━━━━━━━━━━━━━━\n" +
-        "🆔 Mã đơn cọc: <code>" + escTgHtml(sCode) + "</code>\n" +
-        "👤 Sinh viên: <b>" + escTgHtml(sName) + "</b>\n" +
-        (sPhone ? ("📞 SĐT Zalo: <code>" + escTgHtml(sPhone) + "</code>\n") : "") +
-        "📧 Email: <code>" + escTgHtml(sEmail) + "</code>\n" +
-        "🏫 Trường/Khoa: <b>" + escTgHtml(schoolFull || "Chưa ghi") + "</b>\n" +
-        "📚 Đề tài: <b>" + escTgHtml(fullTopic) + "</b>\n" +
-        "📅 Hạn nộp (Deadline): <b>" + escTgHtml(sDeadline || "Theo yêu cầu") + "</b>\n" +
-        "💰 Tổng báo giá: <b>" + totalEst.toLocaleString("vi-VN") + "đ</b> · Cọc 10%: <b>" + depositAmt.toLocaleString("vi-VN") + "đ</b>"
-      );
-    }
-  } catch (eNewBtlTg) {}
+  // Đã tắt thông báo khi mới điền form BTL (chưa cọc) theo cấu hình lọc thông báo sạch Telegram.
 
   try {
     if (sEmail && sEmail.indexOf("@") !== -1) {
@@ -3826,6 +3830,96 @@ function banTelegram(text) {
   } catch (e) {
     return false;
   }
+}
+
+function kiemTraVaGuiBaoCaoCuoiThang(ss) {
+  try {
+    var now = new Date();
+    var tomorrow = new Date(now.getTime() + 86400000);
+    // Chỉ tự động gửi vào ngày cuối cùng của tháng, từ 21:00 trở đi
+    if (tomorrow.getDate() === 1 && now.getHours() >= 21) {
+      var monthStr = Utilities.formatDate(now, "GMT+7", "MM/yyyy");
+      var props = PropertiesService.getScriptProperties();
+      var sentKey = "TG_MONTHLY_REV_" + monthStr;
+      if (!props.getProperty(sentKey)) {
+        guiBaoCaoDoanhThuCuoiThangTelegram(ss, monthStr);
+        props.setProperty(sentKey, String(now.getTime()));
+      }
+    }
+  } catch (e) {}
+}
+
+function guiBaoCaoDoanhThuCuoiThangTelegram(ss, targetMonthStr) {
+  ss = ss || getMasterSpreadsheet();
+  var now = new Date();
+  var monthStr = targetMonthStr || Utilities.formatDate(now, "GMT+7", "MM/yyyy");
+  var parts = monthStr.split("/");
+  var targetM = parts[0];
+  var targetY = parts[1];
+
+  var totalRev = 0;
+  var dcCount = 0, dcRev = 0;
+  var khCount = 0, khRev = 0;
+  var btlCount = 0, btlRev = 0;
+
+  var isInTargetMonth = function(dVal) {
+    if (!dVal) return false;
+    var s = String(dVal);
+    return (s.indexOf(targetY + "-" + targetM) !== -1 || s.indexOf("/" + targetM + "/" + targetY) !== -1 || s.indexOf(targetM + "/" + targetY) !== -1);
+  };
+
+  var parseMoney = function(v) {
+    return Number(String(v || "0").replace(/[^0-9]/g, "")) || 0;
+  };
+
+  var dcTab = ss.getSheetByName("Đơn Hàng Đề Cương");
+  if (dcTab) {
+    var dcRows = dcTab.getDataRange().getValues();
+    for (var i = 1; i < dcRows.length; i++) {
+      var st = String(dcRows[i][11] || "").toUpperCase();
+      if ((st.indexOf("ĐÃ THANH TOÁN") !== -1 || st.indexOf("PAID") !== -1) && isInTargetMonth(dcRows[i][0])) {
+        var amt = parseMoney(dcRows[i][8]);
+        dcCount++; dcRev += amt; totalRev += amt;
+      }
+    }
+  }
+
+  var khTab = ss.getSheetByName("Đơn Hàng Khóa Học");
+  if (khTab) {
+    var khRows = khTab.getDataRange().getValues();
+    for (var j = 1; j < khRows.length; j++) {
+      var stK = String(khRows[j][11] || "").toUpperCase();
+      if ((stK.indexOf("ĐÃ THANH TOÁN") !== -1 || stK.indexOf("PAID") !== -1) && isInTargetMonth(khRows[j][0])) {
+        var amtK = parseMoney(khRows[j][8]);
+        khCount++; khRev += amtK; totalRev += amtK;
+      }
+    }
+  }
+
+  var btlTab = ss.getSheetByName("Đơn Hàng Bài Tập Lớn");
+  if (btlTab) {
+    var btlRows = btlTab.getDataRange().getValues();
+    for (var k = 1; k < btlRows.length; k++) {
+      var stB = String(btlRows[k][11] || "").toUpperCase();
+      if (stB.indexOf("ĐÃ") !== -1 || stB.indexOf("GIAO") !== -1 || stB.indexOf("HOÀN") !== -1) {
+        var amtB = (stB.indexOf("CỌC") !== -1 && stB.indexOf("ĐỦ") === -1 && stB.indexOf("GIAO") === -1)
+          ? parseMoney(btlRows[k][8]) : parseMoney(btlRows[k][7]);
+        btlCount++; btlRev += amtB; totalRev += amtB;
+      }
+    }
+  }
+
+  var msg =
+    "📊 <b>BÁO CÁO TỔNG KẾT DOANH THU THÁNG " + escTgHtml(monthStr) + "</b>\n" +
+    "━━━━━━━━━━━━━━━━━━━━━━\n" +
+    "📄 <b>Đề Cương Ôn Tập:</b> " + dcCount + " đơn — <b>" + dcRev.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+    "🎓 <b>Khóa Học Drive:</b> " + khCount + " đơn — <b>" + khRev.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+    "✍️ <b>Dịch Vụ Học Thuật (BTL):</b> " + btlCount + " đơn — <b>" + btlRev.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+    "━━━━━━━━━━━━━━━━━━━━━━\n" +
+    "💰 <b>TỔNG DOANH THU THÁNG " + escTgHtml(monthStr) + ": " + totalRev.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+    "🏦 <i>Nguồn đối soát: Sheet Tổng DVTL (ACB 27820961)</i>";
+
+  return banTelegram(msg);
 }
 
 function jsonOut(obj) {

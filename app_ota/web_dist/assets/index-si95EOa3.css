@@ -7303,3 +7303,121 @@ main.page-scroll.dvs-sh-main-lock {
   font-weight: 800;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
+
+
+/* === CIRCULAR WEBSITE ORB (FADED DIEP VIEN LOGO, NO YELLOW ORBIT) === */
+.dvs-web-orb-visual .orbit-track {
+  display: none !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 14px 16px !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.22s ease !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn:hover {
+  transform: scale(1.035) !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn .dvs-start-emblem {
+  width: 66px !important;
+  height: 66px !important;
+  opacity: 0.34 !important;
+  margin-bottom: 0 !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn:hover .dvs-start-emblem {
+  opacity: 0.52 !important;
+  transform: translateY(-1px) scale(1.04) !important;
+}
+.dvs-orb-badge {
+  position: relative;
+  z-index: 1;
+  padding: 2.5px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #DBEAFE;
+  text-transform: uppercase;
+}
+.dvs-orb-domain {
+  position: relative !important;
+  z-index: 1 !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.15 !important;
+}
+.dvs-orb-cta {
+  position: relative;
+  z-index: 1;
+  margin-top: 2px;
+  padding: 3.5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #0D1677;
+  font-size: 10.5px;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn:hover .dvs-orb-cta {
+  background: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+/* === DYNAMIC ISLAND SMOOTH OPEN/CLOSE & PILL REFINEMENT === */
+html.island-host,
+html.island-host body,
+html.island-host #root {
+  background: #131129 !important;
+}
+.island-root {
+  --island-bg: linear-gradient(145deg, #0F172A 0%, #15132B 55%, #1E1B4B 100%) !important;
+}
+.island-shape:not(.open) {
+  border-radius: 999px !important;
+  border: 1.5px solid rgba(165, 180, 252, 0.42) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+.island-shape.open {
+  border-radius: 22px !important;
+  border: 1.5px solid rgba(165, 180, 252, 0.36) !important;
+}
+.island-handle {
+  padding: 0 11px 0 9px !important;
+  gap: 8px !important;
+  justify-content: flex-start !important;
+  animation: dvs-island-pill-in 0.2s cubic-bezier(0.22, 1, 0.36, 1) both !important;
+}
+.island-panel {
+  animation: dvs-island-panel-in 0.22s cubic-bezier(0.22, 1, 0.36, 1) both !important;
+  transform-origin: top center !important;
+}
+@keyframes dvs-island-panel-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes dvs-island-pill-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

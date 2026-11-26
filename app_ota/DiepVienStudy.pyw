@@ -6863,7 +6863,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 return [{
                     "key": "primary",
                     "primary": True,
-                    "notch": False,
+                    "notch": None,
                     "frame": {"x": 0, "y": 0, "width": sw, "height": sh},
                     "visible": {"x": vx, "y": vy, "width": vw, "height": vh}
                 }]
@@ -6878,7 +6878,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 return [{
                     "key": "primary",
                     "primary": True,
-                    "notch": False,
+                    "notch": None,
                     "frame": {"x": 0, "y": 0, "width": sw, "height": sh},
                     "visible": {"x": 0, "y": 28, "width": sw, "height": sh - 68}
                 }]
@@ -7006,16 +7006,12 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             pass
         return 1.0
 
-    def _apply_island_frame_and_region(self, x: int, y: int, w: int, h: int):
-        """
-        Di chuyển + đổi cỡ cửa sổ Floating Island trong 1 lệnh Win32 SetWindowPos duy nhất (chuẩn 64-bit argtypes)
-        trên Windows, hoặc qua pywebview Cocoa native trên macOS.
-        """
+    def _set_island_rect_once(self, x: float, y: float, w: float, h: float):
         if not IS_WINDOWS:
             if self.island_win:
                 try:
-                    self.island_win.resize(w, h)
-                    self.island_win.move(x, y)
+                    self.island_win.resize(int(round(w)), int(round(h)))
+                    self.island_win.move(int(round(x)), int(round(y)))
                 except Exception:
                     pass
             return
@@ -7056,10 +7052,8 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                 ]
                 self._win32_rgn_argtypes_set = True
 
-            # 0x0004 = SWP_NOZORDER, 0x0010 = SWP_NOACTIVATE, 0x0040 = SWP_SHOWWINDOW
             user32.SetWindowPos(hwnd, 0, px, py, pw, ph, 0x0004 | 0x0010 | 0x0040)
-            # Khi thu gọn (h <= 52): bo tròn 100% thành viên thuốc (pill); khi mở rộng: bo góc 22px
-            if h <= 52:
+            if h <= 56:
                 radius = ph
             elif w >= 600 and h <= 260:
                 radius = int(round(32 * scale))
@@ -7068,7 +7062,6 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             rgn = gdi32.CreateRoundRectRgn(0, 0, pw + 1, ph + 1, radius, radius)
             if rgn:
                 user32.SetWindowRgn(hwnd, rgn, True)
-            # Bỏ WS_EX_APPWINDOW, gắn WS_EX_TOOLWINDOW để tab nổi không chiếm chỗ dưới thanh Taskbar
             try:
                 GWL_EXSTYLE = -20
                 WS_EX_TOOLWINDOW = 0x00000080
@@ -7080,8 +7073,47 @@ NỘI DUNG BÀI GIẢNG & NOTE:
             except Exception:
                 pass
         elif self.island_win:
-            self.island_win.resize(w, h)
-            self.island_win.move(x, y)
+            self.island_win.resize(int(round(w)), int(round(h)))
+            self.island_win.move(int(round(x)), int(round(y)))
+
+    def _apply_island_frame_and_region(self, x: int, y: int, w: int, h: int):
+        """
+        Di chuyển + đổi cỡ cửa sổ Floating Island kèm nội suy chuyển động mượt 60fps (Smooth Cubic Ease-Out)
+        khi đóng/mở tab phụ, và phản hồi tức thì 0ms khi người dùng kéo thả vị trí.
+        """
+        prev = getattr(self, "_island_curr_rect", None)
+        self._island_anim_token = getattr(self, "_island_anim_token", 0) + 1
+        token = self._island_anim_token
+
+        if prev is None or (abs(w - prev[2]) <= 24 and abs(h - prev[3]) <= 24):
+            self._island_curr_rect = (float(x), float(y), float(w), float(h))
+            self._set_island_rect_once(x, y, w, h)
+            return
+
+        x0, y0, w0, h0 = prev
+        x1, y1, w1, h1 = float(x), float(y), float(w), float(h)
+
+        def _anim_worker():
+            steps = 11
+            for step in range(1, steps + 1):
+                if getattr(self, "_island_anim_token", 0) != token:
+                    return
+                t = step / steps
+                # Cubic ease-out: 1 - (1 - t)^3
+                ease = 1.0 - ((1.0 - t) ** 3)
+                cx = x0 + (x1 - x0) * ease
+                cy = y0 + (y1 - y0) * ease
+                cw = w0 + (w1 - w0) * ease
+                ch = h0 + (h1 - h0) * ease
+                self._island_curr_rect = (cx, cy, cw, ch)
+                try:
+                    self._set_island_rect_once(cx, cy, cw, ch)
+                except Exception:
+                    pass
+                if step < steps:
+                    time.sleep(0.014)
+
+        threading.Thread(target=_anim_worker, daemon=True).start()
 
     def translate_pdf_dialog(self, args: dict | None = None) -> dict:
         """
@@ -7215,7 +7247,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.26.6", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.26.7", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -7232,7 +7264,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.26.6"
+                    local_ver = "2026.11.26.7"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     def _ver_tuple(v_str):
                         return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))
@@ -7780,7 +7812,7 @@ def main():
     )
     controller.main_win = main_win
 
-    island_w, island_h = 248, 40
+    island_w, island_h = 264, 40
     island_x = max(12, (sw_logical - island_w) // 2)
     island_y = 12 if IS_WINDOWS else 32
     island_win = webview.create_window(

@@ -15,8 +15,8 @@
   <body>
     <div id="root"></div>
 
-    <!-- Floating Zalo Group QR & Messenger Page Support Buttons -->
-    <div id="dvs-floating-support" style="position:fixed;right:20px;bottom:20px;z-index:9990;display:flex;flex-direction:column;gap:10px;">
+    <!-- Floating Zalo Group QR & Messenger Page Support Buttons (chỉ hiện ở cửa sổ chính, ẩn ở Dynamic Island) -->
+    <div id="dvs-floating-support" style="position:fixed;right:20px;bottom:20px;z-index:9990;display:none;flex-direction:column;gap:10px;">
       <button type="button" onclick="document.getElementById('dvsZaloGroupModal').style.display='flex'" title="Tham gia Nhóm Zalo · Tổng Kho Khóa Học" style="width:52px;height:52px;border-radius:999px;border:2px solid #fff;background:#fff;padding:0;overflow:hidden;cursor:pointer;box-shadow:0 8px 24px rgba(13,22,119,0.22);display:flex;align-items:center;justify-content:center;transition:transform .15s;">
         <img src="/images/zalo_icon.png" alt="Zalo" style="width:100%;height:100%;object-fit:cover;" />
       </button>
@@ -26,6 +26,15 @@
         </svg>
       </a>
     </div>
+    <script>
+      (function(){
+        var el = document.getElementById('dvs-floating-support');
+        var q = window.location.search || '';
+        if (el && q.indexOf('window=island') === -1 && (q === '' || q.indexOf('window=main') !== -1)) {
+          el.style.display = 'flex';
+        }
+      })();
+    </script>
 
     <div id="dvsZaloGroupModal" onclick="if(event.target===this)this.style.display='none'" style="position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(15,23,42,0.78);backdrop-filter:blur(4px);">
       <div onclick="event.stopPropagation()" style="background:#fff;border-radius:24px;width:290px;padding:20px;box-shadow:0 24px 60px rgba(0,0,0,0.35);position:relative;text-align:center;font-family:'Plus Jakarta Sans',sans-serif;">

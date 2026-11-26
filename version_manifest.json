@@ -1,16 +1,16 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.26.4",
+  "version": "2026.11.26.5",
   "channel": "stable",
-  "releasedAt": "2026-11-26T04:17:01Z",
+  "releasedAt": "2026-11-26T04:48:53Z",
   "minBootstrapVersion": "2026.04.19.1",
   "notes": "v15.0: Bao mat 2 lop Drive/App, ma don rieng biet DC/KH69/KH199/KH399/COCBTL, thu muc khoa hoc cap nhat thoi gian thuc, ASR nhanh muot, dong goi Windows/macOS sieu nhe.",
   "files": [
     {
       "path": "web_dist/index.html",
       "otaFile": "app_ota/web_dist/index.html",
-      "sha256": "6468628b21e6f7094705e6aea47c722ce7cb92d2882bce6506ddccfe33de15ec",
-      "size": 3626
+      "sha256": "55264e26a44c352ff6882f2633d77123f77916ffaff035dfc6157b1fcb1f7eed",
+      "size": 4018
     },
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
@@ -39,9 +39,9 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "app_ota/DiepVienStudy.pyw",
-      "sha256": "be657b911f07670f0676edec08cf073ed76cf7960233c3734143bb8e114eeade",
+      "sha256": "42919daadcaf9507c5aff81016526abe02139fd287a5a0a16f352a5481af9188",
       "size": 430008
     }
   ],
-  "app_version": "2026.11.26.4"
+  "app_version": "2026.11.26.5"
 }

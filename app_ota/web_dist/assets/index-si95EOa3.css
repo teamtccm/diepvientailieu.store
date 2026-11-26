@@ -7444,3 +7444,23 @@ html.island-host #root {
   color: #FFFFFF !important;
   letter-spacing: 0.01em !important;
 }
+
+
+.start-button.dvs-watermark-btn.dvs-web-orb-btn {
+  gap: 6px !important;
+  padding: 8px 10px 16px !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn .dvs-start-emblem {
+  width: 82px !important;
+  height: 82px !important;
+  opacity: 0.40 !important;
+  margin-top: -6px !important;
+  margin-bottom: 0 !important;
+}
+.start-button.dvs-watermark-btn.dvs-web-orb-btn .dvs-orb-domain {
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.01em !important;
+  white-space: nowrap !important;
+}

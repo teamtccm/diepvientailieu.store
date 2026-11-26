@@ -1,8 +1,8 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.26.8",
+  "version": "2026.11.26.9",
   "channel": "stable",
-  "releasedAt": "2026-11-26T11:08:56Z",
+  "releasedAt": "2026-11-26T11:14:17Z",
   "minBootstrapVersion": "2026.04.19.1",
   "notes": "v15.0: Bao mat 2 lop Drive/App, ma don rieng biet DC/KH69/KH199/KH399/COCBTL, thu muc khoa hoc cap nhat thoi gian thuc, ASR nhanh muot, dong goi Windows/macOS sieu nhe.",
   "files": [
@@ -15,14 +15,14 @@
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
       "otaFile": "app_ota/web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "24a04cd8061ac2dd495966d5679670f824f973cec3b74d88258209a7fb827cd4",
-      "size": 2281907
+      "sha256": "da6c1572f81051cde852efa183f41c4c439d4a1a95f80e3e265015806ed0663d",
+      "size": 2282001
     },
     {
       "path": "web_dist/assets/index-si95EOa3.css",
       "otaFile": "app_ota/web_dist/assets/index-si95EOa3.css",
-      "sha256": "b70fea698e417dbba85574c0760f6488d9b28e592f74c030da7360a128e04cc4",
-      "size": 366783
+      "sha256": "a25ab0284f070d7b73b90dfaf3587cf03d5e0c246e153b26c56eed33f251c1a5",
+      "size": 367360
     },
     {
       "path": "web_dist/images/zalo_group_qr.jpg",
@@ -39,9 +39,9 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "app_ota/DiepVienStudy.pyw",
-      "sha256": "4c1a0a1aca3fe8296f267e79d5203bcc603c442a44b7cb4f206997165e49f236",
+      "sha256": "ed3b4ffd85354d2b668a800df2ee33b16f0bdffc184a5cbbbc528f252b69b128",
       "size": 431300
     }
   ],
-  "app_version": "2026.11.26.8"
+  "app_version": "2026.11.26.9"
 }

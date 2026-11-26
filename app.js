@@ -3384,12 +3384,49 @@ function renderSingleCourseCardHtml(course) {
     const unlocked = isWebCourseUnlocked(course.id);
     const customCovers = getWebCourseCustomCovers();
     const coverUrl = customCovers[course.id] || course.defaultCover || "";
-    const centerTeacherText = course.instructor || "Điệp Viên Study";
-    const courseTitleText = course.title || "";
+    const isComboCard = Boolean(
+        String(course.id || "").startsWith("C199-") ||
+        course.id === "ALL-COURSES-399K" ||
+        course.tier === "course_199k" ||
+        course.tier === "full_399k"
+    );
+    const mainHeadingText = isComboCard ? (course.title || course.instructor || "Combo Khóa Học") : (course.instructor || "Điệp Viên Study");
+    const subDetailText = isComboCard ? (course.instructor || "Lộ trình ôn thi toàn diện") : (course.title || "");
     const footerCategoryText = course.groupName || course.level || course.categoryName || "Khóa Học 2027";
     const durationText = (course.duration || "Full lộ trình 2027 · Video + PDF") + (unlocked ? " · Đã mở khóa" : "");
     const meta = getWebCourseVisualMeta(course);
     const th = getDvsIconThemeByKey(meta.iconKey);
+
+    const COMBO_MULTI_TAGS = {
+        "C199-KHTN1": [
+            { badge: "TOÁN 12", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF", border: "#BFDBFE" },
+            { badge: "VẬT LÝ 12", iconKey: "ly", pillBg: "#FEF3C7", pillColor: "#92400E", border: "#FDE68A" },
+            { badge: "SINH HỌC 12", iconKey: "sinh", pillBg: "#DCFCE7", pillColor: "#166534", border: "#BBF7D0" }
+        ],
+        "C199-KHTN2": [
+            { badge: "TOÁN 12", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF", border: "#BFDBFE" },
+            { badge: "VẬT LÝ 12", iconKey: "ly", pillBg: "#FEF3C7", pillColor: "#92400E", border: "#FDE68A" },
+            { badge: "TIẾNG ANH", iconKey: "anh", pillBg: "#EDE9FE", pillColor: "#5B21B6", border: "#DDD6FE" }
+        ],
+        "C199-KHXH1": [
+            { badge: "NGỮ VĂN 12", iconKey: "van", pillBg: "#FFE4E6", pillColor: "#9F1239", border: "#FECDD3" },
+            { badge: "LỊCH SỬ", iconKey: "su", pillBg: "#FFEDD5", pillColor: "#9A3412", border: "#FED7AA" },
+            { badge: "ĐỊA LÝ", iconKey: "dia", pillBg: "#CFFAFE", pillColor: "#155E75", border: "#A5F3FC" }
+        ],
+        "C199-KHXH2": [
+            { badge: "TOÁN 12", iconKey: "toan", pillBg: "#DBEAFE", pillColor: "#1E40AF", border: "#BFDBFE" },
+            { badge: "NGỮ VĂN 12", iconKey: "van", pillBg: "#FFE4E6", pillColor: "#9F1239", border: "#FECDD3" },
+            { badge: "TIẾNG ANH", iconKey: "anh", pillBg: "#EDE9FE", pillColor: "#5B21B6", border: "#DDD6FE" }
+        ]
+    };
+    const tagList = COMBO_MULTI_TAGS[course.id] || [{ badge: meta.badge, iconKey: meta.iconKey, pillBg: meta.pillBg || "#DBEAFE", pillColor: meta.pillColor || "#1E40AF", border: meta.border || "#BFDBFE" }];
+
+    const badgesHtml = tagList.map(t => `
+        <span class="inline-flex items-center gap-1 text-[10px] sm:text-[10.5px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md shadow-xs border" style="background: ${t.pillBg}; color: ${t.pillColor}; border-color: ${t.border};">
+            ${typeof renderDvsSubjectCourseSvgHtml === "function" ? renderDvsSubjectCourseSvgHtml(t.iconKey, 11) : ''}
+            <span>${t.badge}</span>
+        </span>
+    `).join("");
 
     return `
         <article itemscope itemtype="https://schema.org/Course" onclick="handleWebCourseCardClick('${course.id}')" class="group rounded-2xl overflow-hidden flex flex-col bg-white dark:bg-[#0A143D] border ${unlocked ? 'border-emerald-400/80 dark:border-emerald-500/70 shadow-emerald-500/10' : 'border-slate-200/90 dark:border-white/10 hover:border-[#0D1677]/60 dark:hover:border-sky-400/60'} shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
@@ -3397,7 +3434,7 @@ function renderSingleCourseCardHtml(course) {
             <!-- 16:9 COVER IMAGE BOX (IDENTICAL TO APP dvs-course-cover-box) -->
             <div class="aspect-video w-full relative bg-gradient-to-br from-slate-900/[0.06] to-blue-600/[0.08] dark:from-slate-800/45 dark:to-blue-500/15 border-b border-slate-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden">
                 ${coverUrl ? `
-                    <img itemprop="image" src="${coverUrl}" alt="${courseTitleText}" referrerpolicy="no-referrer" class="w-full h-full object-cover block group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" onerror="if(this.dataset.fb && this.src!==this.dataset.fb){this.src=this.dataset.fb;return;} this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none\'><span class=\'text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25\'>KHUNG ẢNH 16:9</span></div>';" data-fb="${course.fallbackCover || ''}">
+                    <img itemprop="image" src="${coverUrl}" alt="${mainHeadingText}" referrerpolicy="no-referrer" class="w-full h-full object-cover block group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" onerror="if(this.dataset.fb && this.src!==this.dataset.fb){this.src=this.dataset.fb;return;} this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none\'><span class=\'text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25\'>KHUNG ẢNH 16:9</span></div>';" data-fb="${course.fallbackCover || ''}">
                 ` : `
                     <div class="flex flex-col items-center justify-center gap-1.5 text-slate-500 dark:text-slate-300 text-xs font-semibold select-none">
                         <span class="text-[11px] font-extrabold tracking-wider px-2.5 py-1 rounded-md bg-slate-900/[0.06] dark:bg-white/10 border border-dashed border-slate-400/60 dark:border-white/25">KHUNG ẢNH 16:9</span>
@@ -3406,23 +3443,17 @@ function renderSingleCourseCardHtml(course) {
                 
             </div>
 
-            <!-- CARD BODY (TOP = BADGE & INSTRUCTOR, MIDDLE = COURSE TITLE, BOTTOM = STATS & ACTION) -->
+            <!-- CARD BODY -->
             <div class="p-4 flex flex-col flex-1 gap-1.5">
-                <!-- Subject Badge & Code Pill (Đồng bộ 100% với App: Hộp Icon + Tag Pill Tên Môn) -->
-                <div class="flex items-center gap-1.5 mb-0.5">
-                    <span class="w-6 h-6 rounded-md flex items-center justify-center shadow-xs border flex-shrink-0" style="background: ${meta.bg || '#F8FAFC'}; color: ${meta.color || '#0D1677'}; border-color: ${meta.border || '#E2E8F0'};">
-                        ${typeof renderDvsSubjectCourseSvgHtml === "function" ? renderDvsSubjectCourseSvgHtml(meta.iconKey, 13) : ''}
-                    </span>
-                    <span class="inline-flex items-center text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md shadow-xs border" style="background: ${meta.pillBg || '#DBEAFE'}; color: ${meta.pillColor || '#1E40AF'}; border-color: ${meta.border || '#BFDBFE'};">
-                        ${meta.badge}
-                    </span>
+                <div class="flex flex-wrap items-center gap-1.5 mb-0.5">
+                    ${badgesHtml}
                 </div>
 
-                <h3 itemprop="provider" class="text-[14.5px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${centerTeacherText}">
-                    ${centerTeacherText}
+                <h3 itemprop="name" class="text-[14.5px] font-black text-[#0D1677] dark:text-amber-400 leading-snug tracking-tight truncate m-0 uppercase" title="${mainHeadingText}">
+                    ${mainHeadingText}
                 </h3>
-                <h4 itemprop="name" class="text-[13px] font-bold text-slate-800 dark:text-slate-100 leading-snug line-clamp-2 m-0 min-h-[36px]" title="${courseTitleText}">
-                    ${courseTitleText}
+                <h4 itemprop="provider" class="text-[12.5px] font-semibold text-slate-600 dark:text-slate-300 leading-snug line-clamp-2 m-0 min-h-[34px]" title="${subDetailText}">
+                    ${subDetailText}
                 </h4>
 
                 <div class="flex items-center justify-between gap-2.5 pt-3 mt-auto border-t border-slate-200/70 dark:border-white/10">
@@ -5131,9 +5162,9 @@ function handleGatedAppDownload(targetPlatform = "exe") {
     });
 
     if (targetPlatform === "macos") {
-        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_MacOS.zip", "Cai_Dat_App_Diep_Vien_Study_MacOS.zip");
+        startDirectFileDownload("downloads/Diep%20Vien%20Study.zip", "Diep Vien Study.zip");
     } else {
-        startDirectFileDownload("downloads/Cai_Dat_App_Diep_Vien_Study_Windows.exe", "Cai_Dat_App_Diep_Vien_Study_Windows.exe");
+        startDirectFileDownload("downloads/Diep%20Vien%20Study.exe", "Diep Vien Study.exe");
     }
 }
 

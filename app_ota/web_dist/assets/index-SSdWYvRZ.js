@@ -8426,6 +8426,48 @@ function fue({model:t, setPage:e}) {
                     className: "dvs-course-card-body",
                     children: [
                       (() => {
+                        const COMBO_TAGS = {
+                          "C199-KHTN1": [
+                            { badge: "TOÁN 12", iconKey: "toan" },
+                            { badge: "VẬT LÝ 12", iconKey: "ly" },
+                            { badge: "SINH HỌC 12", iconKey: "sinh" }
+                          ],
+                          "C199-KHTN2": [
+                            { badge: "TOÁN 12", iconKey: "toan" },
+                            { badge: "VẬT LÝ 12", iconKey: "ly" },
+                            { badge: "TIẾNG ANH", iconKey: "anh" }
+                          ],
+                          "C199-KHXH1": [
+                            { badge: "NGỮ VĂN 12", iconKey: "van" },
+                            { badge: "LỊCH SỬ", iconKey: "su" },
+                            { badge: "ĐỊA LÝ", iconKey: "dia" }
+                          ],
+                          "C199-KHXH2": [
+                            { badge: "TOÁN 12", iconKey: "toan" },
+                            { badge: "NGỮ VĂN 12", iconKey: "van" },
+                            { badge: "TIẾNG ANH", iconKey: "anh" }
+                          ]
+                        };
+                        const multi = COMBO_TAGS[course.id];
+                        if (multi) {
+                          return g.jsx("div", {
+                            style: { display: "flex", alignItems: "center", flexWrap: "wrap", gap: "5px", marginBottom: "4px" },
+                            children: multi.map(item => {
+                              const cth = getDvsIconThemeByKey(item.iconKey);
+                              return g.jsxs("span", {
+                                style: { display: "inline-flex", alignItems: "center", gap: "4px" },
+                                children: [
+                                  renderDvsSubjectCourseIconBox(item.iconKey, 11),
+                                  g.jsx("span", {
+                                    className: "dvs-uni-code-pill",
+                                    style: { background: cth.pillBg, color: cth.pillColor },
+                                    children: item.badge
+                                  })
+                                ]
+                              }, item.badge);
+                            })
+                          });
+                        }
                         const cm = getDvsCourseVisualMeta(course);
                         const cth = getDvsIconThemeByKey(cm.iconKey);
                         return g.jsxs("div", {
@@ -8440,8 +8482,22 @@ function fue({model:t, setPage:e}) {
                           ]
                         });
                       })(),
-                      g.jsx("h3", { className: "dvs-course-card-title", children: course.instructor }),
-                      g.jsx("p", { className: "dvs-course-card-summary", style: { fontWeight: 600 }, children: course.title }),
+                      (() => {
+                        const isComboCard = Boolean(
+                          String(course.id || "").startsWith("C199-") ||
+                          course.id === "ALL-COURSES-399K" ||
+                          course.tier === "course_199k" ||
+                          course.tier === "full_399k"
+                        );
+                        const headingTxt = isComboCard ? (course.title || course.instructor) : course.instructor;
+                        const subTxt = isComboCard ? course.instructor : course.title;
+                        return g.jsxs(g.Fragment, {
+                          children: [
+                            g.jsx("h3", { className: "dvs-course-card-title", children: headingTxt }),
+                            g.jsx("p", { className: "dvs-course-card-summary", style: { fontWeight: 600 }, children: subTxt })
+                          ]
+                        });
+                      })(),
                       g.jsxs("div", {
                         className: "dvs-course-card-footer",
                         children: [

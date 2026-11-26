@@ -14,5 +14,27 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Floating Zalo Group QR & Messenger Page Support Buttons -->
+    <div id="dvs-floating-support" style="position:fixed;right:20px;bottom:20px;z-index:9990;display:flex;flex-direction:column;gap:10px;">
+      <button type="button" onclick="document.getElementById('dvsZaloGroupModal').style.display='flex'" title="Tham gia Nhóm Zalo · Tổng Kho Khóa Học" style="width:52px;height:52px;border-radius:999px;border:2px solid #fff;background:#fff;padding:0;overflow:hidden;cursor:pointer;box-shadow:0 8px 24px rgba(13,22,119,0.22);display:flex;align-items:center;justify-content:center;transition:transform .15s;">
+        <img src="/images/zalo_icon.png" alt="Zalo" style="width:100%;height:100%;object-fit:cover;" />
+      </button>
+      <a href="https://m.me/diepvientailieu" target="_blank" rel="noopener noreferrer" title="Nhắn tin Messenger Page Điệp Viên Tài Liệu" style="width:52px;height:52px;border-radius:999px;border:2px solid #fff;background:#3B82F6;color:#fff;cursor:pointer;box-shadow:0 8px 24px rgba(59,130,246,0.35);display:flex;align-items:center;justify-content:center;text-decoration:none;">
+        <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div id="dvsZaloGroupModal" onclick="if(event.target===this)this.style.display='none'" style="position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(15,23,42,0.78);backdrop-filter:blur(4px);">
+      <div onclick="event.stopPropagation()" style="background:#fff;border-radius:22px;max-width:360px;width:100%;padding:20px;box-shadow:0 24px 60px rgba(0,0,0,0.35);position:relative;text-align:center;font-family:'Plus Jakarta Sans',sans-serif;">
+        <button type="button" onclick="document.getElementById('dvsZaloGroupModal').style.display='none'" style="position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:999px;border:none;background:#F1F5F9;color:#475569;font-weight:900;font-size:16px;cursor:pointer;">&times;</button>
+        <div style="font-size:15px;font-weight:800;color:#0D1677;text-transform:uppercase;margin-bottom:4px;">Nhóm Zalo Cộng Đồng</div>
+        <div style="font-size:12px;color:#64748B;margin-bottom:12px;">Quét mã QR bằng Zalo để tham gia nhóm Tổng Kho Khóa Học</div>
+        <img src="/images/zalo_group_qr.jpg" alt="QR Nhóm Zalo" style="width:100%;border-radius:14px;border:1px solid #E2E8F0;margin-bottom:12px;" />
+        <a href="https://zalo.me/0792453169" target="_blank" rel="noopener noreferrer" style="display:block;width:100%;padding:10px 14px;border-radius:12px;background:#0068FF;color:#fff;font-weight:800;font-size:12px;text-decoration:none;">Nhắn Zalo Hỗ Trợ Trực Tiếp: 0792 453 169</a>
+      </div>
+    </div>
   </body>
 </html>

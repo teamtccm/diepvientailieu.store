@@ -4698,11 +4698,11 @@ async function submitCustomerSyncWeb() {
     renderSyncedCustomerEntitlements(syncedProfile);
     renderCourses();
 
-    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien Study (tên file chuẩn Diep Vien Study.exe)
-    startDirectFileDownload("downloads/Diep%20Vien%20Study.exe", "Diep Vien Study.exe");
+    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien Study (bản ZIP sạch không bị trình duyệt chặn)
+    startDirectFileDownload("downloads/Diep%20Vien%20Study%20(Windows).zip", "Diep Vien Study (Windows).zip");
 
     if (msgEl) {
-        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Diep Vien Study.exe</strong>! <a href="Huong_Dan_Cai_Dat.pdf" target="_blank" download="Hướng dẫn cài đặt.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt (PDF)</a>.`;
+        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Diep Vien Study (Windows).zip</strong>! <a href="Huong_Dan_Cai_Dat.pdf" target="_blank" download="Hướng dẫn cài đặt.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt (PDF)</a>.`;
     }
 }
 
@@ -5164,7 +5164,7 @@ function handleGatedAppDownload(targetPlatform = "exe") {
     if (targetPlatform === "macos") {
         startDirectFileDownload("downloads/Diep%20Vien%20Study.zip", "Diep Vien Study.zip");
     } else {
-        startDirectFileDownload("downloads/Diep%20Vien%20Study.exe", "Diep Vien Study.exe");
+        startDirectFileDownload("downloads/Diep%20Vien%20Study%20(Windows).zip", "Diep Vien Study (Windows).zip");
     }
 }
 

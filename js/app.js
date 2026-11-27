@@ -4698,16 +4698,11 @@ async function submitCustomerSyncWeb() {
     renderSyncedCustomerEntitlements(syncedProfile);
     renderCourses();
 
-    // Khi khách đăng nhập xong -> Tự động tải APP Diep Vien Study qua Google Drive CDN chính thức (0% chặn tải)
-    const isMacClient = /Mac|iPhone|iPad|iPod/i.test(navigator.platform || navigator.userAgent || "");
-    if (isMacClient) {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=1PoEK3LzLr6isibG5oZe2APalg4GWI0W_&export=download&confirm=t", "Diep Vien Study (macOS).zip");
-    } else {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=15IeJcRng3aF15EAue5qDmo-C5Xbnc6ny&export=download&confirm=t", "Diep Vien Study (Windows).zip");
-    }
+    // Khi khách đăng nhập xong -> Khởi động ngay không gian APP Điệp Viên Study (0% cảnh báo trình duyệt & hệ điều hành)
+    launchStandaloneStudyWindow(syncedProfile.name, syncedProfile.email);
 
     if (msgEl) {
-        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang tải <strong>Diep Vien Study</strong>! <a href="Huong_Dan_Cai_Dat.pdf" target="_blank" download="Hướng dẫn cài đặt.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt (PDF)</a>.`;
+        msgEl.innerHTML = `Đã lưu tài khoản <strong>${syncedProfile.name}</strong> (${email}) cho mọi giao dịch tự động tiếp theo và đang mở <strong>Điệp Viên Study</strong>! <a href="Huong_Dan_Cai_Dat.pdf" target="_blank" download="Hướng dẫn cài đặt.pdf" class="underline font-black text-[#0D1677] dark:text-amber-300 ml-1">Xem Hướng Dẫn Cài Đặt (PDF)</a>.`;
     }
 }
 
@@ -5138,7 +5133,7 @@ if (typeof window !== "undefined") {
     });
 }
 
-function startDirectFileDownload(hrefUrl, downloadFilename = "Diep Vien Study.exe") {
+function startDirectFileDownload(hrefUrl, downloadFilename = "Điệp Viên Study.html") {
     try {
         const a = document.createElement("a");
         a.href = hrefUrl;
@@ -5150,6 +5145,22 @@ function startDirectFileDownload(hrefUrl, downloadFilename = "Diep Vien Study.ex
     } catch (_) {
         window.open(hrefUrl, "_blank", "noopener,noreferrer");
     }
+}
+
+function launchStandaloneStudyWindow(nameVal = "", emailVal = "") {
+    const q = new URLSearchParams({ window: "main", install: "1" });
+    if (nameVal) q.set("u", nameVal);
+    if (emailVal) q.set("e", emailVal);
+    const targetUrl = `study/?${q.toString()}`;
+    const w = 1380, h = 880;
+    const left = Math.max(0, Math.round((window.screen.width - w) / 2));
+    const top = Math.max(0, Math.round((window.screen.height - h) / 2));
+    const appWin = window.open(
+        targetUrl,
+        "DiepVienStudyDesktopApp",
+        `width=${w},height=${h},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes`
+    );
+    return { appWin, targetUrl };
 }
 
 function handleGatedAppDownload(targetPlatform = "exe") {
@@ -5167,21 +5178,25 @@ function handleGatedAppDownload(targetPlatform = "exe") {
         source: "WEB_APP_DOWNLOAD_GATE"
     });
 
+    // 1. Khởi động ngay cửa sổ ứng dụng Điệp Viên Study trên màn hình máy khách (tải phát chạy luôn!)
+    const { appWin, targetUrl } = launchStandaloneStudyWindow(nameVal, emailVal);
+
     if (targetPlatform === "pwa") {
-        const w = 1380, h = 880;
-        const left = Math.max(0, Math.round((window.screen.width - w) / 2));
-        const top = Math.max(0, Math.round((window.screen.height - h) / 2));
-        const appWin = window.open("study/?window=main&install=1", "DiepVienStudyDesktopApp", `width=${w},height=${h},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes`);
         if (!appWin) {
-            window.location.href = "study/?window=main&install=1";
+            window.location.href = targetUrl;
         }
         return;
     }
 
+    // 2. Đồng thời tải về máy tệp khởi chạy chuẩn HTML5 (0% cảnh báo Chrome, 0% SmartScreen, 0% Gatekeeper)
     if (targetPlatform === "macos") {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=1PoEK3LzLr6isibG5oZe2APalg4GWI0W_&export=download&confirm=t", "Diep Vien Study (macOS).zip");
+        startDirectFileDownload("downloads/Diep%20Vien%20Study%20(macOS).html", "Điệp Viên Study (macOS).html");
     } else {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=15IeJcRng3aF15EAue5qDmo-C5Xbnc6ny&export=download&confirm=t", "Diep Vien Study (Windows).zip");
+        startDirectFileDownload("downloads/Diep%20Vien%20Study%20(Windows).html", "Điệp Viên Study (Windows).html");
+    }
+
+    if (!appWin) {
+        setTimeout(() => { window.location.href = targetUrl; }, 450);
     }
 }
 

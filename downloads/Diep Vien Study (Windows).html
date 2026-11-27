@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Điệp Viên Study — Khởi Động Ứng Dụng</title>
+  <link rel="icon" type="image/png" href="https://diepvientailieu.store/study/icon-192.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, #1E3A8A 0%, #0B1958 55%, #060E2C 100%);
+      color: #fff;
+      padding: 24px;
+    }
+    .card {
+      max-width: 460px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+    .logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 22px;
+      margin: 0 auto 18px;
+      display: block;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+      background: #fff;
+      padding: 6px;
+    }
+    h1 { font-size: 22px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.3px; }
+    p { font-size: 13.5px; color: #cbd5e1; line-height: 1.55; margin-bottom: 22px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px 22px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #FFA000, #F59E0B);
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 14.5px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(245, 158, 11, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="https://diepvientailieu.store/study/icon-192.png" alt="Điệp Viên Study">
+    <h1>Điệp Viên Study</h1>
+    <p>Đang khởi động không gian học tập AI (600+ Đề cương, Khóa học Video HD, Đặt BTL, Chuyển PDF sang Word &amp; Luyện ngoại ngữ)...</p>
+    <button class="btn" onclick="launchApp()">🚀 Mở Điệp Viên Study Ngay</button>
+  </div>
+  <script>
+    const APP_URL = "https://diepvientailieu.store/study/?window=main&install=1";
+    function launchApp() {
+      const w = 1380, h = 880;
+      const left = Math.max(0, Math.round((screen.width - w) / 2));
+      const top = Math.max(0, Math.round((screen.height - h) / 2));
+      const win = window.open(APP_URL, "DiepVienStudyApp", `width=${w},height=${h},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=yes`);
+      if (!win) {
+        window.location.replace(APP_URL);
+      }
+    }
+    window.location.replace(APP_URL);
+  </script>
+</body>
+</html>

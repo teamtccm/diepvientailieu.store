@@ -4698,12 +4698,12 @@ async function submitCustomerSyncWeb() {
     renderSyncedCustomerEntitlements(syncedProfile);
     renderCourses();
 
-    // Khi khách đăng nhập xong -> Tự động tải bộ cài Desktop APP Điệp Viên Study (Phương án A)
+    // Khi khách đăng nhập xong -> Tự động tải bộ cài Desktop APP Điệp Viên Study (Phương án A - GitHub Release CDN trực tiếp)
     const isMacClient = /Mac|iPhone|iPad|iPod/i.test(navigator.platform || navigator.userAgent || "");
     if (isMacClient) {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=1PoEK3LzLr6isibG5oZe2APalg4GWI0W_&export=download&confirm=t", "Diep Vien Study (macOS).zip");
+        startDirectFileDownload("https://github.com/teamtccm/diepvientailieu.store/releases/download/v16.3.0/Diep-Vien-Study-macOS.zip", "Diep-Vien-Study-macOS.zip");
     } else {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=15IeJcRng3aF15EAue5qDmo-C5Xbnc6ny&export=download&confirm=t", "Diep Vien Study (Windows).zip");
+        startDirectFileDownload("https://github.com/teamtccm/diepvientailieu.store/releases/download/v16.3.0/Diep-Vien-Study-Windows.zip", "Diep-Vien-Study-Windows.zip");
     }
 
     if (msgEl) {
@@ -5168,9 +5168,9 @@ function handleGatedAppDownload(targetPlatform = "exe") {
     });
 
     if (targetPlatform === "macos") {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=1PoEK3LzLr6isibG5oZe2APalg4GWI0W_&export=download&confirm=t", "Diep Vien Study (macOS).zip");
+        startDirectFileDownload("https://github.com/teamtccm/diepvientailieu.store/releases/download/v16.3.0/Diep-Vien-Study-macOS.zip", "Diep-Vien-Study-macOS.zip");
     } else {
-        startDirectFileDownload("https://drive.usercontent.google.com/download?id=15IeJcRng3aF15EAue5qDmo-C5Xbnc6ny&export=download&confirm=t", "Diep Vien Study (Windows).zip");
+        startDirectFileDownload("https://github.com/teamtccm/diepvientailieu.store/releases/download/v16.3.0/Diep-Vien-Study-Windows.zip", "Diep-Vien-Study-Windows.zip");
     }
 }
 

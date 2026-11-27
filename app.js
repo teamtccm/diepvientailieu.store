@@ -2104,12 +2104,39 @@ async function submitServiceOrder(e) {
     const cleanName = removeVietnameseTones(name).replace(/[^a-zA-Z0-9 ]/g, " ").toUpperCase().trim().slice(0, 18);
     const fullDepositMemo = `${depositCode} ${cleanName}`.trim();
 
+    // Đọc file yêu cầu BTL khách đính kèm (nếu có) để đẩy thẳng lên Google Drive & dán link vào Sheet Tổng
+    const attachments = [];
+    try {
+        const fileInp = document.getElementById("srvSupplementFile");
+        const pickedFiles = fileInp && fileInp.files ? Array.from(fileInp.files).slice(0, 3) : [];
+        for (const f of pickedFiles) {
+            if (f.size > 10 * 1024 * 1024) continue;
+            const b64 = await new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(String(reader.result || ""));
+                reader.onerror = () => resolve("");
+                reader.readAsDataURL(f);
+            });
+            if (b64) {
+                attachments.push({ name: f.name, mimeType: f.type || "application/octet-stream", base64: b64 });
+            }
+        }
+    } catch (_) {}
+
+    const remainCode = depositCode.startsWith("COC") ? ("TT" + depositCode.slice(3)) : ("TT" + depositCode);
+    const totalNum = Number(String(totalEst).replace(/[^0-9]/g, "")) || 0;
+    const depNum = Number(String(depositAmount).replace(/[^0-9]/g, "")) || 50000;
+    const remainNum = Math.max(0, totalNum - depNum);
+
     const payload = {
         type: "SERVICE_ORDER",
         orderId: depositCode,
         transferMemo: fullDepositMemo,
+        remainCode: remainCode,
+        remainAmt: remainNum,
         timestamp: new Date().toISOString(),
-        paymentMethod: "MOMO_QR",
+        paymentMethod: "ACB_VIETQR",
+        attachments: attachments,
         customer: {
             name: name,
             phone: phone,
@@ -4604,9 +4631,20 @@ function renderSyncedCustomerEntitlements(cust) {
         </div>`;
     });
     btls.forEach(b => {
-        html += `<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl flex justify-between items-center gap-2">
-            <div><strong class="text-slate-900"> BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
-            ${b.driveUrl ? `<a href="${b.driveUrl}" target="_blank" class="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-lg whitespace-nowrap">Mở BTL Drive</a>` : `<span class="text-amber-700 font-bold text-[10px] whitespace-nowrap">${b.status || "ĐANG LÀM"}</span>`}
+        const remAmt = Number(b.remainAmt || 0);
+        const remCode = b.remainCode || (String(b.orderCode || "").startsWith("COC") ? ("TT" + String(b.orderCode).slice(3)) : ("TT" + b.orderCode));
+        const remQr = b.remainQrUrl || (remAmt > 0 ? `https://img.vietqr.io/image/ACB-27820961-compact2.png?amount=${remAmt}&addInfo=${encodeURIComponent(remCode)}&accountName=TRINH%20DUC%20THINH` : "");
+        const stUp = String(b.status || "").toUpperCase();
+        const canPayRemain = remAmt > 0 && (stUp === "ĐÃ CỌC" || stUp === "ĐANG LÀM");
+        html += `<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col gap-2">
+            <div class="flex justify-between items-center gap-2">
+                <div><strong class="text-slate-900"> BTL: ${b.topic || b.orderCode}</strong><div class="text-[10px] text-slate-600">Mã #${b.orderCode} · Hạn nộp: ${b.deadline || "Theo yêu cầu"} · Trạng thái: <b>${b.status || "ĐÃ CỌC"}</b></div></div>
+                ${b.driveUrl ? `<a href="${b.driveUrl}" target="_blank" class="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-lg whitespace-nowrap">Mở BTL Drive</a>` : `<span class="text-amber-700 font-bold text-[10px] whitespace-nowrap">${b.status || "ĐANG LÀM"}</span>`}
+            </div>
+            ${canPayRemain ? `<div class="flex items-center justify-between gap-2 pt-1.5 border-t border-amber-200/70">
+                <span class="text-[10.5px] font-bold text-slate-700">Còn lại: <b class="text-rose-600">${remAmt.toLocaleString("vi-VN")} đ</b> (CK: <code>${remCode}</code>)</span>
+                <a href="${remQr}" target="_blank" class="px-2.5 py-1 bg-[#0D1677] text-white font-extrabold text-[10px] rounded-lg whitespace-nowrap hover:bg-[#1E40AF]">Mở QR Thanh Toán Đủ</a>
+            </div>` : ""}
         </div>`;
     });
     list.innerHTML = html;

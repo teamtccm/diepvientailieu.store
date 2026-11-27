@@ -1439,14 +1439,83 @@ function isOrderMatchedInText(orderCode, normCode, custName, orderAmt, parsedAmo
   return false;
 }
 
+function getSheetByAliases_(ss, aliases) {
+  for (var i = 0; i < aliases.length; i++) {
+    var sh = ss.getSheetByName(aliases[i]);
+    if (sh) return sh;
+  }
+  return null;
+}
+
+function buildBtlRemainCode_(orderCode) {
+  var c = String(orderCode || "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
+  if (!c) return "";
+  if (c.indexOf("COC") === 0) return "TT" + c.substring(3);
+  if (c.indexOf("TT") === 0) return c;
+  return "TT" + c;
+}
+
+function buildBtlRemainQrUrl_(bankNo, remainAmt, remainCode) {
+  var amt = Number(remainAmt || 0) || 0;
+  if (amt <= 0 || !remainCode) return "";
+  var acct = String(bankNo || "27820961").trim() || "27820961";
+  return "https://img.vietqr.io/image/ACB-" + acct + "-compact2.png?amount=" + amt + "&addInfo=" + encodeURIComponent(remainCode) + "&accountName=TRINH%20DUC%20THINH";
+}
+
+function getOrCreateBtlReqFolder_() {
+  var props = PropertiesService.getScriptProperties();
+  var cachedId = props.getProperty("BTL_REQ_FOLDER_ID");
+  if (cachedId) {
+    try { return DriveApp.getFolderById(cachedId); } catch (e) {}
+  }
+  var folderName = "05. File Yêu Cầu BTL Khách Gửi";
+  var it = DriveApp.getFoldersByName(folderName);
+  var folder = it.hasNext() ? it.next() : DriveApp.createFolder(folderName);
+  try { props.setProperty("BTL_REQ_FOLDER_ID", folder.getId()); } catch (eP) {}
+  return folder;
+}
+
+function saveBtlRequirementFilesToDrive_(orderCode, custName, attachments) {
+  if (!attachments || !attachments.length) return "";
+  try {
+    var rootFolder = getOrCreateBtlReqFolder_();
+    var cleanCust = String(custName || "Khach").replace(/[\\/:*?"<>|]/g, " ").trim().slice(0, 35);
+    var savedLinks = [];
+    var targetFolder = rootFolder;
+    if (attachments.length > 1) {
+      targetFolder = rootFolder.createFolder(orderCode + " - " + cleanCust);
+    }
+    for (var i = 0; i < attachments.length; i++) {
+      var att = attachments[i];
+      if (!att || !att.base64) continue;
+      var rawB64 = String(att.base64);
+      var commaIdx = rawB64.indexOf(",");
+      if (commaIdx !== -1) rawB64 = rawB64.substring(commaIdx + 1);
+      var bytes = Utilities.base64Decode(rawB64);
+      var fname = orderCode + "_" + String(att.name || ("yeu_cau_" + (i + 1))).replace(/[\\/:*?"<>|]/g, "_");
+      var blob = Utilities.newBlob(bytes, att.mimeType || "application/octet-stream", fname);
+      var file = targetFolder.createFile(blob);
+      try { file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW); } catch (eSh) {}
+      savedLinks.push(file.getUrl());
+    }
+    if (attachments.length > 1 && savedLinks.length > 0) {
+      try { targetFolder.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW); } catch (eSh2) {}
+      return targetFolder.getUrl();
+    }
+    return savedLinks[0] || "";
+  } catch (eSave) {
+    return "";
+  }
+}
+
 function scanBankEmailsAndDeliver(ss, fastMode) {
   if (!ss || typeof ss.getSheetByName !== "function") {
     ss = getMasterSpreadsheet();
     fastMode = false;
   }
-  var oSheet = ss.getSheetByName("Don_De_Cuong");
-  var btlSheet = ss.getSheetByName("Don_BTL_DichVu");
-  var gdSheet = ss.getSheetByName("Lich_Su_GD");
+  var oSheet = getSheetByAliases_(ss, ["Don_De_Cuong", "Đơn Hàng Đề Cương"]);
+  var btlSheet = getSheetByAliases_(ss, ["Don_BTL_DichVu", "Đơn Hàng Bài Tập Lớn"]);
+  var gdSheet = getSheetByAliases_(ss, ["Lich_Su_GD", "Lịch Sử Giao Dịch ACB"]);
   if (!gdSheet) return;
 
   // 1. Lấy danh sách các mã Message ID đã xử lý trong Lich_Su_GD
@@ -1507,34 +1576,49 @@ function scanBankEmailsAndDeliver(ss, fastMode) {
     }
   }
 
-  // 3. Lấy danh sách đơn BTL đang CHỜ CỌC trong Don_BTL_DichVu
+  // 3. Lấy danh sách đơn BTL đang CHỜ CỌC và ĐÃ CỌC (chờ thu phần còn lại)
   var pendingBtl = [];
+  var awaitingFinalBtl = [];
   if (btlSheet) {
     var btlData = btlSheet.getDataRange().getValues();
     for (var b = 1; b < btlData.length; b++) {
       var br = btlData[b];
       var bCode = String(br[0] || "").trim().toUpperCase();
       var bStatus = String(br[11] || "").trim().toUpperCase();
-      if (bCode && (bStatus.indexOf("CHỜ CỌC") !== -1 || bStatus === "PENDING" || bStatus.indexOf("CHỜ BÁO GIÁ") !== -1)) {
-        var cocCode = bCode.indexOf("COC") === 0 ? bCode : ("COC" + bCode.replace(/^DAT_/, ""));
-        var rawBtlPhone = String(br[2] || "");
-        pendingBtl.push({
-          row: b + 1,
-          code: bCode,
-          normCode: bCode.replace(/[^A-Z0-9]/g, ""),
-          cocCode: cocCode,
-          normCocCode: cocCode.replace(/[^A-Z0-9]/g, ""),
-          name: String(br[1] || "Khách Hàng").trim(),
-          phone: sanitizeCustomerPhone(rawBtlPhone),
-          deviceId: extractDeviceIdFromInputs("", rawBtlPhone),
-          email: String(br[3] || "").trim().toLowerCase(),
-          school: String(br[4] || "").trim(),
-          topic: String(br[5] || "").trim(),
-          deadline: br[6],
-          totalEst: Number(String(br[7] || "500000").replace(/[^0-9]/g, "")) || 500000,
-          deposit: Number(String(br[8] || "50000").replace(/[^0-9]/g, "")) || 50000,
-          fileId: String(br[10] || "").trim()
-        });
+      if (!bCode) continue;
+      var cocCode = bCode.indexOf("COC") === 0 ? bCode : ("COC" + bCode.replace(/^DAT_/, ""));
+      var remainCode = (br.length >= 17 && String(br[16] || "").trim())
+        ? String(br[16] || "").trim().toUpperCase()
+        : buildBtlRemainCode_(bCode);
+      var rawBtlPhone = String(br[2] || "");
+      var bTotalEst = Number(String(br[7] || "500000").replace(/[^0-9]/g, "")) || 500000;
+      var bDeposit = Number(String(br[8] || "50000").replace(/[^0-9]/g, "")) || 50000;
+      var bRemainAmt = Number(String(br[9] || "0").replace(/[^0-9]/g, "")) || Math.max(0, bTotalEst - bDeposit);
+      var bObj = {
+        row: b + 1,
+        code: bCode,
+        normCode: bCode.replace(/[^A-Z0-9]/g, ""),
+        cocCode: cocCode,
+        normCocCode: cocCode.replace(/[^A-Z0-9]/g, ""),
+        remainCode: remainCode,
+        normRemainCode: remainCode.replace(/[^A-Z0-9]/g, ""),
+        name: String(br[1] || "Khách Hàng").trim(),
+        phone: sanitizeCustomerPhone(rawBtlPhone),
+        deviceId: extractDeviceIdFromInputs("", rawBtlPhone),
+        email: String(br[3] || "").trim().toLowerCase(),
+        school: String(br[4] || "").trim(),
+        topic: String(br[5] || "").trim(),
+        deadline: br[6],
+        totalEst: bTotalEst,
+        deposit: bDeposit,
+        remainAmt: bRemainAmt,
+        fileId: String(br[10] || "").trim(),
+        reqFileUrl: br.length >= 16 ? String(br[15] || "").trim() : ""
+      };
+      if (bStatus.indexOf("CHỜ CỌC") !== -1 || bStatus.indexOf("CHỜ ĐẶT CỌC") !== -1 || bStatus === "PENDING" || bStatus.indexOf("CHỜ BÁO GIÁ") !== -1) {
+        pendingBtl.push(bObj);
+      } else if ((bStatus === "ĐÃ CỌC" || bStatus === "ĐANG LÀM" || bStatus.indexOf("CHỜ THANH TOÁN") !== -1) && bRemainAmt > 0) {
+        awaitingFinalBtl.push(bObj);
       }
     }
   }
@@ -1667,24 +1751,70 @@ function scanBankEmailsAndDeliver(ss, fastMode) {
         }
       }
 
-      // 4C. Nếu tiền về STK 27820961 nhưng khách quên ghi mã đơn / sai cú pháp -> Lưu Lich_Su_GD VÀ BÁO NGAY TELEGRAM ĐỂ ADMIN KIỂM TRA!
+      // 4B-2. Kiểm tra khớp với đơn BTL ĐÃ CỌC đang chờ thu PHẦN CÒN LẠI (TTBTL...)
+      if (!matchedAnyOrder) {
+        for (var fbIdx = 0; fbIdx < awaitingFinalBtl.length; fbIdx++) {
+          var fOrder = awaitingFinalBtl[fbIdx];
+          if (fOrder.matched) continue;
+          var isFinalMatch = isOrderMatchedInText(fOrder.remainCode, fOrder.normRemainCode, fOrder.name, fOrder.remainAmt, parsedAmount, upperBody, normUpperBody);
+          if (isFinalMatch && (parsedAmount === 0 || parsedAmount >= fOrder.remainAmt)) {
+            fOrder.matched = true;
+            matchedAnyOrder = true;
+            var fActualAmt = parsedAmount > 0 ? parsedAmount : fOrder.remainAmt;
+            hoanTatThanhToanDuBtl(ss, btlSheet, fOrder, fActualAmt, parsedMemo, msgId, gdSheet, existingUnmatchedRowNum, msgTimeStr);
+            processedMsgIds[msgId] = true;
+          }
+        }
+      }
+
+      // 4C. Nếu tiền về STK 27820961 nhưng khách quên ghi mã đơn / sai cú pháp -> Lưu Lịch Sử Giao Dịch ACB VÀ BÁO NGAY TELEGRAM!
       if (!matchedAnyOrder && !existingUnmatchedRowNum) {
-        gdSheet.appendRow([
-          msgTimeStr,
-          "ACB",
-          "27820961",
-          "BIẾN ĐỘNG SỐ DƯ (+)",
-          parsedAmount > 0 ? parsedAmount : "Biến động ACB",
-          parsedMemo + " [MSG:" + msgId + "]"
-        ]);
-        try {
-          var mAcbUnm = ss.getSheetByName("Lịch Sử Giao Dịch ACB");
-          if (mAcbUnm) mAcbUnm.appendRow([msgTimeStr, "ACB", "27820961", "BIẾN ĐỘNG SỐ DƯ (+)", parsedAmount > 0 ? parsedAmount : "Biến động ACB", parsedMemo + " [MSG:" + msgId + "]", "", "Chưa khớp mã đơn", "Email ACB (27820961)"]);
-        } catch (eMuAcb) {}
+        var gdSheetName = gdSheet.getName();
+        if (gdSheetName === "Lịch Sử Giao Dịch ACB") {
+          gdSheet.appendRow([
+            msgTimeStr,
+            "ACB",
+            "27820961",
+            "BIẾN ĐỘNG SỐ DƯ (+)",
+            parsedAmount > 0 ? parsedAmount : "Biến động ACB",
+            parsedMemo + " [MSG:" + msgId + "]",
+            "",
+            "Chưa khớp mã đơn",
+            "Email ACB (27820961)"
+          ]);
+        } else {
+          gdSheet.appendRow([
+            msgTimeStr,
+            "ACB",
+            "27820961",
+            "BIẾN ĐỘNG SỐ DƯ (+)",
+            parsedAmount > 0 ? parsedAmount : "Biến động ACB",
+            parsedMemo + " [MSG:" + msgId + "]"
+          ]);
+          try {
+            var mAcbUnm = ss.getSheetByName("Lịch Sử Giao Dịch ACB");
+            if (mAcbUnm) mAcbUnm.appendRow([msgTimeStr, "ACB", "27820961", "BIẾN ĐỘNG SỐ DƯ (+)", parsedAmount > 0 ? parsedAmount : "Biến động ACB", parsedMemo + " [MSG:" + msgId + "]", "", "Chưa khớp mã đơn", "Email ACB (27820961)"]);
+          } catch (eMuAcb) {}
+        }
         processedMsgIds[msgId] = true;
 
         if (parsedAmount > 0) {
-          // Chỉ ghi nhận biến động số dư chưa khớp đơn vào Sheet Lịch Sử Giao Dịch ACB, không spam thông báo Telegram
+          try {
+            var propsUnm = PropertiesService.getScriptProperties();
+            var unmKey = "TG_ACB_UNM_" + msgId;
+            if (!propsUnm.getProperty(unmKey)) {
+              propsUnm.setProperty(unmKey, String(new Date().getTime()));
+              banTelegram(
+                "💰 <b>[BIẾN ĐỘNG SỐ DƯ ACB — CẦN ĐỐI SOÁT]</b>\n" +
+                "━━━━━━━━━━━━━━━━━━\n" +
+                "🏦 Tài khoản: <code>27820961</code> (ACB)\n" +
+                "💵 Số tiền nhận: <b>+" + parsedAmount.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+                "🕒 Thời gian: <code>" + escTgHtml(msgTimeStr) + "</code>\n" +
+                "📝 Nội dung CK: <code>" + escTgHtml(String(parsedMemo || "").slice(0, 180)) + "</code>\n" +
+                "⚠️ <i>Chưa khớp mã đơn tự động trên Sheet (khách có thể chuyển khoản trực tiếp hoặc ghi thiếu mã đơn).</i>"
+              );
+            }
+          } catch (eTgUnm) {}
         }
       }
     }
@@ -1835,18 +1965,33 @@ function hoanTatDonCocBtl(ss, btlSheet, bOrder, bActualAmt, parsedMemo, msgId, g
 
   var cleanMemo = String(parsedMemo || "").replace(/\s*\[MSG:[^\]]+\]/g, "").trim();
   var fullMemoLog = cleanMemo + " [Cọc BTL: " + bOrder.code + " | " + bOrder.email + "]" + (msgId ? (" [MSG:" + msgId + "]") : "");
+  var btlTime = msgTimeStr || Utilities.formatDate(new Date(), "GMT+7", "yyyy-MM-dd HH:mm:ss");
   if (existingGdRow && existingGdRow > 1) {
     gdSheet.getRange(existingGdRow, 4, 1, 3).setValues([["NHẬN CỌC BTL " + bOrder.code, bActualAmt, fullMemoLog]]);
+  } else if (gdSheet.getName() === "Lịch Sử Giao Dịch ACB") {
+    gdSheet.appendRow([btlTime, "ACB", "27820961", "NHẬN CỌC BTL " + bOrder.code, bActualAmt, fullMemoLog, "", "Đã xác thực cọc BTL", "Email ACB (27820961)"]);
   } else {
-    gdSheet.appendRow([
-      msgTimeStr || Utilities.formatDate(new Date(), "GMT+7", "yyyy-MM-dd HH:mm:ss"),
-      "ACB",
-      "27820961",
-      "NHẬN CỌC BTL " + bOrder.code,
-      bActualAmt,
-      fullMemoLog
-    ]);
+    gdSheet.appendRow([btlTime, "ACB", "27820961", "NHẬN CỌC BTL " + bOrder.code, bActualAmt, fullMemoLog]);
+    try {
+      var mAcbBtl = ss.getSheetByName("Lịch Sử Giao Dịch ACB");
+      if (mAcbBtl) mAcbBtl.appendRow([btlTime, "ACB", "27820961", "NHẬN CỌC BTL " + bOrder.code, bActualAmt, fullMemoLog, "", "Đã xác thực cọc BTL", "Email ACB (27820961)"]);
+    } catch (eMirBtlAcb) {}
   }
+
+  // Đồng bộ trạng thái ĐÃ CỌC lên tab Tiếng Việt 'Đơn Hàng Bài Tập Lớn' trên Sheet Tổng
+  try {
+    var mBtlTab = ss.getSheetByName("Đơn Hàng Bài Tập Lớn");
+    if (mBtlTab && mBtlTab.getName() !== btlSheet.getName()) {
+      var mBtlRows = mBtlTab.getDataRange().getValues();
+      for (var mb = mBtlRows.length - 1; mb >= 1; mb--) {
+        var mbCode = String(mBtlRows[mb][0] || "").trim().toUpperCase();
+        if (mbCode === bOrder.code || mbCode === bOrder.cocCode) {
+          mBtlTab.getRange(mb + 1, 12, 1, 2).setValues([["ĐÃ CỌC", "Đã xác thực cọc qua Email ACB"]]);
+          break;
+        }
+      }
+    }
+  } catch (eMirBtlTab) {}
 
   banTelegram(
     "✅ <b>[TIỀN CỌC BTL VỀ ACB — ĐÃ XÁC THỰC &amp; GỬI BẢN XEM TRƯỚC]</b>\n" +
@@ -1857,9 +2002,49 @@ function hoanTatDonCocBtl(ss, btlSheet, bOrder, bActualAmt, parsedMemo, msgId, g
     "🏫 Trường/Khoa: " + escTgHtml(bOrder.school || "Chưa ghi") + "\n" +
     "📝 Đề tài: <b>" + escTgHtml(bOrder.topic) + "</b>\n" +
     "📅 Hạn nộp (Deadline): <b>" + escTgHtml(String(bOrder.deadline || "Theo yêu cầu")) + "</b>\n" +
-    "💰 Tiền cọc nhận: <b>+" + bActualAmt.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+    "💰 Tiền cọc nhận: <b>+" + bActualAmt.toLocaleString("vi-VN") + " VNĐ</b>" +
+    (bOrder.remainAmt > 0 ? (" · Còn lại: <b>" + bOrder.remainAmt.toLocaleString("vi-VN") + " VNĐ</b> (CK: <code>" + escTgHtml(bOrder.remainCode || buildBtlRemainCode_(bOrder.code)) + "</code>)") : "") + "\n" +
+    (bOrder.reqFileUrl ? ("📎 File yêu cầu khách gửi: " + escTgHtml(bOrder.reqFileUrl) + "\n") : "") +
     "📝 Nội dung CK: <code>" + escTgHtml(cleanMemo) + "</code>"
   );
+}
+
+function hoanTatThanhToanDuBtl(ss, btlSheet, fOrder, fActualAmt, parsedMemo, msgId, gdSheet, existingGdRow, msgTimeStr) {
+  btlSheet.getRange(fOrder.row, 12, 1, 2).setValues([["ĐÃ THANH TOÁN ĐỦ", "Đã nhận đủ phần còn lại qua Email ACB"]]);
+
+  var cleanMemo = String(parsedMemo || "").replace(/\s*\[MSG:[^\]]+\]/g, "").trim();
+  var fullMemoLog = cleanMemo + " [Thu đủ BTL: " + fOrder.code + " / " + fOrder.remainCode + " | " + fOrder.email + "]" + (msgId ? (" [MSG:" + msgId + "]") : "");
+  var fTime = msgTimeStr || Utilities.formatDate(new Date(), "GMT+7", "yyyy-MM-dd HH:mm:ss");
+  if (existingGdRow && existingGdRow > 1) {
+    gdSheet.getRange(existingGdRow, 4, 1, 3).setValues([["NHẬN PHẦN CÒN LẠI BTL " + fOrder.code, fActualAmt, fullMemoLog]]);
+  } else if (gdSheet.getName() === "Lịch Sử Giao Dịch ACB") {
+    gdSheet.appendRow([fTime, "ACB", "27820961", "NHẬN PHẦN CÒN LẠI BTL " + fOrder.code, fActualAmt, fullMemoLog, "", "Đã thu đủ & bàn giao BTL", "Email ACB (27820961)"]);
+  } else {
+    gdSheet.appendRow([fTime, "ACB", "27820961", "NHẬN PHẦN CÒN LẠI BTL " + fOrder.code, fActualAmt, fullMemoLog]);
+    try {
+      var mAcbF = ss.getSheetByName("Lịch Sử Giao Dịch ACB");
+      if (mAcbF) mAcbF.appendRow([fTime, "ACB", "27820961", "NHẬN PHẦN CÒN LẠI BTL " + fOrder.code, fActualAmt, fullMemoLog, "", "Đã thu đủ & bàn giao BTL", "Email ACB (27820961)"]);
+    } catch (eMirF) {}
+  }
+
+  try { kiemTraDonHoanThanh(ss); } catch (eDeliv) {}
+
+  try {
+    var propsF = PropertiesService.getScriptProperties();
+    var tgKeyF = "TG_BTL_FULL_" + fOrder.code;
+    if (!propsF.getProperty(tgKeyF)) {
+      propsF.setProperty(tgKeyF, String(new Date().getTime()));
+      banTelegram(
+        "🎉 <b>[THU ĐỦ PHẦN CÒN LẠI BTL — ĐÃ BÀN GIAO FULL]</b>\n" +
+        "━━━━━━━━━━━━━━━━━━\n" +
+        "🆔 Mã đơn BTL: <code>" + escTgHtml(fOrder.code) + "</code> (CK: <code>" + escTgHtml(fOrder.remainCode) + "</code>)\n" +
+        "👤 Sinh viên: <b>" + escTgHtml(fOrder.name) + "</b>" + (fOrder.phone ? (" · 📞 <code>" + escTgHtml(fOrder.phone) + "</code>") : "") + "\n" +
+        "📧 Email nhận bản Full: <code>" + escTgHtml(fOrder.email) + "</code>\n" +
+        "💰 Số tiền phần còn lại: <b>+" + fActualAmt.toLocaleString("vi-VN") + " VNĐ</b>\n" +
+        "🚀 <b>Trạng thái: Đã tự động mở quyền Drive &amp; gửi Email bàn giao bản Full!</b>"
+      );
+    }
+  } catch (eTgF) {}
 }
 
 function guiEmailXacNhanCocBtl(email, name, orderCode, topic, depositAmt, deadlineStr, previewUrl) {
@@ -2194,7 +2379,7 @@ function kiemTraVaKhoaThietBiApp(ss, rawEmail, rawDeviceId, rawDeviceName) {
   }
 
   // 2. Quét thêm bảng Don_De_Cuong để đảm bảo mọi đơn PAID_SUCCESS đều được đồng bộ
-  var dcSheet = ss.getSheetByName("Don_De_Cuong");
+  var dcSheet = getSheetByAliases_(ss, ["Don_De_Cuong", "Đơn Hàng Đề Cương"]);
   if (dcSheet) {
     var dcData = dcSheet.getDataRange().getValues();
     for (var d = 1; d < dcData.length; d++) {
@@ -2226,20 +2411,29 @@ function kiemTraVaKhoaThietBiApp(ss, rawEmail, rawDeviceId, rawDeviceName) {
   }
 
   // 2B. Quét thêm bảng Don_BTL_DichVu để trả về danh sách đơn BTL của khách
-  var btlSheet = ss.getSheetByName("Don_BTL_DichVu");
+  var btlSheet = getSheetByAliases_(ss, ["Don_BTL_DichVu", "Đơn Hàng Bài Tập Lớn"]);
   if (btlSheet) {
     var btlData = btlSheet.getDataRange().getValues();
     for (var b = 1; b < btlData.length; b++) {
       var br = btlData[b];
       var bEmail = String(br[3] || "").trim().toLowerCase();
       if (bEmail === targetEmail) {
+        var bCodeSync = String(br[0] || "").trim();
         var bFileId = String(br[10] || "").trim();
         var bStatus = String(br[11] || "").trim();
+        var bRemAmt = Number(String(br[9] || "0").replace(/[^0-9]/g, "")) || 0;
+        var bRemCode = (br.length >= 17 && String(br[16] || "").trim()) ? String(br[16] || "").trim() : buildBtlRemainCode_(bCodeSync);
+        var bRemQr = (br.length >= 18 && String(br[17] || "").trim()) ? String(br[17] || "").trim() : buildBtlRemainQrUrl_("27820961", bRemAmt, bRemCode);
+        var bReqUrl = br.length >= 16 ? String(br[15] || "").trim() : "";
         custObj.btlOrders.push({
-          orderCode: String(br[0] || "").trim(),
+          orderCode: bCodeSync,
           topic: String(br[5] || "").trim(),
           deadline: String(br[6] || "").trim(),
           status: bStatus,
+          remainAmt: bRemAmt,
+          remainCode: bRemCode,
+          remainQrUrl: bRemQr,
+          reqFileUrl: bReqUrl,
           driveUrl: bFileId ? ("https://drive.google.com/file/d/" + bFileId + "/view") : ""
         });
       }
@@ -2562,7 +2756,7 @@ function kiemTraDonHoanThanh(ss) {
   if (!ss || typeof ss.getSheetByName !== "function") {
     ss = getMasterSpreadsheet();
   }
-  var btlSheet = ss.getSheetByName("Don_BTL_DichVu");
+  var btlSheet = getSheetByAliases_(ss, ["Don_BTL_DichVu", "Đơn Hàng Bài Tập Lớn"]);
   if (!btlSheet) return;
 
   var nowMs = new Date().getTime();
@@ -3001,7 +3195,7 @@ function sendNewOrderTelegramOnce(orderCode, orderType, custName, custEmail, cle
 }
 
 function upsertDonDeCuong(ss, bankInfo, orderInput) {
-  var oSheet = ss.getSheetByName("Don_De_Cuong");
+  var oSheet = getSheetByAliases_(ss, ["Don_De_Cuong", "Đơn Hàng Đề Cương"]);
   var nowStr = Utilities.formatDate(new Date(), "GMT+7", "yyyy-MM-dd HH:mm:ss");
   var orderCode = String(orderInput.orderCode || ("DV" + Math.floor(100000 + Math.random() * 900000))).trim().toUpperCase();
   var orderType = String(orderInput.orderType || "Mua Đề Cương").trim();
@@ -3126,7 +3320,7 @@ function upsertDonDeCuong(ss, bankInfo, orderInput) {
 }
 
 function upsertDonBtlDichVu(ss, bankInfo, body) {
-  var btlSheet = ss.getSheetByName("Don_BTL_DichVu");
+  var btlSheet = getSheetByAliases_(ss, ["Don_BTL_DichVu", "Đơn Hàng Bài Tập Lớn"]);
   var cust = body.customer || {};
   var assign = body.assignment || {};
 
@@ -3158,6 +3352,10 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
 
   var matchedBtl = timFileBtlTheoDeTai(ss, body.fileId || body.driveId || body.sku || sCode, fullTopic, sSubject);
   var resolvedFileId = extractDriveId(body.fileId || body.driveId || (matchedBtl ? matchedBtl.fileId : ""));
+  var attachments = Array.isArray(body.attachments) ? body.attachments : (Array.isArray(body.files) ? body.files : []);
+  var reqFileUrl = saveBtlRequirementFilesToDrive_(sCode, sName, attachments) || String(body.reqFileUrl || "").trim();
+  var remainCode = buildBtlRemainCode_(sCode);
+  var remainQrUrl = buildBtlRemainQrUrl_(bankInfo.accountNo, remainAmt, remainCode);
 
   if (sEmail && sEmail.indexOf("@") !== -1) {
     try {
@@ -3178,6 +3376,10 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     if (rCode === sCode || rCoc === sCode) {
       var rowNum = i + 1;
       var prevB = bData[i];
+      var finalReqUrl = reqFileUrl || (prevB.length >= 16 ? String(prevB[15] || "") : "");
+      var finalRemCode = buildBtlRemainCode_(rCode);
+      var finalRemAmt = remainAmt || Number(String(prevB[9] || "0").replace(/[^0-9]/g, "")) || 0;
+      var finalRemQr = buildBtlRemainQrUrl_(bankInfo.accountNo, finalRemAmt, finalRemCode);
       btlSheet.getRange(rowNum, 1, 1, 11).setValues([[
         rCode,
         sName || prevB[1],
@@ -3188,10 +3390,11 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
         sDeadline || prevB[6],
         totalEst || prevB[7],
         depositAmt || prevB[8],
-        remainAmt || prevB[9],
+        finalRemAmt,
         resolvedFileId || prevB[10] || ""
       ]]);
-      return { orderCode: rCode, isNew: false };
+      btlSheet.getRange(rowNum, 16, 1, 3).setValues([[finalReqUrl, finalRemCode, finalRemQr]]);
+      return { orderCode: rCode, isNew: false, reqFileUrl: finalReqUrl, remainCode: finalRemCode, remainQrUrl: finalRemQr };
     }
   }
 
@@ -3210,14 +3413,17 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     "CHỜ CỌC 10%",
     "Chờ xác thực Email biến động số dư ACB",
     bankInfo.accountNo,
-    "Hệ thống Tự động & CTV Học Thuật"
+    "Hệ thống Tự động & CTV Học Thuật",
+    reqFileUrl,
+    remainCode,
+    remainQrUrl
   ];
   btlSheet.appendRow(newBtlRow);
 
-  // Đồng bộ trực tiếp vào tab Tiếng Việt 'Đơn Hàng Bài Tập Lớn' trên Sheet Tổng
+  // Đồng bộ trực tiếp vào tab Tiếng Việt 'Đơn Hàng Bài Tập Lớn' trên Sheet Tổng (nếu khác tab hiện tại)
   try {
     var mBtlTab = ss.getSheetByName("Đơn Hàng Bài Tập Lớn");
-    if (mBtlTab) {
+    if (mBtlTab && mBtlTab.getName() !== btlSheet.getName()) {
       mBtlTab.appendRow(newBtlRow);
     }
   } catch (eMirrorBtl) {}
@@ -3230,7 +3436,11 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     paid: false,
     verified: false,
     topic: fullTopic,
-    deadline: sDeadline
+    deadline: sDeadline,
+    remainAmt: remainAmt,
+    remainCode: remainCode,
+    remainQrUrl: remainQrUrl,
+    reqFileUrl: reqFileUrl
   }, 1800);
 
   // Đã tắt thông báo khi mới điền form BTL (chưa cọc) theo cấu hình lọc thông báo sạch Telegram.
@@ -3241,7 +3451,7 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     }
   } catch (eBtlCreateInv) {}
 
-  return { orderCode: sCode, isNew: true };
+  return { orderCode: sCode, isNew: true, reqFileUrl: reqFileUrl, remainCode: remainCode, remainQrUrl: remainQrUrl };
 }
 
 function doPost(e) {
@@ -3553,8 +3763,8 @@ function doGet(e) {
 
   // 5. Kiểm tra trạng thái thanh toán đơn hàng SIÊU TỐC (verify / check_status)
   if (isVerifyAction && checkCode) {
-    var oSheet = ss.getSheetByName("Don_De_Cuong");
-    var bSheet = ss.getSheetByName("Don_BTL_DichVu");
+    var oSheet = getSheetByAliases_(ss, ["Don_De_Cuong", "Đơn Hàng Đề Cương"]);
+    var bSheet = getSheetByAliases_(ss, ["Don_BTL_DichVu", "Đơn Hàng Bài Tập Lớn"]);
     var isBtlCheck = (String(p.orderType || "").toLowerCase() === "btl" || checkCode.indexOf("COC") === 0 || checkCode.indexOf("BTL") === 0);
 
     var findDocOrderRow = function() {
@@ -3715,6 +3925,9 @@ function doGet(e) {
             : "";
           var previewDriveUrl = isPaidBtl ? btlMatchInfo.previewLink : "";
 
+          var bRemAmtV = Number(String(bData[j][9] || "0").replace(/[^0-9]/g, "")) || 0;
+          var bRemCodeV = (bData[j].length >= 17 && String(bData[j][16] || "").trim()) ? String(bData[j][16] || "").trim() : buildBtlRemainCode_(bCode);
+          var bRemQrV = (bData[j].length >= 18 && String(bData[j][17] || "").trim()) ? String(bData[j][17] || "").trim() : buildBtlRemainQrUrl_("27820961", bRemAmtV, bRemCodeV);
           var bRespObj = {
             ok: true,
             orderCode: checkCode,
@@ -3725,6 +3938,9 @@ function doGet(e) {
             btlDelivered: isDeliveredBtl,
             topic: bTopic,
             deadline: bDeadline,
+            remainAmt: bRemAmtV,
+            remainCode: bRemCodeV,
+            remainQrUrl: bRemQrV,
             driveUrl: fullDriveUrl || previewDriveUrl,
             fullDriveUrl: fullDriveUrl,
             previewDriveUrl: previewDriveUrl

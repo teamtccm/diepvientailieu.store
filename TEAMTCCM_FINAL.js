@@ -22,22 +22,23 @@ var ADMIN_CHAT_ID      = "6064805152";
 var KHO_PHAT_FILE_WEBHOOK_URL = ""; // Tích hợp trực tiếp ngay trên diepvientailieu@gmail.com (0-hop)
 var KHO_SECRET_KEY = "DVTL_SECRET_2026_TCCM_TO_DIEPVIEN";
 
-// ─── ID 5 THƯ MỤC KHO GOOGLE DRIVE CHÍNH THỨC (diepvientailieu@gmail.com) ────
-var FOLDER_DE_CUONG_ID  = "1zPRnfdMbaaYWSKK8PZdZIuooOanjWynp"; // 01_Danh_Sach_De_Cuong_Luu_Tru
-var FOLDER_BTL_FULL_ID  = "13wHeLedN8McA8AycvznNoj4CXzDQg98j"; // 02_Danh_Sach_Bai_Tap_Lon_Luu_Tru
-var FOLDER_BTL_CHECK_ID = "1J5GxIOQocD0FeISMyaS980pRrs_Qu0qr"; // 03_Cho_Khach_Check_Truoc
-var FOLDER_KIEM_TRA_ID  = "1B6yVI8KsQj_t8HB7sTJ-M99TCZqI7oee"; // 04_File_Kiem_Tra_De_Cuong_Va_BTL
-var FOLDER_LUU_TRU_KHACH_ID = "1p3YzZFVteETJMP5bDEhiqlpjqkOkUbeK"; // 06_Luu_Tru_Thong_Tin_Khach_Hang
-var FOLDER_KHOA_HOC_ID  = "13CEmorojtCBFPxlqS3C3PSEhLKbsDMnC"; // 09_Khoa_Hoc
+// ─── ID CÁC THƯ MỤC KHO GOOGLE DRIVE CHÍNH THỨC (diepvientailieu@gmail.com) ────
+var FOLDER_DE_CUONG_ID  = "1zPRnfdMbaaYWSKK8PZdZIuooOanjWynp"; // 01. Kho Đề Cương Lưu Trữ
+var FOLDER_BTL_FULL_ID  = "13wHeLedN8McA8AycvznNoj4CXzDQg98j"; // 02. Kho Bài Tập Lớn Lưu Trữ
+var FOLDER_BTL_CHECK_ID = ""; // Thư mục 03 cũ đã đưa vào thùng rác; dùng file xem trước gắn riêng nếu có
+var FOLDER_KIEM_TRA_ID  = "1koWdkZSq9qgcJlwHK431wY1HWMSyS1kf"; // 04. Lưu Trữ Kỹ Thuật & Sao Lưu
+var FOLDER_LUU_TRU_KHACH_ID = "1ikdPiPJN22LSnOEVHzFulmf6Stm7gq_A"; // 06. File Yêu Cầu BTL Khách Gửi
+var FOLDER_KHOA_HOC_ID  = "1-mwxzx4IsXu2o7R-E5DNqNLABd-4Osdg"; // 05. Combo Khóa Học
+var FOLDER_BANNER_ID    = "1ZVz9QqLCRx-_jQLUVddleXjciuRqhc-u"; // Banner
 var BANG_LUU_TRU_ID     = "1XJe6Ar6Vlm_quITuTAGiaLfnf3ZULlMFcAhI3ULm6RM"; // BẢNG LƯU TRỮ TỔNG HỢP
 
 // ─── BẢNG ÁNH XẠ KHÓA HỌC -> FOLDER GOOGLE DRIVE (diepvientailieu@gmail.com) ─
 var COURSE_DRIVE_MAP = {
   "ALL-COURSES-399K": {
     "name": "FULL TẤT CẢ KHÓA HỌC 2K9 - 2K10 - ĐGNL (HSA, TSA, V-ACT, BCA, QDA, VSAT)",
-    "folderId": "1_1RwRFjIYJO0BmmJEEqVV-4-GNOkLcNQ",
+    "folderId": "1xEi1TWFZKLTBBp4tJVXoOv9XB9qNUo_a",
     "extraFolderIds": [
-      "13CEmorojtCBFPxlqS3C3PSEhLKbsDMnC"
+      "1ZlYt4iot-K6d0fZTb7hGwwnRgUV6Pdwh"
     ],
     "price": 399000,
     "tier": "full_399k",
@@ -2080,12 +2081,12 @@ function hoanTatDonDeCuongHoacKhoaHoc(ss, oSheet, order, actualAmt, parsedMemo, 
 
       banTelegram(
         headIcon + "\n" +
-        "━━━━━━━━━━━━━━━━━━\n" +
-        "🆔 Mã đơn: <code>" + escTgHtml(order.code) + "</code> · 💰 <b>+" + actualAmt.toLocaleString("vi-VN") + " VNĐ</b>\n" +
-        "👤 Khách hàng: <b>" + escTgHtml(order.name) + "</b>" + (order.phone ? (" · 📞 <code>" + escTgHtml(order.phone) + "</code>") : "") + "\n" +
-        "📧 Email nhận: <code>" + escTgHtml(order.email || "Chưa nhập") + "</code>\n" +
-        "📚 Sản phẩm: <b>" + escTgHtml(product ? product.name : order.itemName) + "</b>\n" +
-        "📩 Kiểm tra Mail &amp; Drive: <b>" + mailBadge + "</b>",
+        "──────────\n" +
+        "🆔 <code>" + escTgHtml(order.code) + "</code> · <b>+" + actualAmt.toLocaleString("vi-VN") + "đ</b>\n" +
+        "👤 <b>" + escTgHtml(order.name) + "</b>" + (order.phone ? (" · <code>" + escTgHtml(order.phone) + "</code>") : "") + "\n" +
+        "📧 <code>" + escTgHtml(order.email || "Chưa có Email") + "</code>\n" +
+        "📚 " + escTgHtml((product ? product.name : order.itemName).slice(0, 50)) + "\n" +
+        "📩 " + mailBadge,
         { reply_markup: { inline_keyboard: [actionRow] } }
       );
     }
@@ -2109,10 +2110,12 @@ function hoanTatDonCocBtl(ss, btlSheet, bOrder, bActualAmt, parsedMemo, msgId, g
 
   capNhatTaiKhoanKhachHang(ss, bOrder.email, bOrder.name, bOrder.phone, bOrder.code, bActualAmt, bOrder.deviceId || "", "");
 
-  var previewId = (btlMatch && btlMatch.previewId) ? btlMatch.previewId : FOLDER_BTL_CHECK_ID;
-  var previewUrl = (btlMatch && btlMatch.previewLink) ? btlMatch.previewLink : ("https://drive.google.com/drive/folders/" + FOLDER_BTL_CHECK_ID);
+  var previewId = (btlMatch && btlMatch.previewId) ? btlMatch.previewId : "";
+  var previewUrl = (btlMatch && btlMatch.previewLink) ? btlMatch.previewLink : "";
   if (bOrder.email && bOrder.email.indexOf("@") !== -1) {
-    try { capQuyenNhieuIdDriveSongSong([previewId], bOrder.email, bOrder.code, "Bản xem trước BTL: " + bOrder.topic); } catch (ePrevPerm) {}
+    if (previewId) {
+      try { capQuyenNhieuIdDriveSongSong([previewId], bOrder.email, bOrder.code, "Bản xem trước BTL: " + bOrder.topic); } catch (ePrevPerm) {}
+    }
     try {
       guiEmailXacNhanCocBtl(bOrder.email, bOrder.name, bOrder.code, bOrder.topic, bActualAmt, bOrder.deadline, previewUrl);
     } catch (eCocMail) {}
@@ -2156,24 +2159,21 @@ function hoanTatDonCocBtl(ss, btlSheet, bOrder, bActualAmt, parsedMemo, msgId, g
       var svcLabel = detectBtlServiceLabel_(bOrder.topic, bOrder.code);
       var tgBtlRemCode = bOrder.remainCode || buildBtlRemainCode_(bOrder.code);
       banTelegram(
-        "🔨 <b>[ĐƠN " + escTgHtml(svcLabel.toUpperCase()) + " — ĐÃ NHẬN TIỀN CỌC]</b>\n" +
-        "━━━━━━━━━━━━━━━━━━\n" +
-        "🆔 Mã đơn: <code>" + escTgHtml(bOrder.code) + "</code> · Cọc: <b>+" + bActualAmt.toLocaleString("vi-VN") + " VNĐ</b>\n" +
-        "👤 Khách hàng: <b>" + escTgHtml(bOrder.name) + "</b>" + (bOrder.phone ? (" · 📞 <code>" + escTgHtml(bOrder.phone) + "</code>") : "") + "\n" +
-        (bOrder.email ? ("📧 Email: <code>" + escTgHtml(bOrder.email) + "</code>\n") : "") +
-        "📚 Đề tài: <b>" + escTgHtml(bOrder.topic) + "</b>\n" +
-        "⏰ Deadline: <b>" + escTgHtml(formatShortTimeGMT7_(bOrder.deadline) || "Theo yêu cầu") + "</b>\n" +
-        "💵 Còn lại: <b>" + (bOrder.remainAmt > 0 ? (bOrder.remainAmt.toLocaleString("vi-VN") + " VNĐ") : "Chưa chốt giá") + "</b> (CK: <code>" + escTgHtml(tgBtlRemCode) + "</code>)" +
-        (bOrder.reqFileUrl ? ("\n📎 <a href=\"" + escTgHtml(bOrder.reqFileUrl) + "\">Mở File Yêu Cầu Khách Gửi (Kho 06)</a>") : "") +
-        "\n💡 <i>Hệ thống sẽ tự động sinh ảnh QR thu phần còn lại đúng ngày Deadline!</i>",
+        "🔨 <b>[ĐƠN " + escTgHtml(svcLabel.toUpperCase()) + " · ĐÃ CỌC]</b>\n" +
+        "──────────\n" +
+        "🆔 <code>" + escTgHtml(bOrder.code) + "</code> · Cọc <b>+" + bActualAmt.toLocaleString("vi-VN") + "đ</b>\n" +
+        "👤 <b>" + escTgHtml(bOrder.name) + "</b>" + (bOrder.phone ? (" · <code>" + escTgHtml(bOrder.phone) + "</code>") : "") + "\n" +
+        "📚 " + escTgHtml(bOrder.topic.replace(/^\[[^\]]+\]\s*/, "").slice(0, 65)) + "\n" +
+        "⏰ Hạn: <b>" + escTgHtml(formatCompactTime_(bOrder.deadline) || "Theo YC") + "</b> · Còn: <b>" + (bOrder.remainAmt > 0 ? (bOrder.remainAmt.toLocaleString("vi-VN") + "đ") : "Chưa chốt") + "</b>" +
+        (bOrder.reqFileUrl ? (" · <a href=\"" + escTgHtml(bOrder.reqFileUrl) + "\">📎File YC</a>") : ""),
         {
           reply_markup: {
             inline_keyboard: [
               [
-                { text: "💳 Xuất QR Thu Nốt", callback_data: "tg_qr:" + bOrder.code },
-                { text: "✏️ Sửa Giá / Gắn File", callback_data: "tg_askprice:" + bOrder.code }
+                { text: "💳 QR Thu Nốt", callback_data: "tg_qr:" + bOrder.code },
+                { text: "✏️ Giá/File", callback_data: "tg_askprice:" + bOrder.code }
               ],
-              [{ text: "🎛️ Mở Trạm Điều Khiển", callback_data: "tg_open:menu" }]
+              [{ text: "🎛️ Trạm Tổng", callback_data: "tg_open:menu" }]
             ]
           }
         }
@@ -3992,6 +3992,58 @@ function doGet(e) {
   var ss = getMasterSpreadsheet();
   var bankInfo = layTaiKhoanNganHangActive(ss);
 
+  // 1B. Liệt kê nội dung thư mục khóa học trên Google Drive cho Web/App Học Tập (/study)
+  if (action === "listCourseDrive") {
+    var reqFid = extractDriveId(p.folderId || "");
+    var reqCid = String(p.courseId || "").trim().toUpperCase();
+    if (!reqFid && reqCid && COURSE_DRIVE_MAP[reqCid]) {
+      reqFid = COURSE_DRIVE_MAP[reqCid].folderId;
+    }
+    if (!reqFid) reqFid = FOLDER_KHOA_HOC_ID;
+    try {
+      var drvFld = DriveApp.getFolderById(reqFid);
+      var outItems = [];
+      var subIt = drvFld.getFolders();
+      while (subIt.hasNext()) {
+        var sf = subIt.next();
+        if (sf.isTrashed()) continue;
+        outItems.push({
+          id: sf.getId(),
+          name: sf.getName(),
+          mimeType: "application/vnd.google-apps.folder",
+          isFolder: true,
+          url: "https://drive.google.com/drive/folders/" + sf.getId()
+        });
+      }
+      var fIt = drvFld.getFiles();
+      while (fIt.hasNext()) {
+        var fl = fIt.next();
+        if (fl.isTrashed()) continue;
+        outItems.push({
+          id: fl.getId(),
+          name: fl.getName(),
+          mimeType: fl.getMimeType(),
+          isFolder: false,
+          url: "https://drive.google.com/file/d/" + fl.getId() + "/view"
+        });
+      }
+      outItems.sort(function(a, b) {
+        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1;
+        return String(a.name).localeCompare(String(b.name), "vi");
+      });
+      return jsonOut({
+        ok: true,
+        courseId: reqCid,
+        folderId: reqFid,
+        folderName: drvFld.getName(),
+        folderUrl: "https://drive.google.com/drive/folders/" + reqFid,
+        files: outItems
+      });
+    } catch (eDrvList) {
+      return jsonOut({ ok: false, error: eDrvList.toString(), folderId: reqFid, files: [] });
+    }
+  }
+
   // 2. Lấy danh sách Đề Cương thực tế từ 'Kho Đề Cương' / 'KhoTaiLieu'
   if (action === "getProducts") {
     var kSheet = getSheetByAliases_(ss, ["Kho Đề Cương", "KhoTaiLieu"]);
@@ -4819,29 +4871,50 @@ function showTgScreen_(chatId, msgId, textHtml, replyMarkup, userTriggerMsgId) {
   return sent;
 }
 
+function formatCompactTime_(val) {
+  if (!val) return "";
+  if (Object.prototype.toString.call(val) === "[object Date]") {
+    if (isNaN(val.getTime())) return "";
+    return Utilities.formatDate(val, "GMT+7", "dd/MM HH:mm");
+  }
+  var s = String(val).trim();
+  var mIso = s.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})(?:[T\s]+(\d{1,2}):(\d{1,2}))?/);
+  if (mIso) {
+    var hh = mIso[4] !== undefined ? ("0" + mIso[4]).slice(-2) : "00";
+    var mm = mIso[5] !== undefined ? ("0" + mIso[5]).slice(-2) : "00";
+    return ("0" + mIso[3]).slice(-2) + "/" + ("0" + mIso[2]).slice(-2) + " " + hh + ":" + mm;
+  }
+  var mVn = s.match(/^(\d{1,2})\/(\d{1,2})\/\d{4}(?:\s+(\d{1,2}):(\d{1,2}))?/);
+  if (mVn) {
+    var h2 = mVn[3] !== undefined ? ("0" + mVn[3]).slice(-2) : "";
+    var n2 = mVn[4] !== undefined ? ("0" + mVn[4]).slice(-2) : "";
+    return ("0" + mVn[1]).slice(-2) + "/" + ("0" + mVn[2]).slice(-2) + (h2 ? (" " + h2 + ":" + n2) : "");
+  }
+  var p = Date.parse(s);
+  if (!isNaN(p)) return Utilities.formatDate(new Date(p), "GMT+7", "dd/MM HH:mm");
+  return s.slice(0, 14);
+}
+
 function renderTgMenu_(ss, chatId, msgId, userTriggerMsgId) {
   var m = collectMonthlyMetrics_(ss);
-  var nowClock = Utilities.formatDate(new Date(), "GMT+7", "HH:mm dd/MM/yyyy");
+  var nowClock = Utilities.formatDate(new Date(), "GMT+7", "HH:mm dd/MM");
   var text =
-    "🎛️ <b>TRẠM ĐIỀU KHIỂN TỔNG — ĐIỆP VIÊN TÀI LIỆU</b>\n" +
-    "━━━━━━━━━━━━━━━━━━━━━━\n" +
-    "📅 <b>Chu kỳ tháng " + escTgHtml(m.monthStr) + "</b> <i>(Cập nhật " + nowClock + ")</i>\n" +
-    "💰 <b>Doanh thu tháng này:</b> <b>" + m.totalEarnedMonth.toLocaleString("vi-VN") + " VNĐ</b>\n" +
-    "   ├ 🔨 <b>Đơn BTL trong tháng:</b> <b>" + m.btlMonthList.length + " đơn</b> <i>(" + m.btlCocCount + " đã cọc · " + m.btlDoneCount + " hoàn thành)</i>\n" +
-    "   ├ 📄 <b>Đơn Đề cương đã bán:</b> <b>" + m.dcPaidMonth.length + " đơn</b> <i>(" + m.dcMailOk + "/" + m.dcPaidMonth.length + " đã nhận Mail)</i>\n" +
-    "   └ 👤 <b>Khách hàng lưu trữ:</b> <b>" + m.uniqueCustomers.length + " khách hàng</b>\n" +
-    "━━━━━━━━━━━━━━━━━━━━━━\n" +
-    "🔗 <i>Web/App (Mua bán) ↔ Telegram (Điều hành) ↔ Drive (Nhà kho)</i>";
+    "🎛️ <b>TRẠM ĐIỀU KHIỂN · " + escTgHtml(m.monthStr) + "</b>\n" +
+    "──────────\n" +
+    "💰 <b>Tháng này:</b> <b>" + m.totalEarnedMonth.toLocaleString("vi-VN") + "đ</b> <i>(" + nowClock + ")</i>\n" +
+    "• 🔨 BTL: <b>" + m.btlMonthList.length + " đơn</b> (" + m.btlCocCount + " cọc · " + m.btlDoneCount + " xong)\n" +
+    "• 📄 Đề cương: <b>" + m.dcPaidMonth.length + " đơn</b> (" + m.dcMailOk + "/" + m.dcPaidMonth.length + " mail)\n" +
+    "• 👤 Khách hàng: <b>" + m.uniqueCustomers.length + " hồ sơ</b>";
 
   var kb = {
     inline_keyboard: [
-      [{ text: "💰 Kiểm Tra Biến Động Số Dư (Quét Mail + Doanh Thu)", callback_data: "tg_tab:acb:0" }],
+      [{ text: "💰 Biến Động Số Dư (Quét Mail + Doanh Thu)", callback_data: "tg_tab:acb:0" }],
       [
         { text: "🔨 Đơn BTL (" + m.btlMonthList.length + ")", callback_data: "tg_tab:btl:0" },
         { text: "📄 Đơn Đề Cương (" + m.dcPaidMonth.length + ")", callback_data: "tg_tab:decuong:0" }
       ],
       [
-        { text: "👤 Thông Tin Khách Hàng (" + m.uniqueCustomers.length + ")", callback_data: "tg_tab:customers:0" },
+        { text: "👤 Khách Hàng (" + m.uniqueCustomers.length + ")", callback_data: "tg_tab:customers:0" },
         { text: "📁 Nhà Kho Drive", callback_data: "tg_tab:drive:0" }
       ]
     ]
@@ -4853,7 +4926,6 @@ function renderTgAcbList_(ss, chatId, page, msgId, doRescanNow, userTriggerMsgId
   ss = ss || getMasterSpreadsheet();
   page = Math.max(0, Number(page || 0));
 
-  // Khi mở Kiểm tra biến động số dư (trang 1 hoặc bấm quét lại): tự động quét lại hộp thư Gmail ACB kiểm tra đơn sót!
   var scanInfo = null;
   if (doRescanNow !== false && page === 0) {
     scanInfo = runSafeGmailReconcile_(ss, false);
@@ -4867,46 +4939,43 @@ function renderTgAcbList_(ss, chatId, page, msgId, doRescanNow, userTriggerMsgId
 
   var m = collectMonthlyMetrics_(ss);
   var rows = m.acbMonthRows.slice().reverse();
-  var perPage = 6;
+  var perPage = 5;
   var totalPages = Math.max(1, Math.ceil(rows.length / perPage));
   if (page >= totalPages) page = totalPages - 1;
   var slice = rows.slice(page * perPage, (page + 1) * perPage);
 
-  var scanStatusLine = "";
-  if (scanInfo && !scanInfo.skippedLock) {
-    scanStatusLine =
-      "🔍 <b>Quét lại Gmail ACB (" + escTgHtml(scanInfo.lastScanAt || "Vừa xong") + "):</b> " +
-      (scanInfo.matchedNew > 0
-        ? ("✅ <b>Vừa vớt &amp; bàn giao bù " + scanInfo.matchedNew + " đơn bị sót!</b>")
-        : ("✓ Không sót đơn mới (" + (m.acbUnmatchedInMonth > 0 ? (m.acbUnmatchedInMonth + " GD lẻ chưa gắn mã") : "Khớp 100%") + ")"));
-  } else {
-    scanStatusLine = "🔍 <b>Đối soát Gmail ACB:</b> Hệ thống tự động quét mỗi 1 phút · Khớp chuẩn STK <code>27820961</code>";
-  }
+  var scanTxt = (scanInfo && !scanInfo.skippedLock)
+    ? (scanInfo.matchedNew > 0 ? ("✅ Vớt bù " + scanInfo.matchedNew + " đơn") : "✓ Đủ đơn (không sót)")
+    : "✓ Tự quét mỗi 1 phút";
 
   var lines = [
-    "💰 <b>KIỂM TRA BIẾN ĐỘNG SỐ DƯ — THÁNG " + escTgHtml(m.monthStr) + "</b>",
-    "━━━━━━━━━━━━━━━━━━━━━━",
-    "💵 <b>TIỀN KIẾM ĐƯỢC THÁNG NÀY: " + m.totalEarnedMonth.toLocaleString("vi-VN") + " VNĐ</b>",
-    "   • Đề cương: <b>" + m.dcRevMonth.toLocaleString("vi-VN") + " đ</b> · BTL: <b>" + m.btlRevMonth.toLocaleString("vi-VN") + " đ</b>" +
-      (m.khRevMonth > 0 ? (" · Khóa học: <b>" + m.khRevMonth.toLocaleString("vi-VN") + " đ</b>") : ""),
-    "   • Tổng ghi có ACB tháng " + escTgHtml(m.monthStr) + ": <b>" + m.acbTotalInMonth.toLocaleString("vi-VN") + " đ</b> <i>(Tự reset 01 hàng tháng)</i>",
-    scanStatusLine,
-    "━━━━━━━━━━━━━━━━━━━━━━",
-    "📋 <b>Giao dịch ACB trong tháng " + escTgHtml(m.monthStr) + "</b> (Trang " + (page + 1) + "/" + totalPages + "):"
+    "💰 <b>BIẾN ĐỘNG ACB · " + escTgHtml(m.monthStr) + "</b> (" + (page + 1) + "/" + totalPages + ")",
+    "💵 Kiếm được: <b>" + m.totalEarnedMonth.toLocaleString("vi-VN") + "đ</b> · ACB: <b>" + m.acbTotalInMonth.toLocaleString("vi-VN") + "đ</b>",
+    "🔍 Quét mail: " + scanTxt + " <i>(Reset 01 hàng tháng)</i>",
+    "──────────"
   ];
 
   if (!slice.length) {
-    lines.push("<i>Chưa có biến động số dư nào trong tháng " + escTgHtml(m.monthStr) + ".</i>");
+    lines.push("<i>Chưa có giao dịch nào trong tháng " + escTgHtml(m.monthStr) + ".</i>");
   } else {
-    slice.forEach(function(r, idx) {
+    slice.forEach(function(r) {
       var amtN = parseMoneyVal_(r[4]);
-      var amtStr = amtN > 0 ? ("+" + amtN.toLocaleString("vi-VN") + " đ") : String(r[4] || "Biến động");
-      var cleanMemo = String(r[5] || "").replace(/\s*\[MSG:[^\]]+\]/g, "").trim().slice(0, 68);
-      var stTag = String(r[7] || r[3] || "").trim();
-      var iconGd = (stTag.toUpperCase().indexOf("CHƯA") !== -1 || stTag.toUpperCase().indexOf("CHỜ") !== -1) ? "⚠️" : "✅";
+      var amtStr = amtN > 0 ? ("+" + amtN.toLocaleString("vi-VN") + "đ") : "Biến động";
+      var tCompact = formatCompactTime_(r[0]);
+      var rawType = String(r[3] || "").trim();
+      var cleanMemo = String(r[5] || "")
+        .replace(/\s*\[MSG:[^\]]+\]/g, "")
+        .replace(/\s*\[(?:Đơn|Cọc BTL|Thu đủ BTL):[^\]]+\]/g, "")
+        .replace(/^\*+/, "")
+        .trim()
+        .slice(0, 34);
+      var stTag = String(r[7] || rawType).toUpperCase();
+      var isUnm = (stTag.indexOf("CHƯA") !== -1 || stTag.indexOf("CHỜ") !== -1);
+      var iconGd = isUnm ? "⚠️" : "✅";
+      var label = rawType.replace(/NHẬN TIỀN ĐƠN /i, "Đơn ").replace(/NHẬN CỌC BTL /i, "Cọc ").replace(/BIẾN ĐỘNG SỐ DƯ \(\+\)/i, "Chưa rõ mã");
       lines.push(
-        iconGd + " <b>" + escTgHtml(amtStr) + "</b> · <code>" + escTgHtml(formatShortTimeGMT7_(r[0])) + "</code>\n" +
-        "   └ " + escTgHtml(String(r[3] || "")) + " · <code>" + escTgHtml(cleanMemo) + "</code>"
+        iconGd + " <b>" + escTgHtml(amtStr) + "</b> · <code>" + escTgHtml(tCompact) + "</code> · " + escTgHtml(label.slice(0, 22)) + "\n" +
+        "   <code>" + escTgHtml(cleanMemo) + "</code>"
       );
     });
   }
@@ -4918,65 +4987,64 @@ function renderTgAcbList_(ss, chatId, page, msgId, doRescanNow, userTriggerMsgId
   if (navRow.length) kbRows.push(navRow);
 
   kbRows.push([
-    { text: "🔄 Quét Lại Mail ACB Ngay", callback_data: "tg_tab:acb:0" },
-    { text: "📊 Báo Cáo Cuối Tháng", callback_data: "tg_revmonth" }
+    { text: "🔄 Quét Lại Mail", callback_data: "tg_tab:acb:0" },
+    { text: "📊 Chốt Tháng", callback_data: "tg_revmonth" }
   ]);
-  kbRows.push([{ text: "🎛️ Về Trạm Điều Khiển Tổng", callback_data: "tg_tab:menu:0" }]);
+  kbRows.push([{ text: "🎛️ Trạm Tổng", callback_data: "tg_tab:menu:0" }]);
   return showTgScreen_(chatId, msgId, lines.join("\n"), { inline_keyboard: kbRows }, userTriggerMsgId);
 }
 
 function renderTgBtlList_(ss, chatId, page, msgId, userTriggerMsgId) {
   var m = collectMonthlyMetrics_(ss);
   page = Math.max(0, Number(page || 0));
-  var perPage = 4;
+  var perPage = 3;
   var list = m.btlMonthList.slice().reverse();
   var totalPages = Math.max(1, Math.ceil(list.length / perPage));
   if (page >= totalPages) page = totalPages - 1;
   var slice = list.slice(page * perPage, (page + 1) * perPage);
 
   var lines = [
-    "🔨 <b>ĐƠN BTL TRONG THÁNG " + escTgHtml(m.monthStr) + "</b> (" + list.length + " đơn · Trang " + (page + 1) + "/" + totalPages + ")",
-    "<i>(Chỉ lưu đơn Đã cọc &amp; Đã thanh toán — Tự sinh QR đúng ngày Deadline)</i>",
-    "━━━━━━━━━━━━━━━━━━━━━━"
+    "🔨 <b>ĐƠN BTL · " + escTgHtml(m.monthStr) + "</b> (" + list.length + " đơn · " + (page + 1) + "/" + totalPages + ")",
+    "──────────"
   ];
   var kbRows = [];
 
   if (!slice.length) {
-    lines.push("<i>Trong tháng " + escTgHtml(m.monthStr) + " chưa có đơn BTL nào đã đặt cọc.</i>");
+    lines.push("<i>Chưa có đơn BTL nào đã đặt cọc trong tháng.</i>");
   } else {
     slice.forEach(function(item) {
-      var badge = item.isCompleted
-        ? "🟢 <b>HOÀN THÀNH BÀN GIAO</b>"
-        : "🟡 <b>ĐÃ CỌC (Chờ thu nốt)</b>";
+      var badge = item.isCompleted ? "🟢 HOÀN THÀNH" : "🟡 ĐÃ CỌC";
+      var shortTopic = item.topic.replace(/^\[[^\]]+\]\s*/, "").replace(/\s*\(khôi phục[^)]*\)/i, "").slice(0, 38);
+      var dlShort = item.deadline && item.deadline !== "Theo yêu cầu" ? formatCompactTime_(item.deadline).split(" ")[0] : "Theo YC";
+      var moneyLine = item.isCompleted
+        ? ("Đã thu đủ <b>" + (item.total || item.deposit).toLocaleString("vi-VN") + "đ</b>")
+        : ("Cọc <b>" + (item.deposit / 1000) + "k</b> · Còn <b>" + (item.remain > 0 ? item.remain.toLocaleString("vi-VN") + "đ" : "chưa chốt giá") + "</b>");
+
       lines.push(
-        "🆔 <code>" + escTgHtml(item.code) + "</code> — " + badge + "\n" +
-        "👤 <b>" + escTgHtml(item.name) + "</b>" + (item.phone ? (" · 📞 <code>" + escTgHtml(item.phone) + "</code>") : "") + (item.email ? (" · <code>" + escTgHtml(item.email) + "</code>") : "") + "\n" +
-        "📚 <b>[" + escTgHtml(item.serviceLabel) + "]</b> " + escTgHtml(item.topic.replace(/^\[[^\]]+\]\s*/, "").slice(0, 72)) + "\n" +
-        "⏰ Deadline: <b>" + escTgHtml(item.deadline) + "</b>\n" +
-        "💵 Tổng: <b>" + (item.total > 0 ? (item.total.toLocaleString("vi-VN") + "đ") : "Chưa nhập") + "</b> · Cọc: <b>" + item.deposit.toLocaleString("vi-VN") + "đ</b> · Còn lại: <b>" + (item.remain > 0 ? (item.remain.toLocaleString("vi-VN") + "đ") : "0đ") + "</b>" +
-        (!item.isCompleted ? (" (CK: <code>" + escTgHtml(item.remainCode) + "</code>)") : "") +
-        (item.reqFileUrl ? ("\n📎 <a href=\"" + escTgHtml(item.reqFileUrl) + "\">Xem File Yêu Cầu Khách Gửi (Kho 06)</a>") : "")
+        "<b>" + badge + "</b> · <code>" + escTgHtml(item.code) + "</code>\n" +
+        "👤 " + escTgHtml(item.name) + (item.phone ? (" · <code>" + escTgHtml(item.phone) + "</code>") : "") + "\n" +
+        "📚 " + escTgHtml(item.serviceLabel) + (shortTopic ? (": " + escTgHtml(shortTopic)) : "") + "\n" +
+        "⏰ Hạn: <b>" + escTgHtml(dlShort) + "</b> · " + moneyLine +
+        (item.reqFileUrl ? (" · <a href=\"" + escTgHtml(item.reqFileUrl) + "\">📎File</a>") : "")
       );
 
       if (!item.isCompleted) {
         kbRows.push([
-          { text: "💳 QR Thu Nốt " + item.code, callback_data: "tg_qr:" + item.code },
-          { text: "✏️ Giá / File " + item.code, callback_data: "tg_askprice:" + item.code },
+          { text: "💳 QR " + item.code, callback_data: "tg_qr:" + item.code },
+          { text: "✏️ Giá/File", callback_data: "tg_askprice:" + item.code },
           { text: "🚀 Giao Full", callback_data: "tg_deliver:" + item.code }
         ]);
       } else {
-        kbRows.push([
-          { text: "📩 Gửi Lại Mail & Drive (" + item.code + ")", callback_data: "tg_deliver:" + item.code }
-        ]);
+        kbRows.push([{ text: "📩 Gửi Lại Mail & Drive (" + item.code + ")", callback_data: "tg_deliver:" + item.code }]);
       }
     });
   }
 
   var nav = [];
-  if (page > 0) nav.push({ text: "⬅️ Trang Trước", callback_data: "tg_tab:btl:" + (page - 1) });
-  if (page + 1 < totalPages) nav.push({ text: "Trang Sau ➡️", callback_data: "tg_tab:btl:" + (page + 1) });
+  if (page > 0) nav.push({ text: "⬅️ Trước", callback_data: "tg_tab:btl:" + (page - 1) });
+  if (page + 1 < totalPages) nav.push({ text: "Sau ➡️", callback_data: "tg_tab:btl:" + (page + 1) });
   if (nav.length) kbRows.push(nav);
-  kbRows.push([{ text: "🎛️ Về Trạm Điều Khiển Tổng", callback_data: "tg_tab:menu:0" }]);
+  kbRows.push([{ text: "🎛️ Trạm Tổng", callback_data: "tg_tab:menu:0" }]);
   return showTgScreen_(chatId, msgId, lines.join("\n"), { inline_keyboard: kbRows }, userTriggerMsgId);
 }
 
@@ -4990,28 +5058,25 @@ function renderTgDeCuongList_(ss, chatId, page, msgId, userTriggerMsgId) {
   var slice = list.slice(page * perPage, (page + 1) * perPage);
 
   var lines = [
-    "📄 <b>ĐƠN ĐỀ CƯƠNG ĐÃ BÁN — THÁNG " + escTgHtml(m.monthStr) + "</b> (" + list.length + " đơn · Trang " + (page + 1) + "/" + totalPages + ")",
-    "✅ Đã nhận Mail &amp; mở Drive: <b>" + m.dcMailOk + "/" + list.length + " đơn</b> · Doanh thu: <b>" + m.dcRevMonth.toLocaleString("vi-VN") + " đ</b>",
-    "━━━━━━━━━━━━━━━━━━━━━━"
+    "📄 <b>ĐƠN ĐỀ CƯƠNG · " + escTgHtml(m.monthStr) + "</b> (" + (page + 1) + "/" + totalPages + ")",
+    "💰 <b>" + m.dcRevMonth.toLocaleString("vi-VN") + "đ</b> (" + list.length + " đơn · Mail OK: <b>" + m.dcMailOk + "/" + list.length + "</b>)",
+    "──────────"
   ];
   var kbRows = [];
 
   if (!slice.length) {
-    lines.push("<i>Trong tháng " + escTgHtml(m.monthStr) + " chưa phát sinh đơn Đề Cương đã thanh toán.</i>");
+    lines.push("<i>Chưa có đơn Đề Cương nào trong tháng.</i>");
   } else {
     slice.forEach(function(ord) {
-      var mailCheck = ord.isMailDelivered
-        ? "✅ Đã nhận Mail &amp; mở Drive"
-        : "⚠️ Chưa gửi được Mail — Bấm cấp lại bên dưới";
+      var ic = ord.isMailDelivered ? "✅" : "⚠️";
+      var cleanTitle = ord.itemName.replace(/^(ĐỀ CƯƠNG|Đề Cương)\s+/i, "").slice(0, 28);
+      var dt = formatCompactTime_(ord.timeVal).split(" ")[0];
       lines.push(
-        "🆔 <code>" + escTgHtml(ord.code) + "</code> · <b>" + ord.amount.toLocaleString("vi-VN") + "đ</b> · <code>" + escTgHtml(formatShortTimeGMT7_(ord.timeVal)) + "</code>\n" +
-        "   👤 <b>" + escTgHtml(ord.name) + "</b>" + (ord.phone ? (" · <code>" + escTgHtml(ord.phone) + "</code>") : "") + "\n" +
-        "   📧 <code>" + escTgHtml(ord.email || "Chưa nhập Email") + "</code>\n" +
-        "   📚 " + escTgHtml(ord.itemName.slice(0, 68)) + "\n" +
-        "   📩 Kiểm tra Mail: <b>" + mailCheck + "</b>"
+        ic + " <code>" + escTgHtml(ord.code) + "</code> · <b>" + Math.round(ord.amount / 1000) + "k</b> · " + escTgHtml(dt) + "\n" +
+        "   " + escTgHtml(ord.name) + (ord.phone ? (" (" + escTgHtml(ord.phone) + ")") : "") + " · " + escTgHtml(cleanTitle)
       );
       if (!ord.isMailDelivered) {
-        kbRows.push([{ text: "📩 Cấp Lại Drive & Gửi Lại Mail (" + ord.code + ")", callback_data: "tg_resend_doc:" + ord.code }]);
+        kbRows.push([{ text: "📩 Cấp Lại Drive & Mail (" + ord.code + ")", callback_data: "tg_resend_doc:" + ord.code }]);
       }
     });
   }
@@ -5020,7 +5085,7 @@ function renderTgDeCuongList_(ss, chatId, page, msgId, userTriggerMsgId) {
   if (page > 0) nav.push({ text: "⬅️ Mới Hơn", callback_data: "tg_tab:decuong:" + (page - 1) });
   if (page + 1 < totalPages) nav.push({ text: "Cũ Hơn ➡️", callback_data: "tg_tab:decuong:" + (page + 1) });
   if (nav.length) kbRows.push(nav);
-  kbRows.push([{ text: "🎛️ Về Trạm Điều Khiển Tổng", callback_data: "tg_tab:menu:0" }]);
+  kbRows.push([{ text: "🎛️ Trạm Tổng", callback_data: "tg_tab:menu:0" }]);
   return showTgScreen_(chatId, msgId, lines.join("\n"), { inline_keyboard: kbRows }, userTriggerMsgId);
 }
 
@@ -5034,9 +5099,8 @@ function resendDocOrderFromTg_(ss, chatId, rawCode) {
       var pOrd = parseDocOrderRow_(rows[i], i + 1, docSheets[s]);
       if (pOrd && pOrd.code === code) {
         if (!pOrd.email || pOrd.email.indexOf("@") === -1) {
-          return banTelegram("⚠️ Đơn <code>" + escTgHtml(code) + "</code> chưa có địa chỉ Gmail của khách.", { chat_id: chatId });
+          return banTelegram("⚠️ Đơn <code>" + escTgHtml(code) + "</code> chưa có Gmail khách.", { chat_id: chatId });
         }
-        // Xóa cờ chống trùng mail dự phòng để cho phép gửi lại ngay theo lệnh Admin
         try {
           PropertiesService.getScriptProperties().deleteProperty("DELIVERY_MAIL_CLEAN_" + code.replace(/[^A-Za-z0-9_-]/g, ""));
         } catch (eDelKey) {}
@@ -5045,14 +5109,11 @@ function resendDocOrderFromTg_(ss, chatId, rawCode) {
         if (ok) {
           docSheets[s].getRange(pOrd.row, pOrd.mailCol1Based).setValue("Đã bàn giao qua Email & Drive");
           return banTelegram(
-            "✅ <b>ĐÃ RA LỆNH NHÀ KHO DRIVE CẤP QUYỀN &amp; GỬI LẠI EMAIL THÀNH CÔNG!</b>\n" +
-            "🆔 Mã đơn: <code>" + escTgHtml(code) + "</code>\n" +
-            "📧 Email khách: <code>" + escTgHtml(pOrd.email) + "</code>\n" +
-            "📚 Tài liệu: <b>" + escTgHtml(prod ? prod.name : pOrd.itemName) + "</b>",
-            { chat_id: chatId, reply_markup: { inline_keyboard: [[{ text: "📄 Xem Đơn Đề Cương", callback_data: "tg_open:decuong" }, { text: "🎛️ Trạm Tổng", callback_data: "tg_open:menu" }]] } }
+            "✅ <b>ĐÃ GỬI LẠI MAIL &amp; MỞ DRIVE:</b> <code>" + escTgHtml(code) + "</code> → <code>" + escTgHtml(pOrd.email) + "</code>",
+            { chat_id: chatId, reply_markup: { inline_keyboard: [[{ text: "📄 Đơn Đề Cương", callback_data: "tg_open:decuong" }, { text: "🎛️ Trạm Tổng", callback_data: "tg_open:menu" }]] } }
           );
         }
-        return banTelegram("⚠️ Không thể gửi Email tới <code>" + escTgHtml(pOrd.email) + "</code>, vui lòng kiểm tra lại hạn mức Gmail.", { chat_id: chatId });
+        return banTelegram("⚠️ Gửi Email thất bại tới <code>" + escTgHtml(pOrd.email) + "</code>.", { chat_id: chatId });
       }
     }
   }
@@ -5062,31 +5123,33 @@ function resendDocOrderFromTg_(ss, chatId, rawCode) {
 function renderTgCustomers_(ss, chatId, page, msgId, userTriggerMsgId) {
   var m = collectMonthlyMetrics_(ss);
   page = Math.max(0, Number(page || 0));
-  var perPage = 6;
+  var perPage = 5;
   var rows = m.uniqueCustomers.slice().reverse();
   var totalPages = Math.max(1, Math.ceil(rows.length / perPage));
   if (page >= totalPages) page = totalPages - 1;
   var slice = rows.slice(page * perPage, (page + 1) * perPage);
 
   var lines = [
-    "👤 <b>THÔNG TIN KHÁCH HÀNG ĐÃ ĐĂNG KÝ</b> (" + rows.length + " khách · Trang " + (page + 1) + "/" + totalPages + ")",
-    "<i>(Mỗi khách chỉ lưu 1 hồ sơ gốc duy nhất — Không ghi trùng lặp)</i>",
-    "━━━━━━━━━━━━━━━━━━━━━━"
+    "👤 <b>KHÁCH HÀNG (" + rows.length + " · " + (page + 1) + "/" + totalPages + ")</b>",
+    "<i>(Lưu 1 hồ sơ gốc/khách — Bấm tên xem lịch sử)</i>",
+    "──────────"
   ];
   var kbRows = [];
 
   if (!slice.length) {
-    lines.push("<i>Chưa có khách hàng nào đăng ký trên hệ thống.</i>");
+    lines.push("<i>Chưa có khách hàng nào.</i>");
   } else {
     slice.forEach(function(c, idx) {
+      var stShort = (c.status.toUpperCase().indexOf("ĐÃ THANH TOÁN") !== -1 || c.status.toUpperCase().indexOf("PAID") !== -1)
+        ? ("Đã TT (" + c.orderCount + " đơn" + (c.totalSpent > 0 ? (" · " + c.totalSpent.toLocaleString("vi-VN") + "đ") : "") + ")")
+        : "Đã đăng ký";
       lines.push(
         "<b>" + (page * perPage + idx + 1) + ". " + escTgHtml(c.name) + "</b>" +
-        (c.phone ? (" · 📞 <code>" + escTgHtml(c.phone) + "</code>") : "") + "\n" +
-        (c.email ? ("   📧 <code>" + escTgHtml(c.email) + "</code>\n") : "") +
-        "   📌 " + escTgHtml(c.status) + (c.updatedAt ? (" · 🕒 <code>" + escTgHtml(c.updatedAt) + "</code>") : "")
+        (c.phone ? (" · <code>" + escTgHtml(c.phone) + "</code>") : "") + "\n" +
+        "   " + (c.email ? ("<code>" + escTgHtml(c.email) + "</code> · ") : "") + escTgHtml(stShort)
       );
       var lookupKey = (c.email || c.phone || c.name).slice(0, 50);
-      kbRows.push([{ text: "🔍 Xem Lịch Sử: " + c.name.slice(0, 20) + (c.phone ? (" (" + c.phone + ")") : ""), callback_data: "tg_cust:" + lookupKey }]);
+      kbRows.push([{ text: "🔍 " + c.name.slice(0, 22) + (c.phone ? (" · " + c.phone) : ""), callback_data: "tg_cust:" + lookupKey }]);
     });
   }
 
@@ -5095,7 +5158,7 @@ function renderTgCustomers_(ss, chatId, page, msgId, userTriggerMsgId) {
   if (page + 1 < totalPages) nav.push({ text: "Cũ Hơn ➡️", callback_data: "tg_tab:customers:" + (page + 1) });
   if (nav.length) kbRows.push(nav);
   kbRows.push([
-    { text: "🔍 Tìm Theo SĐT / Email / Tên", callback_data: "tg_findcust" },
+    { text: "🔍 Tìm SĐT / Email", callback_data: "tg_findcust" },
     { text: "🎛️ Trạm Tổng", callback_data: "tg_tab:menu:0" }
   ]);
   return showTgScreen_(chatId, msgId, lines.join("\n"), { inline_keyboard: kbRows }, userTriggerMsgId);
@@ -5107,7 +5170,7 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
   if (!q) {
     return tgApiCall_("sendMessage", {
       chat_id: chatId,
-      text: "🔍 <b>TRA CỨU THÔNG TIN KHÁCH HÀNG</b>\n\nReply (trả lời) tin nhắn này bằng <b>Số điện thoại, Email hoặc Họ tên khách</b>:",
+      text: "🔍 <b>TÌM KHÁCH HÀNG</b>\nReply tin nhắn này bằng <b>SĐT, Email hoặc Tên</b>:",
       parse_mode: "HTML",
       reply_markup: { force_reply: true, selective: true }
     });
@@ -5115,7 +5178,7 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
   var qNorm = boDau(q);
   var qDigits = q.replace(/[^0-9]/g, "");
 
-  var lines = ["🔍 <b>CHI TIẾT KHÁCH HÀNG:</b> <code>" + escTgHtml(queryRaw) + "</code>", "━━━━━━━━━━━━━━━━━━━━━━"];
+  var lines = ["🔍 <b>HỒ SƠ:</b> <code>" + escTgHtml(queryRaw) + "</code>", "──────────"];
   var foundAny = false;
   var kbRows = [];
 
@@ -5128,19 +5191,16 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
       if (hayC.indexOf(qNorm) !== -1 || (qDigits.length >= 8 && phClean.indexOf(qDigits) !== -1)) {
         foundAny = true;
         var dispEm = String(khRows[c][0] || "");
-        if (dispEm.indexOf("sdt_") === 0) dispEm = "Chưa cung cấp Email";
+        if (dispEm.indexOf("sdt_") === 0) dispEm = "Chưa có Email";
         lines.push(
-          "👤 <b>" + escTgHtml(String(khRows[c][1] || "")) + "</b> · 📞 <code>" + escTgHtml(phClean || "Chưa có") + "</code>\n" +
-          "📧 <code>" + escTgHtml(dispEm) + "</code>\n" +
-          "📌 Trạng thái: <b>" + escTgHtml(String(khRows[c][5] || "Đã đăng ký")) + "</b>\n" +
-          "🌐 Kênh đăng ký: " + escTgHtml(String(khRows[c][7] || "Website"))
+          "👤 <b>" + escTgHtml(String(khRows[c][1] || "")) + "</b> · <code>" + escTgHtml(phClean || "Chưa có SĐT") + "</code>\n" +
+          "📧 <code>" + escTgHtml(dispEm) + "</code> · " + escTgHtml(String(khRows[c][5] || "Đã đăng ký"))
         );
         break;
       }
     }
   }
 
-  // Lịch sử Đơn BTL đã cọc / đã hoàn thành của khách này
   var bTab = getSheetByAliases_(ss, ["Đơn Hàng Bài Tập Lớn", "Don_BTL_DichVu"]);
   if (bTab) {
     var bRows = bTab.getDataRange().getValues();
@@ -5156,15 +5216,12 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
         var dep = parseMoneyVal_(bRows[b][8]) || 50000;
         var isDoneB = (bStU.indexOf("HOÀN") !== -1 || bStU.indexOf("ĐỦ") !== -1 || bStU.indexOf("GIAO") !== -1);
         var rem = isDoneB ? 0 : (parseMoneyVal_(bRows[b][9]) || (tot > 0 ? Math.max(0, tot - dep) : 0));
-        var remCode = (bRows[b].length >= 17 && String(bRows[b][16] || "").trim()) ? String(bRows[b][16]).trim() : buildBtlRemainCode_(bCode);
         lines.push(
-          "\n🔨 <b>" + escTgHtml(detectBtlServiceLabel_(bRows[b][5], bCode)) + " <code>" + escTgHtml(bCode) + "</code></b> — <b>" + (isDoneB ? "HOÀN THÀNH BÀN GIAO" : "ĐÃ CỌC") + "</b>\n" +
-          "   📝 " + escTgHtml(String(bRows[b][5] || "").slice(0, 85)) + "\n" +
-          "   💵 Cọc: " + dep.toLocaleString("vi-VN") + "đ · Còn lại: <b>" + rem.toLocaleString("vi-VN") + "đ</b>" + (!isDoneB ? (" (CK: <code>" + escTgHtml(remCode) + "</code>)") : "")
+          "🔨 <code>" + escTgHtml(bCode) + "</code> · " + (isDoneB ? "🟢 Xong" : ("🟡 Còn " + rem.toLocaleString("vi-VN") + "đ")) + " · " + escTgHtml(String(bRows[b][5] || "").slice(0, 40))
         );
         if (!isDoneB) {
           kbRows.push([
-            { text: "💳 QR Thu Nốt " + bCode, callback_data: "tg_qr:" + bCode },
+            { text: "💳 QR " + bCode, callback_data: "tg_qr:" + bCode },
             { text: "🚀 Giao Full", callback_data: "tg_deliver:" + bCode }
           ]);
         }
@@ -5172,7 +5229,6 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
     }
   }
 
-  // Lịch sử Đơn Đề Cương / Khóa Học đã mua của khách này
   var docTabs = getAllDocOrderSheets_(ss);
   for (var ds = 0; ds < docTabs.length; ds++) {
     var oRows = docTabs[ds].getDataRange().getValues();
@@ -5183,9 +5239,7 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
       if (hayO.indexOf(qNorm) !== -1 || (qDigits.length >= 8 && pO.phone.indexOf(qDigits) !== -1)) {
         foundAny = true;
         lines.push(
-          "\n📄 <b>Đơn <code>" + escTgHtml(pO.code) + "</code></b> (" + pO.amount.toLocaleString("vi-VN") + "đ) — " +
-          (pO.isMailDelivered ? "✅ Đã gửi Mail" : "⚠️ Chưa gửi Mail") + "\n" +
-          "   📚 " + escTgHtml(pO.itemName.slice(0, 75))
+          "📄 <code>" + escTgHtml(pO.code) + "</code> (" + Math.round(pO.amount / 1000) + "k · " + (pO.isMailDelivered ? "✅Mail" : "⚠️Chưa mail") + ") · " + escTgHtml(pO.itemName.slice(0, 34))
         );
         if (!pO.isMailDelivered) {
           kbRows.push([{ text: "📩 Gửi Lại Mail (" + pO.code + ")", callback_data: "tg_resend_doc:" + pO.code }]);
@@ -5194,9 +5248,9 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
     }
   }
 
-  if (!foundAny) lines.push("<i>Không tìm thấy khách hàng hoặc đơn đã mua nào khớp từ khóa này.</i>");
+  if (!foundAny) lines.push("<i>Không tìm thấy khách hàng khớp từ khóa.</i>");
   kbRows.push([
-    { text: "⬅️ Danh Sách Khách Hàng", callback_data: "tg_tab:customers:0" },
+    { text: "⬅️ Khách Hàng", callback_data: "tg_tab:customers:0" },
     { text: "🎛️ Trạm Tổng", callback_data: "tg_tab:menu:0" }
   ]);
   return showTgScreen_(chatId, msgId, lines.join("\n"), { inline_keyboard: kbRows }, userTriggerMsgId);
@@ -5204,28 +5258,24 @@ function renderTgCustomerDetail_(ss, chatId, queryRaw, msgId, userTriggerMsgId) 
 
 function renderTgDriveHub_(chatId, msgId, userTriggerMsgId) {
   var text =
-    "📁 <b>NHÀ KHO GOOGLE DRIVE (diepvientailieu@gmail.com)</b>\n" +
-    "━━━━━━━━━━━━━━━━━━━━━━\n" +
-    "📦 <b>Vai trò:</b> Lưu trữ gốc &amp; Cấp quyền tự động theo lệnh từ Web/App và Telegram.\n" +
-    "• <b>Kho 01:</b> Đề cương ôn tập 50K\n" +
-    "• <b>Kho 02 &amp; 03:</b> Kho BTL Full &amp; Bản xem trước\n" +
-    "• <b>Kho 05:</b> Combo Khóa học\n" +
-    "• <b>Kho 06:</b> File yêu cầu BTL khách gửi lên từ Web";
+    "📁 <b>NHÀ KHO GOOGLE DRIVE</b>\n" +
+    "──────────\n" +
+    "📦 Lưu trữ gốc &amp; mở quyền tự động cho Web/App và Telegram:";
   var kb = {
     inline_keyboard: [
       [
-        { text: "📂 01. Kho Đề Cương", url: "https://drive.google.com/drive/folders/" + FOLDER_DE_CUONG_ID },
-        { text: "📂 02. Kho Full BTL", url: "https://drive.google.com/drive/folders/" + FOLDER_BTL_FULL_ID }
+        { text: "📂 01. Đề Cương", url: "https://drive.google.com/drive/folders/" + FOLDER_DE_CUONG_ID },
+        { text: "📂 02. Full BTL", url: "https://drive.google.com/drive/folders/" + FOLDER_BTL_FULL_ID }
       ],
       [
-        { text: "📂 03. Bản Xem Trước BTL", url: "https://drive.google.com/drive/folders/" + FOLDER_BTL_CHECK_ID },
-        { text: "📎 06. File YC Khách Gửi", url: "https://drive.google.com/drive/folders/" + BTL_REQ_FOLDER_ID }
+        { text: "📂 04. Kỹ Thuật", url: "https://drive.google.com/drive/folders/" + FOLDER_KIEM_TRA_ID },
+        { text: "📂 05. Khóa Học", url: "https://drive.google.com/drive/folders/" + FOLDER_KHOA_HOC_ID }
       ],
       [
-        { text: "📂 05. Kho Khóa Học", url: "https://drive.google.com/drive/folders/" + FOLDER_KHOA_HOC_ID },
-        { text: "🔄 Đồng Bộ Kho Lên Web", callback_data: "tg_sync_drive" }
+        { text: "📎 06. File YC BTL", url: "https://drive.google.com/drive/folders/" + BTL_REQ_FOLDER_ID },
+        { text: "🔄 Đồng Bộ Web", callback_data: "tg_sync_drive" }
       ],
-      [{ text: "🎛️ Về Trạm Điều Khiển Tổng", callback_data: "tg_tab:menu:0" }]
+      [{ text: "🎛️ Trạm Tổng", callback_data: "tg_tab:menu:0" }]
     ]
   };
   return showTgScreen_(chatId, msgId, text, kb, userTriggerMsgId);

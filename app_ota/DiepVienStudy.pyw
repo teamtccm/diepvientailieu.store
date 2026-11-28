@@ -7250,7 +7250,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
         App trên máy khách hàng sẽ tự động tải bản mới về ngay khi mở máy mà không cần cài lại!
         """
         import hashlib
-        self._ota_status = {"version": "2026.11.26.10", "autoUpdateEnabled": True, "updatedFiles": []}
+        self._ota_status = {"version": "2026.11.28.1", "autoUpdateEnabled": True, "updatedFiles": []}
 
         def _ota_worker():
             time.sleep(2.0)
@@ -7267,7 +7267,7 @@ NỘI DUNG BÀI GIẢNG & NOTE:
                     manifest = r.json()
                     if not isinstance(manifest, dict):
                         continue
-                    local_ver = "2026.11.26.10"
+                    local_ver = "2026.11.28.1"
                     remote_ver = str(manifest.get("version") or "2026.11.06").strip()
                     def _ver_tuple(v_str):
                         return tuple(int(x) for x in re.findall(r"\d+", str(v_str)))
@@ -7656,7 +7656,28 @@ def make_http_handler(controller: BackendController, hub: EventHub):
             import gzip as _gzip
             rel = urllib.parse.unquote(route.lstrip("/")) or "index.html"
             target = (WEB_DIST_DIR / rel).resolve()
-            if not str(target).startswith(str(WEB_DIST_DIR.resolve())) or not target.is_file():
+            if (not str(target).startswith(str(WEB_DIST_DIR.resolve())) or not target.is_file()) and rel.startswith("dicts/"):
+                cache_dict = (APP_DATA_DIR / rel).resolve()
+                dev_dict = (BASE_DIR.parent.parent / "study" / rel).resolve()
+                if str(cache_dict).startswith(str(APP_DATA_DIR.resolve())) and cache_dict.is_file():
+                    target = cache_dict
+                elif str(dev_dict).startswith(str((BASE_DIR.parent.parent / "study").resolve())) and dev_dict.is_file():
+                    target = dev_dict
+                else:
+                    for d_base in (
+                        "https://diepvientailieu.store/study/",
+                        "https://raw.githubusercontent.com/teamtccm/diepvientailieu.store/main/study/",
+                    ):
+                        try:
+                            dr = requests.get(d_base + rel, timeout=12)
+                            if dr.status_code == 200 and dr.content and not dr.content.lstrip().startswith(b"<"):
+                                cache_dict.parent.mkdir(parents=True, exist_ok=True)
+                                cache_dict.write_bytes(dr.content)
+                                target = cache_dict
+                                break
+                        except Exception:
+                            continue
+            if not target.is_file() or (not str(target).startswith(str(WEB_DIST_DIR.resolve())) and not str(target).startswith(str(APP_DATA_DIR.resolve())) and not rel.startswith("dicts/")):
                 target = WEB_DIST_DIR / "index.html"
 
             stat_st = target.stat()
@@ -7901,7 +7922,10 @@ def main():
             pass
         os._exit(0)
 
-    main_win.events.closed += on_main_closed
+    if hasattr(main_win, "events") and hasattr(main_win.events, "closed"):
+        main_win.events.closed += on_main_closed
+    elif hasattr(main_win, "closed"):
+        main_win.closed += on_main_closed
     webview.start(debug=False)
 
 

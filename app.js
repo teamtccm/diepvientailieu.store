@@ -5078,7 +5078,7 @@ async function checkServicePaymentStatus(orderCode, email, isManual = false) {
             const title = document.getElementById("successModalTitle");
             const desc = document.getElementById("successModalDesc");
             const qrBox = document.getElementById("serviceDepositQrBox");
-            const previewUrl = data.previewDriveUrl || "https://drive.google.com/drive/folders/1J5GxIOQocD0FeISMyaS980pRrs_Qu0qr";
+            const previewUrl = data.previewDriveUrl || "";
             const fullUrl = data.fullDriveUrl || data.driveUrl || "";
             const deadlineStr = data.deadline || currentServiceOrderData?.assignment?.deadline || "Theo đúng hạn nộp";
 

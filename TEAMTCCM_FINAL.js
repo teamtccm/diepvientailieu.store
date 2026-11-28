@@ -1460,7 +1460,8 @@ function buildBtlRemainQrUrl_(bankNo, remainAmt, remainCode) {
   var amt = Number(remainAmt || 0) || 0;
   if (amt <= 0 || !remainCode) return "";
   var acct = String(bankNo || "27820961").trim() || "27820961";
-  return "https://img.vietqr.io/image/ACB-" + acct + "-compact2.png?amount=" + amt + "&addInfo=" + encodeURIComponent(remainCode) + "&accountName=TRINH%20DUC%20THINH";
+  // qr.sepay.vn trả về ảnh PNG thực thụ (image/png), tương thích 100% với cả =IMAGE() Google Sheet và Telegram sendPhoto
+  return "https://qr.sepay.vn/img?acc=" + encodeURIComponent(acct) + "&bank=ACB&amount=" + amt + "&des=" + encodeURIComponent(remainCode) + "&template=compact";
 }
 
 var BTL_REQ_FOLDER_ID = "1ikdPiPJN22LSnOEVHzFulmf6Stm7gq_A"; // 06. File Yêu Cầu BTL Khách Gửi
@@ -4223,12 +4224,78 @@ function banTelegram(text, opts) {
   return (r2 && r2.ok) ? r2 : false;
 }
 
+function fetchVietQrPngBlob_(acct, amt, addInfo) {
+  if (!TELEGRAM_BOT_TOKEN || !acct || amt <= 0 || !addInfo) return null;
+  try {
+    var res = UrlFetchApp.fetch("https://api.vietqr.io/v2/generate", {
+      method: "post",
+      contentType: "application/json",
+      payload: JSON.stringify({
+        accountNo: String(acct),
+        accountName: "TRINH DUC THINH",
+        acqId: 970416,
+        amount: Number(amt),
+        addInfo: String(addInfo),
+        format: "text",
+        template: "compact2"
+      }),
+      muteHttpExceptions: true
+    });
+    if (!res || res.getResponseCode() !== 200) return null;
+    var parsed = JSON.parse(res.getContentText() || "{}");
+    var dataUrl = parsed && parsed.data ? String(parsed.data.qrDataURL || "") : "";
+    var commaIdx = dataUrl.indexOf("base64,");
+    if (commaIdx === -1) return null;
+    var bytes = Utilities.base64Decode(dataUrl.substring(commaIdx + 7));
+    return Utilities.newBlob(bytes, "image/png", "vietqr_" + String(addInfo).replace(/[^A-Za-z0-9_-]/g, "") + ".png");
+  } catch (eVq) {
+    return null;
+  }
+}
+
 function sendTelegramPhoto_(chatId, photoUrl, captionHtml, replyMarkup, threadId) {
   if (!photoUrl || !TELEGRAM_BOT_TOKEN) return null;
+  var targetChat = String(chatId || TELEGRAM_GROUP_ID);
+  var safeCap = String(captionHtml || "").slice(0, 1000);
+
+  // Nếu là link QR ACB (qr.sepay.vn hoặc img.vietqr.io), ưu tiên xuất PNG chính hãng từ VietQR API v2 gửi multipart trực tiếp
+  var mAcct = photoUrl.match(/(?:acc=|ACB-)(\d{6,16})/i);
+  var mAmt = photoUrl.match(/[?&]amount=(\d+)/i);
+  var mMemo = photoUrl.match(/[?&](?:des|addInfo)=([^&]+)/i);
+  if (mAcct && mAmt && mMemo) {
+    var vqAcct = mAcct[1];
+    var vqAmt = Number(mAmt[1] || 0);
+    var vqMemo = decodeURIComponent(mMemo[1] || "");
+    var pngBlob = fetchVietQrPngBlob_(vqAcct, vqAmt, vqMemo);
+    if (pngBlob) {
+      try {
+        var mpPayload = {
+          chat_id: targetChat,
+          photo: pngBlob,
+          caption: safeCap,
+          parse_mode: "HTML"
+        };
+        if (replyMarkup) mpPayload.reply_markup = JSON.stringify(replyMarkup);
+        if (threadId) mpPayload.message_thread_id = String(threadId);
+        var mpRes = UrlFetchApp.fetch("https://api.telegram.org/bot" + TELEGRAM_BOT_TOKEN + "/sendPhoto", {
+          method: "post",
+          payload: mpPayload,
+          muteHttpExceptions: true
+        });
+        if (mpRes) {
+          var mpJson = JSON.parse(mpRes.getContentText() || "{}");
+          if (mpJson && mpJson.ok) return mpJson;
+        }
+      } catch (eMp) {}
+    }
+    // Dự phòng PNG URL trực tiếp qua SePay QR nếu VietQR v2 API bận
+    photoUrl = buildBtlRemainQrUrl_(vqAcct, vqAmt, vqMemo);
+  }
+
   var payload = {
-    chat_id: chatId || TELEGRAM_GROUP_ID,
+    chat_id: targetChat,
     photo: photoUrl,
-    caption: String(captionHtml || "").slice(0, 1000),
+    caption: safeCap,
     parse_mode: "HTML"
   };
   if (replyMarkup) payload.reply_markup = replyMarkup;
@@ -4237,7 +4304,7 @@ function sendTelegramPhoto_(chatId, photoUrl, captionHtml, replyMarkup, threadId
   if (r && r.ok) return r;
   // Nếu Telegram không tự tải URL được, gửi fallback link ảnh
   return banTelegram((captionHtml || "") + "\n\n🖼️ <a href=\"" + escTgHtml(photoUrl) + "\">Mở Ảnh QR VietQR</a>", {
-    chat_id: chatId || TELEGRAM_GROUP_ID,
+    chat_id: targetChat,
     reply_markup: replyMarkup,
     disable_web_page_preview: false,
     message_thread_id: threadId
@@ -4845,7 +4912,7 @@ function sendBtlQrPhotoToTg_(ss, chatId, rawCode, overrideAmount, isDepositQr) {
   }
 
   var memoCode = isDepositQr ? code : buildBtlRemainCode_(code);
-  var qrUrl = "https://img.vietqr.io/image/ACB-27820961-compact2.png?amount=" + amt + "&addInfo=" + encodeURIComponent(memoCode) + "&accountName=TRINH%20DUC%20THINH";
+  var qrUrl = buildBtlRemainQrUrl_("27820961", amt, memoCode);
   var custName = matchedRow ? String(matchedRow[1] || "Khách hàng") : "Khách hàng";
   var custPhone = matchedRow ? sanitizeCustomerPhone(matchedRow[2]) : "";
   var topic = matchedRow ? String(matchedRow[5] || "").slice(0, 90) : "Dịch vụ BTL / Tiểu luận";

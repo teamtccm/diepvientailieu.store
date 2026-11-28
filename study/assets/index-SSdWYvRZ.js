@@ -731,7 +731,7 @@ async function playTypingSound(soundKey,volume=0.75){
     }
     if(_typingAudioCtx.state==="suspended")await _typingAudioCtx.resume();
     if(!_typingSoundsData){
-      const r=await fetch("/dicts/sounds.json");
+      const r=await fetch("./dicts/sounds.json");
       if(r.ok)_typingSoundsData=await r.json();
       else _typingSoundsData={};
     }
@@ -827,18 +827,19 @@ function KceTypingStudy(){
   const [chapterMistakes,setChapterMistakes]=E.useState({});
 
   E.useEffect(()=>{
-    fetch("/dicts/catalog.json").then(r=>r.json()).then(data=>{
+    fetch("./dicts/catalog.json").then(r=>r.json()).then(data=>{
       if(Array.isArray(data))setCatalog(data);
     }).catch(()=>{});
   },[]);
 
-  const currentDictMeta=E.useMemo(()=>catalog.find(d=>d.id===dictId)||catalog[0]||{id:"TOEIC",name:"Từ vựng TOEIC",description:"Bộ từ vựng TOEIC phổ biến",category:"Kỳ thi Quốc tế",tags:["TOEIC"],url:"/dicts/TOEIC.json",length:1694},[catalog,dictId]);
+  const currentDictMeta=E.useMemo(()=>catalog.find(d=>d.id===dictId)||catalog[0]||{id:"TOEIC",name:"Từ vựng TOEIC",description:"Bộ từ vựng TOEIC phổ biến",category:"Kỳ thi Quốc tế",tags:["TOEIC"],url:"./dicts/TOEIC.json",length:1694},[catalog,dictId]);
 
   E.useEffect(()=>{
     if(!currentDictMeta?.url)return;
     let cancelled=false;
     setLoadingDict(true);
-    fetch(currentDictMeta.url).then(r=>r.json()).then(data=>{
+    const dictUrl=currentDictMeta.url.startsWith("/dicts/")?"."+currentDictMeta.url:currentDictMeta.url;
+    fetch(dictUrl).then(r=>r.json()).then(data=>{
       if(cancelled)return;
       const clean=Array.isArray(data)?data.filter(x=>x&&typeof x.name==="string"&&x.name.trim()):[];
       setDictWords(clean);

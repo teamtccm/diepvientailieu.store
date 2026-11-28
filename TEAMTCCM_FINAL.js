@@ -1462,15 +1462,19 @@ function buildBtlRemainQrUrl_(bankNo, remainAmt, remainCode) {
   return "https://img.vietqr.io/image/ACB-" + acct + "-compact2.png?amount=" + amt + "&addInfo=" + encodeURIComponent(remainCode) + "&accountName=TRINH%20DUC%20THINH";
 }
 
+var BTL_REQ_FOLDER_ID = "1ikdPiPJN22LSnOEVHzFulmf6Stm7gq_A"; // 06. File Yêu Cầu BTL Khách Gửi
+
 function getOrCreateBtlReqFolder_() {
+  try { return DriveApp.getFolderById(BTL_REQ_FOLDER_ID); } catch (e) {}
   var props = PropertiesService.getScriptProperties();
   var cachedId = props.getProperty("BTL_REQ_FOLDER_ID");
   if (cachedId) {
-    try { return DriveApp.getFolderById(cachedId); } catch (e) {}
+    try { return DriveApp.getFolderById(cachedId); } catch (e2) {}
   }
-  var folderName = "05. File Yêu Cầu BTL Khách Gửi";
-  var it = DriveApp.getFoldersByName(folderName);
-  var folder = it.hasNext() ? it.next() : DriveApp.createFolder(folderName);
+  var it = DriveApp.getFoldersByName("06. File Yêu Cầu BTL Khách Gửi");
+  if (it.hasNext()) return it.next();
+  var itOld = DriveApp.getFoldersByName("05. File Yêu Cầu BTL Khách Gửi");
+  var folder = itOld.hasNext() ? itOld.next() : DriveApp.createFolder("06. File Yêu Cầu BTL Khách Gửi");
   try { props.setProperty("BTL_REQ_FOLDER_ID", folder.getId()); } catch (eP) {}
   return folder;
 }
@@ -3379,7 +3383,8 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
       var finalReqUrl = reqFileUrl || (prevB.length >= 16 ? String(prevB[15] || "") : "");
       var finalRemCode = buildBtlRemainCode_(rCode);
       var finalRemAmt = remainAmt || Number(String(prevB[9] || "0").replace(/[^0-9]/g, "")) || 0;
-      var finalRemQr = buildBtlRemainQrUrl_(bankInfo.accountNo, finalRemAmt, finalRemCode);
+      var finalRemQrUrl = buildBtlRemainQrUrl_(bankInfo.accountNo, finalRemAmt, finalRemCode);
+      var finalRemQrCell = finalRemQrUrl ? ('=IMAGE("' + finalRemQrUrl + '", 1)') : "";
       btlSheet.getRange(rowNum, 1, 1, 11).setValues([[
         rCode,
         sName || prevB[1],
@@ -3393,11 +3398,12 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
         finalRemAmt,
         resolvedFileId || prevB[10] || ""
       ]]);
-      btlSheet.getRange(rowNum, 16, 1, 3).setValues([[finalReqUrl, finalRemCode, finalRemQr]]);
-      return { orderCode: rCode, isNew: false, reqFileUrl: finalReqUrl, remainCode: finalRemCode, remainQrUrl: finalRemQr };
+      btlSheet.getRange(rowNum, 16, 1, 3).setValues([[finalReqUrl, finalRemCode, finalRemQrCell]]);
+      return { orderCode: rCode, isNew: false, reqFileUrl: finalReqUrl, remainCode: finalRemCode, remainQrUrl: finalRemQrUrl };
     }
   }
 
+  var remainQrCell = remainQrUrl ? ('=IMAGE("' + remainQrUrl + '", 1)') : "";
   var newBtlRow = [
     sCode,
     sName,
@@ -3416,9 +3422,10 @@ function upsertDonBtlDichVu(ss, bankInfo, body) {
     "Hệ thống Tự động & CTV Học Thuật",
     reqFileUrl,
     remainCode,
-    remainQrUrl
+    remainQrCell
   ];
   btlSheet.appendRow(newBtlRow);
+  try { btlSheet.setRowHeight(btlSheet.getLastRow(), 140); } catch (eRh) {}
 
   // Đồng bộ trực tiếp vào tab Tiếng Việt 'Đơn Hàng Bài Tập Lớn' trên Sheet Tổng (nếu khác tab hiện tại)
   try {

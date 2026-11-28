@@ -1,10 +1,10 @@
 {
   "app": "DiepVienStudy",
-  "version": "2026.11.26.12",
+  "version": "2026.11.28.1",
   "channel": "stable",
-  "releasedAt": "2026-11-26T15:47:34Z",
+  "releasedAt": "2026-11-28T12:45:41Z",
   "minBootstrapVersion": "2026.04.19.1",
-  "notes": "v15.0: Bao mat 2 lop Drive/App, ma don rieng biet DC/KH69/KH199/KH399/COCBTL, thu muc khoa hoc cap nhat thoi gian thuc, ASR nhanh muot, dong goi Windows/macOS sieu nhe.",
+  "notes": "v17.1: Sua loi Luyen go tu (181 bo tu dien hoat dong 100% offline/online), cap nhat Cloud OTA 2026.11.28.1.",
   "files": [
     {
       "path": "web_dist/index.html",
@@ -15,8 +15,8 @@
     {
       "path": "web_dist/assets/index-SSdWYvRZ.js",
       "otaFile": "app_ota/web_dist/assets/index-SSdWYvRZ.js",
-      "sha256": "69ff0b76b8a2986d8c2affa626a4627a23afad273902afab13f5cc964823b579",
-      "size": 2285144
+      "sha256": "0a6d6e56d33ffc0ebf9d3f351c6ea0a7cb18d92272a6891e7a74bc6bd330c6ba",
+      "size": 2285241
     },
     {
       "path": "web_dist/assets/index-si95EOa3.css",
@@ -39,9 +39,9 @@
     {
       "path": "DiepVienStudy.pyw",
       "otaFile": "app_ota/DiepVienStudy.pyw",
-      "sha256": "4f6ba3240129f2d3bc4b3114f1de909677b7f6788825136a586b40ca8547be2c",
-      "size": 432597
+      "sha256": "473822ce8cc8a83f733af213eaecd078c1dfc40ca3221ab1cd69b1a42c4bc700",
+      "size": 434223
     }
   ],
-  "app_version": "2026.11.26.12"
+  "app_version": "2026.11.28.1"
 }
